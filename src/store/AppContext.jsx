@@ -28,26 +28,29 @@ export const AppProvider = ({ children }) => {
 
     const loadChapterData = async (subjectId, chapterId) => {
         try {
-            const subjectFolders = {
-                'accountancy': 'accountancy',
-                'business-studies': 'business-studies',
-                'economics': 'economics'
-            };
+            // Import and get chapter config to find the correct dataFile
+            const { getChapterById } = await import('../config/subjects.config');
+            const chapter = getChapterById(subjectId, chapterId);
 
-            const folder = subjectFolders[subjectId];
-            if (!folder) throw new Error(`Unknown subject: ${subjectId}`);
+            if (!chapter) throw new Error(`Chapter not found: ${subjectId}/${chapterId}`);
+
+            // Maps subject IDs to their data directory names
+            const folder = subjectId; // We've normalized these to match
 
             // Use import.meta.glob for better Vite compatibility
             const modules = import.meta.glob('../data/**/*.data.js');
-            const path = `../data/${folder}/${chapterId}.data.js`;
+            const dataFileName = chapter.dataFile.endsWith('.data') ? `${chapter.dataFile}.js` : `${chapter.dataFile}.data.js`;
+            const path = `../data/${folder}/${dataFileName}`;
 
             if (modules[path]) {
                 const module = await modules[path]();
-                const exportName = chapterId.replace(/-([a-z])/g, g => g[1].toUpperCase()) + "Data";
+                // The export name is derived from the dataFile base name
+                const baseName = chapter.dataFile.split('/').pop().replace('.data', '');
+                const exportName = baseName.replace(/-([a-z])/g, g => g[1].toUpperCase()) + "Data";
                 return module[exportName];
             }
 
-            throw new Error(`Module not found: ${path}`);
+            throw new Error(`Module not found at path: ${path}`);
         } catch (e) {
             console.error("Failed to load chapter data", e);
             return null;

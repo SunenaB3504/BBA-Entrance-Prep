@@ -124,6 +124,12 @@ const SubjectDashboard = () => {
                                                     Best: {progress.bestScore}%
                                                 </span>
                                             )}
+
+                                            {chapter.questionCount && (
+                                                <span className="text-[10px] font-bold text-slate-400 border-l border-slate-200 pl-3">
+                                                    {chapter.questionCount} QUESTIONS
+                                                </span>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
