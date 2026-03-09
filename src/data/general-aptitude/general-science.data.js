@@ -5,6 +5,55 @@ export const generalScienceData = {
     subject: "General Knowledge",
     chapter: "General Science",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "physics-logic",
+                title: "1. Physics Essentials",
+                content: {
+                    coreConcept: "Physics in GAT exams focuses on everyday phenomena, Units of Measurement, and Newton's Laws. It's about understanding the 'how' behind movements and electricity.",
+                    formulaBank: "1. Motion: S = ut + 1/2at² | V² - U² = 2aS\n2. Electricity: V = IR (Ohm's Law) | P = VI\n3. Optics: 1/f = 1/v + 1/u (Mirror Formula)",
+                    logic: "The Law of Inertia (Newton's 1st Law):\nAn object won't change its motion unless a force acts on it. If you're in a car that stops suddenly, you jerk forward because your body wants to keep moving. This is 'Inertia of Motion'.",
+                    traps: "TRAP: Mass vs Weight\nMass is constant everywhere (kg). Weight changes based on gravity (Newton). On the moon, your mass is same, but your weight is 1/6th.",
+                    examples: [
+                        { q: "Unit of Power?", a: "Watt (W). (1 Watt = 1 Joule/second)" },
+                        { q: "Why do we use fuse wire?", a: "To prevent high current from damaging appliances (it has low melting point)." }
+                    ],
+                    speedSummary: "- Density of Water: 1 g/cm³.\n- Speed of Light: 3 × 10⁸ m/s."
+                }
+            },
+            {
+                id: "chemistry-logic",
+                title: "2. Chemistry in Daily Life",
+                content: {
+                    coreConcept: "Focus on the Periodic Table, pH Scale, and chemical names of common substances (like Baking Soda or Bleaching Powder).",
+                    formulaBank: "1. pH Scale: 0 (Acid) ----------- 7 (Neutral) ----------- 14 (Base)\n2. Common Names:\n- NaCl: Table Salt\n- NaHCO₃: Baking Soda\n- CaO: Quick Lime",
+                    logic: "Acid-Base Reactions:\nWhen an acid reacts with a base, it always produces Salt + Water. This is 'Neutralization'. Example: Antacid tablets (base) neutralize stomach acid.",
+                    traps: "TRAP: The pH Direction\nMoving from pH 5 to pH 4 makes the solution 10x MORE acidic. Lower number = Stronger Acid. Higher number = Stronger Base.",
+                    examples: [
+                        { q: "pH of pure water?", a: "7 (Neutral)." },
+                        { q: "Chemical name of Vitamin C?", a: "Ascorbic Acid." }
+                    ],
+                    speedSummary: "- Isotopes: Same protons, different neutrons.\n- Universal Solvent: Water."
+                }
+            },
+            {
+                id: "biology-logic",
+                title: "3. Human Biology & Nutrients",
+                content: {
+                    coreConcept: "Understanding the Human Body (Circulation, Digestion), Vitamins, and Plant processes (Photosynthesis).",
+                    formulaBank: "1. Photosynthesis: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂\n2. Blood Groups: AB+ (Universal Recipient), O- (Universal Donor)\n3. Vitamins: A (Eyes), B12 (Nerves), C (Immunity), D (Bones)",
+                    logic: "The Energy Currency (ATP):\nInside cells, mitochondria act as power plants. They break down glucose to release energy stored in molecules called ATP (Adenosine Triphosphate).",
+                    traps: "TRAP: Xylem vs Phloem\nXylem carries Water (W to X). Phloem carries Food (F to P). Don't mix them up in plant biology questions.",
+                    examples: [
+                        { q: "Hardest part of human body?", a: "Tooth Enamel." },
+                        { q: "Night blindness is caused by deficiency of?", a: "Vitamin A." }
+                    ],
+                    speedSummary: "- Largest Organ: Skin.\n- Powerhouse of Cell: Mitochondria."
+                }
+            }
+        ]
+    },
 
     flashcards: [
         { id: "gs-fc-001", term: "Newton's First Law", definition: "An object remains at rest or in uniform motion unless acted upon by an external force (Inertia)", formula: null, example: "Passenger jerking forward when a bus stops" },

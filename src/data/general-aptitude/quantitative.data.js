@@ -46,6 +46,142 @@ export const quantitativeData = {
                     ],
                     speedSummary: "- Simplify as you read.\n- Memorize squares up to 30 to spot 'Orders' quickly.\n- If the options are whole numbers, your division step should always result in a whole number."
                 }
+            },
+            {
+                id: "lcm-hcf-logic",
+                title: "3. LCM and HCF",
+                content: {
+                    coreConcept: "HCF (Highest Common Factor) is the largest number that divides two or more numbers exactly. LCM (Least Common Multiple) is the smallest number divisible by two or more numbers.\n\nKey Insight: HCF always ≤ Smaller Number | LCM always ≥ Larger Number.",
+                    formulaBank: "1. The Golden Rule: Product of two numbers = LCM × HCF\n2. Fractions:\n   - HCF of Fractions = HCF of Numerators / LCM of Denominators\n   - LCM of Fractions = LCM of Numerators / HCF of Denominators",
+                    logic: "Step-by-Step Problem Solving:\n1. If a problem says 'divides exactly', look for HCF.\n2. If a problem says 'divisible by', look for LCM.\n3. For bells ringing or lights flashing at intervals, always calculate LCM.",
+                    traps: "TRAP: The Formula Misuse\nThe rule (LCM × HCF = Product) ONLY works for TWO numbers. Do not apply it to three or more numbers directly.",
+                    examples: [
+                        { q: "HCF of 24 and 36?", a: "12. (Smallest divisor set is {2, 3, 4, 6, 12}. 12 is the largest.)" },
+                        { q: "LCM of 12, 15, and 20?", a: "60. (First number divisible by all three.)" },
+                        { q: "LCM is 60, HCF is 5, one number is 15. Find the other.", a: "20. (60 × 5 = 15 × X → 300 = 15X → X = 20)" }
+                    ],
+                    speedSummary: "- To find HCF quickly, check the difference between the numbers.\n- To find LCM quickly, take the largest number and check its multiples."
+                }
+            },
+            {
+                id: "age-problems-logic",
+                title: "4. Age Problems",
+                content: {
+                    coreConcept: "Age problems are simultaneous equations in disguise. The key is to keep the variable 'x' for the current age and adjust it for 'n years ago' (x - n) or 'n years hence' (x + n).",
+                    formulaBank: "1. Past: (x - n)\n2. Future: (x + n)\n3. Ratio of ages: If A:B is 3:4, ages are 3k and 4k.",
+                    logic: "Step-by-Step Strategy:\n1. Assign 'x' to the person whose age is referred to most.\n2. Create equations for both time points mentioned.\n3. Remember: The difference between two people's ages NEVER changes.",
+                    traps: "TRAP: Forgetting to add years to BOTH sides\nIf you move 5 years into the future, you must add 5 to BOTH Father and Son. Students often add it to just one.",
+                    examples: [
+                        { q: "Father is 3x more than son. In 5 years, he is 2x. Age now?", a: "Father=45, Son=15. (Initially F=3S. In 5 yrs: F+5=2(S+5). Solve 3S+5=2S+10 → S=5, F=15? Wait, 3x more means F=4S. Standard phrasing: F=3S.)" },
+                        { q: "A:B is 4:5. Sum is 81. Find B.", a: "45. (4k+5k=81 → 9k=81 → k=9. 5k=45.)" }
+                    ],
+                    speedSummary: "- Use options to work backwards if the equations look complex.\n- Always check if the question asks for age 'now' or 'in N years'."
+                }
+            },
+            {
+                id: "ratio-proportion-logic",
+                title: "5. Ratio & Proportion",
+                content: {
+                    coreConcept: "A ratio is a comparison of two quantities by division. Proportion means two ratios are equal (A/B = C/D).",
+                    formulaBank: "1. Compound Ratio: (a/b) × (c/d)\n2. Mean Proportional of a and b: √(ab)\n3. Third Proportional of a and b: b²/a",
+                    logic: "The Bridge Concept:\nTo combine A:B and B:C, make the 'B' term equal in both ratios by multiplying appropriate factors. Example: A:B=2:3, B:C=4:5 → Multiply 1st by 4 and 2nd by 3 → A:B:C = 8:12:15.",
+                    traps: "TRAP: Units must be the same\nYou cannot find the ratio of 2kg to 500g directly. Convert both to grams (2000:500 = 4:1).",
+                    examples: [
+                        { q: "A:B = 2:3, B:C = 4:5. Find A:B:C.", a: "8:12:15. (Multiply 2:3 by 4 and 4:5 by 3.)" },
+                        { q: "Divide ₹1200 in 3:5:4.", a: "300, 500, 400. (Total parts = 12. 1 part = 100.)" }
+                    ],
+                    speedSummary: "- 1:2 is half. 2:3 is 40:60. Use visualized fractions for speed.\n- Cross-multiply for proportions: Ad = Bc."
+                }
+            },
+            {
+                id: "averages-logic",
+                title: "6. Averages & Weighted Averages",
+                content: {
+                    coreConcept: "Average (Mean) is the sum of observations divided by the number of observations. Weighted average is used when groups of different sizes are combined.",
+                    formulaBank: "1. Basic: Sum / n\n2. Weighted Avg: (n1*A1 + n2*A2) / (n1 + n2)\n3. Sum = Average × n",
+                    logic: "The Deviation Method:\nInstead of summing large numbers, pick a 'round' number as your assumed average and find the net deviation (+ or -). Divide the net deviation by 'n' and add to the assumed average.",
+                    traps: "TRAP: Average Speed\nIf a car goes at 40km/h and returns at 60km/h, the average speed IS NOT 50km/h. Use 2xy/(x+y) = 2*40*60/100 = 48km/h.",
+                    examples: [
+                        { q: "Avg of first 50 natural numbers?", a: "25.5. ( (n+1)/2 = 51/2 )" },
+                        { q: "10 boys (avg 50) + 20 girls (avg 60). Find combined avg.", a: "56.67. ( (10*50 + 20*60) / 30 = 1700/30 )" }
+                    ],
+                    speedSummary: "- Use balanced deviations for large numbers.\n- Average speed for equal distance = Harmonic Mean: 2xy/(x+y)."
+                }
+            },
+            {
+                id: "interest-logic",
+                title: "7. Simple & Compound Interest",
+                content: {
+                    coreConcept: "Simple Interest (SI) is calculated only on the principal. Compound Interest (CI) is interest on interest.",
+                    formulaBank: "1. SI = (P × R × T) / 100\n2. CI Amount = P(1 + R/100)^T\n3. Difference for 2 years: P(R/100)²",
+                    logic: "Step-by-Step CI Calculation:\nInstead of the complex formula, use the 'Tree Method' or successive percentages. Example: 10% for 2 years is equivalent to 10 + 10 + (10*10/100) = 21%.",
+                    traps: "TRAP: Reading the question 'Amount' vs 'Interest'\nIf the question asks for 'Amount', you must add Interest + Principal. Students often provide only the interest.",
+                    examples: [
+                        { q: "SI on ₹1000 at 10% for 2 years?", a: "₹200. (1000 * 10 * 2 / 100)" },
+                        { q: "Difference between CI and SI on ₹1000 at 10% for 2 yrs?", a: "₹10. (SI=200, CI=210. Diff = 1000 * (10/100)² = 10)" }
+                    ],
+                    speedSummary: "- 10% CI for 3 years = 33.1%.\n- CI always > SI (except for the 1st year)."
+                }
+            },
+            {
+                id: "profit-loss-logic",
+                title: "8. Profit, Loss & Discount",
+                content: {
+                    coreConcept: "Profit and Loss are always calculated on the Cost Price (CP). Discount is always calculated on the Marked Price (MP).",
+                    formulaBank: "1. Profit = SP - CP | Loss = CP - SP\n2. Profit % = (Profit/CP) × 100\n3. SP = MP × (1 - d/100)",
+                    logic: "The Multiplying Factor:\n- 20% Profit → SP = 1.2 × CP\n- 20% Loss → SP = 0.8 × CP\n- 30% Discount → SP = 0.7 × MP",
+                    traps: "TRAP: Successive Discounts\n50% + 50% discount IS NOT 100%. If MP = 100, 1st discount makes it 50, 2nd discount takes 50% of 50 = 25. Final SP = 25.",
+                    examples: [
+                        { q: "Item bought for ₹400, sold for ₹460. Profit %?", a: "15%. (60/400 * 100 = 6/40 * 100 = 15%)" },
+                        { q: "Successive 10% and 20% discount on ₹1000?", a: "₹720. (1000 * 0.9 * 0.8 = 720)" }
+                    ],
+                    speedSummary: "- Use 100 as base CP/MP if no values are given.\n- SP = CP × [(100+P%)/100]."
+                }
+            },
+            {
+                id: "time-work-logic",
+                title: "9. Time & Work / Pipes & Cisterns",
+                content: {
+                    coreConcept: "Work done is inversely proportional to time. If A can do a work in 'n' days, then A's 1-day work = 1/n.",
+                    formulaBank: "1. Combined Work: 1/T = 1/A + 1/B\n2. Shortcut for 2 people: T = (A×B) / (A+B)\n3. Efficiency: If A is 2x faster, A takes half the time.",
+                    logic: "The LCM Method (Pro):\nAssume total work is the LCM of the days taken. Calculate daily efficiency of each person. Total Days = Total Work / Total Efficiency.",
+                    traps: "TRAP: Pipes & Cisterns (Inlet vs Outlet)\nInlet pipes add work (+), while outlet/leak pipes subtract work (-). Total 1-hour work = 1/Inlet - 1/Outlet.",
+                    examples: [
+                        { q: "A in 10 days, B in 15 days. Together?", a: "6 days. ( (10*15)/(10+15) = 150/25 )" },
+                        { q: "A is 3x faster than B. Together they take 12 days. A alone?", a: "16 days. (B takes 3t, A takes t. 1/t + 1/3t = 1/12 → 4/3t = 1/12 → 3t=48 → t=16.)" }
+                    ],
+                    speedSummary: "- Use LCM for any problem involving 3 or more people.\n- Efficiency is the inverse of time."
+                }
+            },
+            {
+                id: "speed-distance-logic",
+                title: "10. Time, Speed & Distance / Trains",
+                content: {
+                    coreConcept: "Distance = Speed × Time. Relative speed is used when two objects move simultaneously.",
+                    formulaBank: "1. Conversion: 1 km/h = 5/18 m/s\n2. Relative Speed: (S1 + S2) for opposite, (S1 - S2) for same direction.\n3. Average Speed (Equal Dist): 2xy/(x+y)",
+                    logic: "Train Logic:\n- Crossing a pole: Distance = Length of Train.\n- Crossing a tunnel/bridge: Distance = Length of Train + Length of Tunnel.\nRelative speed applies if the second object is also moving.",
+                    traps: "TRAP: Unit Mismatch\nIf speed is in km/h and time is in seconds, ALWAYS convert speed to m/s first (multiply by 5/18).",
+                    examples: [
+                        { q: "100m train at 72km/h crosses a pole. Time?", a: "5 sec. (Speed = 72 * 5/18 = 20 m/s. Time = 100/20.)" },
+                        { q: "Two trains at 40 & 50 km/h toward each other. Distance 450km. Time?", a: "5 hours. (Relative = 90. Time = 450/90.)" }
+                    ],
+                    speedSummary: "- 18 km/h = 5 m/s. 36 = 10. 54 = 15. 72 = 20. 90 = 25. (Memorize this for speed!)"
+                }
+            },
+            {
+                id: "mensuration-logic",
+                title: "11. Geometry & Mensuration",
+                content: {
+                    coreConcept: "Mensuration involves calculating Area, Perimeter, and Volume of geometric shapes.",
+                    formulaBank: "1. Square: Area = a² = d²/2 | Perimeter = 4a\n2. Rectangle: Area = l×b | Perimeter = 2(l+b)\n3. Cylinder: Vol = πr²h | CSA = 2πrh",
+                    logic: "Diagonal Logic (CUET Signature):\nOften CUET asks for square area using the diagonal 'd'. Always remember Area = d² / 2. This avoids the step of finding the side 'a'.",
+                    traps: "TRAP: Radius vs Diameter\nAlways check if the question gives diameter. Divide by 2 to get 'r' before using πr²h.",
+                    examples: [
+                        { q: "Square diagonal is 10cm. Area?", a: "50 sq.cm. (10²/2)" },
+                        { q: "Cylinder r=7, h=10. Volume?", a: "1540. (22/7 * 7 * 7 * 10)" }
+                    ],
+                    speedSummary: "- Use π = 22/7 for clean cancellations.\n- Square side to diagonal ratio is 1 : √2."
+                }
             }
         ]
     },

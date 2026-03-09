@@ -5,6 +5,55 @@ export const generalKnowledgeData = {
     subject: "General Knowledge",
     chapter: "General Knowledge & Static Awareness",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "indian-polity-logic",
+                title: "1. Indian Polity & Constitution",
+                content: {
+                    coreConcept: "The Constitution of India is the supreme law. Competitive exams focus on key Articles, Constitutional Bodies (ECI, CAG), and the hierarchy of power.",
+                    formulaBank: "1. Key Articles:\n- Art 324: Election Commission\n- Art 148: CAG (Audit General)\n- Art 72: Pardoning power of President\n- Art 368: Amendment power\n2. Constitutional Bodies: ECI, UPSC, CAG, Finance Commission.",
+                    logic: "Hierarchy of Governance:\n1. Union (President, PM, Parliament)\n2. State (Governor, CM, Assembly)\n3. Local (Panchayats, Municipalities).",
+                    traps: "TRAP: Real vs Nominal Head\nPresident is the 'De-jure' (nominal) head, while the PM is the 'De-facto' (real) head. Students often confuse 'Head of State' (President) with 'Head of Government' (PM).",
+                    examples: [
+                        { q: "Who appoints the Chief Election Commissioner?", a: "The President of India." },
+                        { q: "Guardian of the public purse?", a: "CAG (Comptroller and Auditor General)." }
+                    ],
+                    speedSummary: "- Part III: Fundamental Rights.\n- Part IV: DPSP.\n- Part IVA: Fundamental Duties."
+                }
+            },
+            {
+                id: "indian-history-logic",
+                title: "2. Modern Indian History",
+                content: {
+                    coreConcept: "Focus on the Freedom Struggle from 1857 to 1947, primarily the role of the INC and Mahatma Gandhi.",
+                    formulaBank: "Movement Chronology:\n- 1885: INC Foundation (A.O. Hume)\n- 1920: Non-Cooperation (NCM)\n- 1930: Civil Disobedience (Dandi March)\n- 1942: Quit India Movement",
+                    logic: "The Nationalist Evolution:\n1. Moderates (1885-1905): Petitions and prayers.\n2. Extremists (1905-1919): Swadeshi and Boycott.\n3. Gandhian Era (1919-1947): Satyagraha and Non-violence.",
+                    traps: "TRAP: First President vs Founder of INC\nFounder: A.O. Hume (Englishman)\nFirst President: W.C. Bonnerjee (Indian).",
+                    examples: [
+                        { q: "Where was the first session of INC held?", a: "Mumbai (Gokuldas Tejpal Sanskrit College)." },
+                        { q: "Who started the Dandi March?", a: "Mahatma Gandhi (against the Salt Tax)." }
+                    ],
+                    speedSummary: "- Do or Die: 1942 (Quit India).\n- Swaraj is my birthright: Bal Gangadhar Tilak."
+                }
+            },
+            {
+                id: "geography-logic",
+                title: "3. Geography & Static Awareness",
+                content: {
+                    coreConcept: "National geography focusing on physical landmarks (Rivers, Dams, Passes) and famous city nicknames.",
+                    formulaBank: "1. Rivers & Dams:\n- Sutlej: Bhakra Nangal\n- Mahanadi: Hirakud\n- Bhagirathi: Tehri (Highest)\n2. Mountain Passes:\n- Sikkim: Nathu La\n- HP: Rohtang Pass",
+                    logic: "City Nicknames (Visual Mnemonics):\n- Pink City: Jaipur (Architectural color)\n- Silicon Valley: Bengaluru (IT Hub)\n- City of Lakes: Udaipur\n- Twin Cities: Hyderabad & Secunderabad.",
+                    traps: "TRAP: Highest vs Longest Dam\nTehri Dam (Uttarakhand) is the HIGHEST. Hirakud Dam (Odisha) is the LONGEST. Don't swap them.",
+                    examples: [
+                        { q: "Which river is known as 'Sorrow of Bihar'?", a: "Kosi River (due to frequent floods)." },
+                        { q: "Silicon Valley of India?", a: "Bengaluru." }
+                    ],
+                    speedSummary: "- 82.5° E: Standard Meridian of India.\n- Tropic of Cancer passes through 8 states."
+                }
+            }
+        ]
+    },
 
     flashcards: [
         { id: "gk-fc-001", term: "Article 324", definition: "Empowers the Election Commission of India to direct and control elections", formula: null, example: "Elections to Parliament and State Legislatures" },

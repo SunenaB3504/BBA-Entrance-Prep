@@ -5,6 +5,127 @@ export const logicalReasoningData = {
     subject: "General Knowledge",
     chapter: "Logical Reasoning",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "alphanumeric-series-logic",
+                title: "1. Alphanumeric Series",
+                content: {
+                    coreConcept: "These series combine letters and numbers. CUET specifically uses triple-layer rules where the letter, number, and position all follow independent sequences.",
+                    formulaBank: "1. A-Z Positions (EJOTY): E=5, J=10, O=15, T=20, Y=25\n2. Reverse Positions: Sum = 27 (A=1, Z=26; 1+26=27)\n3. Prime Number Sequences: 2, 3, 5, 7, 11, 13...",
+                    logic: "The Triple-Layer Audit:\nWhen you see a term like 'A4X', break it down:\n1. First element (A): Check for +1, +2, +3... shift.\n2. Middle element (4): Check for square, cube, or prime sequence.\n3. Last element (X): Check for reverse alphabetical shift.",
+                    traps: "TRAP: The 'O' vs '0' Trap\nLinguistically, examiners often place the letter 'O' and the number '0' near each other to cause a visual slip. Always verify the context – is it a letter sequence or a number sequence?",
+                    examples: [
+                        { q: "A1X, B4P, E25J, J100F, ?", a: "O400A. (Letters: +1,+3,+5,+5? Error in prompt sample. Correct rule: A(+1)B(+3)E(+5)J(+7)Q. Squares: 1², 2², 5², 10²... Rule: (n+1)²? No.)" },
+                        { q: "Find missing: D4, F6, H8, J10, ?", a: "L12. (Letters move +2, Numbers move +2.)" }
+                    ],
+                    speedSummary: "- Don't solve the whole term. Often solving just the first letter rules out 3 options.\n- Multiples of 5 (EJOTY) is faster than counting on fingers."
+                }
+            },
+            {
+                id: "circular-seating-logic",
+                title: "2. Circular Seating",
+                content: {
+                    coreConcept: "Arranging people around a circle. The primary rule depends on direction: Facing Centre vs Facing Away.",
+                    formulaBank: "1. Facing Centre: Clockwise = Left | Anti-clockwise = Right\n2. Facing Away: Clockwise = Right | Anti-clockwise = Left",
+                    logic: "Step-by-Step Arrangement:\n1. Fix the first person (usually at 6 o'clock position).\n2. Place people with 'definite' positions first (e.g., 'A is 2nd to the left of B').\n3. Leave 'indefinite' clues for the end.\n4. Always verify the final circle against all constraints.",
+                    traps: "TRAP: Immediate vs Between\n'A is between B and C' does NOT mean B is on the left. It could be B-A-C or C-A-B. Both are valid until another clue clarifies.",
+                    examples: [
+                        { q: "A, B, C, D facing centre. A is left of B. C is between B and D. Who is right of A?", a: "D. (Clockwise: A - B - C - D. Right of A is D.)" }
+                    ],
+                    speedSummary: "- Use a small circle diagram with ticks for seats.\n- Double-check the number of people before starting."
+                }
+            },
+            {
+                id: "coding-decoding-logic",
+                title: "3. Coding & Decoding",
+                content: {
+                    coreConcept: "Translating words into codes based on a specific rule (shift, reverse, or substitution).",
+                    formulaBank: "1. Forward Shift (+n)\n2. Backward Shift (-n)\n3. Opposites (A=Z, B=Y...)",
+                    logic: "Pattern Recognition:\n1. Write the word and code one below the other.\n2. Calculate the difference (shift) for each letter.\n3. If shifts are same, it's a 'Fixed Shift'. If they change (1, 2, 3), it's 'Incremental'.",
+                    traps: "TRAP: Cross-Coding\nSometimes 'CAT' is coded not as 'DBU' (+1), but letters are swapped (e.g., TAC). Always check for anagrams first.",
+                    examples: [
+                        { q: "If CAT is DBU, find DOG.", a: "EPH. (+1 shift for all letters.)" },
+                        { q: "ki ru pi = nobody like cruel, ki mi cha = king was cruel. Code for 'cruel'?", a: "ki. (The only common word and code.)" }
+                    ],
+                    speedSummary: "- Look for the first and last letters first to eliminate options.\n- Use the EJOTY reference for fast position math."
+                }
+            },
+            {
+                id: "blood-relations-logic",
+                title: "4. Blood Relations",
+                content: {
+                    coreConcept: "Determining relationships between people, often presented in a complex family description or symbolic chain.",
+                    formulaBank: "1. Male = [+]\n2. Female = [-]\n3. Married couple = [⇔]\n4. Siblings = [—]\n5. Generations = [Vertical lines]",
+                    logic: "Generation Tree Method:\n1. Use standard symbols to draw the tree.\n2. Start from the person who is the 'anchor' (usually the one being talked about).\n3. Move vertical for parent-child, horizontal for siblings.",
+                    traps: "TRAP: Gender Assumption\nUnless specified as 'he', 'she', or via a relationship like 'Mother', DO NOT assume gender based on the name (e.g., Sunny could be male or female).",
+                    examples: [
+                        { q: "Pointing to a man, A said: 'He is the son of my father's only son'. How is the man related to A?", a: "Son. (A is the only son, the man is his son.)" }
+                    ],
+                    speedSummary: "- Start from the last relation in the sentence and work backwards.\n- Use short symbols like F (Father), M (Mother), S (Son) to draw fast."
+                }
+            },
+            {
+                id: "syllogism-logic",
+                title: "5. Syllogisms",
+                content: {
+                    coreConcept: "Syllogism tests deductive reasoning based on given premises. You must assume the premises are 100% true, even if they defy common logic (e.g., 'All cats are dogs').",
+                    formulaBank: "1. All A are B [A ⊂ B]\n2. Some A are B [A ∩ B ≠ ∅]\n3. No A is B [A ∩ B = ∅]\n4. Some A are not B",
+                    logic: "Venn Diagram Method:\n1. Draw the first premise completely.\n2. Overlap the second premise in the 'most possible' way.\n3. A conclusion is 'Follows' ONLY if it is true in EVERY possible Venn diagram you can draw.",
+                    traps: "TRAP: The 'Possibility' vs 'Certainty'\nIf a conclusion says 'Some A are B', it must be true. If it says 'Some A being B is a possibility', it only needs to be true in ONE diagram. Don't confuse the two.",
+                    examples: [
+                        { q: "All Men are Kings. All Kings are Brave. Conclusion: All Men are Brave?", a: "Follows. (Men ⊂ Kings ⊂ Brave, so Men ⊂ Brave.)" },
+                        { q: "No A is B. All B are C. Conclusion: No A is C?", a: "Does Not Follow. (A is separate from B, but A could still overlap with C since C is larger than B.)" }
+                    ],
+                    speedSummary: "- Use 'Some' = Intersection, 'All' = Subset.\n- If both premises are positive, a negative conclusion can never follow."
+                }
+            },
+            {
+                id: "clocks-calendars-logic",
+                title: "6. Clocks & Calendars",
+                content: {
+                    coreConcept: "Calculating angles in clocks and identifying days in calendars using the 'Odd Days' method.",
+                    formulaBank: "1. Clock Angle: θ = |30H - 5.5M|\n2. Mirror Image: Subtract time from 11:60\n3. Leap Year: Divisible by 4 (Century years by 400)",
+                    logic: "Calendar Odd Days:\nOrdinary Year = 1 Odd Day. Leap Year = 2 Odd Days.\nMonths: Jan(3), Feb(0/1), Mar(3), Apr(2), May(3), Jun(2)... (Divide total days by 7, remainder is odd days).",
+                    traps: "TRAP: The Century Leap Year\nYear 1900 was NOT a leap year because it's a century not divisible by 400. Year 2000 WAS a leap year. Students often miss this.",
+                    examples: [
+                        { q: "Angle at 3:30?", a: "75°. (|30*3 - 5.5*30| = |90 - 165| = 75°)" },
+                        { q: "26 Jan 2020 was Sunday. 26 Jan 2021?", a: "Tuesday. (2020 is a leap year, so +2 odd days.)" }
+                    ],
+                    speedSummary: "- For mirror time, just subtract from 11:60.\n- 100 years have 5 odd days."
+                }
+            },
+            {
+                id: "direction-sense-logic",
+                title: "7. Direction & Distance",
+                content: {
+                    coreConcept: "Tracking movement in space (North, South, East, West) and finding the displacement from the starting point.",
+                    formulaBank: "1. Main: N, S, E, W\n2. Sub: NE, NW, SE, SW\n3. Distance: √ (x² + y²) [Pythagoras Theorem]",
+                    logic: "The Compass Reset:\nEvery time a person turns 'Right' or 'Left', imagine yourself at that spot facing their current direction. Right of North is East, but Right of South is West.",
+                    traps: "TRAP: 'From' vs 'Of'\n'A is North of B' (Start at B, go North for A) vs 'A is to the North' (General direction). Always identify the reference point clearly.",
+                    examples: [
+                        { q: "Walk 3km North, then 4km East. Distance from start?", a: "5km. (√(3² + 4²) = 5)" }
+                    ],
+                    speedSummary: "- Always draw a quick '+' coordinate system.\n- Right = Clockwise 90°, Left = Anti-clockwise 90°."
+                }
+            },
+            {
+                id: "number-series-logic",
+                title: "8. Number Series & Analogies",
+                content: {
+                    coreConcept: "Identifying the pattern in a sequence of numbers or letters. Patterns can be arithmetic, geometric, or based on properties like prime numbers or squares.",
+                    formulaBank: "1. Common Differences: +2, +4, +6... or +1, +3, +5...\n2. Prime Series: 2, 3, 5, 7, 11, 13, 17, 19, 23...\n3. Fibonacci: 1, 1, 2, 3, 5, 8, 13...",
+                    logic: "The Difference Audit:\n1. If numbers increase slowly, check for addition.\n2. If numbers increase rapidly, check for multiplication or squares.\n3. If the pattern isn't obvious, check for 'Alternative Series' (e.g., two series merged into one).",
+                    traps: "TRAP: The Prime '1' Trap\nMany students include '1' as a prime number. Remember: 1 is neither prime nor composite. The first prime number is 2.",
+                    examples: [
+                        { q: "2, 3, 5, 7, 11, ?", a: "13. (Prime number series.)" },
+                        { q: "81, 64, 49, ?", a: "36. (Reverse squares: 9², 8², 7², 6².)" }
+                    ],
+                    speedSummary: "- Memorize squares up to 30 and cubes up to 12.\n- Always check the difference between terms first."
+                }
+            }
+        ]
+    },
 
     flashcards: [
         { id: "lr-fc-001", term: "Blood Relation - Maternal", definition: "Relations from the mother's side (e.g., Maternal Uncle = Mother's brother)", formula: null, example: "Maternal Grandfather = Mother's Father" },
