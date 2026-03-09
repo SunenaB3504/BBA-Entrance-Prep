@@ -96,6 +96,19 @@ export const SUBJECTS = [
       { id: "static-gk", name: "Static GK & Economy", dataFile: "static-gk.data" },
       { id: "computer-basics", name: "Computer Basics", dataFile: "computer-basics.data" }
     ]
+  },
+  {
+    id: "general-aptitude",
+    name: "General Aptitude (GAT)",
+    icon: "🎯",
+    color: "#f59e0b",
+    examTags: ["CUET", "MH-CET"],
+    chapters: [
+      { id: "quantitative", name: "Quantitative Ability", dataFile: "quantitative.data", questionCount: 62 },
+      { id: "logical-reasoning", name: "Logical Reasoning", dataFile: "logical-reasoning.data", questionCount: 75 },
+      { id: "general-knowledge", name: "General Knowledge", dataFile: "general-knowledge.data", questionCount: 75 },
+      { id: "general-science", name: "General Science", dataFile: "general-science.data", questionCount: 75 }
+    ]
   }
 ];
 
