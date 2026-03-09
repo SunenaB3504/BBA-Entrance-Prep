@@ -5,26 +5,74 @@ const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
     const progressHook = useProgress();
-    const { progress } = progressHook;
+    const { progress, updateProgress } = progressHook;
+
+    // Phase 7 States
+    const [mockResults, setMockResults] = React.useState([]);
+    const [badges, setBadges] = React.useState([]);
+    const [streak, setStreak] = React.useState(0);
+    const [lastActiveDate, setLastActiveDate] = React.useState(null);
 
     // Persistence: Load from localStorage on mount
     useEffect(() => {
-        const saved = localStorage.getItem('commerce_prep_pro_progress');
+        const saved = localStorage.getItem('commerce_prep_pro_v1');
         if (saved) {
             try {
                 const parsed = JSON.parse(saved);
-                // We'd ideally have a setProgress method in useProgress to hydrate this
-                // For now, let's assume useProgress manages its own persistence or add it here
+                if (parsed.mockResults) setMockResults(parsed.mockResults);
+                if (parsed.badges) setBadges(parsed.badges);
+                if (parsed.streak) setStreak(parsed.streak);
+                if (parsed.lastActiveDate) setLastActiveDate(parsed.lastActiveDate);
             } catch (e) {
-                console.error("Failed to parse saved progress", e);
+                console.error("Failed to parse saved data", e);
             }
         }
+        updateStreak();
     }, []);
 
     // Persistence: Save to localStorage on change
     useEffect(() => {
-        localStorage.setItem('commerce_prep_pro_progress', JSON.stringify(progress));
-    }, [progress]);
+        const data = {
+            progress,
+            mockResults,
+            badges,
+            streak,
+            lastActiveDate
+        };
+        localStorage.setItem('commerce_prep_pro_v1', JSON.stringify(data));
+    }, [progress, mockResults, badges, streak, lastActiveDate]);
+
+    const updateStreak = () => {
+        const today = new Date().toDateString();
+        if (lastActiveDate === today) return;
+
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+
+        if (lastActiveDate === yesterday.toDateString()) {
+            setStreak(prev => prev + 1);
+        } else if (!lastActiveDate) {
+            setStreak(1);
+        } else {
+            setStreak(1); // Reset if missed a day
+        }
+        setLastActiveDate(today);
+    };
+
+    const recordMockResult = (result) => {
+        setMockResults(prev => [result, ...prev].slice(0, 50)); // Keep last 50
+        checkBadgeUnlocks(result);
+    };
+
+    const checkBadgeUnlocks = (newResult) => {
+        const newBadges = [];
+        if (streak >= 7 && !badges.includes('7-day-streak')) newBadges.push('7-day-streak');
+        if (newResult.score >= 180 && !badges.includes('cuet-expert')) newBadges.push('cuet-expert');
+
+        if (newBadges.length > 0) {
+            setBadges(prev => [...new Set([...prev, ...newBadges])]);
+        }
+    };
 
     const loadChapterData = async (subjectId, chapterId) => {
         try {
@@ -35,7 +83,7 @@ export const AppProvider = ({ children }) => {
             if (!chapter) throw new Error(`Chapter not found: ${subjectId}/${chapterId}`);
 
             // Maps subject IDs to their data directory names
-            const folder = subjectId; // We've normalized these to match
+            const folder = subjectId;
 
             // Use import.meta.glob for better Vite compatibility
             const modules = import.meta.glob('../data/**/*.data.js');
@@ -44,7 +92,6 @@ export const AppProvider = ({ children }) => {
 
             if (modules[path]) {
                 const module = await modules[path]();
-                // The export name is derived from the dataFile base name
                 const baseName = chapter.dataFile.split('/').pop().replace('.data', '');
                 const exportName = baseName.replace(/-([a-z])/g, g => g[1].toUpperCase()) + "Data";
                 return module[exportName];
@@ -59,6 +106,10 @@ export const AppProvider = ({ children }) => {
 
     const value = {
         ...progressHook,
+        mockResults,
+        badges,
+        streak,
+        recordMockResult,
         loadChapterData
     };
 

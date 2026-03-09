@@ -3,8 +3,13 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import SubjectDashboard from './pages/SubjectDashboard.jsx';
 import QuizPage from './pages/QuizPage.jsx';
+import MockDashboard from './pages/MockDashboard.jsx';
+import MockExamSimulator from './pages/MockExamSimulator.jsx';
+import { useAppContext } from './store/AppContext.jsx';
 
 const App = () => {
+    const { streak } = useAppContext();
+
     return (
         <div className="min-h-screen flex flex-col">
             {/* Navigation */}
@@ -19,12 +24,12 @@ const App = () => {
 
                     <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
                         <Link to="/" className="hover:text-blue-600">Home</Link>
-                        <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        <Link to="/mocks" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
                             Mock Tests
-                        </button>
-                        <div className="flex items-center gap-2">
+                        </Link>
+                        <div className="flex items-center gap-2 px-3 py-1 bg-orange-50 text-orange-700 rounded-full border border-orange-100">
                             <span className="text-lg">🔥</span>
-                            <span>Streak: 0</span>
+                            <span className="font-bold">{streak} Day Streak</span>
                         </div>
                     </div>
                 </div>
@@ -36,6 +41,8 @@ const App = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/subject/:subjectId" element={<SubjectDashboard />} />
                     <Route path="/quiz/:subjectId/:chapterId" element={<QuizPage />} />
+                    <Route path="/mocks" element={<MockDashboard />} />
+                    <Route path="/mock-exam/:type" element={<MockExamSimulator />} />
                 </Routes>
             </main>
 
