@@ -105,13 +105,64 @@ export const vocabularyAdvancedData = {
             explanation: "A 'Hedonist' is someone who prioritizes pleasure and self-gratification.",
             examTags: ["CUET"]
         },
-        /* TOPIC: Analogies / Word Relationships */
+        /* TOPIC: Analogies / Word Relationships (Expanded) */
         {
             id: "advv-q-010", type: "mcq", difficulty: "medium",
             question: "Find the word to complete the analogy: 'Lighthouse : Sailor :: ________ : Pilot'",
             options: ["Cockpit", "Beacon", "Runway", "Compass"],
             correct: 1,
             explanation: "A lighthouse guides a sailor; a beacon guides a pilot.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "advv-q-011", type: "mcq", difficulty: "hard",
+            question: "Complete the analogy: 'Incite : Quell :: ________ : Forgive'",
+            options: ["Exonerate", "Condone", "Vindicate", "Condemn"],
+            correct: 3,
+            explanation: "'Incite' and 'Quell' are antonyms. The antonym of 'Forgive' is 'Condemn'.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "advv-q-012", type: "mcq", difficulty: "hard",
+            question: "Complete the analogy: 'Diligence : Success :: ________ : Failure'",
+            options: ["Perseverance", "Negligence", "Endeavor", "Assiduity"],
+            correct: 1,
+            explanation: "Diligence leads to success (cause-effect). Negligence leads to failure.",
+            examTags: ["CUET"]
+        },
+        /* TOPIC: Foreign Words and Phrases */
+        {
+            id: "advv-q-013", type: "mcq", difficulty: "hard",
+            question: "What does the Latin phrase 'Status Quo' mean?",
+            options: [
+                "A sudden political change.",
+                "The existing state of affairs.",
+                "A legal document.",
+                "A formal apology."
+            ],
+            correct: 1,
+            explanation: "'Status Quo' refers to the current social or political situation.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "advv-q-014", type: "mcq", difficulty: "hard",
+            question: "The phrase 'Alma Mater' refers to:",
+            options: [
+                "A person's birthplace.",
+                "The school or university one graduated from.",
+                "A close friend or soulmate.",
+                "A professional mentor."
+            ],
+            correct: 1,
+            explanation: "'Alma Mater' (Latin for 'nourishing mother') refers to the institution one attended.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "advv-q-015", type: "mcq", difficulty: "hard",
+            question: "What does 'Bona fide' mean?",
+            options: ["In bad faith", "In good faith; genuine", "By way of example", "For the time being"],
+            correct: 1,
+            explanation: "'Bona fide' means sincere, genuine, or in good faith.",
             examTags: ["CUET"]
         }
     ]
