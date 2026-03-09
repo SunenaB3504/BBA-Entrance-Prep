@@ -6,6 +6,49 @@ export const quantitativeData = {
     subject: "General Knowledge", // Mapping to GAT/GK section per subjects.config.js
     chapter: "Quantitative Aptitude",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "percentage-basics",
+                title: "1. Percentage Basics",
+                content: {
+                    coreConcept: "Percentage literally means 'per hundred'. It is a way of expressing a number as a fraction of 100. In competitive exams (CUET & MAH-CET), percentages form the foundation for Profit & Loss, Data Interpretation, and Simple/Compound Interest.\n\nKey mindset: Percentage is just a comparison tool where the base is always normalized to 100.",
+                    formulaBank: "1. Common Fraction-Percentage Equivalents:\n1/2 = 50%\n1/3 = 33.33%\n1/4 = 25%\n1/5 = 20%\n1/6 = 16.66%\n1/8 = 12.5%\n1/9 = 11.11%\n1/11 = 9.09%\n\n2. Basic Formulas:\n- % Change = (Difference / Original Value) × 100\n- A is x% of B: (A / B) × 100\n- Net Successive Change = [a + b + (ab/100)]%",
+                    logic: "1. Multiplying Factors (The Pro Method):\n- 10% increase → Multiply by 1.1\n- 25% increase → Multiply by 1.25\n- 10% decrease → Multiply by 0.9\n- 20% decrease → Multiply by 0.8\n\n2. Base Logic:\nWhenever calculating % change, the denominator is ALWAYS the 'Original' or 'Initial' value. If you use the final value as the base, your answer will be wrong.",
+                    traps: "TRAP 1: The Asymmetry Trap\nIf A is 25% more than B, students often assume B is 25% less than A. THIS IS FALSE.\n- If B = 100, A = 125.\n- B is 25 less than A (125).\n- % less = (25/125) × 100 = 20%.\n\nTRAP 2: Successive Addition\n10% discount followed by 10% discount is NOT 20% discount. It is 19% (100 -> 90 -> 81).",
+                    examples: [
+                        { q: "What is 15% of 80?", a: "12. (10% is 8, 5% is 4. Total = 12)" },
+                        { q: "Salary increases from ₹20,000 to ₹25,000. Find % increase.", a: "25%. (Increase is 5,000. 5,000/20,000 = 1/4 = 25%)" },
+                        { q: "If 20% of a number is 40, what is the number?", a: "200. (1/5 of x = 40, so x = 40 * 5 = 200)" },
+                        { q: "Total discount for successive 10% and 10%?", a: "19%. (100 -> 90 -> 81. Total discount = 19)" },
+                        { q: "A is 25% more than B. B is what % less than A?", a: "20%. (1/4 more means 1/5 less)" },
+                        { q: "Express 3/8 as a percentage.", a: "37.5%. (1/8 = 12.5%, so 3/8 = 3 * 12.5 = 37.5%)" },
+                        { q: "What is 20% of 50% of 200?", a: "20. (50% of 200 = 100. 20% of 100 = 20)" },
+                        { q: "Score 450/600. Find percentage.", a: "75%. (450/600 = 3/4 = 75%)" },
+                        { q: "Population 10,000 increases 10% yearly. After 2 years?", a: "12,100. (10,000 -> 11,000 -> 12,100)" },
+                        { q: "Sells 40% apples, 420 left. Original count?", a: "700. (60% = 420. 1% = 7. 100% = 700)" }
+                    ],
+                    speedSummary: "- 1/X table is your best friend for MAH-CET.\n- Don't calculate 15% directly; use 10% + 5%.\n- For successive changes, use the '100 approach' for speed."
+                }
+            },
+            {
+                id: "bodmas-logic",
+                title: "2. BODMAS / Simplification",
+                content: {
+                    coreConcept: "BODMAS is the universal hierarchy for solving mathematical expressions. Without this order, a single equation could yield multiple incorrect answers. In GAT exams, simplification questions are designed to test your discipline in following this sequence.\n\nPriority: Brackets (B) > Orders/Roots (O) > Division (D) > Multiplication (M) > Addition (A) > Subtraction (S).",
+                    formulaBank: "The Rule Hierarchy:\n1. ( ) Brackets First\n2. X² or √X (Orders/Exponents)\n3. ÷ (Division) and × (Multiplication) from left to right\n4. + (Addition) and - (Subtraction) from left to right",
+                    logic: "Step-by-Step Approach:\n1. Scan for the innermost bracket first.\n2. Convert fractions/square roots into simple numbers.\n3. Execute division before you even touch addition.\n4. Always double-check your signs (- into - becomes +).",
+                    traps: "TRAP: The Left-to-Right Blindness\nExpression: 10 + 2 × 5\n- Wrong: 12 × 5 = 60 (doing + first)\n- Right: 10 + 10 = 20 (doing × first)\n\nTRAP 2: Division/Multiplication Priority\nIf both ÷ and × are present, solve them in the order they appear from LEFT to RIGHT.",
+                    examples: [
+                        { q: "10 + 2 × 5", a: "20. (Solve 2×5 first, then add 10)" },
+                        { q: "[48 ÷ 12 × {16 - (4 + 6)} + 14]", a: "38. (Innermost (4+6)=10 → {16-10}=6 → 48/12=4 → 4*6=24 → 24+14=38)" },
+                        { q: "50 - (10 + 5) × 2", a: "20. (10+5=15; 15*2=30; 50-30=20)" }
+                    ],
+                    speedSummary: "- Simplify as you read.\n- Memorize squares up to 30 to spot 'Orders' quickly.\n- If the options are whole numbers, your division step should always result in a whole number."
+                }
+            }
+        ]
+    },
 
     flashcards: [
         { id: "quant-fc-001", term: "BODMAS Rule", definition: "Order of operations: Brackets, Orders, Division, Multiplication, Addition, Subtraction", formula: null, example: "10 + 2 × 5 = 20 (not 60)" },

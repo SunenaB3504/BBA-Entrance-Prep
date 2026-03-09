@@ -93,54 +93,43 @@ const SubjectDashboard = () => {
                         const progress = getChapterProgress(subject.id, chapter.id);
 
                         return (
-                            <button
+                            <div
                                 key={chapter.id}
-                                onClick={() => navigate(`/quiz/${subject.id}/${chapter.id}`)}
-                                className="flex items-center justify-between p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-slate-200 transition-all text-left"
+                                className="bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all p-6"
                             >
-                                <div className="flex items-center gap-5">
-                                    <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center text-sm font-bold text-slate-400">
-                                        {String(index + 1).padStart(2, '0')}
-                                    </div>
-                                    <div>
-                                        <h3 className="font-bold text-slate-800 leading-tight mb-1">{chapter.name}</h3>
-                                        <div className="flex items-center gap-3">
-                                            {progress.completed ? (
-                                                <span className="text-[10px] font-bold uppercase tracking-wider bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
-                                                    Completed
-                                                </span>
-                                            ) : progress.attempts > 0 ? (
-                                                <span className="text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">
-                                                    In Progress
-                                                </span>
-                                            ) : (
-                                                <span className="text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-500 px-2 py-0.5 rounded-full">
-                                                    Not Started
-                                                </span>
-                                            )}
-
-                                            {progress.bestScore > 0 && (
-                                                <span className="text-xs text-slate-400 font-medium">
-                                                    Best: {progress.bestScore}%
-                                                </span>
-                                            )}
-
-                                            {chapter.questionCount && (
-                                                <span className="text-[10px] font-bold text-slate-400 border-l border-slate-200 pl-3">
-                                                    {chapter.questionCount} QUESTIONS
-                                                </span>
-                                            )}
+                                <div className="flex items-start justify-between mb-6">
+                                    <div className="flex items-center gap-4">
+                                        <div className="w-10 h-10 rounded-xl bg-slate-50 flex items-center justify-center text-sm font-bold text-slate-400">
+                                            {String(index + 1).padStart(2, '0')}
+                                        </div>
+                                        <div>
+                                            <h3 className="font-bold text-slate-800 leading-tight">{chapter.name}</h3>
+                                            <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">
+                                                {chapter.questionCount || 0} Questions Available
+                                            </div>
                                         </div>
                                     </div>
+                                    <div className="flex gap-2">
+                                        {progress.completed && <span className="text-[10px] font-bold uppercase tracking-wider bg-green-100 text-green-700 px-2 py-0.5 rounded-full">Completed</span>}
+                                    </div>
                                 </div>
 
-                                <div
-                                    className="w-10 h-10 rounded-full flex items-center justify-center text-white shadow-sm transition-transform group-hover:translate-x-1"
-                                    style={{ backgroundColor: subject.color }}
-                                >
-                                    →
+                                <div className="grid grid-cols-2 gap-3">
+                                    <button
+                                        onClick={() => navigate(`/study/${subject.id}/${chapter.id}`)}
+                                        className="flex items-center justify-center gap-2 py-3 px-4 bg-slate-50 text-slate-600 rounded-xl font-bold text-xs hover:bg-slate-100 transition-colors border border-slate-100"
+                                    >
+                                        📖 STUDY GUIDE
+                                    </button>
+                                    <button
+                                        onClick={() => navigate(`/quiz/${subject.id}/${chapter.id}`)}
+                                        className="flex items-center justify-center gap-2 py-3 px-4 bg-blue-600 text-white rounded-xl font-bold text-xs hover:bg-blue-700 transition-all shadow-sm shadow-blue-100"
+                                        style={{ backgroundColor: subject.color }}
+                                    >
+                                        🎯 START QUIZ
+                                    </button>
                                 </div>
-                            </button>
+                            </div>
                         );
                     })}
                 </div>
