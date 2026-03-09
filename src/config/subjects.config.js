@@ -76,11 +76,13 @@ export const SUBJECTS = [
     name: "English Language",
     icon: "📝",
     color: "#0891b2",
-    examTags: ["MH-CET"],
+    examTags: ["CUET", "MH-CET"],
     chapters: [
       { id: "comprehension", name: "Reading Comprehension", dataFile: "comprehension.data" },
       { id: "grammar", name: "Grammar & Usage", dataFile: "grammar.data" },
-      { id: "vocabulary", name: "Vocabulary", dataFile: "vocabulary.data" }
+      { id: "grammar-advanced", name: "Grammar (Advanced)", dataFile: "grammar-advanced.data" },
+      { id: "vocabulary", name: "Vocabulary", dataFile: "vocabulary.data" },
+      { id: "vocabulary-advanced", name: "Vocabulary (Advanced)", dataFile: "vocabulary-advanced.data" }
     ]
   },
   {

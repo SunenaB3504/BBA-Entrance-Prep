@@ -3,19 +3,35 @@
 export const CUET_CONFIG = {
   id: "cuet",
   name: "CUET Subject Test",
-  questionsPerTest: 50,
-  timeMinutes: 60,
+  totalQuestions: 50,
+  questionsToAttempt: 40,
+  timeMinutes: 45,
   subjects: ["Accountancy", "Business Studies", "Economics"],
   questionTypes: ["mcq", "assertion-reason", "case-study", "match-column", "numerical"],
-  negativeMarking: false,
+  negativeMarking: true,
+  marksPerCorrect: 5,
+  negativeMarksPerWrong: 1,
   passingScore: 60,
   difficultyDistribution: { easy: 0.3, medium: 0.5, hard: 0.2 }
+};
+
+export const CUET_ENGLISH_CONFIG = {
+  id: "cuet-english",
+  name: "CUET English Test",
+  totalQuestions: 50,
+  questionsToAttempt: 40,
+  timeMinutes: 45,
+  negativeMarking: true,
+  marksPerCorrect: 5,
+  negativeMarksPerWrong: 1,
+  totalMarks: 200,
+  difficultyDistribution: { easy: 0.2, medium: 0.5, hard: 0.3 }
 };
 
 export const MH_CET_CONFIG = {
   id: "mh-cet",
   name: "MH CET BBA Full Mock",
-  questionsPerTest: 100,
+  totalQuestions: 100,
   timeMinutes: 120,
   subjects: ["English", "Reasoning", "General Knowledge"],
   questionTypes: ["mcq"],

@@ -11,14 +11,44 @@ export const shuffleArray = (arr) => {
 export const pickRandom = (arr, n) => shuffleArray(arr).slice(0, n);
 
 // src/utils/scoreCalculator.js
-export const calculateScore = (answers, questions) => {
+export const calculateScore = (answers, questions, config = {}) => {
+  const {
+    marksPerCorrect = 1,
+    negativeMarking = false,
+    negativeMarksPerWrong = 0,
+    maxAttempts = questions.length
+  } = config;
+
   let correct = 0, wrong = 0, unattempted = 0;
+  let score = 0;
+  let attempts = 0;
+
   questions.forEach((q, i) => {
-    if (answers[i] === undefined || answers[i] === null) unattempted++;
-    else if (answers[i] === q.correct) correct++;
-    else wrong++;
+    const answer = answers[i];
+    if (answer === undefined || answer === null) {
+      unattempted++;
+    } else {
+      attempts++;
+      if (answer === q.correct) {
+        correct++;
+        score += marksPerCorrect;
+      } else {
+        wrong++;
+        if (negativeMarking) score -= negativeMarksPerWrong;
+      }
+    }
   });
-  return { correct, wrong, unattempted, total: questions.length, percentage: Math.round((correct / questions.length) * 100) };
+
+  return {
+    score,
+    correct,
+    wrong,
+    unattempted,
+    total: questions.length,
+    attempts,
+    maxScore: maxAttempts * marksPerCorrect,
+    percentage: Math.round((correct / questions.length) * 100)
+  };
 };
 
 // src/utils/difficultyFilter.js
