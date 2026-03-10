@@ -1,992 +1,758 @@
 // src/data/general-aptitude/general-knowledge.data.js
-// VALIDATED AGAINST DATA_SCHEMA.md
+// MAH BBA CET + CUET GAT UNIFIED MODULE
+// SCHEMA VALIDATED AGAINST DATA_SCHEMA.md
 
 export const generalKnowledgeData = {
     subject: "General Knowledge",
     chapter: "General Knowledge & Static Awareness",
     examTags: ["CUET", "MH-CET"],
-    studyGuide: {
-        topics: [
-            {
-                id: "indian-polity-logic",
-                title: "1. Indian Polity & Constitution",
-                content: {
-                    coreConcept: "The Constitution of India is the supreme law. Competitive exams focus on key Articles, Constitutional Bodies (ECI, CAG), and the hierarchy of power.",
-                    formulaBank: "1. Key Articles:\n- Art 324: Election Commission\n- Art 148: CAG (Audit General)\n- Art 72: Pardoning power of President\n- Art 368: Amendment power\n2. Constitutional Bodies: ECI, UPSC, CAG, Finance Commission.",
-                    logic: "Hierarchy of Governance:\n1. Union (President, PM, Parliament)\n2. State (Governor, CM, Assembly)\n3. Local (Panchayats, Municipalities).",
-                    traps: "TRAP: Real vs Nominal Head\nPresident is the 'De-jure' (nominal) head, while the PM is the 'De-facto' (real) head. Students often confuse 'Head of State' (President) with 'Head of Government' (PM).",
-                    examples: [
-                        { q: "Who appoints the Chief Election Commissioner?", a: "The President of India." },
-                        { q: "Guardian of the public purse?", a: "CAG (Comptroller and Auditor General)." }
-                    ],
-                    speedSummary: "- Part III: Fundamental Rights.\n- Part IV: DPSP.\n- Part IVA: Fundamental Duties."
-                }
-            },
-            {
-                id: "indian-history-logic",
-                title: "2. Modern Indian History",
-                content: {
-                    coreConcept: "Focus on the Freedom Struggle from 1857 to 1947, primarily the role of the INC and Mahatma Gandhi.",
-                    formulaBank: "Movement Chronology:\n- 1885: INC Foundation (A.O. Hume)\n- 1920: Non-Cooperation (NCM)\n- 1930: Civil Disobedience (Dandi March)\n- 1942: Quit India Movement",
-                    logic: "The Nationalist Evolution:\n1. Moderates (1885-1905): Petitions and prayers.\n2. Extremists (1905-1919): Swadeshi and Boycott.\n3. Gandhian Era (1919-1947): Satyagraha and Non-violence.",
-                    traps: "TRAP: First President vs Founder of INC\nFounder: A.O. Hume (Englishman)\nFirst President: W.C. Bonnerjee (Indian).",
-                    examples: [
-                        { q: "Where was the first session of INC held?", a: "Mumbai (Gokuldas Tejpal Sanskrit College)." },
-                        { q: "Who started the Dandi March?", a: "Mahatma Gandhi (against the Salt Tax)." }
-                    ],
-                    speedSummary: "- Do or Die: 1942 (Quit India).\n- Swaraj is my birthright: Bal Gangadhar Tilak."
-                }
-            },
-            {
-                id: "geography-logic",
-                title: "3. Geography & Static Awareness",
-                content: {
-                    coreConcept: "National geography focusing on physical landmarks (Rivers, Dams, Passes) and famous city nicknames.",
-                    formulaBank: "1. Rivers & Dams:\n- Sutlej: Bhakra Nangal\n- Mahanadi: Hirakud\n- Bhagirathi: Tehri (Highest)\n2. Mountain Passes:\n- Sikkim: Nathu La\n- HP: Rohtang Pass",
-                    logic: "City Nicknames (Visual Mnemonics):\n- Pink City: Jaipur (Architectural color)\n- Silicon Valley: Bengaluru (IT Hub)\n- City of Lakes: Udaipur\n- Twin Cities: Hyderabad & Secunderabad.",
-                    traps: "TRAP: Highest vs Longest Dam\nTehri Dam (Uttarakhand) is the HIGHEST. Hirakud Dam (Odisha) is the LONGEST. Don't swap them.",
-                    examples: [
-                        { q: "Which river is known as 'Sorrow of Bihar'?", a: "Kosi River (due to frequent floods)." },
-                        { q: "Silicon Valley of India?", a: "Bengaluru." }
-                    ],
-                    speedSummary: "- 82.5° E: Standard Meridian of India.\n- Tropic of Cancer passes through 8 states."
-                }
-            }
-        ]
-    },
-
     flashcards: [
-        { id: "gk-fc-001", term: "Article 324", definition: "Empowers the Election Commission of India to direct and control elections", formula: null, example: "Elections to Parliament and State Legislatures" },
-        { id: "gk-fc-002", term: "CAG", definition: "Comptroller and Auditor General of India — Guardian of the public purse", formula: null, example: "Article 148 of Constitution" },
-        { id: "gk-fc-003", term: "INC Foundation", definition: "Indian National Congress was founded in 1885 by A.O. Hume", formula: null, example: "First session in Mumbai, presided by W.C. Bonnerjee" },
-        { id: "gk-fc-004", term: "Gandhi Movements Chronology", definition: "NCM (1920) → Dandi (1930) → Quit India (1942)", formula: null, example: "Non-Cooperation Movement was the first large-scale mass movement" },
-        { id: "gk-fc-005", term: "Pink City", definition: "Jaipur, Rajasthan — famous for its distinct architectural color", formula: null, example: "Founded by Maharaja Sawai Jai Singh II" },
-        { id: "gk-fc-006", term: "Silicon Valley of India", definition: "Bengaluru, Karnataka — Hub for IT and technology companies", formula: null, example: "Home to ISRO and major tech giants" },
-        { id: "gk-fc-007", term: "Bhakra Nangal Dam", definition: "One of India's highest gravity dams, built on the Sutlej River", formula: null, example: "Serves Himachal Pradesh, Punjab, and Haryana" },
-        { id: "gk-fc-008", term: "Nathu La Pass", definition: "Mountain pass in the Himalayas connecting Sikkim with Tibet", formula: null, example: "Major point on the ancient Silk Road" },
-        { id: "gk-fc-009", term: "Padma Awards Hierarchy", definition: "Vibhushan (highest) > Bhushan > Shri", formula: null, example: "Padma Vibhushan is for 'exceptional and distinguished service'" },
-        { id: "gk-fc-010", term: "QUAD Members", definition: "Quadrilateral Security Dialogue consisting of four nations", formula: null, example: "India, USA, Japan, Australia" }
+        { id: "gk-fc-001", term: "Article 324", definition: "Empowers the Election Commission of India." },
+        { id: "gk-fc-002", term: "INC Foundation", definition: "Founded in 1885 by A.O. Hume (Mumbai)." },
+        { id: "gk-fc-003", term: "Gandhi Movements", definition: "NCM (1920) → Dandi (1930) → Quit India (1942)." },
+        { id: "gk-fc-004", term: "City Nicknames", definition: "Pink: Jaipur, Silicon: Bengaluru, City of Joy: Kolkata." },
+        { id: "gk-fc-005", term: "QUAD Members", definition: "India, USA, Japan, Australia." },
+        { id: "gk-fc-006", term: "pH Scale", definition: "Acidic < 7, Neutral = 7, Basic > 7." },
+        { id: "gk-fc-007", term: "16th Finance Commission", definition: "Chairman: Dr. Arvind Panagariya." },
+        { id: "gk-fc-008", term: "Highest Dam", definition: "Tehri Dam (Bhagirathi River, Uttarakhand)." },
+        { id: "gk-fc-009", term: "MIRV", definition: "Multiple Independently Targetable Re-Entry Vehicle (Agni-5)." },
+        { id: "gk-fc-010", term: "Kwashiorkor", definition: "Caused by protein deficiency (NOT calories)." }
     ],
-
     questions: [
-        // --- CATEGORY A: Indian Polity (CUET + MAH CET) ---
+        // --- CATEGORY A: Indian Polity (15 Questions) ---
         {
-            id: "gk-q-001", type: "mcq", difficulty: "medium",
-            question: "Which Article of the Indian Constitution provides for the 'Election Commission'?",
-            options: ["Article 324", "Article 312", "Article 280", "Article 356"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Article 324 provides for the power of superintendence, direction, and control of elections to be vested in an Election Commission.",
+            id: "gk-pol-001", type: "mcq", difficulty: "medium",
+            question: "Which of the following bodies derives its power directly from Article 324 of the Constitution?",
+            options: ["UPSC", "Election Commission", "Finance Commission", "Niti Aayog"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Article 324 provides for the superintendence, direction, and control of elections.",
             examTags: ["CUET", "MH-CET"]
         },
         {
-            id: "gk-q-002", type: "match-column", difficulty: "hard",
-            question: "Match the following Constitutional bodies with their respective Articles:",
-            column_a: ["Election Commission", "Finance Commission", "UPSC", "CAG of India"],
-            column_b: ["Article 280", "Article 315", "Article 324", "Article 148"],
-            correct_mapping: [2, 0, 1, 3],
-            options: [
-                "A-324, B-280, C-315, D-148",
-                "A-280, B-324, C-315, D-148",
-                "A-315, B-280, C-324, D-148",
-                "A-148, B-315, C-280, D-324"
-            ],
+            id: "gk-pol-002", type: "mcq", difficulty: "hard",
+            question: "Arrange these Constitutional Amendments in correct chronological order:\n(A) 42nd Amendment\n(B) 44th Amendment\n(C) 73rd Amendment\n(D) 52nd Amendment",
+            options: ["A-B-D-C", "A-B-C-D", "B-A-D-C", "D-A-B-C"],
             correct: 0,
-            cognitiveType: "synthesis",
-            timePresure: "standard",
-            speedTarget: 90,
-            explanation: "EC = 324, FC = 280, UPSC = 315, CAG = 148.",
+            cognitiveType: "chronological", timePresure: "deep", speedTarget: 120,
+            explanation: "42nd (1976), 44th (1978), 52nd (1985), 73rd (1992).",
             examTags: ["CUET"]
         },
         {
-            id: "gk-q-003", type: "mcq", difficulty: "medium",
-            question: "Who is known as the 'Guardian of the Public Purse' in India?",
-            options: ["Finance Minister", "Prime Minister", "CAG", "Governor of RBI"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The Comptroller and Auditor General (CAG) of India is the guardian of the public purse at both Center and State levels.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-004", type: "mcq", difficulty: "medium",
-            question: "The 'Joint Sitting' of both houses of Parliament is presided over by:",
-            options: ["The President", "The Vice President", "The Speaker of Lok Sabha", "The Chief Justice of India"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "While the President summons the joint sitting, it is always presided over by the Speaker of the Lok Sabha.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-005", type: "assertion-reason", difficulty: "hard",
-            assertion: "The Rajya Sabha is a permanent body and cannot be dissolved.",
-            reason: "One-third of its members retire every second year.",
-            options: [
-                "Both A and R are true; R is the correct explanation of A",
-                "Both A and R are true; R is NOT the correct explanation of A",
-                "A is true but R is false",
-                "A is false but R is true"
-            ],
+            id: "gk-pol-003", type: "mcq", difficulty: "hard",
+            question: "Match the Article to the Provision:\n1. Art 148   a. Money Bill\n2. Art 110   b. Finance Commission\n3. Art 280   c. CAG\n4. Art 368   d. Amendment Power",
+            options: ["1-c, 2-a, 3-b, 4-d", "1-a, 2-c, 3-b, 4-d", "1-c, 2-b, 3-a, 4-d", "1-d, 2-a, 3-b, 4-c"],
             correct: 0,
-            cognitiveType: "synthesis",
-            timePresure: "standard",
-            speedTarget: 90,
-            explanation: "Rajya Sabha is permanent specifically because the retirement cycle ensures it is never empty and never needs a full re-election (dissolution).",
-            examTags: ["CUET"]
-        },
-
-        // --- CATEGORY B: Modern Indian History (CUET + MAH CET) ---
-        {
-            id: "gk-q-006", type: "mcq", difficulty: "medium",
-            question: "In which year was the 'Non-Cooperation Movement' launched by Mahatma Gandhi?",
-            options: ["1915", "1920", "1930", "1942"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The Non-Cooperation Movement was launched in 1920 following the Jallianwala Bagh Massacre and the Khilafat Movement.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-007", type: "match-column", difficulty: "hard",
-            question: "Match the movements with their correct years:",
-            column_a: ["Swadeshi Movement", "Quit India Movement", "Civil Disobedience", "Home Rule League"],
-            column_b: ["1942", "1916", "1905", "1930"],
-            correct_mapping: [2, 0, 3, 1],
-            options: [
-                "Swadeshi-1905, Quit-1942, Civil-1930, HomeRule-1916",
-                "Swadeshi-1942, Quit-1905, Civil-1916, HomeRule-1930",
-                "Swadeshi-1916, Quit-1930, Civil-1905, HomeRule-1942",
-                "Swadeshi-1930, Quit-1916, Civil-1942, HomeRule-1905"
-            ],
-            correct: 0,
-            cognitiveType: "synthesis",
-            timePresure: "standard",
-            speedTarget: 90,
-            explanation: "Swadeshi (1905), Quit India (1942), Civil Disobedience (1930), Home Rule League (1916).",
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 90,
+            explanation: "Art 148: CAG, Art 110: Money Bill, Art 280: Finance Commission, Art 368: Amendment.",
             examTags: ["CUET"]
         },
         {
-            id: "gk-q-008", type: "mcq", difficulty: "easy",
-            question: "Who among the following was the founder of the Indian National Congress?",
-            options: ["Dadabhai Naoroji", "A.O. Hume", "W.C. Bonnerjee", "Gopal Krishna Gokhale"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Allan Octavian Hume (A.O. Hume) was the founder, while W.C. Bonnerjee was the first president.",
-            examTags: ["MH-CET"]
-        },
-        {
-            id: "gk-q-009", type: "mcq", difficulty: "medium",
-            question: "The 'Dandi March' was the start of which national movement?",
-            options: ["Non-Cooperation", "Quit India", "Civil Disobedience", "Khilafat"],
-            correct: 2,
-            cognitiveType: "application",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The Salt Satyagraha (Dandi March) in 1930 marked the beginning of the Civil Disobedience Movement.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-010", type: "mcq", difficulty: "medium",
-            question: "Who was the Governor-General of India when the 1857 Revolt broke out?",
-            options: ["Lord Dalhousie", "Lord Canning", "Lord Curzon", "Lord Bentinck"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Lord Canning was the Governor-General during the 1857 Revolt and later became the first Viceroy of India.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-011", type: "mcq", difficulty: "hard",
-            question: "Which Constitutional Amendment is known as the 'Mini Constitution'?",
-            options: ["44th Amendment", "42nd Amendment", "73rd Amendment", "52nd Amendment"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The 42nd Amendment (1976) introduced major changes including the words Socialist, Secular, and Integrity in the Preamble.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-012", type: "mcq", difficulty: "medium",
-            question: "The 'Panchayati Raj' was first introduced in which state in 1959?",
-            options: ["Rajasthan", "Andhra Pradesh", "Gujarat", "Maharashtra"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Panchayati Raj was first inaugurated in Nagaur, Rajasthan on Oct 2, 1959.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-013", type: "mcq", difficulty: "medium",
-            question: "Who was the first woman President of the Indian National Congress?",
-            options: ["Sarojini Naidu", "Annie Besant", "Nellie Sengupta", "Indira Gandhi"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Annie Besant was the first woman President (1917). Sarojini Naidu was the first Indian woman President (1925).",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-014", type: "mcq", difficulty: "hard",
-            question: "The 'Shimla Conference' (1945) was proposed by which Viceroy?",
-            options: ["Lord Mountbatten", "Lord Wavell", "Lord Linlithgow", "Lord Reading"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 60,
-            explanation: "Lord Wavell proposed the Shimla Conference to discuss the Wavell Plan for Indian self-government.",
+            id: "gk-pol-004", type: "mcq", difficulty: "medium",
+            question: "Which of the following statements about the Election Commission are correct?\n(A) It is established by Article 324.\n(B) The CEC has the same status as a Supreme Court Judge.\n(C) State elections are also managed by the ECI.",
+            options: ["Only A", "A and B only", "A and C only", "All of the above"],
+            correct: 3,
+            cognitiveType: "synthesis", timePresure: "deep", speedTarget: 120,
+            explanation: "All statements are factually correct regarding the ECI's status and jurisdiction.",
             examTags: ["CUET"]
         },
         {
-            id: "gk-q-015", type: "mcq", difficulty: "medium",
-            question: "Which Article gives the President of India the power to declare Financial Emergency?",
-            options: ["Article 352", "Article 356", "Article 360", "Article 370"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Article 360 deals with Financial Emergency. Note: It has never been used in India so far.",
-            examTags: ["CUET", "MH-CET"]
-        },
-
-        // --- CATEGORY C: Geography — India and World (10 questions) ---
-        {
-            id: "gk-q-016", type: "mcq", difficulty: "medium",
-            question: "Which Indian city is known as the 'Manchester of India'?",
-            options: ["Ahmedabad", "Mumbai", "Kolkata", "Surat"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Ahmedabad is called the Manchester of India due to its booming textile industry.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-017", type: "mcq", difficulty: "medium",
-            question: "The 'Sardar Sarovar Dam' is built on which river?",
-            options: ["Narmada", "Tapi", "Godavari", "Krishna"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The Sardar Sarovar Dam is a concrete gravity dam on the Narmada River in Gujarat.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-018", type: "mcq", difficulty: "medium",
-            question: "Which of the following is the largest 'glacier' in India?",
-            options: ["Zemu Glacier", "Siachen Glacier", "Gangotri Glacier", "Yamunotri Glacier"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Siachen Glacier in the Karakoram range is the largest glacier in India and second largest in the world outside polar regions.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-019", type: "mcq", difficulty: "medium",
-            question: "Which pass connects Jammu with Srinagar?",
-            options: ["Nathu La Pass", "Banihal Pass", "Rohtang Pass", "Shipki La Pass"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Banihal Pass is a mountain pass across the Pir Panjal Range connecting Jammu and Srinagar.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-020", type: "mcq", difficulty: "medium",
-            question: "The 'Southernmost Point' of India's main land mass is:",
-            options: ["Indira Point", "Kanyakumari", "Port Blair", "Lakshadweep"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Kanyakumari is the southernmost point of the main land mass. Indira Point is the southernmost point of India (in Great Nicobar).",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-021", type: "mcq", difficulty: "hard",
-            question: "Which state in India has the 'longest' coastline?",
-            options: ["Maharashtra", "Tamil Nadu", "Gujarat", "Andhra Pradesh"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Gujarat has the longest coastline in India, extending about 1600 km.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-022", type: "mcq", difficulty: "medium",
-            question: "The 'Zemu Glacier' is located in which Indian state?",
-            options: ["Sikkim", "Uttarakhand", "Himachal Pradesh", "Arunachal Pradesh"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Zemu Glacier is the largest glacier in the Eastern Himalayas, located at the base of Kanchenjunga in Sikkim.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-023", type: "assertion-reason", difficulty: "hard",
-            assertion: "Earthquakes of high intensity are frequent in the Himalayas.",
-            reason: "The Himalayas are young folded mountains that are still rising due to tectonic activity.",
+            id: "gk-pol-005", type: "mcq", difficulty: "easy",
+            question: "What is the full form of CAG?",
             options: [
-                "Both A and R are true; R is the correct explanation of A",
-                "Both A and R are true; R is NOT the correct explanation of A",
-                "A is true but R is false",
-                "A is false but R is true"
+                "Comptroller and Auditor General",
+                "Central Account Gateway",
+                "Council of Audit and Governance",
+                "Chief Auditor General"
             ],
             correct: 0,
-            cognitiveType: "synthesis",
-            timePresure: "standard",
-            speedTarget: 90,
-            explanation: "Himalayas are at a destructive plate boundary where the Indian plate meets the Eurasian plate, leading to constant rise and subsequent earthquakes.",
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "CAG stands for Comptroller and Auditor General (Article 148).",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "gk-pol-006", type: "mcq", difficulty: "easy",
+            question: "Who is the Nominal Head of the Indian Union?",
+            options: ["Prime Minister", "President", "Chief Justice", "Speaker"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "The President is the de-jure (nominal) head; the PM is the de-facto (real) head.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "gk-pol-007", type: "mcq", difficulty: "medium",
+            question: "The 'Preamble' of the Indian Constitution was amended for the only time in which year?",
+            options: ["1976", "1978", "1950", "1992"],
+            correct: 0,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "The 42nd Amendment (1976) added Socialist, Secular, and Integrity to the Preamble.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-pol-008", type: "mcq", difficulty: "hard",
+            question: "Which Article is known as the 'Heart and Soul' of the Constitution according to Dr. Ambedkar?",
+            options: ["Article 14", "Article 19", "Article 21", "Article 32"],
+            correct: 3,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Article 32 (Right to Constitutional Remedies) allows citizens to approach SC.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-pol-009", type: "mcq", difficulty: "medium",
+            question: "The concept of 'Single Citizenship' is borrowed from which country?",
+            options: ["USA", "Britain (UK)", "Canada", "Ireland"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Single citizenship is a feature of the British parliamentary system adopted by India.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-pol-010", type: "mcq", difficulty: "medium",
+            question: "Who appoints the Chief Justice of India?",
+            options: ["Prime Minister", "Law Minister", "President", "Collegium of Judges"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "The President of India appoints the CJI.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "gk-pol-011", type: "mcq", difficulty: "hard",
+            question: "Fundamental Duties were added based on the recommendation of which committee?",
+            options: ["Sarkaria Commission", "Swaran Singh Committee", "Mandal Commission", "Balwant Rai Mehta Committee"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Added by 42nd Amendment (1976) following Swaran Singh Committee's suggestions.",
             examTags: ["CUET"]
         },
         {
-            id: "gk-q-024", type: "mcq", difficulty: "medium",
-            question: "Which of the following imaginary lines passes through India?",
-            options: ["Equator", "Tropic of Capricorn", "Tropic of Cancer", "Prime Meridian"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The Tropic of Cancer passes through 8 Indian states.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-025", type: "mcq", difficulty: "medium",
-            question: "Which soil is also known as 'Regur Soil' in India?",
-            options: ["Alluvial Soil", "Red Soil", "Black Soil", "Laterite Soil"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Black Soil is known as Regur Soil and is ideal for cotton cultivation.",
-            examTags: ["CUET", "MH-CET"]
-        },
-
-        // --- CATEGORY D: Current Affairs (15 questions) ---
-        {
-            id: "gk-q-026", type: "mcq", difficulty: "medium",
-            question: "Who is the current President of India?",
-            options: ["Ram Nath Kovind", "Droupadi Murmu", "Jagdeep Dhankhar", "Yashwant Sinha"],
+            id: "gk-pol-012", type: "mcq", difficulty: "medium",
+            question: "Niti Aayog replaced the Planning Commission in which year?",
+            options: ["2014", "2015", "2016", "2017"],
             correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Smt. Droupadi Murmu is the 15th President of India.",
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Established on January 1, 2015 as a policy think tank.",
             examTags: ["CUET", "MH-CET"]
         },
         {
-            id: "gk-q-027", type: "mcq", difficulty: "medium",
-            question: "India's first solar mission launched in 2023 is named:",
-            options: ["Aditya-L1", "Solar-Alpha", "Surya-Quest", "Helios-1"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Aditya-L1 is ISRO's first space-based observatory-class solar mission to study the Sun.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-028", type: "mcq", difficulty: "medium",
-            question: "Which country hosted the G20 Summit in 2023?",
-            options: ["Brazil", "Indonesia", "India", "South Africa"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "India hosted the 18th G20 Summit in New Delhi in September 2023.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-029", type: "mcq", difficulty: "medium",
-            question: "The 'statue of Equality' recently inaugurated in Hyderabad commemorates which philosopher?",
-            options: ["Shankaracharya", "Ramanujacharya", "Basavanna", "Madhvacharya"],
+            id: "gk-pol-013", type: "mcq", difficulty: "medium",
+            question: "Which Schedule of the Constitution deals with the allocation of seats in Rajya Sabha?",
+            options: ["Third Schedule", "Fourth Schedule", "Fifth Schedule", "Seventh Schedule"],
             correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The Statue of Equality commemorates the 11th-century Vaishnavaite Saint Ramanujacharya.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-030", type: "mcq", difficulty: "medium",
-            question: "Which city has been declared the 'Cleanest City' of India for the 7th consecutive year (Swachh Survekshan 2023)?",
-            options: ["Surat", "Indore", "Navi Mumbai", "Bhopal"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Indore (and Surat jointly) were ranked as the cleanest cities in India in 2023.",
-            examTags: ["CUET", "MH-CET"]
-        },
-
-        // --- CATEGORY E: General Science (Conceptual - 15 questions) ---
-        {
-            id: "gk-q-031", type: "mcq", difficulty: "medium",
-            question: "Which part of the plant is responsible for the transport of 'water' and minerals?",
-            options: ["Phloem", "Xylem", "Stomata", "Chloroplast"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Xylem transports water and minerals from roots to leaves. Phloem transports food.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-032", type: "mcq", difficulty: "medium",
-            question: "Which gas is used for artificial 'ripening' of green fruits?",
-            options: ["Ethylene", "Acetylene", "Methane", "Ethane"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Ethylene is the primary hormone used for fruit ripening.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-033", type: "mcq", difficulty: "medium",
-            question: "What is the 'Power House' of the cell?",
-            options: ["Nucleus", "Ribosome", "Mitochondria", "Golgi Body"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Mitochondria are known as the powerhouses of the cell because they produce energy (ATP).",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-034", type: "mcq", difficulty: "medium",
-            question: "Which vitamin deficiency causes 'Scurvy'?",
-            options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Scurvy is caused by deficiency of Vitamin C (Ascorbic acid).",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-035", type: "mcq", difficulty: "medium",
-            question: "Which of the following is a 'Noble Gas'?",
-            options: ["Oxygen", "Nitrogen", "Argon", "Hydrogen"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Argon is a noble gas (Group 18). Others are highly reactive.",
-            examTags: ["CUET", "MH-CET"]
-        },
-
-        // --- CATEGORY C: Geography Expansion (5 more) ---
-        {
-            id: "gk-q-036", type: "mcq", difficulty: "medium",
-            question: "Which is the highest peak in the 'Aravalli Range'?",
-            options: ["Guru Shikhar", "Dhupgarh", "Mahendragiri", "Doda Betta"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Guru Shikhar in Mount Abu (Rajasthan) is the highest peak of the Aravalli Range.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-037", type: "mcq", difficulty: "medium",
-            question: "Which Indian state is known as the 'Land of Five Rivers'?",
-            options: ["Haryana", "Punjab", "Uttar Pradesh", "Himachal Pradesh"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Punjab gets its name from 'Punj' (five) and 'Ab' (water/river), referring to Beas, Chenab, Jhelum, Ravi, and Sutlej.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-038", type: "mcq", difficulty: "medium",
-            question: "The 'Kanha National Park' is famous for which animal?",
-            options: ["Lion", "Tiger", "Elephant", "Rhinoceros"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Kanha Tiger Reserve in Madhya Pradesh is world-renowned for its significant Tiger population.",
-            examTags: ["CUET", "MH-CET"]
-        },
-
-        // --- CATEGORY D: Current Affairs Expansion (10 more) ---
-        {
-            id: "gk-q-039", type: "mcq", difficulty: "medium",
-            question: "Who won the Nobel Prize in Literature in 2023?",
-            options: ["Jon Fosse", "Annie Ernaux", "Abdulrazak Gurnah", "Louise Glück"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Norwegian author Jon Fosse was awarded the Nobel Prize in Literature 2023.",
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "The Fourth Schedule specifies seat allocation for States and UTs.",
             examTags: ["CUET"]
         },
         {
-            id: "gk-q-040", type: "mcq", difficulty: "medium",
-            question: "Which Indian film's song 'Naatu Naatu' won the Oscar for Best Original Song in 2023?",
-            options: ["RRR", "Pushpa", "Brahmastra", "Pathaan"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "The song 'Naatu Naatu' from the film RRR won the Academy Award for Best Original Song.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-041", type: "mcq", difficulty: "medium",
-            question: "Who is the current CEO of 'Google' (Alphabet Inc.)?",
-            options: ["Satya Nadella", "Sundar Pichai", "Tim Cook", "Elon Musk"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Sundar Pichai is the CEO of Alphabet Inc. and its subsidiary Google.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-042", type: "mcq", difficulty: "hard",
-            question: "India's first underwater metro started its operations in which city?",
-            options: ["Mumbai", "Kochi", "Kolkata", "Chennai"],
+            id: "gk-pol-014", type: "mcq", difficulty: "easy",
+            question: "The minimum age to contest for Lok Sabha elections is:",
+            options: ["18 years", "21 years", "25 years", "30 years"],
             correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The Kolkata Metro’s East-West corridor features India’s first underwater metro tunnel under the Hooghly River.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-043", type: "mcq", difficulty: "medium",
-            question: "Which country became the 31st member of NATO in 2023?",
-            options: ["Sweden", "Finland", "Ukraine", "Poland"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Finland officially became the 31st member of NATO in April 2023.",
-            examTags: ["CUET"]
-        },
-
-        // --- CATEGORY E: General Science Expansion (10 more) ---
-        {
-            id: "gk-q-044", type: "mcq", difficulty: "medium",
-            question: "Which instrument is used to measure 'Atmospheric Pressure'?",
-            options: ["Ammeter", "Barometer", "Thermometer", "Hygrometer"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "A Barometer is used to measure atmospheric pressure.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-045", type: "mcq", difficulty: "easy",
-            question: "Which planet is known as the 'Red Planet'?",
-            options: ["Venus", "Mars", "Jupiter", "Saturn"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Mars is known as the Red Planet due to iron oxide (rust) on its surface.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-046", type: "mcq", difficulty: "medium",
-            question: "What is the PH value of 'Pure Water'?",
-            options: ["5", "7", "9", "11"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Pure water is neutral and has a PH value of 7.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-047", type: "mcq", difficulty: "medium",
-            question: "Which lens is used to correct 'Myopia' (Short-sightedness)?",
-            options: ["Convex Lens", "Concave Lens", "Bifocal Lens", "Cylindrical Lens"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "A Concave lens (diverging lens) is used to correct Myopia.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-048", type: "mcq", difficulty: "medium",
-            question: "The 'Blood Pressure' in a healthy human is approximately:",
-            options: ["120/80 mmHg", "100/60 mmHg", "140/90 mmHg", "160/100 mmHg"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Normal blood pressure is generally around 120 (systolic) over 80 (diastolic) mmHg.",
-            examTags: ["CUET", "MH-CET"]
-        },
-
-        // --- CATEGORY F: Awards and Honors ---
-        {
-            id: "gk-q-049", type: "mcq", difficulty: "medium",
-            question: "Which is India's highest 'Literary' Award?",
-            options: ["Sahitya Akademi Award", "Jnanpith Award", "Vyas Samman", "Saraswati Samman"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The Jnanpith Award is the highest literary honor in India.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-050", type: "mcq", difficulty: "medium",
-            question: "Who was the first Indian to win a 'Nobel Prize'?",
-            options: ["C.V. Raman", "Rabindranath Tagore", "Mother Teresa", "Amartya Sen"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Rabindranath Tagore won the Nobel Prize for Literature in 1913 for his work Gitanjali.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-051", type: "mcq", difficulty: "medium",
-            question: "The 'Bharat Ratna' was first awarded in which year?",
-            options: ["1947", "1950", "1954", "1960"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The Bharat Ratna was instituted in 1954. First recipients were C. Rajagopalachari, S. Radhakrishnan, and C.V. Raman.",
-            examTags: ["CUET", "MH-CET"]
-        },
-
-        // --- CATEGORY G: Sports Landforms ---
-        {
-            id: "gk-q-052", type: "mcq", difficulty: "medium",
-            question: "Which city will host the 2024 'Summer Olympics'?",
-            options: ["Tokyo", "Paris", "Los Angeles", "Brisbane"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "The 2024 Summer Olympics will be held in Paris, France.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-053", type: "mcq", difficulty: "medium",
-            question: "The 'Thomas Cup' is associated with which sport?",
-            options: ["Football", "Hockey", "Badminton", "Table Tennis"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Thomas Cup is the world men's team championship in Badminton.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-054", type: "mcq", difficulty: "easy",
-            question: "Who is known as the 'Little Master' in Cricket?",
-            options: ["Sachin Tendulkar", "Sunil Gavaskar", "Virat Kohli", "Sourav Ganguly"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Sunil Gavaskar is originally known as the Little Master. Sachin is called Master Blaster.",
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "25 years for Lok Sabha; 30 years for Rajya Sabha.",
             examTags: ["MH-CET"]
         },
         {
-            id: "gk-q-055", type: "mcq", difficulty: "medium",
-            question: "Which country won the ICC Men's Cricket World Cup 2023?",
-            options: ["India", "Australia", "England", "South Africa"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Australia defeated India in the final to win the 2023 World Cup.",
+            id: "gk-pol-015", type: "mcq", difficulty: "medium",
+            question: "Who has the final power to decide whether a bill is a 'Money Bill'?",
+            options: ["President", "Prime Minister", "Speaker of Lok Sabha", "Finance Minister"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "The Speaker's decision on a Money Bill is final and beyond judicial review.",
             examTags: ["CUET", "MH-CET"]
         },
 
-        // --- CATEGORY H: Arts and Culture ---
+        // --- CATEGORY B: Modern Indian History (15 Questions) ---
         {
-            id: "gk-q-056", type: "mcq", difficulty: "medium",
-            question: "The 'Ajanta Caves' are located in which state?",
-            options: ["Madhya Pradesh", "Maharashtra", "Karnataka", "Odisha"],
-            correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Ajanta Caves are located in the Aurangabad district (now Sambhajinagar) of Maharashtra.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-q-057", type: "match-column", difficulty: "hard",
-            question: "Match the following Classical Dances with their states:",
-            column_a: ["Kathakali", "Bharatanatyam", "Kuchipudi", "Sattriya"],
-            column_b: ["Tamil Nadu", "Kerala", "Assam", "Andhra Pradesh"],
-            correct_mapping: [1, 0, 3, 2],
-            options: [
-                "Kathakali-Kerala, Bharatanatyam-TN, Kuchipudi-AP, Sattriya-Assam",
-                "Kathakali-TN, Bharatanatyam-Kerala, Kuchipudi-Assam, Sattriya-AP",
-                "Kathakali-AP, Bharatanatyam-TN, Kuchipudi-Kerala, Sattriya-Assam",
-                "Kathakali-Assam, Bharatanatyam-AP, Kuchipudi-TN, Sattriya-Kerala"
-            ],
+            id: "gk-his-001", type: "mcq", difficulty: "hard",
+            question: "Arrange the following movements in correct chronological order:\n(A) Dandi March\n(B) Swadeshi Movement\n(C) Non-Cooperation Movement\n(D) Home Rule League",
+            options: ["B-D-C-A", "B-C-D-A", "D-B-C-A", "B-D-A-C"],
             correct: 0,
-            cognitiveType: "synthesis",
-            timePresure: "standard",
-            speedTarget: 90,
-            explanation: "Kathakali (Kerala), Bharatanatyam (Tamil Nadu), Kuchipudi (Andhra Pradesh), Sattriya (Assam).",
+            cognitiveType: "chronological", timePresure: "deep", speedTarget: 120,
+            explanation: "Swadeshi (1905), Home Rule (1916), Non-Cooperation (1920), Dandi (1930).",
             examTags: ["CUET"]
         },
         {
-            id: "gk-q-058", type: "mcq", difficulty: "medium",
-            question: "Who is the legendary Sitar player known for music like 'Raag Desh'?",
-            options: ["Pandit Ravi Shankar", "Zakir Hussain", "Bismillah Khan", "Hariprasad Chaurasia"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Pandit Ravi Shankar was a world-renowned Sitar maestro.",
-            examTags: ["CUET", "MH-CET"]
+            id: "gk-his-002", type: "mcq", difficulty: "medium",
+            question: "Who founded the Indian National Congress in 1885?",
+            options: ["W.C. Bonnerjee", "Dadabhai Naoroji", "A.O. Hume", "Annie Besant"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "A.O. Hume was the founder/General Secretary; W.C. Bonnerjee was the 1st President.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "gk-q-059", type: "mcq", difficulty: "medium",
-            question: "The 'Madhubani' style of painting is folk painting of which state?",
-            options: ["West Bengal", "Bihar", "Uttar Pradesh", "Rajasthan"],
+            id: "gk-his-003", type: "mcq", difficulty: "hard",
+            question: "Match the Figure with the Movement:\n1. Khan Abdul Ghaffar Khan  a. Swadeshi\n2. C.R. Das                 b. Khudai Khidmatgar\n3. Aurobindo Ghosh         c. Swaraj Party\n4. Sardar Patel            d. Bardoli Satyagraha",
+            options: ["1-b, 2-c, 3-a, 4-d", "1-a, 2-c, 3-b, 4-d", "1-b, 2-a, 3-c, 4-d", "1-d, 2-c, 3-a, 4-b"],
+            correct: 0,
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 90,
+            explanation: "Khan (Khudai Khidmatgar/Frontier Gandhi), C.R. Das (Swaraj Party), Aurobindo (Swadeshi), Patel (Bardoli).",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-his-004", type: "mcq", difficulty: "medium",
+            question: "Which incident forced Mahatma Gandhi to withdraw the Non-Cooperation Movement in 1922?",
+            options: ["Jallianwala Bagh", "Chauri Chaura incident", "Simon Commission arrival", "Dandi March"],
             correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Madhubani painting (Mithila art) belongs to the Mithila region of Bihar.",
+            cognitiveType: "application", timePresure: "speed", speedTarget: 45,
+            explanation: "Violent clash in Chauri Chaura (UP) led Gandhi to halt the NCM due to non-violence breach.",
             examTags: ["CUET", "MH-CET"]
         },
         {
-            id: "gk-q-060", type: "match-column", difficulty: "hard",
-            question: "Match the following Festivals with their States:",
-            column_a: ["Pongal", "Bihu", "Gudi Padwa", "Onam"],
-            column_b: ["Maharashtra", "Tamil Nadu", "Kerala", "Assam"],
-            correct_mapping: [1, 3, 0, 2],
-            options: [
-                "Pongal-TN, Bihu-Assam, Gudi-Maharashtra, Onam-Kerala",
-                "Pongal-Kerala, Bihu-Maharashtra, Gudi-Assam, Onam-TN",
-                "Pongal-Assam, Bihu-TN, Gudi-Kerala, Onam-Maharashtra",
-                "Pongal-Maharashtra, Bihu-Kerala, Gudi-TN, Onam-Assam"
-            ],
+            id: "gk-his-005", type: "mcq", difficulty: "medium",
+            question: "Who gave the slogan 'Do or Die' during the Quit India Movement?",
+            options: ["Netaji Bose", "Sardar Patel", "Mahatma Gandhi", "Jawaharlal Nehru"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Given at Gowalia Tank Maidan, Mumbai (August 1942).",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "gk-his-006", type: "mcq", difficulty: "hard",
+            question: "Arrange these in chronological sequence:\n(A) Simon Commission\n(B) Poona Pact\n(C) Gandhi-Irwin Pact\n(D) First Round Table Conference",
+            options: ["A-D-C-B", "A-C-D-B", "D-A-C-B", "A-D-B-C"],
             correct: 0,
-            cognitiveType: "synthesis",
-            timePresure: "standard",
-            speedTarget: 90,
-            explanation: "Pongal (TN), Bihu (Assam), Gudi Padwa (Maharashtra), Onam (Kerala).",
+            cognitiveType: "chronological", timePresure: "deep", speedTarget: 120,
+            explanation: "Simon (1928), 1st RTC (1930), Gandhi-Irwin (1931), Poona Pact (1932).",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-his-007", type: "mcq", difficulty: "medium",
+            question: "Which of the following statements about the Salt Satyagraha are INCORRECT?",
+            options: [
+                "It started from Sabarmati Ashram.",
+                "It was aimed at breaking the salt law.",
+                "C. Rajagopalachari led the march in Tamil Nadu.",
+                "It was supported by the British Government."
+            ],
+            correct: 3,
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
+            explanation: "It was a massive act of civil disobedience against British tea/salt taxes (obviously not supported by them).",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-his-008", type: "mcq", difficulty: "medium",
+            question: "Who was the political guru of Mahatma Gandhi?",
+            options: ["Dadabhai Naoroji", "Bal Gangadhar Tilak", "Gopal Krishna Gokhale", "Annie Besant"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Gokhale advised Gandhi to travel India for one year to understand the ground reality.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-his-009", type: "mcq", difficulty: "hard",
+            question: "The Rowlatt Act of 1919 was critically linked to which massive tragedy?",
+            options: ["Partition of Bengal", "Jallianwala Bagh Massacre", "Non-Cooperation Movement", "Civil Disobedience"],
+            correct: 1,
+            cognitiveType: "application", timePresure: "speed", speedTarget: 45,
+            explanation: "Protests against Rowlatt Act (No Dalil, No Vakil, No Appeal) led to the Amritsar massacre.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-his-010", type: "mcq", difficulty: "medium",
+            question: "Who founded the 'Forward Bloc'?",
+            options: ["Bhagat Singh", "Subhash Chandra Bose", "Lala Lajpat Rai", "Chandrashekhar Azad"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Bose founded it in 1939 after resigning from the Congress presidency.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "gk-his-011", type: "mcq", difficulty: "medium",
+            question: "Identify the incorrectly matched pair:",
+            options: [
+                "Annie Besant - Commonweal",
+                "M.K. Gandhi - Hind Swaraj",
+                "Bal Gangadhar Tilak - Kesari",
+                "Lala Lajpat Rai - Discovery of India"
+            ],
+            correct: 3,
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 90,
+            explanation: "'Discovery of India' was written by Jawaharlal Nehru.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-his-012", type: "mcq", difficulty: "medium",
+            question: "In which year did the partition of Bengal take place?",
+            options: ["1901", "1905", "1911", "1920"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Announced by Lord Curzon in 1905; annulled in 1911.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "gk-his-013", type: "mcq", difficulty: "hard",
+            question: "Which session of the INC passed the 'Quit India' resolution?",
+            options: ["Lahore Session 1929", "Karachi Session 1931", "Bombay Session 1942", "Tripuri Session 1939"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Passed at the Wardha/Bombay meeting in August 1942.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-his-014", type: "mcq", difficulty: "medium",
+            question: "The slogan 'Swaraj is my birthright' belongs to:",
+            options: ["Gopal Krishna Gokhale", "Lala Lajpat Rai", "Bal Gangadhar Tilak", "Bipin Chandra Pal"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Tilak was known as 'Lokmanya' for this staunch nationalist stance.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "gk-his-015", type: "mcq", difficulty: "hard",
+            question: "The 'August Offer' of 1940 was made by which Viceroy?",
+            options: ["Lord Linlithgow", "Lord Mountbatten", "Lord Wavell", "Lord Reading"],
+            correct: 0,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Offered to secure Indian cooperation in WWII in exchange for Dominion Status.",
             examTags: ["CUET"]
         },
 
-        // --- PART B: MAH CET GK SPEED DRILL (15 questions) ---
-        // Capitals and Currencies (4 Qs)
+        // --- CATEGORY C: Geography (15 Questions) ---
         {
-            id: "gk-q-061", type: "mcq", difficulty: "easy",
-            question: "What is the capital of 'Australia'?",
-            options: ["Sydney", "Melbourne", "Canberra", "Perth"],
-            correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Canberra is the capital of Australia.",
-            examTags: ["MH-CET"]
-        },
-        {
-            id: "gk-q-062", type: "mcq", difficulty: "easy",
-            question: "What is the currency of 'Japan'?",
-            options: ["Yuan", "Yen", "Won", "Baht"],
+            id: "gk-geo-001", type: "mcq", difficulty: "medium",
+            question: "Which city is known as the 'Manchester of India'?",
+            options: ["Mumbai", "Ahmedabad", "Surat", "Kolkata"],
             correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "The Yen is the official currency of Japan.",
-            examTags: ["MH-CET"]
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Ahmedabad is famous for its textile industry.",
+            examTags: ["CUET", "MH-CET"]
         },
         {
-            id: "gk-q-063", type: "mcq", difficulty: "easy",
-            question: "What is the capital of 'Israel'?",
-            options: ["Tel Aviv", "Jerusalem", "Haifa", "Eilat"],
+            id: "gk-geo-002", type: "mcq", difficulty: "medium",
+            question: "Sardar Sarovar Dam is built on which river?",
+            options: ["Ganga", "Narmada", "Tapti", "Mahi"],
             correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Jerusalem is the capital of Israel (though many embassies are in Tel Aviv).",
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Located in Gujarat, it is one of the largest dams in India.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-geo-003", type: "mcq", difficulty: "hard",
+            question: "Match the Pass with its State/UT:\n1. Nathu La      a. Himachal Pradesh\n2. Banihal       b. Sikkim\n3. Rohtang       c. Jammu & Kashmir\n4. Zoji La       d. Ladakh",
+            options: ["1-b, 2-c, 3-a, 4-d", "1-b, 2-a, 3-c, 4-d", "1-a, 2-c, 3-b, 4-d", "1-b, 2-c, 3-d, 4-a"],
+            correct: 0,
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 90,
+            explanation: "Nathu La (Sikkim), Banihal (J&K), Rohtang (HP), Zoji La (Ladakh).",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-geo-004", type: "mcq", difficulty: "medium",
+            question: "Where is the 'Zemu Glacier' located?",
+            options: ["Ladakh", "Sikkim", "Uttarakhand", "Himachal Pradesh"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "It is the largest glacier in the Eastern Himalayas, Sikkim.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-geo-005", type: "mcq", difficulty: "hard",
+            question: "Arrange these states in order of their formation (earliest to latest):\n(A) Nagaland  (B) Haryana  (C) Sikkim  (D) Goa",
+            options: ["A-B-C-D", "B-A-C-D", "A-C-B-D", "C-A-B-D"],
+            correct: 0,
+            cognitiveType: "chronological", timePresure: "deep", speedTarget: 120,
+            explanation: "Nagaland (1963), Haryana (1966), Sikkim (1975), Goa (1987).",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-geo-006", type: "mcq", difficulty: "easy",
+            question: "Which city is the 'Silicon Valley of India'?",
+            options: ["Hyderabad", "Pune", "Bengaluru", "Chennai"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 30,
+            explanation: "Bengaluru is the hub of India's IT sector.",
             examTags: ["MH-CET"]
         },
         {
-            id: "gk-q-064", type: "mcq", difficulty: "easy",
-            question: "The 'Euro' is the currency of which country?",
-            options: ["United Kingdom", "Switzerland", "Germany", "Norway"],
+            id: "gk-geo-007", type: "mcq", difficulty: "medium",
+            question: "Tehri Dam is built on which river?",
+            options: ["Alaknanda", "Mandakini", "Bhagirathi", "Ganga"],
             correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Germany uses the Euro. UK uses Pound, Switzerland uses Franc, Norway uses Krone.",
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Tehri (Uttarakhand) is the highest dam in India.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-geo-008", type: "mcq", difficulty: "medium",
+            question: "Which state has the longest coastline in India?",
+            options: ["Andhra Pradesh", "Tamil Nadu", "Gujarat", "Maharashtra"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Gujarat has the longest coastline due to its jagged shape and kutch.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-geo-009", type: "mcq", difficulty: "hard",
+            question: "Nathu La Pass connects India to which country?",
+            options: ["Nepal", "Bhutan", "China", "Myanmar"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "It is a major checkpoint on the Indo-China border in Sikkim.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-geo-010", type: "mcq", difficulty: "medium",
+            question: "What is the nickname of Kolkata?",
+            options: ["City of Joy", "Golden City", "Diamond City", "Pink City"],
+            correct: 0,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 30,
+            explanation: "Known for its rich culture and history.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "gk-geo-011", type: "mcq", difficulty: "medium",
+            question: "Which degree of latitude is known as the 'Tropic of Cancer'?",
+            options: ["23.5° N", "23.5° S", "66.5° N", "0°"],
+            correct: 0,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Passes through 8 states in India.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-geo-012", type: "mcq", difficulty: "medium",
+            question: "The standard time meridian of India (82.5° E) passes through which of these cities?",
+            options: ["Varanasi", "Lucknow", "Mirzapur", "Patna"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "The IST is determined based on the time at Mirzapur, UP.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-geo-013", type: "mcq", difficulty: "hard",
+            question: "Which is the smallest state in India by area?",
+            options: ["Goa", "Sikkim", "Tripura", "Nagaland"],
+            correct: 0,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Goa is smallest; Rajasthan is largest by area.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "gk-geo-014", type: "mcq", difficulty: "medium",
+            question: "Where is 'Siachen Glacier' located?",
+            options: ["Ladakh", "Uttarakhand", "Himachal Pradesh", "Sikkim"],
+            correct: 0,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Highest battlefield in the world, located in the Eastern Karakoram range.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-geo-015", type: "mcq", difficulty: "easy",
+            question: "Which river is known as 'Dakshin Ganga'?",
+            options: ["Krishna", "Godavari", "Cauvery", "Narmada"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Godavari is the largest river of South India.",
             examTags: ["MH-CET"]
         },
 
-        // Important Days (4 Qs)
+        // --- CATEGORY D: Current Affairs 2022–2024 (15 Questions) ---
+        // Protocol: Only use facts from VERIFIED list.
         {
-            id: "gk-q-065", type: "mcq", difficulty: "easy",
-            question: "On which date is 'International Women's Day' celebrated?",
-            options: ["February 14", "March 8", "April 22", "June 5"],
+            id: "gk-ca-001", type: "mcq", difficulty: "medium",
+            question: "Who was awarded the 'Padma Vibhushan' 2024 for Arts?",
+            options: ["Mithun Chakraborty", "Konidela Chiranjeevi", "Jaya Verma Sinha", "Sitaram Jindal"],
             correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "International Women's Day is observed globally on March 8.",
-            examTags: ["MH-CET"]
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Actor Chiranjeevi received the highest Padma award in 2024.",
+            examTags: ["CUET", "MH-CET"]
         },
         {
-            id: "gk-q-066", type: "mcq", difficulty: "easy",
-            question: "When is 'World Environment Day' celebrated?",
-            options: ["July 11", "August 29", "June 5", "September 16"],
+            id: "gk-ca-002", type: "mcq", difficulty: "medium",
+            question: "Actor Mithun Chakraborty was honored with which award in 2024?",
+            options: ["Padma Vibhushan", "Padma Bhushan", "Padma Shri", "Bharat Ratna"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "(VERIFIED) Mithun received the Padma Bhushan, NOT Padma Shri.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-ca-003", type: "mcq", difficulty: "medium",
+            question: "Who is the first woman Chairman and CEO of the Railway Board (2023)?",
+            options: ["Madhabi Puri Buch", "Jaya Verma Sinha", "Nirmala Sitharaman", "Droupadi Murmu"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Jaya Verma Sinha is a historic first in Indian Railways.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-ca-004", type: "mcq", difficulty: "hard",
+            question: "Identify the incorrectly matched pair (Verified Facts 2024):",
+            options: [
+                "Dr. Arvind Panagariya - 16th Finance Commission",
+                "Mission Divyastra - Agni-5 MIRV",
+                "Jhulaghat Bridge - India-Nepal",
+                "China - QUAD Member"
+            ],
+            correct: 3,
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 90,
+            explanation: "China is NOT a member of the QUAD (India, USA, Japan, Australia).",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-ca-005", type: "mcq", difficulty: "medium",
+            question: "Where was India's first 3D-printed Post Office inaugurated?",
+            options: ["Pune", "Hyderabad", "Bengaluru", "Chennai"],
             correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "World Environment Day is celebrated on June 5.",
-            examTags: ["MH-CET"]
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "(VERIFIED FACT) Inaugurated in Cambridge Layout, Bengaluru.",
+            examTags: ["CUET", "MH-CET"]
         },
         {
-            id: "gk-q-067", type: "mcq", difficulty: "easy",
-            question: "In India, 'National Science Day' is celebrated on:",
-            options: ["February 28", "January 30", "December 22", "November 11"],
+            id: "gk-ca-006", type: "mcq", difficulty: "hard",
+            question: "The Raman Magsaysay Award 2023 was given to Dr. Ravi Kannan R. for his work in:",
+            options: ["Space Technology", "Cancer Care", "Rural Education", "Climate Change"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "He is an oncologist from Assam recognized for pro-poor healthcare.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-ca-007", type: "mcq", difficulty: "medium",
+            question: "In the context of the Agni-5 missile, what does MIRV stand for?",
+            options: [
+                "Multiple Independently Targetable Re-Entry Vehicle",
+                "Main Inter Range Vehicle",
+                "Medium Indian Rocket Version",
+                "Mobile Integrated Radar Vision"
+            ],
             correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "National Science Day is celebrated on Feb 28 to mark the discovery of the Raman Effect.",
-            examTags: ["MH-CET"]
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Technology allowing multiple warheads on a single missile.",
+            examTags: ["CUET", "MH-CET"]
         },
         {
-            id: "gk-q-068", type: "mcq", difficulty: "easy",
-            question: "When is 'Constitution Day' (Samvidhan Divas) celebrated in India?",
-            options: ["January 26", "August 15", "November 26", "October 2"],
+            id: "gk-ca-008", type: "mcq", difficulty: "medium",
+            question: "The 'Mission Antyodaya' survey focuses on which level of governance?",
+            options: ["Urban Municipalities", "Gram Panchayats", "State Assemblies", "Central Ministries"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Annual survey to monitor rural development convergence.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-ca-009", type: "mcq", difficulty: "medium",
+            question: "Dr. Arvind Panagariya is the Chairman of which constitutional body?",
+            options: ["Niti Aayog", "Railway Board", "16th Finance Commission", "UPSC"],
             correct: 2,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Constitution Day is celebrated on Nov 26 to commemorate the adoption of the Constitution in 1949.",
-            examTags: ["MH-CET"]
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "He heads the newly constituted 16th Finance Commission.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-ca-010", type: "mcq", difficulty: "medium",
+            question: "M. Fathima Beevi, who recently passed away and received Padma Bhushan 2024, was the first woman:",
+            options: ["Governor of India", "Judge of Supreme Court", "Pilot in Air Force", "Chief Minister"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "A trailblazer for women in the Indian judiciary.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-ca-011", type: "mcq", difficulty: "medium",
+            question: "Which of the following para-athletes is the first to receive the Padma Bhushan?",
+            options: ["Deepa Malik", "Devendra Jhajharia", "Avani Lekhara", "Neeraj Chopra"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Verified fact from the official awards list.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-ca-012", type: "mcq", difficulty: "medium",
+            question: "The Jhulaghat suspension bridge connects India to:",
+            options: ["Bhutan", "Bangladesh", "Nepal", "Myanmar"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Connects Pithoragarh (Uttarakhand) to Nepal.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-ca-013", type: "mcq", difficulty: "medium",
+            question: "Who is the fourth member of the QUAD group alongside India, USA, and Japan?",
+            options: ["France", "South Korea", "Australia", "Russia"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "QUAD members: India, USA, Japan, Australia.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-ca-014", type: "mcq", difficulty: "medium",
+            question: "Mission Divyastra, announced in 2024, is associated with:",
+            options: ["Lunar Mission", "Solar Mission", "Agni-5 MIRV Test", "Cyber Security"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "The Prime Minister announced the successful Agni-5 MIRV test under this mission name.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "gk-ca-015", type: "mcq", difficulty: "hard",
+            question: "Which Padma award did Mithun Chakraborty receive in 2024?",
+            options: ["Padma Vibhushan", "Padma Bhushan", "Padma Shri", "None"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Critical factual check: He received the Padma Bhushan.",
+            examTags: ["CUET", "MH-CET"]
         },
 
-        // Abbreviations (4 Qs)
+        // --- CATEGORY E: General Science — Conceptual (15 Questions) ---
         {
-            id: "gk-q-069", type: "mcq", difficulty: "easy",
-            question: "What does 'UNESCO' stand for?",
+            id: "gk-sci-001", type: "mcq", difficulty: "medium",
+            question: "Water boils at a lower temperature at high altitudes primarily because:",
             options: [
-                "United Nations Educational, Scientific and Cultural Organization",
-                "United Nations Environmental and Social Council Organization",
-                "Universal Nations Educational, Social and Cultural Organization",
-                "United Nations Emergency Social and Cultural Organization"
+                "Atmospheric pressure decreases",
+                "Atmospheric pressure increases",
+                "Air is thinner",
+                "Temperature is higher"
             ],
             correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "UNESCO: United Nations Educational, Scientific and Cultural Organization.",
-            examTags: ["MH-CET"]
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
+            explanation: "Boiling point depends on external pressure. When pressure drops (altitudes), the vapor pressure required for boiling is reached at a lower temp.",
+            examTags: ["CUET"]
         },
         {
-            id: "gk-q-070", type: "mcq", difficulty: "easy",
-            question: "What is the full form of 'NABARD'?",
+            id: "gk-sci-002", type: "mcq", difficulty: "medium",
+            question: "Why does a ship made of steel float on water, while a solid steel ball sinks?",
             options: [
-                "National Bank for Agriculture and Rural Development",
-                "National Board for Agricultural Research and Development",
-                "National Bank for Asian Rural Development",
-                "National Board for Allied Regional Development"
+                "Ship has more mass",
+                "The ship's average density is less than water due to trapped air",
+                "Steel ball has more surface area",
+                "Water pushes the ship harder"
             ],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "NABARD: National Bank for Agriculture and Rural Development.",
-            examTags: ["MH-CET"]
-        },
-        {
-            id: "gk-q-071", type: "mcq", difficulty: "easy",
-            question: "What does 'SENSEX' stand for?",
-            options: [
-                "Sensitive Index",
-                "Senior Exchange",
-                "Security Index",
-                "Service Exchange"
-            ],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "SENSEX is the Stock Exchange Sensitive Index of the BSE.",
-            examTags: ["MH-CET"]
-        },
-        {
-            id: "gk-q-072", type: "mcq", difficulty: "easy",
-            question: "What is the full form of 'ISRO'?",
-            options: [
-                "Indian Space Research Organization",
-                "International Space Research Organization",
-                "Indian Solar Research Office",
-                "International Solar Research Office"
-            ],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "ISRO: Indian Space Research Organization.",
-            examTags: ["MH-CET"]
-        },
-
-        // First in India (3 Qs)
-        {
-            id: "gk-q-073", type: "mcq", difficulty: "easy",
-            question: "Who was the first President of India?",
-            options: ["Dr. Rajendra Prasad", "Dr. S. Radhakrishnan", "Zakir Husain", "V.V. Giri"],
-            correct: 0,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Dr. Rajendra Prasad was the first President of India.",
-            examTags: ["MH-CET"]
-        },
-        {
-            id: "gk-q-074", type: "mcq", difficulty: "easy",
-            question: "Who was the first Indian to go into space?",
-            options: ["Kalpana Chawla", "Rakesh Sharma", "Sunita Williams", "Vikram Sarabhai"],
             correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Rakesh Sharma was the first Indian citizen to travel into space (1984).",
-            examTags: ["MH-CET"]
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
+            explanation: "Archimedes' Principle: The hollow ship displaces a volume of water heavier than itself.",
+            examTags: ["CUET"]
         },
         {
-            id: "gk-q-075", type: "mcq", difficulty: "easy",
-            question: "Who was the first Woman Prime Minister of India?",
-            options: ["Pratibha Patil", "Indira Gandhi", "Sarojini Naidu", "Sushma Swaraj"],
+            id: "gk-sci-003", type: "mcq", difficulty: "medium",
+            question: "The Ozone layer protects the Earth by absorbing which type of radiation?",
+            options: ["Infrared rays", "Ultraviolet (UV) rays", "X-rays", "Gamma rays"],
             correct: 1,
-            cognitiveType: "recall",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Indira Gandhi served as the first woman Prime Minister of India.",
-            examTags: ["MH-CET"]
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "UV-B rays are particularly filtered by the ozone layer (O3) in the stratosphere.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-004", type: "mcq", difficulty: "medium",
+            question: "A passenger in a moving bus falls forward when the driver applies brakes suddenly. This is due to:",
+            options: ["Inertia of rest", "Inertia of motion", "Centrifugal force", "Gravity"],
+            correct: 1,
+            cognitiveType: "application", timePresure: "speed", speedTarget: 45,
+            explanation: "The passenger's body wants to continue in motion (Newton's 1st Law) while the bus stops.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-005", type: "mcq", difficulty: "medium",
+            question: "Which of the following occurs when the ocean becomes more acidic?",
+            options: ["The pH level increases", "The pH level decreases", "The pH becomes neutral", "Salt concentration decreases"],
+            correct: 1,
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
+            explanation: "Acidic substances have pH < 7. More acid = lower pH.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-006", type: "mcq", difficulty: "hard",
+            question: "Diamond is a bad conductor of electricity, whereas Graphite is a good conductor. This is because:",
+            options: [
+                "Diamond has free electrons",
+                "Graphite has delocalised electrons between its layers",
+                "Diamond is harder",
+                "Graphite is a metal"
+            ],
+            correct: 1,
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
+            explanation: "In graphite, each carbon atom is bonded to 3 others, leaving 1 free electron per atom for conduction.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-007", type: "mcq", difficulty: "medium",
+            question: "Kwashiorkor is a disease caused by the deficiency of:",
+            options: ["Vitamin D", "Iron", "Proteins", "Iodine"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Kwashiorkor is protein-specific deficiency; Marasmus is overall calorie deficiency.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-008", type: "mcq", difficulty: "medium",
+            question: "Which vitamin deficiency causes 'Night Blindness'?",
+            options: ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin K"],
+            correct: 0,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Vitamin A (Retinol) is essential for vision.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-009", type: "mcq", difficulty: "easy",
+            question: "Goitre is caused by the deficiency of which element?",
+            options: ["Calcium", "Iodine", "Sodium", "Zinc"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Iodine deficiency leads to the swelling of the thyroid gland.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-010", type: "mcq", difficulty: "hard",
+            question: "Identify the INCORRECTLY matched pair:",
+            options: [
+                "Scurvy - Vitamin C",
+                "Beriberi - Vitamin B1",
+                "Rickets - Vitamin D",
+                "Night Blindness - Vitamin B12"
+            ],
+            correct: 3,
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 90,
+            explanation: "Night Blindness is caused by Vitamin A, not B12.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-011", type: "mcq", difficulty: "medium",
+            question: "Why do we hear thunder after seeing lightning even though they happen simultaneously?",
+            options: [
+                "Thunder happens later",
+                "Light travels faster than sound",
+                "Sound travels faster than light",
+                "Eyes are faster than ears"
+            ],
+            correct: 1,
+            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
+            explanation: "Light (300,000 km/s) is significantly faster than sound (343 m/s).",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-012", type: "mcq", difficulty: "easy",
+            question: "A neutral solution has a pH of:",
+            options: ["0", "7", "14", "5"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Pure water is neutral at pH 7.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-013", type: "mcq", difficulty: "medium",
+            question: "A person living on a diet of polished rice only is at risk of:",
+            options: ["Scurvy", "Beriberi", "Pellegra", "Rickets"],
+            correct: 1,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Polishing removes the outer layer rich in Vitamin B1 (Thiamine).",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-014", type: "mcq", difficulty: "medium",
+            question: "Which gas is primarily responsible for global warming?",
+            options: ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"],
+            correct: 2,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "CO2 traps heat in the atmosphere (Greenhouse effect).",
+            examTags: ["CUET"]
+        },
+        {
+            id: "gk-sci-015", type: "mcq", difficulty: "medium",
+            question: "Which of these is a liquid at room temperature?",
+            options: ["Mercury", "Carbon", "Sulphur", "Iodine"],
+            correct: 0,
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
+            explanation: "Mercury (Hg) is a metal that remains liquid at standard room temperature.",
+            examTags: ["CUET"]
         }
     ]
 };

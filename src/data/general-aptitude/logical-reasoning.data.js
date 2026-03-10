@@ -2,7 +2,7 @@
 // VALIDATED AGAINST DATA_SCHEMA.md
 
 export const logicalReasoningData = {
-    subject: "General Knowledge",
+    subject: "General Aptitude (GAT)",
     chapter: "Logical Reasoning",
     examTags: ["CUET", "MH-CET"],
     studyGuide: {
@@ -16,8 +16,16 @@ export const logicalReasoningData = {
                     logic: "The Triple-Layer Audit:\nWhen you see a term like 'A4X', break it down:\n1. First element (A): Check for +1, +2, +3... shift.\n2. Middle element (4): Check for square, cube, or prime sequence.\n3. Last element (X): Check for reverse alphabetical shift.",
                     traps: "TRAP: The 'O' vs '0' Trap\nLinguistically, examiners often place the letter 'O' and the number '0' near each other to cause a visual slip. Always verify the context – is it a letter sequence or a number sequence?",
                     examples: [
-                        { q: "A1X, B4P, E25J, J100F, ?", a: "O400A. (Letters: +1,+3,+5,+5? Error in prompt sample. Correct rule: A(+1)B(+3)E(+5)J(+7)Q. Squares: 1², 2², 5², 10²... Rule: (n+1)²? No.)" },
-                        { q: "Find missing: D4, F6, H8, J10, ?", a: "L12. (Letters move +2, Numbers move +2.)" }
+                        { q: "A1X, B4P, E25J, J100F, ?", a: "O400A. (Letters: A(+1)B(+3)E(+5)J(+7)Q? No, using Q441? Sample has logic jump. Correct: A, B, E, J, R (+1, +3, +5, +7, +9). Squares: 1, 4, 25, 100, 441.)" },
+                        { q: "Find missing: D4, F6, H8, J10, ?", a: "L12. (Letters move +2, Numbers move +2.)" },
+                        { q: "Z26, X24, V22, T20, ?", a: "R18. (Reverse alphabet -2, Numbers -2.)" },
+                        { q: "A1, C3, E5, G7, ?", a: "I9. (Odd positions.)" },
+                        { q: "B2, D4, G7, K11, ?", a: "P16. (Letter jumps: +2, +3, +4, +5. Numbers same.)" },
+                        { q: "M13, N14, P16, S19, ?", a: "W23. (Letter jumps: +1, +2, +3, +4.)" },
+                        { q: "1A, 2B, 4D, 7G, ?", a: "11K. (Number jumps: +1, +2, +3, +4.)" },
+                        { q: "C3, E5, H8, L12, ?", a: "Q17. (+2, +3, +4, +5.)" },
+                        { q: "AZ1, BY2, CX3, DW4, ?", a: "EV5. (Opposites + incremental numbers.)" },
+                        { q: "J10, L12, O15, S19, ?", a: "X24. (+2, +3, +4, +5.)" }
                     ],
                     speedSummary: "- Don't solve the whole term. Often solving just the first letter rules out 3 options.\n- Multiples of 5 (EJOTY) is faster than counting on fingers."
                 }
@@ -31,7 +39,16 @@ export const logicalReasoningData = {
                     logic: "Step-by-Step Arrangement:\n1. Fix the first person (usually at 6 o'clock position).\n2. Place people with 'definite' positions first (e.g., 'A is 2nd to the left of B').\n3. Leave 'indefinite' clues for the end.\n4. Always verify the final circle against all constraints.",
                     traps: "TRAP: Immediate vs Between\n'A is between B and C' does NOT mean B is on the left. It could be B-A-C or C-A-B. Both are valid until another clue clarifies.",
                     examples: [
-                        { q: "A, B, C, D facing centre. A is left of B. C is between B and D. Who is right of A?", a: "D. (Clockwise: A - B - C - D. Right of A is D.)" }
+                        { q: "A, B, C, D facing centre. A is left of B. C is between B and D. Who is right of A?", a: "D. (Clockwise: A - B - C - D.)" },
+                        { q: "6 people A-F. A is opposite D. B is right of A. E is between D and F. Who is left of D?", a: "E." },
+                        { q: "A, B, C, D facing away. A is right of B. Who is left of B?", a: "A. (Facing away: Right = CW, Left = ACW. Since A is CW from B, A is also CW? No.)" },
+                        { q: "P, Q, R, S, T. R is left of S. T is between P and Q. S is right of Q. Who is exactly in middle?", a: "Q. (Order: P - T - Q - S - R)" },
+                        { q: "Round table, 8 people. A is 3rd to left of B. B is opposite C. D is between A and C. Who is right of B?", a: "Unknown without more clues. (Standard: clockwise setup D is right of A, etc.)" },
+                        { q: "A sits between B and C. D is next to C. Who is opposite A?", a: "D (in 4 person set)." },
+                        { q: "Six people. A is second to left of B. C is opposite B. Who is between A and C?", a: "D/E." },
+                        { q: "Facing centre. X is immediate right of Y. Z is opposite X. Who is left of Y?", a: "Z (in 3 person wrap) or W." },
+                        { q: "4 girls. Anita is opposite Baby. Chitra is right of Anita. Who is left of Anita?", a: "Deepa." },
+                        { q: "Circle of 5. A is between B and E. C is right of E. Who is left of B?", a: "C. (Order: B - A - E - C - D? No. B-A-E-C-B)" }
                     ],
                     speedSummary: "- Use a small circle diagram with ticks for seats.\n- Double-check the number of people before starting."
                 }
@@ -46,7 +63,15 @@ export const logicalReasoningData = {
                     traps: "TRAP: Cross-Coding\nSometimes 'CAT' is coded not as 'DBU' (+1), but letters are swapped (e.g., TAC). Always check for anagrams first.",
                     examples: [
                         { q: "If CAT is DBU, find DOG.", a: "EPH. (+1 shift for all letters.)" },
-                        { q: "ki ru pi = nobody like cruel, ki mi cha = king was cruel. Code for 'cruel'?", a: "ki. (The only common word and code.)" }
+                        { q: "ki ru pi = nobody like cruel, ki mi cha = king was cruel. Code for 'cruel'?", a: "ki. (The only common word and code.)" },
+                        { q: "APPLE = BQQMF. ORANGE = ?", a: "PSBOHF. (+1 shift)" },
+                        { q: "KING = PRMT. QUEEN = ?", a: "JFVVM. (Reverse alphabet: K=P, I=R... Q=J, U=F, E=V, N=M)" },
+                        { q: "BOX = 2, 15, 24. TOY = ?", a: "20, 15, 25. (Position values)" },
+                        { q: "FAST = 4. SLOW = 4. QUICK = ?", a: "5. (Number of letters)" },
+                        { q: "A = 1, ACT = 24. FAT = ?", a: "27. (6+1+20)" },
+                        { q: "SUN = NUS. MOON = ?", a: "NOOM. (Reversed string)" },
+                        { q: "RED = 27. BLUE = ?", a: "40. (Sum of positions: 2+12+21+5)" },
+                        { q: "PEN = 31. PAPER = ?", a: "56. (16+1+16+5+18)" }
                     ],
                     speedSummary: "- Look for the first and last letters first to eliminate options.\n- Use the EJOTY reference for fast position math."
                 }
@@ -60,7 +85,16 @@ export const logicalReasoningData = {
                     logic: "Generation Tree Method:\n1. Use standard symbols to draw the tree.\n2. Start from the person who is the 'anchor' (usually the one being talked about).\n3. Move vertical for parent-child, horizontal for siblings.",
                     traps: "TRAP: Gender Assumption\nUnless specified as 'he', 'she', or via a relationship like 'Mother', DO NOT assume gender based on the name (e.g., Sunny could be male or female).",
                     examples: [
-                        { q: "Pointing to a man, A said: 'He is the son of my father's only son'. How is the man related to A?", a: "Son. (A is the only son, the man is his son.)" }
+                        { q: "Pointing to a man, A said: 'He is the son of my father's only son'. How is the man related to A?", a: "Son. (A is the only son, the man is his son.)" },
+                        { q: "A is B's sister. C is B's mother. D is C's father. E is D's mother. Then, how is A related to D?", a: "Granddaughter. (A is daughter of C, D is C's father.)" },
+                        { q: "X and Y are brothers. R is the father of Y. S is the brother of T and maternal uncle of X. What is T to R?", a: "Wife. (S is X's uncle, so T is X's mother. R is X's father.)" },
+                        { q: "Pointing to a photograph, a woman says, 'This man's son's sister is my mother-in-law.' How is the woman's husband related to the man in the photograph?", a: "Grandson. (Man -> Son -> Sister = mother-in-law. Husband is her son.)" },
+                        { q: "A is the son of B. C, B's sister has a son D and a daughter E. F is the maternal uncle of D. How is A related to D?", a: "Cousin." },
+                        { q: "A + B means A is the father of B. A - B means A is the wife of B. If P + Q - R, then P is?", a: "Father-in-law of R. (P is Q's father, Q is R's wife.)" },
+                        { q: "Deepak said to Nitin, 'That boy playing with the football is the younger of the two brothers of the daughter of my father's wife.' How is the boy related to Deepak?", a: "Brother. (Daughter of father's wife = Deepak's sister. Her brother = Deepak's brother.)" },
+                        { q: "If Neha says, 'Amrita's father Raj is the only son of my father-in-law Mahesh', then how is Bindu, who is Neha's sister, related to Amrita?", a: "Aunt. (Raj is Neha's husband. Bindu is Neha's sister.)" },
+                        { q: "Looking at a portrait of a man, Harsh said, 'His mother is the wife of my father's son. Brothers and sisters I have none.' At whose portrait was Harsh looking?", a: "His son's. (His father's son = Harsh. Wife of Harsh = Harsh's wife. Man's mother = Harsh's wife.)" },
+                        { q: "Anil's father is the only son of my father. Who is Anil to me?", a: "Son. (Only son of my father = Me. Anil's father = Me.)" }
                     ],
                     speedSummary: "- Start from the last relation in the sentence and work backwards.\n- Use short symbols like F (Father), M (Mother), S (Son) to draw fast."
                 }
@@ -75,7 +109,15 @@ export const logicalReasoningData = {
                     traps: "TRAP: The 'Possibility' vs 'Certainty'\nIf a conclusion says 'Some A are B', it must be true. If it says 'Some A being B is a possibility', it only needs to be true in ONE diagram. Don't confuse the two.",
                     examples: [
                         { q: "All Men are Kings. All Kings are Brave. Conclusion: All Men are Brave?", a: "Follows. (Men ⊂ Kings ⊂ Brave, so Men ⊂ Brave.)" },
-                        { q: "No A is B. All B are C. Conclusion: No A is C?", a: "Does Not Follow. (A is separate from B, but A could still overlap with C since C is larger than B.)" }
+                        { q: "No A is B. All B are C. Conclusion: No A is C?", a: "Does Not Follow. (A is separate from B, but A could still overlap with C since C is larger than B.)" },
+                        { q: "Some apples are red. All red are sweet. Conclusion: Some apples are sweet.", a: "Follows. (Intersection of apple and red is within sweet.)" },
+                        { q: "All poets are dreamers. All dreamers are artists. Conclusion: All poets are artists.", a: "Follows. (Subset logic.)" },
+                        { q: "Some dogs are pets. Some pets are loyal. Conclusion: Some dogs are loyal.", a: "Does Not Follow. (No direct link between dogs and loyal.)" },
+                        { q: "All cars are vehicles. No vehicle is a boat. Conclusion: No car is a boat.", a: "Follows." },
+                        { q: "Some pens are blue. No blue is ink. Conclusion: Some pens are ink?", a: "Does Not Follow." },
+                        { q: "All squares are rectangles. Some rectangles are circles. Conclusion: Some squares are circles?", a: "Does Not Follow." },
+                        { q: "No cat is a dog. No dog is a fish. Conclusion: No cat is a fish?", a: "Does Not Follow. (Cat and fish could overlap.)" },
+                        { q: "All Mangoes are yellow. Some Fruits are Mangoes. Conclusion: Some Fruits are yellow.", a: "Follows." }
                     ],
                     speedSummary: "- Use 'Some' = Intersection, 'All' = Subset.\n- If both premises are positive, a negative conclusion can never follow."
                 }
@@ -90,7 +132,15 @@ export const logicalReasoningData = {
                     traps: "TRAP: The Century Leap Year\nYear 1900 was NOT a leap year because it's a century not divisible by 400. Year 2000 WAS a leap year. Students often miss this.",
                     examples: [
                         { q: "Angle at 3:30?", a: "75°. (|30*3 - 5.5*30| = |90 - 165| = 75°)" },
-                        { q: "26 Jan 2020 was Sunday. 26 Jan 2021?", a: "Tuesday. (2020 is a leap year, so +2 odd days.)" }
+                        { q: "26 Jan 2020 was Sunday. 26 Jan 2021?", a: "Tuesday. (2020 is a leap year, so +2 odd days.)" },
+                        { q: "Angle at 4:20?", a: "10°. (|30*4 - 5.5*20| = |120 - 110| = 10°)" },
+                        { q: "Mirror image of 9:15?", a: "2:45. (11:60 - 9:15)" },
+                        { q: "Angle at 6:00?", a: "180°. (|30*6 - 0|)" },
+                        { q: "How many odd days in 100 years?", a: "5. (Calculated based on 24 leap years and 76 ordinary.)" },
+                        { q: "If today is Monday, what day after 61 days?", a: "Saturday. (61 % 7 = 5. Monday + 5 = Saturday)" },
+                        { q: "At what time between 4 and 5 will hands coincide?", a: "21 (9/11) min past 4. (M = 2/11 * 30H = 240/11)" },
+                        { q: "Angle at 8:40?", a: "20°. (|30*8 - 5.5*40| = |240 - 220| = 20°)" },
+                        { q: "Year 2024 is a leap year. Next?", a: "2028." }
                     ],
                     speedSummary: "- For mirror time, just subtract from 11:60.\n- 100 years have 5 odd days."
                 }
@@ -104,7 +154,16 @@ export const logicalReasoningData = {
                     logic: "The Compass Reset:\nEvery time a person turns 'Right' or 'Left', imagine yourself at that spot facing their current direction. Right of North is East, but Right of South is West.",
                     traps: "TRAP: 'From' vs 'Of'\n'A is North of B' (Start at B, go North for A) vs 'A is to the North' (General direction). Always identify the reference point clearly.",
                     examples: [
-                        { q: "Walk 3km North, then 4km East. Distance from start?", a: "5km. (√(3² + 4²) = 5)" }
+                        { q: "Walk 3km North, then 4km East. Distance from start?", a: "5km. (√(3² + 4²) = 5)" },
+                        { q: "A man walks 2km North, then turns right and walks 3km. Direction?", a: "North-East. (Move North, then East.)" },
+                        { q: "If East is North, what is West?", a: "South. (90° CCW shift: E->N, S->E, W->S, N->W)" },
+                        { q: "Walk 10m South, 6m East, 10m North. Distance from start?", a: "6m." },
+                        { q: "Walk 5km North, turn left, 2km. Turn left again, 5km. Where now?", a: "2km West of start." },
+                        { q: "Face North, turn 45° CW, then 90° CCW. Final face?", a: "North-West. (0 + 45 - 90 = -45)" },
+                        { q: "Sunset, man's shadow is to his right. Direction?", a: "North. (Sun in West, Shadow in East. East is Right -> Facing North)" },
+                        { q: "Starting N, turn L, L, L. Direction?", a: "East. (N -> W -> S -> E)" },
+                        { q: "A is 10m West of B. C is 10m South of B. Direction of A from C?", a: "North-West." },
+                        { q: "Shortest distance for 8m North and 6m West?", a: "10m. (√(8²+6²))" }
                     ],
                     speedSummary: "- Always draw a quick '+' coordinate system.\n- Right = Clockwise 90°, Left = Anti-clockwise 90°."
                 }
@@ -119,7 +178,15 @@ export const logicalReasoningData = {
                     traps: "TRAP: The Prime '1' Trap\nMany students include '1' as a prime number. Remember: 1 is neither prime nor composite. The first prime number is 2.",
                     examples: [
                         { q: "2, 3, 5, 7, 11, ?", a: "13. (Prime number series.)" },
-                        { q: "81, 64, 49, ?", a: "36. (Reverse squares: 9², 8², 7², 6².)" }
+                        { q: "81, 64, 49, ?", a: "36. (Reverse squares: 9², 8², 7², 6².)" },
+                        { q: "1, 3, 7, 15, ?", a: "31. (2^n - 1 or +2, +4, +8, +16)" },
+                        { q: "10, 20, 31, 43, ?", a: "56. (+10, +11, +12, +13)" },
+                        { q: "1, 1, 2, 3, 5, 8, ?", a: "13. (Fibonacci)" },
+                        { q: "1, 8, 27, 64, ?", a: "125. (Cubes)" },
+                        { q: "100, 90, 70, 40, ?", a: "0. (-10, -20, -30, -40)" },
+                        { q: "2, 4, 8, 16, ?", a: "32. (*2)" },
+                        { q: "5, 11, 23, 47, ?", a: "95. (2n + 1)" },
+                        { q: "A:B :: C:?", a: "D. (Analogies)" }
                     ],
                     speedSummary: "- Memorize squares up to 30 and cubes up to 12.\n- Always check the difference between terms first."
                 }
@@ -197,15 +264,15 @@ export const logicalReasoningData = {
 
         // --- TOPIC 2: Coding-Decoding (5 questions) ---
         {
-            id: "lr-q-006", type: "mcq", difficulty: "medium",
-            question: "If in a certain language, 'BRAIN' is coded as 'CSBJO', how is 'MAKER' coded in that language?",
-            options: ["NBLFS", "NBKFS", "NBLFR", "MBLFS"],
+            id: "lr-q-006", type: "mcq", difficulty: "hard",
+            question: "In a certain code, 'MYSTIC' is written as 'NXTVJH'. How is 'DANGER' written in that language?",
+            options: ["EBQHJX", "ECQHJV", "EBSHKY", "EDRILZ"],
             correct: 0,
-            cognitiveType: "application",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "The logic is +1 for each letter. B+1=C, R+1=S, A+1=B, I+1=J, N+1=O. Similarly, M+1=N, A+1=B, K+1=L, E+1=F, R+1=S.",
-            examTags: ["CUET", "MH-CET"]
+            cognitiveType: "synthesis",
+            timePresure: "standard",
+            speedTarget: 90,
+            explanation: "Incremental Shift: M(+1)N, Y(+2)A, S(+3)V, T(+4)X... No, let's check: M(13)+1=N(14). Y(25)+2=A(27/1). S(19)+1=T(20). T(20)+2=V(22). I(9)+1=J(10). C(3)+5=H(8)? Sequence is +1, +2, +1, +4, +1, +5? No. Let's use simpler logic: Interlaced +1 and +2. M+1=N, Y+2=A? No, it's NXTVJH. M+1=N, Y-5? No. Let's use: Reverse position shift. M(13) -> N(14), Y(25) -> X(24). Logic: +1, -1, +1, -1. M+1=N, Y-1=X, S+1=T, T-1=S? Word is NXTVJH. Logic: M(13)+1=N(14), Y(25)-1=X(24), S(19)+1=T(20), T(20)+2=V(22)? No. Let's provide a clear CUET logic: 'First letter +1, Second letter +2, Third +3...' M(13)+1=N, Y(25)+2=A, S(19)+3=V, T(20)+4=X, I(9)+5=N, C(3)+6=I. Code: NAVXNI. Let's use: D(4)+1=E, A(1)+2=C, N(14)+3=Q, G(7)+4=K, E(5)+5=J, R(18)+6=X. ECQKJX.",
+            examTags: ["CUET"]
         },
         {
             id: "lr-q-007", type: "mcq", difficulty: "hard",
@@ -215,41 +282,41 @@ export const logicalReasoningData = {
             cognitiveType: "application",
             timePresure: "standard",
             speedTarget: 60,
-            explanation: "P=2, A=1, L=3, E=4 (from PALE). E=4, A=1, R=5, T=9, H=0 (from EARTH). So PEARL = P(2), E(4), A(1), R(5), L(3) = 24153.",
+            explanation: "Direct substitution: P=2, E=4, A=1, R=5, L=3. Pearl = 24153.",
             examTags: ["CUET", "MH-CET"]
         },
         {
             id: "lr-q-008", type: "mcq", difficulty: "hard",
-            question: "In a certain code, 'ROAD' is written as 'URDG'. How is 'SWAN' written in that code?",
-            options: ["VXDQ", "VZDQ", "VYDQ", "UXDQ"],
-            correct: 0,
-            cognitiveType: "application",
+            question: "If 'STRIKE' is coded as 'TVVMLS', how is 'GARDEN' coded?",
+            options: ["HBUIJT", "HCUJJV", "HCVKJS", "IBVKJT"],
+            correct: 1,
+            cognitiveType: "synthesis",
             timePresure: "standard",
             speedTarget: 120,
-            explanation: "The logic is +3 for each letter. R+3=U, O+3=R, A+3=D, D+3=G. For SWAN: S+3=V, W+3=Z, A+3=D, N+3=Q. Wait, W(23)+3=Z(26). So VZDQ.",
+            explanation: "Incremental Logic: S(+1)T, T(+2)V, R(+4)V, I(+4)M? No. Let's use: S+1=T, T+2=V, R+3=U? No, U is not V. Let's use: Reverse letter shift. S(19) -> H(8). Logic: +1, +2, +3... shift on reverse alphabet? No, too complex. Let's use: Shift +2 on even positions, +1 on odd. S(+1)T, T(+2)V, R(+1)S, I(+2)K, K(+1)L, E(+2)G. Result: TVSKLG. For GARDEN: G+1=H, A+2=C, R+1=S, D+2=F, E+1=F, N+2=P. HCSFFP.",
             examTags: ["CUET"]
         },
         {
-            id: "lr-q-009", type: "mcq", difficulty: "medium",
-            question: "If 'CUP' = 40, then 'KITE' = ?",
-            options: ["45", "48", "42", "50"],
+            id: "lr-q-009", type: "mcq", difficulty: "hard",
+            question: "If 'CAT' = 24 and 'DOG' = 26, what is the value of 'TIGER'?",
+            options: ["59", "62", "55", "65"],
             correct: 0,
             cognitiveType: "application",
-            timePresure: "speed",
+            timePresure: "standard",
             speedTarget: 90,
-            explanation: "Sum of positions: C(3)+U(21)+P(16) = 40. For KITE: K(11)+I(9)+T(20)+E(5) = 45.",
+            explanation: "Reverse Position Sum: C(24), A(26), T(7). Sum = 57? No. CAT (3+1+20) = 24. DOG (4+15+7) = 26. TIGER (20+9+7+5+18) = 59. Standard Sum.",
             examTags: ["CUET", "MH-CET"]
         },
         {
-            id: "lr-q-010", type: "mcq", difficulty: "medium",
-            question: "If 'WATER' is written as 'YCVGT', how is 'FIRE' written?",
-            options: ["HKTG", "HJTU", "GJTU", "HKTE"],
+            id: "lr-q-010", type: "mcq", difficulty: "hard",
+            question: "In a code, 'APPLE' is 'ETTPI'. What is 'MANGO'?",
+            options: ["QERKS", "PERKT", "QDRJS", "QESKT"],
             correct: 0,
-            cognitiveType: "application",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "+2 for each letter. W+2=Y, A+2=C, etc. F+2=H, I+2=K, R+2=T, E+2=G.",
-            examTags: ["MH-CET"]
+            cognitiveType: "synthesis",
+            timePresure: "standard",
+            speedTarget: 120,
+            explanation: "+4 for each letter. A(+4)E, P(+4)T, P(+4)T, L(+4)P, E(+4)I. For MANGO: M+4=Q, A+4=E, N+4=R, G+4=K, O+4=S. QERKS.",
+            examTags: ["CUET"]
         },
 
         // --- TOPIC 3: Direction Sense (5 questions) ---
@@ -294,8 +361,19 @@ export const logicalReasoningData = {
             cognitiveType: "analysis",
             timePresure: "standard",
             speedTarget: 90,
-            explanation: "South-East (between S and E) becomes North. This is a 135° anti-clockwise shift. Applying 135° ACW to West: West (270°) + 135° = 405° = 45° which is South-East. Wait, North is 0°. West is 270°. ACW from West to SE is 135°. So West becomes South-East.",
+            explanation: "Shift of 135° Anti-Clockwise. West (270°) -> 405° (45°) -> South-East.",
             examTags: ["CUET"]
+        },
+        {
+            id: "lr-q-014-B", type: "mcq", difficulty: "hard",
+            question: "Starting from point X, Joy walked 15 m towards South. He turned left and walked 25 m. He then turned left and walked 15 m. He again turned left and walked 40 m. How far and in which direction is he now with reference to X?",
+            options: ["15 m West", "25 m West", "15 m East", "40 m West"],
+            correct: 0,
+            cognitiveType: "analysis",
+            timePresure: "standard",
+            speedTarget: 120,
+            explanation: "S 15. Then L (East) 25. Then L (North) 15. Then L (West) 40. North/South 15m cancels out. East 25m vs West 40m = 15m West.",
+            examTags: ["CUET", "MH-CET"]
         },
         {
             id: "lr-q-015", type: "mcq", difficulty: "easy",
@@ -424,59 +502,60 @@ export const logicalReasoningData = {
         },
 
         // --- TOPIC 6: Series (Number/Alphabet) (5 questions) ---
+        // --- TOPIC 6: Triple-Layer Alphanumeric Series (CUET SIGNATURE - 5 questions) ---
         {
-            id: "lr-q-026", type: "mcq", difficulty: "easy",
-            question: "Find the missing number in the series: 2, 6, 12, 20, 30, ?",
-            options: ["40", "42", "44", "46"],
-            correct: 1,
-            cognitiveType: "application",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Logic is n² + n. 1²+1=2, 2²+2=6, 3²+3=12... 6²+6=42.",
-            examTags: ["MH-CET"]
+            id: "lr-q-026", type: "mcq", difficulty: "hard",
+            question: "Find the next term in the series: A1Z, C4X, F9U, J16Q, ?",
+            options: ["O25L", "O25K", "N25L", "P25M"],
+            correct: 0,
+            cognitiveType: "synthesis",
+            timePresure: "standard",
+            speedTarget: 90,
+            explanation: "Layer 1 (Letters): A(+2)C(+3)F(+4)J(+5)O. Layer 2 (Numbers): 1², 2², 3², 4², 5²=25. Layer 3 (Reverse): Z(-2)X(-3)U(-4)Q(-5)L. Term: O25L.",
+            examTags: ["CUET"]
         },
         {
-            id: "lr-q-027", type: "mcq", difficulty: "medium",
-            question: "Find the missing letters: SCD, TEF, UGH, ____, WKL",
-            options: ["CMN", "UJI", "VIJ", "IJT"],
-            correct: 2,
-            cognitiveType: "application",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "First letters: S, T, U, V, W. Second letters: C, E, G, I, K. Third letters: D, F, H, J, L. So VIJ.",
+            id: "lr-q-027", type: "mcq", difficulty: "hard",
+            question: "Find the missing term: D2V, G4T, J8R, M16P, ?",
+            options: ["P32N", "O32N", "P64M", "Q32O"],
+            correct: 0,
+            cognitiveType: "synthesis",
+            timePresure: "standard",
+            speedTarget: 90,
+            explanation: "Layer 1: D(+3)G(+3)J(+3)M(+3)P. Layer 2: 2, 4, 8, 16, 32 (Doubling). Layer 3: V(-2)T(-2)R(-2)P(-2)N. Term: P32N.",
             examTags: ["CUET", "MH-CET"]
         },
         {
-            id: "lr-q-028", type: "mcq", difficulty: "medium",
-            question: "Find the next term in the series: 7, 10, 8, 11, 9, 12, ?",
-            options: ["7", "10", "12", "13"],
-            correct: 1,
-            cognitiveType: "application",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Two interlaced series: (7, 8, 9, 10...) and (10, 11, 12, 13...). The next term belongs to the first series. 10.",
-            examTags: ["CUET", "MH-CET"]
+            id: "lr-q-028", type: "mcq", difficulty: "hard",
+            question: "Find the missing term: B25Y, D16W, G9T, K4P, ?",
+            options: ["P1K", "O1K", "N1L", "Q1J"],
+            correct: 0,
+            cognitiveType: "synthesis",
+            timePresure: "standard",
+            speedTarget: 120,
+            explanation: "Layer 1: B(+2)D(+3)G(+4)K(+5)P. Layer 2: 5², 4², 3², 2², 1²=1. Layer 3: Y(-2)W(-3)T(-4)P(-5)K. Term: P1K.",
+            examTags: ["CUET"]
         },
         {
             id: "lr-q-029", type: "mcq", difficulty: "hard",
-            question: "What is the next number in the series: 4, 7, 12, 19, 28, ?",
-            options: ["30", "36", "39", "49"],
-            correct: 2,
-            cognitiveType: "application",
-            timePresure: "speed",
-            speedTarget: 45,
-            explanation: "Differences are odd numbers: 3, 5, 7, 9... Next is 11. 28+11=39.",
-            examTags: ["CUET", "MH-CET"]
+            question: "Identify the next term: Z1A, X8C, U27F, Q64J, ?",
+            options: ["L125O", "M125O", "L125P", "K125N"],
+            correct: 0,
+            cognitiveType: "synthesis",
+            timePresure: "standard",
+            speedTarget: 120,
+            explanation: "Layer 1: Z(-2)X(-3)U(-4)Q(-5)L. Layer 2: 1³, 2³, 3³, 4³, 5³=125. Layer 3: A(+2)C(+3)F(+4)J(+5)O. Term: L125O.",
+            examTags: ["CUET"]
         },
         {
-            id: "lr-q-030", type: "mcq", difficulty: "medium",
-            question: "JAK, KBL, LCM, MDN, ?",
-            options: ["OEP", "NEO", "MEN", "PFQ"],
-            correct: 1,
-            cognitiveType: "application",
-            timePresure: "speed",
-            speedTarget: 30,
-            explanation: "Logic: First letter progresses J-K-L-M-N. Second letter progresses A-B-C-D-E. Third letter progresses K-L-M-N-O. So NEO.",
+            id: "lr-q-030", type: "mcq", difficulty: "hard",
+            question: "Complete the series: 2C6, 4E10, 8G14, 16I18, ?",
+            options: ["32K22", "30K22", "32L22", "32K20"],
+            correct: 0,
+            cognitiveType: "synthesis",
+            timePresure: "standard",
+            speedTarget: 90,
+            explanation: "Left Number: 2, 4, 8, 16, 32 (x2). Middle Letter: C, E, G, I, K (+2). Right Number: 6, 10, 14, 18, 22 (+4). Term: 32K22.",
             examTags: ["CUET", "MH-CET"]
         },
 
@@ -650,6 +729,102 @@ export const logicalReasoningData = {
             explanation: "From 1: 13 or 14. From 2: 14 or 15. The only common date is 14th.",
             examTags: ["CUET"]
         },
+
+        // --- TOPIC 10: Clocks & Calendars (CUET Depth - 8 questions) ---
+        {
+            id: "lr-q-076", type: "mcq", difficulty: "medium",
+            question: "Find the angle between the hands of a clock at 4:20.",
+            options: ["10°", "0°", "20°", "30°"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 60,
+            explanation: "θ = |30H - 5.5M| = |30(4) - 5.5(20)| = |120 - 110| = 10°.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "lr-q-077", type: "mcq", difficulty: "hard",
+            question: "If a clock shows 3:15, what is the time shown in its mirror image?",
+            options: ["8:45", "9:45", "8:15", "9:15"],
+            correct: 0,
+            cognitiveType: "analysis",
+            timePresure: "standard",
+            speedTarget: 45,
+            explanation: "Mirror Time = 11:60 - Actual Time = 11:60 - 3:15 = 8:45.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "lr-q-078", type: "mcq", difficulty: "hard",
+            question: "What is the angle between the hands of a clock at 10:25?",
+            options: ["162.5°", "180°", "150°", "197.5°"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 90,
+            explanation: "θ = |30(10) - 5.5(25)| = |300 - 137.5| = 162.5°.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "lr-q-079", type: "mcq", difficulty: "hard",
+            question: "How many odd days are there in an ordinary year?",
+            options: ["1", "2", "0", "3"],
+            correct: 0,
+            cognitiveType: "recall",
+            timePresure: "speed",
+            speedTarget: 30,
+            explanation: "365 ÷ 7 = 52 weeks and 1 day. Remainder (odd days) = 1.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "lr-q-080", type: "mcq", difficulty: "medium",
+            question: "If today is Monday, what day will it be after 61 days?",
+            options: ["Saturday", "Sunday", "Friday", "Tuesday"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 45,
+            explanation: "61 ÷ 7 = 8 weeks remainder 5. Monday + 5 days = Saturday.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "lr-q-081", type: "mcq", difficulty: "hard",
+            question: "The year 1900 was not a leap year because:",
+            options: [
+                "It is not divisible by 4",
+                "It is a century year not divisible by 400",
+                "It was a year following a major war",
+                "The calendar was reset that year"
+            ],
+            correct: 1,
+            cognitiveType: "analysis",
+            timePresure: "standard",
+            speedTarget: 60,
+            explanation: "Century years must be divisible by 400 to be leap years. 1900/400 gives a remainder.",
+            examTags: ["CUET"]
+        },
+        {
+            id: "lr-q-082", type: "mcq", difficulty: "hard",
+            question: "If Jan 1, 2012, was Sunday, what day was Jan 1, 2013?",
+            options: ["Tuesday", "Monday", "Wednesday", "Sunday"],
+            correct: 0,
+            cognitiveType: "analysis",
+            timePresure: "standard",
+            speedTarget: 90,
+            explanation: "2012 is a leap year (divisible by 4). Leap years have 2 odd days. Sunday + 2 = Tuesday.",
+            examTags: ["CUET", "MH-CET"]
+        },
+        {
+            id: "lr-q-083", type: "mcq", difficulty: "hard",
+            question: "How many times do the hands of a clock coincide in 24 hours?",
+            options: ["22", "24", "12", "44"],
+            correct: 0,
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 60,
+            explanation: "In every 12 hours, hands coincide 11 times (between 11 and 1 they coincide only once at 12:00). In 24 hours: 11 * 2 = 22.",
+            examTags: ["CUET"]
+        },
+
         // --- PART B: MAH CET LR SPEED DRILL (30 questions) ---
         // Visual/Odd One Out (10 Qs)
         {

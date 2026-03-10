@@ -4,6 +4,9 @@ import { grammarAdvancedData } from './grammar-advanced.data.js';
 import { vocabularyAdvancedData } from './vocabulary-advanced.data.js';
 import { literaryTermsData } from './literary-terms.data.js';
 import { usageMasteryData } from './usage-mastery.data.js';
+import { mhCetComprehensionData } from './mh-cet-comprehension.data.js';
+import { grammarData } from './grammar.data.js';
+import { vocabularyData } from './vocabulary.data.js';
 
 export const englishData = {
     subject: "English",
@@ -12,7 +15,10 @@ export const englishData = {
         grammarAdvancedData,
         vocabularyAdvancedData,
         literaryTermsData,
-        usageMasteryData
+        usageMasteryData,
+        mhCetComprehensionData,
+        grammarData,
+        vocabularyData
     ]
 };
 
@@ -21,5 +27,8 @@ export {
     grammarAdvancedData,
     vocabularyAdvancedData,
     literaryTermsData,
-    usageMasteryData
+    usageMasteryData,
+    mhCetComprehensionData,
+    grammarData,
+    vocabularyData
 };

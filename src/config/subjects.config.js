@@ -82,19 +82,10 @@ export const SUBJECTS = [
       { id: "grammar", name: "Grammar & Usage Mastery", dataFile: "usage-mastery.data", questionCount: 10 },
       { id: "grammar-advanced", name: "Grammar (Advanced)", dataFile: "grammar-advanced.data", questionCount: 8 },
       { id: "literary-terms", name: "Literary Aptitude", dataFile: "literary-terms.data", questionCount: 10 },
-      { id: "vocabulary-advanced", name: "Vocabulary (Advanced)", dataFile: "vocabulary-advanced.data", questionCount: 15 }
-    ]
-  },
-  {
-    id: "general-knowledge",
-    name: "General Knowledge",
-    icon: "🌍",
-    color: "#be185d",
-    examTags: ["MH-CET"],
-    chapters: [
-      { id: "current-affairs", name: "Current Affairs", dataFile: "current-affairs.data" },
-      { id: "static-gk", name: "Static GK & Economy", dataFile: "static-gk.data" },
-      { id: "computer-basics", name: "Computer Basics", dataFile: "computer-basics.data" }
+      { id: "vocabulary-advanced", name: "Vocabulary (Advanced)", dataFile: "vocabulary-advanced.data", questionCount: 15 },
+      { id: "mcet-comprehension", name: "MH-CET Reading Comprehension", dataFile: "mh-cet-comprehension.data", questionCount: 20 },
+      { id: "mcet-grammar", name: "MH-CET Grammar Mastery", dataFile: "grammar.data", questionCount: 20 },
+      { id: "mcet-vocabulary", name: "MH-CET Vocabulary Mastery", dataFile: "vocabulary.data", questionCount: 40 }
     ]
   },
   {
@@ -107,7 +98,22 @@ export const SUBJECTS = [
       { id: "quantitative", name: "Quantitative Ability", dataFile: "quantitative.data", questionCount: 62 },
       { id: "logical-reasoning", name: "Logical Reasoning", dataFile: "logical-reasoning.data", questionCount: 75 },
       { id: "general-knowledge", name: "General Knowledge", dataFile: "general-knowledge.data", questionCount: 75 },
-      { id: "general-science", name: "General Science", dataFile: "general-science.data", questionCount: 75 }
+      { id: "general-science", name: "General Science", dataFile: "general-science.data", questionCount: 45 }
+    ]
+  },
+  {
+    id: "computer-awareness",
+    name: "Computer Awareness",
+    icon: "💻",
+    color: "#4f46e5",
+    examTags: ["MH-CET"],
+    chapters: [
+      { id: "hardware", name: "Hardware & Architecture", dataFile: "hardware.data", questionCount: 45 },
+      { id: "software-os", name: "Software & OS", dataFile: "software-and-os.data", questionCount: 45 },
+      { id: "internet-networking", name: "Internet & Networking", dataFile: "internet-and-networking.data", questionCount: 45 },
+      { id: "cybersecurity", name: "Cybersecurity & Ethics", dataFile: "cybersecurity.data", questionCount: 30 },
+      { id: "abbreviations", name: "Tech Abbreviations", dataFile: "abbreviations.data", questionCount: 60 },
+      { id: "number-systems", name: "Number Systems", dataFile: "number-systems.data", questionCount: 30 }
     ]
   }
 ];
