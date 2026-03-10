@@ -84,7 +84,7 @@ const StudyGuide = () => {
 
     // Helper for SUBMENU inside Core Concepts
     const ConceptSubMenu = ({ text, topicId }) => {
-        const items = text.split('\n')
+        const items = (text || "").split('\n')
             .filter(line => /^\d+\.\s/.test(line))
             .map(line => {
                 const label = line.match(/^\d+\.\s(.*)/)[1];
@@ -125,6 +125,21 @@ const StudyGuide = () => {
         );
     };
 
+    const topicHasSection = (topicId, sectionId) => {
+        const topic = guideData.topics.find(t => t.id === topicId);
+        if (!topic) return false;
+
+        switch (sectionId) {
+            case 'concept': return !!(topic.content?.coreConcept || topic.summary);
+            case 'formulas': return !!topic.content?.formulaBank;
+            case 'logic': return !!(topic.content?.logic || topic.keyPoints);
+            case 'traps': return !!(topic.content?.traps || topic.examAngle);
+            case 'examples': return !!topic.content?.examples;
+            case 'speed': return !!topic.content?.speedSummary;
+            default: return false;
+        }
+    };
+
     return (
         <div className="min-h-screen bg-slate-50 flex flex-col">
             {/* Top Navigation */}
@@ -159,7 +174,7 @@ const StudyGuide = () => {
                                 className={`flex items-center gap-2 px-6 py-4 text-xs font-bold uppercase tracking-wider whitespace-nowrap border-b-2 transition-all ${activeSection === sec.id
                                     ? 'border-blue-600 text-blue-600 bg-white'
                                     : 'border-transparent text-slate-400 hover:text-slate-600'
-                                    }`}
+                                    } ${(!topicHasSection(activeTopicId, sec.id)) ? 'opacity-30 grayscale cursor-not-allowed' : ''}`}
                             >
                                 <span>{sec.icon}</span>
                                 {sec.label}
@@ -217,9 +232,9 @@ const StudyGuide = () => {
                                         <span className="text-2xl p-2 bg-slate-100 rounded-xl">📖</span> Core Concept
                                     </h3>
                                     <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm leading-relaxed text-slate-600 whitespace-pre-wrap">
-                                        <ConceptSubMenu text={topic.content.coreConcept} topicId={topic.id} />
+                                        <ConceptSubMenu text={topic.content?.coreConcept || topic.summary} topicId={topic.id} />
                                         <div className="space-y-4">
-                                            {topic.content.coreConcept.split('\n').map((line, lIdx) => {
+                                            {(topic.content?.coreConcept || topic.summary || "").split('\n').map((line, lIdx) => {
                                                 if (/^\d+\.\s/.test(line)) {
                                                     const label = line.match(/^\d+\.\s(.*)/)[1];
                                                     const cleanLabel = label.split(/[():-]/)[0].trim();
@@ -238,66 +253,76 @@ const StudyGuide = () => {
                                 </section>
 
                                 {/* 2. Formula Bank */}
-                                <section id={`${topic.id}-formulas`} className="scroll-mt-44">
-                                    <h3 className="flex items-center gap-2 text-xl font-black text-slate-800 mb-6">
-                                        <span className="text-2xl p-2 bg-orange-50 rounded-xl">🧮</span> The Formula Bank
-                                    </h3>
-                                    <div className="bg-blue-600 rounded-[2.5rem] p-10 text-white shadow-xl shadow-blue-100 scale-[1.02] transition-transform">
-                                        <div className="grid grid-cols-1 gap-8 whitespace-pre-wrap font-medium">
-                                            {topic.content.formulaBank}
+                                {topic.content?.formulaBank && (
+                                    <section id={`${topic.id}-formulas`} className="scroll-mt-44">
+                                        <h3 className="flex items-center gap-2 text-xl font-black text-slate-800 mb-6">
+                                            <span className="text-2xl p-2 bg-orange-50 rounded-xl">🧮</span> The Formula Bank
+                                        </h3>
+                                        <div className="bg-blue-600 rounded-[2.5rem] p-10 text-white shadow-xl shadow-blue-100 scale-[1.02] transition-transform">
+                                            <div className="grid grid-cols-1 gap-8 whitespace-pre-wrap font-medium">
+                                                {topic.content.formulaBank}
+                                            </div>
                                         </div>
-                                    </div>
-                                </section>
+                                    </section>
+                                )}
 
-                                {/* 3. Step-by-Step Logic */}
-                                <section id={`${topic.id}-logic`} className="scroll-mt-44">
-                                    <h3 className="flex items-center gap-2 text-xl font-black text-slate-800 mb-6">
-                                        <span className="text-2xl p-2 bg-green-50 rounded-xl">🧩</span> Step-by-Step Logic
-                                    </h3>
-                                    <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm leading-relaxed text-slate-600 whitespace-pre-wrap italic">
-                                        {topic.content.logic}
-                                    </div>
-                                </section>
+                                {/* 3. Step-by-Step Logic / Key Points */}
+                                {(topic.content?.logic || topic.keyPoints) && (
+                                    <section id={`${topic.id}-logic`} className="scroll-mt-44">
+                                        <h3 className="flex items-center gap-2 text-xl font-black text-slate-800 mb-6">
+                                            <span className="text-2xl p-2 bg-green-50 rounded-xl">🧩</span> {topic.keyPoints ? 'Key Takeaways' : 'Step-by-Step Logic'}
+                                        </h3>
+                                        <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm leading-relaxed text-slate-600 whitespace-pre-wrap italic">
+                                            {topic.content?.logic || (Array.isArray(topic.keyPoints) ? topic.keyPoints.join('\n\n') : topic.keyPoints)}
+                                        </div>
+                                    </section>
+                                )}
 
-                                {/* 4. Examiner Traps */}
-                                <section id={`${topic.id}-traps`} className="scroll-mt-44">
-                                    <h3 className="flex items-center gap-2 text-xl font-black text-red-600 mb-6">
-                                        <span className="text-2xl p-2 bg-red-50 rounded-xl">⚠️</span> Examiner Traps
-                                    </h3>
-                                    <div className="bg-white rounded-3xl p-10 border-l-8 border-red-500 shadow-sm text-slate-700 font-medium whitespace-pre-wrap">
-                                        {topic.content.traps}
-                                    </div>
-                                </section>
+                                {/* 4. Examiner Traps / Exam Angle */}
+                                {(topic.content?.traps || topic.examAngle) && (
+                                    <section id={`${topic.id}-traps`} className="scroll-mt-44">
+                                        <h3 className="flex items-center gap-2 text-xl font-black text-red-600 mb-6">
+                                            <span className="text-2xl p-2 bg-red-50 rounded-xl">⚠️</span> {topic.examAngle ? 'Exam Perspective' : 'Examiner Traps'}
+                                        </h3>
+                                        <div className="bg-white rounded-3xl p-10 border-l-8 border-red-500 shadow-sm text-slate-700 font-medium whitespace-pre-wrap">
+                                            {topic.content?.traps || topic.examAngle}
+                                        </div>
+                                    </section>
+                                )}
 
                                 {/* 5. Practical Examples */}
-                                <section id={`${topic.id}-examples`} className="scroll-mt-44">
-                                    <h3 className="flex items-center gap-2 text-xl font-black text-slate-800 mb-8">
-                                        <span className="text-2xl p-2 bg-purple-50 rounded-xl">🎓</span> Practical Examples
-                                    </h3>
-                                    <div className="space-y-6">
-                                        {topic.content.examples.map((ex, exIdx) => (
-                                            <div key={exIdx} className="bg-white rounded-[2rem] p-8 border border-slate-200 hover:shadow-xl transition-all hover:translate-y-[-4px]">
-                                                <div className="text-[10px] font-black text-slate-400 mb-4 uppercase tracking-[0.2em]">Scenario {exIdx + 1}</div>
-                                                <div className="text-xl font-bold text-slate-900 mb-6 leading-tight">Q: {ex.q}</div>
-                                                <div className="bg-green-50 text-green-800 p-6 rounded-2xl font-mono text-sm leading-relaxed border border-green-100">
-                                                    <div className="text-[10px] font-black mb-2 opacity-50">PRO-SOLUTION</div>
-                                                    {ex.a}
+                                {topic.content?.examples && (
+                                    <section id={`${topic.id}-examples`} className="scroll-mt-44">
+                                        <h3 className="flex items-center gap-2 text-xl font-black text-slate-800 mb-8">
+                                            <span className="text-2xl p-2 bg-purple-50 rounded-xl">🎓</span> Practical Examples
+                                        </h3>
+                                        <div className="space-y-6">
+                                            {topic.content.examples.map((ex, exIdx) => (
+                                                <div key={exIdx} className="bg-white rounded-[2rem] p-8 border border-slate-200 hover:shadow-xl transition-all hover:translate-y-[-4px]">
+                                                    <div className="text-[10px] font-black text-slate-400 mb-4 uppercase tracking-[0.2em]">Scenario {exIdx + 1}</div>
+                                                    <div className="text-xl font-bold text-slate-900 mb-6 leading-tight">Q: {ex.q}</div>
+                                                    <div className="bg-green-50 text-green-800 p-6 rounded-2xl font-mono text-sm leading-relaxed border border-green-100">
+                                                        <div className="text-[10px] font-black mb-2 opacity-50">PRO-SOLUTION</div>
+                                                        {ex.a}
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </section>
+                                            ))}
+                                        </div>
+                                    </section>
+                                )}
 
                                 {/* 6. Speed Summary */}
-                                <section id={`${topic.id}-speed`} className="scroll-mt-44">
-                                    <h3 className="flex items-center gap-2 text-xl font-black text-slate-800 mb-6 font-mono tracking-tighter">
-                                        <span className="text-2xl p-2 bg-yellow-50 rounded-xl">⚡</span> MAH-CET Speed Summary
-                                    </h3>
-                                    <div className="bg-slate-950 rounded-[3rem] p-10 text-slate-200 font-medium whitespace-pre-wrap border-b-[12px] border-orange-500 shadow-2xl">
-                                        <div className="text-orange-500 text-[10px] font-black uppercase mb-4 tracking-widest bg-orange-500/10 inline-block px-2 py-1 rounded">Quick Recall</div>
-                                        {topic.content.speedSummary}
-                                    </div>
-                                </section>
+                                {topic.content?.speedSummary && (
+                                    <section id={`${topic.id}-speed`} className="scroll-mt-44">
+                                        <h3 className="flex items-center gap-2 text-xl font-black text-slate-800 mb-6 font-mono tracking-tighter">
+                                            <span className="text-2xl p-2 bg-yellow-50 rounded-xl">⚡</span> MAH-CET Speed Summary
+                                        </h3>
+                                        <div className="bg-slate-950 rounded-[3rem] p-10 text-slate-200 font-medium whitespace-pre-wrap border-b-[12px] border-orange-500 shadow-2xl">
+                                            <div className="text-orange-500 text-[10px] font-black uppercase mb-4 tracking-widest bg-orange-500/10 inline-block px-2 py-1 rounded">Quick Recall</div>
+                                            {topic.content.speedSummary}
+                                        </div>
+                                    </section>
+                                )}
                             </div>
                         </div>
                     ))}
