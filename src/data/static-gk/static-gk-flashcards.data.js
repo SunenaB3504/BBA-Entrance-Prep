@@ -11,39 +11,19 @@ import { sciencePhysicsData } from './science-physics-inventions.data';
 import { scienceSpaceData } from './science-space-missions.data';
 import { businessBrandsData } from './business-brands-taglines.data';
 import { businessFoundersData } from './business-founders-hq.data';
-import { allStaticGKStudyNotes } from './static-gk-study-notes.data';
-import { allStaticGKFlashcards } from './static-gk-flashcards.data';
 
-
-
-
-
-
-
-
-
-export {
-    historyBattlesData,
-    historyFreedomData,
-    cultureDanceData,
-    geographyNationalParksData,
-    geographyRiversData,
-    geographyStatesData,
-    polityConstitutionData,
-    polityArticlesData,
-    scienceBiologyData,
-    sciencePhysicsData,
-    scienceSpaceData,
-    businessBrandsData,
-    businessFoundersData,
-    allStaticGKStudyNotes,
-    allStaticGKFlashcards
-
-
-
-
-
-
-
-
-};
+export const allStaticGKFlashcards = [
+    ...historyBattlesData.flashcards,
+    ...historyFreedomData.flashcards,
+    ...cultureDanceData.flashcards,
+    ...geographyNationalParksData.flashcards,
+    ...geographyRiversData.flashcards,
+    ...geographyStatesData.flashcards,
+    ...polityConstitutionData.flashcards,
+    ...polityArticlesData.flashcards,
+    ...scienceBiologyData.flashcards,
+    ...sciencePhysicsData.flashcards,
+    ...scienceSpaceData.flashcards,
+    ...businessBrandsData.flashcards,
+    ...businessFoundersData.flashcards
+];

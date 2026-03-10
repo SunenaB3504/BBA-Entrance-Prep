@@ -1,0 +1,582 @@
+/**
+ * STATIC GK - POLITY - ARTICLES
+ * Topics: Specific High-Yield Articles (1-395), Parts, and Schedules
+ */
+
+export const polityArticlesData = {
+    subject: "General Knowledge",
+    chapter: "Polity: Important Articles",
+    examTags: ["CUET", "MH-CET"],
+    flashcards: [
+        {
+            id: "pa-bf-001",
+            category: "polity-articles",
+            term: "Articles 1 to 11",
+            headline: "Union, Territory and Citizenship",
+            examTags: ["CUET", "MH-CET"],
+            points: [
+                "Article 1: Name and territory of the Union (India, that is Bharat).",
+                "Article 3: Formation of new States and alteration of areas/names.",
+                "Article 5: Citizenship at the commencement of the Constitution.",
+                "Article 11: Parliament to regulate the right of citizenship by law.",
+                "Trap: State names can be changed by Parliament with a SIMPLE majority."
+            ],
+            memoryHook: "1-4 (Land), 5-11 (People).",
+            likelyQuestion: "Which Article deals with the formation of new states in India?",
+            displayMode: "briefing-flashcard"
+        },
+        {
+            id: "pa-bf-002",
+            category: "polity-articles",
+            term: "Articles 14 to 18",
+            headline: "The Right to Equality",
+            examTags: ["CUET", "MH-CET"],
+            points: [
+                "Article 14: Equality before law and equal protection of laws.",
+                "Article 15: Prohibition of discrimination on grounds of religion, race, caste, sex, or place of birth.",
+                "Article 16: Equality of opportunity in matters of public employment.",
+                "Article 17: Abolition of Untouchability (Absolute Right).",
+                "Article 18: Abolition of Titles (except military and academic)."
+            ],
+            memoryHook: "E-D-O-U-T (Equality, Discrimination, Opportunity, Untouchability, Titles).",
+            likelyQuestion: "Which Article of the Indian Constitution abolishes untouchability?",
+            displayMode: "briefing-flashcard"
+        },
+        {
+            id: "pa-bf-003",
+            category: "polity-articles",
+            term: "Articles 19 to 24",
+            headline: "The Right to Freedom & Against Exploitation",
+            examTags: ["CUET", "MH-CET"],
+            points: [
+                "Article 19: Protection of 6 rights (Speech, Assembly, Association, Movement, Residence, Profession).",
+                "Article 21: Protection of life and personal liberty (Right to Privacy included).",
+                "Article 21A: Right to Education (Added by 86th Amendment).",
+                "Article 23: Prohibition of traffic in human beings and forced labour.",
+                "Article 24: Prohibition of employment of children in factories."
+            ],
+            memoryHook: "21A = Age 6 to 14.",
+            likelyQuestion: "Under which Article is the Right to Education guaranteed?",
+            displayMode: "briefing-flashcard"
+        },
+        {
+            id: "pa-bf-004",
+            category: "polity-articles",
+            term: "Articles 32 to 51A",
+            headline: "Remedies, DPSP and Duties",
+            examTags: ["CUET", "MH-CET"],
+            points: [
+                "Article 32: Right to Constitutional Remedies (Writs).",
+                "Article 40: Organization of village panchayats.",
+                "Article 44: Uniform Civil Code for the citizens.",
+                "Article 50: Separation of judiciary from executive.",
+                "Article 51A: Fundamental Duties (Part IV-A)."
+            ],
+            memoryHook: "32=Soul, 44=UCC, 51A=Duties.",
+            likelyQuestion: "Which Article directs the state to organize Village Panchayats?",
+            displayMode: "briefing-flashcard"
+        },
+        {
+            id: "pa-bf-005",
+            category: "polity-articles",
+            term: "Articles 52 to 123",
+            headline: "The Union: President and Parliament",
+            examTags: ["CUET", "MH-CET"],
+            points: [
+                "Article 52: The President of India.",
+                "Article 61: Procedure for impeachment of the President.",
+                "Article 72: Power of President to grant pardons.",
+                "Article 110: Definition of 'Money Bills'.",
+                "Article 123: Power of President to promulgate Ordinances."
+            ],
+            memoryHook: "72 (Pardon), 110 (Money), 123 (Ordinance).",
+            likelyQuestion: "Which Article defines a Money Bill?",
+            displayMode: "briefing-flashcard"
+        },
+        {
+            id: "pa-bf-006",
+            category: "polity-articles",
+            term: "Articles 124 to 167",
+            headline: "Judiciary and State Executive",
+            examTags: ["CUET", "MH-CET"],
+            points: [
+                "Article 124: Establishment and constitution of Supreme Court.",
+                "Article 148: Comptroller and Auditor-General of India (CAG).",
+                "Article 153: Governors of States.",
+                "Article 161: Power of Governor to grant pardons.",
+                "Article 165: Advocate-General for the State."
+            ],
+            memoryHook: "AG (76) vs AdvocateGen (165).",
+            likelyQuestion: "Which Article provides for the appointment of a Governor for each state?",
+            displayMode: "briefing-flashcard"
+        },
+        {
+            id: "pa-bf-007",
+            category: "polity-articles",
+            term: "Articles 226 to 300A",
+            headline: "High Courts and Property Rights",
+            examTags: ["CUET", "MH-CET"],
+            points: [
+                "Article 214: High Courts for States.",
+                "Article 226: Power of High Courts to issue certain writs.",
+                "Article 280: Finance Commission.",
+                "Article 300A: Persons not to be deprived of property save by authority of law (Legal Right).",
+                "Trap: SC issues writs for FR only (Art 32); HC issues for FR and others (Art 226)."
+            ],
+            memoryHook: "32 (SC) vs 226 (HC).",
+            likelyQuestion: "Which Article provides the power to High Courts to issue writs?",
+            displayMode: "briefing-flashcard"
+        },
+        {
+            id: "pa-bf-008",
+            category: "polity-articles",
+            term: "Articles 315 to 395",
+            headline: "Public Services, Elections and Emergency",
+            examTags: ["CUET", "MH-CET"],
+            points: [
+                "Article 315: Public Service Commissions for the Union and for the States (UPSC).",
+                "Article 324: Superintendence, direction and control of elections (ECI).",
+                "Article 352: Proclamation of Emergency (National Emergency).",
+                "Article 356: Provisions in case of failure of constitutional machinery in States.",
+                "Article 368: Power of Parliament to amend the Constitution."
+            ],
+            memoryHook: "324 (ECI), 352 (Nat), 356 (State), 368 (Amend).",
+            likelyQuestion: "Which Article deals with the Power of Parliament to amend the Constitution?",
+            displayMode: "briefing-flashcard"
+        }
+    ],
+    questions: [
+        {
+            id: "pa-q-001",
+            type: "mcq",
+            difficulty: "easy",
+            question: "Which Article of the Indian Constitution defines India as 'Union of States'?",
+            options: ["Article 1", "Article 2", "Article 3", "Article 4"],
+            correct: 0,
+            explanation: "Article 1 describes India, that is Bharat, as a Union of States.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "speed",
+            speedTarget: 20
+        },
+        {
+            id: "pa-q-026",
+            type: "mcq",
+            difficulty: "medium",
+            question: "Which Article gives the President the power to grant 'Pardons'?",
+            options: ["Article 70", "Article 72", "Article 74", "Article 76"],
+            correct: 1,
+            explanation: "Article 72 empowers the President to grant pardons, reprieves, respites or remissions of punishment.",
+            examTags: ["CUET", "MH-CET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-027",
+            type: "mcq",
+            difficulty: "hard",
+            question: "The 'Attorney General of India' is mentioned in which Article?",
+            options: ["Article 74", "Article 76", "Article 78", "Article 80"],
+            correct: 1,
+            explanation: "Article 76 provides for the Attorney General for India, who is the highest law officer in the country.",
+            examTags: ["CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 60
+        },
+        {
+            id: "pa-q-028",
+            type: "mcq",
+            difficulty: "medium",
+            question: "Article 79 of the Indian Constitution provides for the constitution of:",
+            options: ["President", "Parliament", "Supreme Court", "Election Commission"],
+            correct: 1,
+            explanation: "Article 79 says there shall be a Parliament for the Union consisting of the President and two Houses.",
+            examTags: ["CUET", "MH-CET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-029",
+            type: "mcq",
+            difficulty: "hard",
+            question: "The provision for 'Joint Sitting' of both Houses of Parliament is under:",
+            options: ["Article 105", "Article 108", "Article 110", "Article 112"],
+            correct: 1,
+            explanation: "Article 108 provides for the joint sitting of both Houses of Parliament in certain cases of deadlock.",
+            examTags: ["CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 60
+        },
+        {
+            id: "pa-q-030",
+            type: "mcq",
+            difficulty: "medium",
+            question: "Definition of 'Money Bills' is given in which Article?",
+            options: ["Article 110", "Article 111", "Article 112", "Article 114"],
+            correct: 0,
+            explanation: "Article 110 defines a 'Money Bill'. It can only be introduced in the Lok Sabha.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-031",
+            type: "mcq",
+            difficulty: "medium",
+            question: "The 'Annual Financial Statement' (Budget) is mentioned in:",
+            options: ["Article 110", "Article 112", "Article 123", "Article 280"],
+            correct: 1,
+            explanation: "Article 112 provides for the 'Annual Financial Statement', commonly known as the Budget.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-032",
+            type: "mcq",
+            difficulty: "hard",
+            question: "Article 123 empowers the President to promulgate:",
+            options: ["Rules", "Ordinances", "Bills", "Proclamations"],
+            correct: 1,
+            explanation: "Article 123 gives the President the power to promulgate ordinances during the recess of Parliament.",
+            examTags: ["CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 60
+        },
+        {
+            id: "pa-q-033",
+            type: "mcq",
+            difficulty: "medium",
+            question: "The 'Establishment of Supreme Court' is provided under:",
+            options: ["Article 124", "Article 131", "Article 143", "Article 226"],
+            correct: 0,
+            explanation: "Article 124 provides for the establishment and constitution of the Supreme Court of India.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-034",
+            type: "mcq",
+            difficulty: "hard",
+            question: "Under which Article can the President consult the Supreme Court (Advisory Jurisdiction)?",
+            options: ["Article 131", "Article 137", "Article 143", "Article 148"],
+            correct: 2,
+            explanation: "Article 143 empowers the President to seek the opinion of the Supreme Court on questions of law or fact.",
+            examTags: ["CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 60
+        },
+        {
+            id: "pa-q-035",
+            type: "mcq",
+            difficulty: "medium",
+            question: "Which Article provides for an independent office of the CAG?",
+            options: ["Article 144", "Article 148", "Article 153", "Article 165"],
+            correct: 1,
+            explanation: "Article 148 provides for the Comptroller and Auditor-General of India.",
+            examTags: ["CUET", "MH-CET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-036",
+            type: "mcq",
+            difficulty: "medium",
+            question: "'Governors of States' are provided for under:",
+            options: ["Article 150", "Article 153", "Article 156", "Article 160"],
+            correct: 1,
+            explanation: "Article 153 says: 'There shall be a Governor for each State'.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-037",
+            type: "mcq",
+            difficulty: "hard",
+            question: "The office of the 'Advocate General for the State' is under:",
+            options: ["Article 161", "Article 163", "Article 165", "Article 167"],
+            correct: 2,
+            explanation: "Article 165 provides for the Advocate-General for the State, who is the highest law officer in the state.",
+            examTags: ["CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 60
+        },
+        {
+            id: "pa-q-038",
+            type: "mcq",
+            difficulty: "medium",
+            question: "Which Article grants High Courts the power to issue writs?",
+            options: ["Article 32", "Article 124", "Article 226", "Article 214"],
+            correct: 2,
+            explanation: "Article 226 empowers High Courts to issue writs for the enforcement of fundamental rights and other purposes.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-039",
+            type: "mcq",
+            difficulty: "medium",
+            question: "The 'Finance Commission' is mentioned in which Article?",
+            options: ["Article 263", "Article 280", "Article 300", "Article 315"],
+            correct: 1,
+            explanation: "Article 280 provides for the Finance Commission as a quasi-judicial body.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-040",
+            type: "mcq",
+            difficulty: "hard",
+            question: "Which Article makes the 'Right to Property' a legal right?",
+            options: ["Article 31", "Article 300", "Article 300A", "Article 301"],
+            correct: 2,
+            explanation: "Article 300A (Part XII) provides that no person shall be deprived of his property save by authority of law.",
+            examTags: ["CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 60
+        },
+        {
+            id: "pa-q-041",
+            type: "mcq",
+            difficulty: "medium",
+            question: "The 'UPSC' and 'State PSCs' are provided for under:",
+            options: ["Article 312", "Article 315", "Article 320", "Article 324"],
+            correct: 1,
+            explanation: "Article 315 provide for Public Service Commissions for the Union and for the States.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-042",
+            type: "mcq",
+            difficulty: "medium",
+            question: "The 'Election Commission' is established under:",
+            options: ["Article 320", "Article 324", "Article 326", "Article 330"],
+            correct: 1,
+            explanation: "Article 324 provides for the Superintendence, direction and control of elections to be vested in an Election Commission.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-043",
+            type: "mcq",
+            difficulty: "medium",
+            question: "Which Article deals with the declaration of a 'National Emergency'?",
+            options: ["Article 350", "Article 352", "Article 356", "Article 360"],
+            correct: 1,
+            explanation: "Article 352 allows the President to proclaim a National Emergency during war or external aggression.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        },
+        {
+            id: "pa-q-044",
+            type: "mcq",
+            difficulty: "easy",
+            question: "State Emergency (President's Rule) is imposed under:",
+            options: ["Article 352", "Article 354", "Article 356", "Article 360"],
+            correct: 2,
+            explanation: "Article 356 deals with the failure of constitutional machinery in states.",
+            examTags: ["MH-CET", "CUET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "speed",
+            speedTarget: 20
+        },
+        {
+            id: "pa-q-045",
+            type: "mcq",
+            difficulty: "medium",
+            question: "Which Article provides for the power of Parliament to amend the Constitution?",
+            options: ["Article 360", "Article 365", "Article 368", "Article 370"],
+            correct: 2,
+            explanation: "Article 368 provides for the procedure and power of Parliament to amend the Constitution.",
+            examTags: ["CUET", "MH-CET"],
+            staticGKCategory: "polity-articles",
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 45
+        }
+    ],
+    studyNotes: [
+        {
+            id: "pa-sn-001",
+            category: "polity-articles",
+            topicName: "Union and Its Territories (Art 1-4)",
+            examTags: ["CUET", "MH-CET"],
+            summary: "These articles define the territorial scope and name of India, providing Parliament the power to reorganize state boundaries and names through a simple legislative process.",
+            keyPoints: [
+                "Article 1: Explicitly names India as 'Bharat' and describes it as a 'Union of States' rather than a federation.",
+                "Territorial Reorganization: Article 3 allows Parliament to form new states, increase or decrease area, and change names of existing states.",
+                "Process: Laws under Art 3 require a Presidential recommendation and the opinion of the concerned state legislature (though not binding).",
+                "Simple Majority: Such changes are not considered amendments under Art 368 and require only a simple majority in Parliament.",
+                "Admissions: Article 2 provides for the admission or establishment of new states that were NOT part of India originally."
+            ],
+            examAngle: "Emphasis on Article 1 (Union of States) and Article 3 (States reorganization process).",
+            displayMode: "study-note",
+            showBeforeCategory: "polity-articles"
+        },
+        {
+            id: "pa-sn-002",
+            category: "polity-articles",
+            topicName: "Citizenship (Art 5-11)",
+            examTags: ["CUET", "MH-CET"],
+            summary: "Deals with who was considered a citizen at the time of the constitution's adoption and gives Parliament the power to regulate citizenship going forward.",
+            keyPoints: [
+                "Commencement: Article 5 defines citizenship for those domiciled in India on Jan 26, 1950, with certain residency or birth criteria.",
+                "Migrants: Articles 6 and 7 deal with citizenship for people who migrated between India and Pakistan during partition.",
+                "Overseas Citizens: Article 8 provides citizenship for persons of Indian origin residing outside India who register themselves.",
+                "Termination: Article 9 states that citizenship is lost if a person voluntarily acquires citizenship of a foreign country.",
+                "Parliament Power: Article 11 empowers Parliament to make laws regarding acquisition and termination of citizenship (led to CA Act 1955)."
+            ],
+            examAngle: "Article 11 (Parliament's power) and Art 9 (Loss of citizenship) are key test points.",
+            displayMode: "study-note",
+            showBeforeCategory: "polity-articles"
+        },
+        {
+            id: "pa-sn-003",
+            category: "polity-articles",
+            topicName: "Right to Equality (Art 14-18)",
+            examTags: ["CUET", "MH-CET"],
+            summary: "A fundamental set of rights ensuring equal treatment before the law and prohibiting arbitrary discrimination based on social identity or status.",
+            keyPoints: [
+                "Equality Before Law: Article 14 ensures everyone is subject to the same legal process (Equality) and protected by laws (Equal Protection).",
+                "Non-Discrimination: Article 15 prohibits state discrimination based on religion, race, caste, sex, or place of birth only.",
+                "Public Employment: Article 16 ensures equal opportunity for all citizens in government jobs, though allows for reservations/quotas.",
+                "Untouchability: Article 17 is an absolute right that abolishes untouchability and penalizes its practice in any form.",
+                "Titles: Article 18 bans the State from conferring titles (like Sir or Rai Bahadur), with exceptions for military and academic honors."
+            ],
+            examAngle: "Article 17 (Untouchability) is the most frequently asked Article in competitive exams.",
+            displayMode: "study-note",
+            showBeforeCategory: "polity-articles"
+        },
+        {
+            id: "pa-sn-004",
+            category: "polity-articles",
+            topicName: "Right to Freedom (Art 19-22)",
+            examTags: ["CUET", "MH-CET"],
+            summary: "Protects individual liberties including freedom of speech, assembly, movement, and the non-negotiable right to life and personal liberty.",
+            keyPoints: [
+                "Article 19: Guarantees six freedoms including speech, assembly, association, movement, residence, and profession to all citizens.",
+                "Reasonable Restrictions: The rights under Art 19 are not absolute and can be restricted for security, public order, and morality.",
+                "Justice: Article 20 protects against ex-post facto laws, double jeopardy (being tried twice), and self-incrimination.",
+                "Right to Life: Article 21 is a wide-reaching article ensuring life and liberty; it includes right to health, livelihood, and privacy.",
+                "Education: Article 21A provides for free and compulsory education for all children aged 6 to 14 years."
+            ],
+            examAngle: "Article 21A (Age range and Amendment 86) and Article 19 freedoms count.",
+            displayMode: "study-note",
+            showBeforeCategory: "polity-articles"
+        },
+        {
+            id: "pa-sn-005",
+            category: "polity-articles",
+            topicName: "Constitutional Remedies (Art 32 & 226)",
+            examTags: ["CUET", "MH-CET"],
+            summary: "Provides the mechanism for citizens to approach the courts directly when their Fundamental Rights are violated by state action.",
+            keyPoints: [
+                "Article 32: Allows citizens to move the Supreme Court; called 'the heart and soul' of the constitution by Dr. Ambedkar.",
+                "Article 226: Empowers High Courts to issue writs; its scope is wider than Art 32 as it applies to legal rights too.",
+                "Types of Writs: Includes Habeas Corpus (to produce a person), Mandamus (to command), and Certiorari (to quash orders).",
+                "Quo-Warranto: A writ issued to enquire into the legality of the claim which a person asserts to a public office.",
+                "Justiciability: Only Fundamental Rights (Part III) can be enforced under Article 32 by the Supreme Court."
+            ],
+            examAngle: "Comparing powers of SC (Art 32) and HC (Art 226); names and meanings of the 5 writs.",
+            displayMode: "study-note",
+            showBeforeCategory: "polity-articles"
+        },
+        {
+            id: "pa-sn-006",
+            category: "polity-articles",
+            topicName: "Parliamentary Articles (Art 79-123)",
+            examTags: ["CUET", "MH-CET"],
+            summary: "Outlines the structure, procedures, and legislative powers of the Indian Parliament, including the role of the President during recess.",
+            keyPoints: [
+                "Constitution: Article 79 creates the Parliament (President, RS, and LS); Article 80 defines RS; Article 81 defines LS.",
+                "Sessions: Article 85 empowers the President to summon and prorogue Parliament sessions and dissolve the Lok Sabha.",
+                "Money Bills: Article 110 contains the definition; Article 112 mandates the Annual Financial Statement (Budget) presentation.",
+                "Deadlocks: Article 108 provides for a Joint Sitting of both houses, presided over by the Speaker of Lok Sabha.",
+                "Ordinances: Article 123 provides the President legislative power to promulgate ordinances when Parliament is not in session."
+            ],
+            examAngle: "Article 110 (Money Bill) and Article 108 (Joint Sitting) are critical for CUET/CET.",
+            displayMode: "study-note",
+            showBeforeCategory: "polity-articles"
+        },
+        {
+            id: "pa-sn-007",
+            category: "polity-articles",
+            topicName: "Constitutional Bodies Articles",
+            examTags: ["CUET", "MH-CET"],
+            summary: "Specifies the creation and powers of independent bodies established directly by the constitution to manage governance and oversight.",
+            keyPoints: [
+                "Election Commission: Article 324 provides for the ECI to conduct free and fair elections for Parliament and Legislatures.",
+                "Finance Commission: Article 280 requires the President to set up a FC every five years for tax revenue distribution.",
+                "Attorney General: Article 76 provides for the Union's highest law officer; Article 165 provides for Advocate General in states.",
+                "Public Service: Article 315 provides for Union Public Service Commission (UPSC) and State Public Service Commissions.",
+                "CAG: Article 148 establishes the Comptroller and Auditor-General of India to audit government accounts and expenditures."
+            ],
+            examAngle: "Matching the Article number to the body (e.g., 324 with Election Commission).",
+            displayMode: "study-note",
+            showBeforeCategory: "polity-articles"
+        },
+        {
+            id: "pa-sn-008",
+            category: "polity-articles",
+            topicName: "Emergency and Amendments (Art 352-368)",
+            examTags: ["CUET", "MH-CET"],
+            summary: "Constitutional provisions for handling critical crises and the methodology for modifying the supreme law of the land.",
+            keyPoints: [
+                "National Emergency: Article 352 is used for war or external aggression; Article 358-359 deal with suspension of rights.",
+                "State Emergency: Article 356 (President's Rule) is used when a state's constitutional machinery breaks down.",
+                "Financial Emergency: Article 360 allows the President to declare a financial crisis (never used so far in India).",
+                "Amendment: Article 368 empowers Parliament to amend the constitution through specific majorities.",
+                "Binding Opinion: For amendments affecting federal structure, ratification by half of state legislatures is required under Art 368."
+            ],
+            examAngle: "Article 368 (Amendment) and Article 352-356-360 triad of emergencies.",
+            displayMode: "study-note",
+            showBeforeCategory: "polity-articles"
+        }
+    ]
+};
