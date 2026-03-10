@@ -124,7 +124,7 @@ export const SUBJECTS = [
       { id: "cybersecurity", name: "Cybersecurity & Ethics", dataFile: "cybersecurity.data", questionCount: 30 },
       { id: "abbreviations", name: "Tech Abbreviations", dataFile: "abbreviations.data", questionCount: 60 },
       { id: "number-systems", name: "Number Systems", dataFile: "number-systems.data", questionCount: 30 },
-      { id: "ai-tech", name: "AI & Emerging Tech", dataFile: "ai-and-tech.data", questionCount: 10 }
+      { id: "ai-tech", name: "AI & Emerging Tech", dataFile: "ai-and-tech.data", questionCount: 40 }
     ]
   }
 ];

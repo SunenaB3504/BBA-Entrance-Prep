@@ -53,6 +53,29 @@ export const aiAndTechData = {
                     ],
                     speedSummary: "- ML = Learning from data | GenAI = Creating new content.\n- Supervised = Labeled | Unsupervised = Patterns.\n- Hallucination = AI 'Lying' confidently."
                 }
+            },
+            {
+                id: "ai-ethics-future",
+                title: "3. Ethics & Future Trends",
+                content: {
+                    coreConcept: "1. AI Ethics: The moral principles that guide AI development (Bias, Fairness, Transparency).\n2. Job Displacement: The concern that AI will replace human roles (Automation vs. Augmentation).\n3. Future Trends: Edge AI (AI on devices), Quantum AI, and AI in Space exploration.",
+                    formulaBank: "The 3 Laws of Robotics (Isaac Asimov):\n1. A robot may not injure a human being.\n2. A robot must obey orders given by humans (except if it conflicts with Law 1).\n3. A robot must protect its own existence (except if it conflicts with Law 1 or 2).",
+                    logic: "The Bias Loop:\n- Data Input (Biased) -> AI Training -> Biased Decision -> Reinforcement.\nLogic: AI is only as 'fair' as the data it is fed. If training data is flawed, the AI will be flawed.",
+                    traps: "TRAP 1: AI Responsibility\nIf an AI makes a mistake (like an autonomous car crash), who is responsible? This is a 'Legal & Ethical' gray area being debated globally.\n\nTRAP 2: Narrow vs General Purpose\nEven advanced AI like GPT-4 is still technically considered 'Broad Narrow AI' because it doesn't have a physical body or real-world consciousness.\n\nTRAP 3: Data Privacy\nAI needs data. The trap is thinking AI 'forgets' what you tell it. Most public AIs use your inputs to train future versions unless opted out.",
+                    examples: [
+                        { q: "What is AI Bias?", a: "Prejudice in AI results due to flawed training data." },
+                        { q: "Who wrote the 3 Laws of Robotics?", a: "Isaac Asimov" },
+                        { q: "Term for AI and humans working together?", a: "Augmented Intelligence" },
+                        { q: "AI running locally on a phone is called?", a: "Edge AI" },
+                        { q: "Main concern with autonomous weapons?", a: "Lack of human accountability in lethal decisions." },
+                        { q: "Is facial recognition controversial?", a: "Yes, due to privacy and potential bias concerns." },
+                        { q: "What is 'Explainable AI' (XAI)?", a: "AI designed so humans can understand its decision-making process." },
+                        { q: "Concept of AI reaching human levels of consciousness?", a: "Sentience (highly debated/theoretical)." },
+                        { q: "Can AI truly 'think'?", a: "No, it processes algorithms and data patterns." },
+                        { q: "What is Singularity?", a: "The point where AI exceeds all human intelligence." }
+                    ],
+                    speedSummary: "- Ethics = Bias & Privacy | Laws of Robotics = Safety.\n- Edge AI = Local processing | Sentience = Theoretical consciousness.\n- XAI = Making AI understandable."
+                }
             }
         ]
     },
@@ -187,6 +210,286 @@ export const aiAndTechData = {
             cognitiveType: "identification", psychometricTemplate: "identification",
             timePresure: "speed", speedTarget: 40, negativeMarking: false,
             explanation: "AGI (or Strong AI) is the theoretical goal of human-level machine intelligence.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-011", type: "mcq", difficulty: "medium",
+            question: "Which of the following is NOT one of Asimov's 3 Laws of Robotics?",
+            options: [
+                "Protect its own existence",
+                "Obey human orders",
+                "Must never use more than 10% battery",
+                "Must not injure a human"
+            ],
+            correct: 2,
+            explanation: "The 3 laws focus on human safety, obedience, and self-preservation.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-012", type: "mcq", difficulty: "medium",
+            question: "Providing specific instructions to an AI to get a better result is called:",
+            options: ["Code Injection", "Prompt Engineering", "Data Scraping", "System Overload"],
+            correct: 1,
+            explanation: "Prompt Engineering is the skill of talking efficiently to AI models.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-013", type: "mcq", difficulty: "hard",
+            question: "In AI, 'Bias' usually refers to:",
+            options: [
+                "The computer running too hot",
+                "Errors caused by unfair or non-diverse training data",
+                "AI preferring Apple over Windows",
+                "AI refusing to solve math"
+            ],
+            correct: 1,
+            explanation: "Bias occurs when the training data reflects human prejudices, causing the AI to make unfair decisions.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-014", type: "mcq", difficulty: "medium",
+            question: "Which branch of AI allows computers to 'see' and recognize objects in photos?",
+            options: ["Natural Language Processing", "Computer Vision", "Robotics", "Reinforcement Learning"],
+            correct: 1,
+            explanation: "Computer Vision is the field that deals with how computers can be made to gain high-level understanding from digital images or videos.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-015", type: "mcq", difficulty: "easy",
+            question: "Which company is the creator of the AI model 'Gemini'?",
+            options: ["Facebook (Meta)", "Google", "OpenAI", "Microsoft"],
+            correct: 1,
+            explanation: "Gemini is the family of large language models developed by Google.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-016", type: "mcq", difficulty: "medium",
+            question: "What is the primary role of an 'Actuator' in a robot?",
+            options: ["The robot's brain", "The robot's eyes", "The mechanism that moves or controls a system", "The battery charger"],
+            correct: 2,
+            explanation: "Actuators are the 'muscles' of a robot that convert energy into motion.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-017", type: "mcq", difficulty: "hard",
+            question: "What is 'Reinforcement Learning' typically based on?",
+            options: ["Labeled datasets", "Rewards and Penalties", "Random guessing", "Reading books"],
+            correct: 1,
+            explanation: "Reinforcement learning is about taking suitable action to maximize reward in a particular situation.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-018", type: "mcq", difficulty: "medium",
+            question: "Which AI field mimics the structure of the human brain's interconnected neurons?",
+            options: ["Logic Gates", "Neural Networks", "Cloud Computing", "Binary Search"],
+            correct: 1,
+            explanation: "Neural Networks are inspired by the biological neural networks that constitute animal brains.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-019", type: "mcq", difficulty: "easy",
+            question: "Which robot was the first to be granted legal citizenship of a country (Saudi Arabia)?",
+            options: ["Asimo", "Sophia", "Roomba", "Atlas"],
+            correct: 1,
+            explanation: "Sophia, developed by Hanson Robotics, was granted citizenship in 2017.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-020", type: "mcq", difficulty: "medium",
+            question: "The ability of an AI to learn and improve from experience without being explicitly programmed is:",
+            options: ["Hard Coding", "Machine Learning", "Data Entry", "System Formatting"],
+            correct: 1,
+            explanation: "Machine Learning is a subset of AI that focuses on building systems that learn over time.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-021", type: "mcq", difficulty: "hard",
+            question: "What does the term 'Large' in Large Language Model (LLM) refer to?",
+            options: [
+                "The physical size of the computer",
+                "The massive number of parameters and training data",
+                "The length of the sentences it generates",
+                "The screen size required to run it"
+            ],
+            correct: 1,
+            explanation: "LLMs are 'large' due to the billions of parameters and terabytes of data they are trained on.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-022", type: "mcq", difficulty: "medium",
+            question: "AI used by streaming services like Netflix to suggest movies is called a:",
+            options: ["Search Engine", "Recommender System", "File Manager", "Cloud Server"],
+            correct: 1,
+            explanation: "Recommender systems use ML to predict user preferences based on past behavior.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-023", type: "mcq", difficulty: "medium",
+            question: "What is 'Edge AI'?",
+            options: [
+                "AI that is about to become obsolete",
+                "AI algorithms processed locally on a hardware device (like a phone)",
+                "AI that only works on the edge of a screen",
+                "AI developed by Microsoft Edge"
+            ],
+            correct: 1,
+            explanation: "Edge AI means AI data is processed on the device itself rather than in the cloud.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-024", type: "mcq", difficulty: "hard",
+            question: "Which of these is a major concern with 'Autonomous Vehicles'?",
+            options: [
+                "The car becoming too fast for humans",
+                "Ethical decision-making in unavoidable accident scenarios",
+                "The color of the car being too bright",
+                "Lack of a radio system"
+            ],
+            correct: 1,
+            explanation: "Moral dilemmas (like the Trolley Problem) are major ethical hurdles for self-driving cars.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-025", type: "mcq", difficulty: "medium",
+            question: "What is the function of a 'Turing Test'?",
+            options: [
+                "To test the hardware speed",
+                "To evaluate if a machine can simulate human-like intelligence",
+                "To check for viruses",
+                "To test internet connectivity"
+            ],
+            correct: 1,
+            explanation: "Proposed by Alan Turing in 1950, it remains the classic benchmark for AI.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-026", type: "mcq", difficulty: "easy",
+            question: "Is 'Alexa' an example of AI?",
+            options: ["No, it's just a speaker", "Yes, it uses NLP and AI to function", "Only if it is connected to a TV", "It's a Human being inside a box"],
+            correct: 1,
+            explanation: "Alexa uses Natural Language Processing and speech recognition, which are part of AI.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-027", type: "mcq", difficulty: "medium",
+            question: "AI that can generate images from text descriptions is usually a:",
+            options: ["Photo Editor", "Text-to-Image Generator", "Word Processor", "Spreadsheet"],
+            correct: 1,
+            explanation: "Models like DALL-E and Midjourney are Generative AI models for images.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-028", type: "mcq", difficulty: "hard",
+            question: "What is 'Explainable AI' (XAI)?",
+            options: [
+                "AI that can talk in any language",
+                "AI systems where the reasoning behind results is understandable to humans",
+                "AI that only gives answers with explanations",
+                "A child's version of AI"
+            ],
+            correct: 1,
+            explanation: "XAI is crucial for trust, especially in high-stakes fields like medicine and law.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-029", type: "mcq", difficulty: "medium",
+            question: "Which term describes the process of AI systems making up plausible but false facts?",
+            options: ["Exaggeration", "Hallucination", "Correction", "Update"],
+            correct: 1,
+            explanation: "Hallucination is a common issue where AI creates false info that sounds true.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-030", type: "mcq", difficulty: "easy",
+            question: "The 'Father of Modern Computing' who also helped start the AI field was:",
+            options: ["Steve Jobs", "Bill Gates", "Alan Turing", "Mark Zuckerberg"],
+            correct: 2,
+            explanation: "Alan Turing's work on the Turing Machine and Turing Test laid the foundation for AI.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-031", type: "mcq", difficulty: "medium",
+            question: "In the acronym 'GAN', the 'A' stands for:",
+            options: ["Artificial", "Adversarial", "Analytical", "Advanced"],
+            correct: 1,
+            explanation: "GAN stands for Generative Adversarial Network.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-032", type: "mcq", difficulty: "medium",
+            question: "Which of these is a real-world application of Computer Vision?",
+            options: ["Calculating interest rates", "Facial recognition in smartphones", "Writing a poem", "Sending an email"],
+            correct: 1,
+            explanation: "Facial recognition requires identifying patterns in visual data.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-033", type: "mcq", difficulty: "hard",
+            question: "The hypothetical future point where AI exceeds human intelligence is called:",
+            options: ["The Horizon", "The Singularity", "The Peak", "The Transition"],
+            correct: 1,
+            explanation: "Technological Singularity is the point where machine intelligence triggers runaway growth.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-034", type: "mcq", difficulty: "medium",
+            question: "Which AI model type is specifically designed for sequential data like text or speech?",
+            options: ["CNN", "RNN (Recurrent Neural Network)", "SSD", "HDD"],
+            correct: 1,
+            explanation: "RNNs are designed for sequences where the order of data matters.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-035", type: "mcq", difficulty: "easy",
+            question: "Is AI better than humans at repetitive, data-heavy tasks?",
+            options: ["Always no", "Generally yes", "Only if it has a screen", "Humans are always faster"],
+            correct: 1,
+            explanation: "AI excels at processing massive datasets without fatigue or boredom.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-036", type: "mcq", difficulty: "medium",
+            question: "A 'Chatbot' is an AI designed to communicate through:",
+            options: ["Visual signals", "Text or speech", "Physical touch", "Telepathy"],
+            correct: 1,
+            explanation: "Chatbots simulate human conversation via text or voice interfaces.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-037", type: "mcq", difficulty: "hard",
+            question: "What is 'Catenation' in the context of AI hardware (not chemistry)?",
+            options: ["Linking multiple processing units", "A type of battery", "AI vision for cats", "None of these"],
+            correct: 3,
+            explanation: "Catenation is a chemistry term. In AI, terms like 'Parallel Processing' or 'Clustering' are used for linking hardware.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-038", type: "mcq", difficulty: "medium",
+            question: "The term 'Data Mining' in AI refers to:",
+            options: [
+                "Digging for physical computer parts in mines",
+                "Extracting patterns and knowledge from large datasets",
+                "Creating fake data",
+                "Deleting all your files"
+            ],
+            correct: 1,
+            explanation: "Data mining is about finding useful info in a mountain of data.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-039", type: "mcq", difficulty: "medium",
+            question: "AI used to detect fraudulent bank transactions is an example of:",
+            options: ["Creativity", "Anomaly Detection", "Artistic AI", "Entertainment AI"],
+            correct: 1,
+            explanation: "Anomaly detection identifies outliers that deviate from normal patterns (like fraud).",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "ai-q-040", type: "mcq", difficulty: "easy",
+            question: "What is the full form of 'AI'?",
+            options: ["Actual Intelligence", "Artificial Intelligence", "Advanced Integration", "App Intelligence"],
+            correct: 1,
+            explanation: "AI = Artificial Intelligence.",
             examTags: ["MH-CET"]
         }
     ]
