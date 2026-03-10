@@ -3,9 +3,43 @@
 // SCHEMA VALIDATED AGAINST DATA_SCHEMA.md
 
 export const generalKnowledgeData = {
-    subject: "General Knowledge",
+    subject: "GK & Current Affairs",
     chapter: "General Knowledge & Static Awareness",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "gk-polity",
+                title: "1. Indian Polity & Constitution",
+                content: {
+                    coreConcept: "The Constitution is the supreme law of India. Key features include Federalism, Parliamentary Democracy, and Fundamental Rights.\n\n1. Preamble: The soul of the constitution.\n2. Articles & Schedules: Structure of governance.\n3. Constitutional Bodies: ECI, CAG, Finance Commission.",
+                    formulaBank: "• Art 324: Election Commission\n• Art 148: CAG\n• Art 280: Finance Commission\n• Art 368: Amendment Power",
+                    logic: "To identify constitutional bodies, check if they are mentioned by specific 'Articles'. Niti Aayog is an Executive Body (not constitutional).",
+                    traps: "CEC status vs Supreme Court Judge. While similar, they are appointed differently. Don't confuse the Real Head (PM) with the Nominal Head (President).",
+                    examples: [
+                        { q: "Which article deals with Money Bills?", a: "Article 110." },
+                        { q: "Who is the Nominal Head of India?", a: "The President." }
+                    ],
+                    speedSummary: "Articles 324, 148, 280 are the big ones for CUET. Remember: 42nd Amendment (1976) is the 'Mini Constitution'."
+                }
+            },
+            {
+                id: "gk-history",
+                title: "2. Modern Indian History",
+                content: {
+                    coreConcept: "Focuses on the Struggle for Independence (1857-1947). Key phases: Moderates, Extremists, and the Gandhian Era.\n\n1. INC Formation (1885).\n2. Major Movements: NCM, CDM, Quit India.\n3. Revolutionary Leaders: Bose, Bhagat Singh, Azad.",
+                    formulaBank: "1905: Partition of Bengal\n1920: NCM Start\n1930: Dandi March\n1942: Quit India",
+                    logic: "Always check chronological order for multiple choice questions. The sequence is usually Partition (1905) -> Simon (1928) -> Dandi (1930) -> Quit India (1942).",
+                    traps: "Founder of INC vs first President. A.O. Hume founded it, but W.C. Bonnerjee was the 1st President.",
+                    examples: [
+                        { q: "Who gave the slogan 'Do or Die'?", a: "Mahatma Gandhi in 1942." },
+                        { q: "Where was the 1885 session of INC held?", a: "Mumbai." }
+                    ],
+                    speedSummary: "1885 INC, 1920 Non-Cooperation, 1942 Quit India. Gandhi's Guru: G.K. Gokhale."
+                }
+            }
+        ]
+    },
     flashcards: [
         { id: "gk-fc-001", term: "Article 324", definition: "Empowers the Election Commission of India." },
         { id: "gk-fc-002", term: "INC Foundation", definition: "Founded in 1885 by A.O. Hume (Mumbai)." },
@@ -443,316 +477,6 @@ export const generalKnowledgeData = {
             cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
             explanation: "Godavari is the largest river of South India.",
             examTags: ["MH-CET"]
-        },
-
-        // --- CATEGORY D: Current Affairs 2022–2024 (15 Questions) ---
-        // Protocol: Only use facts from VERIFIED list.
-        {
-            id: "gk-ca-001", type: "mcq", difficulty: "medium",
-            question: "Who was awarded the 'Padma Vibhushan' 2024 for Arts?",
-            options: ["Mithun Chakraborty", "Konidela Chiranjeevi", "Jaya Verma Sinha", "Sitaram Jindal"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Actor Chiranjeevi received the highest Padma award in 2024.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-002", type: "mcq", difficulty: "medium",
-            question: "Actor Mithun Chakraborty was honored with which award in 2024?",
-            options: ["Padma Vibhushan", "Padma Bhushan", "Padma Shri", "Bharat Ratna"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "(VERIFIED) Mithun received the Padma Bhushan, NOT Padma Shri.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-003", type: "mcq", difficulty: "medium",
-            question: "Who is the first woman Chairman and CEO of the Railway Board (2023)?",
-            options: ["Madhabi Puri Buch", "Jaya Verma Sinha", "Nirmala Sitharaman", "Droupadi Murmu"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Jaya Verma Sinha is a historic first in Indian Railways.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-004", type: "mcq", difficulty: "hard",
-            question: "Identify the incorrectly matched pair (Verified Facts 2024):",
-            options: [
-                "Dr. Arvind Panagariya - 16th Finance Commission",
-                "Mission Divyastra - Agni-5 MIRV",
-                "Jhulaghat Bridge - India-Nepal",
-                "China - QUAD Member"
-            ],
-            correct: 3,
-            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 90,
-            explanation: "China is NOT a member of the QUAD (India, USA, Japan, Australia).",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-ca-005", type: "mcq", difficulty: "medium",
-            question: "Where was India's first 3D-printed Post Office inaugurated?",
-            options: ["Pune", "Hyderabad", "Bengaluru", "Chennai"],
-            correct: 2,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "(VERIFIED FACT) Inaugurated in Cambridge Layout, Bengaluru.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-006", type: "mcq", difficulty: "hard",
-            question: "The Raman Magsaysay Award 2023 was given to Dr. Ravi Kannan R. for his work in:",
-            options: ["Space Technology", "Cancer Care", "Rural Education", "Climate Change"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "He is an oncologist from Assam recognized for pro-poor healthcare.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-ca-007", type: "mcq", difficulty: "medium",
-            question: "In the context of the Agni-5 missile, what does MIRV stand for?",
-            options: [
-                "Multiple Independently Targetable Re-Entry Vehicle",
-                "Main Inter Range Vehicle",
-                "Medium Indian Rocket Version",
-                "Mobile Integrated Radar Vision"
-            ],
-            correct: 0,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Technology allowing multiple warheads on a single missile.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-008", type: "mcq", difficulty: "medium",
-            question: "The 'Mission Antyodaya' survey focuses on which level of governance?",
-            options: ["Urban Municipalities", "Gram Panchayats", "State Assemblies", "Central Ministries"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Annual survey to monitor rural development convergence.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-ca-009", type: "mcq", difficulty: "medium",
-            question: "Dr. Arvind Panagariya is the Chairman of which constitutional body?",
-            options: ["Niti Aayog", "Railway Board", "16th Finance Commission", "UPSC"],
-            correct: 2,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "He heads the newly constituted 16th Finance Commission.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-010", type: "mcq", difficulty: "medium",
-            question: "M. Fathima Beevi, who recently passed away and received Padma Bhushan 2024, was the first woman:",
-            options: ["Governor of India", "Judge of Supreme Court", "Pilot in Air Force", "Chief Minister"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "A trailblazer for women in the Indian judiciary.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-011", type: "mcq", difficulty: "medium",
-            question: "Which of the following para-athletes is the first to receive the Padma Bhushan?",
-            options: ["Deepa Malik", "Devendra Jhajharia", "Avani Lekhara", "Neeraj Chopra"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Verified fact from the official awards list.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-012", type: "mcq", difficulty: "medium",
-            question: "The Jhulaghat suspension bridge connects India to:",
-            options: ["Bhutan", "Bangladesh", "Nepal", "Myanmar"],
-            correct: 2,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Connects Pithoragarh (Uttarakhand) to Nepal.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-013", type: "mcq", difficulty: "medium",
-            question: "Who is the fourth member of the QUAD group alongside India, USA, and Japan?",
-            options: ["France", "South Korea", "Australia", "Russia"],
-            correct: 2,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "QUAD members: India, USA, Japan, Australia.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-014", type: "mcq", difficulty: "medium",
-            question: "Mission Divyastra, announced in 2024, is associated with:",
-            options: ["Lunar Mission", "Solar Mission", "Agni-5 MIRV Test", "Cyber Security"],
-            correct: 2,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "The Prime Minister announced the successful Agni-5 MIRV test under this mission name.",
-            examTags: ["CUET", "MH-CET"]
-        },
-        {
-            id: "gk-ca-015", type: "mcq", difficulty: "hard",
-            question: "Which Padma award did Mithun Chakraborty receive in 2024?",
-            options: ["Padma Vibhushan", "Padma Bhushan", "Padma Shri", "None"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Critical factual check: He received the Padma Bhushan.",
-            examTags: ["CUET", "MH-CET"]
-        },
-
-        // --- CATEGORY E: General Science — Conceptual (15 Questions) ---
-        {
-            id: "gk-sci-001", type: "mcq", difficulty: "medium",
-            question: "Water boils at a lower temperature at high altitudes primarily because:",
-            options: [
-                "Atmospheric pressure decreases",
-                "Atmospheric pressure increases",
-                "Air is thinner",
-                "Temperature is higher"
-            ],
-            correct: 0,
-            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
-            explanation: "Boiling point depends on external pressure. When pressure drops (altitudes), the vapor pressure required for boiling is reached at a lower temp.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-002", type: "mcq", difficulty: "medium",
-            question: "Why does a ship made of steel float on water, while a solid steel ball sinks?",
-            options: [
-                "Ship has more mass",
-                "The ship's average density is less than water due to trapped air",
-                "Steel ball has more surface area",
-                "Water pushes the ship harder"
-            ],
-            correct: 1,
-            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
-            explanation: "Archimedes' Principle: The hollow ship displaces a volume of water heavier than itself.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-003", type: "mcq", difficulty: "medium",
-            question: "The Ozone layer protects the Earth by absorbing which type of radiation?",
-            options: ["Infrared rays", "Ultraviolet (UV) rays", "X-rays", "Gamma rays"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "UV-B rays are particularly filtered by the ozone layer (O3) in the stratosphere.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-004", type: "mcq", difficulty: "medium",
-            question: "A passenger in a moving bus falls forward when the driver applies brakes suddenly. This is due to:",
-            options: ["Inertia of rest", "Inertia of motion", "Centrifugal force", "Gravity"],
-            correct: 1,
-            cognitiveType: "application", timePresure: "speed", speedTarget: 45,
-            explanation: "The passenger's body wants to continue in motion (Newton's 1st Law) while the bus stops.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-005", type: "mcq", difficulty: "medium",
-            question: "Which of the following occurs when the ocean becomes more acidic?",
-            options: ["The pH level increases", "The pH level decreases", "The pH becomes neutral", "Salt concentration decreases"],
-            correct: 1,
-            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
-            explanation: "Acidic substances have pH < 7. More acid = lower pH.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-006", type: "mcq", difficulty: "hard",
-            question: "Diamond is a bad conductor of electricity, whereas Graphite is a good conductor. This is because:",
-            options: [
-                "Diamond has free electrons",
-                "Graphite has delocalised electrons between its layers",
-                "Diamond is harder",
-                "Graphite is a metal"
-            ],
-            correct: 1,
-            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
-            explanation: "In graphite, each carbon atom is bonded to 3 others, leaving 1 free electron per atom for conduction.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-007", type: "mcq", difficulty: "medium",
-            question: "Kwashiorkor is a disease caused by the deficiency of:",
-            options: ["Vitamin D", "Iron", "Proteins", "Iodine"],
-            correct: 2,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Kwashiorkor is protein-specific deficiency; Marasmus is overall calorie deficiency.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-008", type: "mcq", difficulty: "medium",
-            question: "Which vitamin deficiency causes 'Night Blindness'?",
-            options: ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin K"],
-            correct: 0,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Vitamin A (Retinol) is essential for vision.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-009", type: "mcq", difficulty: "easy",
-            question: "Goitre is caused by the deficiency of which element?",
-            options: ["Calcium", "Iodine", "Sodium", "Zinc"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Iodine deficiency leads to the swelling of the thyroid gland.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-010", type: "mcq", difficulty: "hard",
-            question: "Identify the INCORRECTLY matched pair:",
-            options: [
-                "Scurvy - Vitamin C",
-                "Beriberi - Vitamin B1",
-                "Rickets - Vitamin D",
-                "Night Blindness - Vitamin B12"
-            ],
-            correct: 3,
-            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 90,
-            explanation: "Night Blindness is caused by Vitamin A, not B12.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-011", type: "mcq", difficulty: "medium",
-            question: "Why do we hear thunder after seeing lightning even though they happen simultaneously?",
-            options: [
-                "Thunder happens later",
-                "Light travels faster than sound",
-                "Sound travels faster than light",
-                "Eyes are faster than ears"
-            ],
-            correct: 1,
-            cognitiveType: "synthesis", timePresure: "standard", speedTarget: 45,
-            explanation: "Light (300,000 km/s) is significantly faster than sound (343 m/s).",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-012", type: "mcq", difficulty: "easy",
-            question: "A neutral solution has a pH of:",
-            options: ["0", "7", "14", "5"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Pure water is neutral at pH 7.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-013", type: "mcq", difficulty: "medium",
-            question: "A person living on a diet of polished rice only is at risk of:",
-            options: ["Scurvy", "Beriberi", "Pellegra", "Rickets"],
-            correct: 1,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Polishing removes the outer layer rich in Vitamin B1 (Thiamine).",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-014", type: "mcq", difficulty: "medium",
-            question: "Which gas is primarily responsible for global warming?",
-            options: ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"],
-            correct: 2,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "CO2 traps heat in the atmosphere (Greenhouse effect).",
-            examTags: ["CUET"]
-        },
-        {
-            id: "gk-sci-015", type: "mcq", difficulty: "medium",
-            question: "Which of these is a liquid at room temperature?",
-            options: ["Mercury", "Carbon", "Sulphur", "Iodine"],
-            correct: 0,
-            cognitiveType: "recall", timePresure: "speed", speedTarget: 45,
-            explanation: "Mercury (Hg) is a metal that remains liquid at standard room temperature.",
-            examTags: ["CUET"]
         }
     ]
 };

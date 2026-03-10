@@ -3,9 +3,43 @@
 // SCHEMA VALIDATED AGAINST DATA_SCHEMA.md
 
 export const generalScienceData = {
-    subject: "General Aptitude (GAT)",
+    subject: "GK & Current Affairs",
     chapter: "General Science",
     examTags: ["CUET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "sci-physics",
+                title: "1. Core Physics Concepts",
+                content: {
+                    coreConcept: "Physics in CUET focuses on everyday phenomena. Key topics include Bernoulli's principle (pressure), Newton's Laws (motion), and Optics (light).\n\n1. Pressure: Atmospheric pressure changes with altitude.\n2. Light: Refraction and Scattering explain why things look different in water or why the sky is blue.\n3. Sound: Echoes and Ultrasound.",
+                    formulaBank: "• Echo: Distance = 340 * time / 2 (~17m for 0.1s delay).\n• Density: Mass / Volume (Ship floats due to displaced water).",
+                    logic: "To solve pressure questions, remember: High altitude = Low pressure = Low boiling point. This is why food takes longer to cook at mountains.",
+                    traps: "Inertia of rest vs motion. If the bus starts: Rest. If it stops: Motion. Don't confuse the two!",
+                    examples: [
+                        { q: "Why does a sky look blue?", a: "Rayleigh scattering of blue light." },
+                        { q: "What is the speed of light?", a: "3x10^8 m/s." }
+                    ],
+                    speedSummary: "Light is faster than sound. Pressure lowers boiling points. Ozone blocks UV."
+                }
+            },
+            {
+                id: "sci-bio",
+                title: "2. Biology & Ecosystems",
+                content: {
+                    coreConcept: "Focuses on Human Physiology and Ecology.\n\n1. Body Systems: Insulin (Pancreas), Dialysis (Kidneys).\n2. Cells: Mitochondria (Powerhouse), Chlorophyll (Photosynthesis).\n3. Ecosystems: 10% Energy Rule.",
+                    formulaBank: "• 10% Rule: Only 1/10th energy passes to the next level.\n• Photosynthesis: Light + CO2 + H2O → Glucose + O2.",
+                    logic: "Identify diseases by their deficiency. Protein = Kwashiorkor. Vitamin A = Night Blindness. Iodine = Goitre.",
+                    traps: "Photosynthesis vs Respiration. Plants do both, but only photosynthesis creates oxygen. Stomata close at night to save water!",
+                    examples: [
+                        { q: "What organ produces insulin?", a: "The Pancreas." },
+                        { q: "What is the unit of energy in cells?", a: "ATP." }
+                    ],
+                    speedSummary: "Mitochondria = Powerhouse. 10% Energy Rule. Vitamin D = Rickets."
+                }
+            }
+        ]
+    },
     flashcards: [
         { id: "sci-fc-001", term: "Boiling Point vs Pressure", definition: "Decreased pressure (altitude) = Decreased boiling point." },
         { id: "sci-fc-002", term: "Newton's 1st Law", definition: "Inertia: Resistance to change in state of motion." },

@@ -96,8 +96,18 @@ export const SUBJECTS = [
     examTags: ["CUET", "MH-CET"],
     chapters: [
       { id: "quantitative", name: "Quantitative Ability", dataFile: "quantitative.data", questionCount: 62 },
-      { id: "logical-reasoning", name: "Logical Reasoning", dataFile: "logical-reasoning.data", questionCount: 75 },
-      { id: "general-knowledge", name: "General Knowledge", dataFile: "general-knowledge.data", questionCount: 75 },
+      { id: "logical-reasoning", name: "Logical Reasoning", dataFile: "logical-reasoning.data", questionCount: 75 }
+    ]
+  },
+  {
+    id: "gk-current-affairs",
+    name: "GK & Current Affairs",
+    icon: "🌍",
+    color: "#059669",
+    examTags: ["CUET", "MH-CET"],
+    chapters: [
+      { id: "general-knowledge", name: "General Knowledge", dataFile: "general-knowledge.data", questionCount: 60 },
+      { id: "current-affairs", name: "Current Affairs", dataFile: "current-affairs.data", questionCount: 10 },
       { id: "general-science", name: "General Science", dataFile: "general-science.data", questionCount: 45 }
     ]
   },
