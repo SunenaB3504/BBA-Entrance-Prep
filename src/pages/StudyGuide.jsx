@@ -234,20 +234,24 @@ const StudyGuide = () => {
                                     <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm leading-relaxed text-slate-600 whitespace-pre-wrap">
                                         <ConceptSubMenu text={topic.content?.coreConcept || topic.summary} topicId={topic.id} />
                                         <div className="space-y-4">
-                                            {(topic.content?.coreConcept || topic.summary || "").split('\n').map((line, lIdx) => {
-                                                if (/^\d+\.\s/.test(line)) {
-                                                    const label = line.match(/^\d+\.\s(.*)/)[1];
-                                                    const cleanLabel = label.split(/[():-]/)[0].trim();
-                                                    const subId = `${topic.id}-pt-${cleanLabel.toLowerCase().replace(/\s+/g, '-').substring(0, 15)}`;
-                                                    return (
-                                                        <div key={lIdx} id={subId} className="scroll-mt-60 pt-4 border-t border-slate-50 first:border-0 first:pt-0">
-                                                            <div className="inline-block p-1 px-2 mb-2 bg-blue-50 text-[10px] font-black text-blue-600 rounded">POINT {lIdx + 1}</div>
-                                                            <div className="font-semibold text-slate-800">{line}</div>
-                                                        </div>
-                                                    );
-                                                }
-                                                return <div key={lIdx}>{line}</div>;
-                                            })}
+                                            {(() => {
+                                                let pointCounter = 0;
+                                                return (topic.content?.coreConcept || topic.summary || "").split('\n').map((line, lIdx) => {
+                                                    if (/^\d+\.\s/.test(line)) {
+                                                        pointCounter++;
+                                                        const label = line.match(/^\d+\.\s(.*)/)[1];
+                                                        const cleanLabel = label.split(/[():-]/)[0].trim();
+                                                        const subId = `${topic.id}-pt-${cleanLabel.toLowerCase().replace(/\s+/g, '-').substring(0, 15)}`;
+                                                        return (
+                                                            <div key={lIdx} id={subId} className="scroll-mt-60 pt-4 border-t border-slate-50 first:border-0 first:pt-0">
+                                                                <div className="inline-block p-1 px-2 mb-2 bg-blue-50 text-[10px] font-black text-blue-600 rounded">POINT {pointCounter}</div>
+                                                                <div className="font-semibold text-slate-800">{line}</div>
+                                                            </div>
+                                                        );
+                                                    }
+                                                    return <div key={lIdx}>{line}</div>;
+                                                });
+                                            })()}
                                         </div>
                                     </div>
                                 </section>

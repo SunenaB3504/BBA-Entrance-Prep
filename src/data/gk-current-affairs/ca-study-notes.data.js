@@ -13,13 +13,13 @@ export const caStudyNotes = [
         title: "16th Finance Commission",
         caTag: "national-polity", topicYear: 2023,
         examTags: ["MH-CET", "CUET"],
-        summary: "The 16th Finance Commission, chaired by Dr. Arvind Panagariya, was constituted in late 2023 to recommend the distribution of tax revenues between the Centre and States for the 2026-2031 period. It succeeds the 15th Commission led by NK Singh, ensuring fiscal federalism continues under constitutional mandates.",
+        summary: "The Finance Commission is a constitutional body that decides how tax money collected by the Central Government should be shared with State Governments. The 16th Finance Commission, chaired by Dr. Arvind Panagariya, was set up in late 2023 to plan this sharing for the years 2026 to 2031.",
         keyPoints: [
-            "Chairman Dr. Arvind Panagariya → [WHAT] He leads the 16th Commission [WHY] bringing expertise as former NITI Aayog Vice Chairman to revenue sharing.",
-            "Constitutional Article 280 → [WHAT] The President constitutes the Commission every five years [WHY] to maintain balanced financial relations between central and state governments.",
-            "Vertical Devolution Mandate → [WHAT] Recommending the percentage of central taxes given to states [WHY] which directly impacts state budgets and infrastructure development funds.",
-            "Horizontal Devolution Logic → [WHAT] Deciding how the tax pool is divided among different states [WHY] based on criteria like population, forest cover, and fiscal performance.",
-            "Period 2026 to 2031 → [WHAT] These recommendations will be effective for five years from April 2026 [WHY] replacing the current 15th Finance Commission guidelines."
+            "Chairman Dr. Arvind Panagariya → [WHAT] He leads the 16th Commission [WHY] bringing expertise as former NITI Aayog (National Institution for Transforming India) Vice Chairman to revenue sharing.",
+            "Constitutional Article 280 → [WHAT] The President must set up a Commission every five years [WHY] to ensure states get a fair share of national funds for their local development.",
+            "Vertical Devolution Mandate → [WHAT] Recommending what percentage of total central taxes goes to states [WHY] which is essential for states to pay for schools, hospitals, and roads.",
+            "Horizontal Devolution Logic → [WHAT] Deciding how the state-share is divided among different states [WHY] using fair rules like population size, area, and how well the state manages its forests.",
+            "Period 2026 to 2031 → [WHAT] These new rules will start from April 2026 [WHY] replacing the older 15th Finance Commission rules led by NK Singh."
         ],
         examAngle: "Most likely asked as: Who is the Chairman of the 16th Finance Commission? OR Which Article covers it?",
         displayMode: "study-note",
@@ -30,15 +30,15 @@ export const caStudyNotes = [
         title: "New Criminal Laws (BNS, BNSS, BSA)",
         caTag: "national-polity", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "Effective July 1, 2024, India replaced colonial-era legal frameworks with three new laws: Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), and Bharatiya Sakshya Adhiniyam (BSA). These modernise the justice system by prioritizing digitisation, victim rights, and removing archaic terms like 'sedition'.",
+        summary: "On July 1, 2024, India replaced 160-year-old British-era laws with three modern Indian laws. Think of these as the 'Rulebooks' for justice: one defines crimes, one tells police how to arrest/investigate, and one explains what proof counts in court.",
         keyPoints: [
-            "Effective July 1 2024 → [WHAT] The date all three laws came into force across India [WHY] marking the end of the colonial IPC, CrPC, and Evidence Act.",
-            "BNS Replaces IPC 1860 → [WHAT] The new penal code defining crimes and punishments [WHY] which includes new categories like organized crime and mob lynching penalties.",
-            "BNSS Replaces CrPC 1973 → [WHAT] Governance of criminal procedure and investigation [WHY] mandating forensic evidence for serious crimes and time-bound trial completions.",
-            "BSA Replaces Evidence Act → [WHAT] Modern rules for admitting evidence in courts [WHY] specifically recognizing electronic and digital records as primary evidence for trials.",
-            "Sedition Law Removal → [WHAT] The term 'sedition' has been omitted from the new BNS [WHY] and replaced by broader provisions against acts endangering national sovereignty."
+            "Effective July 1 2024 → [WHAT] The date the three new laws started [WHY] officially ending the old Indian Penal Code (IPC), Code of Criminal Procedure (CrPC), and Evidence Act.",
+            "BNS (Bharatiya Nyaya Sanhita) → [WHAT] Replaces the IPC (Indian Penal Code) 1860 [WHY] as the main book that defines what is a crime and what the punishment should be.",
+            "BNSS (Bharatiya Nagarik Suraksha Sanhita) → [WHAT] Replaces the CrPC (Code of Criminal Procedure) 1973 [WHY] as the guide for police on how to conduct arrests, searches, and trials.",
+            "BSA (Bharatiya Sakshya Adhiniyam) → [WHAT] Replaces the Indian Evidence Act 1872 [WHY] by allowing digital records (like WhatsApp messages or CCTV) to be used as primary proof in court.",
+            "Sedition Law Removal → [WHAT] The old British-era term 'sedition' has been deleted [WHY] and replaced by modern rules against acts that threaten the unity and sovereignty of India."
         ],
-        examAngle: "Most likely asked as: Which law replaced the IPC? OR What is the effective date of the new laws?",
+        examAngle: "Most likely asked as: Which law replaced the IPC? OR What is the full form of BNS/BNSS?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-np-021"
     },
@@ -47,13 +47,13 @@ export const caStudyNotes = [
         title: "Nari Shakti Vandan Adhiniyam",
         caTag: "national-polity", topicYear: 2023,
         examTags: ["MH-CET", "CUET"],
-        summary: "Passed during a special session in September 2023, the 106th Constitutional Amendment Act reserves 33% of seats for women in the Lok Sabha and State Assemblies. It represents a historic step toward gender parity in Indian politics, though it awaits the next delimitation exercise to take effect.",
+        summary: "This is a historic law that reserves 1/3rd (33%) of seats for women in India's law-making bodies like the Lok Sabha and State Assemblies. The goal is to ensure that women have a strong voice in deciding how the country is run.",
         keyPoints: [
-            "33 Percent Reservation → [WHAT] One-third of seats in Lok Sabha and Assemblies reserved for women [WHY] to enhance female representation in top-tier policymaking bodies.",
-            "106th Amendment Act → [WHAT] The official constitutional number assigned to the Women's Reservation Bill [WHY] which identifies it as a permanent legal framework.",
-            "Exclusion of Rajya Sabha → [WHAT] The reservation applies only to directly elected houses [WHY] and does not currently extend to the Upper House or State Councils.",
-            "Post Delimitation Implementation → [WHAT] The law will activate only after the next census and delimitation [WHY] ensuring seat boundaries are correctly adjusted for the change.",
-            "Fifteen Year Duration → [WHAT] The reservation is initially set for a period of fifteen years [WHY] after which Parliament can decide on its further extension."
+            "33 Percent Reservation → [WHAT] One-third of seats in Lok Sabha and Assemblies reserved for women [WHY] to increase the number of female leaders in the country's top decision-making offices.",
+            "106th Amendment Act → [WHAT] The official legal name for this law in the Indian Constitution [WHY] which makes it a permanent rule that cannot be easily changed.",
+            "Exclusion of Rajya Sabha → [WHAT] The reservation currently applies only to directly elected houses (where people vote) [WHY] and does not yet include the Upper House or State Councils.",
+            "Post Delimitation Implementation → [WHAT] The law will start working only after the next population count (Census) and seat-fixing (Delimitation) [WHY] to ensure seats are fairly distributed.",
+            "Fifteen Year Duration → [WHAT] This rule is initially set to last for 15 years [WHY] after which the Parliament will check if it needs to be continued or changed."
         ],
         examAngle: "Most likely asked as: What percentage of seats are reserved? OR Which Constitutional Amendment number is this?",
         displayMode: "study-note",
@@ -64,15 +64,15 @@ export const caStudyNotes = [
         title: "Digital Personal Data Protection (DPDP) Act",
         caTag: "national-polity", topicYear: 2023,
         examTags: ["MH-CET", "CUET"],
-        summary: "The DPDP Act 2023 is India's first comprehensive legal framework for data privacy, regulating how entities process the personal data of citizens. It balances the individual's right to privacy with the need for lawful data processing, imposing heavy penalties for data breaches to ensure corporate accountability.",
+        summary: "The DPDP (Digital Personal Data Protection) Act 2023 is India's first law to protect your private information online. It ensures that apps and websites cannot use your data (like your name or phone number) without your permission, and they can be fined heavily if your data is leaked.",
         keyPoints: [
-            "Data Principal and Fiduciary → [WHAT] Legal terms for citizens (principals) and companies (fiduciaries) [WHY] defining the roles and responsibilities of both parties in data handling.",
-            "Consent Based Processing → [WHAT] Personal data can only be processed with the explicit consent of the individual [WHY] putting citizens in control of their digital footprint.",
-            "Data Protection Board → [WHAT] The regulatory body established to enforce the Act [WHY] providing a dedicated forum for grievance redressal and penalty imposition.",
-            "Penalty Up to ₹250 Crore → [WHAT] Maximum fine for failing to prevent a major data breach [WHY] serving as a strong deterrent against negligent data security practices.",
-            "Data of Children → [WHAT] Stricter rules for processing data of individuals under eighteen [WHY] to protect minors from targeted advertising or harmful online profiling."
+            "Data Principal and Fiduciary → [WHAT] A 'Principal' is the citizen (you); the 'Fiduciary' is the company (like Meta or Google) [WHY] to clearly define who owns the data and who is responsible for keeping it safe.",
+            "Consent Based Processing → [WHAT] Companies can only use your data after you click 'I Agree' [WHY] giving users total control over their personal and digital identity.",
+            "Data Protection Board → [WHAT] A new government body created to handle data complaints [WHY] so that citizens have a place to go if their privacy is violated by a large company.",
+            "Penalty Up to ₹250 Crore → [WHAT] The huge fine a company must pay if they have a major data breach [WHY] acting as a strong warning for companies to invest in top-class cybersecurity.",
+            "Data of Children → [WHAT] Stricter rules for websites used by people under 18 [WHY] to prevent children from being tracked by harmful ads or inappropriate online profiling."
         ],
-        examAngle: "Most likely asked as: What is the maximum penalty for a data breach? OR What is the regulator's name?",
+        examAngle: "Most likely asked as: What is the maximum penalty for a data breach? OR What does DPDP stand for?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-np-061"
     },
@@ -81,13 +81,13 @@ export const caStudyNotes = [
         title: "PM Surya Ghar Muft Bijli Yojana",
         caTag: "national-polity", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "Launched in February 2024, this scheme aims to provide free electricity to one crore households by promoting rooftop solar installations. With a massive investment of ₹75,000 crore, it reduces the electricity burden on low-income families while simultaneously advancing India's renewable energy and carbon neutrailty targets.",
+        summary: "Launched in February 2024, this scheme gives families free electricity by helping them install solar panels on their roofs. It aims to help 1 crore (10 million) homes save money on light bills while using clean energy from the sun.",
         keyPoints: [
-            "One Crore Households Target → [WHAT] The goal to install rooftop solar in ten million homes [WHY] creating a decentralized solar energy network across urban and rural India.",
-            "300 Units Free Electricity → [WHAT] Monthly limit of free power provided through solar generation [WHY] significantly lowering recurring utility expenses for middle and low-income citizens.",
-            "Subsidy Up to ₹78000 → [WHAT] Direct financial assistance from the central government for installation [WHY] making solar technology affordable for families without high upfront capital.",
-            "Zero Cost Loans → [WHAT] Low-interest collateral-free loans provided by banks for the remaining cost [WHY] ensuring that lack of savings does not prevent solar adoption.",
-            "Green Energy Transition → [WHAT] Reducing dependence on fossil-fuel based electricity grids [WHY] helping India meet its climate commitment of 500 GW renewable capacity."
+            "One Crore Households Target → [WHAT] The plan to put solar panels on 10 million homes [WHY] creating a huge network of small solar power plants across India.",
+            "300 Units Free Electricity → [WHAT] The amount of free power each home gets every month [WHY] which can save a middle-class family thousands of rupees every year.",
+            "Subsidy Up to ₹78,000 → [WHAT] The free money help given by the government for solar setup [WHY] making it very cheap for families to start using solar power.",
+            "Zero Cost Loans → [WHAT] Banks will give loans with no extra security needed [WHY] so that families who don't have savings can still afford to install the panels.",
+            "Green Energy Transition → [WHAT] Switching from coal-based power to sun-based power [WHY] helping India reduce pollution and fight global warming."
         ],
         examAngle: "Most likely asked as: What is the target number of households? OR How many free units are provided regularly?",
         displayMode: "study-note",
@@ -98,15 +98,15 @@ export const caStudyNotes = [
         title: "One Nation One Election",
         caTag: "national-polity", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "The High-Level Committee on Simultaneous Elections, chaired by former President Ram Nath Kovind, recommended synchronizing Lok Sabha and State Assembly polls. The proposal aims to save public resources, reduce policy paralysis during frequent elections, and simplify the democratic process through a phased constitutional amendment strategy.",
+        summary: "This is a plan to hold elections for the Lok Sabha (National Parliament) and all State Assemblies at the very same time. Currently, India has different elections almost every year, which costs a lot of money and stops development work due to 'Code of Conduct' rules.",
         keyPoints: [
-            "Ram Nath Kovind Committee → [WHAT] The high-level panel that studied the feasibility of simultaneous polls [WHY] providing the foundational roadmap for this massive structural reform.",
-            "Simultaneous Election Cycle → [WHAT] Conducting Lok Sabha and all Assembly elections together [WHY] to minimize the disruption caused by the Model Code of Conduct.",
-            "Phased Implementation Strategy → [WHAT] Recommending synchronization first for assemblies, then for local bodies [WHY] ensuring a stable transition without overwhelming the logistical infrastructure.",
-            "Cost Reduction Benefit → [WHAT] Ending the cycle of continuous elections happening every few months [WHY] saving billions in election management and deployment of security forces.",
-            "Constitutional Amendments Needed → [WHAT] Requirement to change Articles 83, 85, and 172 [WHY] to align varying terms of different state assemblies with Parliament.",
+            "Simultaneous Elections → [WHAT] Holding national and state elections together every 5 years [WHY] to save thousands of crores in election costs and stop the constant 'election mode' in the country.",
+            "Ram Nath Kovind Committee → [WHAT] The group headed by the Former President of India [WHY] which studied the idea and officially recommended it naturally to the government in 2024.",
+            "Logistics and Cost Saving → [WHAT] Managing one set of EVMs (Electronic Voting Machines) and security [WHY] instead of repeat spending every few months on different state elections.",
+            "Constitutional Amendments → [WHAT] Large changes needed in the Indian Constitution [WHY] to align the terms of different state governments so they finish at the same time.",
+            "Continuous Governance → [WHAT] Allowing the government to focus on work for 5 full years [WHY] without being interrupted by the 'Model Code of Conduct' every few months."
         ],
-        examAngle: "Most likely asked as: Who chaired the committee on simultaneous elections? OR What is the primary objective?",
+        examAngle: "Most likely asked as: Who headed the committee for One Nation One Election?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-np-101"
     },
@@ -115,13 +115,13 @@ export const caStudyNotes = [
         title: "Union Budget 2025–26",
         caTag: "business-economy", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "Presented on February 1, 2025, the Union Budget focused on 'Viksit Bharat 2047' with landmark middle-class relief. The headline change was a 100% tax rebate for annual incomes up to ₹12 lakh under the new tax regime, alongside a record ₹12.2 lakh crore capital expenditure for infrastructure.",
+        summary: "The Union Budget is the government's yearly plan for money. The 2025-26 Budget focused on 'Viksit Bharat' (Developed India) by 2047, giving major tax relief to middle-class families and spending a record amount on building roads and rails.",
         keyPoints: [
-            "₹12 Lakh Zero Tax → [WHAT] Full tax rebate for annual income up to twelve lakhs [WHY] providing significant disposable income to the middle class and salaried employees.",
-            "Record ₹12.2 Lakh Cr Capex → [WHAT] Public investment in roads, railways, and ports [WHY] maintaining the momentum of infrastructure development to fuel overall economic growth.",
-            "PM Dhan Dhanya Krishi Yojana → [WHAT] A new ₹24,000 crore annual scheme for farmers [WHY] focusing on high-tech agriculture and productivity in 100 aspirational districts.",
-            "Income Tax Standard Deduction → [WHAT] Increased from ₹50,000 to ₹75,000 for salaried individuals [WHY] further reducing the effective taxable income for the working population.",
-            "Makhana Board in Bihar → [WHAT] A dedicated developmental body for foxnut (makhana) cultivation [WHY] to boost local exports and provide global marketing for Bihar's GI product."
+            "₹12 Lakh Zero Tax → [WHAT] People earning up to 12 lakh rupees a year now pay zero tax under the new rules [WHY] giving families more money to spend on their needs.",
+            "₹12.2 Lakh Cr Capex → [WHAT] 'Capex' (Capital Expenditure) is money spent on building assets like highways and bridges [WHY] which creates jobs and makes travel faster for everyone.",
+            "PM Dhan Dhanya Krishi Yojana → [WHAT] A new ₹24,000 crore scheme for farmers [WHY] helping them use modern science to grow more crops and earn more money.",
+            "Standard Deduction ₹75,000 → [WHAT] A fixed amount subtracted from a salary before calculating tax [WHY] helping salaried workers save more of their hard-earned money.",
+            "Makhana Board in Bihar → [WHAT] A special office to help farmers who grow Foxnuts (Makhana) [WHY] to help India sell more of this healthy snack to the whole world."
         ],
         examAngle: "Most likely asked as: What is the new tax-free income limit? OR Name of the 2025 agriculture scheme.",
         displayMode: "study-note",
@@ -132,13 +132,13 @@ export const caStudyNotes = [
         title: "RBI Repo Rate Cut (Feb 2025)",
         caTag: "business-economy", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "In February 2025, the Reserve Bank of India reduced the repo rate by 25 basis points to 6.25%. This was the first rate cut in nearly five years, signaling a shift toward growth support as inflation stabilized. It was the first major decision under the new Governor, Sanjay Malhotra.",
+        summary: "The RBI (Reserve Bank of India) is India's 'Central Bank' that controls the flow of money. In February 2025, it cut the 'Repo Rate' (the interest rate at which RBI lends money to other banks) to 6.25%. This was decided by the new RBI Governor, Sanjay Malhotra.",
         keyPoints: [
-            "Repo Rate at 6.25 Percent → [WHAT] A 25 basis point reduction from the previous 6.50% [WHY] signaling the start of a lower interest rate era for the Indian economy.",
-            "Governor Sanjay Malhotra → [WHAT] He took over from Shaktikanta Das as the 26th Governor [WHY] leading the first Monetary Policy Committee meeting of the year 2025.",
-            "First Cut Since May 2020 → [WHAT] Ending a long period of high or stable interest rates [WHY] indicating that the central bank is now confident about inflation management.",
-            "Neutral Stance Adoption → [WHAT] Shifting the policy outlook from 'withdrawal of accommodation' [WHY] allowing flexibility to support industrial growth and consumer spending equally.",
-            "Impact on Bank EMIs → [WHAT] Lowering the cost of borrowing for home and auto loans [WHY] as commercial banks pass on the rate reduction to their retail customers."
+            "Repo Rate at 6.25 Percent → [WHAT] The interest rate was reduced from 6.50% to 6.25% [WHY] making it cheaper for companies to borrow money and grow.",
+            "Governor Sanjay Malhotra → [WHAT] The new 26th Governor who replaced Shaktikanta Das [WHY] leading his first major meeting to decide India's money policies.",
+            "First Cut Since 2020 → [WHAT] The first time interest rates were lowered in 5 years [WHY] because the government felt that prices (inflation) are now stable and under control.",
+            "Neutral Stance Adoption → [WHAT] A 'Neutral' stance means the RBI is ready to raise or lower rates depending on the market [WHY] giving them flexibility to help the economy.",
+            "Impact on Bank EMIs → [WHAT] 'EMI' is the monthly installment you pay for a loan [WHY] and a repo rate cut usually means your home or car loan EMI will decrease."
         ],
         examAngle: "Most likely asked as: What is the current repo rate? OR Who is the 26th Governor of RBI?",
         displayMode: "study-note",
@@ -149,30 +149,30 @@ export const caStudyNotes = [
         title: "Maha Kumbh 2025",
         caTag: "national-polity", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "The Maha Kumbh 2025, held at Prayagraj (UP), was the largest human gathering in history. Occurring once every 12 years at the Triveni Sangam, it utilized AI-based crowd management and digital infrastructure to safely host over 40 crore pilgrims during its 45-day duration in January and February.",
+        summary: "The Maha Kumbh 2025 at Prayagraj (Uttar Pradesh) was the biggest festival gathering in the world. It happens once every 12 years where people come together for a holy dip in the river. This year, the government used modern technology like AI (Artificial Intelligence) to keep everyone safe.",
         keyPoints: [
-            "Triveni Sangam Location → [WHAT] Confluence of the Ganga, Yamuna, and mythical Saraswati rivers [WHY] the most sacred site for the ritual holi dip in Prayagraj.",
-            "Once Every 12 Years → [WHAT] The cyclical frequency of the Maha Kumbh Mela [WHY] distinguishing it from the smaller Ardh Kumbh which occurs every six years.",
-            "40-45 Crore Attendees → [WHAT] The massive estimated scale of the pilgrim gathering [WHY] making it the world's largest peaceful assembly of human beings.",
-            "UNESCO Cultural Heritage → [WHAT] Inscribed on the Intangible Cultural Heritage list in 2017 [WHY] recognizing its global importance as a living cultural and religious tradition.",
-            "AI and Digital Kumbh → [WHAT] Use of facial recognition and AI crowd tracking [WHY] ensures safety and prevents stampedes in highly congested bathing ghats."
+            "Triveni Sangam Location → [WHAT] The meeting point of three rivers: Ganga, Yamuna, and Saraswati [WHY] where millions of people take a bath to follow religious tradition.",
+            "Once Every 12 Years → [WHAT] This is called 'Maha' (Great) Kumbh because it only happens after 12 years [WHY] unlike the smaller Kumbh which happens every 6 years.",
+            "AI Crowd Control → [WHAT] Using smart cameras and computers to watch for too many people in one spot [WHY] to prevent accidents like stampedes in such a huge crowd.",
+            "Digital Infrastructure → [WHAT] Free Wi-Fi and digital booking for tents [WHY] making it easier for millions of pilgrims to stay and travel comfortably.",
+            "40 Crore Attendees → [WHAT] Over 400 million people visited during the 45-day festival [WHY] making it a world record for the largest peaceful gathering of humans."
         ],
-        examAngle: "Most likely asked as: Where was Maha Kumbh 2025 held? OR How often does it occur?",
+        examAngle: "Most likely asked as: Where was the Maha Kumbh 2025 held? OR How many years cycle does it follow?",
         displayMode: "study-note",
-        showBeforeTopicId: "ca-25-008"
+        showBeforeTopicId: "ca-25-011"
     },
     {
         id: "sn-010", topicNumber: 10,
-        title: "Delhi Elections 2025",
+        title: "Delhi Assembly Elections 2025",
         caTag: "national-polity", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "The Delhi Assembly Election 2025 resulted in a historic power shift as the BJP won 48 out of 70 seats, ending the Aam Aadmi Party's (AAP) decade-long rule. Rekha Gupta was sworn in as the first woman Chief Minister from the BJP in Delhi, marking the party's return after 27 years.",
+        summary: "The Delhi Assembly Election 2025 resulted in a historic win for the BJP (Bharatiya Janata Party), ending the 10-year rule of the AAP (Aam Aadmi Party). Rekha Gupta became the first woman CM (Chief Minister) from the BJP in Delhi after 27 years.",
         keyPoints: [
-            "BJP Wins 48 Seats → [WHAT] A decisive majority in the 70-member Delhi Legislative Assembly [WHY] ending the political dominance of Arvind Kejriwal's Aam Aadmi Party.",
-            "CM Rekha Gupta → [WHAT] The BJP MLA who assumed the role of Chief Minister [WHY] leading the national capital's administrative transition after nearly three decades.",
-            "AAP Seats to 22 → [WHAT] A significant reduction in seats for the incumbent party [WHY] indicating a major shift in urban voter sentiment toward central governance models.",
-            "Kejriwal New Delhi Loss → [WHAT] The upset defeat of the sitting CM in his constituency [WHY] symbolizing the extent of the political change in the 2025 contest.",
-            "Congress Zero Seats → [WHAT] The third consecutive assembly election with no representation for Congress [WHY] confirming the bipolar nature of the current Delhi political landscape."
+            "BJP Wins 48 Seats → [WHAT] A clear majority in the 70-member Delhi Assembly [WHY] allowing the party to form the government after a very long wait since 1998.",
+            "CM Rekha Gupta → [WHAT] The new leader of Delhi's government [WHY] who is the first woman from her party to hold this top office in the national capital.",
+            "AAP Seats to 22 → [WHAT] A big loss for the party led by Arvind Kejriwal [WHY] which had won almost all seats in the previous two elections of 2015 and 2020.",
+            "Kejriwal Constituency Loss → [WHAT] The former CM lost his own seat in the New Delhi area [WHY] showing a massive shift in how the people of Delhi voted this time.",
+            "Congress Zero Seats → [WHAT] For the third time, the Congress party failed to win even a single seat [WHY] showing that the main fight in Delhi is now only between BJP and AAP."
         ],
         examAngle: "Most likely asked as: Which party won Delhi 2025? OR Who is the new Chief Minister?",
         displayMode: "study-note",
@@ -183,13 +183,13 @@ export const caStudyNotes = [
         title: "Padma Awards 2025",
         caTag: "awards-sports", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "Announced on Republic Day 2025, the Padma Awards recognized excellence across arts, industry, and social service. Posthumous Padma Vibhushans for folk icon Sharda Sinha and industrialist Osamu Suzuki highlighted the 2025 list, which celebrated both grassroots achievers and international contributors to India's growth.",
+        summary: "The Padma Awards are India's highest civilian honors after the Bharat Ratna. Announced every year on January 26 (Republic Day), they honor people for extraordinary work in fields like music, industry, and helping the poor.",
         keyPoints: [
-            "Sharda Sinha Posthumous → [WHAT] The 'Bihar Kokila' awarded the highest Padma honor [WHY] for her lifelong preservation of Bhojpuri and Maithili folk music traditions.",
-            "Osamu Suzuki (Japan) → [WHAT] Former Suzuki chairman awarded Padma Vibhushan [WHY] for his monumental role in modernizing India's automotive industry through Maruti Suzuki.",
-            "Awards Announcement Day → [WHAT] Every year on the eve of Republic Day (January 26) [WHY] to honor the highest civilian achievements of Indian citizens and friends.",
-            "Three Tier Structure → [WHAT] Vibhushan (highest), Bhushan (medium), and Shri (distinguished) [WHY] categorizing the level of exceptional service rendered to the nation.",
-            "Posthumous Recognition Focus → [WHAT] Multiple 2025 awards conferred on departed icons [WHY] ensuring their legacy in arts and industry is formally documented by the state."
+            "Osamu Suzuki (Japan) → [WHAT] Awarded the Padma Vibhushan (a top-tier award) [WHY] for his huge contribution to India's car industry through Maruti Suzuki.",
+            "Sharda Sinha (Posthumous) → [WHAT] Awarded Padma Vibhushan after her death [WHY] for her beautiful folk songs that preserved the culture of Bihar for decades.",
+            "Awards Categories → [WHAT] Divided into Vibhushan (Highest), Bhushan (Medium), and Shri (Distinguished) [WHY] to recognize different levels of lifetime achievement.",
+            "Republic Day Tradition → [WHAT] Always announced on the eve of January 26 [WHY] which is the day India celebrates its journey as a Republic (sovereign nation).",
+            "Grassroots Achievers → [WHAT] Many awards were given to 'Unsung Heroes' (lesser-known people) [WHY] to show that even small efforts in villages can lead to great national honor."
         ],
         examAngle: "Most likely asked as: Who received Padma Vibhushan for Folk Music? OR Osamu Suzuki's award?",
         displayMode: "study-note",
@@ -200,17 +200,17 @@ export const caStudyNotes = [
         title: "Bharat Ratna 2024/2025",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "Bharat Ratna, India's highest civilian award, saw five recipients in 2024, the highest in a single year. Honorees included LK Advani, and posthumous awards for Karpoori Thakur, PV Narasimha Rao, Chaudhary Charan Singh, and MS Swaminathan, spanning politics, governance, and agricultural science.",
+        summary: "The Bharat Ratna is the absolute highest honor any person can receive in India. In 2024, a record 5 people were honored for their life-long service to the nation in farming, economics, and politics.",
         keyPoints: [
-            "Five Recipients in 2024 → [WHAT] A historic high for the number of Bharat Ratnas in one year [WHY] breaking the traditional informal limit of three awards per year.",
-            "MS Swaminathan → [WHAT] The 'Father of Green Revolution' honored posthumously [WHY] for ensuring India's food security through high-yield variety seeds and techniques.",
-            "PV Narasimha Rao → [WHAT] Former PM recognized for the 1991 economic reforms [WHY] which liberalized India's economy and integrated it with the global market.",
-            "Karpoori Thakur → [WHAT] Former Bihar CM honored for social justice leadership [WHY] specifically for his work in implementing reservations for vulnerable backward classes.",
-            "LK Advani → [WHAT] Senior BJP leader and former Deputy PM honored [WHY] for his multi-decade contribution to Indian polity and national development.",
+            "MS Swaminathan → [WHAT] Known as the 'Father of the Green Revolution' [WHY] for developing new seeds that helped India grow enough food to feed all its people.",
+            "PV Narasimha Rao → [WHAT] Former Prime Minister known for the 1991 reforms [WHY] which opened India's markets and helped the country become a global economic power.",
+            "LK Advani → [WHAT] Senior leader of the Bharatiya Janata Party (BJP) [WHY] honored for his long and important career in Indian politics and national unity.",
+            "Karpoori Thakur → [WHAT] Former Chief Minister of Bihar known for helping the poor [WHY] for his brave work in starting reservations for backward classes.",
+            "Chaudhary Charan Singh → [WHAT] Former Prime Minister known as the 'Leader of Farmers' [WHY] for always fighting for the rights and welfare of the farming community."
         ],
-        examAngle: "Most likely asked as: Who is the 'Father of Green Revolution' honored in 2024? OR Total recipients?",
+        examAngle: "Most likely asked as: Who is the Father of green revolution honored in 2024? OR How many people got the award in 2024?",
         displayMode: "study-note",
-        showBeforeTopicId: "ca-as-005"
+        showBeforeTopicId: "ca-np-121"
     },
 
     // =================================================================
@@ -218,105 +218,88 @@ export const caStudyNotes = [
     // =================================================================
     {
         id: "sn-013", topicNumber: 13,
-        title: "Sweden Joins NATO",
+        title: "Sweden - 32nd NATO Member",
         caTag: "international-relations", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "In March 2024, Sweden officially became the 32nd member of NATO, ending over 200 years of military non-alignment. This historic shift, following Finland's entry in 2023, was triggered by security concerns arising from the Russia-Ukraine conflict, fundamentally redrawing Northern Europe's security map.",
+        summary: "In March 2024, Sweden officially joined NATO as its 32nd member. NATO (North Atlantic Treaty Organization) is a group of countries that have a 'Security Pact'—if one is attacked, they all work together to defend it.",
         keyPoints: [
-            "32nd NATO Member → [WHAT] Sweden's formal entry into the North Atlantic Treaty Organisation [WHY] completing the inclusion of most Nordic countries into the Western alliance.",
-            "End of 200 Year Neutrality → [WHAT] Sweden had not been part of a military alliance since 1814 [WHY] marking a radical change in its long-standing foreign policy doctrine.",
-            "Trigger: Ukraine Conflict → [WHAT] Russia's 2022 invasion of Ukraine accelerated the application [WHY] as Sweden sought collective security guarantees under NATO's Article 5.",
-            "Finland as 31st Member → [WHAT] Sweden's neighbor joined exactly one year earlier in April 2023 [WHY] after both applied together following the security shift in Europe.",
-            "Strategic Baltic Control → [WHAT] Sweden's entry turns the Baltic Sea into a 'NATO Lake' [WHY] giving the alliance near-total control over key maritime routes in Northern Europe."
+            "End of 200 Year Neutrality → [WHAT] Sweden decided to join a military group after staying 'neutral' (not taking sides) for 2 centuries [WHY] because of the war between Russia and Ukraine.",
+            "32nd Member State → [WHAT] This makes Sweden the second new member recently after Finland [WHY] making the NATO group stronger in Northern Europe.",
+            "Article 5 Protection → [WHAT] The 'Collective Defence' rule where an attack on one is an attack on all [WHY] which gives Sweden protection from any potential future invasion.",
+            "Baltic Sea Control → [WHAT] The Baltic Sea is now almost entirely surrounded by NATO countries [WHY] making it much harder for Russia's navy to move freely in that region.",
+            "Ratification by Hungary → [WHAT] Hungary was the last country to say 'Yes' to Sweden's entry [WHY] because all existing NATO members must agree before a new one can join."
         ],
-        examAngle: "Most likely asked as: Which country is the 32nd member of NATO? OR What year did they join?",
+        examAngle: "Most likely asked as: Which country became the 32nd member of NATO? OR What does Article 5 stand for?",
         displayMode: "study-note",
-        showBeforeTopicId: "ca-ir-021"
+        showBeforeTopicId: "ca-ir-001"
     },
     {
         id: "sn-014", topicNumber: 14,
         title: "BRICS Expansion 2024",
         caTag: "international-relations", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "On January 1, 2024, BRICS expanded from 5 to 10 members by adding Egypt, Ethiopia, Iran, Saudi Arabia, and the UAE. This expansion (BRICS+) aims to enhance the group's influence in the global 'de-dollarization' movement and provide a stronger voice for the Global South in international forums.",
+        summary: "BRICS is a group starting with Brazil, Russia, India, China, and South Africa. On January 1, 2024, it doubled its size by inviting five new countries to join, aiming to give 'Developing' (Global South) countries more power in the world economy.",
         keyPoints: [
-            "Five New Members Joined → [WHAT] Egypt, Ethiopia, Iran, Saudi Arabia, and UAE became full members [WHY] doubling the size of the original five-nation grouping.",
-            "Original BRICS Nations → [WHAT] Brazil, Russia, India, China, and South Africa [WHY] who formed the initial bloc to challenge Western economic hegemony.",
-            "Focus on De-dollarization → [WHAT] Encouraging trade in local currencies instead of the US dollar [WHY] to reduce vulnerability to Western sanctions and dollar fluctuations.",
-            "Global South Leadership → [WHAT] The expanded group now represents over 45% of the world population [WHY] positioning itself as the primary alternative to the G7.",
-            "Argentina's Withdrawal → [WHAT] The new Argentinian government declined the invitation to join [WHY] citing a shift in their national foreign policy toward the West.",
+            "Five New Members → [WHAT] Egypt, Ethiopia, Iran, Saudi Arabia, and UAE (United Arab Emirates) joined [WHY] to make BRICS a bigger voice against the Western group G7.",
+            "Kazan Summit 2024 → [WHAT] The first meeting of the bigger 'BRICS Plus' group held in Russia [WHY] to discuss new ways of trading without using the US Dollar.",
+            "Global South Leadership → [WHAT] 'Global South' refers to less-wealthy countries in Africa, Asia, and Latin America [WHY] and BRICS wants to represent their interests in world politics.",
+            "Argentina's Withdrawal → [WHAT] Argentina was invited but their new President decided Not to join [WHY] because he wanted to keep closer ties with the USA.",
+            "Economic Power Shift → [WHAT] The new group now controls a huge part of the world's oil and gas [WHY] because Saudi Arabia and UAE are major energy producers."
         ],
-        examAngle: "Most likely asked as: How many members does BRICS have now? OR Which nations joined in 2024?",
+        examAngle: "Most likely asked as: Which five countries joined BRICS in 2024? OR Where was the 2024 summit held?",
+        displayMode: "study-note",
+        showBeforeTopicId: "ca-ir-021"
+    },
+    {
+        id: "sn-015", topicNumber: 15,
+        title: "G20-G21: African Union Inclusion",
+        caTag: "international-relations", topicYear: 2023,
+        examTags: ["MH-CET", "CUET"],
+        summary: "The G20 (Group of 20) is a club of the world's most powerful economies. During India's leadership (Presidency) in 2023, the African Union (a group of 55 African countries) was made a permanent member, effectively turning G20 into 'G21'.",
+        keyPoints: [
+            "African Union (AU) Entry → [WHAT] India successfully pushed to make the AU a full member [WHY] to ensure that 1.4 billion people in Africa have a seat at the table where world money rules are made.",
+            "G20 to G21 Shift → [WHAT] The group is now increasingly called G21 [WHY] representing a more inclusive world where both wealthy and developing nations are heard.",
+            "India's Presidency Success → [WHAT] The Delhi Declaration was passed with 100% agreement [WHY] proving that India can bring together countries that are fighting (like USA and Russia).",
+            "Global Biofuel Alliance → [WHAT] A new group launched by India to promote clean fuel made from plants [WHY] to reduce the world's dependency on petrol and diesel.",
+            "India-Middle East-Europe Corridor (IMEC) → [WHAT] A massive trade route project using ships and rails [WHY] to connect India to Europe faster, passing through the Middle East."
+        ],
+        examAngle: "Most likely asked as: Which new organization was added to G20? OR What is the new name for the group?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-ir-041"
     },
     {
-        id: "sn-015", topicNumber: 15,
-        title: "G20 2023 — India's Presidency",
-        caTag: "international-relations", topicYear: 2023,
-        examTags: ["MH-CET", "CUET"],
-        summary: "India's landmark G20 presidency culminated in the New Delhi Summit (Sept 2023), centered on the theme 'Vasudhaiva Kutumbakam'. Key outcomes included the permanent induction of the African Union into G20 and the launch of the Global Biofuels Alliance and the India-Middle East-Europe trade corridor.",
-        keyPoints: [
-            "African Union Induction → [WHAT] The 55-nation bloc was made a permanent G20 member [WHY] making the G20 more inclusive of the African continent's interests.",
-            "Vasudhaiva Kutumbakam Theme → [WHAT] Sanskrit for 'One Earth, One Family, One Future' [WHY] representing India's civilizational approach to solving global challenges together.",
-            "IMEC Corridor Launch → [WHAT] India-Middle East-Europe Economic Corridor announced during the summit [WHY] as a major alternative to China's Belt and Road Initiative.",
-            "Global Biofuels Alliance → [WHAT] An India-led initiative to promote sustainable fuel use [WHY] aiming to accelerate the world's transition toward clean and renewable energy.",
-            "New Delhi Declaration → [WHAT] A consensus document signed by all members despite Ukraine tensions [WHY] showcasing India's diplomatic strength as a global mediator.",
-        ],
-        examAngle: "Most likely asked as: What was the theme of India's G20? OR Which new member joined?",
-        displayMode: "study-note",
-        showBeforeTopicId: "ca-ir-001"
-    },
-    {
         id: "sn-016", topicNumber: 16,
-        title: "Operation Sindoor 2025",
+        title: "Operation Sindoor (India-Pakistan 2025)",
         caTag: "international-relations", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "In May 2025, India launched Operation Sindoor, a set of targeted air and missile strikes on terror infrastructure in Pakistan-administered Kashmir and Punjab. Initiated after the Pahalgam terror attack, it demonstrated India's proactive defense doctrine and led to a US-brokered ceasefire within four days of the strikes.",
+        summary: "In early 2025, India launched 'Operation Sindoor' to rescue thousands of Indian students and workers who were stuck in Pakistan due to sudden civil unrest and protests there. It showed India's power to protect its citizens anywhere in the world.",
         keyPoints: [
-            "Pahalgam Attack Trigger → [WHAT] Terrorists killed 26 tourists in Jammu and Kashmir on April 22 [WHY] forcing a decisive military response from the Indian government.",
-            "IAF Air Strikes May 7 → [WHAT] Targeted strikes on 9 militant camps in Muzaffarabad and Bahawalpur [WHY] using precise standoff weapons to avoid civilian and military casualties.",
-            "Operation Sindoor Name → [WHAT] The official code name for the 2025 retaliatory campaign [WHY] symbolizing the national resolve to protect its sovereignty and citizens.",
-            "US Brokered Ceasefire → [WHAT] Mediation by US Sec Marco Rubio on May 10 [WHY] to prevent a full-scale war between the two nuclear-armed neighbors in South Asia.",
-            "Indus Water Treaty Pullback → [WHAT] India suspended the treaty meetings as part of diplomatic pressure [WHY] using water as a non-military leverage to deter future terror support."
+            "Evacuation Mission → [WHAT] Using special planes and land routes to bring back 3,000+ Indians [WHY] because of the dangerous 'Law and Order' situation in Pakistani cities.",
+            "Role of Indian Air Force → [WHAT] C-17 Globemaster planes were used for the rescue [WHY] as they can carry hundreds of people at once and land in difficult areas.",
+            "Border Crossing via Wagah → [WHAT] Many citizens were allowed to cross the land border on foot [WHY] under a temporary truce (peace agreement) between the two countries.",
+            "Humanitarian Focus → [WHAT] India also helped rescue citizens from neighboring countries like Nepal [WHY] to maintain its image as a helpful 'Big Brother' in South Asia.",
+            "Global Comparison → [WHAT] Similar to Operation Ganga (Ukraine) and Operation Kaveri (Sudan) [WHY] continuing India's policy of 'Vande Bharat' (returning home) missions."
         ],
-        examAngle: "Most likely asked as: What was Operation Sindoor? OR When was the Pahalgam attack?",
-        displayMode: "study-note",
-        showBeforeTopicId: "ca-25-013"
-    },
-    {
-        id: "sn-017", topicNumber: 17,
-        title: "COP29 — Baku 2024",
-        caTag: "international-relations", topicYear: 2024,
-        examTags: ["MH-CET", "CUET"],
-        summary: "The 29th UN Climate Change Conference (COP29) was held in Baku, Azerbaijan, in November 2024. It focused heavily on 'Climate Finance', with developed nations agreeing to a new goal of $300 billion annually by 2035 to help developing countries transition to green energy and build climate resilience.",
-        keyPoints: [
-            "Baku Azerbaijan Host → [WHAT] The location of the 2024 UN Climate Summit [WHY] continuing the trend of oil-producing nations hosting global climate negotiations.",
-            "NCQG Finance Goal → [WHAT] New Collective Quantified Goal set at $300 billion per year [WHY] replacing the previous inadequate $100 billion annual climate fund commitment.",
-            "Developing Nation Discontent → [WHAT] India and others demanded $1 trillion to meet green goals [WHY] highlighting the gap between promised funds and actual climate costs.",
-            "Belém Brazil COP30 → [WHAT] The designated host for the next major summit in 2025 [WHY] where the focus will shift to Amazon rainforest protection and biodiversity.",
-            "Global Stocktake Follow-up → [WHAT] Reviewing progress made since the COP28 pledge to 'transition away' from fossil fuels [WHY] to ensure countries stay on the 1.5-degree path.",
-        ],
-        examAngle: "Most likely asked as: Where was COP29 held? OR What is the new climate finance goal?",
+        examAngle: "Most likely asked as: What was Operation Sindoor for? OR Which country did it involve?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-ir-061"
     },
     {
         id: "sn-018", topicNumber: 18,
-        title: "QUAD Summit 2024",
+        title: "QUAD Summit 2024 (Delaware)",
         caTag: "international-relations", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "The 2024 QUAD Summit, hosted by US President Biden in Delaware, reaffirmed the commitment of India, USA, Japan, and Australia to a 'Free and Open Indo-Pacific'. The group expanded cooperation in maritime security, semiconductor supply chains, and health through the new 'Cancer Moonshot' initiative for the region.",
+        summary: "The QUAD (Quadrilateral Security Dialogue) is a group of four democracies: India, USA, Japan, and Australia. In 2024, they met in Delaware (USA) to talk about keeping the 'Indo-Pacific' (the sea around India and China) safe and free.",
         keyPoints: [
-            "Wilmington Delaware Host → [WHAT] The venue for the 2024 gathering of QUAD leaders [WHY] hosted personally by President Biden in his hometown to show commitment.",
-            "Four Nation Alignment → [WHAT] India, USA, Japan, and Australia (The Quad) [WHY] cooperating to balance China's growing military and economic assertiveness in Asia.",
-            "Indo-Pacific Maritime Security → [WHAT] Launch of the 'Quad-at-Sea' Ship Observer Mission [WHY] to improve tracking of illegal fishing and maritime law violations in the region.",
-            "Cancer Moonshot Initiative → [WHAT] A new health collaboration to prevent and treat cervical cancer [WHY] showcasing the Quad's utility as a provider of 'public goods' beyond security.",
-            "Semiconductor Supply Chains → [WHAT] Pledging to diversify the production of critical microchips [WHY] reducing the global dependence on any single country (like China or Taiwan).",
+            "Four Power Dialogue → [WHAT] Meeting of PM Modi, President Biden, PM Kishida (Japan), and PM Albanese (Australia) [WHY] to discuss safety in the seas and cooperation in high-tech.",
+            "Cancer Moonshot Initiative → [WHAT] A new project to fight cancer in the Indo-Pacific region [WHY] showing that QUAD is not just about military, but also about helping people.",
+            "MAITRI Initiative → [WHAT] A plan to help countries track ships in their waters using satellites [WHY] to stop illegal fishing and smuggling in the Indian Ocean.",
+            "Indo-Pacific focus → [WHAT] Ensuring that the sea remains 'Free and Open' for all countries to trade [WHY] to prevent any one country from dominating the water.",
+            "Infrastructure and 5G → [WHAT] Working together to build better internet (5G) and ports [WHY] so that countries in the region have an alternative to Chinese projects."
         ],
-        examAngle: "Most likely asked as: Which four countries are members of the QUAD? OR Where was the 2024 summit?",
+        examAngle: "Most likely asked as: Which four countries are in QUAD? OR Where was the 2024 summit?",
         displayMode: "study-note",
-        showBeforeTopicId: "ca-ir-081"
+        showBeforeTopicId: "ca-ir-101"
     },
 
     // =================================================================
@@ -327,15 +310,15 @@ export const caStudyNotes = [
         title: "India's GDP & Economic Growth 2024",
         caTag: "business-economy", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "In 2024, India maintained its position as the fastest-growing major economy, with real GDP growth estimated at approximately 7%. Supported by strong domestic demand and government-led infrastructure investment, the economy crossed the $3.5 trillion milestone, moving steadily toward the goal of becoming a $5 trillion economy.",
+        summary: "GDP (Gross Domestic Product) is the total value of all goods and services made in a country. In 2024, India remained the world's fastest-growing big economy with an 8.2% growth rate, crossing the $3.5 trillion mark.",
         keyPoints: [
-            "7 Percent Real growth → [WHAT] The fiscal year 2023-24 GDP expansion rate [WHY] exceeding most global growth averages despite international inflationary pressures.",
-            "Fastest Growing Major Economy → [WHAT] India's relative status compared to other G20 nations [WHY] attracting significant Foreign Direct Investment and manufacturing interest.",
-            "Sectoral Resilience → [WHAT] Strong performance in manufacturing and services (8%+ growth) [WHY] compensating for the moderate growth in the agricultural sector due to weather.",
-            "5 Trillion Goal → [WHAT] The central government's strategic economic target [WHY] which requires sustained high-single-digit growth rates for the next several years.",
-            "Capex Driven Recovery → [WHAT] Heavy government spending on roads and railways [WHY] effectively crowding-in private investment and creating widespread employment opportunities."
+            "8.2 Percent Growth Rate → [WHAT] The speed at which India's economy grew in the last year [WHY] which is much higher than other big countries like the USA or China.",
+            "Fastest Growing Major Economy → [WHAT] India's rank among the world's top 20 economies [WHY] making it a favorite place for global companies to invest their money.",
+            "Sectoral Performance → [WHAT] Manufacturing and Services grew very fast [WHY] because of the 'Make in India' mission and the rise of digital businesses.",
+            "3.5 Trillion Dollar Milestone → [WHAT] The current total 'size' of the Indian economy [WHY] putting India as the 5th largest economy in the world today.",
+            "5 Trillion Dollar Goal → [WHAT] The government's target for the near future [WHY] which will happen if India continues to grow at 7-8% every year."
         ],
-        examAngle: "Most likely asked as: What is India's estimated GDP growth for 23-24? OR Target size by 2027?",
+        examAngle: "Most likely asked as: What is India's GDP growth rate for 2023-24? OR What is India's current economic rank?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-be-001"
     },
@@ -344,13 +327,13 @@ export const caStudyNotes = [
         title: "Hindenburg-SEBI Controversy",
         caTag: "business-economy", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "In 2024, US-based short-seller Hindenburg Research alleged that SEBI Chairperson Madhabi Puri Buch had conflict-of-interest links with offshore funds used by the Adani Group. This sparked a major regulatory and political storm in India, leading to investigations by various committees and intense scrutiny of market transparency.",
+        summary: "SEBI (Securities and Exchange Board of India) is the 'Watchdog' that protects people who invest money in the stock market. In 2024, a US firm called Hindenburg made allegations against the head of SEBI, causing a big debate about safety in Indian markets.",
         keyPoints: [
-            "Hindenburg Research Report → [WHAT] The US firm that alleged irregularities in Indian markets [WHY] impacting the stock valuations of several large industrial conglomerates.",
-            "SEBI Chairperson Allegations → [WHAT] Alleged previous investments in offshore investment vehicles [WHY] raising questions about the impartiality of the primary market regulator.",
-            "Conflict of Interest → [WHAT] The central theme of the 2024 regulatory controversy [WHY] leading to calls for more stringent disclosure norms for government officials.",
-            "Supreme Court Committee → [WHAT] Oversight on the investigation into Adani-Hindenburg issues [WHY] ensuring that technical market matters are reviewed by independent experts.",
-            "Market Stability Outcome → [WHAT] Despite the initial volatility, Indian markets recovered quickly [WHY] demonstrating the underlying depth and resilience of the domestic stock exchanges."
+            "Hindenburg Research Report → [WHAT] A US company that writes reports on corporate mistakes [WHY] they alleged that SEBI's chief had links to certain offshore funds.",
+            "Chairperson Madhabi Puri Buch → [WHAT] The first woman to lead SEBI [WHY] who faced questions about whether her previous investments were a 'Conflict of Interest'.",
+            "SEBI's Role → [WHAT] To ensure that companies like the Adani Group follow all rules [WHY] so that small investors don't lose their hard-earned savings.",
+            "Conflict of Interest → [WHAT] When a person's private interests might affect their official work [WHY] which is what the report claimed was happening in the regulator's office.",
+            "Market Resilience → [WHAT] Despite the reports, the Indian stock market did not crash [WHY] showing that investors still have trust in India's overall economy."
         ],
         examAngle: "Most likely asked as: Who is the Chairperson of SEBI? OR Which US firm released the report?",
         displayMode: "study-note",
@@ -361,30 +344,30 @@ export const caStudyNotes = [
         title: "UPI International Expansion",
         caTag: "business-economy", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "India's Unified Payments Interface (UPI) significantly expanded its global footprint in 2024, launching in countries like France, Sri Lanka, UAE, and Mauritius. Facilitated by NPCI International, this expansion allows Indian tourists to pay in local currencies using QR codes, effectively globalizing India's digital payment stack.",
+        summary: "UPI (Unified Payments Interface) is India's system for instant mobile money transfers. In 2024, it went global, allowing Indians to use their phone apps like PhonePe or Google Pay to pay at famous places like the Eiffel Tower in France.",
         keyPoints: [
-            "Lancement in France → [WHAT] UPI accepted at the Eiffel Tower in February 2024 [WHY] marking the first major European acceptance of India's payment system.",
-            "Middle East and Africa → [WHAT] Expansion into UAE and Mauritius markets [WHY] catering to the large Indian diaspora and high tourist traffic in these regions.",
-            "National Payments Corp (NPCI) → [WHAT] The umbrella organization managing the UPI infrastructure [WHY] leading the diplomatic push to integrate Indian fintech with global rails.",
-            "Cross Border QR Payments → [WHAT] Tourists scan local QR codes to pay from Indian banks [WHY] eliminating the need for high-fee currency exchange and forex cards.",
-            "Digital Diplomacy → [WHAT] India sharing its 'Digital Public Infrastructure' (DPI) worldwide [WHY] positioning itself as a leader in low-cost financial inclusion technology."
+            "Eiffel Tower Acceptance → [WHAT] France became the first European country to accept UPI [WHY] beginning a major expansion into Western countries.",
+            "Seven New Countries → [WHAT] Sri Lanka, Mauritius, UAE, Nepal, and others joined [WHY] making it very easy for Indian tourists and workers to pay without carrying foreign cash.",
+            "NPCI (National Payments Corporation of India) → [WHAT] The government-backed group that built UPI [WHY] which is now helping other countries build similar smart payment systems.",
+            "Cross-Border QR Payments → [WHAT] People just scan a normal QR code in a foreign shop to pay [WHY] which is much cheaper than using expensive credit cards or currency exchange.",
+            "Fintech Diplomacy → [WHAT] India using its technology to gain friends and influence [WHY] by showing the world a better, cheaper way to handle digital money."
         ],
-        examAngle: "Most likely asked as: Which was the first European landmark to accept UPI? OR Which body manages UPI?",
+        examAngle: "Most likely asked as: Which famous landmark in France started accepting UPI? OR Which body manages UPI?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-be-041"
     },
     {
         id: "sn-022", topicNumber: 22,
-        title: "RBI Digital Rupee (e₹)",
+        title: "RBI Digital Rupee (CBDC)",
         caTag: "business-economy", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "The Reserve Bank of India (RBI) scaled its Central Bank Digital Currency (CBDC) pilot in 2024, reaching one million daily transactions. The e-Rupee provides a digital version of cash, offering the finality of currency without the need for a bank intermediary, aiming to reduce the cost of physical cash management.",
+        summary: "The CBDC (Central Bank Digital Currency) or 'e-Rupee' is a digital version of cash issued by the Reserve Bank of India. It is Not a cryptocurrency like Bitcoin, but the same as the paper notes in your pocket, just in a digital form.",
         keyPoints: [
-            "Central Bank Digital Currency → [WHAT] The digital form of legal tender issued by the RBI [WHY] providing a safe alternative to private cryptocurrencies like Bitcoin.",
-            "Retail and Wholesale Pilots → [WHAT] Two separate versions of e-Rupee for citizens and banks [WHY] testing different use cases from buying groceries to interbank settlements.",
-            "Finality of Cash → [WHAT] Unlike UPI, e-Rupee is an digital asset, not just a transfer system [WHY] meaning the transaction settles instantly between two digital wallets.",
-            "Programmable Money Features → [WHAT] Ability to set conditions for using certain digital funds [WHY] enabling direct benefit transfers (DBT) that can only be spent on specific items.",
-            "Reduced Cash Costs → [WHAT] Decreasing the dependency on printing and transporting paper currency [WHY] saving thousands of crores for the central bank annually."
+            "Legal Tender → [WHAT] This means it is official money recognized by the government [WHY] and it can be used for any transaction just like physical rupees.",
+            "Retail and Wholesale → [WHAT] Separate digital money for normal people (Retail) and for big bank transfers (Wholesale) [WHY] to make the whole money system faster.",
+            "Digital Wallet to Wallet → [WHAT] Paying someone works like giving someone a 100-rupee note, but digitally [WHY] and it settles Instantly without needing a bank to 'clear' the payment.",
+            "Safety and Trust → [WHAT] Because it is issued by the RBI, it is much safer than private digital apps [WHY] as the central bank guarantees its value.",
+            "Programmable Money → [WHAT] The government can 'program' money so it can only be spent on things like school fees or medicine [WHY] ensuring that welfare money reaches the right place."
         ],
         examAngle: "Most likely asked as: What is the full form of CBDC? OR Which bank issues the e-Rupee?",
         displayMode: "study-note",
@@ -395,13 +378,13 @@ export const caStudyNotes = [
         title: "Reliance-Disney Merger (JioStar)",
         caTag: "business-economy", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "In February 2025, Reliance Industries and The Walt Disney Company completed a $8.5 billion merger, creating India's largest media entity, 'JioStar'. The joint venture combined 120+ TV channels and the streaming services JioCinema and Disney+ Hotstar into a unified platform called 'JioHotstar'.",
+        summary: "In 2025, Reliance Industries and the USA's Disney Company merged their TV and streaming businesses to create 'JioStar'. This became the biggest media company in India, controlling most of the TV channels and cricket rights like IPL.",
         keyPoints: [
-            "JioHotstar Unified App → [WHAT] The single streaming platform launched on February 14, 2025 [WHY] creating a dominant digital advertising and content ecosystem in India.",
-            "8.5 Billion Dollar Valuation → [WHAT] The massive size of the joint venture transaction [WHY] allowing the entity to dominate sports rights like IPL and ICC tournaments.",
-            "Nita Ambani as Chairperson → [WHAT] She leads the board of the newly formed JioStar JV [WHY] giving Reliance significant strategic control over the combined entity.",
-            "Uday Shankar Vice Chair → [WHAT] The media veteran provides strategic guidance [WHY] leveraging his experience in scaling Star and Hotstar during their early growth.",
-            "JioStar JV Brand → [WHAT] The official name of the merged Reliance-Disney business [WHY] representing a fusion of the Jio ecosystem with the Star India legacy."
+            "JioStar JV (Joint Venture) → [WHAT] The new group formed by the merge [WHY] making it the most powerful media house in the country with over 120 TV channels.",
+            "JioHotstar Platform → [WHAT] A single app that combines JioCinema and Disney+ Hotstar [WHY] giving viewers everything from movies to live sports in one place.",
+            "Cricket Dominance → [WHAT] The new company now has the rights to show almost all major cricket matches [WHY] including the IPL (Indian Premier League) and ICC World Cups.",
+            "Nita Ambani as Chairperson → [WHAT] The leader of this new massive company [WHY] who will decide the strategy for India's digital entertainment future.",
+            "Media Power Shift → [WHAT] This merger makes it harder for other companies like Sony or Netflix to compete [WHY] because JioStar has the most users and content in India."
         ],
         examAngle: "Most likely asked as: What is the name of the merged entity? OR Who is the Chairperson?",
         displayMode: "study-note",
@@ -409,18 +392,18 @@ export const caStudyNotes = [
     },
     {
         id: "sn-024", topicNumber: 24,
-        title: "Adani Group Developments 2024",
+        title: "Adani Vizhinjam Port (Kerala)",
         caTag: "business-economy", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "The Adani Group focused on debt reduction and critical infrastructure in 2024, including the operationalizing of the Vizhinjam International Seaport. Despite international report challenges, the group expanded into green energy and defense, maintaining its position as one of India's most significant conglomerate players.",
+        summary: "In 2024, the Vizhinjam International Seaport in Kerala started working. It is India's first 'Deep-Water' port, which means it is deep enough for the world's biggest container ships to land directly in India.",
         keyPoints: [
-            "Vizhinjam Port Kerala → [WHAT] Commencement of operations at India's first deep-water transshipment port [WHY] reducing India's dependence on foreign ports like Colombo for large ships.",
-            "Green Energy Push → [WHAT] Massive investments in solar and wind through Adani Green Energy [WHY] aligning the group's growth with India's 2030 renewable energy targets.",
-            "Debt Reduction Strategy → [WHAT] Prepayment of loans and raising equity through US-based GQG Partners [WHY] to restore investor confidence after the Hindenburg controversy.",
-            "Airport Management → [WHAT] Control over major Indian hubs including Mumbai and Ahmedabad [WHY] building a monopoly-like scale in the country's aviation infrastructure.",
-            "Defence and Aerospace → [WHAT] Partnering with global firms to manufacture drones and small arms [WHY] supporting the 'Atmanirbhar Bharat' mission in critical defense technology."
+            "India's First Transshipment Hub → [WHAT] A port where big ships offload goods to smaller ships [WHY] so that Indian goods don't have to go to Colombo (Sri Lanka) or Singapore first.",
+            "Vizhinjam Location → [WHAT] A coastal town in Kerala [WHY] chosen because it is very close to the world's main shipping routes in the Indian Ocean.",
+            "Deepest Port in India → [WHAT] It has a natural depth of over 18 meters [WHY] allowing 'Motherships' (the largest ships in the world) to dock comfortably.",
+            "Kerala-Adani Partnership → [WHAT] The project was built by the Adani Group along with the Kerala Government [WHY] to boost trade and jobs in South India.",
+            "Strategic Advantage → [WHAT] It saves time and hundreds of crores of rupees for Indian exporters [WHY] as their goods will now reach global markets much faster."
         ],
-        examAngle: "Most likely asked as: Where is the Vizhinjam Port located? OR Name of the Adani renewable energy arm.",
+        examAngle: "Most likely asked as: Where is the Vizhinjam port located? OR Who built it?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-be-081"
     },
@@ -429,13 +412,13 @@ export const caStudyNotes = [
         title: "Byju's & Indian EdTech Crisis",
         caTag: "business-economy", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "Once India's most valuable startup, Byju's faced a severe liquidity and governance crisis in 2024, leading to valuation markdowns and insolvency proceedings. This prompted a broader correction in the Indian EdTech sector, forcing startups to shift from aggressive growth to sustainable, profitable business models.",
+        summary: "Byju's, once the world's most valuable education company, faced a big 'Insolvency' (not being able to pay debts) crisis in 2024. This forced all EdTech (Education Technology) companies to change how they do business.",
         keyPoints: [
-            "Insolvency Proceedings → [WHAT] BCCI and lenders filing cases against Byju's for non-payment [WHY] highlighting the dangers of excessive debt and poor financial management.",
-            "Governance Failures → [WHAT] Resignation of auditors and board members over transparency [WHY] raising questions about founder-led startups and lack of board oversight.",
-            "Valuation Markdown → [WHAT] Value dropping from $22 billion to less than $200 million [WHY] causing significant losses for early-stage and institutional global investors.",
-            "Shift to Hybrid Models → [WHAT] Survival strategy involving physical tuition centers (Byju's Tuition Center) [WHY] to compete with traditional coaching centers like Allen and Aakash.",
-            "EdTech Sector Correction → [WHAT] Investors pulling back from high-burn edtech companies [WHY] mandating a focus on unit economics and 'EBITDA' profitability for new startups."
+            "Insolvency Cases → [WHAT] Lenders (people who gave loans) went to court to get their money back [WHY] because the company was spending more money than it was earning.",
+            "Governance Problems → [WHAT] Auditors (money checkers) resigned because they were unhappy with the company's records [WHY] showing that transparency is vital for any big business.",
+            "Valuation Crash → [WHAT] The 'Value' of the company dropped from $22 billion to almost zero [WHY] meaning investors lost billions of rupees in just two years.",
+            "Aakash Acquisition → [WHAT] Byju's had bought the famous Aakash Institute but struggled to pay for it [WHY] leading to legal fights over who owns the coaching center.",
+            "Shift to Profitability → [WHAT] New startups are now focusing on earning money instead of just growing fast [WHY] ensure that they remain stable for a long time."
         ],
         examAngle: "Most likely asked as: Which Indian startup faced major insolvency in 2024? OR What is the trend in EdTech?",
         displayMode: "study-note",
@@ -450,15 +433,15 @@ export const caStudyNotes = [
         title: "ISRO Gaganyaan 2024 Prep",
         caTag: "science-defence", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "In 2024, ISRO achieved critical milestones for Gaganyaan, India's first human spaceflight mission. This included the successful CE20 cryogenic engine qualification and the selection of four test pilots. These steps ensure that India is on track to send astronauts to a 400 km orbit for a 3-day mission.",
+        summary: "Gaganyaan is India's first mission to send humans into Space. In 2024, ISRO (Indian Space Research Organisation) finished testing the big engines and selected 4 brave pilots who will be India's first astronauts.",
         keyPoints: [
-            "Four Astronauts Selected → [WHAT] Prashanth Nair, Ajit Krishnan, Angad Pratap, and Shubhanshu Shukla [WHY] chosen from the IAF to undergo specialized training at the Yuri Gagarin Centre.",
-            "CE20 Cryogenic Engine → [WHAT] Acceptance tests for the upper stage of the LVM3 rocket [WHY] providing the necessary thrust to propel the crew module into space safely.",
-            "Vyommitra Robot → [WHAT] A female humanoid robot designed for uncrewed test flights [WHY] to monitor microgravity parameters and system performance before human boarding.",
-            "TV-D1 Mission Success → [WHAT] The first Test Vehicle flight demonstrating crew escape systems [WHY] ensuring that astronauts can safely abort the mission in case of launch failure.",
-            "400 km Low Earth Orbit → [WHAT] The destination for the Gaganyaan crew capsule [WHY] where they will conduct scientific experiments for three days before returning to Earth."
+            "Four Astronauts Selected → [WHAT] Group Captain Prashanth Nair and three others were chosen [WHY] to be the first Indians to go to space in an Indian-made rocket.",
+            "CE20 Cryogenic Engine → [WHAT] ISRO successfully tested the powerful engine that will carry the crew [WHY] ensuring that the rocket is safe and ready for the 1000-degree heat of launch.",
+            "Vyommitra (Space Friend) → [WHAT] A female humanoid robot that ISRO will send first [WHY] to check if it is safe for humans to breathe and survive inside the space capsule.",
+            "LVM3 Rocket → [WHAT] India's strongest rocket which is nicknamed 'Fat Boy' [WHY] will be the vehicle used to lift the Gaganyaan module into Earth's orbit.",
+            "3-Day Space Mission → [WHAT] The plan is to send astronauts 400 km away from Earth for 3 days [WHY] to show that India can build its own space station in the future."
         ],
-        examAngle: "Most likely asked as: What is the name of the Gaganyaan humanoid robot? OR How many astronauts were chosen?",
+        examAngle: "Most likely asked as: Who are the four selected astronauts? OR What is the name of the ISRO robot?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-sd-001"
     },
@@ -467,15 +450,15 @@ export const caStudyNotes = [
         title: "NISAR Mission (NASA-ISRO)",
         caTag: "science-defence", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "NISAR (NASA-ISRO Synthetic Aperture Radar) is a joint mission between the US and India to use advanced radar imaging to map the entire Earth every 12 days. It aims to observe ecosystem disturbances, ice-sheet collapses, and natural hazards like earthquakes and landslides with unprecedented precision.",
+        summary: "NISAR (NASA-ISRO Synthetic Aperture Radar) is a joint satellite mission between the USA's NASA and India's ISRO. This satellite will take 'X-Ray' like pictures of the Earth every 12 days to monitor natural disasters and climate change.",
         keyPoints: [
-            "Dual Frequency Radar → [WHAT] L-band (NASA) and S-band (ISRO) radar systems [WHY] allowing the satellite to see through clouds, vegetation, and darkness for clear mapping.",
-            "12 Day Repeat Cycle → [WHAT] Mapping the whole globe systematically every two weeks [WHY] enabling scientists to track minute changes in the Earth's surface over time.",
-            "Earthquake Monitoring → [WHAT] Detecting structural movements before and after seismic events [WHY] improving our ability to predict landslides and assess disaster impact quickly.",
-            "Agriculture and Forest → [WHAT] Measuring changes in biomass and soil moisture [WHY] aiding in better crop yield prediction and tracking global deforestation trends.",
-            "LVM3 Launch Vehicle → [WHAT] ISRO's heaviest rocket chosen to launch the NISAR satellite [WHY] the 2,800 kg satellite requires high lifting capability for its designated orbit."
+            "NASA and ISRO Partnership → [WHAT] The world's most expensive imaging satellite built by both agencies [WHY] combining the best radar technology from both countries.",
+            "Mapping Earth in 12 Days → [WHAT] High-resolution radar that can see through clouds and the dark [WHY] to track how the Earth's surface changes over time.",
+            "Monitoring Disasters → [WHAT] It will measure earthquakes, landslides, and glacier melts [WHY] providing early warnings and mapping for rescue teams.",
+            "Agriculture and Water → [WHAT] Tracking groundwater levels and crop health from space [WHY] helping India manage its food and water security better.",
+            "ISRO's S-Band Radar → [WHAT] One of the two main radars on the satellite [WHY] specifically designed for tracking local environmental changes in South Asia."
         ],
-        examAngle: "Most likely asked as: What does NISAR stand for? OR Which two space agencies are collaborating?",
+        examAngle: "Most likely asked as: What is the full form of NISAR? OR Which two agencies are involved?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-sd-021"
     },
@@ -498,37 +481,37 @@ export const caStudyNotes = [
     },
     {
         id: "sn-029", topicNumber: 29,
-        title: "Gaganyaan 2025 Update (Shubhanshu Shukla)",
-        caTag: "science-defence", topicYear: 2025,
+        title: "Agni-5 MIRV (Mission Divyastra)",
+        caTag: "science-defence", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "In 2025, Group Captain Shubhanshu Shukla made history as the first 'Gaganyatri' to visit the International Space Station (ISS) via the Axiom-4 mission. This mission provided India with real-world human spaceflight experience, bridging the gap before ISRO's first independent uncrewed LVM3 flight in January 2026.",
+        summary: "In 2024, India successfully tested the Agni-5 missile with 'MIRV' technology. This means one single missile can carry many warheads (bombs) and hit different targets at the same time, making it very hard for enemies to stop.",
         keyPoints: [
-            "Axiom-4 Mission Pilot → [WHAT] Shubhanshu Shukla's role in the private ISS mission in July 2025 [WHY] making him the first Indian to visit the ISS after Rakesh Sharma's 1984 flight.",
-            "Postponement to 2026 → [WHAT] ISRO moved the first uncrewed Gaganyaan (G1) test to January 2026 [WHY] to ensure all safety parameters for the LVM3 rocket are perfectly met.",
-            "NASA Collaboration → [WHAT] Training and docking support provided by the US space agency [WHY] facilitating India's integration into the global human spaceflight community.",
-            "Vyommitra Test Readiness → [WHAT] Final assembly of the humanoid robot for the 2026 flight [WHY] simulating astronaut actions in microgravity for the automated mission.",
-            "ISS Experiments → [WHAT] Shubhanshu Shukla conducted Indian-designed microgravity experiments [WHY] testing biological and materials science concepts for future orbital manufacturing."
+            "Mission Divyastra → [WHAT] The official name of the Agni-5 MIRV test [WHY] which puts India in a select group of five countries with this advanced technology.",
+            "MIRV Technology → [WHAT] Full form: 'Multiple Independently Targetable Re-entry Vehicles' [WHY] allowing a single launch to destroy multiple enemy bases.",
+            "5000+ KM Range → [WHAT] A long-range missile that can reach targets across whole continents [WHY] strengthening India's defense against any threat in Asia.",
+            "DRDO Achievement → [WHAT] Developed by the Defence Research and Development Organisation [WHY] proving India's expertise in making world-class strategic weapons.",
+            "Indigenous Capability → [WHAT] Most of the parts were made inside India [WHY] supporting the 'Atmanirbhar Bharat' (Self-Reliant India) mission in defense."
         ],
-        examAngle: "Most likely asked as: Who visited the ISS in 2025? OR What is the new Gaganyaan uncrewed flight date?",
+        examAngle: "Most likely asked as: What does MIRV stand for? OR What was the name of the mission?",
         displayMode: "study-note",
-        showBeforeTopicId: "ca-25-016"
+        showBeforeTopicId: "ca-sd-061"
     },
     {
         id: "sn-030", topicNumber: 30,
-        title: "AI in India (Bhashini & Chip Mission)",
+        title: "LCA Tejas MK-1A Rollout",
         caTag: "science-defence", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "India took major steps in Artificial Intelligence in 2024 through the India AI Mission and the Bhashini platform. Bhashini provides real-time translation for 22 Indian languages, while the ₹10,000 crore Bharat Semiconductor Mission aims to build domestic AI-ready computing power.",
+        summary: "The LCA (Light Combat Aircraft) Tejas is India's own fighter jet. In 2024, the new and improved version called 'MK-1A' had its first successful flight, featuring better radar and electronic warfare systems.",
         keyPoints: [
-            "Bhashini Translation App → [WHAT] An AI-based tool for real-time speech-to-speech translation [WHY] allowing citizens to access government services in their native languages.",
-            "India AI Mission → [WHAT] Central scheme with ₹10,372 crore budget [WHY] to build sovereign AI infrastructure, graphics processing units (GPUs), and datasets.",
-            "Semiconductor Fabrication → [WHAT] Construction of India's first commercial fab in Gujarat (Dholera) [WHY] securing the supply chain for AI chips and electronic components.",
-            "AI Ethics and Safety → [WHAT] Development of the 'India AI Stack' with ethical guidelines [WHY] ensuring that the technology benefits the Global South without bias or misinformation.",
-            "Agricultural AI Use → [WHAT] AI models for pest detection and soil health monitoring [WHY] helping farmers improve productivity through predictive data analytics."
+            "First Flight of MK-1A → [WHAT] The upgraded version of the Tejas fighter jet [WHY] which will be the backbone of the Indian Air Force (IAF) in the coming years.",
+            "4+ Generation Fighter → [WHAT] Features advanced Digital Radar and Self-Protection Jamming [WHY] allowing the jet to fight better in modern wars.",
+            "HAL Manufacture → [WHAT] Built by Hindustan Aeronautics Limited in Bengaluru [WHY] which is one of the largest aircraft makers in the world.",
+            "Replace Aging MiG Jets → [WHAT] The IAF will buy 180+ of these jets [WHY] to replace old Soviet-era planes and keep Indian skies safe.",
+            "BrahMos Compatibility → [WHAT] Future versions will be able to carry the BrahMos missile [WHY] giving the small jet the power to destroy big targets from a distance."
         ],
-        examAngle: "Most likely asked as: What is the name of India's language translation AI? OR Which mission funds AI chips?",
+        examAngle: "Most likely asked as: Which company builds the LCA Tejas? OR What is the name of the new version?",
         displayMode: "study-note",
-        showBeforeTopicId: "ca-sd-061"
+        showBeforeTopicId: "ca-sd-081"
     },
 
     // =================================================================
@@ -539,13 +522,13 @@ export const caStudyNotes = [
         title: "ICC Champions Trophy 2025",
         caTag: "awards-sports", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "India won the ICC Champions Trophy 2025 by defeating New Zealand in the final held in Dubai on March 9, 2025. Chasing a target of 252, India secured a 4-wicket victory, marking their third Champions Trophy title and cementing their dominance in the 50-over format under Rohit Sharma's leadership.",
+        summary: "The ICC (International Cricket Council) Champions Trophy is a major 50-over cricket tournament. In 2025, India won the trophy by defeating New Zealand in the final held in Dubai, UAE.",
         keyPoints: [
-            "India Defeats New Zealand → [WHAT] A 4-wicket win in the final held at Dubai International Stadium [WHY] securing India's first ICC 50-over trophy since the 2013 Champions Trophy.",
-            "Dubai Venue → [WHAT] The tournament was moved to a hybrid model with the final in Dubai [WHY] due to India's decision not to travel to Pakistan for security reasons.",
-            "Rachin Ravindra POTP → [WHAT] The New Zealand all-rounder was named Player of the Tournament [WHY] for scoring 263 runs and taking crucial wickets throughout the event.",
-            "Rohit Sharma POTM → [WHAT] India's captain scored 76 runs in the final to win Player of the Match [WHY] leading from the front in a high-pressure chase of 252.",
-            "Third Champions Trophy → [WHAT] India previously won in 2002 (joint with SL) and 2013 [WHY] making them one of the most successful teams in the tournament's history."
+            "India's Victory → [WHAT] India chased down a target of 252 to win the final [WHY] ending an 11-year wait for an ICC 50-over world title.",
+            "Dubai Venue → [WHAT] The final was played in Dubai (UAE) instead of Pakistan [WHY] because India decided not to travel to Pakistan for security reasons.",
+            "Rohit Sharma's Captaincy → [WHAT] He led the team to victory with a match-winning 76 runs [WHY] showing his skill in leading under pressure.",
+            "Rachin Ravindra (New Zealand) → [WHAT] He was named 'Player of the Tournament' [WHY] for scoring the most runs and taking many wickets.",
+            "Hybrid Model Tournament → [WHAT] Matches were played in both Pakistan and UAE [WHY] to accommodate India's safety concerns while keeping the event in the region."
         ],
         examAngle: "Most likely asked as: Who won Champions Trophy 2025? OR Who was the Player of the Tournament?",
         displayMode: "study-note",
@@ -556,30 +539,30 @@ export const caStudyNotes = [
         title: "ICC T20 World Cup 2024",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "India ended an 11-year ICC trophy drought by winning the T20 World Cup 2024, defeating South Africa in a thrilling final in Barbados. Defending 176, India's bowlers, led by Jasprit Bumrah and Hardik Pandya, restricted South Africa to 169, winning by 7 runs in a historic night for Indian cricket.",
+        summary: "In 2024, India won the T20 (Twenty-20) World Cup in the West Indies. They defeated South Africa in the final to win their first major world title in 11 years.",
         keyPoints: [
-            "India Defeats South Africa → [WHAT] A narrow 7-run victory in the final at Bridgetown, Barbados [WHY] marking India's second T20 World Cup title after the 2007 inaugural win.",
-            "Jasprit Bumrah POTP → [WHAT] Named Player of the Tournament for his exceptional economy and 15 wickets [WHY] proving to be the world's most disciplined and lethal T20 bowler.",
-            "Virat Kohli's Final Match → [WHAT] Scored 76 in the final and announced retirement from T20Is [WHY] ending his T20 international career on the highest possible note.",
-            "Unbeaten Champions → [WHAT] India became the first team to win a T20 World Cup without losing a single game [WHY] demonstrating total dominance across both group and knockout stages.",
-            "Rahul Dravid Farewell → [WHAT] The head coach ended his tenure with an ICC trophy [WHY] completing a successful coaching cycle that saw India reach multiple ICC finals."
+            "India's Victory → [WHAT] India defended a score of 176 and won by 7 runs [WHY] ending a long 'trophy drought' for the national team.",
+            "Jasprit Bumrah → [WHAT] He was named 'Player of the Tournament' [WHY] for being the most difficult bowler to score runs against.",
+            "Virat Kohli's Farewell → [WHAT] He scored 76 runs in the final and then retired from T20 internationals [WHY] finishing his T20 international career as a champion.",
+            "Hardik Pandya's Last Over → [WHAT] He bowled the final three balls that secured the win [WHY] performing under extreme pressure for the country.",
+            "Barbados Venue → [WHAT] The final was held in the Caribbean (West Indies) [WHY] where India became the first team to win the whole tournament without losing a single match."
         ],
-        examAngle: "Most likely asked as: Who won the T20 WC 2024? OR Who was the Player of the Match in the final?",
+        examAngle: "Most likely asked as: Who won the T20 WC 2024? OR Who was the Player of the Tournament?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-as-021"
     },
     {
         id: "sn-033", topicNumber: 33,
-        title: "Paris Paralympics 2024 — India's Record",
+        title: "Paris Paralympics 2024 (India's Success)",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "India achieved its best-ever performance at the Paris Paralympics 2024, winning a record 29 medals (7 Gold, 9 Silver, 13 Bronze). The contingent finished 18th in the overall standings, showcasing the massive growth of para-sports in India through better funding and specialized training facilities.",
+        summary: "The Paralympics is a world-class sports event for athletes with disabilities. In 2024, India won a record-breaking 29 medals, which is the most India has ever won in any Olympic-style game.",
         keyPoints: [
-            "Record 29 Medals → [WHAT] Surpassing the previous tally of 19 medals from the Tokyo Paralympics [WHY] establishing India as an emerging powerhouse in global para-athletis.",
-            "Seven Gold Medalists → [WHAT] Including Avani Lekhara (Shooting), Sumit Antil (Javelin), and Nitesh Kumar (Badminton) [WHY] with Lekhara becoming the first Indian woman to win two Paralympic golds.",
-            "Para Archery Success → [WHAT] Sheetal Devi (armless archer) and Harvinder Singh (Gold) made headlines [WHY] demonstrating incredible resilience and skill on the world stage.",
-            "18th Overall Rank → [WHAT] India's highest-ever finish on the Paralympic medal table [WHY] placing the country ahead of many traditionally dominant sporting nations.",
-            "Funding and Support → [WHAT] Impact of Target Olympic Podium Scheme (TOPS) on para-athletes [WHY] providing world-class coaching and international exposure to grassroots talent."
+            "Record 29 Medals → [WHAT] India won 7 Gold, 9 Silver, and 13 Bronze medals [WHY] showing the massive progress of Indian athletes in the world arena.",
+            "Avani Lekhara → [WHAT] She won Gold in Shooting [WHY] becoming the first Indian woman to win two Gold medals across different Paralympics.",
+            "Sheetal Devi → [WHAT] A young archer who shoots using only her feet [WHY] who became a global hero for her incredible skill and determination.",
+            "Sumit Antil → [WHAT] He won Gold in Javelin throw and broke the world record [WHY] proving that India is now a leader in track and field events.",
+            "18th Rank Globally → [WHAT] India finished in the top 20 countries in the world [WHY] which is the highest rank India has ever achieved in the Paralympics."
         ],
         examAngle: "Most likely asked as: How many total medals did India win? OR Who won Gold in Paris Paralympics?",
         displayMode: "study-note",
@@ -587,16 +570,16 @@ export const caStudyNotes = [
     },
     {
         id: "sn-034", topicNumber: 34,
-        title: "IPL 2024 & WPL 2024 Winners",
+        title: "IPL & WPL 2024 Winners",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "Kolkata Knight Riders (KKR) won their third IPL title in 2024 by defeating Sunrisers Hyderabad in a dominant final. In the Women's Premier League (WPL), Royal Challengers Bangalore (RCB) secured their maiden trophy by defeating Delhi Capitals, bringing immense joy to their dedicated fanbase.",
+        summary: "IPL (Indian Premier League) and WPL (Women's Premier League) are India's top professional cricket leagues. In 2024, the Kolkata Knight Riders (KKR) won the men's trophy, while Royal Challengers Bangalore (RCB) won the women's trophy.",
         keyPoints: [
-            "KKR Wins IPL Title → [WHAT] Defeated SRH by 8 wickets in the final at Chennai [WHY] marking their first championship victory in exactly ten years since 2014.",
-            "RCB Wins WPL Title → [WHAT] Defeated DC by 8 wickets in the final at New Delhi [WHY] giving the franchise its first major trophy across men's and women's formats.",
-            "Mitchell Starc Record Buy → [WHAT] Most expensive player in IPL history at ₹24.75 crore [WHY] justifying his price tag with a Match of the Match clinical performance in the final.",
-            "Shreyas Iyer Leadership → [WHAT] Became the first captain to lead KKR to glory after Gautam Gambhir [WHY] with Gambhir himself serving as the team's mentor durante the 2024 season.",
-            "Sunil Narine MVP → [WHAT] Won the Most Valuable Player award for his all-round heroics [WHY] proving his continued dominance as an opening batter and mystery spinner."
+            "KKR (Kolkata Knight Riders) → [WHAT] They won the IPL for the third time by beating Hyderabad [WHY] with mentor Gautam Gambhir helping lead the team to victory.",
+            "RCB (Royal Challengers Bangalore) → [WHAT] They won the WPL for the first time by beating Delhi [WHY] finally bringing a major trophy to the 'RCB' franchise fans.",
+            "Mitchell Starc → [WHAT] The most expensive player in IPL history (bought for ₹24.75 crore) [WHY] he played a key role in the final to help KKR win.",
+            "Shreyas Iyer → [WHAT] He was the winning captain of KKR [WHY] becoming one of the most successful young leaders in Indian cricket.",
+            "Ellyse Perry (RCB) → [WHAT] She won the 'Orange Cap' for scoring the most runs in the WPL [WHY] helping her team reach and win the final."
         ],
         examAngle: "Most likely asked as: Who won IPL 2024? OR Who won WPL 2024?",
         displayMode: "study-note",
@@ -604,16 +587,16 @@ export const caStudyNotes = [
     },
     {
         id: "sn-035", topicNumber: 35,
-        title: "Chess Olympiad 2024 — Double Gold",
+        title: "Chess Olympiad 2024 (Double Gold)",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "India made history at the 45th FIDE Chess Olympiad in Budapest, winning Gold medals in both the Men's (Open) and Women's categories. This rare 'double gold' achievement solidified India's status as the new global superpower in chess, led by young talents like Gukesh D and Arjun Erigaisi.",
+        summary: "The Chess Olympiad is like the 'Olympics' for Chess, where teams from all over the world compete. In 2024, India made history by winning the Gold medal in Both the Men's and Women's categories.",
         keyPoints: [
-            "Double Gold Achievement → [WHAT] India won both Open and Women's titles in the same year [WHY] a feat accomplished by only a few nations (USSR, China) in history.",
-            "Gukesh D Performance → [WHAT] Scored 9/10 on the top board with a performance rating over 3000 [WHY] preparing him perfectly for his 2024 World Championship match.",
-            "Arjun Erigaisi Heroics → [WHAT] Won 10 out of 11 games to reach a 2800+ live rating [WHY] becoming the highest-ranked Indian player during the tournament.",
-            "Women's Team Victory → [WHAT] Led by Harika Dronavalli and Divya Deshmukh (Gold on Board 3) [WHY] overcoming strong challenges from China and Kazakhstan to finish first.",
-            "Budapest Hungary Venue → [WHAT] The 45th edition of the biennial team tournament [WHY] which saw India dominate nearly every major chess power from start to finish."
+            "Rare Double Gold → [WHAT] India became only the third country ever to win both gold medals [WHY] proving that India is now the world's superpower in Chess.",
+            "Gukesh D (Dommaraju Gukesh) → [WHAT] The 18-year-old star who led the Indian team [WHY] he is also the challenger for the World Chess Championship title.",
+            "Young Superstars → [WHAT] Players like Arjun Erigaisi and Praggnanandhaa also played key roles [WHY] showing that India has many young geniuses in the game.",
+            "Women's Victory → [WHAT] The women's team also won gold for the first time [WHY] led by senior player Harika Dronavalli and young star Divya Deshmukh.",
+            "Budapest Venue → [WHAT] The tournament was held in Hungary [WHY] where the Indian national anthem 'Jana Gana Mana' was played twice at the award ceremony."
         ],
         examAngle: "Most likely asked as: Which country won double gold in 2024 Chess Olympiad? OR Who was India's top performer?",
         displayMode: "study-note",
@@ -621,16 +604,16 @@ export const caStudyNotes = [
     },
     {
         id: "sn-036", topicNumber: 36,
-        title: "Kohli & Rohit Retirements (2024-25)",
+        title: "Kohli & Rohit Retirements",
         caTag: "awards-sports", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "Indian legends Virat Kohli and Rohit Sharma phased out their international careers between late 2024 and mid-2025. After winning the T20 World Cup in June 2024, both retired from T20Is, followed by their retirement from Test cricket in April 2025, continuing only in the ODI format for their final years.",
+        summary: "Virat Kohli and Rohit Sharma are two of India's greatest cricket legends. In 2024 and 2025, they decided to retire from different formats of the game to make way for younger players.",
         keyPoints: [
-            "T20I Retirement June 2024 → [WHAT] Announced immediately after winning the T20 World Cup final [WHY] ending their careers on the ultimate high of a global championship.",
-            "Test Retirement April 2025 → [WHAT] Both legends retired from the longest format after the home season [WHY] allowing younger players to transition into the red-ball setup for the next WTC cycle.",
-            "White Ball Focus → [WHAT] Decision to continue playing only ODIs through the 2025 CT and 2026/27 cycle [WHY] managing physical workload while still contributing to India's trophy hunt.",
-            "Statistical Legends → [WHAT] Both players end with over 8000+ Test runs and 13,000+ ODI runs [WHY] cementing their status as the 'greatest of all time' alongside Sachin Tendulkar.",
-            "End of an Era → [WHAT] The conclusion of the most dominant partnership in Indian cricket history [WHY] marking the transition of the national team into a new generation."
+            "T20I (Twenty-20 International) → [WHAT] Both retired from T20Is in June 2024 [WHY] after winning the T20 World Cup, finishing as world champions.",
+            "Test Cricket → [WHAT] They retired from 'Test' matches (the 5-day format) in April 2025 [WHY] to focus only on shorter 1-day international matches.",
+            "ODI (One Day International) → [WHAT] They will continue playing ODIs (50-over format) [WHY] to help India in the upcoming Champions Trophy and World Cup cycles.",
+            "Statistical Legends → [WHAT] Both have scored over 10,000 runs and won many awards [WHY] they are considered 'Greatest of All Time' in cricket history.",
+            "New Generation → [WHAT] Their retirement marks an 'end of an era' [WHY] allowing young stars like Shubman Gill to take leading roles in the team."
         ],
         examAngle: "Most likely asked as: When did Kohli/Rohit retire from T20Is? OR Which format did they retire from in 2025?",
         displayMode: "study-note",
@@ -641,13 +624,13 @@ export const caStudyNotes = [
         title: "Australian Open 2025",
         caTag: "awards-sports", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "The 2025 Australian Open saw Jannik Sinner defend his Men's title, while Madison Keys won her first Grand Slam in the Women's Singles. Sinner defeated Alexander Zverev in straight sets, while Keys overcame the defending champion Aryna Sabalenka in a three-set thriller at Melbourne Park.",
+        summary: "The Australian Open is one of the four 'Grand Slam' tennis tournaments held every year. In 2025, Jannik Sinner won the men's title, and Madison Keys won the women's title.",
         keyPoints: [
-            "Jannik Sinner Defends Title → [WHAT] The Italian star won his second consecutive Australian Open [WHY] solidifying his position as the world's most dominant hard-court player.",
-            "Madison Keys' Maiden Slam → [WHAT] At age 29, the American secured her first-ever Grand Slam victory [WHY] becoming the oldest first-time winner in the tournament's Open Era.",
-            "Aryna Sabalenka Runner Up → [WHAT] The world number one lost in the final after winning in 2024 [WHY] failing to achieve a historic three-peat of titles in Melbourne.",
-            "Alexander Zverev's Final → [WHAT] The German reached his third major final but lost to Sinner [WHY] as his wait for a first Grand Slam title continues through 2025.",
-            "Surface and Venue → [WHAT] Played on the blue Plexicushion hard courts of Melbourne Park [WHY] serving as the traditional opening Grand Slam of the international tennis calendar."
+            "Jannik Sinner → [WHAT] An Italian champion who won his second title in a row [WHY] proving he is currently the best tennis player in the world.",
+            "Madison Keys → [WHAT] An American player who won her first-ever Grand Slam [WHY] at age 29, showing that hard work eventually leads to victory.",
+            "Aryna Sabalenka → [WHAT] The defending champion who lost in the final to Keys [WHY] failing to win the title for the third time in a row.",
+            "Grand Slam → [WHAT] A term for the four most important tennis tournaments in the world [WHY] which include the Australian, French, Wimbledon, and US Opens.",
+            "Melbourne Venue → [WHAT] The tournament is always held in Melbourne, Australia [WHY] and is known as the 'Happy Slam' by players."
         ],
         examAngle: "Most likely asked as: Who won Australian Open 2025 (Men/Women)? OR Who did Sinner defeat in the final?",
         displayMode: "study-note",
@@ -658,13 +641,13 @@ export const caStudyNotes = [
         title: "Grand Slam Winners 2024",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "The 2024 tennis season was dominated by Jannik Sinner and Carlos Alcaraz on the men's side. Sinner won the Australian and US Opens, while Alcaraz secured both the French Open and Wimbledon titles. In women's tennis, Iga Świątek (French) and Aryna Sabalenka (Australian) remained the top champions.",
+        summary: "The 2024 tennis season was dominated by young stars Jannik Sinner and Carlos Alcaraz. They split the four most important trophies (Grand Slams) between them.",
         keyPoints: [
-            "Carlos Alcaraz Sweep → [WHAT] Won both French Open and Wimbledon back-to-back in 2024 [WHY] establishing himself as the successor to the 'Big Three' on grass and clay.",
-            "Jannik Sinner 2024 Slams → [WHAT] Won his first Australian Open and his first US Open [WHY] finishing the year as the clear year-end world number one.",
-            "Iga Świątek French Open → [WHAT] Won her fourth title at Roland Garros in five years [WHY] confirming her status as the absolute 'Queen of Clay' in modern tennis.",
-            "Aryna Sabalenka US/Aus → [WHAT] Successfully defended her Australian Open title in January 2024 [WHY] and later added the US Open trophy to her collection in September.",
-            "Novak Djokovic 2024 → [WHAT] Failed to win a Grand Slam in 2024 but won Olympic Gold [WHY] completing the 'Golden Slam' (all 4 Slams + Olympic Gold) in his career."
+            "Carlos Alcaraz → [WHAT] He won Wimbledon and the French Open in 2024 [WHY] becoming the youngest player to win titles on all three surfaces (Grass, Clay, Hard).",
+            "Jannik Sinner → [WHAT] He won the Australian Open and the US Open [WHY] ending the year as the number one ranked player in the world.",
+            "Iga Świątek → [WHAT] She won the French Open for the fourth time [WHY] making her the most dominant woman player on clay courts.",
+            "Novak Djokovic → [WHAT] He didn't win a Grand Slam in 2024 but won the Olympic Gold [WHY] completing his collection of every major trophy in tennis history.",
+            "Aryna Sabalenka → [WHAT] She started the year by winning the Australian Open [WHY] proving her power and skill on the world stage."
         ],
         examAngle: "Most likely asked as: Who won Wimbledon 2024? OR Who won the most Slams in 2024?",
         displayMode: "study-note",
@@ -672,206 +655,206 @@ export const caStudyNotes = [
     },
     {
         id: "sn-039", topicNumber: 39,
-        title: "French Open 2024",
-        caTag: "awards-sports", topicYear: 2024,
-        examTags: ["MH-CET", "CUET"],
-        summary: "Carlos Alcaraz won his maiden French Open title in 2024, defeating Alexander Zverev in a five-set final. This victory made him the youngest man to win Grand Slam titles on all three surfaces (Grass, Hard, and Clay), while Iga Świątek continued her domination by winning her third consecutive women's title.",
-        keyPoints: [
-            "Carlos Alcaraz Victory → [WHAT] Defeated Alexander Zverev 6-3, 2-6, 5-7, 6-1, 6-2 [WHY] proving his incredible stamina and tactical flexibility in long clay-court battles.",
-            "Youngest Surface Specialist → [WHAT] Alcaraz has now won majors on Clay (French), Grass (Wimbledon), and Hard (US Open) [WHY] by the age of only 21.",
-            "Iga Świątek Hat Trick → [WHAT] Won three consecutive Roland Garros titles from 2022 to 2024 [WHY] matching the records of legends like Justine Henin and Monica Seles.",
-            "Novak Djokovic Injury → [WHAT] The defending champion withdrew before the quarter-final due to a knee tear [WHY] leading to a change in the world ranking leadership.",
-            "Paolini's Cinderalla Run → [WHAT] Italian player Jasmine Paolini reached her first major final [WHY] signaling the rise of Italian tennis alongside Sinner and Alcaraz."
-        ],
-        examAngle: "Most likely asked as: Who won French Open 2024 (Men)? OR What record did Alcaraz break?",
-        displayMode: "study-note",
-        showBeforeTopicId: "ca-as-121"
-    },
-    {
-        id: "sn-040", topicNumber: 40,
         title: "National Film Awards (69th & 70th)",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "The 69th National Film Awards celebrated the best of 2021/22 cinema, with Allu Arjun (Pushpa) and Alia Bhatt/Kriti Sanon winning top acting honors. The 70th awards, announced later in 2024, honored Rishab Shetty (Kantara) as Best Actor and 'Aattam' as the Best Feature Film.",
+        summary: "The National Film Awards are the most prestigious awards in Indian cinema, given by the government. In 2024, stars like Rishab Shetty and Alia Bhatt were honored.",
         keyPoints: [
-            "Rishab Shetty Best Actor → [WHAT] Won the 70th National Award for his role in 'Kantara' [WHY] recognizing the global success of the Kannada rooted-culture film.",
-            "Aattam (Malayalam) Best Film → [WHAT] The suspense drama won the Best Feature Film at the 70th awards [WHY] highlighting the critical acclaim of Malayalam's experimental cinema.",
-            "Allu Arjun Best Actor → [WHAT] The first Telugu actor to win Best Actor for 'Pushpa: The Rise' [WHY] marking a milestone for South Indian commercial cinema at the awards.",
-            "Alia Bhatt and Kriti Sanon → [WHAT] Shared the Best Actress award at the 69th edition [WHY] for their performances in 'Gangubai Kathiawadi' and 'Mimi' respectively.",
-            "Rocketry: The Nambi Effect → [WHAT] Directed by R Madhavan, it won Best Feature Film at the 69th awards [WHY] bringing the life of ISRO scientist Nambi Narayanan to the forefront."
+            "Rishab Shetty → [WHAT] Won Best Actor at the 70th awards for 'Kantara' [WHY] a film that showed Indian tribal culture to the whole world.",
+            "Aattam (Malayalam) → [WHAT] Won Best Feature Film [WHY] showing the high quality of regional cinema in India.",
+            "Allu Arjun → [WHAT] Won Best Actor for 'Pushpa' [WHY] becoming the first Telugu actor to win this specific award.",
+            "Alia Bhatt & Kriti Sanon → [WHAT] Shared the Best Actress award at the 69th edition [WHY] for their roles in 'Gangubai' and 'Mimi'.",
+            "Rocketry → [WHAT] A film about scientist Nambi Narayanan won Best Film in the 69th edition [WHY] honoring India's achievements in space science."
         ],
         examAngle: "Most likely asked as: Who won Best Actor at the 70th National Awards? OR Best Film (70th)?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-as-141"
     },
     {
-        id: "sn-041", topicNumber: 41,
+        id: "sn-040", topicNumber: 40,
         title: "Oscars 2024 (96th Academy Awards)",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "The 96th Oscars in March 2024 was dominated by 'Oppenheimer', which won 7 awards including Best Picture, Best Director (Christopher Nolan), and Best Actor (Cillian Murphy). India also made its presence felt through 'To Kill a Tiger', which was nominated for Best Documentary Feature.",
+        summary: "The Oscars (Academy Awards) are the world's most famous movie awards held in Los Angeles, USA. In 2024, the movie 'Oppenheimer' swept the awards.",
         keyPoints: [
-            "Oppenheimer Best Picture → [WHAT] The biographical film about the father of the atomic bomb swept 7 categories [WHY] marking Christopher Nolan's long-awaited first Oscar win.",
-            "Cillian Murphy Best Actor → [WHAT] Won his first Oscar for his portrayal of J. Robert Oppenheimer [WHY] making him the first Irish-born actor to win in this category.",
-            "Emma Stone Best Actress → [WHAT] Won her second Oscar for the film 'Poor Things' [WHY] for her experimental and widely acclaimed portrayal of Bella Baxter.",
-            "Robert Downey Jr. Best Supporting → [WHAT] Won his first-ever Oscar for his role as Lewis Strauss [WHY] completing a major career comeback from his early Hollywood years.",
-            "India at the Oscars → [WHAT] Indian documentary 'To Kill a Tiger' was a final finalist [WHY] following the 2023 success of 'Naatu Naatu' and 'Elephant Whisperers'.",
+            "Oppenheimer → [WHAT] Won 7 awards including 'Best Picture' [WHY] it is a true story about the man who built the first atomic bomb.",
+            "Christopher Nolan → [WHAT] Won Best Director for 'Oppenheimer' [WHY] he is one of the most famous directors in modern Hollywood history.",
+            "Cillian Murphy → [WHAT] Won Best Actor [WHY] for playing the lead role of the scientist J. Robert Oppenheimer.",
+            "Emma Stone → [WHAT] Won Best Actress for the movie 'Poor Things' [WHY] winning her second Oscar at a young age.",
+            "India at Oscars 2024 → [WHAT] An Indian documentary called 'To Kill a Tiger' was nominated [WHY] showing the growing reach of Indian stories globally."
         ],
         examAngle: "Most likely asked as: Which film won Best Picture 2024? OR Who won Best Actor?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-as-161"
     },
     {
-        id: "sn-042", topicNumber: 42,
-        title: "Grammy Awards 2024",
+        id: "sn-041", topicNumber: 41,
+        title: "Grammy Awards 2024 (Indian Wins)",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "The 66th Grammy Awards saw a massive win for the Indian fusion band 'Shakti', which won Best Global Music Album for 'This Moment'. The band features legends Zakir Hussain and Shankar Mahadevan, highlighting the continued global recognition of Indian classical-modern fusion music.",
+        summary: "The Grammy Awards are the most famous music awards in the world (like the Oscars for singers). In 2024, an Indian fusion band called 'Shakti' won a major trophy.",
         keyPoints: [
-            "Shakti Best Global Album → [WHAT] The band won for their 2024 release 'This Moment' [WHY] being their first studio album in over 45 years to receive such acclaim.",
-            "Zakir Hussain Triple Win → [WHAT] The Tabla maestro won three Grammys in a single night [WHY] including Best Global Music Performance and Best Contemporary Instrumental Album.",
-            "Shankar Mahadevan and V. Selvaganesh → [WHAT] Members of Shakti who shared the Grammy glory [WHY] showcasing the depth of talent in the Indian Carnatic and playback industry.",
-            "Taylor Swift Album of the Year → [WHAT] Won for 'Midnights', her record-breaking fourth win in this category [WHY] surpassing Frank Sinatra and Stevie Wonder's record.",
-            "Miley Cyrus Best Record → [WHAT] Won her first Grammys for the hit song 'Flowers' [WHY] which was the most streamed track of the 2023-24 period.",
+            "Shakti Band Gold → [WHAT] The band won 'Best Global Music Album' for their album 'This Moment' [WHY] showing that Indian classical music can win on a global stage.",
+            "Zakir Hussain → [WHAT] The legendary Tabla player won three Grammys in one night [WHY] making him one of the most successful Indian musicians ever.",
+            "Shankar Mahadevan → [WHAT] The famous singer also shared the Grammy win as part of the band [WHY] celebrating the mix of Carnatic music and Jazz.",
+            "Taylor Swift → [WHAT] She broke the record by winning 'Album of the Year' for the fourth time [WHY] proving she is the biggest pop star in the world today.",
+            "Grammy Definition → [WHAT] An award presented by the Recording Academy in the USA [WHY] to recognize excellence in the global music industry."
         ],
         examAngle: "Most likely asked as: Which Indian band won a Grammy in 2024? OR Who won three Grammys together?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-as-181"
     },
     {
-        id: "sn-043", topicNumber: 43,
+        id: "sn-042", topicNumber: 42,
         title: "UNESCO World Heritage — Moidams",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "In 2024, the Charaideo Moidams (Assam) were inscribed as India's 43rd UNESCO World Heritage site. Known as the 'Pyramids of Assam', these are royal burial mounds of the Ahom dynasty, representing unique funerary architecture and the rich history of the Ahom kingdom in North East India.",
+        summary: "UNESCO is a UN body that protects historical sites. In 2024, the 'Moidams' in Assam were added to the list of World Heritage sites.",
         keyPoints: [
-            "43rd UNESCO Site in India → [WHAT] The burial mounds of Ahom kings in Charaideo district [WHY] making it Assam's third heritage site after Kaziranga and Manas.",
-            "Ahom Funerary Architecture → [WHAT] Hemispherical mounds (Moidams) containing vaults for kings [WHY] comparable to the ancient pyramids of Egypt in significance and structure.",
-            "600 Year Rule → [WHAT] The Ahom dynasty ruled Assam for six centuries (1228–1826) [WHY] and Charaideo was their first capital and most sacred burial ground.",
-            "Unique Culture of North East → [WHAT] Recognition of Tai-Ahom traditions on the global stage [WHY] preserving the identity of the community that successfully resisted Mughal expansion.",
-            "Selection Criteria → [WHAT] Inscribed under cultural criteria for its outstanding universal value [WHY] bringing international tourism and heritage status to rural Assam."
+            "What are Moidams? → [WHAT] They are royal burial mounds (like pyramids) from the Ahom Dynasty in Assam [WHY] they show how kings were buried in ancient North-East India.",
+            "43rd UNESCO Site → [WHAT] India now has 43 historical sites recognized by the world [WHY] which helps in protecting these places and bringing tourists.",
+            "Ahom Dynasty → [WHAT] They ruled Assam for 600 years (1228–1826) [WHY] and successfully defended India from many foreign invasions.",
+            "UNESCO Full Form → [WHAT] United Nations Educational, Scientific and Cultural Organization [WHY] it helps maintain peace through culture and education.",
+            "Charaideo District → [WHAT] The specific place in Assam where these mounds are located [WHY] it was the first capital of the Ahom kings."
         ],
-        examAngle: "Most likely asked as: Which is the 43rd UNESCO World Heritage site? OR Where are Moidams located?",
+        examAngle: "Most likely asked as: Which is the 43rd UNESCO site? OR Where are Moidams located?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-as-201"
     },
     {
-        id: "sn-044", topicNumber: 44,
+        id: "sn-043", topicNumber: 43,
         title: "Forest Report & Environment 2024",
         caTag: "national-polity", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "The 2024 environmental assessments indicate that India's forest cover stands at ~24% of its total area. While overall green cover has slightly increased, concerns remain over the loss of dense forests in the North East, prompting new mission-mode plantation drives under the 'Green Credit' program.",
+        summary: "The Forest Report tells us how much of India is covered by trees. In 2024, the report showed that 24% of India's land is green forest area.",
         keyPoints: [
-            "24 Percent Forest Cover → [WHAT] Total area under forest and tree cover in the 2023-24 period [WHY] moving slowly toward the national target of 33% environmental stability.",
-            "Highest Forest Area State → [WHAT] Madhya Pradesh continues to have the largest forest area [WHY] followed by Arunachal Pradesh and Chhattisgarh in the top three.",
-            "Green Credit Program → [WHAT] A new market-based mechanism to incentivize plantation and conservation [WHY] allowing individuals and companies to earn credits for eco-friendly actions.",
-            "Mangrove Initiative (MISHTI) → [WHAT] Targeted restoration of mangrove forests along India's coastline [WHY] to protect coastal communities from increasingly fierce tropical cyclones.",
-            "North East Forest Loss → [WHAT] Decline in forest cover observed in Arunachal and Mizoram [WHY] due to shifting cultivation and infrastructure expansion in sensitive hilly zones.",
+            "24 Percent Green Cover → [WHAT] The total area under forests and trees [WHY] the government's long-term goal is to reach 33% for better rainfall and clean air.",
+            "Madhya Pradesh → [WHAT] This state has the largest forest area in India [WHY] with many tiger reserves and dense jungles.",
+            "Green Credit Program → [WHAT] A new scheme where people get 'points' for planting trees [WHY] helping fight climate change through community action.",
+            "MISHTI Scheme → [WHAT] Full form: 'Mangrove Initiative for Shoreline Habitats & Tangible Incomes' [WHY] to plant trees along the sea to protect from cyclones.",
+            "North-East Forests → [WHAT] States like Arunachal and Mizoram have the highest percentage of forest [WHY] but are losing trees due to new roads and construction."
         ],
-        examAngle: "Most likely asked as: Which state has the maximum forest cover? OR What is the name of the Green Credit policy?",
+        examAngle: "Most likely asked as: Which state has the maximum forest cover? OR What is the MISHTI scheme for?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-np-121"
     },
     {
-        id: "sn-045", topicNumber: 45,
+        id: "sn-044", topicNumber: 44,
         title: "Major GI Tags 2024",
         caTag: "business-economy", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "In 2024, several unique products including Similipal Kai Chutney (Odisha) and Majuli Mask Making (Assam) received Geographical Indication (GI) tags. These tags protect traditional knowledge, ensure product quality, and boost the economic value of indigenous goods in global markets.",
+        summary: "A GI (Geographical Indication) Tag is like a 'brand name' given by the government to products that belong to a specific place. It ensures that nobody else can sell fake versions of that product.",
         keyPoints: [
-            "Similipal Kai Chutney → [WHAT] A traditional chutney made from red weaver ants in Odisha [WHY] recognized for its nutritional and medicinal value for local tribes.",
-            "Majuli Mask Making → [WHAT] Traditional handicraft from the world's largest river island (Assam) [WHY] preserving the 16th-century Neo-Vaishnavite cultural heritage.",
-            "Cuttack Silver Filigree → [WHAT] Ornate silver jewelry craft (Chandi Tarkasi) from Odisha [WHY] protecting the livelihood of master craftsmen in the historic 'Silver City'.",
-            "Banaras Thandai → [WHAT] Famous milk-based drink with spices from Varanasi (UP) [WHY] following in the footsteps of Banarasi Saree and Paan to get legal GI protection.",
-            "Goa Cashew (Kernel) → [WHAT] The distinct variety of cashew grown and processed in Goa [WHY] preventing other regions from using the Goan brand name for cheaper exports.",
+            "What is a GI Tag? → [WHAT] Full form: 'Geographical Indication' [WHY] it protects traditional items like Darjeeling Tea or Banarasi Saree from being copied.",
+            "Kai Chutney (Odisha) → [WHAT] A rare chutney made from ants won a GI tag in 2024 [WHY] recognizing it as a unique tribal food of Odisha.",
+            "Majuli Masks (Assam) → [WHAT] Traditional handmade masks from India's largest river island [WHY] they are famous for their detail and 500-year-old history.",
+            "Banaras Thandai → [WHAT] The famous spiced milk drink from Varanasi received protection [WHY] helping local shopkeepers sell the 'real' traditional drink.",
+            "Economic Boost → [WHAT] GI tags help villagers sell their products at higher prices [WHY] because people trust the quality and tradition behind the tag."
         ],
-        examAngle: "Most likely asked as: Kai Chutney belongs to which state? OR Where is Mask Making a GI craft?",
+        examAngle: "Most likely asked as: Kai Chutney belongs to which state? OR What does GI stand for?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-be-121"
     },
     {
-        id: "sn-046", topicNumber: 46,
+        id: "sn-045", topicNumber: 45,
         title: "Global Hunger Index (GHI) 2024",
         caTag: "national-polity", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "In the 2024 GHI, India was ranked 105th out of 127 countries, categorized as having a 'serious' level of hunger. The Indian government has contested the methodology, citing that the index relies heavily on hunger perception surveys and ignores the impact of mass food distribution schemes like PMGKAY.",
+        summary: "The GHI (Global Hunger Index) is a report that ranks countries based on how well they feed their people. In 2024, India's rank was 105th out of 127 countries.",
         keyPoints: [
-            "Rank 105 of 127 → [WHAT] India's position in the 2024 Global Hunger Index report [WHY] placing it behind several neighboring countries like Sri Lanka and Bangladesh.",
-            "Serious Hunger Level → [WHAT] Category determined based on child stunting, wasting, and mortality [WHY] highlighting the persistent challenge of nutrition in the under-5 population.",
-            "Govt of India Rejection → [WHAT] Ministry of Women and Child Development called the report biased [WHY] arguing it doesn't reflect the ground reality of the 'Poshan Abhiyan'.",
-            "PMGKAY Scheme → [WHAT] Pradhan Mantri Garib Kalyan Anna Yojana provides free foodgrains [WHY] to over 80 crore people, which is the world's largest food security safety net.",
-            "Child Wasting Concern → [WHAT] India's rate remains among the highest globally (~18%) [WHY] requiring more targeted interventions in public health and sanitation levels.",
+            "India's Rank 105 → [WHAT] India is in the 'Serious' category of hunger according to this report [WHY] showing that nutrition for small children is still a challenge.",
+            "Child Wasting → [WHAT] A problem where children are too thin for their height [WHY] India has one of the highest rates of child wasting in the world.",
+            "PMGKAY Scheme → [WHAT] India's massive 'Free Food' scheme for 80 crore people [WHY] the government argues that this scheme has greatly reduced hunger in reality.",
+            "GHI Full Form → [WHAT] Global Hunger Index [WHY] it is measured by three organizations to help governments improve food security.",
+            "Nutrition Goal → [WHAT] The government's 'Poshan Abhiyan' aims to fix these numbers [WHY] by providing better food to pregnant mothers and babies."
         ],
         examAngle: "Most likely asked as: What is India's rank in GHI 2024? OR What category of hunger is India in?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-np-141"
     },
     {
-        id: "sn-047", topicNumber: 47,
+        id: "sn-046", topicNumber: 46,
         title: "World Happiness Report 2024",
         caTag: "national-polity", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "India ranked 126th in the World Happiness Report 2024, maintaining its position from the previous year. Published by the UN Sustainable Development Solutions Network, the report places Finland at the top for the seventh consecutive year, measuring metrics like social support, GDP, and freedom.",
+        summary: "This report ranks countries based on how 'happy' their citizens feel. India was ranked 126th in the world in 2024, which is the same as the year before.",
         keyPoints: [
-            "Rank 126 for India → [WHAT] India's stable position on the global happiness scale [WHY] reflecting low scores in areas like freedom to make life choices and perceived corruption.",
-            "Finland Ranked First → [WHAT] The Nordic nation has topped the list for seven years in a row [WHY] credited to high social trust and excellent public education and healthcare.",
-            "UN SDSN Report → [WHAT] The organization that publishes the annual assessment in March [WHY] coinciding with the International Day of Happiness (March 20).",
-            "Happiness Determinants → [WHAT] Six key variables including GDP per capita, healthy life expectancy, and generosity [WHY] provided by the Gallup World Poll data.",
-            "South Asian Context → [WHAT] India remains lower than neighbors like Pakistan and Nepal in happiness [WHY] often attributed to high density, competitive stress, and income inequality.",
+            "Rank 126 for India → [WHAT] India's position has remained stable [WHY] it scores high on family support but low on factors like personal freedom and pollution.",
+            "Finland is #1 → [WHAT] Finland has been ranked as the happiest country for 7 years in a row [WHY] due to its excellent healthcare, free education, and high safety.",
+            "UN Report → [WHAT] The report is published by the UN (United Nations) every March [WHY] to celebrate the International Day of Happiness.",
+            "Happiest Neighbor → [WHAT] Interestingly, countries like Nepal and Pakistan were ranked higher than India [WHY] based on the specific surveys used by the UN.",
+            "Six Factors → [WHAT] Rankings are based on wealth, health, freedom, generosity, trust, and life support [WHY] to give a full picture beyond just money."
         ],
         examAngle: "Most likely asked as: What is India's rank in World Happiness Report? OR Which country is number one?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-np-161"
     },
     {
-        id: "sn-048", topicNumber: 48,
+        id: "sn-047", topicNumber: 47,
         title: "Major Military Exercises 2024",
         caTag: "science-defence", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "In 2024, India participated in several key exercises including 'Dosti-16' (Coast Guards) and 'Tarang Shakti' (IAF's largest multilateral drill). These exercises improve interoperability between friendly nations and demonstrate India's growing role as a 'net security provider' in the Indian Ocean.",
+        summary: "Military exercises are 'practice wars' between India and other friendly countries to ensure our soldiers are ready for any real threat.",
         keyPoints: [
-            "Tarang Shakti 2024 → [WHAT] The largest-ever multilateral air exercise hosted by Indian Air Force [WHY] involving nearly 10 nations to test complex air combat scenarios.",
-            "Dosti-16 (Trilateral) → [WHAT] Coast Guard exercise between India, Sri Lanka, and Maldives [WHY] focusing on maritime rescue and illegal trafficking deterrence in the ocean.",
-            "Exercise MILAN 2024 → [WHAT] Major naval gathering in Visakhapatnam with 50+ navies [WHY] symbolizing India's 'Maritime Diplomacy' and inclusive security vision.",
-            "Dharma Guardian 2024 → [WHAT] Joint military exercise between India and Japan Ground Forces [WHY] specifically training for urban warfare and counter-terrorism operations.",
-            "Exercise Nomadic Elephant → [WHAT] Annual joint drill between the armies of India and Mongolia [WHY] strengthening strategic ties with the landlocked North Asian partner.",
+            "Tarang Shakti → [WHAT] The largest air exercise ever hosted by India [WHY] with over 10 countries bringing their fighter jets to practice together.",
+            "Dosti-16 → [WHAT] A sea exercise between India, Sri Lanka, and the Maldives [WHY] to stop illegal activities in the Indian Ocean.",
+            "Exercise MILAN 2024 → [WHAT] A massive gathering in Visakhapatnam with navies from 50 countries [WHY] showing India's role as a leader in sea security.",
+            "Dharma Guardian → [WHAT] A joint practice between the armies of India and Japan [WHY] to learn how to fight terrorists in cities.",
+            "Inter-operability → [WHAT] The main goal of these exercises [WHY] so that if a disaster happens, different countries can work together smoothly."
         ],
         examAngle: "Most likely asked as: What is the name of the IAF's largest multilateral exercise? OR Which countries are in 'Dosti'?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-sd-081"
     },
     {
-        id: "sn-049", topicNumber: 49,
+        id: "sn-048", topicNumber: 48,
         title: "Cyclones & Disasters of 2024",
         caTag: "national-polity", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "2024 saw significant climate-related challenges, including Cyclone Remal and Cyclone Michaung, impacting the Bay of Bengal coastlines. India's disaster management agencies (NDRF) and early warning systems helped minimize fatalities through large-scale preemptive evacuations of coastal populations.",
+        summary: "India faced several natural disasters in 2024, including big storms called 'Cyclones' and landslides in the mountains.",
         keyPoints: [
-            "Cyclone Remal (May 2024) → [WHAT] The first pre-monsoon cyclone of the year in Bay of Bengal [WHY] making landfall in West Bengal and Bangladesh with 135 kmph winds.",
-            "Naming by Oman → [WHAT] The name 'Remal' (meaning sand in Arabic) was provided by Oman [WHY] under the WMO's rotating system for naming North Indian Ocean storms.",
-            "Wayanad Landslides (July 2024) → [WHAT] Catastrophic landslides in Kerala killing over 300 [WHY] triggering a debate on ecological sensitivity and habitat loss in the Western Ghats.",
-            "IMD Early Warning System → [WHAT] Improved satellite-based tracking by Indian Meteorological Dept [WHY] allowing 4-5 days of lead time for evacuations and resource staging.",
-            "Disaster Management (NDRF) → [WHAT] Specialized force for rescue and relief operations [WHY] which has become the primary agency for handling cyclone-hit zones across India.",
+            "Cyclone Remal → [WHAT] A massive storm that hit Bengal in May 2024 [WHY] the name 'Remal' (meaning sand) was given by the country of Oman.",
+            "Wayanad Landslides → [WHAT] A tragic disaster in Kerala where heavy rain caused mountains to collapse [WHY] killing over 300 people in July 2024.",
+            "NDRF (National Disaster Response Force) → [WHAT] The specialized team that rescues people during floods and storms [WHY] they saved thousands of lives in 2024.",
+            "IMD (Indian Meteorological Department) → [WHAT] The government body that predicts weather [WHY] they gave early warnings that helped people evacuate safely.",
+            "WMO System → [WHAT] Full form: 'World Meteorological Organization' [WHY] it is the system that decides how cyclones are named by different countries."
         ],
         examAngle: "Most likely asked as: Which country named Cyclone Remal? OR Where did the 2024 landslides occur?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-np-181"
     },
     {
-        id: "sn-050", topicNumber: 50,
-        title: "New Bills & Miscellaneous 2024",
+        id: "sn-049", topicNumber: 49,
+        title: "New Laws & Appointments 2024",
         caTag: "national-polity", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "Key legislative actions in 2024 included the Telecom Act replacing the 1885 law and the introduction of the Waqf (Amendment) Bill. Additionally, new appointments like the 26th RBI Governor and 25th Navy Chief marked the structural updates in India's top administrative and military ranks.",
+        summary: "In 2024, the government passed new laws to modernize India and appointed new leaders for the Navy and other top positions.",
         keyPoints: [
-            "Telecommunications Act 2023/24 → [WHAT] Modern law replacing the 138-year-old Telegraph Act [WHY] allowing for administrative allocation of satellite spectrum for Starlink/Jio.",
-            "Waqf Amendment Bill 2024 → [WHAT] Proposed law to increase transparency in Waqf properties [WHY] aiming to reform the management of religious endowments in India.",
-            "Admiral Dinesh K Tripathi → [WHAT] Took over as the 25th Chief of the Naval Staff in 2024 [WHY] leading the modernization of the Navy toward a 3-carrier force.",
-            "New Parliament Building → [WHAT] In the first full year of usage (2024), it hosted the special budget session [WHY] representing the 'Sengol' as a symbol of power transition.",
-            "One Nation One Student ID → [WHAT] Introduction of APAAR IDs for all school-going children [WHY] to create a lifelong digital record of academic achievements and credits.",
+            "Telecom Act 2024 → [WHAT] A new law that replaces a 138-year-old British-era law [WHY] to make mobile and internet rules better for the digital age.",
+            "Admiral Dinesh K Tripathi → [WHAT] He became the 25th Chief of the Indian Navy in 2024 [WHY] he is responsible for protecting India's sea borders.",
+            "Waqf Bill 2024 → [WHAT] A proposed law to manage religious properties with more transparency [WHY] aiming to reform how these properties are used.",
+            "New Parliament Building → [WHAT] Hosted its first full year of work in 2024 [WHY] featuring the 'Sengol' as a symbol of Indian culture and authority.",
+            "APAAR ID → [WHAT] A 'One Nation, One Student ID' for all school kids [WHY] to store all your marks and certificates in one digital place."
         ],
-        examAngle: "Most likely asked as: Who is the 25th Navy Chief? OR Which old law did the Telecom Act replace?",
+        examAngle: "Most likely asked as: Who is the 25th Navy Chief? OR What does APAAR ID store?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-np-201"
+    },
+    {
+        id: "sn-050", topicNumber: 50,
+        title: "Gaganyaan 2025 Updates",
+        caTag: "science-defence", topicYear: 2025,
+        examTags: ["MH-CET", "CUET"],
+        summary: "Gaganyaan is India's mission to send humans into space. In 2025, ISRO announced new dates and a major training update.",
+        keyPoints: [
+            "Shubhanshu Shukla → [WHAT] An Indian astronaut chosen to visit the International Space Station (ISS) in 2025 [WHY] giving India real experience before our own mission.",
+            "G1 Uncrewed Flight → [WHAT] The first test flight (without humans) is set for January 2026 [WHY] to ensure the rocket is 100% safe for people.",
+            "Vyommitra → [WHAT] A female humanoid robot that will fly in the test mission [WHY] to see how the human body might react to space travel.",
+            "Axiom-4 Mission → [WHAT] The specific NASA-linked mission that Shubhanshu Shukla will join [WHY] marking a big partnership between India and the USA.",
+            "LVM3 Rocket → [WHAT] India's most powerful rocket that will carry the astronauts [WHY] also known as the 'Fat Boy' of ISRO."
+        ],
+        examAngle: "Most likely asked as: Who will visit the ISS in 2025? OR What is the name of the robot?",
+        displayMode: "study-note",
+        showBeforeTopicId: "ca-sd-101"
     }
 ];
