@@ -1,5 +1,7 @@
 // src/data/gk-current-affairs/current-affairs.data.js
-// CUET & MAH CET BBA — CURRENT AFFAIRS MODULE (FIVE BUCKET FRAMEWORK)
+import { ca2025UpdatesData } from './ca-2025-updates.data';
+import { caStudyNotes } from './ca-study-notes.data';
+import { caBriefingFlashcards } from './ca-briefing-flashcards.data';
 
 export const currentAffairsData = {
     subject: "GK & Current Affairs",
@@ -8,20 +10,121 @@ export const currentAffairsData = {
     studyGuide: {
         topics: [
             {
-                id: "ca-buckets",
-                title: "Current Affairs Pillars (2024-2025)",
+                id: "ca-national",
+                title: "1. National Pillars & New Laws (2024-2025)",
                 content: {
-                    coreConcept: "CA is divided into 5 critical buckets: National/Polity, International, Business/Economy, Science/Defence, and Awards/Sports.",
-                    formulaBank: "• National: Bills & Appointments\n• International: NATO & G20\n• Business: Budget & RBI\n• Science: ISRO & AI\n• Awards: Padma & Nobel",
-                    logic: "Focus on 'Firsts' and 'Winners'. The 16th Finance Commission and new Criminal Laws are top priorities.",
-                    traps: "Don't confuse the three new laws (BNS, BNSS, BSA). Remember BNS replaces IPC.",
+                    coreConcept: "The cornerstone of 2024 Current Affairs is the landmark overhaul of India's criminal justice system and key legislative reforms.\n\n1. The Three New Laws: BNS (replaces IPC), BNSS (replaces CrPC), and BSA (replaces Evidence Act) became effective July 1, 2024.\n2. Nari Shakti Vandan Adhiniyam: 33% reservation for women in Lok Sabha and Assemblies.\n3. 16th Finance Commission: Headed by Dr. Arvind Panagariya (2026-2031 period).",
+                    formulaBank: "• IPC -> BNS (Nyaya)\n• CrPC -> BNSS (Suraksha)\n• Evidence Act -> BSA (Sakshya)\n• Women's Resv -> 106th Amendment",
+                    logic: "To remember the new laws: 'Nyaya' is the punishment (BNS), 'Suraksha' is the protection/procedure (BNSS), and 'Sakshya' is the evidence (BSA). All three symbols of 'Decolonization'.",
+                    traps: "Don't confuse the implementation date (July 1, 2024) with the passing date (Dec 2023). Also, remember BNS is NOT the same as BNSS.",
                     examples: [
-                        { q: "Who is the Chairman of the 16th Finance Commission?", a: "Dr. Arvind Panagariya." },
-                        { q: "Which law replaced the IPC in July 2024?", a: "Bharatiya Nyaya Sanhita (BNS)." }
+                        { q: "Who is the 'Nominal Head' of India?", a: "The President (currently Smt. Droupadi Murmu)." },
+                        { q: "Which law replaced the IPC in 2024?", a: "Bharatiya Nyaya Sanhita (BNS)." },
+                        { q: "Who heads the 16th Finance Commission?", a: "Dr. Arvind Panagariya." },
+                        { q: "What is the % of women's reservation in the new bill?", a: "33%." },
+                        { q: "The BNS replaced which colonial law?", a: "Indian Penal Code (IPC)." },
+                        { q: "When did the new criminal laws come into force?", a: "July 1, 2024." },
+                        { q: "Which committee recommended 'One Nation One Election'?", a: "Ram Nath Kovind Committee." },
+                        { q: "What is the target of PM Surya Ghar Yojana?", a: "1 crore households (300 units free solar power)." },
+                        { q: "Who is the current Chief Election Commissioner of India?", a: "Rajiv Kumar." },
+                        { q: "Which amendment is the Nari Shakti Vandan Adhiniyam?", a: "106th Constitutional Amendment." }
                     ],
-                    speedSummary: "Arvind P = Finance. BNS = New IPC. NATO 32nd = Sweden. PM Surya Ghar = Solar."
+                    speedSummary: "Arvind P = Finance. BNS = New IPC. Sept 2023 = Women's Bill. July 1 = New Laws Live."
                 }
-            }
+            },
+            {
+                id: "ca-awards-sports",
+                title: "5. Awards, Sports & Culture",
+                content: {
+                    coreConcept: "2024 is a year of celebration with India's highest civilian awards and major sporting triumphs like the T20 World Cup and IPL.\n\n1. Civilian Awards: Bharat Ratna awarded to 5 eminent personalities including Karpoori Thakur, L.K. Advani, and M.S. Swaminathan.\n2. Sports: India won the ICC Men's T20 World Cup 2024. KKR won IPL 2024.\n3. Culture: 69th National Film Awards and the inauguration of the Ram Mandir in Ayodhya.",
+                    formulaBank: "• Bharat Ratna: 5 recipients (2024)\n• T20 WC 2024: India (Champions)\n• IPL 2024: KKR (3rd Title)\n• Dada Saheb Phalke: Waheeda Rehman",
+                    logic: "For Awards, memorize the 'Why'. Swaminathan = Green Revolution. Karpoori Thakur = Social Justice. For Sports, 'Firsts' and 'Winners' of major tournaments (WC, IPL, Olympics) are high probability.",
+                    traps: "Don't confuse the T20 World Cup (2024) with the ODI World Cup (2023). India was Runner-up in ODI but Champion in T20.",
+                    examples: [
+                        { q: "Who was awarded the Bharat Ratna posthumously in 2024?", a: "Karpoori Thakur (and others)." },
+                        { q: "Which team won the IPL 2024 title?", a: "Kolkata Knight Riders (KKR)." },
+                        { q: "Who won the ICC Men's T20 World Cup in 2024?", a: "India." },
+                        { q: "Who is the 'Father of the Green Revolution' in India awarded Bharat Ratna?", a: "M.S. Swaminathan." },
+                        { q: "Which movie won the Best Feature Film at the 69th National Film Awards?", a: "Rocketry: The Nambi Effect." },
+                        { q: "Who was the 'Man of the Match' in the T20 World Cup 2024 Final?", a: "Virat Kohli." },
+                        { q: "How many Bharat Ratna awards were announced in 2024?", a: "5." },
+                        { q: "Which city hosts the 2024 Summer Olympics?", a: "Paris, France." },
+                        { q: "Who is the champion of the Australian Open 2024 (Men's)?", a: "Jannik Sinner." },
+                        { q: "The 'World Heritage' status was recently given to which Hoysala temples?", a: "Belur, Halebid, and Somanathapura (Sacred Ensembles of the Hoysalas)." }
+                    ],
+                    speedSummary: "Bharat Ratna = 5. India = T20 Champs. KKR = IPL Winner. Paris = Olympics."
+                }
+            },
+            {
+                id: "ca-international",
+                title: "2. International Relations & Global Summits",
+                content: {
+                    coreConcept: "Global geopolitics in 2024-25 is defined by India's leadership in the Global South and shifts in major alliances (G20, BRICS, NATO).\n\n1. G20 Delhi Summit: Inclusion of the African Union as a permanent member (Global South focus).\n2. NATO Expansion: Finland and Sweden became the 31st and 32nd members.\n3. BRICS Expansion: Egypt, Ethiopia, Iran, and UAE joined effectively Jan 1, 2024.",
+                    formulaBank: "• G20 -> G21 (AU joined)\n• NATO 31st: Finland\n• NATO 32nd: Sweden\n• COP28: Dubai, UAE",
+                    logic: "Think of 'Expansion'. Most global bodies are growing. AU in G20, 4 new countries in BRICS, and the Nordic expansion of NATO are the key 'Additions' to remember.",
+                    traps: "Don't confuse the venue of G20 2023 (India) with G20 2024 (Brazil). Also, Afghanistan is NOT a member of BRICS.",
+                    examples: [
+                        { q: "Which organization was added as a permanent member of G20 in 2023?", a: "African Union (AU)." },
+                        { q: "Who is the 32nd member of NATO?", a: "Sweden." },
+                        { q: "Where was the COP28 Climate Summit held?", a: "Dubai, UAE." },
+                        { q: "Which country hosted the G20 Summit in 2024?", a: "Brazil (Rio de Janeiro)." },
+                        { q: "Name one new country that joined BRICS in 2024.", a: "Iran (or UAE/Egypt/Ethiopia)." },
+                        { q: "Who is the current Secretary-General of the United Nations?", a: "Antonio Guterres." },
+                        { q: "Which country is the newest member of the Shanghai Cooperation Organisation (SCO)?", a: "Iran (9th) / Belarus (10th)." },
+                        { q: "What is the capital of Ukraine?", a: "Kyiv." },
+                        { q: "Which country is hosting the 2024 Quad Summit?", a: "USA (originally India, swapped)." },
+                        { q: "Who is the President of the Maldives (met PM Modi at G7)?", a: "Mohamed Muizzu." }
+                    ],
+                    speedSummary: "G20 Brazil = 2024. Sweden = NATO 32nd. AU = New G20 Member. COP28 = Dubai."
+                }
+            },
+            {
+                id: "ca-economy",
+                title: "3. Business, Banking & Economy",
+                content: {
+                    coreConcept: "The Indian economy in 2024 is marked by 'Viksit Bharat 2047' goals, high GDP growth, and significant banking reforms.\n\n1. Interim Budget 2024: Focus on Infrastructure, Green Growth, and Solarization (PM Surya Ghar).\n2. Banking: RBI's strict oversight on fintech (Paytm Payments Bank) and the 16th Finance Commission mandate.\n3. Corporate: Air India-Vistara merger and the rise of India as a Global Manufacturing Hub (PLI Schemes).",
+                    formulaBank: "• GDP Growth: ~7% (World Lead)\n• Repo Rate: 6.50% (Paused)\n• 16th Fin Comm: 2026-2031\n• Budget 2024: Capex hike to 11.1L Cr",
+                    logic: "In economy questions, look for 'Big Mergers' and 'RBI Regulations'. If the question asks about a regulator, it's 90% RBI (Banking) or SEBI (Markets).",
+                    traps: "Don't confuse the 'Interim Budget' (Feb 2024) with a 'Full Budget'. The full budget usually follows the formation of a new government. Also, Repo Rate hasn't changed much recently.",
+                    examples: [
+                        { q: "Who is the Finance Minister of India?", a: "Smt. Nirmala Sitharaman." },
+                        { q: "What is the target year for 'Viksit Bharat'?", a: "2047." },
+                        { q: "Which bank was restricted by RBI in early 2024?", a: "Paytm Payments Bank." },
+                        { q: "What is the current Repo Rate as of mid-2024?", a: "6.50%." },
+                        { q: "Who is the Governor of the Reserve Bank of India?", a: "Shaktikanta Das." },
+                        { q: "Which airlines are merging with Air India?", a: "Vistara (under Tata Group)." },
+                        { q: "What is India's rank in terms of GDP (PPP)?", a: "3rd (nominal: 5th)." },
+                        { q: "The 'PM Surya Ghar' provides how many units of free electricity?", a: "300 units." },
+                        { q: "Which scheme aims to boost local manufacturing in India?", a: "Production Linked Incentive (PLI)." },
+                        { q: "What is the Capex target in the 2024 Interim Budget?", a: "₹11.11 Lakh Crore." }
+                    ],
+                    speedSummary: "Repo = 6.5%. 16th Fin = Panagariya. Viksit Bharat = 2047. FM = Sitharaman."
+                }
+            },
+            {
+                id: "ca-science-tech",
+                title: "4. Science, Space & Defence",
+                content: {
+                    coreConcept: "India's prowess in Space and Defence achieved new heights in 2024 with Gaganyaan trials and Agni-V MIRV technology.\n\n1. Space: ISRO's Gaganyaan mission selects 4 astronauts. Chandrayaan-3 landing site named 'Shiv Shakti Point'.\n2. Defence: Successful test flight of Agni-V with MIRV technology (Mission Divyastra).\n3. Technology: India's AI mission (IndiaAI) sanctioned with ₹10,000+ crore for compute infrastructure.",
+                    formulaBank: "• Gaganyaan: India's Human Spaceflight\n• Agni-V: MIRV (Mission Divyastra)\n• Shiv Shakti: Ch-3 Landing Site\n• INS Sandhayak: New Survey Vessel",
+                    logic: "Focus on 'Mission Names'. If it's Space, look for ISRO. If it's a missile, it's usually the Agni or Akash series. MIRV is the biggest tech keyword for 2024.",
+                    traps: "Don't confuse 'Shiv Shakti Point' (Ch-3) with 'Tiranga Point' (Ch-2). Agni-V is an ICBM (Intercontinental), not just short-range.",
+                    examples: [
+                        { q: "What is the name of ISRO's upcoming manned space mission?", a: "Gaganyaan." },
+                        { q: "What is the name of the Chandrayaan-3 landing site?", a: "Shiv Shakti Point." },
+                        { q: "Which mission involved the successful test of Agni-V with MIRV technology?", a: "Mission Divyastra." },
+                        { q: "Who is the current Chairman of ISRO?", a: "S. Somanath." },
+                        { q: "Which new survey vessel was commissioned by the Indian Navy in 2024?", a: "INS Sandhayak." },
+                        { q: "Where is the Vikram Sarabhai Space Centre located?", a: "Thiruvananthapuram." },
+                        { q: "What is the range of the Agni-V missile?", a: "Over 5,000 km." },
+                        { q: "Which IIT developed the 'Solar-powered' boat for Ayodhya?", a: "IIT Varanasi (incubated startup)." },
+                        { q: "What does MIRV stand for?", a: "Multiple Independently Targetable Re-entry Vehicle." },
+                        { q: "Which country's help is ISRO taking for the NISAR satellite?", a: "USA (NASA)." }
+                    ],
+                    speedSummary: "Gaganyaan = Manned. Agni-V = MIRV. Shiv Shakti = Ch-3. S. Somanath = ISRO."
+                }
+            },
+            ...caStudyNotes
         ]
     },
     flashcards: [
@@ -29,12 +132,11 @@ export const currentAffairsData = {
         { id: "ca-fc-002", term: "BNS", definition: "Bharatiya Nyaya Sanhita (Replaced IPC on July 1, 2024)." },
         { id: "ca-fc-003", term: "BNSS", definition: "Bharatiya Nagarik Suraksha Sanhita (Replaced CrPC)." },
         { id: "ca-fc-004", term: "BSA", definition: "Bharatiya Sakshya Adhiniyam (Replaced Evidence Act)." },
-        { id: "ca-fc-005", term: "PM Surya Ghar", definition: "Objective: 1 crore homes, 300 units free solar electricity." }
+        { id: "ca-fc-005", term: "PM Surya Ghar", definition: "Objective: 1 crore homes, 300 units free solar electricity." },
+        ...caBriefingFlashcards
     ],
     questions: [
-        // =================================================================
-        // BUCKET 1: National & Polity (20 Questions)
-        // =================================================================
+        ...ca2025UpdatesData.questions,
         {
             id: "ca-np-001", type: "mcq", difficulty: "medium",
             question: "Who is the Chairman of the 16th Finance Commission appointed in 2023?",
