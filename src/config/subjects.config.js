@@ -107,7 +107,7 @@ export const SUBJECTS = [
     examTags: ["CUET", "MH-CET"],
     chapters: [
       { id: "general-knowledge", name: "General Knowledge", dataFile: "general-knowledge.data", questionCount: 60 },
-      { id: "current-affairs", name: "Current Affairs", dataFile: "current-affairs.data", questionCount: 10 },
+      { id: "current-affairs", name: "Current Affairs", dataFile: "current-affairs.data", questionCount: 105 },
       { id: "general-science", name: "General Science", dataFile: "general-science.data", questionCount: 45 }
     ]
   },
