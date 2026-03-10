@@ -15,11 +15,11 @@ export const caStudyNotes = [
         examTags: ["MH-CET", "CUET"],
         summary: "The Finance Commission is a constitutional body that decides how tax money collected by the Central Government should be shared with State Governments. The 16th Finance Commission, chaired by Dr. Arvind Panagariya, was set up in late 2023 to plan this sharing for the years 2026 to 2031.",
         keyPoints: [
-            "Chairman Dr. Arvind Panagariya → [WHAT] He leads the 16th Commission [WHY] bringing expertise as former NITI Aayog (National Institution for Transforming India) Vice Chairman to revenue sharing.",
-            "Constitutional Article 280 → [WHAT] The President must set up a Commission every five years [WHY] to ensure states get a fair share of national funds for their local development.",
-            "Vertical Devolution Mandate → [WHAT] Recommending what percentage of total central taxes goes to states [WHY] which is essential for states to pay for schools, hospitals, and roads.",
-            "Horizontal Devolution Logic → [WHAT] Deciding how the state-share is divided among different states [WHY] using fair rules like population size, area, and how well the state manages its forests.",
-            "Period 2026 to 2031 → [WHAT] These new rules will start from April 2026 [WHY] replacing the older 15th Finance Commission rules led by NK Singh."
+            "Chairman Dr. Arvind Panagariya → [WHAT] He leads the 16th Commission [WHY] bringing expertise as former NITI Aayog (a government platform that plans India's development) Vice Chairman to tax sharing.",
+            "Constitutional Article 280 → [WHAT] Rule in the Constitution that says the President must set up a Commission every five years [WHY] to ensure states get fair money for schools and roads.",
+            "Vertical Devolution → [WHAT] Deciding what percentage of total central taxes goes to all states [WHY] which helps states have enough money to run their own local programs.",
+            "Horizontal Devolution → [WHAT] Deciding how that money is divided between different states like UP, Bihar or Kerala [WHY] using fair rules like population and forest cover.",
+            "Period 2026 to 2031 → [WHAT] These new rules will start from April 2026 [WHY] replacing the older rules led by the 15th Finance Commission chairman NK Singh."
         ],
         examAngle: "Most likely asked as: Who is the Chairman of the 16th Finance Commission? OR Which Article covers it?",
         displayMode: "study-note",
@@ -50,10 +50,10 @@ export const caStudyNotes = [
         summary: "This is a historic law that reserves 1/3rd (33%) of seats for women in India's law-making bodies like the Lok Sabha and State Assemblies. The goal is to ensure that women have a strong voice in deciding how the country is run.",
         keyPoints: [
             "33 Percent Reservation → [WHAT] One-third of seats in Lok Sabha and Assemblies reserved for women [WHY] to increase the number of female leaders in the country's top decision-making offices.",
-            "106th Amendment Act → [WHAT] The official legal name for this law in the Indian Constitution [WHY] which makes it a permanent rule that cannot be easily changed.",
-            "Exclusion of Rajya Sabha → [WHAT] The reservation currently applies only to directly elected houses (where people vote) [WHY] and does not yet include the Upper House or State Councils.",
-            "Post Delimitation Implementation → [WHAT] The law will start working only after the next population count (Census) and seat-fixing (Delimitation) [WHY] to ensure seats are fairly distributed.",
-            "Fifteen Year Duration → [WHAT] This rule is initially set to last for 15 years [WHY] after which the Parliament will check if it needs to be continued or changed."
+            "106th Amendment Act → [WHAT] The official legal change made to the Indian Constitution [WHY] which makes it a permanent rule that cannot be easily changed by any future government.",
+            "Legislative Bodies → [WHAT] The law applies to Lok Sabha (National) and Vidhan Sabhas (State) [WHY] but does not include Rajya Sabha as those members are not directly voted by the people.",
+            "Delimitation Requirement → [WHAT] The 'Delimitation' process (re-fixing the boundaries of voting areas) must happen first [WHY] to decide exactly which seats will be reserved for women candidates.",
+            "Fifteen Year Sunset Clause → [WHAT] This rule is initially set to last for 15 years [WHY] after which the Parliament will check if it needs to be continued or changed based on progress."
         ],
         examAngle: "Most likely asked as: What percentage of seats are reserved? OR Which Constitutional Amendment number is this?",
         displayMode: "study-note",
@@ -134,11 +134,11 @@ export const caStudyNotes = [
         examTags: ["MH-CET", "CUET"],
         summary: "The RBI (Reserve Bank of India) is India's 'Central Bank' that controls the flow of money. In February 2025, it cut the 'Repo Rate' (the interest rate at which RBI lends money to other banks) to 6.25%. This was decided by the new RBI Governor, Sanjay Malhotra.",
         keyPoints: [
-            "Repo Rate at 6.25 Percent → [WHAT] The interest rate was reduced from 6.50% to 6.25% [WHY] making it cheaper for companies to borrow money and grow.",
-            "Governor Sanjay Malhotra → [WHAT] The new 26th Governor who replaced Shaktikanta Das [WHY] leading his first major meeting to decide India's money policies.",
-            "First Cut Since 2020 → [WHAT] The first time interest rates were lowered in 5 years [WHY] because the government felt that prices (inflation) are now stable and under control.",
-            "Neutral Stance Adoption → [WHAT] A 'Neutral' stance means the RBI is ready to raise or lower rates depending on the market [WHY] giving them flexibility to help the economy.",
-            "Impact on Bank EMIs → [WHAT] 'EMI' is the monthly installment you pay for a loan [WHY] and a repo rate cut usually means your home or car loan EMI will decrease."
+            "Repo Rate Definition → [WHAT] 'Repo Rate' is the interest rate at which the RBI lends money to normal banks [WHY] if this rate is high, loans become expensive; if low, loans become cheaper.",
+            "6.25 Percent Target → [WHAT] The interest rate was reduced from 6.50% to 6.25% in Feb 2025 [WHY] making it easier for businesses to take loans and expand their work.",
+            "Governor Sanjay Malhotra → [WHAT] The 26th Governor of RBI who replaced Shaktikanta Das [WHY] he leads the team that decides whether to increase or decrease the cost of money in India.",
+            "Monetary Policy Committee (MPC) → [WHAT] A 6-member group that votes on the interest rates [WHY] to ensure that prices of daily items (inflation) do not rise too much.",
+            "Impact on EMIs → [WHAT] 'EMI' is the monthly installment paid for home or car loans [WHY] and a repo rate cut usually leads to banks reducing the EMI for common people."
         ],
         examAngle: "Most likely asked as: What is the current repo rate? OR Who is the 26th Governor of RBI?",
         displayMode: "study-note",
@@ -183,13 +183,13 @@ export const caStudyNotes = [
         title: "Padma Awards 2025",
         caTag: "awards-sports", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
-        summary: "The Padma Awards are India's highest civilian honors after the Bharat Ratna. Announced every year on January 26 (Republic Day), they honor people for extraordinary work in fields like music, industry, and helping the poor.",
+        summary: "The Padma Awards are India's highest civilian honors (awards given to people who are not in the military) after the Bharat Ratna. Announced every year on January 26 (Republic Day), they honor people for extraordinary work in fields like music and education.",
         keyPoints: [
-            "Osamu Suzuki (Japan) → [WHAT] Awarded the Padma Vibhushan (a top-tier award) [WHY] for his huge contribution to India's car industry through Maruti Suzuki.",
-            "Sharda Sinha (Posthumous) → [WHAT] Awarded Padma Vibhushan after her death [WHY] for her beautiful folk songs that preserved the culture of Bihar for decades.",
-            "Awards Categories → [WHAT] Divided into Vibhushan (Highest), Bhushan (Medium), and Shri (Distinguished) [WHY] to recognize different levels of lifetime achievement.",
-            "Republic Day Tradition → [WHAT] Always announced on the eve of January 26 [WHY] which is the day India celebrates its journey as a Republic (sovereign nation).",
-            "Grassroots Achievers → [WHAT] Many awards were given to 'Unsung Heroes' (lesser-known people) [WHY] to show that even small efforts in villages can lead to great national honor."
+            "Osamu Suzuki (Japan) → [WHAT] Received the Padma Vibhushan [WHY] for his huge contribution to India's car industry (the famous Maruti cars) which helped millions of Indians travel.",
+            "Posthumous Honorees → [WHAT] 'Posthumous' means an award given after a person has died [WHY] such as for singer Sharda Sinha to honor her lifetime of folk music.",
+            "Three Categories → [WHAT] Divided into Vibhushan (Highest), Bhushan (Medium), and Shri (Distinguished) [WHY] to recognize different levels of success and service to the country.",
+            "Republic Day Tradition → [WHAT] Always announced on Jan 26, the day India became a Republic [WHY] because a Republic is a country where power is held by the people and their elected representatives.",
+            "Grassroots Heroes → [WHAT] Awards for 'Unsung Heroes' like tribal artists and village doctors [WHY] to show that real talent and hard work are respected even in the smallest villages."
         ],
         examAngle: "Most likely asked as: Who received Padma Vibhushan for Folk Music? OR Osamu Suzuki's award?",
         displayMode: "study-note",
@@ -219,9 +219,9 @@ export const caStudyNotes = [
     {
         id: "sn-013", topicNumber: 13,
         title: "Sweden - 32nd NATO Member",
-        caTag: "international-relations", topicYear: 2024,
+        caTag: "international", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "In March 2024, Sweden officially joined NATO as its 32nd member. NATO (North Atlantic Treaty Organization) is a group of countries that have a 'Security Pact'—if one is attacked, they all work together to defend it.",
+        summary: "In March 2024, Sweden officially joined NATO as its 32nd member. NATO (North Atlantic Treaty Organization) is a military alliance of 32 countries from Europe and North America. Their main rule is: 'An attack on one is an attack on all'.",
         keyPoints: [
             "End of 200 Year Neutrality → [WHAT] Sweden decided to join a military group after staying 'neutral' (not taking sides) for 2 centuries [WHY] because of the war between Russia and Ukraine.",
             "32nd Member State → [WHAT] This makes Sweden the second new member recently after Finland [WHY] making the NATO group stronger in Northern Europe.",
@@ -236,9 +236,9 @@ export const caStudyNotes = [
     {
         id: "sn-014", topicNumber: 14,
         title: "BRICS Expansion 2024",
-        caTag: "international-relations", topicYear: 2024,
+        caTag: "international", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "BRICS is a group starting with Brazil, Russia, India, China, and South Africa. On January 1, 2024, it doubled its size by inviting five new countries to join, aiming to give 'Developing' (Global South) countries more power in the world economy.",
+        summary: "BRICS is an influential group of major world economies: Brazil, Russia, India, China, and South Africa. On January 1, 2024, it doubled its size by adding five new members, aiming to give 'Developing Countries' a stronger voice in global trade and finance.",
         keyPoints: [
             "Five New Members → [WHAT] Egypt, Ethiopia, Iran, Saudi Arabia, and UAE (United Arab Emirates) joined [WHY] to make BRICS a bigger voice against the Western group G7.",
             "Kazan Summit 2024 → [WHAT] The first meeting of the bigger 'BRICS Plus' group held in Russia [WHY] to discuss new ways of trading without using the US Dollar.",
@@ -253,15 +253,15 @@ export const caStudyNotes = [
     {
         id: "sn-015", topicNumber: 15,
         title: "G20-G21: African Union Inclusion",
-        caTag: "international-relations", topicYear: 2023,
+        caTag: "international", topicYear: 2023,
         examTags: ["MH-CET", "CUET"],
-        summary: "The G20 (Group of 20) is a club of the world's most powerful economies. During India's leadership (Presidency) in 2023, the African Union (a group of 55 African countries) was made a permanent member, effectively turning G20 into 'G21'.",
+        summary: "The G20 (Group of 20) is the world's premier forum for international economic cooperation, representing the 20 largest economies. During India's 2023 Presidency, the African Union (a union of 55 African countries) became a permanent member, effectively turning it into 'G21'.",
         keyPoints: [
-            "African Union (AU) Entry → [WHAT] India successfully pushed to make the AU a full member [WHY] to ensure that 1.4 billion people in Africa have a seat at the table where world money rules are made.",
-            "G20 to G21 Shift → [WHAT] The group is now increasingly called G21 [WHY] representing a more inclusive world where both wealthy and developing nations are heard.",
-            "India's Presidency Success → [WHAT] The Delhi Declaration was passed with 100% agreement [WHY] proving that India can bring together countries that are fighting (like USA and Russia).",
-            "Global Biofuel Alliance → [WHAT] A new group launched by India to promote clean fuel made from plants [WHY] to reduce the world's dependency on petrol and diesel.",
-            "India-Middle East-Europe Corridor (IMEC) → [WHAT] A massive trade route project using ships and rails [WHY] to connect India to Europe faster, passing through the Middle East."
+            "African Union (AU) Entry → [WHAT] A group of 55 African nations [WHY] invited by India to ensure that 1.4 billion African people have a voice in global money and trade decisions.",
+            "G20 to G21 Shift → [WHAT] The group is now increasingly called G21 [WHY] representing a more inclusive world where both wealthy (Global North) and developing (Global South) nations are heard.",
+            "New Delhi Declaration → [WHAT] A 'Declaration' is a joint statement of rules agreed by all leaders [WHY] India successfully got 100% agreement even during global wars.",
+            "Global Biofuel Alliance → [WHAT] A group launched by India to promote fuel made from plants [WHY] to reduce the world's dependency on petrol/diesel and help the environment.",
+            "IMEC Corridor → [WHAT] The India-Middle East-Europe Economic Corridor [WHY] a new road/rail/ship route to connect India to Europe faster and cheaper than before."
         ],
         examAngle: "Most likely asked as: Which new organization was added to G20? OR What is the new name for the group?",
         displayMode: "study-note",
@@ -270,7 +270,7 @@ export const caStudyNotes = [
     {
         id: "sn-016", topicNumber: 16,
         title: "Operation Sindoor (India-Pakistan 2025)",
-        caTag: "international-relations", topicYear: 2025,
+        caTag: "international", topicYear: 2025,
         examTags: ["MH-CET", "CUET"],
         summary: "In early 2025, India launched 'Operation Sindoor' to rescue thousands of Indian students and workers who were stuck in Pakistan due to sudden civil unrest and protests there. It showed India's power to protect its citizens anywhere in the world.",
         keyPoints: [
@@ -285,9 +285,26 @@ export const caStudyNotes = [
         showBeforeTopicId: "ca-ir-061"
     },
     {
+        id: "sn-017", topicNumber: 17,
+        title: "COP29 Azerbaijan — Climate Finance",
+        caTag: "international", topicYear: 2024,
+        examTags: ["MH-CET", "CUET"],
+        summary: "COP29, the UN climate conference held in Baku, Azerbaijan in November 2024, reached a landmark climate finance agreement committing developed nations to provide 300 billion dollars annually to developing countries by 2035 for climate adaptation and mitigation.",
+        keyPoints: [
+            "Baku Summit 2024 → [WHAT] The 29th 'COP' (Conference of the Parties) [WHY] where 190+ countries meet under the UN (United Nations) to fight global warming.",
+            "Climate Finance Target → [WHAT] The New Collective Quantified Goal (NCQG) of $300 billion [WHY] money that wealthy nations must give yearly to poor nations to build solar plants and sea walls.",
+            "Developing Nations' Voice → [WHAT] India and others demanded $1.3 trillion [WHY] because they feel $300 billion is not enough to help poor countries survive rising heat and floods.",
+            "UNFCCC Rulebook → [WHAT] The legal framework of the United Nations [WHY] which ensures that every country follows the rules of the Paris Agreement to keep the Earth cool.",
+            "COP30 Transition → [WHAT] The next meeting will be in Brazil in 2025 [WHY] focusing on saving the Amazon rainforests to breathe fresh life into the planet."
+        ],
+        examAngle: "Most likely asked as: Where was COP29 held? OR What was the climate finance goal decided?",
+        displayMode: "study-note",
+        showBeforeTopicId: "ca-ir-081"
+    },
+    {
         id: "sn-018", topicNumber: 18,
         title: "QUAD Summit 2024 (Delaware)",
-        caTag: "international-relations", topicYear: 2024,
+        caTag: "international", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
         summary: "The QUAD (Quadrilateral Security Dialogue) is a group of four democracies: India, USA, Japan, and Australia. In 2024, they met in Delaware (USA) to talk about keeping the 'Indo-Pacific' (the sea around India and China) safe and free.",
         keyPoints: [
@@ -452,11 +469,11 @@ export const caStudyNotes = [
         examTags: ["MH-CET", "CUET"],
         summary: "NISAR (NASA-ISRO Synthetic Aperture Radar) is a joint satellite mission between the USA's NASA and India's ISRO. This satellite will take 'X-Ray' like pictures of the Earth every 12 days to monitor natural disasters and climate change.",
         keyPoints: [
-            "NASA and ISRO Partnership → [WHAT] The world's most expensive imaging satellite built by both agencies [WHY] combining the best radar technology from both countries.",
-            "Mapping Earth in 12 Days → [WHAT] High-resolution radar that can see through clouds and the dark [WHY] to track how the Earth's surface changes over time.",
-            "Monitoring Disasters → [WHAT] It will measure earthquakes, landslides, and glacier melts [WHY] providing early warnings and mapping for rescue teams.",
-            "Agriculture and Water → [WHAT] Tracking groundwater levels and crop health from space [WHY] helping India manage its food and water security better.",
-            "ISRO's S-Band Radar → [WHAT] One of the two main radars on the satellite [WHY] specifically designed for tracking local environmental changes in South Asia."
+            "NASA & ISRO Partnership → [WHAT] A joint space project between India and the USA [WHY] to combine the best technology from both countries to study Earth's environment.",
+            "Synthetic Aperture Radar (SAR) → [WHAT] A 'SAR' radar is a smart camera that can see through clouds and even in the dark [WHY] to take clear pictures of the ground 24/7.",
+            "Mapping Earth in 12 Days → [WHAT] The satellite scans the entire planet very quickly [WHY] to track how the Earth's surface moves or changes over time.",
+            "Monitoring Disasters → [WHAT] It will measure earthquakes, landslides, and melting ice [WHY] to provide early warnings to people living in dangerous areas.",
+            "Water and Food Security → [WHAT] Tracking groundwater levels and crop health from space [WHY] helping India manage its farms and water resources better for the future."
         ],
         examAngle: "Most likely asked as: What is the full form of NISAR? OR Which two agencies are involved?",
         displayMode: "study-note",
@@ -590,13 +607,13 @@ export const caStudyNotes = [
         title: "Chess Olympiad 2024 (Double Gold)",
         caTag: "awards-sports", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "The Chess Olympiad is like the 'Olympics' for Chess, where teams from all over the world compete. In 2024, India made history by winning the Gold medal in Both the Men's and Women's categories.",
+        summary: "The Chess Olympiad is a global team tournament (like the Olympics for Chess). In 2024, India made history by winning the Gold medal in Both the Men's and Women's categories.",
         keyPoints: [
-            "Rare Double Gold → [WHAT] India became only the third country ever to win both gold medals [WHY] proving that India is now the world's superpower in Chess.",
-            "Gukesh D (Dommaraju Gukesh) → [WHAT] The 18-year-old star who led the Indian team [WHY] he is also the challenger for the World Chess Championship title.",
-            "Young Superstars → [WHAT] Players like Arjun Erigaisi and Praggnanandhaa also played key roles [WHY] showing that India has many young geniuses in the game.",
+            "Double Gold History → [WHAT] India became only the third country ever to win both top trophies [WHY] proving that India is now the world's superpower in intellectual games.",
+            "Gukesh D (Dommaraju Gukesh) → [WHAT] The 18-year-old 'Grandmaster' (the highest title a chess player can earn) [WHY] who led the Indian team to victory with a perfect performance.",
+            "Young Geniuses → [WHAT] Players like Arjun Erigaisi and Praggnanandhaa also won gold [WHY] showing that India's youth are leading the world in strategic thinking.",
             "Women's Victory → [WHAT] The women's team also won gold for the first time [WHY] led by senior player Harika Dronavalli and young star Divya Deshmukh.",
-            "Budapest Venue → [WHAT] The tournament was held in Hungary [WHY] where the Indian national anthem 'Jana Gana Mana' was played twice at the award ceremony."
+            "Budapest Event → [WHAT] The tournament was held in Hungary with 190+ countries [WHY] where India's double win became the biggest news in the chess world."
         ],
         examAngle: "Most likely asked as: Which country won double gold in 2024 Chess Olympiad? OR Who was India's top performer?",
         displayMode: "study-note",
@@ -743,13 +760,13 @@ export const caStudyNotes = [
         title: "Major GI Tags 2024",
         caTag: "business-economy", topicYear: 2024,
         examTags: ["MH-CET", "CUET"],
-        summary: "A GI (Geographical Indication) Tag is like a 'brand name' given by the government to products that belong to a specific place. It ensures that nobody else can sell fake versions of that product.",
+        summary: "A GI (Geographical Indication) Tag is like a 'certificate of origin' given to products that are special to a specific place. It ensures that nobody else can sell fake versions of that local specialty.",
         keyPoints: [
-            "What is a GI Tag? → [WHAT] Full form: 'Geographical Indication' [WHY] it protects traditional items like Darjeeling Tea or Banarasi Saree from being copied.",
-            "Kai Chutney (Odisha) → [WHAT] A rare chutney made from ants won a GI tag in 2024 [WHY] recognizing it as a unique tribal food of Odisha.",
-            "Majuli Masks (Assam) → [WHAT] Traditional handmade masks from India's largest river island [WHY] they are famous for their detail and 500-year-old history.",
-            "Banaras Thandai → [WHAT] The famous spiced milk drink from Varanasi received protection [WHY] helping local shopkeepers sell the 'real' traditional drink.",
-            "Economic Boost → [WHAT] GI tags help villagers sell their products at higher prices [WHY] because people trust the quality and tradition behind the tag."
+            "GI Tag Definition → [WHAT] Full form: 'Geographical Indication' [WHY] it protects traditional items (like a specific tea or saree) so that villagers can earn a fair price for their unique craft.",
+            "Kai Chutney (Odisha) → [WHAT] A unique chutney made from red weaver ants [WHY] received a GI tag in 2024 to recognize it as a specialized food of the tribal people in Mayurbhanj.",
+            "Majuli Masks (Assam) → [WHAT] Traditional handmade masks from the world's largest river island [WHY] they are famous for showing stories from Indian mythology for 500 years.",
+            "Banaras Thandai → [WHAT] The famous spiced milk drink from Varanasi [WHY] got protection to ensure that only the traditional recipe from that city can use the name.",
+            "Economic Value → [WHAT] Once a product has a GI tag, it can be sold at a higher price in world markets [WHY] because people trust it is the 'original' item made in its home place."
         ],
         examAngle: "Most likely asked as: Kai Chutney belongs to which state? OR What does GI stand for?",
         displayMode: "study-note",

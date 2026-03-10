@@ -154,7 +154,7 @@ export const ca2025UpdatesData = {
             correct: 1,
             explanation: "Operation Sindoor was launched on May 7, 2025, following the Pahalgam terror attack earlier in April. // VERIFIED VIA SEARCH",
             examTags: ["CUET", "MH-CET"],
-            caTag: "international-relations", caYear: 2025, verifiedAsOf: "2025-05", refreshPriority: "high",
+            caTag: "international", caYear: 2025, verifiedAsOf: "2025-05", refreshPriority: "high",
             cognitiveType: "recall", timePresure: "speed", speedTarget: 60
         },
         {
@@ -259,7 +259,7 @@ export const ca2025UpdatesData = {
             correct: 1,
             explanation: "US Vice President JD Vance and Secretary of State Marco Rubio were involved in the mediation. // VERIFIED VIA SEARCH",
             examTags: ["CUET"],
-            caTag: "international-relations", caYear: 2025, verifiedAsOf: "2025-05", refreshPriority: "medium",
+            caTag: "international", caYear: 2025, verifiedAsOf: "2025-05", refreshPriority: "medium",
             cognitiveType: "recall", timePresure: "speed", speedTarget: 60
         },
         {
@@ -510,7 +510,7 @@ export const ca2025UpdatesData = {
             correct: 1,
             explanation: "Pakistan launched Operation Bunyan-un-Marsoos targeting Indian military bases. // VERIFIED VIA SEARCH",
             examTags: ["CUET"],
-            caTag: "international-relations", caYear: 2025, verifiedAsOf: "2025-05", refreshPriority: "high",
+            caTag: "international", caYear: 2025, verifiedAsOf: "2025-05", refreshPriority: "high",
             cognitiveType: "recall", timePresure: "speed", speedTarget: 60
         },
         {

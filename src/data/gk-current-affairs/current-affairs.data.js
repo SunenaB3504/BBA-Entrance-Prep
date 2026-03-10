@@ -13,9 +13,9 @@ export const currentAffairsData = {
                 id: "ca-national",
                 title: "1. National Pillars & New Laws (2024-2025)",
                 content: {
-                    coreConcept: "The cornerstone of 2024 Current Affairs is the landmark overhaul of India's criminal justice system and key legislative reforms.\n\n1. The Three New Laws: BNS (replaces IPC), BNSS (replaces CrPC), and BSA (replaces Evidence Act) became effective July 1, 2024.\n2. Nari Shakti Vandan Adhiniyam: 33% reservation for women in Lok Sabha and Assemblies.\n3. 16th Finance Commission: Headed by Dr. Arvind Panagariya (2026-2031 period).",
-                    formulaBank: "• IPC -> BNS (Nyaya)\n• CrPC -> BNSS (Suraksha)\n• Evidence Act -> BSA (Sakshya)\n• Women's Resv -> 106th Amendment",
-                    logic: "To remember the new laws: 'Nyaya' is the punishment (BNS), 'Suraksha' is the protection/procedure (BNSS), and 'Sakshya' is the evidence (BSA). All three symbols of 'Decolonization'.",
+                    coreConcept: "In 2024, India completely changed its old British-style criminal laws to modern Indian ones. This is known as 'Decolonization' (removing old colonial rules).\n\n1. The Three New Laws: BNS (rules for crimes), BNSS (rules for how police work), and BSA (rules for evidence in court).\n2. Women's Power: A new law ensures that 1 out of every 3 seats in Parliament and State Assemblies is reserved for women leaders.\n3. One Nation, One Election: A plan to have all elections in India at the same time every 5 years to save money and time.",
+                    formulaBank: "• BNS -> New IPC (Nyaya/Justice)\n• BNSS -> New CrPC (Suraksha/Security)\n• BSA -> New Evidence Act (Sakshya/Proof)\n• Women Resv -> 106th Amendment",
+                    logic: "Think of it this way: BNS is what defines a crime, BNSS is how the police and courts handle it, and BSA is the proof needed. All three were launched on July 1, 2024.",
                     traps: "Don't confuse the implementation date (July 1, 2024) with the passing date (Dec 2023). Also, remember BNS is NOT the same as BNSS.",
                     examples: [
                         { q: "Who is the 'Nominal Head' of India?", a: "The President (currently Smt. Droupadi Murmu)." },
@@ -59,9 +59,9 @@ export const currentAffairsData = {
                 id: "ca-international",
                 title: "2. International Relations & Global Summits",
                 content: {
-                    coreConcept: "Global geopolitics in 2024-25 is defined by India's leadership in the Global South and shifts in major alliances (G20, BRICS, NATO).\n\n1. G20 Delhi Summit: Inclusion of the African Union as a permanent member (Global South focus).\n2. NATO Expansion: Finland and Sweden became the 31st and 32nd members.\n3. BRICS Expansion: Egypt, Ethiopia, Iran, and UAE joined effectively Jan 1, 2024.",
-                    formulaBank: "• G20 -> G21 (AU joined)\n• NATO 31st: Finland\n• NATO 32nd: Sweden\n• COP28: Dubai, UAE",
-                    logic: "Think of 'Expansion'. Most global bodies are growing. AU in G20, 4 new countries in BRICS, and the Nordic expansion of NATO are the key 'Additions' to remember.",
+                    coreConcept: "Global politics in 2024-25 is about countries joining hands to help each other. India has taken a lead in helping 'Developing Countries' (Global South).\n\n1. G20 (Group of 20): A club of the world's 20 biggest economies. In the Delhi Summit, it became 'G21' by adding the African Union.\n2. NATO (Security Alliance): A group of North American and European countries that protect each other. Finland and Sweden are the newest members.\n3. BRICS (Economic Group): A group of fast-growing countries like Brazil, Russia, India, China, and South Africa. It recently doubled its size by adding new members like Iran and UAE.",
+                    formulaBank: "• G20 -> Now G21 (AU added)\n• NATO 32nd Member: Sweden\n• BRICS+ New Members: 5 countries\n• COP28 Venue: Dubai, UAE",
+                    logic: "The main theme is 'Growing Groups'. Almost every major world group (G20, NATO, BRICS) added new members in 2024 to make themselves stronger and more inclusive.",
                     traps: "Don't confuse the venue of G20 2023 (India) with G20 2024 (Brazil). Also, Afghanistan is NOT a member of BRICS.",
                     examples: [
                         { q: "Which organization was added as a permanent member of G20 in 2023?", a: "African Union (AU)." },
