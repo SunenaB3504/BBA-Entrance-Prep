@@ -6,6 +6,79 @@ export const softwareAndOsData = {
     subject: "Computer Awareness",
     chapter: "Software & OS",
     examTags: ["MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "operating-systems",
+                title: "1. Operating Systems",
+                content: {
+                    coreConcept: "1. The Manager: An Operating System (OS) is the most important software on a computer. It manages the computer's memory and processes, as well as all of its hardware and software.\n2. The Interface: It provides a 'User Interface' (like Windows desktop or Android icons) so humans can talk to the machine.\n3. Core Tasks: Process Management (running apps), Memory Management (RAM usage), File Management (folders), and Device Management (Mouse/Printer).",
+                    formulaBank: "Common OS Types:\n1. Desktop: Windows (Microsoft), macOS (Apple), Linux (Open Source).\n2. Mobile: Android (Google), iOS (Apple).\n3. Server: Windows Server, Ubuntu Server.\n4. Real-Time (RTOS): Used in robots and spacecraft where timing is critical.",
+                    logic: "The Booting Process:\nStep 1: Power on -> BIOS (in ROM) runs first.\nStep 2: BIOS checks hardware (POST - Power On Self Test).\nStep 3: BIOS looks for the OS on the Hard Drive.\nStep 4: OS is loaded into RAM. This process is called 'Booting'.",
+                    traps: "TRAP 1: Browser vs OS\nGoogle Chrome is NOT an OS; it is an application software. However, specialized laptops run 'ChromeOS' which is an operating system.\n\nTRAP 2: Open Source vs Freeware\nLinux is Open Source (you can see and change the code). Freeware (like Adobe Reader) is free to use but the code is kept secret (Proprietary).\n\nTRAP 3: DOS vs Windows\nMS-DOS used a 'Command Line Interface' (typing text). Modern Windows uses a 'Graphical User Interface' (GUI) with icons.",
+                    examples: [
+                        { q: "Which software acts as an interface between user and hardware?", a: "Operating System (OS)" },
+                        { q: "Is Android open source or proprietary?", a: "Mainly Open Source (based on Linux)" },
+                        { q: "What is the process of starting a computer called?", a: "Booting" },
+                        { q: "Which OS is developed by Apple for iPhones?", a: "iOS" },
+                        { q: "First program that runs when you power on?", a: "BIOS" },
+                        { q: "Is Linux an application software?", a: "No, it is System Software (specifically an OS)." },
+                        { q: "What does GUI stand for?", a: "Graphical User Interface" },
+                        { q: "Mention one task of the OS.", a: "Memory Management / File Management" },
+                        { q: "OS from Microsoft launching in 1985?", a: "Windows" },
+                        { q: "Which OS uses a Command Line Interface (CLI)?", a: "MS-DOS" }
+                    ],
+                    speedSummary: "- OS = System Software | Managed hardware & apps.\n- Windows/macOS/Linux = Desktop | Android/iOS = Mobile.\n- BIOS starts the Booting process."
+                }
+            },
+            {
+                id: "office-productivity",
+                title: "2. MS Office Productivity",
+                content: {
+                    coreConcept: "1. MS Word: A 'Word Processor' for letters, reports, and books.\n2. MS Excel: A 'Spreadsheet' for math, accounting, and data analysis.\n3. MS PowerPoint: A 'Presentation' tool for slides and pitches.",
+                    formulaBank: "Key Shortcuts & Rules:\n1. Excel Formulas: Always start with '=' (e.g., =SUM(A1:A5)).\n2. $ Sign: Used for Absolute References (e.g., $B$2) to lock a cell.\n3. Transitions: Effects *between* slides.\n4. Animations: Effects *on objects* (text/images) inside one slide.\n5. Word Mail Merge: Creating 100 letters using 1 template + 1 address list.",
+                    logic: "Excel Logic (Cell Addresses):\n- Column A + Row 1 = Cell A1.\n- To calculate Average of A1 to A5: =AVERAGE(A1:A5).\n- To count only numbers: =COUNT(A1:A5).\n- To count everything (text + numbers): =COUNTA(A1:A5).",
+                    traps: "TRAP 1: Word vs. Excel for Data\nIf you need to do complex math, use Excel. If you just need a clean table for a report, use Word. Exams often ask 'Which is best for budget tracking?' -> Excel.\n\nTRAP 2: Transition vs. Animation\nStudents often mix these up. Slide Transition = The whole page slides; Animation = The text on the page flies in.\n\nTRAP 3: File Extensions\nOld versions (before 2007) used .doc, .xls, .ppt. Modern versions use .docx, .xlsx, .pptx (The 'x' stands for XML).",
+                    examples: [
+                        { q: "Shortcut for 'Undo' in Office?", a: "Ctrl + Z" },
+                        { q: "Excel formula for finding the highest value?", a: "=MAX(range)" },
+                        { q: "What key starts a PowerPoint from Slide 1?", a: "F5" },
+                        { q: "Extension for an Excel 365 file?", a: ".xlsx" },
+                        { q: "Feature to create labels for 500 people?", a: "Mail Merge" },
+                        { q: "Shortcut for 'Find and Replace'?", a: "Ctrl + H" },
+                        { q: "Formula to add A1 and B1?", a: "=A1+B1" },
+                        { q: "Which key edits a cell in Excel?", a: "F2" },
+                        { q: "Difference between .ppt and .pptx?", a: ".pptx is the newer XML-based format." },
+                        { q: "What defines a range in Excel?", a: "The colon symbol (:), e.g., A1:A10." }
+                    ],
+                    speedSummary: "- Word = Documents | Excel = Math/Cells | PowerPoint = Slides.\n- Transitions = Between slides | Animations = Inside slides.\n- Formulas start with '='."
+                }
+            },
+            {
+                id: "software-categories",
+                title: "3. Software Categories",
+                content: {
+                    coreConcept: "1. System Software: Programs that run the hardware (OS, Device Drivers, Utilities like WinZip).\n2. Application Software: Programs that do work for the user (Word, VLC, Photoshop, Chrome).\n3. Translators: Computers only speak Binary (0,1). Higher languages (C++, Java, Python) must be translated.",
+                    formulaBank: "The Translator Pair:\n1. Compiler: Scans the *whole* code at once and creates an .exe file (Faster execution).\n2. Interpreter: Translates *line-by-line* as the program runs (Easier to debug).\n3. Assembler: Translates Assembly (low-level) to Machine Code.",
+                    logic: "Software Licensing:\n- Proprietary: Paid, secret code (MS Office, Windows).\n- Open Source: Free, public code (Linux, Android, VLC).\n- Shareware: Free trial for 30 days, then pay (WinRAR).\n- Freeware: Free forever, but code is secret (Adobe Reader, Skype).",
+                    traps: "TRAP 1: Language Hierarchy\nLow-level language (Binary/Assembly) is close to hardware. High-level (Python/Java) is close to human English.\n\nTRAP 2: Utility vs Application\nWinZip and Antivirus are 'Utilities' because they help the computer. Photoshop is an 'Application' because it helps the user create art.\n\nTRAP 3: Compiler vs Interpreter\nIf you see 'translates the entire source code at once', the answer is ALWAYS Compiler.",
+                    examples: [
+                        { q: "Interpreter translates code in what way?", a: "Line by line." },
+                        { q: "WinRAR is an example of which license?", a: "Shareware (free trial)" },
+                        { q: "Is Python a high-level or low-level language?", a: "High-level (looks like English)" },
+                        { q: "Which software compresses files?", a: "WinZip / 7-Zip (Utility Software)" },
+                        { q: "VLC Media player is open-source?", a: "Yes." },
+                        { q: "What translates Assembly to Machine code?", a: "Assembler" },
+                        { q: "Is an Antivirus system or application software?", a: "System Software (Utility)" },
+                        { q: "Extension for a Windows executable file?", a: ".exe" },
+                        { q: "Can you modify the code of Proprietary software?", a: "No, the source code is hidden." },
+                        { q: "Primary difference between Freeware and Open Source?", a: "Open Source allows code modification; Freeware does not." }
+                    ],
+                    speedSummary: "- System S/W (OS) vs Application S/W (User apps).\n- Compiler = Whole code | Interpreter = Line by line.\n- Open Source = Free + Change code | Proprietary = Paid + Secret code."
+                }
+            }
+        ]
+    },
     flashcards: [
         { id: "sw-fc-001", term: "System Software", definition: "Includes OS (Windows, Linux) and utility software." },
         { id: "sw-fc-002", term: "Application Software", definition: "MS Word, Excel, Photoshop, Browsers." },

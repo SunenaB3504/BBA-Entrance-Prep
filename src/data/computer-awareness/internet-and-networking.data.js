@@ -6,6 +6,79 @@ export const internetAndNetworkingData = {
     subject: "Computer Awareness",
     chapter: "Internet & Networking",
     examTags: ["MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "internet-protocols",
+                title: "1. Internet Protocols & Services",
+                content: {
+                    coreConcept: "1. The Language: Protocols are a set of rules that allow computers to 'talk' to each other. Without them, the internet would just be a pile of disconnected wires.\n2. TCP/IP: The base language of the internet. IP handles the 'Address' (where it's going), and TCP handles the 'Delivery' (making sure it gets there and isn't broken).\n3. Identity: Every device on a network has a unique IP Address (Example: 192.168.1.1).",
+                    formulaBank: "The Protocol Cheat Sheet:\n1. HTTP (Web): HyperText Transfer Protocol. (HTTPS is the Secure version).\n2. FTP (Files): File Transfer Protocol. For moving bulk files.\n3. SMTP (Mail Out): Simple Mail Transfer Protocol. For SENDING emails.\n4. POP3 / IMAP (Mail In): For RECEIVING emails. IMAP keeps mail on the server.\n5. DNS: Domain Name System. Translates 'google.com' to an IP address.",
+                    logic: "The DNS Phonebook Logic:\nStep 1: User types 'google.com' in the browser.\nStep 2: Browser asks the DNS Server: 'What is the IP of google.com?'\nStep 3: DNS replies: 'It is 142.250.190.46'.\nStep 4: Browser connects directly to that IP address.",
+                    traps: "TRAP 1: HTTP vs HTML\nHTML is the language used to *build* a page. HTTP is the protocol used to *send* that page across the internet.\n\nTRAP 2: SMTP vs POP3\nThink of SMTP as the 'Postman' who takes your letter *away*. Think of POP3 as the 'Mailbox' where you *collect* your letters.\n\nTRAP 3: IP Address Versions\nIPv4 uses 4 sets of numbers (e.g., 172.16.254.1). IPv6 is the newer, much larger version (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).",
+                    examples: [
+                        { q: "Protocol for secure online banking?", a: "HTTPS" },
+                        { q: "What does the 'S' in HTTPS stand for?", a: "Secure" },
+                        { q: "Who invented the World Wide Web?", a: "Tim Berners-Lee" },
+                        { q: "Protocol used to download files?", a: "FTP" },
+                        { q: "What translates domain names into IP addresses?", a: "DNS" },
+                        { q: "Protocol for sending an email to a friend?", a: "SMTP" },
+                        { q: "Which protocol ensures data packets reach safely?", a: "TCP" },
+                        { q: "Maximum number in an IP octet (e.g., 192)?", a: "255" },
+                        { q: "Is the WWW the same as the Internet?", a: "No, WWW is just one service running on the Internet." },
+                        { q: "In an email, what does BCC stand for?", a: "Blind Carbon Copy" }
+                    ],
+                    speedSummary: "- HTTP = Web | SMTP = Postman | DNS = Phonebook.\n- IP Address = Computer's house address.\n- HTTPS = Encrypted & Safe."
+                }
+            },
+            {
+                id: "networking-hardware",
+                title: "2. Networking Hardware & Topology",
+                content: {
+                    coreConcept: "1. The Hardware: Physical devices that connect computers together.\n2. Topology: The 'Shape' or 'Layout' of the network connection.",
+                    formulaBank: "Key Networking Devices:\n1. Hub: A 'dumb' device that sends data to *everyone* connected to it.\n2. Switch: A 'smart' device that sends data *only* to the intended recipient.\n3. Router: The 'traffic police' that connects your home network to the Global Internet.\n4. Modem: Converts Digital signals to Analog (and vice versa) for telephone lines.",
+                    logic: "Topology Comparison:\n- STAR: All devices connect to a central Hub/Switch. (Most common today).\n- BUS: All devices connect to a single 'Backbone' cable.\n- RING: Data travels in a circle from one computer to the next.\n- MESH: Every device is connected to every other device. (Most reliable).",
+                    traps: "TRAP 1: Hub vs Switch\nIf 5 computers are on a Hub, and Computer A sends a private message to B, *everyone* sees it. On a Switch, *only* B sees it.\n\nTRAP 2: Intranet vs Internet\nThe Internet is public and global. An 'Intranet' is a private network used only inside a specific company or school.\n\nTRAP 3: LAN vs WAN\nLAN (Local) is for one building. WAN (Wide) is for connecting cities or countries. The Internet is the ultimate WAN.",
+                    examples: [
+                        { q: "Device that connects different networks?", a: "Router" },
+                        { q: "Which topology uses a central hub?", a: "Star Topology" },
+                        { q: "MODEM stands for...?", a: "Modulator-Demodulator" },
+                        { q: "Network for a single home or office?", a: "LAN (Local Area Network)" },
+                        { q: "Topology where every node connects to every other node?", a: "Mesh Topology" },
+                        { q: "A private network inside an office?", a: "Intranet" },
+                        { q: "Which device is 'dumb' and broadcasts to all?", a: "Hub" },
+                        { q: "Network type spanning an entire city?", a: "MAN (Metropolitan Area Network)" },
+                        { q: "Device used to boost a weak network signal?", a: "Repeater" },
+                        { q: "What does Bluetooth create?", a: "PAN (Personal Area Network)" }
+                    ],
+                    speedSummary: "- Hub = Broadcasts | Switch = Selective | Router = Connects Networks.\n- Star = Centralized | Mesh = Highly Reliable.\n- LAN = Building | WAN = Global."
+                }
+            },
+            {
+                id: "www-cloud",
+                title: "3. WWW & Cloud Computing",
+                content: {
+                    coreConcept: "1. The Web (WWW): A system of interlinked documents (webpages) accessed via the Internet.\n2. Cloud Computing: Using a network of remote servers on the internet to store/manage data, rather than your own local computer.",
+                    formulaBank: "The Cloud Models:\n1. SaaS (Software): Using apps online (e.g., Gmail, Google Docs, Spotify).\n2. IaaS (Infrastructure): Renting 'virtual' computers/storage (e.g., Amazon AWS).\n3. PaaS (Platform): Tools for developers to build apps without managing servers.",
+                    logic: "How a Website Loads:\nStep 1: Your Browser (Client) sends a request for a page.\nStep 2: The request goes to a Web Server.\nStep 3: The Server finds the page and sends it back to you.\nCookies: Small files stored on your computer by a website to remember your login or cart.",
+                    traps: "TRAP 1: Browser vs Search Engine\nGoogle and Bing are Search Engines (websites). Chrome and Safari are Browsers (software programs). You use a Browser to visit a Search Engine.\n\nTRAP 2: Cloud Storage vs Backup\nCloud storage (like Dropbox) is for accessing files anywhere. Backup is specifically for keeping a *copy* safe in case of disaster.\n\nTRAP 3: Homepage vs Website\nA Homepage is just the *front door* (first page). A Website is the entire *building* (all pages together).",
+                    examples: [
+                        { q: "Which software do you use to view webpages?", a: "Web Browser (Chrome, Safari, Firefox)" },
+                        { q: "Microsoft 365 is which cloud model?", a: "SaaS (Software as a Service)" },
+                        { q: "Is Google a browser or a search engine?", a: "Search Engine." },
+                        { q: "What stores your login on a website?", a: "Cookie" },
+                        { q: "Renting server space from Amazon is...?", a: "IaaS (Infrastructure as a Service)" },
+                        { q: "The first page of a website?", a: "Homepage" },
+                        { q: "A clickable link on a webpage?", a: "Hyperlink" },
+                        { q: "What does HTML stand for?", a: "HyperText Markup Language" },
+                        { q: "Copies of sites stored locally for speed?", a: "Cache" },
+                        { q: "What is a 'Spam' email?", a: "Unsolicited or junk bulk email." }
+                    ],
+                    speedSummary: "- Browser = The Window | Search Engine = The Librarian.\n- SaaS = Just use it | IaaS = Rent the machine.\n- Cookies remember you | Caches speed things up."
+                }
+            }
+        ]
+    },
     flashcards: [
         { id: "net-fc-001", term: "HTTP vs HTTPS", definition: "HTTPS is secure/encrypted; HTTP is not." },
         { id: "net-fc-002", term: "SMTP", definition: "Simple Mail Transfer Protocol - For SENDING emails." },

@@ -6,6 +6,79 @@ export const cybersecurityData = {
     subject: "Computer Awareness",
     chapter: "Cybersecurity & Ethics",
     examTags: ["MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "malware-attacks",
+                title: "1. Malware & Cyber Attacks",
+                content: {
+                    coreConcept: "1. Malware: Short for 'Malicious Software'. It is any program designed to damage, disrupt, or steal data from a computer system.\n2. The Spread: Some malware spreads through your action (Virus), some spreads automatically (Worm), and some hides inside 'good' programs (Trojan).\n3. Social Engineering: Attacking the human 'brain' instead of the computer code (Phishing).",
+                    formulaBank: "Malware Types comparison:\n1. Virus: Needs a host file + human action (opening an email attachment) to spread.\n2. Worm: Self-replicating. Spreads over networks *without* human help.\n3. Trojan: Disguised as useful software. It does not replicate but creates a 'backdoor'.\n4. Ransomware: Holds your data hostage by encrypting it and demanding money.\n5. Spyware: Silently records your activity (Keyloggers steal passwords).",
+                    logic: "The Attack Logic:\n- Step 1: Infection (User clicks a link or downloads a file).\n- Step 2: Execution (Malware starts running in the background).\n- Step 3: Payload (The actual damage - deleting files, stealing data, or demanding ransom).\nLogic: A Firewall stops the malware from *entering*; an Antivirus removes it *after* it enters.",
+                    traps: "TRAP 1: Virus vs Worm\nExams love this! Remember: Virus = Needs human help. Worm = Spreads on its own like a wildfire.\n\nTRAP 2: Phishing vs Spam\nSpam is just unwanted bulk mail (ads). Phishing is a targeted attempt to *steal* your password or credit card.\n\nTRAP 3: DoS vs DDoS\nDoS is one computer attacking. DDoS is thousands of 'zombie' computers (Botnet) attacking a website together to crash it.",
+                    examples: [
+                        { q: "Malware that spreads automatically over networks?", a: "Worm" },
+                        { q: "Malware disguised as a free game?", a: "Trojan Horse" },
+                        { q: "Attack that manipulates human psychology?", a: "Social Engineering" },
+                        { q: "Software that records every key you press?", a: "Keylogger" },
+                        { q: "What does 'Ransom' in Ransomware imply?", a: "Payment demanded to unlock encrypted data." },
+                        { q: "Malicious link in a fake bank email?", a: "Phishing" },
+                        { q: "What is a 'Botnet'?", a: "A network of compromised computers used in DDoS attacks." },
+                        { q: "Malware that requires a host file to spread?", a: "Virus" },
+                        { q: "Difference between DoS and DDoS?", a: "DDoS uses multiple systems (distributed) for the attack." },
+                        { q: "Malware that lie dormant until a specific date?", a: "Logic Bomb" }
+                    ],
+                    speedSummary: "- Virus = Manual | Worm = Automatic | Trojan = Disguised.\n- Phishing = Identity Theft | Ransomware = Data Ransom.\n- Firewalls block entry | Antivirus cleans the mess."
+                }
+            },
+            {
+                id: "security-tools",
+                title: "2. Security Tools",
+                content: {
+                    coreConcept: "1. Defense in Depth: You cannot rely on just one tool. You need a 'Layered' defense.\n2. Encryption: Making data unreadable to hackers (Ciphertext). Only authorized people with a 'Key' can read it.\n3. VPN: Creates a secure, private 'tunnel' for your data over the public internet.",
+                    formulaBank: "The Defense Toolkit:\n1. Firewall: Monitors network traffic. Acts as a gatekeeper.\n2. Antivirus: Scans files and memory. Detects and deletes malware signatures.\n3. SSL/TLS: Protocols that provide the 'padlock' icon in your browser (HTTPS).\n4. VPN (Virtual Private Network): Hides your actual IP address and encrypts your traffic.",
+                    logic: "Encryption Logic:\n- Plaintext: 'Hello' (Human readable).\n- Encryption Algorithm: Scrambles the text.\n- Ciphertext: 'x7#j!L' (Unreadable junk).\n- Decryption Key: Turns the junk back into 'Hello'.",
+                    traps: "TRAP 1: The Firewall Myth\nMany students think a Firewall cleans viruses. NO. A Firewall is like a security guard at the gate. If a thief (virus) is *already* inside the house, the guard cannot find him. You need a detective (Antivirus).\n\nTRAP 2: HTTPS Safety\nHTTPS means your connection is *private*, but it doesn't mean the website itself is *good*. A hacker can have an HTTPS site too!\n\nTRAP 3: VPN Speed\nEncryption and rerouting through a VPN usually slows down your internet speed slightly. It's for security, not speed.",
+                    examples: [
+                        { q: "Device/Software that filters network traffic?", a: "Firewall" },
+                        { q: "What converts plaintext into ciphertext?", a: "Encryption" },
+                        { q: "Software used to remove a virus already on disk?", a: "Antivirus" },
+                        { q: "Commonly used protocol for web encryption?", a: "SSL or TLS" },
+                        { q: "Tool that hides your IP address?", a: "VPN" },
+                        { q: "What does a padlock icon in browser mean?", a: "Connection is secure (HTTPS)." },
+                        { q: "Do Firewalls scan already-infected files?", a: "No, they only monitor traffic flow." },
+                        { q: "Why update antivirus daily?", a: "To get definitions for 'Zero-day' or new threats." },
+                        { q: "Is Encryption a threat or a tool?", a: "It is a tool used for protection." },
+                        { q: "Function of a 'Recovery Key'?", a: "To decrypt data after a system failure or attack." }
+                    ],
+                    speedSummary: "- Firewall = Filter | Antivirus = Cleaner.\n- Encryption = Scrambling | VPN = Privacy Tunnel.\n- Padlock = SSL/TLS Security."
+                }
+            },
+            {
+                id: "ethics-best-practices",
+                title: "3. Ethics & Best Practices",
+                content: {
+                    coreConcept: "1. Digital Hygiene: Good habits that keep your data safe.\n2. Authentication: Proving you are who you say you are (Passwords, PINs, OTPs).\n3. Laws: The 'IT Act' (in India) or similar laws regulate cybercrime and digital activities.",
+                    formulaBank: "Authentication Levels:\n1. 1FA (Single Factor): Just a Password.\n2. 2FA (Two-Factor): Password + OTP (One-Time Password) on your phone.\n3. MFA (Multi-Factor): Password + OTP + Biometric (Fingerprint).\n4. Complexity Rule: Mix symbols (@,#,$), numbers, and case-sensitive letters.",
+                    logic: "The Backup Rule (3-2-1 Logic):\n- Keep 3 copies of your data.\n- Store them on 2 different types of media (e.g., HDD + Cloud).\n- Keep 1 copy off-site (in a different physical location).",
+                    traps: "TRAP 1: Secret Questions\nAnswers like 'Pet's name' or 'Favorite food' are easily found on social media. They are often the weakest point of security.\n\nTRAP 2: Public Wi-Fi\nNever do banking or shopping on public airport or cafe Wi-Fi. Hackers can often 'sniff' or see your data on these networks.\n\nTRAP 3: Logout vs. Close Window\nClosing a browser window does NOT always end your session. Always click 'Logout' to be safe, especially on shared computers.",
+                    examples: [
+                        { q: "Full form of OTP?", a: "One-Time Password" },
+                        { q: "Best defense against Ransomware?", a: "Regular offline Backups." },
+                        { q: "Is 'Password123' a strong password?", a: "No, it's very weak and easily guessed." },
+                        { q: "What is 2FA?", a: "Two-Factor Authentication." },
+                        { q: "Should you share your OTP with anyone?", a: "Never." },
+                        { q: "Safe method to store multiple passwords?", a: "Password Manager." },
+                        { q: "Is it ethical to use someone's Wi-Fi without permission?", a: "No, it is considered unauthorized access." },
+                        { q: "What identifies a user by their physical traits?", a: "Biometrics (Fingerprint/FaceID)." },
+                        { q: "Main law for cybercrime in India?", a: "Information Technology (IT) Act, 2000." },
+                        { q: "Why use 'Incognito' or 'Private' mode?", a: "To prevent the browser from saving history and cookies." }
+                    ],
+                    speedSummary: "- Use 2FA whenever possible.\n- 3-2-1 Backup rule: 3 copies, 2 media, 1 off-site.\n- Authentication: Something you know, have, or are."
+                }
+            }
+        ]
+    },
     flashcards: [
         { id: "sec-fc-001", term: "Virus", definition: "Malware that requires human action to spread (e.g., opening an attachment)." },
         { id: "sec-fc-002", term: "Worm", definition: "Malware that spreads automatically over networks without human action." },

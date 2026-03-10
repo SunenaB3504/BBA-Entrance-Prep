@@ -6,6 +6,79 @@ export const abbreviationsData = {
     subject: "Computer Awareness",
     chapter: "Tech Abbreviations",
     examTags: ["MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "hardware-system-abbr",
+                title: "1. Hardware & System Abbreviations",
+                content: {
+                    coreConcept: "1. Primary vs Secondary: RAM is the speed-demon (Volatile), ROM is the permanent memory (Non-volatile).\n2. CPU Components: The brain (CPU) has a math unit (ALU) and a control unit (CU).\n3. BIOS: The very first set of instructions that wakes up the computer.",
+                    formulaBank: "The Hardware Dictionary:\n- CPU: Central Processing Unit.\n- RAM: Random Access Memory (Temporary).\n- ROM: Read-Only Memory (Permanent).\n- ALU: Arithmetic Logic Unit (Math & Logic).\n- BIOS: Basic Input-Output System.\n- USB: Universal Serial Bus.\n- SSD: Solid State Drive (Faster than HDD).",
+                    logic: "Boot-up Logic:\n1. Power ON.\n2. BIOS runs (Basic Input Output System).\n3. BIOS finds the OS on the SSD/HDD.\n4. CPU loads OS into RAM (Random Access Memory).\n5. Computer is ready to use.",
+                    traps: "TRAP 1: RAM vs ROM\nExams love to confuse these. RAM is where your *open programs* live. ROM is where the *startup code* lives.\n\nTRAP 2: CPU vs CU\nThe CU (Control Unit) is a *part* of the CPU. The CPU is the whole brain.\n\nTRAP 3: USB is a 'Bus'\n'Bus' in tech means a path for data to travel. USB is just a 'Universal' way to connect many types of devices.",
+                    examples: [
+                        { q: "Brain of the computer?", a: "CPU" },
+                        { q: "Temporary memory for open apps?", a: "RAM" },
+                        { q: "Math/Logic unit of the CPU?", a: "ALU" },
+                        { q: "Memory that stores BIOS?", a: "ROM" },
+                        { q: "First system to run on power-up?", a: "BIOS" },
+                        { q: "Universal port for mouse/keyboard?", a: "USB" },
+                        { q: "Modern, non-moving storage drive?", a: "SSD" },
+                        { q: "Part of CPU that directs operations?", a: "CU (Control Unit)" },
+                        { q: "Old type of 'Spinning' hard drive?", a: "HDD (Hard Disk Drive)" },
+                        { q: "High-quality video port?", a: "HDMI (High-Definition Multimedia Interface)" }
+                    ],
+                    speedSummary: "- RAM = Temporary | ROM = Permanent.\n- ALU does math | BIOS starts the computer.\n- SSD is faster than HDD."
+                }
+            },
+            {
+                id: "internet-networking-abbr",
+                title: "2. Internet & Networking Abbreviations",
+                content: {
+                    coreConcept: "1. The Web (WWW): The system of pages you visit. The Internet is the 'pipes' that carry the data.\n2. Addressing: Every computer has an IP (Internet Protocol) and a name known as a URL (Uniform Resource Locator).\n3. Security: Protocols like SSL and HTTPS keep your data encrypted.",
+                    formulaBank: "The Connectivity Web:\n- WWW: World Wide Web.\n- HTML: HyperText Markup Language (The builder).\n- HTTP: HyperText Transfer Protocol (The sender).\n- HTTPS: HTTP + Secure (Encrypted).\n- URL: Uniform Resource Locator (The address).\n- IP: Internet Protocol.\n- DNS: Domain Name System (The phonebook).",
+                    logic: "Website Loading Logic:\nStep 1: Type URL (google.com).\nStep 2: DNS finds the IP.\nStep 3: Browser uses HTTP/HTTPS to ask the server for the page.\nStep 4: Server sends the HTML file back to your computer.",
+                    traps: "TRAP 1: URL vs HTTP\nURL is the *address* (where it is). HTTP is the *protocol* (how to send the data).\n\nTRAP 2: LAN vs WAN\nLAN = Local/Small. WAN = Wide/Big (The Internet).\n\nTRAP 3: ISP vs IP\nAn ISP is a *company* (like Airtel/Jio). An IP is a *number* assigned to your device.",
+                    examples: [
+                        { q: "What does the 'S' in HTTPS stand for?", a: "Secure" },
+                        { q: "Address of a website?", a: "URL" },
+                        { q: "Full form of HTML?", a: "HyperText Markup Language" },
+                        { q: "Network for a small building?", a: "LAN" },
+                        { q: "What translates names to IP addresses?", a: "DNS" },
+                        { q: "Full form of ISP?", a: "Internet Service Provider" },
+                        { q: "What is the global network of networks?", a: "The Internet (WAN)" },
+                        { q: "Hyperlink protocol used for websites?", a: "HTTP" },
+                        { q: "What is VPN?", a: "Virtual Private Network" },
+                        { q: "System of interlinked documents?", a: "WWW" }
+                    ],
+                    speedSummary: "- HTML builds | HTTP sends | URL locates.\n- HTTPS is secure | DNS is the phonebook.\n- ISP provides your internet access."
+                }
+            },
+            {
+                id: "formats-modern-tech-abbr",
+                title: "3. Formats & Modern Tech Abbreviations",
+                content: {
+                    coreConcept: "1. File Formats: Different 'tags' for different types of data (Images, Documents, Video).\n2. Modern AI: Machines that 'think' (AI) and learn from data (ML).\n3. User Experience: How you interact with the computer (GUI vs CLI).",
+                    formulaBank: "The Digital Media Box:\n- PDF: Portable Document Format (Fixed layout).\n- JPEG: Joint Photographic Experts Group (Images).\n- PNG: Portable Network Graphics (Images with transparency).\n- ASCII: American Standard Code for Information Interchange (Text coding).\n- AI: Artificial Intelligence.\n- GUI: Graphical User Interface (Icons/Mouse).\n- OTT: Over-The-Top (Streaming like Netflix).",
+                    logic: "Interface Logic:\n- CLI (Command Line Interface): You type everything. (Old school/Hard).\n- GUI (Graphical User Interface): You click icons. (Modern/Easy).\nLogic: Modern tech aims to move from GUI (clicking) to AI (talking/predicting).",
+                    traps: "TRAP 1: JPEG 'P'\nThe 'P' stands for 'Photographic', not 'Picture'. This is a common exam trick.\n\nTRAP 2: PNG vs JPEG\nPNG is 'Portable Network Graphics'. Use PNG if you need a transparent background. Use JPEG for photos.\n\nTRAP 3: Captcha vs OTP\nBoth are for security. OTP identifies *you* (via phone). Captcha identifies that you are *human* (not a bot).",
+                    examples: [
+                        { q: "Document format that looks same everywhere?", a: "PDF" },
+                        { q: "What does AI stand for?", a: "Artificial Intelligence" },
+                        { q: "Common image format for photos?", a: "JPEG" },
+                        { q: "Full form of GUI?", a: "Graphical User Interface" },
+                        { q: "Modern way to stream movies?", a: "OTT" },
+                        { q: "What is a QR Code?", a: "Quick Response Code" },
+                        { q: "Which format supports transparent backgrounds?", a: "PNG" },
+                        { q: "What is IoT?", a: "Internet of Things" },
+                        { q: "What does the 'P' in JPEG stand for?", a: "Photographic" },
+                        { q: "Technology that mimics human learning?", a: "ML (Machine Learning)" }
+                    ],
+                    speedSummary: "- PDF = Documents | JPEG = Photos | PNG = Transparency.\n- GUI = Icons | CLI = Text Commands.\n- AI = Thinking Machines."
+                }
+            }
+        ]
+    },
     flashcards: [
         { id: "abbr-fc-001", term: "RAM", definition: "Random Access Memory - Temporary primary storage." },
         { id: "abbr-fc-002", term: "ROM", definition: "Read Only Memory - Permanent storage for BIOS." },

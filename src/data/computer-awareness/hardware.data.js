@@ -6,6 +6,79 @@ export const hardwareData = {
     subject: "Computer Awareness",
     chapter: "Hardware & Architecture",
     examTags: ["MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "io-devices",
+                title: "1. Input and Output Devices",
+                content: {
+                    coreConcept: "1. The Boundary: I/O devices are the 'bridges' between the human world and the digital brain of the computer.\n2. Input Devices: These take physical data (like key presses, sound, or light) and turn them into binary (0s and 1s) for the CPU.\n3. Output Devices: These take binary results from the CPU and turn them into something humans can sense (like images on a screen, printed text, or sound).",
+                    formulaBank: "Key Specs to Know:\n1. DPI (Dots Per Inch): Measure of Mouse sensitivity or Printer resolution.\n2. Refresh Rate (Hz): How many times a Monitor updates its image per second (e.g., 60Hz, 144Hz).\n3. OMR / OCR / MICR: \n   - OMR: Optical Mark Recognition (Exam sheets)\n   - OCR: Optical Character Recognition (Scanning text)\n   - MICR: Magnetic Ink Character Recognition (Cheque numbers)",
+                    logic: "The Flow of Data:\nStep 1: User provides input via an Input Device (e.g., typing 'hello').\nStep 2: The device converts this into electrical signals/binary.\nStep 3: The CPU processes the data.\nStep 4: The result is displayed on an Output Device (e.g., Monitor shows 'hello').\nDual Devices: Some devices like Touchscreens and Modems do BOTH jobs.",
+                    traps: "TRAP 1: The MICR Confusion\nStudents often think MICR is for searching. It is specifically for processing bank cheques using special magnetic ink.\n\nTRAP 2: Plotter vs Printer\nA Plotter is NOT just a big printer. It uses pens to draw continuous vector lines, primarily for architectural blueprints and engineering drawings.\n\nTRAP 3: I/O or Just 'I'?\nA Touchscreen is BOTH input and output. A standard Monitor is ONLY output. Don't confuse the two!",
+                    examples: [
+                        { q: "Which device is used for playing flight simulators?", a: "Joystick (Input)" },
+                        { q: "Specialized device for large engineering drawings?", a: "Plotter (Output)" },
+                        { q: "Device to digitize a physical photo?", a: "Scanner (Input)" },
+                        { q: "What does MICR stand for?", a: "Magnetic Ink Character Recognition" },
+                        { q: "Is a Modem input or output?", a: "Both. It receives and sends data." },
+                        { q: "Which device is used for biometric security?", a: "Fingerprint/Retina Scanner (Input)" },
+                        { q: "What measures printer quality?", a: "DPI (Dots Per Inch)" },
+                        { q: "Input device used for checking MCQ sheets?", a: "OMR (Optical Mark Recognition)" },
+                        { q: "Device used to point and click on a GUI?", a: "Mouse (Input)" },
+                        { q: "Is a Braille Reader input or output?", a: "Output (provides tactile feedback for the blind)" }
+                    ],
+                    speedSummary: "- Input = Data IN (Keyboard, Mouse, Scanner)\n- Output = Data OUT (Monitor, Printer, Speaker)\n- MICR = Cheques | OMR = Exams | Plotter = Blueprints"
+                }
+            },
+            {
+                id: "memory-hierarchy",
+                title: "2. Memory Hierarchy",
+                content: {
+                    coreConcept: "1. The Balancing Act: Computers need memory that is FAST (Registers) and memory that is LARGE (Hard Drives). Since fast memory is expensive, we use a 'Hierarchy'.\n2. Volatile vs Non-Volatile: Volatile memory (RAM) is erased when power goes out. Non-Volatile (ROM, SSD) keeps data forever.",
+                    formulaBank: "Storage Units Table:\n1 bit = 0 or 1\n4 bits = 1 Nibble\n8 bits = 1 Byte\n1024 Bytes = 1 KB\n1024 KB = 1 MB\n1024 MB = 1 GB\n1024 GB = 1 TB",
+                    logic: "The Speed Ladder (Fastest to Slowest):\n1. Registers: Inside the CPU (Ultra-fast).\n2. Cache: Small memory near CPU to store 'active' instructions.\n3. RAM (Primary): Main workspace where programs run.\n4. SSD/HDD (Secondary): Permanent storage for files.\nLogic: If the CPU needs data, it checks Registers -> Cache -> RAM -> HDD.",
+                    traps: "TRAP 1: RAM vs ROM\nRAM is for 'Work in Progress' (Volatile). ROM is for 'Startup Instructions' (Non-Volatile). Students often flip these.\n\nTRAP 2: SSD vs HDD\nHDD has spinning disks (mechanical). SSD has no moving parts (electronic). SSD is MUCH faster and more durable.\n\nTRAP 3: Virtual Memory\nVirtual memory is NOT a separate chip. It is a part of the Hard Disk used by the CPU to 'pretend' it has more RAM.",
+                    examples: [
+                        { q: "Which memory is the absolute fastest?", a: "Registers (inside CPU)" },
+                        { q: "Smallest unit of computer data?", a: "Bit (Binary Digit)" },
+                        { q: "How many bits in a Byte?", a: "8 bits" },
+                        { q: "Is RAM volatile or non-volatile?", a: "Volatile (loses data without power)" },
+                        { q: "Where is BIOS stored?", a: "ROM (Read-Only Memory)" },
+                        { q: "Fastest memory between CPU and RAM?", a: "Cache Memory" },
+                        { q: "What does 1024 MB equal?", a: "1 GB" },
+                        { q: "Does an SSD have moving parts?", a: "No. It uses flash memory." },
+                        { q: "Primary function of RAM?", a: "Stores currently running apps and data for quick access." },
+                        { q: "Unit equal to 4 bits?", a: "Nibble" }
+                    ],
+                    speedSummary: "- Registers > Cache > RAM > SSD > HDD\n- Volatile = Temporary (RAM) | Non-Volatile = Permanent (ROM, Disk)\n- 8 bits = 1 Byte | 1024 is the magic multiplier."
+                }
+            },
+            {
+                id: "cpu-architecture",
+                title: "3. CPU & Architecture",
+                content: {
+                    coreConcept: "1. The Brain: The CPU (Central Processing Unit) is where all calculations and decisions happen.\n2. The Von Neumann Model: Almost all computers follow a standard design: Input -> CPU (Processing) -> Output, with Memory assisting the CPU.",
+                    formulaBank: "CPU Components:\n1. ALU (Arithmetic Logic Unit): Does Math (+,-,*,/) and Logic (<,>,=).\n2. CU (Control Unit): The traffic police. It directs data flow and timing.\n3. Registers: Tiny workbenches inside the CPU.\n4. Clock Speed: Measured in GHz (GigaHertz). Higher = faster processing.",
+                    logic: "The Machine Cycle (Fetch-Decode-Execute):\n1. FETCH: Get instruction from memory.\n2. DECODE: CU determines what the instruction means.\n3. EXECUTE: ALU performs the operation.\n4. STORE: Write result back to memory.",
+                    traps: "TRAP 1: The CU Math Error\nStudents often think the Control Unit (CU) does math. IT DOES NOT. The ALU does the math; the CU only tells the ALU when to start.\n\nTRAP 2: Clock Speed vs. Productivity\nJust because a CPU has a high GHz doesn't mean it's better. Architecture (number of cores) also matters significantly.\n\nTRAP 3: The Bus System\nThe Bus is NOT a transport for people. In hardware, it's a 'highway' of wires that carries data between the CPU, RAM, and other parts.",
+                    examples: [
+                        { q: "Which part of CPU does 'Greater Than' check?", a: "ALU (Logic portion)" },
+                        { q: "CPU unit that manages data timing?", a: "Control Unit (CU)" },
+                        { q: "Fetch-Decode-Execute is known as...?", a: "The Machine Cycle" },
+                        { q: "Unit of CPU speed?", a: "GHz (GigaHertz)" },
+                        { q: "Does the CU perform addition?", a: "No, that's the ALU's job." },
+                        { q: "Register that stores the next instruction address?", a: "Program Counter (PC)" },
+                        { q: "Who designed the modern computer model?", a: "John von Neumann" },
+                        { q: "Pathway for data transfer inside computer?", a: "Bus" },
+                        { q: "Main circuit board of a computer?", a: "Motherboard" },
+                        { q: "What is a 'Core' in a CPU?", a: "An independent processing unit within the CPU chip." }
+                    ],
+                    speedSummary: "- CPU = ALU (Math) + CU (Directing) + Registers (Storage)\n- Cycle = Fetch -> Decode -> Execute\n- High GHz = More cycles per second."
+                }
+            }
+        ]
+    },
     flashcards: [
         { id: "hw-fc-001", term: "Input Devices", definition: "Mouse, Keyboard, Scanner, Microphone, Webcam, Joystick." },
         { id: "hw-fc-002", term: "Output Devices", definition: "Monitor, Printer, Plotter, Speaker, Projector." },
