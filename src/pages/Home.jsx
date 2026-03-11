@@ -5,7 +5,7 @@ import { useAppContext } from '../store/AppContext';
 
 const Home = () => {
     const navigate = useNavigate();
-    const { progress, getSubjectProgress } = useAppContext();
+    const { progress, getSubjectProgress, streak } = useAppContext();
 
     return (
         <div className="container mx-auto px-4 py-8 lg:py-12">
