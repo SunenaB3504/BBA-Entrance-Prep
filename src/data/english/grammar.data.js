@@ -101,7 +101,7 @@ export const grammarData = {
         {
             id: "gram-q-002",
             type: "multiple-choice",
-            difficulty: "medium",
+            difficulty: "easy",
             question: "Identify the tense: 'I have been working on this project since January.'",
             options: ["Present Perfect", "Present Continuous", "Present Perfect Continuous", "Past Perfect Continuous"],
             correct: 2,
@@ -113,7 +113,7 @@ export const grammarData = {
         {
             id: "gram-q-003",
             type: "multiple-choice",
-            difficulty: "medium",
+            difficulty: "easy",
             question: "Identify the error: The quality (A) of the products (B) were (C) exceptional (D).",
             options: ["A", "B", "C", "D"],
             correct: 2,
@@ -133,7 +133,7 @@ export const grammarData = {
         {
             id: "gram-q-005",
             type: "multiple-choice",
-            difficulty: "medium",
+            difficulty: "easy",
             question: "Neither the manager nor his assistants _______ responsible for the error.",
             options: ["is", "are", "was", "has"],
             correct: 1,
@@ -155,7 +155,7 @@ export const grammarData = {
         {
             id: "gram-q-007",
             type: "multiple-choice",
-            difficulty: "medium",
+            difficulty: "easy",
             question: "Fill in the blank: _______ Amazon is the longest river in South America.",
             options: ["A", "An", "The", "No article"],
             correct: 2,
@@ -167,7 +167,7 @@ export const grammarData = {
         {
             id: "gram-q-008",
             type: "multiple-choice",
-            difficulty: "medium",
+            difficulty: "easy",
             question: "The company is committed _______ providing the best service.",
             options: ["to", "for", "with", "on"],
             correct: 0,
@@ -305,7 +305,7 @@ export const grammarData = {
         {
             id: "gram-q-019",
             type: "multiple-choice",
-            difficulty: "hard",
+            difficulty: "medium",
             question: "Rearrange: (P) investors should\n(Q) their portfolio\n(R) diversify\n(S) to minimize risk",
             options: ["PQRS", "PRQS", "QPSR", "RPQS"],
             correct: 1,

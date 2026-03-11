@@ -86,10 +86,10 @@ export const vocabularyData = {
             id: "vocab-q-001",
             type: "multiple-choice",
             difficulty: "easy",
-            question: "What is the primary meaning of the word 'Prudent'?",
+            question: "The word 'Prudent' in the sentence 'A prudent manager always maintains an emergency fund.' most nearly means:",
             options: ["Extremely wealthy", "Careful and sensible", "Fast-moving", "Aggressive"],
             correct: 1,
-            explanation: "Prudent means showing care and foresight in management.",
+            explanation: "Prudent means showing care and foresight. Distractor logic: 'Wealthy' confuses success with caution; 'Fast-moving' is the opposite of a measured approach; 'Aggressive' is a behavioral trait that often contrasts with prudence.",
             examTags: ["MH-CET"]
         },
         {
@@ -99,7 +99,7 @@ export const vocabularyData = {
             question: "Choose the synonym for 'Prudent':",
             options: ["Reckless", "Cautious", "Indifferent", "Naive"],
             correct: 1,
-            explanation: "Cautious is the closest synonym to prudent.",
+            explanation: "Cautious is the closest synonym. Distractor logic: 'Reckless' is an antonym; 'Indifferent' means lack of interest; 'Naive' suggests lack of experience, which is different from lack of caution.",
             examTags: ["MH-CET"]
         },
         {
@@ -109,7 +109,7 @@ export const vocabularyData = {
             question: "Choose the antonym for 'Prudent':",
             options: ["Wise", "Judicious", "Imprudent", "Frugal"],
             correct: 2,
-            explanation: "Imprudent is the direct opposite of prudent.",
+            explanation: "Imprudent is the direct opposite. Distractor logic: 'Wise' and 'Judicious' are synonyms; 'Frugal' is an associated trait of prudence (care with money) but not its antonym.",
             examTags: ["MH-CET"]
         },
         {
@@ -119,7 +119,7 @@ export const vocabularyData = {
             question: "Fill in the blank: It is _______ to save money for emergencies.",
             options: ["reckless", "prudent", "volatile", "arbitrary"],
             correct: 1,
-            explanation: "Saving money for emergencies is a sensible (prudent) action.",
+            explanation: "Prudent fits the context of a sensible action. Distractor logic: 'Reckless' is the opposite; 'Volatile' refers to instability (used for markets); 'Arbitrary' means random, whereas saving is intentional.",
             examTags: ["MH-CET"]
         },
 
@@ -128,10 +128,10 @@ export const vocabularyData = {
             id: "vocab-q-005",
             type: "multiple-choice",
             difficulty: "easy",
-            question: "Meaning of 'Incentive':",
+            question: "The word 'Incentive' in the sentence 'The government provided a tax holiday as an incentive for new businesses.' most nearly means:",
             options: ["A punishment", "A motivation or reward", "A tax penalty", "A logical fallacy"],
             correct: 1,
-            explanation: "An incentive is something that encourages action.",
+            explanation: "Incentive refers to a stimulus for action. Distractor logic: 'Punishment' and 'Penalty' have negative connotations which contradict 'incentive'; 'Logical fallacy' is unrelated to business motivation.",
             examTags: ["MH-CET"]
         },
         {
@@ -141,7 +141,7 @@ export const vocabularyData = {
             question: "Synonym for 'Incentive':",
             options: ["Discouragement", "Stimulus", "Deterrent", "Constraint"],
             correct: 1,
-            explanation: "Stimulus is a synonym for incentive as it triggers action.",
+            explanation: "Stimulus is a synonym. Distractor logic: 'Discouragement' and 'Deterrent' are antonyms; 'Constraint' means a limitation, which is the opposite of what an incentive provides.",
             examTags: ["MH-CET"]
         },
         {
@@ -151,7 +151,7 @@ export const vocabularyData = {
             question: "Antonym for 'Incentive':",
             options: ["Motivation", "Reward", "Disincentive", "Encouragement"],
             correct: 2,
-            explanation: "Disincentive is the opposite of incentive.",
+            explanation: "Disincentive is the direct antonym. Distractor logic: 'Motivation', 'Reward', and 'Encouragement' are all synonyms or related concepts.",
             examTags: ["MH-CET"]
         },
         {
@@ -161,7 +161,7 @@ export const vocabularyData = {
             question: "Fill in the blank: The company offered a bonus as an _______ to work overtime.",
             options: ["incentive", "autonomy", "eloquent", "deficit"],
             correct: 0,
-            explanation: "A bonus is a reward (incentive) offered to motivate employees.",
+            explanation: "Incentive fits the context of motivation. Distractor logic: 'Autonomy' means independence; 'Eloquent' means fluent speech; 'Deficit' means shortage.",
             examTags: ["MH-CET"]
         },
 
@@ -170,10 +170,10 @@ export const vocabularyData = {
             id: "vocab-q-009",
             type: "multiple-choice",
             difficulty: "easy",
-            question: "Meaning of 'Volatile':",
+            question: "The word 'Volatile' in the sentence 'The stock market has become increasingly volatile due to global uncertainty.' most nearly means:",
             options: ["Steady and calm", "Highly unstable", "Very heavy", "Permanent"],
             correct: 1,
-            explanation: "Volatile means something that changes easily or unpredictably.",
+            explanation: "Volatile refers to something subject to rapid change. Distractor logic: 'Steady' and 'Permanent' are antonyms; 'Heavy' is a literal physical property that doesn't apply to market behavior.",
             examTags: ["MH-CET"]
         },
         {
@@ -183,7 +183,7 @@ export const vocabularyData = {
             question: "Synonym for 'Volatile':",
             options: ["Stable", "Capricious", "Resilient", "Consistent"],
             correct: 1,
-            explanation: "Capricious means impulsive or unpredictable, similar to volatile.",
+            explanation: "Capricious means unpredictable, similar to volatile. Distractor logic: 'Stable' and 'Consistent' are antonyms; 'Resilient' means able to recover, which is a positive trait, unlike the neutral/negative 'volatile'.",
             examTags: ["MH-CET"]
         },
         {
@@ -193,7 +193,7 @@ export const vocabularyData = {
             question: "Antonym for 'Volatile':",
             options: ["Variable", "Unpredictable", "Stable", "Ephemeral"],
             correct: 2,
-            explanation: "Stable means not likely to change, the opposite of volatile.",
+            explanation: "Stable means not subject to change. Distractor logic: 'Variable' and 'Unpredictable' are synonyms; 'Ephemeral' means short-lived, which relates to time but not necessarily stability.",
             examTags: ["MH-CET"]
         },
         {
@@ -203,7 +203,7 @@ export const vocabularyData = {
             question: "Fill in the blank: Cryptocurrency markets are often considered extremely _______.",
             options: ["lucrative", "volatile", "pragmatic", "surplus"],
             correct: 1,
-            explanation: "Crypto markets change rapidly, making them volatile.",
+            explanation: "Volatile describes the rapid price swings. Distractor logic: 'Lucrative' (profitable) can be true but doesn't describe the risk nature; 'Pragmatic' (practical) and 'Surplus' (extra) are contextually wrong.",
             examTags: ["MH-CET"]
         },
 
@@ -212,10 +212,10 @@ export const vocabularyData = {
             id: "vocab-q-013",
             type: "multiple-choice",
             difficulty: "easy",
-            question: "Meaning of 'Deficit':",
+            question: "The word 'Deficit' in the sentence 'The budget deficit exceeded all previous records this year.' most nearly means:",
             options: ["A profit", "A shortage or shortfall", "A massive gain", "A bank balance"],
             correct: 1,
-            explanation: "A deficit occurs when spending exceeds income.",
+            explanation: "Deficit is the amount by which something falls short. Distractor logic: 'Profit' and 'Gain' are opposites; 'Bank balance' is a general term that doesn't specify if it is positive or negative.",
             examTags: ["MH-CET"]
         },
         {
@@ -225,7 +225,7 @@ export const vocabularyData = {
             question: "Synonym for 'Deficit':",
             options: ["Surplus", "Abundance", "Scarcity", "Excess"],
             correct: 2,
-            explanation: "Scarcity or shortfall is a synonym for deficit.",
+            explanation: "Scarcity or shortfall matches deficit. Distractor logic: 'Surplus', 'Abundance', and 'Excess' are all antonyms indicating an overage.",
             examTags: ["MH-CET"]
         },
         {
@@ -235,7 +235,7 @@ export const vocabularyData = {
             question: "Antonym for 'Deficit':",
             options: ["Lack", "Shortfall", "Surplus", "Debt"],
             correct: 2,
-            explanation: "Surplus is the opposite of a deficit (shortfall).",
+            explanation: "Surplus is the opposite of deficit. Distractor logic: 'Lack' and 'Shortfall' are synonyms; 'Debt' is a possible result of a deficit but not its literal antonym.",
             examTags: ["MH-CET"]
         },
         {
@@ -245,7 +245,7 @@ export const vocabularyData = {
             question: "Fill in the blank: The team had a two-goal _______ by half-time.",
             options: ["incentive", "deficit", "autonomy", "prudent"],
             correct: 1,
-            explanation: "A 'two-goal deficit' means they were trailing by two goals.",
+            explanation: "Deficit describes the shortage of goals. Distractor logic: 'Incentive' (motivation), 'Autonomy' (freedom), and 'Prudent' (careful) make no sense in a sports scoring context.",
             examTags: ["MH-CET"]
         },
 
@@ -254,10 +254,10 @@ export const vocabularyData = {
             id: "vocab-q-017",
             type: "multiple-choice",
             difficulty: "easy",
-            question: "Meaning of 'Surplus':",
+            question: "The word 'Surplus' in the sentence 'The farmer had a surplus of grain after the record harvest.' most nearly means:",
             options: ["An amount leftover", "A complete loss", "A lack of resources", "Exactly zero"],
             correct: 0,
-            explanation: "Surplus means an amount that is more than what is needed.",
+            explanation: "Surplus means an amount left over after requirements are met. Distractor logic: 'Loss' and 'Lack' are opposites; 'Zero' indicates no amount, whereas surplus is about an extra amount.",
             examTags: ["MH-CET"]
         },
         {
@@ -267,7 +267,7 @@ export const vocabularyData = {
             question: "Synonym for 'Surplus':",
             options: ["Dearth", "Deficiency", "Excess", "Shortage"],
             correct: 2,
-            explanation: "Excess is synonymous with surplus.",
+            explanation: "Excess is synonymous with surplus. Distractor logic: 'Dearth', 'Deficiency', and 'Shortage' are synonyms of each other, but antonyms of surplus.",
             examTags: ["MH-CET"]
         },
         {
@@ -277,7 +277,7 @@ export const vocabularyData = {
             question: "Antonym for 'Surplus':",
             options: ["Abundance", "Glut", "Deficit", "Plethora"],
             correct: 2,
-            explanation: "Deficit is the opposite of surplus.",
+            explanation: "Deficit is the opposite of surplus. Distractor logic: 'Abundance', 'Glut', and 'Plethora' are all synonyms signifying an oversupply.",
             examTags: ["MH-CET"]
         },
         {
@@ -287,7 +287,7 @@ export const vocabularyData = {
             question: "Fill in the blank: The country had a budget _______ due to unexpected tax revenue.",
             options: ["surplus", "deficit", "arbitrary", "volatile"],
             correct: 0,
-            explanation: "Extra revenue leads to a budget surplus.",
+            explanation: "Surplus fits the context of extra revenue. Distractor logic: 'Deficit' is the opposite; 'Arbitrary' (random) and 'Volatile' (unstable) are contextually inappropriate.",
             examTags: ["MH-CET"]
         },
 
@@ -295,21 +295,21 @@ export const vocabularyData = {
         {
             id: "vocab-q-021",
             type: "multiple-choice",
-            difficulty: "medium",
-            question: "Meaning of 'Arbitrary':",
+            difficulty: "easy",
+            question: "The word 'Arbitrary' in the sentence 'The judge's decision was criticized for being arbitrary rather than based on law.' most nearly means:",
             options: ["Based on logic", "Random or personal whim", "Scientifically proven", "Universal law"],
             correct: 1,
-            explanation: "Arbitrary decisions are made without any specific reason or system.",
+            explanation: "Arbitrary signifies something decided without a consistent system or logic. Distractor logic: 'Logic', 'Proven', and 'Universal law' are all antonyms suggesting a reasoned or systematic basis.",
             examTags: ["MH-CET"]
         },
         {
             id: "vocab-q-022",
             type: "multiple-choice",
-            difficulty: "hard",
+            difficulty: "medium",
             question: "Synonym for 'Arbitrary':",
-            options: ["Rational", "Discretionary", "Objective", "Systematic"],
+            options: ["Rational", "Capricious", "Objective", "Systematic"],
             correct: 1,
-            explanation: "Discretionary or random is a synonym for arbitrary.",
+            explanation: "Capricious (unpredictable) is a synonym for arbitrary. Distractor logic: 'Rational', 'Objective', and 'Systematic' are antonyms indicating a reasoned approach.",
             examTags: ["MH-CET"]
         },
         {
@@ -317,19 +317,19 @@ export const vocabularyData = {
             type: "multiple-choice",
             difficulty: "medium",
             question: "Antonym for 'Arbitrary':",
-            options: ["Haphazard", "Capricious", "Logical", "Erratic"],
+            options: ["Haphazard", "Inconsistent", "Methodical", "Erratic"],
             correct: 2,
-            explanation: "Logical or reasoned is the opposite of arbitrary.",
+            explanation: "Methodical (orderly) is the opposite of arbitrary. Distractor logic: 'Haphazard', 'Inconsistent', and 'Erratic' are all synonyms for arbitrary behavior.",
             examTags: ["MH-CET"]
         },
         {
             id: "vocab-q-024",
             type: "multiple-choice",
-            difficulty: "medium",
-            question: "Fill in the blank: The judge's decision was criticized for being _______.",
+            difficulty: "easy",
+            question: "Fill in the blank: Without a clear policy, the selection process seemed completely _______.",
             options: ["pragmatic", "eloquent", "arbitrary", "surplus"],
             correct: 2,
-            explanation: "Criticism often targets decisions that seem random (arbitrary).",
+            explanation: "Arbitrary describes a process lacking clear rules. Distractor logic: 'Pragmatic' (practical), 'Eloquent' (fluent), and 'Surplus' (extra) do not fit the context of a flawed process.",
             examTags: ["MH-CET"]
         },
 
@@ -337,11 +337,11 @@ export const vocabularyData = {
         {
             id: "vocab-q-025",
             type: "multiple-choice",
-            difficulty: "medium",
-            question: "Meaning of 'Autonomy':",
-            options: ["Financial debt", "Self-governance or independence", "Strict obedience", "A type of vehicle"],
+            difficulty: "easy",
+            question: "The word 'Autonomy' in the sentence 'The university granted the department full autonomy to design its own curriculum.' most nearly means:",
+            options: ["Financial debt", "Self-governance or independence", "Strict obedience", "Limited resources"],
             correct: 1,
-            explanation: "Autonomy refers to the right or condition of self-government.",
+            explanation: "Autonomy is the right of an organization to self-govern. Distractor logic: 'Debt' and 'Resources' are financial terms; 'Obedience' is the opposite of being independent.",
             examTags: ["MH-CET"]
         },
         {
@@ -351,7 +351,7 @@ export const vocabularyData = {
             question: "Synonym for 'Autonomy':",
             options: ["Subservience", "Sovereignty", "Dependency", "Totalitarianism"],
             correct: 1,
-            explanation: "Sovereignty is a synonym for autonomy/independence.",
+            explanation: "Sovereignty is the closest synonym for independence/autonomy. Distractor logic: 'Subservience' and 'Dependency' are antonyms; 'Totalitarianism' is a system of total control, the opposite of autonomy.",
             examTags: ["MH-CET"]
         },
         {
@@ -359,19 +359,19 @@ export const vocabularyData = {
             type: "multiple-choice",
             difficulty: "medium",
             question: "Antonym for 'Autonomy':",
-            options: ["Liberty", "Freedom", "Dependence", "Self-rule"],
+            options: ["Liberty", "Freedom", "Subjugation", "Self-rule"],
             correct: 2,
-            explanation: "Dependence is the opposite of autonomy.",
+            explanation: "Subjugation (being under control) is the opposite of autonomy. Distractor logic: 'Liberty', 'Freedom', and 'Self-rule' are all synonyms.",
             examTags: ["MH-CET"]
         },
         {
             id: "vocab-q-028",
             type: "multiple-choice",
             difficulty: "easy",
-            question: "Fill in the blank: The manager gives the team a lot of _______ to finish their tasks.",
+            question: "Fill in the blank: Remote workers often enjoy a high degree of _______ in their daily schedule.",
             options: ["autonomy", "incentive", "deficit", "surplus"],
             correct: 0,
-            explanation: "Giving a team freedom to work means giving them autonomy.",
+            explanation: "Autonomy fits the context of having freedom over one's schedule. Distractor logic: 'Incentive' (motivation), 'Deficit' (shortage), and 'Surplus' (extra) are contextually inappropriate.",
             examTags: ["MH-CET"]
         },
 
@@ -380,10 +380,10 @@ export const vocabularyData = {
             id: "vocab-q-029",
             type: "multiple-choice",
             difficulty: "easy",
-            question: "Meaning of 'Lucrative':",
+            question: "The word 'Lucrative' in the sentence 'The contract turned out to be less lucrative than the company had initially expected.' most nearly means:",
             options: ["Extremely boring", "Highly profitable", "Very dangerous", "Small and tiny"],
             correct: 1,
-            explanation: "Lucrative means producing a great deal of profit.",
+            explanation: "Lucrative describes an activity that produces a lot of money. Distractor logic: 'Boring', 'Dangerous', and 'Tiny' do not relate to the financial return of a contract.",
             examTags: ["MH-CET"]
         },
         {
@@ -391,9 +391,9 @@ export const vocabularyData = {
             type: "multiple-choice",
             difficulty: "medium",
             question: "Synonym for 'Lucrative':",
-            options: ["Useless", "Remunerative", "Worthless", "Impoverished"],
+            options: ["Unproductive", "Remunerative", "Worthless", "Impoverished"],
             correct: 1,
-            explanation: "Remunerative or profitable is a synonym for lucrative.",
+            explanation: "Remunerative is a formal synonym for profitable/lucrative. Distractor logic: 'Unproductive', 'Worthless', and 'Impoverished' are all antonyms indicating lack of value or profit.",
             examTags: ["MH-CET"]
         },
         {
@@ -401,19 +401,19 @@ export const vocabularyData = {
             type: "multiple-choice",
             difficulty: "medium",
             question: "Antonym for 'Lucrative':",
-            options: ["Fruitful", "Gainful", "Unprofitable", "Productive"],
+            options: ["Fruitful", "Payable", "Loss-making", "Gainful"],
             correct: 2,
-            explanation: "Unprofitable is the opposite of lucrative.",
+            explanation: "Loss-making is the opposite of lucrative. Distractor logic: 'Fruitful', 'Payable', and 'Gainful' are synonyms or related to positive returns.",
             examTags: ["MH-CET"]
         },
         {
             id: "vocab-q-032",
             type: "multiple-choice",
             difficulty: "easy",
-            question: "Fill in the blank: Real estate can be a very _______ business if you invest wisely.",
+            question: "Fill in the blank: Professional sports can be a very _______ career for the top athletes.",
             options: ["volatile", "lucrative", "arbitrary", "eloquent"],
             correct: 1,
-            explanation: "Wisely invested real estate is profitable (lucrative).",
+            explanation: "Lucrative fits the context of high earnings. Distractor logic: 'Volatile' (unstable), 'Arbitrary' (random), and 'Eloquent' (fluent) are contextually wrong.",
             examTags: ["MH-CET"]
         },
 
@@ -421,11 +421,11 @@ export const vocabularyData = {
         {
             id: "vocab-q-033",
             type: "multiple-choice",
-            difficulty: "medium",
-            question: "Meaning of 'Pragmatic':",
-            options: ["Idealistic and unrealistic", "Practical and realistic", "Stubborn", "Uninterested"],
+            difficulty: "easy",
+            question: "The word 'Pragmatic' in the sentence 'A pragmatic leader focuses on what is achievable rather than on abstract theories.' most nearly means:",
+            options: ["Idealistic", "Practical and realistic", "Stubborn", "Uninterested"],
             correct: 1,
-            explanation: "Pragmatic means dealing with things realistically and practically.",
+            explanation: "Pragmatic means dealing with things sensibly and realistically. Distractor logic: 'Idealistic' is the antonym; 'Stubborn' refers to personality; 'Uninterested' refers to lack of attention.",
             examTags: ["MH-CET"]
         },
         {
@@ -435,7 +435,7 @@ export const vocabularyData = {
             question: "Synonym for 'Pragmatic':",
             options: ["Visionary", "Quixotic", "Hands-on", "Theatrical"],
             correct: 2,
-            explanation: "Hands-on/down-to-earth is a synonym for pragmatic.",
+            explanation: "Hands-on or down-to-earth is a synonym for pragmatic. Distractor logic: 'Visionary' and 'Quixotic' (clinging to unrealistic ideals) are antonyms; 'Theatrical' relates to performance.",
             examTags: ["MH-CET"]
         },
         {
@@ -443,19 +443,19 @@ export const vocabularyData = {
             type: "multiple-choice",
             difficulty: "medium",
             question: "Antonym for 'Pragmatic':",
-            options: ["Logical", "Utilitarian", "Idealistic", "Efficient"],
+            options: ["Utilitarian", "Expedient", "Quixotic", "Efficient"],
             correct: 2,
-            explanation: "Idealistic is the opposite of pragmatic.",
+            explanation: "Quixotic (unrealistically optimistic) is an antonym for pragmatic. Distractor logic: 'Utilitarian', 'Expedient', and 'Efficient' all relate to practical results.",
             examTags: ["MH-CET"]
         },
         {
             id: "vocab-q-036",
             type: "multiple-choice",
-            difficulty: "medium",
-            question: "Fill in the blank: We need a _______ solution to the problem, not just high theories.",
+            difficulty: "easy",
+            question: "Fill in the blank: Despite the grand promises, we need a _______ plan to resolve the debt crisis.",
             options: ["pragmatic", "eloquent", "volatile", "lucrative"],
             correct: 0,
-            explanation: "A practical solution is a pragmatic one.",
+            explanation: "A pragmatic plan is one that can actually work in reality. Distractor logic: 'Eloquent' (fluent), 'Volatile' (unstable), and 'Lucrative' (profitable) do not fit the requirement for a functional plan.",
             examTags: ["MH-CET"]
         },
 
@@ -463,11 +463,11 @@ export const vocabularyData = {
         {
             id: "vocab-q-037",
             type: "multiple-choice",
-            difficulty: "medium",
-            question: "Meaning of 'Eloquent':",
-            options: ["Silent", "Fluent and persuasive in speech", "Rude", "Complex and technical"],
+            difficulty: "easy",
+            question: "The word 'Eloquent' in the sentence 'The CEO's eloquent speech inspired the employees to work harder.' most nearly means:",
+            options: ["Silent", "Fluent and persuasive", "Rude", "Technically complex"],
             correct: 1,
-            explanation: "Eloquent means clearly expressing or indicating something persuasively.",
+            explanation: "Eloquent means fluent, forceful, and elegant in speech. Distractor logic: 'Silent' is an antonym; 'Rude' relates to manners; 'Complex' doesn't imply the persuasiveness that 'eloquent' does.",
             examTags: ["MH-CET"]
         },
         {
@@ -477,7 +477,7 @@ export const vocabularyData = {
             question: "Synonym for 'Eloquent':",
             options: ["Inarticulate", "Glib", "Articulate", "Hesitant"],
             correct: 2,
-            explanation: "Articulate is a synonym for eloquent.",
+            explanation: "Articulate is a synonym for eloquent. Distractor logic: 'Inarticulate' and 'Hesitant' are antonyms; 'Glib' means fluent but insincere (a negative trait).",
             examTags: ["MH-CET"]
         },
         {
@@ -485,19 +485,19 @@ export const vocabularyData = {
             type: "multiple-choice",
             difficulty: "medium",
             question: "Antonym for 'Eloquent':",
-            options: ["Poignant", "Silver-tongued", "Ineffable", "Mumbled"],
+            options: ["Poignant", "Silver-tongued", "Fluent", "Inarticulate"],
             correct: 3,
-            explanation: "Mumbled or inarticulate is the opposite of eloquent.",
+            explanation: "Inarticulate (unable to speak distinctly) is the opposite of eloquent. Distractor logic: 'Poignant', 'Silver-tongued', and 'Fluent' are synonyms or related to high-quality speech.",
             examTags: ["MH-CET"]
         },
         {
             id: "vocab-q-040",
             type: "multiple-choice",
-            difficulty: "medium",
-            question: "Fill in the blank: The activist gave an _______ speech that moved the audience.",
+            difficulty: "easy",
+            question: "Fill in the blank: She is an _______ advocate for environmental protection.",
             options: ["eloquent", "arbitrary", "volatile", "deficit"],
             correct: 0,
-            explanation: "A persuasive and fluent speech is an eloquent one.",
+            explanation: "Eloquent fits the context of a persuasive advocate. Distractor logic: 'Arbitrary' (random), 'Volatile' (unstable), and 'Deficit' (shortage) are contextually wrong.",
             examTags: ["MH-CET"]
         }
     ]
