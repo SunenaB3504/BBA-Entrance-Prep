@@ -30,18 +30,18 @@ export const SUBJECTS = [
     color: "#16a34a",
     examTags: ["CUET", "MH-CET"],
     chapters: [
-      { id: "nature-management", name: "Nature & Significance of Management", dataFile: "nature-management.data" },
-      { id: "principles-management", name: "Principles of Management", dataFile: "principles-management.data" },
-      { id: "business-environment", name: "Business Environment", dataFile: "business-environment.data" },
-      { id: "planning", name: "Planning", dataFile: "planning.data" },
-      { id: "organising", name: "Organising", dataFile: "organising.data" },
-      { id: "staffing", name: "Staffing", dataFile: "staffing.data" },
-      { id: "directing", name: "Directing", dataFile: "directing.data" },
-      { id: "controlling", name: "Controlling", dataFile: "controlling.data" },
-      { id: "financial-management", name: "Financial Management", dataFile: "financial-management.data" },
-      { id: "financial-markets", name: "Financial Markets", dataFile: "financial-markets.data" },
-      { id: "marketing", name: "Marketing Management", dataFile: "marketing.data" },
-      { id: "consumer-protection", name: "Consumer Protection", dataFile: "consumer-protection.data" }
+      { id: "nature-management", name: "Nature & Significance of Management", dataFile: "nature-management.data", questionCount: 5 },
+      { id: "principles-management", name: "Principles of Management", dataFile: "principles-management.data", questionCount: 5 },
+      { id: "business-environment", name: "Business Environment", dataFile: "business-environment.data", questionCount: 2 },
+      { id: "planning", name: "Planning", dataFile: "planning.data", questionCount: 1 },
+      { id: "organising", name: "Organising", dataFile: "organising.data", questionCount: 1 },
+      { id: "staffing", name: "Staffing", dataFile: "staffing.data", questionCount: 1 },
+      { id: "directing", name: "Directing", dataFile: "directing.data", questionCount: 1 },
+      { id: "controlling", name: "Controlling", dataFile: "controlling.data", questionCount: 1 },
+      { id: "financial-management", name: "Financial Management", dataFile: "financial-management.data", questionCount: 1 },
+      { id: "financial-markets", name: "Financial Markets", dataFile: "financial-markets.data", questionCount: 1 },
+      { id: "marketing", name: "Marketing Management", dataFile: "marketing.data", questionCount: 1 },
+      { id: "consumer-protection", name: "Consumer Protection", dataFile: "consumer-protection.data", questionCount: 1 }
     ]
   },
   {
