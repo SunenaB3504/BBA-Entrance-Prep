@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAppContext } from '../store/AppContext';
 import { getSubjectById, getChapterById } from '../config/subjects.config';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 const StudyGuide = () => {
     const { subjectId, chapterId } = useParams();
@@ -92,8 +94,8 @@ const StudyGuide = () => {
             .filter(line => /^\d+\.\s/.test(line))
             .map(line => {
                 const label = line.match(/^\d+\.\s(.*)/)[1];
-                const cleanLabel = label.split(/[():-]/)[0].trim();
-                const subId = `${topicId}-pt-${cleanLabel.toLowerCase().replace(/\s+/g, '-').substring(0, 15)}`;
+                const cleanLabel = label.replace(/\*\*/g, '').replace(/__/g, '').split(/[():-]/)[0].trim();
+                const subId = `${topicId}-pt-${cleanLabel.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '').substring(0, 15)}`;
                 return { id: subId, label: cleanLabel };
             });
 
@@ -235,27 +237,53 @@ const StudyGuide = () => {
                                     <h3 className="flex items-center gap-2 text-xl font-black text-slate-800 mb-6">
                                         <span className="text-2xl p-2 bg-slate-100 rounded-xl">📖</span> Core Concept
                                     </h3>
-                                    <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm leading-relaxed text-slate-600 whitespace-pre-wrap">
+                                    <div className="bg-white rounded-3xl p-10 border border-slate-200 shadow-sm leading-relaxed text-slate-600 whitespace-normal">
                                         <ConceptSubMenu text={topic.content?.coreConcept || topic.summary} topicId={topic.id} />
                                         <div className="space-y-4">
-                                            {(() => {
-                                                let pointCounter = 0;
-                                                return (topic.content?.coreConcept || topic.summary || "").split('\n').map((line, lIdx) => {
-                                                    if (/^\d+\.\s/.test(line)) {
-                                                        pointCounter++;
-                                                        const label = line.match(/^\d+\.\s(.*)/)[1];
-                                                        const cleanLabel = label.split(/[():-]/)[0].trim();
-                                                        const subId = `${topic.id}-pt-${cleanLabel.toLowerCase().replace(/\s+/g, '-').substring(0, 15)}`;
+                                            <ReactMarkdown
+                                                remarkPlugins={[remarkGfm]}
+                                                components={{
+                                                    p: ({node, ...props}) => <p className="mb-4 text-slate-700" {...props} />,
+                                                    strong: ({node, ...props}) => <strong className="font-bold text-slate-900" {...props} />,
+                                                    table: ({node, ...props}) => (
+                                                        <div className="overflow-x-auto my-8 border border-slate-200 rounded-xl shadow-sm">
+                                                            <table className="w-full text-left border-collapse" {...props} />
+                                                        </div>
+                                                    ),
+                                                    thead: ({node, ...props}) => <thead className="bg-slate-50 border-b border-slate-200" {...props} />,
+                                                    th: ({node, ...props}) => <th className="py-4 px-6 font-bold text-slate-800 uppercase tracking-widest text-xs border-r last:border-r-0 border-slate-200" {...props} />,
+                                                    td: ({node, ...props}) => <td className="py-4 px-6 text-sm text-slate-700 border-b border-r last:border-r-0 border-slate-100" {...props} />,
+                                                    ol: ({node, ...props}) => <ol className="list-decimal pl-5 space-y-6 my-6 marker:text-blue-600 marker:font-black" {...props} />,
+                                                    ul: ({node, ...props}) => <ul className="list-disc pl-5 space-y-3 my-6 marker:text-slate-400" {...props} />,
+                                                    li: ({node, children, ...props}) => {
+                                                        const isOrdered = node.parent?.tagName === 'ol';
+                                                        
+                                                        const extractText = (childArray) => {
+                                                            if (typeof childArray === 'string') return childArray;
+                                                            if (Array.isArray(childArray)) return childArray.map(extractText).join('');
+                                                            if (childArray && childArray.props && childArray.props.children) return extractText(childArray.props.children);
+                                                            return '';
+                                                        };
+                                                        
+                                                        const textContext = extractText(children);
+                                                        const cleanLabel = textContext.split(/[():-]/)[0].trim();
+                                                        const scrollId = isOrdered ? `${topic.id}-pt-${cleanLabel.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '').substring(0, 15)}` : undefined;
+
                                                         return (
-                                                            <div key={lIdx} id={subId} className="scroll-mt-60 pt-4 border-t border-slate-50 first:border-0 first:pt-0">
-                                                                <div className="inline-block p-1 px-2 mb-2 bg-blue-50 text-[10px] font-black text-blue-600 rounded">POINT {pointCounter}</div>
-                                                                <div className="font-semibold text-slate-800">{line}</div>
-                                                            </div>
+                                                            <li id={scrollId} className={isOrdered ? "scroll-mt-40 font-semibold text-slate-800" : ""} {...props}>
+                                                                {isOrdered ? (
+                                                                    <div className="flex flex-col">
+                                                                        <div className="inline-block self-start p-1 px-2 mb-2 bg-blue-50 text-[10px] font-black text-blue-600 rounded">KEY POINT</div>
+                                                                        <div>{children}</div>
+                                                                    </div>
+                                                                ) : children}
+                                                            </li>
                                                         );
                                                     }
-                                                    return <div key={lIdx}>{line}</div>;
-                                                });
-                                            })()}
+                                                }}
+                                            >
+                                                {topic.content?.coreConcept || topic.summary || ""}
+                                            </ReactMarkdown>
                                         </div>
                                     </div>
                                 </section>
