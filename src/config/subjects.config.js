@@ -64,11 +64,23 @@ export const SUBJECTS = [
     name: "Reasoning & Aptitude",
     icon: "🧠",
     color: "#ea580c",
-    examTags: ["MH-CET"],
+    examTags: ["CUET", "MH-CET"],
     chapters: [
-      { id: "verbal-reasoning", name: "Verbal Reasoning", dataFile: "verbal-reasoning.data" },
-      { id: "arithmetic-reasoning", name: "Arithmetic Reasoning", dataFile: "arithmetic-reasoning.data" },
-      { id: "logical-reasoning", name: "Logical Reasoning", dataFile: "logical-reasoning.data" }
+      { id: "arr-linear", name: "Linear Arrangements", dataFile: "logic-plaza/arrangements-linear.data" },
+      { id: "arr-circular", name: "Circular Arrangements", dataFile: "logic-plaza/arrangements-circular.data" },
+      { id: "arr-floor", name: "Floor & Matrix Puzzles", dataFile: "logic-plaza/arrangements-floor.data" },
+      { id: "ser-number", name: "Number Series", dataFile: "logic-plaza/series-number.data" },
+      { id: "ser-alphabet", name: "Alphabet Series", dataFile: "logic-plaza/series-alphabet.data" },
+      { id: "ser-alphanumeric", name: "Alphanumeric Series", dataFile: "logic-plaza/series-alphanumeric.data" },
+      { id: "cod-letter", name: "Letter Shift Coding", dataFile: "logic-plaza/coding-letter-shift.data" },
+      { id: "cod-symbol", name: "Symbol Coding", dataFile: "logic-plaza/coding-symbol.data" },
+      { id: "rel-blood", name: "Blood Relations", dataFile: "logic-plaza/relations-blood.data" },
+      { id: "rel-direction", name: "Direction Sense", dataFile: "logic-plaza/relations-direction.data" },
+      { id: "log-syllogism", name: "Syllogisms", dataFile: "logic-plaza/logic-syllogism.data" },
+      { id: "log-venn", name: "Venn Diagrams", dataFile: "logic-plaza/logic-venn.data" },
+      { id: "log-statement", name: "Statement & Conclusion", dataFile: "logic-plaza/logic-statement.data" },
+      { id: "vis-mirror", name: "Mirror & Water Images", dataFile: "logic-plaza/visual-mirror-water.data" },
+      { id: "vis-paper", name: "Paper Cutting & Folding", dataFile: "logic-plaza/visual-paper-pattern.data" }
     ]
   },
   {
@@ -78,14 +90,9 @@ export const SUBJECTS = [
     color: "#0891b2",
     examTags: ["CUET", "MH-CET"],
     chapters: [
-      { id: "comprehension", name: "Reading Comprehension", dataFile: "comprehension.data", questionCount: 30 },
-      { id: "grammar", name: "Grammar & Usage Mastery", dataFile: "usage-mastery.data", questionCount: 10 },
-      { id: "grammar-advanced", name: "Grammar (Advanced)", dataFile: "grammar-advanced.data", questionCount: 8 },
-      { id: "literary-terms", name: "Literary Aptitude", dataFile: "literary-terms.data", questionCount: 10 },
-      { id: "vocabulary-advanced", name: "Vocabulary (Advanced)", dataFile: "vocabulary-advanced.data", questionCount: 15 },
-      { id: "mcet-comprehension", name: "MH-CET Reading Comprehension", dataFile: "mh-cet-comprehension.data", questionCount: 20 },
-      { id: "mcet-grammar", name: "MH-CET Grammar Mastery", dataFile: "grammar.data", questionCount: 20 },
-      { id: "mcet-vocabulary", name: "MH-CET Vocabulary Mastery", dataFile: "vocabulary.data", questionCount: 40 }
+      { id: "comprehension", name: "Reading Comprehension", dataFile: "english/comprehension.data", questionCount: 20 },
+      { id: "grammar", name: "Grammar & Usage", dataFile: "english/grammar.data", questionCount: 20 },
+      { id: "vocabulary", name: "Vocabulary & Word Families", dataFile: "english/vocabulary.data", questionCount: 50 }
     ]
   },
   {
