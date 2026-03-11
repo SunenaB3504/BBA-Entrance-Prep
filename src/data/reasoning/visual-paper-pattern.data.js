@@ -2,6 +2,24 @@ export const visualPaperPatternData = {
   subject: "Reasoning",
   chapter: "Visual - Paper Pattern",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "paper-cutting",
+        title: "1. Paper Folding and Cutting",
+        content: {
+          coreConcept: "Identifying the pattern of a paper after it is folded, cut, and reopened.",
+          formulaBank: "- Rule of Mirror: Each fold act as a mirror line for the cuts made.\n- Inverse Opening: Trace the process backwards from the last fold to the first.",
+          logic: "1. Count the number of layers. 2 folds = 4 layers. One punch = 4 holes.\n2. Visualize the reflection across each fold line.",
+          traps: "Off-center cuts: A cut on a corner might recreate different patterns than a cut in the middle.",
+          examples: [
+            { q: "Paper folded twice (square), corner cut. How many holes?", a: "4 holes (one on each corner or 4 around the center depending on which corner)." }
+          ],
+          speedSummary: "Trace the 'Mirror Line' of each fold to see where the cut replicates."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "vpp-fc-001",

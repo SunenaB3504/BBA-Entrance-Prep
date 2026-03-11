@@ -2,6 +2,24 @@ export const seriesAlphanumericData = {
   subject: "Reasoning",
   chapter: "Series - Alphanumeric",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "mixed-series",
+        title: "1. Alphanumeric & Symbol Series",
+        content: {
+          coreConcept: "Mixed series combine letters, numbers, and sometimes symbols. They usually follow independent rules for each component.",
+          formulaBank: "- Split & Solve: Analyze letters and numbers as two separate problems.\n- Symbol Position: Often fixed or alternating.",
+          logic: "1. Identify if the letter sequence is independent of the number sequence.\n2. Check for relationships between the letter and the adjacent number (e.g., A1, B2).",
+          traps: "Mixing the rules: Applying a letter shift rule to a number sequence.\nIgnoring symbols: Symbols often mark the start of a repeating pattern block.",
+          examples: [
+            { q: "A1, C3, E5, ?", a: "G7 (Letter shift +2, Number +2 matching letter position)." }
+          ],
+          speedSummary: "Watch for repeating blocks (e.g., A1B, A2B, A3B)."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "san-fc-001",

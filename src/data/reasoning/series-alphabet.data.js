@@ -2,6 +2,25 @@ export const seriesAlphabetData = {
   subject: "Reasoning",
   chapter: "Series - Alphabet",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "alphabet-patterns",
+        title: "1. Alphabet Sequence & Mapping",
+        content: {
+          coreConcept: "Alphabet series use the position of letters (1-26) to form sequences.",
+          formulaBank: "- EJOTY: 5, 10, 15, 20, 25.\n- Reverse Pairs: Letter + its reverse = 27 (e.g., A=1, Z=26; 1+26=27).",
+          logic: "1. Convert letters to numbers using a reference sheet.\n2. Solve as a number series.\n3. Convert final number back to letter.",
+          traps: "Circular Alphabet: Thinking the series ends at Z. It restarts (X, Y, Z, A, B...).\nBackward Jumps: -2, -3 shifts can be tricky near 'A'.",
+          examples: [
+            { q: "A, C, E, G, ?", a: "I (Positions 1, 3, 5, 7 -> 9)." },
+            { q: "Z, X, V, T, ?", a: "R (Positions 26, 24, 22, 20 -> 18)." }
+          ],
+          speedSummary: "Always write A-Z with numbers 1-26 on your rough sheet immediately."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "sa-fc-001",

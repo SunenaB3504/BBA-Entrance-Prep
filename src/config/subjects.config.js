@@ -66,21 +66,21 @@ export const SUBJECTS = [
     color: "#ea580c",
     examTags: ["CUET", "MH-CET"],
     chapters: [
-      { id: "arr-linear", name: "Linear Arrangements", dataFile: "logic-plaza/arrangements-linear.data", questionCount: 60 },
-      { id: "arr-circular", name: "Circular Arrangements", dataFile: "logic-plaza/arrangements-circular.data", questionCount: 60 },
-      { id: "arr-floor", name: "Floor & Matrix Puzzles", dataFile: "logic-plaza/arrangements-floor.data", questionCount: 45 },
-      { id: "ser-number", name: "Number Series", dataFile: "logic-plaza/series-number.data", questionCount: 75 },
-      { id: "ser-alphabet", name: "Alphabet Series", dataFile: "logic-plaza/series-alphabet.data", questionCount: 60 },
-      { id: "ser-alphanumeric", name: "Alphanumeric Series", dataFile: "logic-plaza/series-alphanumeric.data", questionCount: 45 },
-      { id: "cod-letter", name: "Letter Shift Coding", dataFile: "logic-plaza/coding-letter-shift.data", questionCount: 60 },
-      { id: "cod-symbol", name: "Symbol Coding", dataFile: "logic-plaza/coding-symbol.data", questionCount: 45 },
-      { id: "rel-blood", name: "Blood Relations", dataFile: "logic-plaza/relations-blood.data", questionCount: 60 },
-      { id: "rel-direction", name: "Direction Sense", dataFile: "logic-plaza/relations-direction.data", questionCount: 60 },
-      { id: "log-syllogism", name: "Syllogisms", dataFile: "logic-plaza/logic-syllogism.data", questionCount: 75 },
-      { id: "log-venn", name: "Venn Diagrams", dataFile: "logic-plaza/logic-venn.data", questionCount: 45 },
-      { id: "log-statement", name: "Statement & Conclusion", dataFile: "logic-plaza/logic-statement.data", questionCount: 60 },
-      { id: "vis-mirror", name: "Mirror & Water Images", dataFile: "logic-plaza/visual-mirror-water.data", questionCount: 60 },
-      { id: "vis-paper", name: "Paper Cutting & Folding", dataFile: "logic-plaza/visual-paper-pattern.data", questionCount: 45 }
+      { id: "arr-linear", name: "Linear Arrangements", dataFile: "arrangements-linear.data", questionCount: 60 },
+      { id: "arr-circular", name: "Circular Arrangements", dataFile: "arrangements-circular.data", questionCount: 60 },
+      { id: "arr-floor", name: "Floor & Matrix Puzzles", dataFile: "arrangements-floor.data", questionCount: 45 },
+      { id: "ser-number", name: "Number Series", dataFile: "series-number.data", questionCount: 75 },
+      { id: "ser-alphabet", name: "Alphabet Series", dataFile: "series-alphabet.data", questionCount: 60 },
+      { id: "ser-alphanumeric", name: "Alphanumeric Series", dataFile: "series-alphanumeric.data", questionCount: 45 },
+      { id: "cod-letter", name: "Letter Shift Coding", dataFile: "coding-letter-shift.data", questionCount: 60 },
+      { id: "cod-symbol", name: "Symbol Coding", dataFile: "coding-symbol.data", questionCount: 45 },
+      { id: "rel-blood", name: "Blood Relations", dataFile: "relations-blood.data", questionCount: 60 },
+      { id: "rel-direction", name: "Direction Sense", dataFile: "relations-direction.data", questionCount: 60 },
+      { id: "log-syllogism", name: "Syllogisms", dataFile: "logic-syllogism.data", questionCount: 75 },
+      { id: "log-venn", name: "Venn Diagrams", dataFile: "logic-venn.data", questionCount: 45 },
+      { id: "log-statement", name: "Statement & Conclusion", dataFile: "logic-statement.data", questionCount: 60 },
+      { id: "vis-mirror", name: "Mirror & Water Images", dataFile: "visual-mirror-water.data", questionCount: 60 },
+      { id: "vis-paper", name: "Paper Cutting & Folding", dataFile: "visual-paper-pattern.data", questionCount: 45 }
     ]
   },
   {
@@ -90,9 +90,9 @@ export const SUBJECTS = [
     color: "#0891b2",
     examTags: ["CUET", "MH-CET"],
     chapters: [
-      { id: "comprehension", name: "Reading Comprehension", dataFile: "english/comprehension.data", questionCount: 20 },
-      { id: "grammar", name: "Grammar & Usage", dataFile: "english/grammar.data", questionCount: 20 },
-      { id: "vocabulary", name: "Vocabulary & Word Families", dataFile: "english/vocabulary.data", questionCount: 50 }
+      { id: "comprehension", name: "Reading Comprehension", dataFile: "comprehension.data", questionCount: 20 },
+      { id: "grammar", name: "Grammar & Usage", dataFile: "grammar.data", questionCount: 20 },
+      { id: "vocabulary", name: "Vocabulary & Word Families", dataFile: "vocabulary.data", questionCount: 50 }
     ]
   },
   {

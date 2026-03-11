@@ -2,6 +2,24 @@ export const arrangementsCircularData = {
   subject: "Reasoning",
   chapter: "Arrangements - Circular",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "circular-basics",
+        title: "1. Circular Arrangement Basics",
+        content: {
+          coreConcept: "Circular arrangement involves placing objects or people around a circular table. The orientation (facing Center or Outward) is the most important factor.\n\n- Facing Center: Left is Clockwise, Right is Anti-Clockwise.\n- Facing Outward: Left is Anti-Clockwise, Right is Clockwise.",
+          formulaBank: "- Opposite Positions: Only exist for even number of people (n=4, 6, 8...). For n=8, person at pos 1 is opposite pos 5.\n- Immediate Neighbors: People on either side of an individual.",
+          logic: "1. Start by placing the first person anywhere (usually at the bottom/pos 6 o'clock).\n2. Relative to that person, fill in other 'fixed' clues.\n3. Case Analysis: For people facing outward, visualize yourself sitting at the table to avoid direction errors.",
+          traps: "The 'Opposite' Trap: Assuming people are opposite in an odd-numbered group.\nThe Direction Swap: Forgetting that Left/Right flips when the facing direction changes.",
+          examples: [
+            { q: "8 people P-W around a table facing center. P is opposite T. Q is immediate left of P. What is Q's position relative to T?", a: "Q is 4th to the right of T (or 4th to the left)." }
+          ],
+          speedSummary: "Facing Center? Think of a clock. Left = Clockwise. Right = Anti-Clockwise."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "ac-fc-001",

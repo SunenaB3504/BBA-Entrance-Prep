@@ -2,6 +2,24 @@ export const arrangementsFloorData = {
   subject: "Reasoning",
   chapter: "Arrangements - Floor & Matrix",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "floor-basics",
+        title: "1. Floor & Matrix Puzzles",
+        content: {
+          coreConcept: "Floor puzzles involve arranging people across different levels of a building. Usually, ground floor is 1, top floor is n.\n\n- Matrix puzzles add attributes (colors, hobbies) to the people on each floor.",
+          formulaBank: "- Immediate Above/Below: Floors n+1 or n-1.\n- Gap: 'Two floors between A and B' means |floorA - floorB| = 3.",
+          logic: "1. Create a table with Floor numbers 1 to n.\n2. Fill in 'definite' clues (e.g., 'X lives on the 3rd floor').\n3. Use 'connecting' clues to link floors with attributes.",
+          traps: "Odd/Even Trap: 'A lives on an even-numbered floor' - check how many even floors exist first.\nTop/Bottom confusion: Always read if 1 is top or bottom.",
+          examples: [
+            { q: "7 people live on 7 floors. A lives on 4. B lives 2 floors above A. Which floor is B on?", a: "Floor 6." }
+          ],
+          speedSummary: "Always build the skeleton (Floor 1-7) before reading descriptive clues."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "af-fc-001",

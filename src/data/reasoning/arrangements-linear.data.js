@@ -2,6 +2,39 @@ export const arrangementsLinearData = {
   subject: "Reasoning",
   chapter: "Arrangements - Linear",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "linear-basics",
+        title: "1. Linear Arrangement Basics",
+        content: {
+          coreConcept: "Linear arrangement involves placing objects or people in a straight line. The orientation (facing North or South) is critical for determining Left and Right directions.\n\n- Facing North (Standard): Left is West, Right is East.\n- Facing South: Left is East, Right is West.",
+          formulaBank: "- Immediate Neighbor: Person exactly to the left or right.\n- Extremes: Term used for the ends of the row (1st and last positions).\n- Between: If C is between A and B, it doesn't always mean exactly middle unless specified.",
+          logic: "1. Always start with 'fixed' clues (e.g., 'X is at the extreme end').\n2. Draw a line with marked positions (1, 2, 3...) to visualize.\n3. Case Analysis: If two positions are possible, draw two diagrams and eliminate the one that contradicts future clues.",
+          traps: "The 'Only' Trap: 'A is the only neighbor of B' means B is at an extreme end.\nThe Direction Trap: Forgetting that Left/Right flips when facing South.",
+          examples: [
+            { q: "6 people A-F in a row facing North. A is at the left end. B is immediate right of A. Who is at position 2?", a: "B is at position 2." },
+            { q: "In a row of 5 facing South, who is to the left of the person at the right extreme?", a: "The person at the 2nd position from the right (moving East)." }
+          ],
+          speedSummary: "Facing North? Just use your own hands. Facing South? Use your left hand for Right and right hand for Left."
+        }
+      },
+      {
+        id: "linear-complex",
+        title: "2. Dual Rows & Attributes",
+        content: {
+          coreConcept: "Dual row arrangements involve two parallel lines facing each other. Usually, Row 1 faces South and Row 2 faces North.",
+          formulaBank: "Opposite: If A in Row 1 faces B in Row 2, they occupy the same vertical position index.",
+          logic: "1. Focus on the relationship between the rows.\n2. 'Diagonal' positions: If A is diagonally opposite B, they are at opposite ends of different rows.",
+          traps: "Thinking 'Left' is the same for both rows. People in Row 1 (South) have their Left toward the right of the screen.",
+          examples: [
+            { q: "12 people in 2 rows. A(Row 2) faces P(Row 1). A is 2nd from left. What is P's position?", a: "P is also 2nd from his perspective (which is the screen's right end if facing South)." }
+          ],
+          speedSummary: "Always cross-check opposite pairs immediately when a clue links Row 1 and Row 2."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "al-fc-001",

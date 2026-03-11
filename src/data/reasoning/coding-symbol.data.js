@@ -2,6 +2,24 @@ export const codingSymbolData = {
   subject: "Reasoning",
   chapter: "Coding - Symbol",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "symbol-coding",
+        title: "1. Symbol & Direct Substitution",
+        content: {
+          coreConcept: "In symbol coding, letters are replaced by specific symbols ($, #, @) or numbers based on a fixed mapping.",
+          formulaBank: "- Direct Mapping: If A=@ and B=$, then AB=@$.",
+          logic: "1. Find the common letters in multiple given words to identify their symbols.\n2. Ensure the mapping is consistent across all examples given.",
+          traps: "Complex rules: Sometimes the symbol represents the 'number of vowels' rather than the letter itself.\nPositional symbols: The symbol for 'A' might change if it's at the start or end of a word.",
+          examples: [
+            { q: "If STAR = $*#@ and RATE = #@%$ , what is TEARS?", a: "%#@*$ (By direct substitution)." }
+          ],
+          speedSummary: "Common letters are your best clues for unlocking symbol codes."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "cs-fc-001",

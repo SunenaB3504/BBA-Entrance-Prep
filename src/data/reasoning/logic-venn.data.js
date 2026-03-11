@@ -2,6 +2,24 @@ export const logicVennData = {
   subject: "Reasoning",
   chapter: "Logic - Venn",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "venn-diagrams",
+        title: "1. Geometric Venn Diagrams",
+        content: {
+          coreConcept: "Venn diagrams represent relationships between sets (objects, classes, groups).",
+          formulaBank: "- Type 1: Relationship identification (e.g., Doctors, Humans, Females).\n- Type 2: Number identification (e.g., 'How many doctors are neither females nor humans?').",
+          logic: "1. Identify the relationship: Is one group a proper subset of another?\n2. Use the 'Universal' group as the largest circle if applicable.",
+          traps: "Common sense vs Statement: Sometimes the groups overlap in reality but the question implies they are disjoint (or vice versa).",
+          examples: [
+            { q: "Represent: India, Delhi, Asia.", a: "Three concentric circles (Delhi inside India, India inside Asia)." }
+          ],
+          speedSummary: "Concentric = Subset. Overlap = Some commonality. Separated = No relation."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "lv-fc-001",

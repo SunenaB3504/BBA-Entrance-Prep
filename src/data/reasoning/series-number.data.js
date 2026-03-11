@@ -2,6 +2,25 @@ export const seriesNumberData = {
   subject: "Reasoning",
   chapter: "Series - Number",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "number-patterns",
+        title: "1. Common Number Patterns",
+        content: {
+          coreConcept: "Number series are sequences following a specific mathematical rule. Identifying the speed of growth is the first step.",
+          formulaBank: "- Arithmetic: constant addition (d).\n- Geometric: constant multiplication (r).\n- Squares/Cubes: n², n³, n²±1, n³±1.\n- Fibonacci: a + b = c.",
+          logic: "1. Check Difference: If growth is slow.\n2. Check Multiplication: If growth is fast.\n3. Alternating Series: Check odd and even positions separately.",
+          traps: "The 'Missing' vs 'Wrong' Term: READ the question carefully to see if it wants the next term or the one that doesn't fit.\nMultiple Rules: Sometimes a series uses +1, x2, +3, x4...",
+          examples: [
+            { q: "2, 4, 8, 16, ? ", a: "32 (x2 pattern)." },
+            { q: "1, 4, 9, 16, ? ", a: "25 (Squares: 1², 2², 3², 4², 5²)." }
+          ],
+          speedSummary: "If you can't find a rule, try the 'Difference of Differences'."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "sn-fc-001",

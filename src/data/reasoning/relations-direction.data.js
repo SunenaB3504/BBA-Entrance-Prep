@@ -2,6 +2,24 @@ export const relationsDirectionData = {
   subject: "Reasoning",
   chapter: "Relations - Direction",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "direction-sense",
+        title: "1. Direction & Distance Logic",
+        content: {
+          coreConcept: "Direction sense involves tracking movements across North, South, East, and West.",
+          formulaBank: "- Main Directions: N, S, E, W.\n- Cardinal Directions: NE, NW, SE, SW.\n- Pythagoras: Distance = √(x² + y²).",
+          logic: "1. Draw a small compass on your rough sheet.\n2. Always start from a fixed 'Point A'.\n3. Remember: Turning RIGHT while facing South takes you WEST.",
+          traps: "The Final Direction vs Direction from Start: 'Which way is he facing now?' vs 'In which direction is he from the starting point?' - READ CAREFULLY.\nRotation: 90 degrees vs 45 degrees turns.",
+          examples: [
+            { q: "A man walks 4km North, then 3km East. How far is he from the start?", a: "5km (√(4² + 3²) = 5)." }
+          ],
+          speedSummary: "Facing North? Right is East. Facing South? Right is West. Facing West? Right is North. Facing East? Right is South."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "rd-fc-001",

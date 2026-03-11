@@ -2,6 +2,24 @@ export const relationsBloodData = {
   subject: "Reasoning",
   chapter: "Relations - Blood",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "blood-relation-basics",
+        title: "1. Family Tree & Relations",
+        content: {
+          coreConcept: "Blood relations test your ability to map family hierarchies using standard symbols.\n\n- Male: '+', Female: '-'.\n- Vertical Line: Parent-Child relationship.\n- Horizontal Line: Sibling relationship.\n- Double Horizontal: Married Couple.",
+          formulaBank: "- Maternal: Mother's side (Maternal Uncle = Mother's brother).\n- Paternal: Father's side (Paternal Aunt = Father's sister).\n- In-laws: Relations by marriage.",
+          logic: "1. Start drawing the tree from the oldest generation mentioned.\n2. Use unique symbols for gender to avoid confusion.\n3. Read 'Only Son' carefully - it means no other brothers, but sisters could exist.",
+          traps: "Gender assumption: Names like 'Shanti' or 'Kiran' do not guarantee gender. Only use clues like 'He', 'She', 'Mother', 'Father'.",
+          examples: [
+            { q: "Pointing to a man, Neha said, 'His mother is the only daughter of my father'. How is Neha related to the man?", a: "Mother. (Only daughter of Neha's father = Neha herself)." }
+          ],
+          speedSummary: "Always assume yourself as the speaker if the question starts with 'Pointing to...'"
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "rb-fc-001",

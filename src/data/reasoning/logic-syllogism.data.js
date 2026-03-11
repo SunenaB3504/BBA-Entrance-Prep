@@ -2,6 +2,24 @@ export const logicSyllogismData = {
   subject: "Reasoning",
   chapter: "Logic - Syllogism",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "syllogisms",
+        title: "1. Syllogisms & Logical Venn",
+        content: {
+          coreConcept: "Syllogisms test deductive reasoning based on given premises.\n\n- All A are B: A is a subset of B.\n- Some A are B: Intersection of A and B is non-empty.\n- No A is B: A and B are disjoint sets.",
+          formulaBank: "- Only a Few: Means 'Some are' AND 'Some are not'.\n- At least: Same as 'Some'.",
+          logic: "1. Draw the minimum possible Venn diagram representing the statements.\n2. Check if the conclusion is DEFINITELY true in ALL possible diagrams.\n3. If it fails in even one valid diagram, the definite conclusion is false.",
+          traps: "Possibility vs Definite: 'Some A can be B' (Possibility) vs 'Some A are B' (Definite).\nConclusion outside scope: Conclusions mentioning elements not in the statements.",
+          examples: [
+            { q: "Stmt: All Dogs are Cats. All Cats are Lions. Concl: All Dogs are Lions.", a: "True (Transitive property)." }
+          ],
+          speedSummary: "Definite conclusiones must be 100% true across all valid diagrams. Possibilities only need to be true in one."
+        }
+      }
+    ]
+  },
   flashcards: [
     {
       id: "ls-fc-001",
