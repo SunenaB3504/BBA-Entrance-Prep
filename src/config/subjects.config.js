@@ -8,20 +8,21 @@ export const SUBJECTS = [
     color: "#2563eb",
     examTags: ["CUET", "MH-CET"],
     chapters: [
-      { id: "partnership-basics", name: "Partnership Basics", dataFile: "partnership-basics.data" },
-      { id: "admission-partner", name: "Admission of Partner", dataFile: "partnership-admission.data" },
-      { id: "retirement-death", name: "Retirement & Death of Partner", dataFile: "partnership-retirement-death.data" },
-      { id: "dissolution", name: "Dissolution of Firm", dataFile: "dissolution.data" },
-      { id: "share-capital", name: "Share Capital", dataFile: "share-capital.data" },
-      { id: "debentures", name: "Debentures", dataFile: "debentures.data" },
-      { id: "financial-statements", name: "Financial Statements", dataFile: "financial-statements.data" },
-      { id: "financial-analysis", name: "Financial Analysis", dataFile: "financial-analysis.data" },
-      { id: "ratio-analysis", name: "Ratio Analysis", dataFile: "ratio-analysis.data" },
-      { id: "cash-flow", name: "Cash Flow Statement", dataFile: "cash-flow.data" },
-      { id: "npo", name: "NPO (Not-for-Profit)", dataFile: "npo.data" },
-      { id: "computerized-accounting", name: "Computerized Accounting", dataFile: "computerized-accounting.data" }
+      { id: "partnership-basics", name: "Partnership Basics", dataFile: "partnership-basics.data", questionCount: 30 },
+      { id: "admission-partner", name: "Admission of Partner", dataFile: "partnership-admission.data", questionCount: 30 },
+      { id: "retirement-death", name: "Retirement & Death of Partner", dataFile: "partnership-retirement-death.data", questionCount: 25 },
+      { id: "dissolution", name: "Dissolution of Firm", dataFile: "dissolution.data", questionCount: 25 },
+      { id: "share-capital", name: "Share Capital", dataFile: "share-capital.data", questionCount: 25 },
+      { id: "debentures", name: "Debentures", dataFile: "debentures.data", questionCount: 25 },
+      { id: "financial-statements", name: "Financial Statements", dataFile: "financial-statements.data", questionCount: 20 },
+      { id: "financial-analysis", name: "Financial Analysis", dataFile: "financial-analysis.data", questionCount: 20 },
+      { id: "ratio-analysis", name: "Ratio Analysis", dataFile: "ratio-analysis.data", questionCount: 20 },
+      { id: "cash-flow", name: "Cash Flow Statement", dataFile: "cash-flow.data", questionCount: 20 },
+      { id: "npo", name: "NPO (Not-for-Profit)", dataFile: "npo.data", questionCount: 20 },
+      { id: "computerized-accounting", name: "Computerized Accounting", dataFile: "computerized-accounting.data", questionCount: 15 }
     ]
   },
+
   {
     id: "business-studies",
     name: "Business Studies",

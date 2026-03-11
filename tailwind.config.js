@@ -13,8 +13,12 @@ export default {
                 },
                 secondary: '#64748b',
                 accent: '#f59e0b',
-            }
+            },
+            fontFamily: {
+                sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            },
         },
     },
     plugins: [],
 }
+
