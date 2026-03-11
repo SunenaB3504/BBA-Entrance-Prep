@@ -1,602 +1,463 @@
-// src/data/english/vocabulary.data.js
+/**
+ * Vocabulary Module
+ * 10 Word Families (4 Qs per word)
+ * 
+ * SEED LIST WORD FAMILIES:
+ * 1. Prudent
+ * 2. Incentive
+ * 3. Volatile
+ * 4. Deficit
+ * 5. Surplus
+ * 6. Arbitrary
+ * 7. Autonomy
+ * 8. Lucrative
+ * 9. Pragmatic
+ * 10. Eloquent
+ * 
+ * QUESTION TYPES (Per Word):
+ * 1. Direct Meaning
+ * 2. Synonym
+ * 3. Antonym
+ * 4. Fill-in-the-blank (Contextual)
+ */
 
 export const vocabularyData = {
     subject: "English",
-    chapter: "Vocabulary & Verbal Ability (MH-CET)",
-    examTags: ["MH-CET"],
+    chapter: "Vocabulary",
+    examTags: ["MH-CET", "CUET"],
     flashcards: [
-        { id: "voc-fc-001", term: "Prudent", definition: "Showing care and thought for the future.", example: "A prudent investor." },
-        { id: "voc-fc-002", term: "Ambiguous", definition: "Open to more than one interpretation.", example: "The law's wording is ambiguous." },
-        { id: "voc-fc-003", term: "Mitigate", definition: "To make something less severe or painful.", example: "Drainage systems help mitigate floods." }
+        {
+            id: "vocab-fc-001",
+            term: "Prudent",
+            definition: "Acting with or showing care and thought for the future.",
+            example: "A prudent investor always diversifies."
+        },
+        {
+            id: "vocab-fc-002",
+            term: "Volatile",
+            definition: "Liable to change rapidly and unpredictably, especially for the worse.",
+            example: "The stock market is highly volatile."
+        }
     ],
     questions: [
-        // --- TOPIC 1: Synonyms (10 Questions) ---
+        // 1. PRUDENT
         {
-            id: "voc-q-001",
-            type: "mcq",
+            id: "vocab-q-001",
+            type: "multiple-choice",
             difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the synonym for 'Eloquent':",
-            options: ["Silent", "Fluent", "Confused", "Rude"],
+            question: "What is the primary meaning of the word 'Prudent'?",
+            options: ["Extremely wealthy", "Careful and sensible", "Fast-moving", "Aggressive"],
             correct: 1,
-            explanation: "Eloquent means having the ability to speak fluently and persuasively."
+            explanation: "Prudent means showing care and foresight in management.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "voc-q-002",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the synonym for 'Diligent':",
-            options: ["Lazy", "Hardworking", "Careless", "Slow"],
+            id: "vocab-q-002",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Choose the synonym for 'Prudent':",
+            options: ["Reckless", "Cautious", "Indifferent", "Naive"],
             correct: 1,
-            explanation: "Diligent means showing care and conscientiousness in one's work."
+            explanation: "Cautious is the closest synonym to prudent.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "voc-q-003",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the synonym for 'Inevitable':",
-            options: ["Avoidable", "Uncertain", "Unavoidable", "Doubtful"],
+            id: "vocab-q-003",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Choose the antonym for 'Prudent':",
+            options: ["Wise", "Judicious", "Imprudent", "Frugal"],
             correct: 2,
-            explanation: "Inevitable means certain to happen; unavoidable."
+            explanation: "Imprudent is the direct opposite of prudent.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "voc-q-004",
-            type: "mcq",
+            id: "vocab-q-004",
+            type: "multiple-choice",
             difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the synonym for 'Candid':",
-            options: ["Frank", "Deceptive", "Shy", "Angry"],
-            correct: 0,
-            explanation: "Candid means truthful and straightforward; frank."
-        },
-        {
-            id: "voc-q-005",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the synonym for 'Lethargic':",
-            options: ["Energetic", "Lazy/Sluggish", "Fast", "Creative"],
+            question: "Fill in the blank: It is _______ to save money for emergencies.",
+            options: ["reckless", "prudent", "volatile", "arbitrary"],
             correct: 1,
-            explanation: "Lethargic means affected by lethargy; sluggish and apathetic."
-        },
-        {
-            id: "voc-q-006",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the synonym for 'Opulent':",
-            options: ["Poor", "Wealthy", "Simple", "Ugly"],
-            correct: 1,
-            explanation: "Opulent means ostentatiously costly and luxurious; wealthy."
-        },
-        {
-            id: "voc-q-007",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the synonym for 'Obscure':",
-            options: ["Clear", "Unknown", "Famous", "Bright"],
-            correct: 1,
-            explanation: "Obscure means not discovered or known about; uncertain."
-        },
-        {
-            id: "voc-q-008",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the synonym for 'Fortitude':",
-            options: ["Weakness", "Courage", "Fear", "Laziness"],
-            correct: 1,
-            explanation: "Fortitude means courage in pain or adversity."
-        },
-        {
-            id: "voc-q-009",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the synonym for 'Pragmatic':",
-            options: ["Idealistic", "Practical", "Unrealistic", "Lazy"],
-            correct: 1,
-            explanation: "Pragmatic means dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations."
-        },
-        {
-            id: "voc-q-010",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the synonym for 'Vigilant':",
-            options: ["Careless", "Watchful", "Sleepy", "Lazy"],
-            correct: 1,
-            explanation: "Vigilant means keeping careful watch for possible danger or difficulties."
+            explanation: "Saving money for emergencies is a sensible (prudent) action.",
+            examTags: ["MH-CET"]
         },
 
-        // --- TOPIC 2: Antonyms (10 Questions) ---
+        // 2. INCENTIVE
         {
-            id: "voc-q-011",
-            type: "mcq",
+            id: "vocab-q-005",
+            type: "multiple-choice",
             difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the antonym for 'Fragile':",
-            options: ["Weak", "Delicate", "Strong/Sturdy", "Broken"],
+            question: "Meaning of 'Incentive':",
+            options: ["A punishment", "A motivation or reward", "A tax penalty", "A logical fallacy"],
+            correct: 1,
+            explanation: "An incentive is something that encourages action.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-006",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Synonym for 'Incentive':",
+            options: ["Discouragement", "Stimulus", "Deterrent", "Constraint"],
+            correct: 1,
+            explanation: "Stimulus is a synonym for incentive as it triggers action.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-007",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Antonym for 'Incentive':",
+            options: ["Motivation", "Reward", "Disincentive", "Encouragement"],
             correct: 2,
-            explanation: "Fragile means easily broken; strong is the opposite."
+            explanation: "Disincentive is the opposite of incentive.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "voc-q-012",
-            type: "mcq",
+            id: "vocab-q-008",
+            type: "multiple-choice",
             difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the antonym for 'Ambigous':",
-            options: ["Vague", "Clear", "Uncertain", "Obscure"],
-            correct: 1,
-            explanation: "Ambiguous means having more than one meaning; clear is the opposite."
-        },
-        {
-            id: "voc-q-013",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the antonym for 'Vague':",
-            options: ["Unclear", "Definite", "Blurry", "Faint"],
-            correct: 1,
-            explanation: "Vague means uncertain or unclear; definite is the opposite."
-        },
-        {
-            id: "voc-q-014",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the antonym for 'Hostile':",
-            options: ["Friendly", "Angry", "Unkind", "Cruel"],
+            question: "Fill in the blank: The company offered a bonus as an _______ to work overtime.",
+            options: ["incentive", "autonomy", "eloquent", "deficit"],
             correct: 0,
-            explanation: "Hostile means showing opposition or dislike; friendly is the opposite."
-        },
-        {
-            id: "voc-q-015",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the antonym for 'Expand':",
-            options: ["Grow", "Stretch", "Shrink", "Increase"],
-            correct: 2,
-            explanation: "Expand means to become larger; shrink is the opposite."
-        },
-        {
-            id: "voc-q-016",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the antonym for 'Barren':",
-            options: ["Empty", "Fertile", "Dry", "Dead"],
-            correct: 1,
-            explanation: "Barren means too poor to produce vegetation; fertile is the opposite."
-        },
-        {
-            id: "voc-q-017",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the antonym for 'Abundant':",
-            options: ["Plentiful", "Scarce", "Rich", "Full"],
-            correct: 1,
-            explanation: "Abundant means existing in large quantities; scarce is the opposite."
-        },
-        {
-            id: "voc-q-018",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the antonym for 'Gradual':",
-            options: ["Slow", "Steady", "Sudden", "Mild"],
-            correct: 2,
-            explanation: "Gradual means taking place by degrees; sudden is the opposite."
-        },
-        {
-            id: "voc-q-019",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the antonym for 'Genuine':",
-            options: ["Real", "Authentic", "Fake", "True"],
-            correct: 2,
-            explanation: "Genuine means truly what something is said to be; fake is the opposite."
-        },
-        {
-            id: "voc-q-020",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Choose the antonym for 'Ancient':",
-            options: ["Old", "Modern", "Historic", "Aged"],
-            correct: 1,
-            explanation: "Ancient means belonging to the very distant past; modern is the opposite."
+            explanation: "A bonus is a reward (incentive) offered to motivate employees.",
+            examTags: ["MH-CET"]
         },
 
-        // --- TOPIC 3: Cloze Test (10 Questions) ---
-        // A short story with 10 blanks
+        // 3. VOLATILE
         {
-            id: "voc-cl-001",
-            type: "mcq",
-            difficulty: "medium",
-            cognitiveType: "recall",
-            psychometricTemplate: "logic",
-            speedTarget: 40,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Cloze Test: Select the best word for blank (1).\n 'The success of a business ____(1)____ not just on capital, but on the vision of its leaders. In a world of ____(2)____ changes, keeping up with technology is ____(3)____. Companies that fail to ____(4)____ often find themselves obsolete.'\n Blank (1) options:",
-            options: ["depends", "refers", "belongs", "insists"],
-            correct: 0,
-            explanation: "The correct verb for success in relation to business capital/vision is 'depends'."
-        },
-        {
-            id: "voc-cl-002",
-            type: "mcq",
-            difficulty: "medium",
-            cognitiveType: "recall",
-            psychometricTemplate: "logic",
-            speedTarget: 40,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Cloze Test: Select the best word for blank (2).\n 'The success of a business depends not just on capital, but on the vision of its leaders. In a world of ____(2)____ changes, keeping up with technology is ____(3)____.'\n Blank (2) options:",
-            options: ["slow", "rapid", "random", "minor"],
+            id: "vocab-q-009",
+            type: "multiple-choice",
+            difficulty: "easy",
+            question: "Meaning of 'Volatile':",
+            options: ["Steady and calm", "Highly unstable", "Very heavy", "Permanent"],
             correct: 1,
-            explanation: "In the context of business/tech, 'rapid changes' is the most suitable phrase."
+            explanation: "Volatile means something that changes easily or unpredictably.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "voc-cl-003",
-            type: "mcq",
+            id: "vocab-q-010",
+            type: "multiple-choice",
             difficulty: "medium",
-            cognitiveType: "recall",
-            psychometricTemplate: "logic",
-            speedTarget: 40,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Cloze Test: Select the best word for blank (3).\n 'In a world of rapid changes, keeping up with technology is ____(3)____. Companies that fail to ____(4)____ often find themselves obsolete.'\n Blank (3) options:",
-            options: ["useless", "optional", "essential", "harmful"],
+            question: "Synonym for 'Volatile':",
+            options: ["Stable", "Capricious", "Resilient", "Consistent"],
+            correct: 1,
+            explanation: "Capricious means impulsive or unpredictable, similar to volatile.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-011",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Antonym for 'Volatile':",
+            options: ["Variable", "Unpredictable", "Stable", "Ephemeral"],
             correct: 2,
-            explanation: "'Essential' fits the tone of advice for business survival."
+            explanation: "Stable means not likely to change, the opposite of volatile.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "voc-cl-004",
-            type: "mcq",
-            difficulty: "medium",
-            cognitiveType: "recall",
-            psychometricTemplate: "logic",
-            speedTarget: 40,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Cloze Test: Select the best word for blank (4).\n 'Companies that fail to ____(4)____ often find themselves obsolete.'\n Blank (4) options:",
-            options: ["adapt", "complain", "ignore", "decline"],
-            correct: 0,
-            explanation: "To avoid obsolescence, a company must 'adapt'."
-        },
-        {
-            id: "voc-cl-005",
-            type: "mcq",
-            difficulty: "medium",
-            cognitiveType: "recall",
-            psychometricTemplate: "logic",
-            speedTarget: 40,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Cloze Test: Select the best word for blank (5).\n 'Moreover, the ____(5)____ of employees is a crucial resource.' \n Blank (5) options:",
-            options: ["laziness", "expertise", "absence", "disinterest"],
+            id: "vocab-q-012",
+            type: "multiple-choice",
+            difficulty: "easy",
+            question: "Fill in the blank: Cryptocurrency markets are often considered extremely _______.",
+            options: ["lucrative", "volatile", "pragmatic", "surplus"],
             correct: 1,
-            explanation: "Expertise is a crucial positive resource for a company."
-        },
-        {
-            id: "voc-cl-006",
-            type: "mcq",
-            difficulty: "medium",
-            cognitiveType: "recall",
-            psychometricTemplate: "logic",
-            speedTarget: 40,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Cloze Test: Select the best word for blank (6).\n 'Effective communication ____(6)____ healthy workplace relationships.' \n Blank (6) options:",
-            options: ["fosters", "destroys", "neglects", "stops"],
-            correct: 0,
-            explanation: "Communication 'fosters' (supports/encourages) relationships."
-        },
-        {
-            id: "voc-cl-007",
-            type: "mcq",
-            difficulty: "medium",
-            cognitiveType: "recall",
-            psychometricTemplate: "logic",
-            speedTarget: 40,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Cloze Test: Select the best word for blank (7).\n 'When conflict becomes ____(7)____, it harms productivity.' \n Blank (7) options:",
-            options: ["minimal", "excessive", "constructive", "absent"],
-            correct: 1,
-            explanation: "'Excessive' conflict is what would harm productivity."
-        },
-        {
-            id: "voc-cl-008",
-            type: "mcq",
-            difficulty: "medium",
-            cognitiveType: "recall",
-            psychometricTemplate: "logic",
-            speedTarget: 40,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Cloze Test: Select the best word for blank (8).\n 'Leaders should ____(8)____ to solve disputes quickly.' \n Blank (8) options:",
-            options: ["ignore", "hesitate", "strive", "fail"],
-            correct: 2,
-            explanation: "Leaders should 'strive' (make an effort) to solve disputes."
-        },
-        {
-            id: "voc-cl-009",
-            type: "mcq",
-            difficulty: "medium",
-            cognitiveType: "recall",
-            psychometricTemplate: "logic",
-            speedTarget: 40,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Cloze Test: Select the best word for blank (9).\n 'Innovation is the ____(9)____ engine of growth.'\n Blank (9) options:",
-            options: ["primary", "secondary", "weakest", "useless"],
-            correct: 0,
-            explanation: "'Primary' fits the standard business idiom for innovation."
-        },
-        {
-            id: "voc-cl-010",
-            type: "mcq",
-            difficulty: "medium",
-            cognitiveType: "recall",
-            psychometricTemplate: "logic",
-            speedTarget: 40,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "Cloze Test: Select the best word for blank (10).\n 'Without it, a firm stays ____(10)____.' \n Blank (10) options:",
-            options: ["stagnant", "growing", "vibrant", "successful"],
-            correct: 0,
-            explanation: "Without innovation, a firm stays 'stagnant' (not moving or growing)."
+            explanation: "Crypto markets change rapidly, making them volatile.",
+            examTags: ["MH-CET"]
         },
 
-        // --- TOPIC 4: Idioms & Phrases (10 Questions) ---
+        // 4. DEFICIT
         {
-            id: "voc-q-031",
-            type: "mcq",
+            id: "vocab-q-013",
+            type: "multiple-choice",
             difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "What does the idiom 'Beat around the bush' mean?",
-            options: [
-                "To cut the trees in a park.",
-                "To talk about the main topic directly.",
-                "To avoid the main topic and talk vaguely.",
-                "To start a garden."
-            ],
+            question: "Meaning of 'Deficit':",
+            options: ["A profit", "A shortage or shortfall", "A massive gain", "A bank balance"],
+            correct: 1,
+            explanation: "A deficit occurs when spending exceeds income.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-014",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Synonym for 'Deficit':",
+            options: ["Surplus", "Abundance", "Scarcity", "Excess"],
             correct: 2,
-            explanation: "Beating around the bush means avoiding the core issue."
+            explanation: "Scarcity or shortfall is a synonym for deficit.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "voc-q-032",
-            type: "mcq",
+            id: "vocab-q-015",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Antonym for 'Deficit':",
+            options: ["Lack", "Shortfall", "Surplus", "Debt"],
+            correct: 2,
+            explanation: "Surplus is the opposite of a deficit (shortfall).",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-016",
+            type: "multiple-choice",
             difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "What does the idiom 'Piece of cake' mean?",
-            options: ["Something very tasty.", "Something very easy.", "A difficult task.", "A birthday celebration."],
+            question: "Fill in the blank: The team had a two-goal _______ by half-time.",
+            options: ["incentive", "deficit", "autonomy", "prudent"],
             correct: 1,
-            explanation: "Piece of cake refers to something extremely easy."
+            explanation: "A 'two-goal deficit' means they were trailing by two goals.",
+            examTags: ["MH-CET"]
         },
+
+        // 5. SURPLUS
         {
-            id: "voc-q-033",
-            type: "mcq",
+            id: "vocab-q-017",
+            type: "multiple-choice",
             difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "What does the idiom 'Under the weather' mean?",
-            options: ["To be outside in the rain.", "To feel slightly ill.", "To enjoy the sunshine.", "To be a weather reporter."],
-            correct: 1,
-            explanation: "Under the weather means feeling sick or unwell."
-        },
-        {
-            id: "voc-q-034",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "What does the idiom 'Ball is in your court' mean?",
-            options: [
-                "It is your turn to make a decision or take action.",
-                "To play a game of tennis.",
-                "To be in a legal court.",
-                "To lose a game."
-            ],
+            question: "Meaning of 'Surplus':",
+            options: ["An amount leftover", "A complete loss", "A lack of resources", "Exactly zero"],
             correct: 0,
-            explanation: "It means the responsibility for the next move is yours."
+            explanation: "Surplus means an amount that is more than what is needed.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "voc-q-035",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "What does the idiom 'Call it a day' mean?",
-            options: ["To start a new project.", "To stop working on something for the rest of the day.", "To name a newborn baby.", "To wake up early."],
-            correct: 1,
-            explanation: "Calling it a day means deciding to stop working because you've done enough or are tired."
-        },
-        {
-            id: "voc-q-036",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "What does the idiom 'Burning the midnight oil' mean?",
-            options: ["To set a lamp on fire.", "To waste electricity.", "To work or study late into the night.", "To cook dinner at midnight."],
+            id: "vocab-q-018",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Synonym for 'Surplus':",
+            options: ["Dearth", "Deficiency", "Excess", "Shortage"],
             correct: 2,
-            explanation: "It refers to working late at night."
+            explanation: "Excess is synonymous with surplus.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "voc-q-037",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "What does the idiom 'Break the ice' mean?",
-            options: [
-                "To melt ice cubes.",
-                "To make people feel more comfortable in a social situation.",
-                "To cause a fight.",
-                "To go ice skating."
-            ],
-            correct: 1,
-            explanation: "Breaking the ice means initiating conversation in a social setting to reduce tension."
-        },
-        {
-            id: "voc-q-038",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "What does the idiom 'Once in a blue moon' mean?",
-            options: ["Every night.", "Very rarely.", "Every month.", "Once a year."],
-            correct: 1,
-            explanation: "It refers to an event that happens very infrequently."
-        },
-        {
-            id: "voc-q-039",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "What does the idiom 'Cross that bridge when you come to it' mean?",
-            options: [
-                "To walk across a literal bridge.",
-                "To deal with a problem only when it actually happens.",
-                "To build a bridge for a city.",
-                "To travel to a distant place."
-            ],
-            correct: 1,
-            explanation: "It means not to worry about a future problem until it becomes real."
-        },
-        {
-            id: "voc-q-040",
-            type: "mcq",
-            difficulty: "easy",
-            cognitiveType: "recall",
-            psychometricTemplate: "identification",
-            speedTarget: 30,
-            negativeMarking: false,
-            examTags: ["MH-CET"],
-            question: "What does the idiom 'See eye to eye' mean?",
-            options: ["To look into a mirror.", "To have a staring contest.", "To agree with someone completely.", "To be angry at someone."],
+            id: "vocab-q-019",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Antonym for 'Surplus':",
+            options: ["Abundance", "Glut", "Deficit", "Plethora"],
             correct: 2,
-            explanation: "To see eye to eye is to be in full agreement."
+            explanation: "Deficit is the opposite of surplus.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-020",
+            type: "multiple-choice",
+            difficulty: "easy",
+            question: "Fill in the blank: The country had a budget _______ due to unexpected tax revenue.",
+            options: ["surplus", "deficit", "arbitrary", "volatile"],
+            correct: 0,
+            explanation: "Extra revenue leads to a budget surplus.",
+            examTags: ["MH-CET"]
+        },
+
+        // 6. ARBITRARY
+        {
+            id: "vocab-q-021",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Meaning of 'Arbitrary':",
+            options: ["Based on logic", "Random or personal whim", "Scientifically proven", "Universal law"],
+            correct: 1,
+            explanation: "Arbitrary decisions are made without any specific reason or system.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-022",
+            type: "multiple-choice",
+            difficulty: "hard",
+            question: "Synonym for 'Arbitrary':",
+            options: ["Rational", "Discretionary", "Objective", "Systematic"],
+            correct: 1,
+            explanation: "Discretionary or random is a synonym for arbitrary.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-023",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Antonym for 'Arbitrary':",
+            options: ["Haphazard", "Capricious", "Logical", "Erratic"],
+            correct: 2,
+            explanation: "Logical or reasoned is the opposite of arbitrary.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-024",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Fill in the blank: The judge's decision was criticized for being _______.",
+            options: ["pragmatic", "eloquent", "arbitrary", "surplus"],
+            correct: 2,
+            explanation: "Criticism often targets decisions that seem random (arbitrary).",
+            examTags: ["MH-CET"]
+        },
+
+        // 7. AUTONOMY
+        {
+            id: "vocab-q-025",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Meaning of 'Autonomy':",
+            options: ["Financial debt", "Self-governance or independence", "Strict obedience", "A type of vehicle"],
+            correct: 1,
+            explanation: "Autonomy refers to the right or condition of self-government.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-026",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Synonym for 'Autonomy':",
+            options: ["Subservience", "Sovereignty", "Dependency", "Totalitarianism"],
+            correct: 1,
+            explanation: "Sovereignty is a synonym for autonomy/independence.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-027",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Antonym for 'Autonomy':",
+            options: ["Liberty", "Freedom", "Dependence", "Self-rule"],
+            correct: 2,
+            explanation: "Dependence is the opposite of autonomy.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-028",
+            type: "multiple-choice",
+            difficulty: "easy",
+            question: "Fill in the blank: The manager gives the team a lot of _______ to finish their tasks.",
+            options: ["autonomy", "incentive", "deficit", "surplus"],
+            correct: 0,
+            explanation: "Giving a team freedom to work means giving them autonomy.",
+            examTags: ["MH-CET"]
+        },
+
+        // 8. LUCRATIVE
+        {
+            id: "vocab-q-029",
+            type: "multiple-choice",
+            difficulty: "easy",
+            question: "Meaning of 'Lucrative':",
+            options: ["Extremely boring", "Highly profitable", "Very dangerous", "Small and tiny"],
+            correct: 1,
+            explanation: "Lucrative means producing a great deal of profit.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-030",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Synonym for 'Lucrative':",
+            options: ["Useless", "Remunerative", "Worthless", "Impoverished"],
+            correct: 1,
+            explanation: "Remunerative or profitable is a synonym for lucrative.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-031",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Antonym for 'Lucrative':",
+            options: ["Fruitful", "Gainful", "Unprofitable", "Productive"],
+            correct: 2,
+            explanation: "Unprofitable is the opposite of lucrative.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-032",
+            type: "multiple-choice",
+            difficulty: "easy",
+            question: "Fill in the blank: Real estate can be a very _______ business if you invest wisely.",
+            options: ["volatile", "lucrative", "arbitrary", "eloquent"],
+            correct: 1,
+            explanation: "Wisely invested real estate is profitable (lucrative).",
+            examTags: ["MH-CET"]
+        },
+
+        // 9. PRAGMATIC
+        {
+            id: "vocab-q-033",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Meaning of 'Pragmatic':",
+            options: ["Idealistic and unrealistic", "Practical and realistic", "Stubborn", "Uninterested"],
+            correct: 1,
+            explanation: "Pragmatic means dealing with things realistically and practically.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-034",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Synonym for 'Pragmatic':",
+            options: ["Visionary", "Quixotic", "Hands-on", "Theatrical"],
+            correct: 2,
+            explanation: "Hands-on/down-to-earth is a synonym for pragmatic.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-035",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Antonym for 'Pragmatic':",
+            options: ["Logical", "Utilitarian", "Idealistic", "Efficient"],
+            correct: 2,
+            explanation: "Idealistic is the opposite of pragmatic.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-036",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Fill in the blank: We need a _______ solution to the problem, not just high theories.",
+            options: ["pragmatic", "eloquent", "volatile", "lucrative"],
+            correct: 0,
+            explanation: "A practical solution is a pragmatic one.",
+            examTags: ["MH-CET"]
+        },
+
+        // 10. ELOQUENT
+        {
+            id: "vocab-q-037",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Meaning of 'Eloquent':",
+            options: ["Silent", "Fluent and persuasive in speech", "Rude", "Complex and technical"],
+            correct: 1,
+            explanation: "Eloquent means clearly expressing or indicating something persuasively.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-038",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Synonym for 'Eloquent':",
+            options: ["Inarticulate", "Glib", "Articulate", "Hesitant"],
+            correct: 2,
+            explanation: "Articulate is a synonym for eloquent.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-039",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Antonym for 'Eloquent':",
+            options: ["Poignant", "Silver-tongued", "Ineffable", "Mumbled"],
+            correct: 3,
+            explanation: "Mumbled or inarticulate is the opposite of eloquent.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "vocab-q-040",
+            type: "multiple-choice",
+            difficulty: "medium",
+            question: "Fill in the blank: The activist gave an _______ speech that moved the audience.",
+            options: ["eloquent", "arbitrary", "volatile", "deficit"],
+            correct: 0,
+            explanation: "A persuasive and fluent speech is an eloquent one.",
+            examTags: ["MH-CET"]
         }
     ]
 };

@@ -1,442 +1,333 @@
-// src/data/english/comprehension.data.js
-// CUET 2024 COMPLIANT: VALIDATED AGAINST DATA_SCHEMA.md
+/**
+ * Reading Comprehension Module
+ * Themes: Entrepreneurship, Sustainability, Fintech, Women in Business
+ * 
+ * SCHEMA: Reading Comprehension
+ * [passage]: 150-200 words, formal tone.
+ * [questions]: 5 per passage (Main Idea, Vocab, Inference, Tone, Fact).
+ */
 
 export const comprehensionData = {
     subject: "English",
     chapter: "Reading Comprehension",
-    examTags: ["CUET", "MH-CET"],
+    examTags: ["MH-CET"],
     flashcards: [
-        { id: "comp-fc-001", term: "Main Idea", definition: "Primary theme or purpose of the passage", formula: null, example: "The passage mainly discusses..." },
-        { id: "comp-fc-002", term: "Inference", definition: "Conclusion drawn based on evidence and reasoning", formula: null, example: "It can be inferred that..." },
-        { id: "comp-fc-003", term: "Contextual Vocab", definition: "Defining a word based on its usage in the text", formula: null, example: "The word 'X' most nearly means..." },
-        { id: "comp-fc-004", term: "Tone", definition: "Author's attitude (e.g., Cynical, Optimistic)", formula: null, example: "The author's tone is..." },
-        { id: "comp-fc-005", term: "Multi-Statement", definition: "Questions requiring selection of multiple correct observations", formula: null, example: "(A) and (C) only" }
+        {
+            id: "comp-fc-001",
+            term: "Main Idea",
+            definition: "The primary point the author is trying to make.",
+            example: "What is the central theme of the passage?"
+        },
+        {
+            id: "comp-fc-002",
+            term: "Inference",
+            definition: "A logical conclusion not directly stated in the text.",
+            example: "What can be inferred about the future of startups?"
+        },
+        {
+            id: "comp-fc-003",
+            term: "Contextual Vocabulary",
+            definition: "The meaning of a word as it is used specifically in the text.",
+            example: "The word 'disruption' most nearly means..."
+        }
     ],
     questions: [
-        /* PASSAGE 1: Literary / Autobiographical (Theme: Memory and Loss) - 450 words approx */
+        // PASSAGE 1: Indian Entrepreneurship and Startups
         {
-            id: "comp-q-001", type: "case-study", difficulty: "medium",
-            passage: "The old haveli at the end of the narrow lane remained a silent witness to the passage of time. My grandfather, a man of few words but deep convictions, lived there until his final days, surrounded by leather-bound books and the faint scent of jasmine that drifted from the courtyard. In my childhood memories, the house was a labyrinth of shadowed hallways and hidden alcoves, each holding a secret waiting to be discovered. I remember the creak of the heavy wooden door, the rhythm of rain against the red-tiled roof, and the way the evening sunlight danced across the polished marble floors. It was more than just a structure; it was a sanctuary where stories were woven into the very fabric of the walls. As I stand before it now, the peeling paint and overgrown weeds speak of a forgotten era. The once-vibrant courtyard is now a graveyard of quiet echoes. My grandfather often said that a house is not merely built of bricks and mortar, but of the collective sighs and laughter of those who dwell within. He believed that even after we are gone, a part of our essence lingers in the spaces we once inhabited. Looking at the vacant windows, I feel a profound sense of loss, not just for the building, but for the wisdom and warmth it once contained. The modernization of the neighborhood—with its glass-fronted offices and sleek cafes—seems like a stark intrusion upon this sanctuary of memory. Yet, in the silence, I can almost hear his slow, measured voice, recounting tales of a time when life moved at the pace of a bullock cart, and the greatest luxury was a well-steeped cup of tea shared under the stars.",
-            question: "What is the primary theme of the passage?",
+            id: "comp-q-001",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "India's startup ecosystem has witnessed a meteoric rise over the last decade, transforming the nation into a global innovation hub. This surge is primarily driven by a young, tech-savvy population and increased venture capital flow. From e-commerce to deep-tech, Indian entrepreneurs are solving local problems with scalable solutions. Platforms like UPI have acted as a catalyst, enabling seamless digital transactions and fostering a culture of risk-taking. However, the path is not without challenges. Many startups face the 'funding winter'—a period of reduced investment and increased scrutiny on profitability. Investors are now shifting focus from pure customer acquisition to sustainable business models. Despite these fluctuations, the entrepreneurial spirit remains resilient. Government initiatives like 'Startup India' have provided regulatory support and tax benefits, further emboldening first-generation founders. As the ecosystem matures, the focus is moving toward building world-class products that can compete on a global stage, ensuring India's position as the third-largest startup base remains secure.",
+            question: "What is the central theme of the passage?",
             options: [
-                "The architectural significance of old Indian havelis.",
-                "A nostalgic reflection on the loss of a soulful past vs. modern intrusion.",
-                "The historical evolution of residential neighborhoods in urban India.",
-                "A detailed biography of the author's grandfather's literary career."
-            ],
-            correct: 1,
-            explanation: "The passage uses the haveli as a container for memories of the grandfather and contrasts it with the 'stark intrusion' of 'modernization', highlighting a sense of loss and nostalgia.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-002", type: "case-study", difficulty: "medium",
-            passage: "The old haveli at the end of the narrow lane remained a silent witness to the passage of time. My grandfather, a man of few words but deep convictions, lived there until his final days, surrounded by leather-bound books and the faint scent of jasmine that drifted from the courtyard. In my childhood memories, the house was a labyrinth of shadowed hallways and hidden alcoves, each holding a secret waiting to be discovered. I remember the creak of the heavy wooden door, the rhythm of rain against the red-tiled roof, and the way the evening sunlight danced across the polished marble floors. It was more than just a structure; it was a sanctuary where stories were woven into the very fabric of the walls. As I stand before it now, the peeling paint and overgrown weeds speak of a forgotten era. The once-vibrant courtyard is now a graveyard of quiet echoes. My grandfather often said that a house is not merely built of bricks and mortar, but of the collective sighs and laughter of those who dwell within. He believed that even after we are gone, a part of our essence lingers in the spaces we once inhabited. Looking at the vacant windows, I feel a profound sense of loss, not just for the building, but for the wisdom and warmth it once contained. The modernization of the neighborhood—with its glass-fronted offices and sleek cafes—seems like a stark intrusion upon this sanctuary of memory. Yet, in the silence, I can almost hear his slow, measured voice, recounting tales of a time when life moved at the pace of a bullock cart, and the greatest luxury was a well-steeped cup of tea shared under the stars.",
-            question: "The word 'sanctuary' in the passage implies:",
-            options: [
-                "A dangerous and isolated location.",
-                "A place of refuge, safety, and sacred memory.",
-                "A modern commercial complex with tight security.",
-                "A scientific laboratory for studying historical artifacts."
-            ],
-            correct: 1,
-            explanation: "In context, the haveli is described as a 'sanctuary of memory' where the author felt protected and connected to his heritage, implying refuge and safety.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-003", type: "case-study", difficulty: "medium",
-            passage: "The old haveli at the end of the narrow lane remained a silent witness to the passage of time. My grandfather, a man of few words but deep convictions, lived there until his final days, surrounded by leather-bound books and the faint scent of jasmine that drifted from the courtyard. In my childhood memories, the house was a labyrinth of shadowed hallways and hidden alcoves, each holding a secret waiting to be discovered. I remember the creak of the heavy wooden door, the rhythm of rain against the red-tiled roof, and the way the evening sunlight danced across the polished marble floors. It was more than just a structure; it was a sanctuary where stories were woven into the very fabric of the walls. As I stand before it now, the peeling paint and overgrown weeds speak of a forgotten era. The once-vibrant courtyard is now a graveyard of quiet echoes. My grandfather often said that a house is not merely built of bricks and mortar, but of the collective sighs and laughter of those who dwell within. He believed that even after we are gone, a part of our essence lingers in the spaces we once inhabited. Looking at the vacant windows, I feel a profound sense of loss, not just for the building, but for the wisdom and warmth it once contained. The modernization of the neighborhood—with its glass-fronted offices and sleek cafes—seems like a stark intrusion upon this sanctuary of memory. Yet, in the silence, I can almost hear his slow, measured voice, recounting tales of a time when life moved at the pace of a bullock cart, and the greatest luxury was a well-steeped cup of tea shared under the stars.",
-            question: "Which of the following descriptions best characterize the grandfather?",
-            options: [
-                "Extroverted, materialistic, and tech-savvy.",
-                "Stoic, philosophical, and lover of literature.",
-                "An architect who specialized in modern glass buildings.",
-                "A restless wanderer who hated staying in one place."
-            ],
-            correct: 1,
-            explanation: "He is described as a 'man of few words' (stoic), having 'deep convictions' (philosophical), and surrounded by 'leather-bound books' (literary).",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-004", type: "case-study", difficulty: "hard",
-            passage: "The old haveli at the end of the narrow lane remained a silent witness to the passage of time. My grandfather, a man of few words but deep convictions, lived there until his final days, surrounded by leather-bound books and the faint scent of jasmine that drifted from the courtyard. In my childhood memories, the house was a labyrinth of shadowed hallways and hidden alcoves, each holding a secret waiting to be discovered. I remember the creak of the heavy wooden door, the rhythm of rain against the red-tiled roof, and the way the evening sunlight danced across the polished marble floors. It was more than just a structure; it was a sanctuary where stories were woven into the very fabric of the walls. As I stand before it now, the peeling paint and overgrown weeds speak of a forgotten era. The once-vibrant courtyard is now a graveyard of quiet echoes. My grandfather often said that a house is not merely built of bricks and mortar, but of the collective sighs and laughter of those who dwell within. He believed that even after we are gone, a part of our essence lingers in the spaces we once inhabited. Looking at the vacant windows, I feel a profound sense of loss, not just for the building, but for the wisdom and warmth it once contained. The modernization of the neighborhood—with its glass-fronted offices and sleek cafes—seems like a stark intrusion upon this sanctuary of memory. Yet, in the silence, I can almost hear his slow, measured voice, recounting tales of a time when life moved at the pace of a bullock cart, and the greatest luxury was a well-steeped cup of tea shared under the stars.",
-            question: "The author's tone toward the 'modernization of the neighborhood' is:",
-            options: [
-                "Exuberantly celebratory and encouraging.",
-                "Critically analytical and somewhat resentful.",
-                "Indifferent and purely objective.",
-                "Secretly relieved that the old world is ending."
-            ],
-            correct: 1,
-            explanation: "The author uses the phrase 'stark intrusion' to describe the modernization, implying that it violates the sanctity of the old memories, showing resentment for the change.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-005", type: "case-study", difficulty: "easy",
-            passage: "The old haveli at the end of the narrow lane remained a silent witness to the passage of time. My grandfather, a man of few words but deep convictions, lived there until his final days, surrounded by leather-bound books and the faint scent of jasmine that drifted from the courtyard. In my childhood memories, the house was a labyrinth of shadowed hallways and hidden alcoves, each holding a secret waiting to be discovered. I remember the creak of the heavy wooden door, the rhythm of rain against the red-tiled roof, and the way the evening sunlight danced across the polished marble floors. It was more than just a structure; it was a sanctuary where stories were woven into the very fabric of the walls. As I stand before it now, the peeling paint and overgrown weeds speak of a forgotten era. The once-vibrant courtyard is now a graveyard of quiet echoes. My grandfather often said that a house is not merely built of bricks and mortar, but of the collective sighs and laughter of those who dwell within. He believed that even after we are gone, a part of our essence lingers in the spaces we once inhabited. Looking at the vacant windows, I feel a profound sense of loss, not just for the building, but for the wisdom and warmth it once contained. The modernization of the neighborhood—with its glass-fronted offices and sleek cafes—seems like a stark intrusion upon this sanctuary of memory. Yet, in the silence, I can almost hear his slow, measured voice, recounting tales of a time when life moved at the pace of a bullock cart, and the greatest luxury was a well-steeped cup of tea shared under the stars.",
-            question: "What did the grandfather believe remained in a space after people were gone?",
-            options: [
-                "Nothing, everything vanishes with time.",
-                "A part of their essence lingering in the space.",
-                "Only the legal documentation and property value.",
-                "The physical bricks and mortar of the structure."
-            ],
-            correct: 1,
-            explanation: "The passage explicitly states: 'He believed that even after we are gone, a part of our essence lingers in the spaces we once inhabited.'",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-006", type: "case-study", difficulty: "hard",
-            passage: "The old haveli at the end of the narrow lane remained a silent witness to the passage of time. My grandfather, a man of few words but deep convictions, lived there until his final days, surrounded by leather-bound books and the faint scent of jasmine that drifted from the courtyard. In my childhood memories, the house was a labyrinth of shadowed hallways and hidden alcoves, each holding a secret waiting to be discovered. I remember the creak of the heavy wooden door, the rhythm of rain against the red-tiled roof, and the way the evening sunlight danced across the polished marble floors. It was more than just a structure; it was a sanctuary where stories were woven into the very fabric of the walls. As I stand before it now, the peeling paint and overgrown weeds speak of a forgotten era. The once-vibrant courtyard is now a graveyard of quiet echoes. My grandfather often said that a house is not merely built of bricks and mortar, but of the collective sighs and laughter of those who dwell within. He believed that even after we are gone, a part of our essence lingers in the spaces we once inhabited. Looking at the vacant windows, I feel a profound sense of loss, not just for the building, but for the wisdom and warmth it once contained. The modernization of the neighborhood—with its glass-fronted offices and sleek cafes—seems like a stark intrusion upon this sanctuary of memory. Yet, in the silence, I can almost hear his slow, measured voice, recounting tales of a time when life moved at the pace of a bullock cart, and the greatest luxury was a well-steeped cup of tea shared under the stars.",
-            question: "Identify the correct observations based on the passage:\n(A) The author views the grandfather as a sanctuary of wisdom.\n(B) The haveli is currently in a state of high maintenance and luxury.\n(C) The author experiences a conflict between memory and modern urban development.\n(D) The grandfather was an expert on bullock cart engineering.",
-            options: [
-                "(A) and (B) only",
-                "(A) and (C) only",
-                "(B) and (D) only",
-                "(C) and (D) only"
-            ],
-            correct: 1,
-            explanation: "Observation (A) is correct (he feels loss for 'wisdom and warmth'). (B) is false (peeling paint/weeds). (C) is correct (conflict with modernization). (D) is false (it's a metaphor for pace of life).",
-            examTags: ["CUET"]
-        },
-        /* PASSAGE 2: Philosophy / Abstract (Theme: Free Will and Determinism) - 480 words approx */
-        {
-            id: "comp-q-007", type: "case-study", difficulty: "hard",
-            passage: "The debate between free will and determinism has occupied the minds of philosophers for millennia, presenting a fundamental tension in our understanding of human agency. Determinism, in its strictest form, posits that every event, including human action, is the inevitable result of preceding causes and the immutable laws of nature. If we accept this premise, it follows that given the exact state of the universe at any moment, the future is fixed and theoretically predictable. This perspective leans heavily on the successes of Newtonian physics, where the universe is imagined as a colossal clockwork mechanism. In contrast, the concept of free will asserts that individuals possess the autonomous power to choose between different courses of action, independent of prior causal chains. This belief is the cornerstone of our moral and legal systems; we hold individuals responsible for their actions precisely because we assume they could have chosen otherwise. To deny free will is to potentially undermine the foundations of justice, merit, and personal accountability. \n\nHowever, modern neuroscience has introduced new complexities into this ancient dialogue. Experiments like those pioneered by Benjamin Libet suggest that the brain's motor cortex initiates action-readiness before the conscious mind even becomes aware of the intent to move. This 'readiness potential' challenges our intuitive sense of being the conscious authors of our choices. Yet, proponents of free will argue that conscious deliberation still plays a crucial role in vetoing or guiding these pre-conscious impulses. Furthermore, quantum mechanics has disrupted the deterministic clockwork of the past, introducing a degree of objective randomness and indeterminacy at the subatomic level. While it is unclear if subatomic randomness translates to macro-level human freedom, it suggests that the universe is not as strictly predictable as once thought. The reconciliation of these views often leads to 'compatibilism'—the idea that free will is compatible with a deterministic universe if we redefine 'freedom' as the ability to act according to one's desires and motives without external coercion. Ultimately, whether we are biological machines responding to stimuli or conscious agents carving our own paths, the way we resolve this dilemma shapes our view of humanity's place in the cosmos.",
-            question: "The primary purpose of the passage is to:",
-            options: [
-                "Prove that free will is a scientifically debunked myth.",
-                "Argue that Newtonian physics is the only valid way to understand the universe.",
-                "Explore the historical and modern tension between free will and determinism.",
-                "Promote compatibilism as the only logical solution to the philosophical debate."
-            ],
-            correct: 2,
-            explanation: "The passage provides a balanced overview of both concepts, including historical physical models and modern neuroscience/quantum challenges.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-008", type: "case-study", difficulty: "hard",
-            passage: "The debate between free will and determinism has occupied the minds of philosophers for millennia, presenting a fundamental tension in our understanding of human agency. Determinism, in its strictest form, posits that every event, including human action, is the inevitable result of preceding causes and the immutable laws of nature. If we accept this premise, it follows that given the exact state of the universe at any moment, the future is fixed and theoretically predictable. This perspective leans heavily on the successes of Newtonian physics, where the universe is imagined as a colossal clockwork mechanism. In contrast, the concept of free will asserts that individuals possess the autonomous power to choose between different courses of action, independent of prior causal chains. This belief is the cornerstone of our moral and legal systems; we hold individuals responsible for their actions precisely because we assume they could have chosen otherwise. To deny free will is to potentially undermine the foundations of justice, merit, and personal accountability. \n\nHowever, modern neuroscience has introduced new complexities into this ancient dialogue. Experiments like those pioneered by Benjamin Libet suggest that the brain's motor cortex initiates action-readiness before the conscious mind even becomes aware of the intent to move. This 'readiness potential' challenges our intuitive sense of being the conscious authors of our choices. Yet, proponents of free will argue that conscious deliberation still plays a crucial role in vetoing or guiding these pre-conscious impulses. Furthermore, quantum mechanics has disrupted the deterministic clockwork of the past, introducing a degree of objective randomness and indeterminacy at the subatomic level. While it is unclear if subatomic randomness translates to macro-level human freedom, it suggests that the universe is not as strictly predictable as once thought. The reconciliation of these views often leads to 'compatibilism'—the idea that free will is compatible with a deterministic universe if we redefine 'freedom' as the ability to act according to one's desires and motives without external coercion. Ultimately, whether we are biological machines responding to stimuli or conscious agents carving our own paths, the way we resolve this dilemma shapes our view of humanity's place in the cosmos.",
-            question: "How does the research of Benjamin Libet challenge the concept of free will?",
-            options: [
-                "It proves that the conscious mind is more powerful than the motor cortex.",
-                "It suggests that brain activity initiates action before a conscious choice is made.",
-                "It confirms that individuals always act against their own pre-conscious impulses.",
-                "It demonstrates that motor cortex activity is purely random and uncaused."
-            ],
-            correct: 1,
-            explanation: "Libet's experiments showed a 'readiness potential' occurring before conscious awareness, suggesting that the brain 'starts' the action before we think we've decided.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-009", type: "case-study", difficulty: "medium",
-            passage: "The debate between free will and determinism has occupied the minds of philosophers for millennia, presenting a fundamental tension in our understanding of human agency. Determinism, in its strictest form, posits that every event, including human action, is the inevitable result of preceding causes and the immutable laws of nature. If we accept this premise, it follows that given the exact state of the universe at any moment, the future is fixed and theoretically predictable. This perspective leans heavily on the successes of Newtonian physics, where the universe is imagined as a colossal clockwork mechanism. In contrast, the concept of free will asserts that individuals possess the autonomous power to choose between different courses of action, independent of prior causal chains. This belief is the cornerstone of our moral and legal systems; we hold individuals responsible for their actions precisely because we assume they could have chosen otherwise. To deny free will is to potentially undermine the foundations of justice, merit, and personal accountability. \n\nHowever, modern neuroscience has introduced new complexities into this ancient dialogue. Experiments like those pioneered by Benjamin Libet suggest that the brain's motor cortex initiates action-readiness before the conscious mind even becomes aware of the intent to move. This 'readiness potential' challenges our intuitive sense of being the conscious authors of our choices. Yet, proponents of free will argue that conscious deliberation still plays a crucial role in vetoing or guiding these pre-conscious impulses. Furthermore, quantum mechanics has disrupted the deterministic clockwork of the past, introducing a degree of objective randomness and indeterminacy at the subatomic level. While it is unclear if subatomic randomness translates to macro-level human freedom, it suggests that the universe is not as strictly predictable as once thought. The reconciliation of these views often leads to 'compatibilism'—the idea that free will is compatible with a deterministic universe if we redefine 'freedom' as the ability to act according to one's desires and motives without external coercion. Ultimately, whether we are biological machines responding to stimuli or conscious agents carving our own paths, the way we resolve this dilemma shapes our view of humanity's place in the cosmos.",
-            question: "The author uses the metaphor of a 'clockwork mechanism' to describe:",
-            options: [
-                "The chaotic and unpredictable nature of subatomic particles.",
-                "The rigid, predictable structure of a strictly deterministic universe.",
-                "The complex social hierarchies within modern legal systems.",
-                "The synchronization of conscious intent with motor cortex signals."
-            ],
-            correct: 1,
-            explanation: "The passage links Newtonian physics and determinism to the 'clockwork mechanism', emphasizing fixed predictability.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-010", type: "case-study", difficulty: "medium",
-            passage: "The debate between free will and determinism has occupied the minds of philosophers for millennia, presenting a fundamental tension in our understanding of human agency. Determinism, in its strictest form, posits that every event, including human action, is the inevitable result of preceding causes and the immutable laws of nature. If we accept this premise, it follows that given the exact state of the universe at any moment, the future is fixed and theoretically predictable. This perspective leans heavily on the successes of Newtonian physics, where the universe is imagined as a colossal clockwork mechanism. In contrast, the concept of free will asserts that individuals possess the autonomous power to choose between different courses of action, independent of prior causal chains. This belief is the cornerstone of our moral and legal systems; we hold individuals responsible for their actions precisely because we assume they could have chosen otherwise. To deny free will is to potentially undermine the foundations of justice, merit, and personal accountability. \n\nHowever, modern neuroscience has introduced new complexities into this ancient dialogue. Experiments like those pioneered by Benjamin Libet suggest that the brain's motor cortex initiates action-readiness before the conscious mind even becomes aware of the intent to move. This 'readiness potential' challenges our intuitive sense of being the conscious authors of our choices. Yet, proponents of free will argue that conscious deliberation still plays a crucial role in vetoing or guiding these pre-conscious impulses. Furthermore, quantum mechanics has disrupted the deterministic clockwork of the past, introducing a degree of objective randomness and indeterminacy at the subatomic level. While it is unclear if subatomic randomness translates to macro-level human freedom, it suggests that the universe is not as strictly predictable as once thought. The reconciliation of these views often leads to 'compatibilism'—the idea that free will is compatible with a deterministic universe if we redefine 'freedom' as the ability to act according to one's desires and motives without external coercion. Ultimately, whether we are biological machines responding to stimuli or conscious agents carving our own paths, the way we resolve this dilemma shapes our view of humanity's place in the cosmos.",
-            question: "Based on the passage, the author's tone toward the resolution of this debate is:",
-            options: [
-                "Dogmatic and certain that determinism is correct.",
-                "Balanced and appreciative of the ongoing complexity.",
-                "Dismissive of philosophy as an outdated endeavor.",
-                "Anxious about the potential collapse of the legal system."
-            ],
-            correct: 1,
-            explanation: "The author presents multiple viewpoints (physics, neuroscience, quantum, compatibilism) without taking a side, indicating a balanced perspective on the 'ongoing complexity'.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-011", type: "case-study", difficulty: "easy",
-            passage: "The debate between free will and determinism has occupied the minds of philosophers for millennia, presenting a fundamental tension in our understanding of human agency. Determinism, in its strictest form, posits that every event, including human action, is the inevitable result of preceding causes and the immutable laws of nature. If we accept this premise, it follows that given the exact state of the universe at any moment, the future is fixed and theoretically predictable. This perspective leans heavily on the successes of Newtonian physics, where the universe is imagined as a colossal clockwork mechanism. In contrast, the concept of free will asserts that individuals possess the autonomous power to choose between different courses of action, independent of prior causal chains. This belief is the cornerstone of our moral and legal systems; we hold individuals responsible for their actions precisely because we assume they could have chosen otherwise. To deny free will is to potentially undermine the foundations of justice, merit, and personal accountability. \n\nHowever, modern neuroscience has introduced new complexities into this ancient dialogue. Experiments like those pioneered by Benjamin Libet suggest that the brain's motor cortex initiates action-readiness before the conscious mind even becomes aware of the intent to move. This 'readiness potential' challenges our intuitive sense of being the conscious authors of our choices. Yet, proponents of free will argue that conscious deliberation still plays a crucial role in vetoing or guiding these pre-conscious impulses. Furthermore, quantum mechanics has disrupted the deterministic clockwork of the past, introducing a degree of objective randomness and indeterminacy at the subatomic level. While it is unclear if subatomic randomness translates to macro-level human freedom, it suggests that the universe is not as strictly predictable as once thought. The reconciliation of these views often leads to 'compatibilism'—the idea that free will is compatible with a deterministic universe if we redefine 'freedom' as the ability to act according to one's desires and motives without external coercion. Ultimately, whether we are biological machines responding to stimuli or conscious agents carving our own paths, the way we resolve this dilemma shapes our view of humanity's place in the cosmos.",
-            question: "In the context of the passage, 'compatibilism' suggests that:",
-            options: [
-                "Free will and determinism are fundamentally irreconcilable.",
-                "Free will can exist even if the universe follows causal laws.",
-                "Neuroscience and philosophy should never be combined.",
-                "Quantum mechanics is the only source of human freedom."
-            ],
-            correct: 1,
-            explanation: "Compatibilism is explicitly defined as the 'idea that free will is compatible with a deterministic universe'.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-012", type: "case-study", difficulty: "hard",
-            passage: "The debate between free will and determinism has occupied the minds of philosophers for millennia, presenting a fundamental tension in our understanding of human agency. Determinism, in its strictest form, posits that every event, including human action, is the inevitable result of preceding causes and the immutable laws of nature. If we accept this premise, it follows that given the exact state of the universe at any moment, the future is fixed and theoretically predictable. This perspective leans heavily on the successes of Newtonian physics, where the universe is imagined as a colossal clockwork mechanism. In contrast, the concept of free will asserts that individuals possess the autonomous power to choose between different courses of action, independent of prior causal chains. This belief is the cornerstone of our moral and legal systems; we hold individuals responsible for their actions precisely because we assume they could have chosen otherwise. To deny free will is to potentially undermine the foundations of justice, merit, and personal accountability. \n\nHowever, modern neuroscience has introduced new complexities into this ancient dialogue. Experiments like those pioneered by Benjamin Libet suggest that the brain's motor cortex initiates action-readiness before the conscious mind even becomes aware of the intent to move. This 'readiness potential' challenges our intuitive sense of being the conscious authors of our choices. Yet, proponents of free will argue that conscious deliberation still plays a crucial role in vetoing or guiding these pre-conscious impulses. Furthermore, quantum mechanics has disrupted the deterministic clockwork of the past, introducing a degree of objective randomness and indeterminacy at the subatomic level. While it is unclear if subatomic randomness translates to macro-level human freedom, it suggests that the universe is not as strictly predictable as once thought. The reconciliation of these views often leads to 'compatibilism'—the idea that free will is compatible with a deterministic universe if we redefine 'freedom' as the ability to act according to one's desires and motives without external coercion. Ultimately, whether we are biological machines responding to stimuli or conscious agents carving our own paths, the way we resolve this dilemma shapes our view of humanity's place in the cosmos.",
-            question: "Which of the following aligns with the author's statements about Quantum Mechanics?\n(A) It has validated Newtonian determinism at the subatomic level.\n(B) It introduces objective randomness, challenging strict predictability.\n(C) Its direct link to macro-level human freedom is still uncertain.\n(D) It proves that free will is a biological stimulus-response mechanism.",
-            options: [
-                "(A) and (C) only",
-                "(B) and (C) only",
-                "(B) and (D) only",
-                "(A) and (D) only"
-            ],
-            correct: 1,
-            explanation: "(A) is false as it 'disrupted' Newtonian past. (B) is true. (C) is true (the author says it is 'unclear'). (D) is false.",
-            examTags: ["CUET"]
-        },
-        /* PASSAGE 3: Cultural History (Theme: The Secret History of Chocolate) - 430 words approx */
-        {
-            id: "comp-q-013", type: "case-study", difficulty: "medium",
-            passage: "Long before it was wrapped in colorful foil and sold in supermarket aisles, chocolate was a sacred substance in ancient Mesoamerica. For the Olmecs, Mayans, and Aztecs, the cacao bean was not merely a source of sustenance but a divine gift from the gods. Archaeological evidence suggests that cacao consumption dates back over 3,000 years, primarily as a bitter, frothy beverage mixed with chili peppers and cornmeal. Unlike the sweet treats we enjoy today, this 'xocolatl' (bitter water) was valued for its medicinal properties and its perceived ability to impart wisdom and strength to warriors. In the Aztec empire, cacao beans were so highly prized that they served as a form of legal tender; a single turkey hen could be purchased for 100 beans, while a fresh avocado cost three. The emperor Moctezuma II was said to consume dozens of cups of chocolate daily, especially before visiting his harem, believing it to be a potent aphrodisiac.\n\nThe European encounter with chocolate began in the 16th century, when Spanish conquistadors first observed the Aztec elites partaking in the strange brew. Initially, the Spaniards found the bitter taste unpalatable, but once they introduced sugar and cinnamon to the recipe, chocolate became an overnight sensation in the Spanish court. For nearly a century, Spain successfully kept the secret of chocolate from the rest of Europe, treating it as a closely guarded state secret. It wasn't until the marriage of Anne of Austria to Louis XIII of France in 1615 that chocolate began its slow migration across European borders, eventually reaching the coffeehouses of London in the 1650s. The Industrial Revolution further transformed chocolate from an elite luxury to a mass-produced commodity. The invention of the hydraulic press by Casparus van Houten in 1828 allowed for the separation of cocoa butter from the bean, leading to the creation of the first solid chocolate bars. This technological leap democratized chocolate, making it accessible to the working classes. Today, chocolate is a multi-billion dollar global industry, yet its origins remain deeply rooted in the volcanic soils of Central America and the ancient rituals of civilizations that saw in the humble bean a connection to the celestial realm.",
-            question: "The passage suggests that in ancient Aztec society, cacao beans were:",
-            options: [
-                "Consumed only by children during religious festivals.",
-                "Strictly prohibited for warriors and commoners.",
-                "Used as a primary currency for trade and commerce.",
-                "Considered a useless byproduct of other tropical plants."
-            ],
-            correct: 2,
-            explanation: "The passage explicitly states that cacao beans 'served as a form of legal tender' in the Aztec empire.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-014", type: "case-study", difficulty: "medium",
-            passage: "Long before it was wrapped in colorful foil and sold in supermarket aisles, chocolate was a sacred substance in ancient Mesoamerica. For the Olmecs, Mayans, and Aztecs, the cacao bean was not merely a source of sustenance but a divine gift from the gods. Archaeological evidence suggests that cacao consumption dates back over 3,000 years, primarily as a bitter, frothy beverage mixed with chili peppers and cornmeal. Unlike the sweet treats we enjoy today, this 'xocolatl' (bitter water) was valued for its medicinal properties and its perceived ability to impart wisdom and strength to warriors. In the Aztec empire, cacao beans were so highly prized that they served as a form of legal tender; a single turkey hen could be purchased for 100 beans, while a fresh avocado cost three. The emperor Moctezuma II was said to consume dozens of cups of chocolate daily, especially before visiting his harem, believing it to be a potent aphrodisiac.\n\nThe European encounter with chocolate began in the 16th century, when Spanish conquistadors first observed the Aztec elites partaking in the strange brew. Initially, the Spaniards found the bitter taste unpalatable, but once they introduced sugar and cinnamon to the recipe, chocolate became an overnight sensation in the Spanish court. For nearly a century, Spain successfully kept the secret of chocolate from the rest of Europe, treating it as a closely guarded state secret. It wasn't until the marriage of Anne of Austria to Louis XIII of France in 1615 that chocolate began its slow migration across European borders, eventually reaching the coffeehouses of London in the 1650s. The Industrial Revolution further transformed chocolate from an elite luxury to a mass-produced commodity. The invention of the hydraulic press by Casparus van Houten in 1828 allowed for the separation of cocoa butter from the bean, leading to the creation of the first solid chocolate bars. This technological leap democratized chocolate, making it accessible to the working classes. Today, chocolate is a multi-billion dollar global industry, yet its origins remain deeply rooted in the volcanic soils of Central America and the ancient rituals of civilizations that saw in the humble bean a connection to the celestial realm.",
-            question: "The word 'unpalatable' in the second paragraph most nearly means:",
-            options: [
-                "Exotic and highly desirable.",
-                "Difficult to transport over long distances.",
-                "Unpleasant in taste or hard to swallow.",
-                "Requiring expensive equipment to process."
-            ],
-            correct: 2,
-            explanation: "The Spaniards found the 'bitter taste' unpalatable until they added sugar, indicating it was'unpleasant in taste'.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-015", type: "case-study", difficulty: "medium",
-            passage: "Long before it was wrapped in colorful foil and sold in supermarket aisles, chocolate was a sacred substance in ancient Mesoamerica. For the Olmecs, Mayans, and Aztecs, the cacao bean was not merely a source of sustenance but a divine gift from the gods. Archaeological evidence suggests that cacao consumption dates back over 3,000 years, primarily as a bitter, frothy beverage mixed with chili peppers and cornmeal. Unlike the sweet treats we enjoy today, this 'xocolatl' (bitter water) was valued for its medicinal properties and its perceived ability to impart wisdom and strength to warriors. In the Aztec empire, cacao beans were so highly prized that they served as a form of legal tender; a single turkey hen could be purchased for 100 beans, while a fresh avocado cost three. The emperor Moctezuma II was said to consume dozens of cups of chocolate daily, especially before visiting his harem, believing it to be a potent aphrodisiac.\n\nThe European encounter with chocolate began in the 16th century, when Spanish conquistadors first observed the Aztec elites partaking in the strange brew. Initially, the Spaniards found the bitter taste unpalatable, but once they introduced sugar and cinnamon to the recipe, chocolate became an overnight sensation in the Spanish court. For nearly a century, Spain successfully kept the secret of chocolate from the rest of Europe, treating it as a closely guarded state secret. It wasn't until the marriage of Anne of Austria to Louis XIII of France in 1615 that chocolate began its slow migration across European borders, eventually reaching the coffeehouses of London in the 1650s. The Industrial Revolution further transformed chocolate from an elite luxury to a mass-produced commodity. The invention of the hydraulic press by Casparus van Houten in 1828 allowed for the separation of cocoa butter from the bean, leading to the creation of the first solid chocolate bars. This technological leap democratized chocolate, making it accessible to the working classes. Today, chocolate is a multi-billion dollar global industry, yet its origins remain deeply rooted in the volcanic soils of Central America and the ancient rituals of civilizations that saw in the humble bean a connection to the celestial realm.",
-            question: "What major event helped spread chocolate from Spain to France?",
-            options: [
-                "The invention of the hydraulic press in 1828.",
-                "The arrival of Spanish conquistadors in Mesoamerica.",
-                "The marriage of Anne of Austria to Louis XIII in 1615.",
-                "The opening of the first London coffeehouse in the 1650s."
-            ],
-            correct: 2,
-            explanation: "The passage states it wasn't until this marriage that 'chocolate began its slow migration across European borders'.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-016", type: "case-study", difficulty: "hard",
-            passage: "Long before it was wrapped in colorful foil and sold in supermarket aisles, chocolate was a sacred substance in ancient Mesoamerica. For the Olmecs, Mayans, and Aztecs, the cacao bean was not merely a source of sustenance but a divine gift from the gods. Archaeological evidence suggests that cacao consumption dates back over 3,000 years, primarily as a bitter, frothy beverage mixed with chili peppers and cornmeal. Unlike the sweet treats we enjoy today, this 'xocolatl' (bitter water) was valued for its medicinal properties and its perceived ability to impart wisdom and strength to warriors. In the Aztec empire, cacao beans were so highly prized that they served as a form of legal tender; a single turkey hen could be purchased for 100 beans, while a fresh avocado cost three. The emperor Moctezuma II was said to consume dozens of cups of chocolate daily, especially before visiting his harem, believing it to be a potent aphrodisiac.\n\nThe European encounter with chocolate began in the 16th century, when Spanish conquistadors first observed the Aztec elites partaking in the strange brew. Initially, the Spaniards found the bitter taste unpalatable, but once they introduced sugar and cinnamon to the recipe, chocolate became an overnight sensation in the Spanish court. For nearly a century, Spain successfully kept the secret of chocolate from the rest of Europe, treating it as a closely guarded state secret. It wasn't until the marriage of Anne of Austria to Louis XIII of France in 1615 that chocolate began its slow migration across European borders, eventually reaching the coffeehouses of London in the 1650s. The Industrial Revolution further transformed chocolate from an elite luxury to a mass-produced commodity. The invention of the hydraulic press by Casparus van Houten in 1828 allowed for the separation of cocoa butter from the bean, leading to the creation of the first solid chocolate bars. This technological leap democratized chocolate, making it accessible to the working classes. Today, chocolate is a multi-billion dollar global industry, yet its origins remain deeply rooted in the volcanic soils of Central America and the ancient rituals of civilizations that saw in the humble bean a connection to the celestial realm.",
-            question: "The author's tone toward the history of chocolate is primarily:",
-            options: [
-                "Deeply appreciative and historically informative.",
-                "Skeptical and questioning of archaeological claims.",
-                "Indifferent to the cultural origins of food.",
-                "Fearful of the impact of the Industrial Revolution."
+                "The evolution and current state of the Indian startup ecosystem.",
+                "The history of digital payment systems in India.",
+                "How government policies discourage new business ventures.",
+                "A detailed analysis of individual startup failures."
             ],
             correct: 0,
-            explanation: "The author uses words like 'sacred', 'divine gift', and ' democratized' to describe chocolate's journey, showing appreciation for its deep history.",
-            examTags: ["CUET"]
+            explanation: "The passage discusses the rise, drivers, challenges, and future focus of the Indian startup ecosystem.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "comp-q-017", type: "case-study", difficulty: "easy",
-            passage: "Long before it was wrapped in colorful foil and sold in supermarket aisles, chocolate was a sacred substance in ancient Mesoamerica. For the Olmecs, Mayans, and Aztecs, the cacao bean was not merely a source of sustenance but a divine gift from the gods. Archaeological evidence suggests that cacao consumption dates back over 3,000 years, primarily as a bitter, frothy beverage mixed with chili peppers and cornmeal. Unlike the sweet treats we enjoy today, this 'xocolatl' (bitter water) was valued for its medicinal properties and its perceived ability to impart wisdom and strength to warriors. In the Aztec empire, cacao beans were so highly prized that they served as a form of legal tender; a single turkey hen could be purchased for 100 beans, while a fresh avocado cost three. The emperor Moctezuma II was said to consume dozens of cups of chocolate daily, especially before visiting his harem, believing it to be a potent aphrodisiac.\n\nThe European encounter with chocolate began in the 16th century, when Spanish conquistadors first observed the Aztec elites partaking in the strange brew. Initially, the Spaniards found the bitter taste unpalatable, but once they introduced sugar and cinnamon to the recipe, chocolate became an overnight sensation in the Spanish court. For nearly a century, Spain successfully kept the secret of chocolate from the rest of Europe, treating it as a closely guarded state secret. It wasn't until the marriage of Anne of Austria to Louis XIII of France in 1615 that chocolate began its slow migration across European borders, eventually reaching the coffeehouses of London in the 1650s. The Industrial Revolution further transformed chocolate from an elite luxury to a mass-produced commodity. The invention of the hydraulic press by Casparus van Houten in 1828 allowed for the separation of cocoa butter from the bean, leading to the creation of the first solid chocolate bars. This technological leap democratized chocolate, making it accessible to the working classes. Today, chocolate is a multi-billion dollar global industry, yet its origins remain deeply rooted in the volcanic soils of Central America and the ancient rituals of civilizations that saw in the humble bean a connection to the celestial realm.",
-            question: "What did Casparus van Houten's hydraulic press accomplish in 1828?",
+            id: "comp-q-002",
+            type: "case-study",
+            difficulty: "easy",
+            passage: "India's startup ecosystem has witnessed a meteoric rise over the last decade, transforming the nation into a global innovation hub. This surge is primarily driven by a young, tech-savvy population and increased venture capital flow. From e-commerce to deep-tech, Indian entrepreneurs are solving local problems with scalable solutions. Platforms like UPI have acted as a catalyst, enabling seamless digital transactions and fostering a culture of risk-taking. However, the path is not without challenges. Many startups face the 'funding winter'—a period of reduced investment and increased scrutiny on profitability. Investors are now shifting focus from pure customer acquisition to sustainable business models. Despite these fluctuations, the entrepreneurial spirit remains resilient. Government initiatives like 'Startup India' have provided regulatory support and tax benefits, further emboldening first-generation founders. As the ecosystem matures, the focus is moving toward building world-class products that can compete on a global stage, ensuring India's position as the third-largest startup base remains secure.",
+            question: "The word 'catalyst' in the passage most nearly means:",
             options: [
-                "It allowed Spain to finally reveal the secret of chocolate.",
-                "It made chocolate-making more expensive and exclusive.",
-                "It separated cocoa butter from the bean for solid chocolate bars.",
-                "It allowed the Aztecs to trade with Europe for the first time."
-            ],
-            correct: 2,
-            explanation: "The passage states the press 'allowed for the separation of cocoa butter from the bean, leading to the creation of the first solid chocolate bars.'",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-018", type: "case-study", difficulty: "hard",
-            passage: "Long before it was wrapped in colorful foil and sold in supermarket aisles, chocolate was a sacred substance in ancient Mesoamerica. For the Olmecs, Mayans, and Aztecs, the cacao bean was not merely a source of sustenance but a divine gift from the gods. Archaeological evidence suggests that cacao consumption dates back over 3,000 years, primarily as a bitter, frothy beverage mixed with chili peppers and cornmeal. Unlike the sweet treats we enjoy today, this 'xocolatl' (bitter water) was valued for its medicinal properties and its perceived ability to impart wisdom and strength to warriors. In the Aztec empire, cacao beans were so highly prized that they served as a form of legal tender; a single turkey hen could be purchased for 100 beans, while a fresh avocado cost three. The emperor Moctezuma II was said to consume dozens of cups of chocolate daily, especially before visiting his harem, believing it to be a potent aphrodisiac.\n\nThe European encounter with chocolate began in the 16th century, when Spanish conquistadors first observed the Aztec elites partaking in the strange brew. Initially, the Spaniards found the bitter taste unpalatable, but once they introduced sugar and cinnamon to the recipe, chocolate became an overnight sensation in the Spanish court. For nearly a century, Spain successfully kept the secret of chocolate from the rest of Europe, treating it as a closely guarded state secret. It wasn't until the marriage of Anne of Austria to Louis XIII of France in 1615 that chocolate began its slow migration across European borders, eventually reaching the coffeehouses of London in the 1650s. The Industrial Revolution further transformed chocolate from an elite luxury to a mass-produced commodity. The invention of the hydraulic press by Casparus van Houten in 1828 allowed for the separation of cocoa butter from the bean, leading to the creation of the first solid chocolate bars. This technological leap democratized chocolate, making it accessible to the working classes. Today, chocolate is a multi-billion dollar global industry, yet its origins remain deeply rooted in the volcanic soils of Central America and the ancient rituals of civilizations that saw in the humble bean a connection to the celestial realm.",
-            question: "Which of the following describes the evolution of chocolate's social status over time?\n(A) From a sacred substance to an elite European luxury.\n(B) From a bitter medicinal brew to a sweet mass-produced commodity.\n(C) From a form of legal tender to a state secret guarded by the Aztec emperor.\n(D) From a scientific discovery of the French court to common supermarket snack.",
-            options: [
-                "(A) and (D) only",
-                "(A) and (B) only",
-                "(B) and (C) only",
-                "(C) and (D) only"
+                "A barrier or obstacle.",
+                "Something that triggers or accelerates change.",
+                "A complex scientific chemical compound.",
+                "A heavy financial burden."
             ],
             correct: 1,
-            explanation: "Observation (A) is correct (Mesoamerica to Europe). (B) is correct (Mesoamerica medicine to Industrial Revolution bars). (C) is false; it was a Spanish state secret, not Aztec. (D) is false; it wasn't a French scientific discovery.",
-            examTags: ["CUET"]
+            explanation: "In the context of UPI enabling transactions, 'catalyst' refers to something that speeds up a process.",
+            examTags: ["MH-CET"]
         },
-        /* PASSAGE 4: Science / Nature (Theme: The Genetics of Coffee) - 460 words approx */
         {
-            id: "comp-q-019", type: "case-study", difficulty: "hard",
-            passage: "Coffee, the aromatic elixir that fuels millions of mornings, is facing an existential crisis rooted in its own genetic history. While there are over 120 species of coffee, global consumption is dominated by just two: Coffea arabica and Coffea canephora (Robusta). Arabica, prized for its complex flavor profile and low caffeine content, accounts for roughly 60% of the market. However, from a genetic standpoint, Arabica is a bottlenecked species. It is an 'allopolyploid'—a rare hybrid formed thousands of years ago in the Ethiopian highlands from the merging of two parent species. This unique ancestry gave it the ability to self-pollinate, which allowed it to spread across the globe with minimal genetic variation. While this was an advantage for early farmers, it has left the species exceptionally vulnerable to pests, diseases, and the shifting temperature gradients of a warming planet.\n\nToday, the coffee rust fungus and the coffee berry borer are decimating plantations from Brazil to Vietnam. In a world with increasing climatic volatility, the narrow genetic base of Arabica means it lacks the natural resilience to adapt. Scientists are now racing to the wild forests of Ethiopia and South Sudan, where the original, undomesticated varieties of coffee still grow. These wild cousins contain an untapped reservoir of genetic diversity, harboring traits for heat tolerance, drought resistance, and immunity to various pathogens. By sequencing the genomes of these wild plants, researchers hope to identify the specific genes responsible for these survival mechanisms. The challenge lies in 'breeding in' these resilient traits without sacrificing the delicate cup quality that consumers demand. Genetic modification and advanced genomic selection techniques are being explored, but they face both technical hurdles and consumer skepticism. Furthermore, the loss of these wild forests due to deforestation means we are losing the very library of life that could save our morning cup. The survival of the global coffee industry, therefore, depends not just on the management of existing plantations, but on the aggressive conservation of the biodiversity hotspots where coffee first began its journey to the world's breakfast tables.",
-            question: "What is the primary scientific reason for Coffea arabica's vulnerability?",
+            id: "comp-q-003",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "India's startup ecosystem has witnessed a meteoric rise over the last decade, transforming the nation into a global innovation hub. This surge is primarily driven by a young, tech-savvy population and increased venture capital flow. From e-commerce to deep-tech, Indian entrepreneurs are solving local problems with scalable solutions. Platforms like UPI have acted as a catalyst, enabling seamless digital transactions and fostering a culture of risk-taking. However, the path is not without challenges. Many startups face the 'funding winter'—a period of reduced investment and increased scrutiny on profitability. Investors are now shifting focus from pure customer acquisition to sustainable business models. Despite these fluctuations, the entrepreneurial spirit remains resilient. Government initiatives like 'Startup India' have provided regulatory support and tax benefits, further emboldening first-generation founders. As the ecosystem matures, the focus is moving toward building world-class products that can compete on a global stage, ensuring India's position as the third-largest startup base remains secure.",
+            question: "What can be inferred about the current relationship between startups and investors?",
             options: [
-                "Its extremely high caffeine content compared to Robusta.",
-                "A lack of genetic variation due to its allopolyploid hybrid origins.",
-                "The inability to grow in high-altitude environments like Ethiopia.",
-                "Successful cross-breeding with domestic pests over centuries."
+                "Investors are no longer interested in the Indian market.",
+                "Profitability has become a higher priority than just gaining users.",
+                "Startups are discouraged from using digital payment platforms.",
+                "Venture capital is now provided without any due diligence."
             ],
             correct: 1,
-            explanation: "The passage notes that Arabica is a 'bottlenecked species' and an 'allopolyploid' with 'minimal genetic variation', which makes it vulnerable to environmental threats.",
-            examTags: ["CUET"]
+            explanation: "The passage mentions a shift from 'pure customer acquisition to sustainable business models' and 'scrutiny on profitability'.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "comp-q-020", type: "case-study", difficulty: "medium",
-            passage: "Coffee, the aromatic elixir that fuels millions of mornings, is facing an existential crisis rooted in its own genetic history. While there are over 120 species of coffee, global consumption is dominated by just two: Coffea arabica and Coffea canephora (Robusta). Arabica, prized for its complex flavor profile and low caffeine content, accounts for roughly 60% of the market. However, from a genetic standpoint, Arabica is a bottlenecked species. It is an 'allopolyploid'—a rare hybrid formed thousands of years ago in the Ethiopian highlands from the merging of two parent species. This unique ancestry gave it the ability to self-pollinate, which allowed it to spread across the globe with minimal genetic variation. While this was an advantage for early farmers, it has left the species exceptionally vulnerable to pests, diseases, and the shifting temperature gradients of a warming planet.\n\nToday, the coffee rust fungus and the coffee berry borer are decimating plantations from Brazil to Vietnam. In a world with increasing climatic volatility, the narrow genetic base of Arabica means it lacks the natural resilience to adapt. Scientists are now racing to the wild forests of Ethiopia and South Sudan, where the original, undomesticated varieties of coffee still grow. These wild cousins contain an untapped reservoir of genetic diversity, harboring traits for heat tolerance, drought resistance, and immunity to various pathogens. By sequencing the genomes of these wild plants, researchers hope to identify the specific genes responsible for these survival mechanisms. The challenge lies in 'breeding in' these resilient traits without sacrificing the delicate cup quality that consumers demand. Genetic modification and advanced genomic selection techniques are being explored, but they face both technical hurdles and consumer skepticism. Furthermore, the loss of these wild forests due to deforestation means we are losing the very library of life that could save our morning cup. The survival of the global coffee industry, therefore, depends not just on the management of existing plantations, but on the aggressive conservation of the biodiversity hotspots where coffee first began its journey to the world's breakfast tables.",
-            question: "The word 'existential' in the first paragraph implies a crisis that:",
+            id: "comp-q-004",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "India's startup ecosystem has witnessed a meteoric rise over the last decade, transforming the nation into a global innovation hub. This surge is primarily driven by a young, tech-savvy population and increased venture capital flow. From e-commerce to deep-tech, Indian entrepreneurs are solving local problems with scalable solutions. Platforms like UPI have acted as a catalyst, enabling seamless digital transactions and fostering a culture of risk-taking. However, the path is not without challenges. Many startups face the 'funding winter'—a period of reduced investment and increased scrutiny on profitability. Investors are now shifting focus from pure customer acquisition to sustainable business models. Despite these fluctuations, the entrepreneurial spirit remains resilient. Government initiatives like 'Startup India' have provided regulatory support and tax benefits, further emboldening first-generation founders. As the ecosystem matures, the focus is moving toward building world-class products that can compete on a global stage, ensuring India's position as the third-largest startup base remains secure.",
+            question: "The author's tone in the passage is best described as:",
             options: [
-                "Is minor and will resolve itself without human intervention.",
-                "Concerns the very survival or continued presence of the species.",
-                "Only affects the financial wealth of large coffee corporations.",
-                "Is purely imaginary and based on flawed scientific data."
+                "Pessimistic and discouraged.",
+                "Optimistic and balanced.",
+                "Highly sarcastic.",
+                "Indifferent and cold."
             ],
             correct: 1,
-            explanation: "An 'existential' crisis is one that threatens the existence of something; here, it refers to the threat of Arabica going extinct or becoming ungrowable.",
-            examTags: ["CUET"]
+            explanation: "The author highlights growth and spirit ('resilient') while acknowledging challenges ('funding winter'), making it optimistic yet balanced.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "comp-q-021", type: "case-study", difficulty: "medium",
-            passage: "Coffee, the aromatic elixir that fuels millions of mornings, is facing an existential crisis rooted in its own genetic history. While there are over 120 species of coffee, global consumption is dominated by just two: Coffea arabica and Coffea canephora (Robusta). Arabica, prized for its complex flavor profile and low caffeine content, accounts for roughly 60% of the market. However, from a genetic standpoint, Arabica is a bottlenecked species. It is an 'allopolyploid'—a rare hybrid formed thousands of years ago in the Ethiopian highlands from the merging of two parent species. This unique ancestry gave it the ability to self-pollinate, which allowed it to spread across the globe with minimal genetic variation. While this was an advantage for early farmers, it has left the species exceptionally vulnerable to pests, diseases, and the shifting temperature gradients of a warming planet.\n\nToday, the coffee rust fungus and the coffee berry borer are decimating plantations from Brazil to Vietnam. In a world with increasing climatic volatility, the narrow genetic base of Arabica means it lacks the natural resilience to adapt. Scientists are now racing to the wild forests of Ethiopia and South Sudan, where the original, undomesticated varieties of coffee still grow. These wild cousins contain an untapped reservoir of genetic diversity, harboring traits for heat tolerance, drought resistance, and immunity to various pathogens. By sequencing the genomes of these wild plants, researchers hope to identify the specific genes responsible for these survival mechanisms. The challenge lies in 'breeding in' these resilient traits without sacrificing the delicate cup quality that consumers demand. Genetic modification and advanced genomic selection techniques are being explored, but they face both technical hurdles and consumer skepticism. Furthermore, the loss of these wild forests due to deforestation means we are losing the very library of life that could save our morning cup. The survival of the global coffee industry, therefore, depends not just on the management of existing plantations, but on the aggressive conservation of the biodiversity hotspots where coffee first began its journey to the world's breakfast tables.",
-            question: "Why are wild coffee varieties referred to as a 'library of life'?",
+            id: "comp-q-005",
+            type: "case-study",
+            difficulty: "easy",
+            passage: "India's startup ecosystem has witnessed a meteoric rise over the last decade, transforming the nation into a global innovation hub. This surge is primarily driven by a young, tech-savvy population and increased venture capital flow. From e-commerce to deep-tech, Indian entrepreneurs are solving local problems with scalable solutions. Platforms like UPI have acted as a catalyst, enabling seamless digital transactions and fostering a culture of risk-taking. However, the path is not without challenges. Many startups face the 'funding winter'—a period of reduced investment and increased scrutiny on profitability. Investors are now shifting focus from pure customer acquisition to sustainable business models. Despite these fluctuations, the entrepreneurial spirit remains resilient. Government initiatives like 'Startup India' have provided regulatory support and tax benefits, further emboldening first-generation founders. As the ecosystem matures, the focus is moving toward building world-class products that can compete on a global stage, ensuring India's position as the third-largest startup base remains secure.",
+            question: "According to the passage, which platform has aided digital transactions for startups?",
+            options: ["Traditional Banking", "UPI", "Barter System", "Cash-only services"],
+            correct: 1,
+            explanation: "The passage states: 'Platforms like UPI have acted as a catalyst, enabling seamless digital transactions'.",
+            examTags: ["MH-CET"]
+        },
+
+        // PASSAGE 2: Environmental Sustainability and Green Business
+        {
+            id: "comp-q-006",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "Environmental sustainability has transitioned from a corporate social responsibility checkbox to a core business strategy. In the modern era, green business practices are no longer optional but essential for long-term viability. Companies are increasingly adopting circular economy models, where waste is minimized through recycling and resourceful manufacturing. This shift is driven by both environmental urgency and consumer demand for ethical products. Brands that prioritize sustainability often find a competitive edge, attracting a growing segment of conscious consumers willing to pay a premium for eco-friendly goods. Furthermore, institutional investors are now using ESG (Environmental, Social, and Governance) scores to evaluate the risk and long-term health of a company. However, the transition involves high initial costs for upgrading technology and supply chains. 'Greenwashing'—the act of providing misleading information about a company's environmental impact—remains a significant threat to consumer trust. Genuine sustainability requires a fundamental overhaul of traditional business structures, moving away from a linear 'take-make-dispose' model toward one that respects planetary boundaries while maintaining profitability.",
+            question: "What is the primary message regarding the shift to green business?",
             options: [
-                "Because they are often found growing near ancient forest libraries.",
-                "Because they contain a vast range of genetic traits for survival.",
-                "Because scientists use them to create physical books about botany.",
-                "Because they are the only source of caffeine for library visitors."
+                "It is a temporary trend that will soon disappear.",
+                "It is a fundamental strategic evolution necessary for future business success.",
+                "Greenwashing is the best way to gain consumer trust.",
+                "Sustainability is only meant for large multinational corporations."
             ],
             correct: 1,
-            explanation: "The metaphor suggests they hold the information (genes) needed for the species to survive and adapt to new threats.",
-            examTags: ["CUET"]
+            explanation: "The passage argues that sustainability is now a 'core business strategy' and 'essential for long-term viability'.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "comp-q-022", type: "case-study", difficulty: "hard",
-            passage: "Coffee, the aromatic elixir that fuels millions of mornings, is facing an existential crisis rooted in its own genetic history. While there are over 120 species of coffee, global consumption is dominated by just two: Coffea arabica and Coffea canephora (Robusta). Arabica, prized for its complex flavor profile and low caffeine content, accounts for roughly 60% of the market. However, from a genetic standpoint, Arabica is a bottlenecked species. It is an 'allopolyploid'—a rare hybrid formed thousands of years ago in the Ethiopian highlands from the merging of two parent species. This unique ancestry gave it the ability to self-pollinate, which allowed it to spread across the globe with minimal genetic variation. While this was an advantage for early farmers, it has left the species exceptionally vulnerable to pests, diseases, and the shifting temperature gradients of a warming planet.\n\nToday, the coffee rust fungus and the coffee berry borer are decimating plantations from Brazil to Vietnam. In a world with increasing climatic volatility, the narrow genetic base of Arabica means it lacks the natural resilience to adapt. Scientists are now racing to the wild forests of Ethiopia and South Sudan, where the original, undomesticated varieties of coffee still grow. These wild cousins contain an untapped reservoir of genetic diversity, harboring traits for heat tolerance, drought resistance, and immunity to various pathogens. By sequencing the genomes of these wild plants, researchers hope to identify the specific genes responsible for these survival mechanisms. The challenge lies in 'breeding in' these resilient traits without sacrificing the delicate cup quality that consumers demand. Genetic modification and advanced genomic selection techniques are being explored, but they face both technical hurdles and consumer skepticism. Furthermore, the loss of these wild forests due to deforestation means we are losing the very library of life that could save our morning cup. The survival of the global coffee industry, therefore, depends not just on the management of existing plantations, but on the aggressive conservation of the biodiversity hotspots where coffee first began its journey to the world's breakfast tables.",
-            question: "The author's primary goal in this passage is to transition the focus from:",
+            id: "comp-q-007",
+            type: "case-study",
+            difficulty: "easy",
+            passage: "Environmental sustainability has transitioned from a corporate social responsibility checkbox to a core business strategy. In the modern era, green business practices are no longer optional but essential for long-term viability. Companies are increasingly adopting circular economy models, where waste is minimized through recycling and resourceful manufacturing. This shift is driven by both environmental urgency and consumer demand for ethical products. Brands that prioritize sustainability often find a competitive edge, attracting a growing segment of conscious consumers willing to pay a premium for eco-friendly goods. Furthermore, institutional investors are now using ESG (Environmental, Social, and Governance) scores to evaluate the risk and long-term health of a company. However, the transition involves high initial costs for upgrading technology and supply chains. 'Greenwashing'—the act of providing misleading information about a company's environmental impact—remains a significant threat to consumer trust. Genuine sustainability requires a fundamental overhaul of traditional business structures, moving away from a linear 'take-make-dispose' model toward one that respects planetary boundaries while maintaining profitability.",
+            question: "The word 'viability' in the passage most nearly means:",
             options: [
-                "Robusta consumption to Arabica dominance.",
-                "Managing existing plantations to conserving biodiversity hotspots.",
-                "Ethiopian forests to South Sudanese scientific laboratories.",
-                "The flavor of coffee to its chemical caffeine composition."
-            ],
-            correct: 1,
-            explanation: "The final paragraph explicitly states that survival depends 'not just on managing plantations, but on the aggressive conservation of biodiversity hotspots'.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-023", type: "case-study", difficulty: "medium",
-            passage: "Coffee, the aromatic elixir that fuels millions of mornings, is facing an existential crisis rooted in its own genetic history. While there are over 120 species of coffee, global consumption is dominated by just two: Coffea arabica and Coffea canephora (Robusta). Arabica, prized for its complex flavor profile and low caffeine content, accounts for roughly 60% of the market. However, from a genetic standpoint, Arabica is a bottlenecked species. It is an 'allopolyploid'—a rare hybrid formed thousands of years ago in the Ethiopian highlands from the merging of two parent species. This unique ancestry gave it the ability to self-pollinate, which allowed it to spread across the globe with minimal genetic variation. While this was an advantage for early farmers, it has left the species exceptionally vulnerable to pests, diseases, and the shifting temperature gradients of a warming planet.\n\nToday, the coffee rust fungus and the coffee berry borer are decimating plantations from Brazil to Vietnam. In a world with increasing climatic volatility, the narrow genetic base of Arabica means it lacks the natural resilience to adapt. Scientists are now racing to the wild forests of Ethiopia and South Sudan, where the original, undomesticated varieties of coffee still grow. These wild cousins contain an untapped reservoir of genetic diversity, harboring traits for heat tolerance, drought resistance, and immunity to various pathogens. By sequencing the genomes of these wild plants, researchers hope to identify the specific genes responsible for these survival mechanisms. The challenge lies in 'breeding in' these resilient traits without sacrificing the delicate cup quality that consumers demand. Genetic modification and advanced genomic selection techniques are being explored, but they face both technical hurdles and consumer skepticism. Furthermore, the loss of these wild forests due to deforestation means we are losing the very library of life that could save our morning cup. The survival of the global coffee industry, therefore, depends not just on the management of existing plantations, but on the aggressive conservation of the biodiversity hotspots where coffee first began its journey to the world's breakfast tables.",
-            question: "Which of the following is NOT mentioned as a threat to coffee production?",
-            options: [
-                "Coffee rust fungus.",
-                "Coffee berry borer.",
-                "The use of too much fertilizer.",
-                "Climatic volatility and warming planet."
-            ],
-            correct: 2,
-            explanation: "The fungus, borer, and climate are mentioned. Excessive fertilizer use is not mentioned as a threat in this passage.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-024", type: "case-study", difficulty: "hard",
-            passage: "Coffee, the aromatic elixir that fuels millions of mornings, is facing an existential crisis rooted in its own genetic history. While there are over 120 species of coffee, global consumption is dominated by just two: Coffea arabica and Coffea canephora (Robusta). Arabica, prized for its complex flavor profile and low caffeine content, accounts for roughly 60% of the market. However, from a genetic standpoint, Arabica is a bottlenecked species. It is an 'allopolyploid'—a rare hybrid formed thousands of years ago in the Ethiopian highlands from the merging of two parent species. This unique ancestry gave it the ability to self-pollinate, which allowed it to spread across the globe with minimal genetic variation. While this was an advantage for early farmers, it has left the species exceptionally vulnerable to pests, diseases, and the shifting temperature gradients of a warming planet.\n\nToday, the coffee rust fungus and the coffee berry borer are decimating plantations from Brazil to Vietnam. In a world with increasing climatic volatility, the narrow genetic base of Arabica means it lacks the natural resilience to adapt. Scientists are now racing to the wild forests of Ethiopia and South Sudan, where the original, undomesticated varieties of coffee still grow. These wild cousins contain an untapped reservoir of genetic diversity, harboring traits for heat tolerance, drought resistance, and immunity to various pathogens. By sequencing the genomes of these wild plants, researchers hope to identify the specific genes responsible for these survival mechanisms. The challenge lies in 'breeding in' these resilient traits without sacrificing the delicate cup quality that consumers demand. Genetic modification and advanced genomic selection techniques are being explored, but they face both technical hurdles and consumer skepticism. Furthermore, the loss of these wild forests due to deforestation means we are losing the very library of life that could save our morning cup. The survival of the global coffee industry, therefore, depends not just on the management of existing plantations, but on the aggressive conservation of the biodiversity hotspots where coffee first began its journey to the world's breakfast tables.",
-            question: "Identify the correct observations:\n(A) Arabica thrives because it has more genetic variation than Robusta.\n(B) Wild coffee species are essential for finding genes that resist pathogens.\n(C) Genomic selection is a strategy to improve coffee resilience.\n(D) Ethiopia is completely devoid of wild coffee varieties today.",
-            options: [
-                "(A) and (B) only",
-                "(B) and (C) only",
-                "(A) and (D) only",
-                "(C) and (D) only"
-            ],
-            correct: 1,
-            explanation: "(A) is false (it has 'minimal' variation). (B) is true. (C) is true. (D) is false (scientists are racing TO these forests because they are there).",
-            examTags: ["CUET"]
-        },
-        /* PASSAGE 5: Social Commentary (Theme: The Language of Identity) - 440 words approx */
-        {
-            id: "comp-q-025", type: "case-study", difficulty: "medium",
-            passage: "Language is far more than a tool for communication; it is the repository of a nation's soul and the ultimate signifier of identity. When we speak, we are not just exchanging data; we are anchoring ourselves in a specific history, geography, and cultural worldview. In an increasingly globalized world, where English has become the 'lingua franca' of commerce and technology, the survival of regional languages is under threat. While the utility of a global language is undeniable for economic advancement, its dominance can lead to a 'cultural flattening'—the loss of unique idioms, folklore, and nuanced ways of perceiving the world that only a native tongue can capture. For many immigrant communities, the struggle to maintain their mother tongue across generations is a struggle for cultural survival. The second and third generations often find themselves caught in a linguistic 'no-man's land', where they are fluent in the majority language but have only a fragmented connection to the language of their ancestors. \n\nThis loss is not just sentimental; it is an intellectual deprivation. Different languages provide different cognitive frameworks. For instance, some languages have multiple words for specific emotions or natural phenomena that English might lump under a single category. By losing a language, we lose a specific way of thinking. However, the narrative of language death is not the only story. There is a counter-movement of linguistic revitalization, where communities are using digital technology to archive oral histories, develop educational apps, and promote the use of native languages on social media. The internet, once seen as a homogenization tool, is paradoxically becoming a platform for linguistic diversity to flourish. The key to a vibrant future lies in 'multilingualism with pride'—where individuals are encouraged to be proficient in global languages for utility while remaining deeply rooted in their native tongues for identity. We must recognize that the 'wealth of a nation' is measured not just in its GDP, but in the diversity of its voices and the richness of the stories those voices can tell. A world where everyone speaks only one language would be a world that has lost its color, Its depth, and its ability to see the universe from multiple perspectives.",
-            question: "What does the author mean by 'cultural flattening'?",
-            options: [
-                "The physical destruction of historical buildings in modern cities.",
-                "The loss of unique cultural nuances and perspectives due to the dominance of one language.",
-                "An increase in the geographical literacy of the global population.",
-                "The process of translating all world literature into English for ease of reading."
-            ],
-            correct: 1,
-            explanation: "Cultural flattening refers to the homogenization of culture (loss of idioms, folklore, etc.) when one language dominates others.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-026", type: "case-study", difficulty: "medium",
-            passage: "Language is far more than a tool for communication; it is the repository of a nation's soul and the ultimate signifier of identity. When we speak, we are not just exchanging data; we are anchoring ourselves in a specific history, geography, and cultural worldview. In an increasingly globalized world, where English has become the 'lingua franca' of commerce and technology, the survival of regional languages is under threat. While the utility of a global language is undeniable for economic advancement, its dominance can lead to a 'cultural flattening'—the loss of unique idioms, folklore, and nuanced ways of perceiving the world that only a native tongue can capture. For many immigrant communities, the struggle to maintain their mother tongue across generations is a struggle for cultural survival. The second and third generations often find themselves caught in a linguistic 'no-man's land', where they are fluent in the majority language but have only a fragmented connection to the language of their ancestors. \n\nThis loss is not just sentimental; it is an intellectual deprivation. Different languages provide different cognitive frameworks. For instance, some languages have multiple words for specific emotions or natural phenomena that English might lump under a single category. By losing a language, we lose a specific way of thinking. However, the narrative of language death is not the only story. There is a counter-movement of linguistic revitalization, where communities are using digital technology to archive oral histories, develop educational apps, and promote the use of native languages on social media. The internet, once seen as a homogenization tool, is paradoxically becoming a platform for linguistic diversity to flourish. The key to a vibrant future lies in 'multilingualism with pride'—where individuals are encouraged to be proficient in global languages for utility while remaining deeply rooted in their native tongues for identity. We must recognize that the 'wealth of a nation' is measured not just in its GDP, but in the diversity of its voices and the richness of the stories those voices can tell. A world where everyone speaks only one language would be a world that has lost its color, Its depth, and its ability to see the universe from multiple perspectives.",
-            question: "The author describes the situation of the 'second and third generations' as:",
-            options: [
-                "A successful complete transition to a purely global identity.",
-                "A linguistic 'no-man's-land' with fragmented ancestral connections.",
-                "The primary drivers of the linguistic revitalization movement.",
-                "The group with the highest economic advancement in globalized cities."
-            ],
-            correct: 1,
-            explanation: "The passage specifically notes they have a 'fragmented connection' and are in a 'no-man's land'.",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-027", type: "case-study", difficulty: "hard",
-            passage: "Language is far more than a tool for communication; it is the repository of a nation's soul and the ultimate signifier of identity. When we speak, we are not just exchanging data; we are anchoring ourselves in a specific history, geography, and cultural worldview. In an increasingly globalized world, where English has become the 'lingua franca' of commerce and technology, the survival of regional languages is under threat. While the utility of a global language is undeniable for economic advancement, its dominance can lead to a 'cultural flattening'—the loss of unique idioms, folklore, and nuanced ways of perceiving the world that only a native tongue can capture. For many immigrant communities, the struggle to maintain their mother tongue across generations is a struggle for cultural survival. The second and third generations often find themselves caught in a linguistic 'no-man's land', where they are fluent in the majority language but have only a fragmented connection to the language of their ancestors. \n\nThis loss is not just sentimental; it is an intellectual deprivation. Different languages provide different cognitive frameworks. For instance, some languages have multiple words for specific emotions or natural phenomena that English might lump under a single category. By losing a language, we lose a specific way of thinking. However, the narrative of language death is not the only story. There is a counter-movement of linguistic revitalization, where communities are using digital technology to archive oral histories, develop educational apps, and promote the use of native languages on social media. The internet, once seen as a homogenization tool, is paradoxically becoming a platform for linguistic diversity to flourish. The key to a vibrant future lies in 'multilingualism with pride'—where individuals are encouraged to be proficient in global languages for utility while remaining deeply rooted in their native tongues for identity. We must recognize that the 'wealth of a nation' is measured not just in its GDP, but in the diversity of its voices and the richness of the stories those voices can tell. A world where everyone speaks only one language would be a world that has lost its color, Its depth, and its ability to see the universe from multiple perspectives.",
-            question: "According to the passage, the internet's role in the language debate is:",
-            options: [
-                "Purely destructive, acting only as a tool for homogenization.",
-                "Completely irrelevant to the survival of regional languages.",
-                "Paradoxical—while it homogenizes, it also provides tools for revitalization.",
-                "Primarily focused on commerce rather than cultural exchange."
-            ],
-            correct: 2,
-            explanation: "The passage states: 'The internet, once seen as a homogenization tool, is paradoxically becoming a platform for linguistic diversity to flourish.'",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-028", type: "case-study", difficulty: "medium",
-            passage: "Language is far more than a tool for communication; it is the repository of a nation's soul and the ultimate signifier of identity. When we speak, we are not just exchanging data; we are anchoring ourselves in a specific history, geography, and cultural worldview. In an increasingly globalized world, where English has become the 'lingua franca' of commerce and technology, the survival of regional languages is under threat. While the utility of a global language is undeniable for economic advancement, its dominance can lead to a 'cultural flattening'—the loss of unique idioms, folklore, and nuanced ways of perceiving the world that only a native tongue can capture. For many immigrant communities, the struggle to maintain their mother tongue across generations is a struggle for cultural survival. The second and third generations often find themselves caught in a linguistic 'no-man's land', where they are fluent in the majority language but have only a fragmented connection to the language of their ancestors. \n\nThis loss is not just sentimental; it is an intellectual deprivation. Different languages provide different cognitive frameworks. For instance, some languages have multiple words for specific emotions or natural phenomena that English might lump under a single category. By losing a language, we lose a specific way of thinking. However, the narrative of language death is not the only story. There is a counter-movement of linguistic revitalization, where communities are using digital technology to archive oral histories, develop educational apps, and promote the use of native languages on social media. The internet, once seen as a homogenization tool, is paradoxically becoming a platform for linguistic diversity to flourish. The key to a vibrant future lies in 'multilingualism with pride'—where individuals are encouraged to be proficient in global languages for utility while remaining deeply rooted in their native tongues for identity. We must recognize that the 'wealth of a nation' is measured not just in its GDP, but in the diversity of its voices and the richness of the stories those voices can tell. A world where everyone speaks only one language would be a world that has lost its color, Its depth, and its ability to see the universe from multiple perspectives.",
-            question: "The author's tone in the final paragraph is primarily:",
-            options: [
-                "Warning and prescriptive.",
-                "Sarcastic and indifferent.",
-                "Overly technical and scientific.",
-                "Hostile toward English speakers."
+                "Ability to survive and succeed over time.",
+                "The process of cleaning industrial waste.",
+                "A type of government tax on pollution.",
+                "The speed of a company's stock growth."
             ],
             correct: 0,
-            explanation: "The author warns about the loss of 'color' and 'multiple perspectives' and prescribes 'multilingualism with pride' as the solution.",
-            examTags: ["CUET"]
+            explanation: "'Viability' refers to the capacity to be successful or survive in the long term.",
+            examTags: ["MH-CET"]
         },
         {
-            id: "comp-q-029", type: "case-study", difficulty: "easy",
-            passage: "Language is far more than a tool for communication; it is the repository of a nation's soul and the ultimate signifier of identity. When we speak, we are not just exchanging data; we are anchoring ourselves in a specific history, geography, and cultural worldview. In an increasingly globalized world, where English has become the 'lingua franca' of commerce and technology, the survival of regional languages is under threat. While the utility of a global language is undeniable for economic advancement, its dominance can lead to a 'cultural flattening'—the loss of unique idioms, folklore, and nuanced ways of perceiving the world that only a native tongue can capture. For many immigrant communities, the struggle to maintain their mother tongue across generations is a struggle for cultural survival. The second and third generations often find themselves caught in a linguistic 'no-man's land', where they are fluent in the majority language but have only a fragmented connection to the language of their ancestors. \n\nThis loss is not just sentimental; it is an intellectual deprivation. Different languages provide different cognitive frameworks. For instance, some languages have multiple words for specific emotions or natural phenomena that English might lump under a single category. By losing a language, we lose a specific way of thinking. However, the narrative of language death is not the only story. There is a counter-movement of linguistic revitalization, where communities are using digital technology to archive oral histories, develop educational apps, and promote the use of native languages on social media. The internet, once seen as a homogenization tool, is paradoxically becoming a platform for linguistic diversity to flourish. The key to a vibrant future lies in 'multilingualism with pride'—where individuals are encouraged to be proficient in global languages for utility while remaining deeply rooted in their native tongues for identity. We must recognize that the 'wealth of a nation' is measured not just in its GDP, but in the diversity of its voices and the richness of the stories those voices can tell. A world where everyone speaks only one language would be a world that has lost its color, Its depth, and its ability to see the universe from multiple perspectives.",
-            question: "According to the passage, the 'Wealth of a Nation' should be measured by:",
+            id: "comp-q-008",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "Environmental sustainability has transitioned from a corporate social responsibility checkbox to a core business strategy. In the modern era, green business practices are no longer optional but essential for long-term viability. Companies are increasingly adopting circular economy models, where waste is minimized through recycling and resourceful manufacturing. This shift is driven by both environmental urgency and consumer demand for ethical products. Brands that prioritize sustainability often find a competitive edge, attracting a growing segment of conscious consumers willing to pay a premium for eco-friendly goods. Furthermore, institutional investors are now using ESG (Environmental, Social, and Governance) scores to evaluate the risk and long-term health of a company. However, the transition involves high initial costs for upgrading technology and supply chains. 'Greenwashing'—the act of providing misleading information about a company's environmental impact—remains a significant threat to consumer trust. Genuine sustainability requires a fundamental overhaul of traditional business structures, moving away from a linear 'take-make-dispose' model toward one that respects planetary boundaries while maintaining profitability.",
+            question: "Based on the passage, what is the impact of 'Greenwashing'?",
             options: [
-                "The strict dominance of one world language.",
-                "Only its GDP and economic output.",
-                "The diversity of voices and richness of stories within it.",
-                "The number of second-generation immigrants in the country."
-            ],
-            correct: 2,
-            explanation: "The passage states wealth is measured 'not just in its GDP, but in the diversity of its voices and the richness of the stories those voices can tell.'",
-            examTags: ["CUET"]
-        },
-        {
-            id: "comp-q-030", type: "case-study", difficulty: "hard",
-            passage: "Language is far more than a tool for communication; it is the repository of a nation's soul and the ultimate signifier of identity. When we speak, we are not just exchanging data; we are anchoring ourselves in a specific history, geography, and cultural worldview. In an increasingly globalized world, where English has become the 'lingua franca' of commerce and technology, the survival of regional languages is under threat. While the utility of a global language is undeniable for economic advancement, its dominance can lead to a 'cultural flattening'—the loss of unique idioms, folklore, and nuanced ways of perceiving the world that only a native tongue can capture. For many immigrant communities, the struggle to maintain their mother tongue across generations is a struggle for cultural survival. The second and third generations often find themselves caught in a linguistic 'no-man's land', where they are fluent in the majority language but have only a fragmented connection to the language of their ancestors. \n\nThis loss is not just sentimental; it is an intellectual deprivation. Different languages provide different cognitive frameworks. For instance, some languages have multiple words for specific emotions or natural phenomena that English might lump under a single category. By losing a language, we lose a specific way of thinking. However, the narrative of language death is not the only story. There is a counter-movement of linguistic revitalization, where communities are using digital technology to archive oral histories, develop educational apps, and promote the use of native languages on social media. The internet, once seen as a homogenization tool, is paradoxically becoming a platform for linguistic diversity to flourish. The key to a vibrant future lies in 'multilingualism with pride'—where individuals are encouraged to be proficient in global languages for utility while remaining deeply rooted in their native tongues for identity. We must recognize that the 'wealth of a nation' is measured not just in its GDP, but in the diversity of its voices and the richness of the stories those voices can tell. A world where everyone speaks only one language would be a world that has lost its color, Its depth, and its ability to see the universe from multiple perspectives.",
-            question: "Identify the correct observations from the passage:\n(A) English is completely unhelpful for economic advancement.\n(B) Losing a language results in an intellectual and cognitive loss.\n(C) Multilingualism with pride is proposed as a solution.\n(D) Cultural flattening is a positive outcome of globalization.",
-            options: [
-                "(A) and (B) only",
-                "(B) and (C) only",
-                "(A) and (D) only",
-                "(C) and (D) only"
+                "It helps companies save money on marketing.",
+                "It undermines consumer trust and creates skepticism.",
+                "It is a mandatory requirement for ESG scoring.",
+                "It accelerates the transition to a circular economy."
             ],
             correct: 1,
-            explanation: "Observation (A) is false (utility is 'undeniable'). (B) is true. (C) is true. (D) is false.",
-            examTags: ["CUET"]
+            explanation: "The passage states that greenwashing is a 'significant threat to consumer trust'.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "comp-q-009",
+            type: "case-study",
+            difficulty: "hard",
+            passage: "Environmental sustainability has transitioned from a corporate social responsibility checkbox to a core business strategy. In the modern era, green business practices are no longer optional but essential for long-term viability. Companies are increasingly adopting circular economy models, where waste is minimized through recycling and resourceful manufacturing. This shift is driven by both environmental urgency and consumer demand for ethical products. Brands that prioritize sustainability often find a competitive edge, attracting a growing segment of conscious consumers willing to pay a premium for eco-friendly goods. Furthermore, institutional investors are now using ESG (Environmental, Social, and Governance) scores to evaluate the risk and long-term health of a company. However, the transition involves high initial costs for upgrading technology and supply chains. 'Greenwashing'—the act of providing misleading information about a company's environmental impact—remains a significant threat to consumer trust. Genuine sustainability requires a fundamental overhaul of traditional business structures, moving away from a linear 'take-make-dispose' model toward one that respects planetary boundaries while maintaining profitability.",
+            question: "The author's perspective on the 'linear take-make-dispose model' is:",
+            options: [
+                "It is the most efficient way to maintain high profit.",
+                "It is an outdated approach that needs to be replaced.",
+                "It is perfectly compatible with circular economy goals.",
+                "It should be strictly enforced by international law."
+            ],
+            correct: 1,
+            explanation: "The author suggests moving 'away' from this model toward a circular one, indicating it is no longer suitable.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "comp-q-010",
+            type: "case-study",
+            difficulty: "easy",
+            passage: "Environmental sustainability has transitioned from a corporate social responsibility checkbox to a core business strategy. In the modern era, green business practices are no longer optional but essential for long-term viability. Companies are increasingly adopting circular economy models, where waste is minimized through recycling and resourceful manufacturing. This shift is driven by both environmental urgency and consumer demand for ethical products. Brands that prioritize sustainability often find a competitive edge, attracting a growing segment of conscious consumers willing to pay a premium for eco-friendly goods. Furthermore, institutional investors are now using ESG (Environmental, Social, and Governance) scores to evaluate the risk and long-term health of a company. However, the transition involves high initial costs for upgrading technology and supply chains. 'Greenwashing'—the act of providing misleading information about a company's environmental impact—remains a significant threat to consumer trust. Genuine sustainability requires a fundamental overhaul of traditional business structures, moving away from a linear 'take-make-dispose' model toward one that respects planetary boundaries while maintaining profitability.",
+            question: "What metric do institutional investors use to evaluate a company's long-term health in this context?",
+            options: ["IPL Scores", "ESG Scores", "Final Exam Scores", "Credit Ratings only"],
+            correct: 1,
+            explanation: "The passage mentions that 'institutional investors are now using ESG (Environmental, Social, and Governance) scores'.",
+            examTags: ["MH-CET"]
+        },
+
+        // PASSAGE 3: Digital Economy and Fintech in India
+        {
+            id: "comp-q-011",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "The digital economy has fundamentally reshaped India's financial landscape, with the fintech sector leading this revolution. The convergence of smartphone penetration and low-cost data has democratized access to financial services for millions who were previously unbanked. Fintech platforms now offer everything from instant personal loans to micro-insurance, bypassing the traditional hurdles of legacy banking. The success of Bharat Bill Pay and UPI has placed India at the forefront of global digital payments. This digitization goes beyond convenience; it promotes transparency and financial inclusion. However, this rapid growth brings new risks, including cybersecurity threats and data privacy concerns. The regulatory environment is also evolving, with the RBI (Reserve Bank of India) introducing stringent guidelines to protect consumers while encouraging innovation. Digital lending apps, in particular, have faced scrutiny for high-interest rates and aggressive recovery tactics. Navigating the balance between technological advancement and robust consumer protection will determine the future stability of the sector. As India moves toward a trillion-dollar digital economy, the focus is shifting to building trust and ensuring that even the most remote citizens are not left behind in this digital leap.",
+            question: "Which of the following best describes the 'democratization' mentioned in the text?",
+            options: [
+                "Increasing the cost of data for high-income segments.",
+                "Opening up financial access to previously excluded populations.",
+                "Lowering the number of smartphones used in rural India.",
+                "Making banking services available only to tech companies."
+            ],
+            correct: 1,
+            explanation: "The text explains that smartphones and data 'democratized access to financial services for millions who were previously unbanked'.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "comp-q-012",
+            type: "case-study",
+            difficulty: "easy",
+            passage: "The digital economy has fundamentally reshaped India's financial landscape, with the fintech sector leading this revolution. The convergence of smartphone penetration and low-cost data has democratized access to financial services for millions who were previously unbanked. Fintech platforms now offer everything from instant personal loans to micro-insurance, bypassing the traditional hurdles of legacy banking. The success of Bharat Bill Pay and UPI has placed India at the forefront of global digital payments. This digitization goes beyond convenience; it promotes transparency and financial inclusion. However, this rapid growth brings new risks, including cybersecurity threats and data privacy concerns. The regulatory environment is also evolving, with the RBI (Reserve Bank of India) introducing stringent guidelines to protect consumers while encouraging innovation. Digital lending apps, in particular, have faced scrutiny for high-interest rates and aggressive recovery tactics. Navigating the balance between technological advancement and robust consumer protection will determine the future stability of the sector. As India moves toward a trillion-dollar digital economy, the focus is shifting to building trust and ensuring that even the most remote citizens are not left behind in this digital leap.",
+            question: "The word 'stringent' in the passage most nearly means:",
+            options: ["Very flexible and loose.", "Strict, precise, and demanding.", "Unimportant and minor.", "Invisible to the naked eye."],
+            correct: 1,
+            explanation: "Stringent guidelines refer to rules that are strict and must be followed exactly.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "comp-q-013",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "The digital economy has fundamentally reshaped India's financial landscape, with the fintech sector leading this revolution. The convergence of smartphone penetration and low-cost data has democratized access to financial services for millions who were previously unbanked. Fintech platforms now offer everything from instant personal loans to micro-insurance, bypassing the traditional hurdles of legacy banking. The success of Bharat Bill Pay and UPI has placed India at the forefront of global digital payments. This digitization goes beyond convenience; it promotes transparency and financial inclusion. However, this rapid growth brings new risks, including cybersecurity threats and data privacy concerns. The regulatory environment is also evolving, with the RBI (Reserve Bank of India) introducing stringent guidelines to protect consumers while encouraging innovation. Digital lending apps, in particular, have faced scrutiny for high-interest rates and aggressive recovery tactics. Navigating the balance between technological advancement and robust consumer protection will determine the future stability of the sector. As India moves toward a trillion-dollar digital economy, the focus is shifting to building trust and ensuring that even the most remote citizens are not left behind in this digital leap.",
+            question: "What according to the author is a primary risk of this digital growth?",
+            options: [
+                "Too many physical bank branches opening in villages.",
+                "Decreased use of smartphones for communication.",
+                "Cybersecurity threats and data privacy concerns.",
+                "A shortage of high-interest loan providers."
+            ],
+            correct: 2,
+            explanation: "The passage identifies 'cybersecurity threats and data privacy concerns' as risks of rapid growth.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "comp-q-014",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "The digital economy has fundamentally reshaped India's financial landscape, with the fintech sector leading this revolution. The convergence of smartphone penetration and low-cost data has democratized access to financial services for millions who were previously unbanked. Fintech platforms now offer everything from instant personal loans to micro-insurance, bypassing the traditional hurdles of legacy banking. The success of Bharat Bill Pay and UPI has placed India at the forefront of global digital payments. This digitization goes beyond convenience; it promotes transparency and financial inclusion. However, this rapid growth brings new risks, including cybersecurity threats and data privacy concerns. The regulatory environment is also evolving, with the RBI (Reserve Bank of India) introducing stringent guidelines to protect consumers while encouraging innovation. Digital lending apps, in particular, have faced scrutiny for high-interest rates and aggressive recovery tactics. Navigating the balance between technological advancement and robust consumer protection will determine the future stability of the sector. As India moves toward a trillion-dollar digital economy, the focus is shifting to building trust and ensuring that even the most remote citizens are not left behind in this digital leap.",
+            question: "The tone of the passage regarding India's digital future is:",
+            options: ["Cautionary but visionary.", "Unreasonably panicked.", "Purely celebratory without any warnings.", "Nostalgic for traditional paper banking."],
+            correct: 0,
+            explanation: "The author envisions a trillion-dollar economy ('visionary') while warning about risks and the need for balance ('cautionary').",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "comp-q-015",
+            type: "case-study",
+            difficulty: "easy",
+            passage: "The digital economy has fundamentally reshaped India's financial landscape, with the fintech sector leading this revolution. The convergence of smartphone penetration and low-cost data has democratized access to financial services for millions who were previously unbanked. Fintech platforms now offer everything from instant personal loans to micro-insurance, bypassing the traditional hurdles of legacy banking. The success of Bharat Bill Pay and UPI has placed India at the forefront of global digital payments. This digitization goes beyond convenience; it promotes transparency and financial inclusion. However, this rapid growth brings new risks, including cybersecurity threats and data privacy concerns. The regulatory environment is also evolving, with the RBI (Reserve Bank of India) introducing stringent guidelines to protect consumers while encouraging innovation. Digital lending apps, in particular, have faced scrutiny for high-interest rates and aggressive recovery tactics. Navigating the balance between technological advancement and robust consumer protection will determine the future stability of the sector. As India moves toward a trillion-dollar digital economy, the focus is shifting to building trust and ensuring that even the most remote citizens are not left behind in this digital leap.",
+            question: "According to the passage, what has the RBI introduced to safeguard consumers?",
+            options: ["Free smartphones for everyone.", "Complete deregulation of fintech.", "Stringent guidelines.", "A ban on all digital bill payments."],
+            correct: 2,
+            explanation: "The text states the RBI is 'introducing stringent guidelines to protect consumers'.",
+            examTags: ["MH-CET"]
+        },
+
+        // PASSAGE 4: Women in Business and Corporate Leadership
+        {
+            id: "comp-q-016",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "The landscape of corporate leadership in India is undergoing a quiet but significant transformation as more women break the glass ceiling. Once confined to support roles, women are now leading Fortune 500 companies and tech giants. This shift is not merely about representation but about bringing diverse perspectives to the boardroom, which is linked to better decision-making and improved financial performance. Progressive companies have recognized that inclusivity is a business imperative. Initiatives like flexible working hours, comprehensive maternity benefits, and mentorship programs for women are becoming standard. However, structural biases and the 'double burden' of managing both professional and domestic responsibilities continue to hinder progress. Research shows that while many women enter the workforce at the entry-level, the numbers dwindle at the senior management stage—a phenomenon known as the 'leaky pipeline.' Addressing this requires a cultural shift within organizations where meritocracy is truly gender-neutral. Empowerment must move beyond symbolic gestures toward systemic change, where women have equal access to high-stakes roles and strategic leadership opportunities, ensuring the next generation of business leaders is as diverse as the world they serve.",
+            question: "What is the primary theme discussed in the passage?",
+            options: [
+                "The evolution of maternity leave laws globally.",
+                "The rise of women in corporate leadership and the barriers they face.",
+                "How symbolic gestures are the most effective way to empower workers.",
+                "The physical design of modern boardrooms in Indian tech companies."
+            ],
+            correct: 1,
+            explanation: "The passage discusses the shift in leadership roles for women and the challenges like structural biases and the 'leaky pipeline'.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "comp-q-017",
+            type: "case-study",
+            difficulty: "easy",
+            passage: "The landscape of corporate leadership in India is undergoing a quiet but significant transformation as more women break the glass ceiling. Once confined to support roles, women are now leading Fortune 500 companies and tech giants. This shift is not merely about representation but about bringing diverse perspectives to the boardroom, which is linked to better decision-making and improved financial performance. Progressive companies have recognized that inclusivity is a business imperative. Initiatives like flexible working hours, comprehensive maternity benefits, and mentorship programs for women are becoming standard. However, structural biases and the 'double burden' of managing both professional and domestic responsibilities continue to hinder progress. Research shows that while many women enter the workforce at the entry-level, the numbers dwindle at the senior management stage—a phenomenon known as the 'leaky pipeline.' Addressing this requires a cultural shift within organizations where meritocracy is truly gender-neutral. Empowerment must move beyond symbolic gestures toward systemic change, where women have equal access to high-stakes roles and strategic leadership opportunities, ensuring the next generation of business leaders is as diverse as the world they serve.",
+            question: "The term 'glass ceiling' metaphorically refers to:",
+            options: [
+                "Transparent roofs used in modern office architecture.",
+                "An invisible barrier that prevents women from rising to top positions.",
+                "The expensive cost of high-quality glass in boardrooms.",
+                "A type of window cleaning technology used in skyscrapers."
+            ],
+            correct: 1,
+            explanation: "In a corporate context, 'glass ceiling' refers to the invisible barriers to advancement for women/minorities.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "comp-q-018",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "The landscape of corporate leadership in India is undergoing a quiet but significant transformation as more women break the glass ceiling. Once confined to support roles, women are now leading Fortune 500 companies and tech giants. This shift is not merely about representation but about bringing diverse perspectives to the boardroom, which is linked to better decision-making and improved financial performance. Progressive companies have recognized that inclusivity is a business imperative. Initiatives like flexible working hours, comprehensive maternity benefits, and mentorship programs for women are becoming standard. However, structural biases and the 'double burden' of managing both professional and domestic responsibilities continue to hinder progress. Research shows that while many women enter the workforce at the entry-level, the numbers dwindle at the senior management stage—a phenomenon known as the 'leaky pipeline.' Addressing this requires a cultural shift within organizations where meritocracy is truly gender-neutral. Empowerment must move beyond symbolic gestures toward systemic change, where women have equal access to high-stakes roles and strategic leadership opportunities, ensuring the next generation of business leaders is as diverse as the world they serve.",
+            question: "What does the 'leaky pipeline' describe in this context?",
+            options: [
+                "Physical infrastructure issues in corporate offices.",
+                "The loss of women from the workforce as they move to senior roles.",
+                "The high turnover rate of entry-level male employees.",
+                "The flow of capital from large firms to startups."
+            ],
+            correct: 1,
+            explanation: "The passage defines it as the dwindling numbers of women at senior management stages compared to entry-level.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "comp-q-019",
+            type: "case-study",
+            difficulty: "medium",
+            passage: "The landscape of corporate leadership in India is undergoing a quiet but significant transformation as more women break the glass ceiling. Once confined to support roles, women are now leading Fortune 500 companies and tech giants. This shift is not merely about representation but about bringing diverse perspectives to the boardroom, which is linked to better decision-making and improved financial performance. Progressive companies have recognized that inclusivity is a business imperative. Initiatives like flexible working hours, comprehensive maternity benefits, and mentorship programs for women are becoming standard. However, structural biases and the 'double burden' of managing both professional and domestic responsibilities continue to hinder progress. Research shows that while many women enter the workforce at the entry-level, the numbers dwindle at the senior management stage—a phenomenon known as the 'leaky pipeline.' Addressing this requires a cultural shift within organizations where meritocracy is truly gender-neutral. Empowerment must move beyond symbolic gestures toward systemic change, where women have equal access to high-stakes roles and strategic leadership opportunities, ensuring the next generation of business leaders is as diverse as the world they serve.",
+            question: "The author believes that true empowerment requires:",
+            options: [
+                "More symbolic gestures and annual celebrations.",
+                "A cultural shift and systemic change toward gender-neutral meritocracy.",
+                "Reducing the amount of maternity leave provided.",
+                "Restricting women to non-strategic roles."
+            ],
+            correct: 1,
+            explanation: "The author explicitly states that empowerment must move 'toward systemic change' and require a 'cultural shift'.",
+            examTags: ["MH-CET"]
+        },
+        {
+            id: "comp-q-020",
+            type: "case-study",
+            difficulty: "easy",
+            passage: "The landscape of corporate leadership in India is undergoing a quiet but significant transformation as more women break the glass ceiling. Once confined to support roles, women are now leading Fortune 500 companies and tech giants. This shift is not merely about representation but about bringing diverse perspectives to the boardroom, which is linked to better decision-making and improved financial performance. Progressive companies have recognized that inclusivity is a business imperative. Initiatives like flexible working hours, comprehensive maternity benefits, and mentorship programs for women are becoming standard. However, structural biases and the 'double burden' of managing both professional and domestic responsibilities continue to hinder progress. Research shows that while many women enter the workforce at the entry-level, the numbers dwindle at the senior management stage—a phenomenon known as the 'leaky pipeline.' Addressing this requires a cultural shift within organizations where meritocracy is truly gender-neutral. Empowerment must move beyond symbolic gestures toward systemic change, where women have equal access to high-stakes roles and strategic leadership opportunities, ensuring the next generation of business leaders is as diverse as the world they serve.",
+            question: "According to the passage, what is one benefit of having diverse perspectives in the boardroom?",
+            options: ["Higher tax payments.", "Slower decision-making.", "Improved financial performance.", "Increased secrecy about company data."],
+            correct: 2,
+            explanation: "The passage links diverse perspectives to 'better decision-making and improved financial performance'.",
+            examTags: ["MH-CET"]
         }
     ]
 };
