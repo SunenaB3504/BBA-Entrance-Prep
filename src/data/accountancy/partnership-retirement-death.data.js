@@ -4,7 +4,95 @@
 export const partnershipRetirementDeathData = {
   subject: "Accountancy",
   chapter: "Retirement & Death of Partner",
-  examTags: ["CUET"],
+  examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "amount-due-retiring",
+        title: "1. Ascertaining Amount Due",
+        content: {
+          coreConcept: "The total amount owed to a retiring/deceased partner includes their capital, share of goodwill, revaluation profits, and accumulated reserves.",
+          formulaBank: "Amount Due = Capital Bal + Share of (Reserves + Reval Profit + Goodwill + Profit till date) - Share of (Losses + Drawings + IOD)",
+          logic: "1. Credit anything that increases their value.\n2. Debit anything that decreases their value (Drawings, Losses).\n3. The final balance is either paid off or transferred to a Loan Account.",
+          traps: "Trap: Forgetting to debit 'Existing Goodwill' appearing in the Balance Sheet. It must be written off among ALL partners in Old Ratio.",
+          examples: [
+            { q: "Is retiring partner entitled to General Reserve?", a: "Yes, in their old profit sharing ratio." }
+          ],
+          speedSummary: "Credit Gains, Debit Losses = Final Dues."
+        }
+      },
+      {
+        id: "ratios-gaining",
+        title: "2. New Ratio & Gaining Ratio",
+        content: {
+          coreConcept: "Continuing partners 'gain' the share of the outgoing partner. This share is added to their old share.",
+          formulaBank: "- Gaining Ratio = New Ratio - Old Ratio\n- New Share = Old Share + Gained Share",
+          logic: "1. If new ratio isn't given, assume remaining partners keep their original relative ratio.\n2. Gaining ratio is used to compensate the retiring partner for goodwill.",
+          traps: "Trap: If a continuing partner's new share is LESS than their old share, they have SACRIFICED (not gained) and must be credited for goodwill.",
+          examples: [
+            { q: "A, B, C (3:2:1). B retires. New ratio of A:C?", a: "3:1 (assume old relative ratio continues)." }
+          ],
+          speedSummary: "Gain = New - Old. Used for Goodwill."
+        }
+      },
+      {
+        id: "goodwill-treatment",
+        title: "3. Treatment of Goodwill",
+        content: {
+          coreConcept: "A retiring/deceased partner is compensated for his share of goodwill by Gaining Partners.",
+          formulaBank: "Entry: Gaining Partners' Cap A/c Dr. To Retiring/Deceased Partner's Cap A/c.",
+          logic: "1. Outgoing partner 'sells' his share to the gainers.\n2. Compensation = Firm's Goodwill x Outgoing Partner's Share.\n3. Distribution among gainers is always in Gaining Ratio.",
+          traps: "Hidden Goodwill Trap: Agreed Settlement Amount (-) Adjusted Capital = Retiring Partner's share of Hidden Goodwill.",
+          examples: [
+            { q: "Firm G/W is ₹60k. B (1/3) retires. Compensation?", a: "₹20,000 (paid by gainers in Gaining Ratio)." }
+          ],
+          speedSummary: "Gaining Dr. to Retiring Cr."
+        }
+      },
+      {
+        id: "settlement-loan",
+        title: "4. Settlement & Loan Account",
+        content: {
+          coreConcept: "If dues aren't paid in cash, they are transferred to the partner's Loan Account.",
+          formulaBank: "Interest on Loan = 6% p.a. (Default under Section 37)",
+          logic: "1. Transfer capital balance to Loan A/c.\n2. If paid in installments, calculate interest on the UNPAID balance each period.\n3. Section 37: Partner gets 6% interest OR share of profits earned using their capital.",
+          traps: "Calculation Trap: Calculating interest for the full year even if an installment was paid mid-way. Interest is only on the outstanding amount.",
+          examples: [
+            { q: "Interest rate if deed is silent on loan?", a: "6% per annum." }
+          ],
+          speedSummary: "No Cash = Loan A/c (6% Int)."
+        }
+      },
+      {
+        id: "death-interim-profit",
+        title: "5. Death: Profit till Date of Death",
+        content: {
+          coreConcept: "Deceased partner is entitled to profit earned from the start of the year till the date of their death.",
+          formulaBank: "- Time Basis: Last Year Profit x (Months lived / 12) x Share\n- Sales Basis: (Last Year Profit / Sales) x Sales till death x Share",
+          logic: "1. Used when death occurs mid-year.\n2. Entry: P&L Suspense A/c Dr. To Deceased Partner's Cap A/c.\n3. If PSR of gainers changes, adjust through Gaining Partners' Cap A/cs.",
+          traps: "Trap: Applying 'months/12' to the sales-based calculation. Sales till death already accounts for the time period.",
+          examples: [
+            { q: "Profit till June 30 (3 months) if annual profit is ₹1.2L and share 1/4?", a: "1,20,000 x 3/12 x 1/4 = ₹7,500." }
+          ],
+          speedSummary: "Profit Share = Time or Turnover basis."
+        }
+      },
+      {
+        id: "executor-account",
+        title: "6. Executor's Account",
+        content: {
+          coreConcept: "The account of the legal representative (heir) of the deceased partner.",
+          formulaBank: "Total amount transferred = Final balance of Deceased Partner's Capital A/c.",
+          logic: "1. All rights and liabilities of the deceased pass to the executor.\n2. Executor can choose 6% interest or proportional profit share under Section 37.",
+          traps: "Accounting Trap: Loan TO partner (asset) is debited; Loan FROM partner (liability) is credited to the Capital A/c before transfer to Executor.",
+          examples: [
+            { q: "Where is the balance of deceased partner's capital transferred?", a: "To his Executor's Account." }
+          ],
+          speedSummary: "Executor = Legal Heir of the deceased."
+        }
+      }
+    ]
+  },
 
   flashcards: [
     { id: "prd-fc-001", term: "Gaining Ratio", definition: "The ratio in which continuing partners acquire the share of the retiring or deceased partner.", formula: "New Ratio - Old Ratio", example: null },

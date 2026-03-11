@@ -4,7 +4,81 @@
 export const npoData = {
   subject: "Accountancy",
   chapter: "Accounting for NPO",
-  examTags: ["CUET"],
+  examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "npo-intro",
+        title: "1. Meaning & Nature",
+        content: {
+          coreConcept: "Organizations set up for welfare and service (clubs, schools, hospitals) rather than profit.",
+          formulaBank: "Key Accounts: 1. Receipts & Payments, 2. Income & Expenditure, 3. Balance Sheet.",
+          logic: "NPOs do not have 'Owner's Equity'; they have a 'Capital Fund' (accumulated surplus).",
+          traps: "Naming Trap: They don't make 'Profit' or 'Loss'; they have 'Surplus' or 'Deficit'.",
+          examples: [
+            { q: "Is a government hospital an NPO?", a: "Yes, its primary motive is service, not profit." }
+          ],
+          speedSummary: "Service-driven entities with Capital Funds."
+        }
+      },
+      {
+        id: "rp-vs-ie",
+        title: "2. R&P vs I&E Account",
+        content: {
+          coreConcept: "Differentiating the two primary summaries of an NPO.",
+          formulaBank: "- R&P: Cash Basis (Real Account).\n- I&E: Accrual Basis (Nominal Account).",
+          logic: "1. R&P: Summary of Cash Book. Includes all receipts/payments (Capital/Revenue) of any year.\n2. I&E: Summary of revenue items for the CURRENT year only.",
+          traps: "Basis Trap: R&P includes capital items (like buying a bus); I&E strictly excludes capital items.",
+          examples: [
+            { q: "Where does 'Depreciation' appear?", a: "Only in I&E Account (Non-cash item)." }
+          ],
+          speedSummary: "R&P = Cash basis; I&E = Accrual basis."
+        }
+      },
+      {
+        id: "npo-specific-items",
+        title: "3. Specific Revenue/Capital Items",
+        content: {
+          coreConcept: "Handling specialized receipts unique to NPOs.",
+          formulaBank: "- Legacies/Life Fees: Capital Receipt (B/S).\n- Entrance Fees: Revenue (unless specified).\n- Honorarium: Revenue Expense (I&E).",
+          logic: "1. Specific Donation: Capitalized (added to specific fund).\n2. General Donation: Revenue income (I&E).",
+          traps: "Donation Trap: If a donation is for a 'Building', it CANNOT be used for office expenses. It's a liability/fund item.",
+          examples: [
+            { q: "Life Membership Fee treatment?", a: "Capitalized and added to Capital Fund." }
+          ],
+          speedSummary: "Capital receipts vs Revenue income."
+        }
+      },
+      {
+        id: "fund-accounting",
+        title: "4. Fund Based Accounting",
+        content: {
+          coreConcept: "Accounting for incomes and expenses related to specific funds.",
+          formulaBank: "Net Fund = Op Bal + Donations + Interest on Fund Investment - Expenses.",
+          logic: "If Expenses exceed the Fund balance, the excess is debited to I&E Account (Expenditure side).",
+          traps: "Interest Trap: Interest earned on 'Match Fund Investment' must be added to 'Match Fund', NOT shown as general income.",
+          examples: [
+            { q: "Fund 10k, Exp 12k. Result?", a: "2k is shown as expense in I&E." }
+          ],
+          speedSummary: "Specific funds handle their own costs."
+        }
+      },
+      {
+        id: "subscription-calc",
+        title: "5. Subscription Logic",
+        content: {
+          coreConcept: "Determining current year income from total cash received.",
+          formulaBank: "I&E Income = Received + Cl O/S + Op Adv - Op O/S - Cl Adv.",
+          logic: "Includes all revenue earned for the current year, whether received or not, and excludes cash belonging to other years.",
+          traps: "Calculation Trap: Be careful if the question says 'Cl O/S for the year' vs 'Cl O/S on that date'.",
+          examples: [
+            { q: "Received 50k, Cl O/S 5k, Op O/S 2k. I&E?", a: "50 + 5 - 2 = 53k." }
+          ],
+          speedSummary: "Current year income only (Accrual)."
+        }
+      }
+    ]
+  },
 
   flashcards: [
     { id: "npo-fc-001", term: "NPO", definition: "Entities set up for service rather than profit, such as clubs, schools, and hospitals.", formula: null, example: null },

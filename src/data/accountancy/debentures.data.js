@@ -5,6 +5,94 @@ export const debenturesData = {
   subject: "Accountancy",
   chapter: "Issue & Redemption of Debentures",
   examTags: ["CUET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "debenture-basics",
+        title: "1. Meaning & Features",
+        content: {
+          coreConcept: "A debenture is a written instrument acknowledging a debt, typically specifying the repayment period and fixed interest rate.",
+          formulaBank: "- Interest Rate: Specified in the name (e.g., 9% Debentures).\n- Status: Debenture holders are creditors, not owners.",
+          logic: "1. A debt instrument under the company's common seal.\n2. Interest is a charge against profit (compulsory).\n3. It does not carry voting rights.",
+          traps: "Trap: Confusing debentures with shares. Debentures represent debt; shares represent ownership.",
+          examples: [
+            { q: "Do debenture holders have voting rights?", a: "No, they are creditors and have no voting rights." }
+          ],
+          speedSummary: "Debt instrument, Fixed Interest, No Voting rights."
+        }
+      },
+      {
+        id: "issue-vendor",
+        title: "2. Issue for Consideration Other Than Cash",
+        content: {
+          coreConcept: "Issuing debentures to vendors in exchange for assets or business purchased.",
+          formulaBank: "No. of Debentures = Amount Payable / Issue Price",
+          logic: "1. If Issued at Par: Debentures = Amount Payable / Face Value.\n2. If at Premium: Issue Price = Face Value + Premium.\n3. If at Discount: Issue Price = Face Value - Discount.",
+          traps: "Calculation Trap: Using Face Value instead of Issue Price in the formula when issued at a premium or discount.",
+          examples: [
+            { q: "Vendor paid ₹9.9L by ₹100 debentures at 10% premium. How many?", a: "9,90,000 / 110 = 9,000 Debentures." }
+          ],
+          speedSummary: "Vendor Issue = Payable / Issue Price."
+        }
+      },
+      {
+        id: "collateral-security",
+        title: "3. Issue as Collateral Security",
+        content: {
+          coreConcept: "Issuing debentures as secondary security for a bank loan.",
+          formulaBank: "Method 2 Entry: Debenture Suspense A/c Dr. To X% Debentures A/c.",
+          logic: "1. It is a contingent liability. No interest is paid on these until invoked.\n2. Method 1: No entry, just a note in Balance Sheet.\n3. Method 2: Record using Debenture Suspense.",
+          traps: "Trap: Paying interest on collateral debentures. Interest is only paid on the bank loan, NOT on collateral debentures.",
+          examples: [
+            { q: "Account debited when collateral is recorded?", a: "Debenture Suspense Account." }
+          ],
+          speedSummary: "Secondary security, Interest on Loan only."
+        }
+      },
+      {
+        id: "redemption-terms-loss",
+        title: "4. Terms of Redemption (Loss on Issue)",
+        content: {
+          coreConcept: "Accounting for the future premium to be paid on redemption at the time of issue itself (Prudence Principle).",
+          formulaBank: "Loss on Issue = (Discount on Issue) + (Premium on Redemption)",
+          logic: "1. If redemption is at premium, create 'Premium on Redemption A/c' (Liability).\n2. Debit the same amount to 'Loss on Issue of Debentures A/c'.\n3. This ensures the future loss is recognized today.",
+          traps: "Trap: Forgetting to include the redemption premium in the 'Loss on Issue' account when debentures are issued at par but redeemed at premium.",
+          examples: [
+            { q: "Redeemable at 5% premium. How to record this at issue?", a: "Debit Loss on Issue, Credit Premium on Redemption." }
+          ],
+          speedSummary: "Future Prem on Red = Loss at Issue."
+        }
+      },
+      {
+        id: "writing-off-loss",
+        title: "5. Writing Off Loss & Interest",
+        content: {
+          coreConcept: "Loss on issue must be written off using capital profits or revenue profits.",
+          formulaBank: "Priority: 1. Securities Premium -> 2. Statement of P&L",
+          logic: "1. Interest: Charge against profit. Entry: Interest Dr. To Debentureholders.\n2. Writing Off: Total Loss is cleared from Securities Premium first as per Section 52.",
+          traps: "Timing Trap: Failing to write off the loss in the same year it was incurred (as per latest accounting standards).",
+          examples: [
+            { q: "Where is debenture interest transferred at year-end?", a: "To the Statement of Profit and Loss." }
+          ],
+          speedSummary: "Write off: SP first, then P&L."
+        }
+      },
+      {
+        id: "drr-dri-rules",
+        title: "6. Redemption Rules (DRR & DRI)",
+        content: {
+          coreConcept: "Statutory reserves and investments required before redeeming debentures.",
+          formulaBank: "- DRR: 10% of Outstanding (Unlisted companies)\n- DRI: 15% of Maturing amount (by 30th April)",
+          logic: "1. DRR ensures profits are retained for repayment.\n2. DRI ensures cash is available for repayment.\n3. Exemptions: Listed companies and banks don't need DRR.",
+          traps: "Limit Trap: Calculating 15% DRI on 'Outstanding' instead of 'Maturing' amount.",
+          examples: [
+            { q: "Minimum DRI percentage?", a: "15% of the amount maturing during the year." }
+          ],
+          speedSummary: "DRR (10%), DRI (15%)."
+        }
+      }
+    ]
+  },
 
   flashcards: [
     { id: "db-fc-001", term: "Debenture", definition: "A written certificate acknowledging a debt issued by a company under its common seal.", formula: null, example: null },

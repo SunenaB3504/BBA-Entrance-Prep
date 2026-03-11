@@ -5,6 +5,80 @@ export const dissolutionData = {
   subject: "Accountancy",
   chapter: "Dissolution of Partnership Firm",
   examTags: ["CUET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "dissolution-difference",
+        title: "1. Dissolution of Firm vs Partnership",
+        content: {
+          coreConcept: "Dissolution of Partnership is just reconstitution (agreement changes). Dissolution of Firm means closing the business entirely.",
+          formulaBank: "Dissolution of Firm = Discontinuation of Business + Closure of Books.",
+          logic: "1. Firm dissolution includes partnership dissolution.\n2. In firm dissolution, assets are sold and liabilities paid off.\n3. Business does not continue after firm dissolution.",
+          traps: "Trap: Common MCQ asking if books are closed in 'Dissolution of Partnership'. They are NOT; they are only closed in 'Dissolution of Firm'.",
+          examples: [
+            { q: "Does admission of a partner dissolve the firm?", a: "No, it only dissolves the old partnership agreement (reconstitution)." }
+          ],
+          speedSummary: "Firm Dissolution = Business CLOSED."
+        }
+      },
+      {
+        id: "settlement-sec48",
+        title: "2. Settlement of Accounts (Section 48)",
+        content: {
+          coreConcept: "Section 48 prescribes the legal order in which cash realized must be distributed.",
+          formulaBank: "Order: 1. Third Party Debts -> 2. Partner Loans -> 3. Partner Capitals -> 4. Surplus (PSR)",
+          logic: "1. Outside creditors (bank, vendors) have first right.\n2. Then partners who gave loans (not capital) are paid.\n3. Then partners get their invested capital back.\n4. Any leftover is profit distributed in PSR.",
+          traps: "Trap: Paying partner's loan before outside creditors. Outside debts MUST be cleared first.",
+          examples: [
+            { q: "In what order is cash distributed on dissolution?", a: "Outside Debts -> Partner Loans -> Partner Capitals." }
+          ],
+          speedSummary: "Outside -> Partner Loan -> Capital."
+        }
+      },
+      {
+        id: "realisation-account",
+        title: "3. Realisation Account",
+        content: {
+          coreConcept: "A Nominal Account prepared to close all asset and liability accounts and determine profit/loss on dissolution.",
+          formulaBank: "Profit/Loss = Total Realisation Credits - Total Realisation Debits",
+          logic: "1. Transfer Assets (Dr) and Outside Liabs (Cr) at Book Value.\n2. Asset Realised (Cr) and Liabs Paid (Dr).\n3. Resulting Profit/Loss shared by ALL partners in PSR.",
+          traps: "Trap: Transferring Cash or Bank balance to Realisation. They are NOT transferred; a separate Bank A/c is prepared.",
+          examples: [
+            { q: "What is the nature of Realisation Account?", a: "Nominal Account (records gains/losses)." }
+          ],
+          speedSummary: "Close Assets/Liabs -> Compute Profit/Loss."
+        }
+      },
+      {
+        id: "asset-expense-treatment",
+        title: "4. Treatment of Assets & Expenses",
+        content: {
+          coreConcept: "How to handle sale of assets and payment of dissolution costs.",
+          formulaBank: "- Asset Sale: Bank Dr. To Realisation\n- Firm pays Exp: Realisation Dr. To Bank\n- Partner pays Exp: Realisation Dr. To Partner's Cap",
+          logic: "1. Assets are realized as per given info. If silent, tangible assets = Book Value, Intangible = Nil.\n2. Expenses: 'Dr who bears, Cr who pays'.\n3. Asset taken by partner: Partner's Cap Dr. To Realisation.",
+          traps: "Trap: Passing an entry when a creditor takes an asset. If it's a 'full settlement' or part-settlement, NO ENTRY is passed for the exchange.",
+          examples: [
+            { q: "Unrecorded asset realized ₹500. Entry?", a: "Bank A/c Dr. To Realisation A/c." }
+          ],
+          speedSummary: "Dr Bears, Cr Pays."
+        }
+      },
+      {
+        id: "loans-final-payment",
+        title: "5. Partner's Loan & Final Settlement",
+        content: {
+          coreConcept: "Closing the final accounts of partners.",
+          formulaBank: "- Pay Partner's Loan: Loan A/c Dr. To Bank\n- Final Capital Payout: Partner's Cap Dr. To Bank",
+          logic: "1. Partner's loan is paid AFTER outside debts but BEFORE capital.\n2. If a partner has a debit balance (deficiency), they must bring in cash.\n3. Bank account must tally (Total Dr = Total Cr) at the end.",
+          traps: "Trap: Transferring Partner's Loan to Realisation Account. It is NOT transferred; it's a separate account.",
+          examples: [
+            { q: "Is partner's loan transferred to Realisation?", a: "No, it is paid separately via the Bank Account." }
+          ],
+          speedSummary: "Bank A/c must tally to prove accuracy."
+        }
+      }
+    ]
+  },
 
   flashcards: [
     { id: "ds-fc-001", term: "Dissolution of Firm", definition: "Complete closure of business and end of partnership relations among all partners.", formula: null, example: null },

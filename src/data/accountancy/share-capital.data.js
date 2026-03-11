@@ -4,7 +4,95 @@
 export const shareCapitalData = {
   subject: "Accountancy",
   chapter: "Accounting for Share Capital",
-  examTags: ["CUET"],
+  examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "company-features",
+        title: "1. Meaning & Features of a Company",
+        content: {
+          coreConcept: "A company is an artificial person created by law, having a separate entity, perpetual succession, and a common seal.",
+          formulaBank: "- Section 2(20): Companies Act 2013\n- Perpetual Succession: Members may change, company remains.",
+          logic: "1. Separate Entity: Company and owners are different.\n2. Limited Liability: Liability limited to unpaid share value.\n3. Common Seal: Official signature (now optional).",
+          traps: "Trap: Stating that a company's existence ends with the death of all members. False - it has perpetual succession.",
+          examples: [
+            { q: "Is a company a natural person?", a: "No, it is an artificial legal person." }
+          ],
+          speedSummary: "Separate Entity, Limited Liability, Perpetual Succession."
+        }
+      },
+      {
+        id: "company-types",
+        title: "2. Types of Company",
+        content: {
+          coreConcept: "Classification based on members and liability: Private, Public, and One Person Company (OPC).",
+          formulaBank: "Min/Max Members:\n- Private: 2 / 200\n- Public: 7 / No Limit\n- OPC: 1 / 1",
+          logic: "1. Private Co: Restricts share transfer, prohibits public subscription.\n2. Public Co: No restriction on share transfer, can invite public.\n3. OPC: A private company with only one member.",
+          traps: "Trap: Max members in a Public Company is 100. False - there is no upper limit.",
+          examples: [
+            { q: "Minimum members in OPC?", a: "1" }
+          ],
+          speedSummary: "Private (2-200), Public (7-Unlimited)."
+        }
+      },
+      {
+        id: "share-capital-categories",
+        title: "3. Categories of Share Capital",
+        content: {
+          coreConcept: "The division of share capital into various administrative categories for accounting.",
+          formulaBank: "Hierarchy: Authorised > Issued > Subscribed > Called-up > Paid-up",
+          logic: "1. Authorised: Maximum capital a company can issue.\n2. Subscribed: Part of issued capital taken by public.\n3. Reserve Capital: Part of uncalled capital kept for winding up.",
+          traps: "Reserve Capital vs Capital Reserve: Reserve Capital is uncalled capital; Capital Reserve is profit from capital transactions (like reissue).",
+          examples: [
+            { q: "Can Paid-up capital exceed Authorised capital?", a: "No, Authorised is the maximum limit." }
+          ],
+          speedSummary: "Auth > Issued > Sub > Paid-up."
+        }
+      },
+      {
+        id: "issue-at-premium",
+        title: "4. Issue of Shares at Premium",
+        content: {
+          coreConcept: "Issuing shares at a price higher than the face value. Excess is credited to Securities Premium Account.",
+          formulaBank: "Entry: Bank Dr. To Share App/Allot. Share Allot Dr. To Share Cap To Securities Premium.",
+          logic: "1. Securities Premium is a capital gain.\n2. Usage (Section 52): Bonus shares, writing off preliminary expenses, buyback.",
+          traps: "Usage Trap: Using Securities Premium to pay dividends. This is ILLEGAL under Section 52.",
+          examples: [
+            { q: "Can a company issue shares at discount?", a: "No, prohibited under Section 53 (except Sweat Equity)." }
+          ],
+          speedSummary: "Premium = Price > Face Value. Use per Sec 52."
+        }
+      },
+      {
+        id: "pro-rata-allotment",
+        title: "5. Oversubscription & Pro-rata",
+        content: {
+          coreConcept: "When more applications are received than shares offered. Shares are allotted proportionately.",
+          formulaBank: "Pro-rata Ratio = Shares Offered / Shares Applied",
+          logic: "1. Excess application money is adjusted against allotment or refunded.\n2. Key Calculation: Finding amount due on allotment after adjusted application money.",
+          traps: "Calculation Trap: Forgetting to calculate 'excess money received' on actual applied shares vs allotted shares.",
+          examples: [
+            { q: "If 10k shares offered and 15k applied, what is pro-rata?", a: "2:3 (Allot 2 for every 3 applied)." }
+          ],
+          speedSummary: "Pro-rata = Proportionate Allotment."
+        }
+      },
+      {
+        id: "forfeiture-reissue",
+        title: "6. Forfeiture & Reissue of Shares",
+        content: {
+          coreConcept: "Cancelling shares due to non-payment of calls and then reissuing them to someone else.",
+          formulaBank: "Capital Reserve = (Gain on Forfeiture - Loss on Reissue) on reissued shares only.",
+          logic: "1. Forfeiture: Share Capital Dr. (Called-up) To Forfeited Shares (Paid-up) To Calls-in-Arrear.\n2. Reissue: Bank Dr. Forfeited Shares Dr. (Discount) To Share Cap.\n3. Balance of Forfeited Shares A/c (on reissued shares) -> Capital Reserve.",
+          traps: "Capital Reserve Trap: Calculating reserve on all forfeited shares even if only some are reissued. Only reissued ones count!",
+          examples: [
+            { q: "Maximum discount on reissue?", a: "Equal to the amount already forfeited on those shares." }
+          ],
+          speedSummary: "Cancel -> Keep Money -> Reissue -> Capital Reserve."
+        }
+      }
+    ]
+  },
 
   flashcards: [
     { id: "sc-fc-001", term: "Authorised Capital", definition: "The maximum amount of share capital that a company is authorised to issue by its MoA.", formula: null, example: null },

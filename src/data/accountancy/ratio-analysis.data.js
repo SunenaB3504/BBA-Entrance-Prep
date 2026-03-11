@@ -5,6 +5,80 @@ export const ratioAnalysisData = {
   subject: "Accountancy",
   chapter: "Ratio Analysis",
   examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "ratio-intro",
+        title: "1. Introduction to Ratios",
+        content: {
+          coreConcept: "A mathematical relationship between two accounting figures used to evaluate performance.",
+          formulaBank: "Expressions: Pure (2:1), Percentage (%), Times (Turnover), Fraction (1/4).",
+          logic: "1. Objectives: Simplify complexity, spot weak spots, and enable comparison.\n2. Comparisons: Inter-firm (Competitors) and Intra-firm (Internal trends).",
+          traps: "Trap: Ignoring qualitative factors. Ratios only look at monetary numbers, not staff skills or brand value.",
+          examples: [
+            { q: "Is a high ratio always 'good'?", a: "Not necessarily. For example, a very high current ratio might mean idle funds." }
+          ],
+          speedSummary: "Math relations for performance evaluation."
+        }
+      },
+      {
+        id: "liquidity-ratios",
+        title: "2. Liquidity Ratios (Short-term)",
+        content: {
+          coreConcept: "Measuring the ability to meet current obligations.",
+          formulaBank: "- Current Ratio: Current Assets / Current Liabilities (Ideal 2:1).\n- Quick Ratio: (Quick Assets) / Current Liabilities (Ideal 1:1).",
+          logic: "1. Quick Assets: Current Assets - (Inventory + Prepaid Exp + Advance Tax).\n2. Inventory is excluded as it takes time to sell.",
+          traps: "Rule: Loose tools/Stores are excluded from Current Assets for ratio calculation purposes.",
+          examples: [
+            { q: "Effect of paying creditors on CR (if 2:1)?", a: "Increase (Num & Den decrease equally)." }
+          ],
+          speedSummary: "Current (2:1) & Quick (1:1) capacity."
+        }
+      },
+      {
+        id: "solvency-ratios",
+        title: "3. Solvency Ratios (Long-term)",
+        content: {
+          coreConcept: "Assessing the ability to meet long-term liabilities.",
+          formulaBank: "- Debt-Equity: Long-term Debt / Shareholders' Funds (Ideal 2:1).\n- Interest Coverage: PBIT / Interest (Times).",
+          logic: "1. Long-term Debt: Borrowings + Provisions.\n2. Capital Employed: Debt + Equity.",
+          traps: "PBIT Trap: ROI and Interest Coverage use Profit BEFORE Interest & Tax. Add back tax/interest if PAT is given.",
+          examples: [
+            { q: "Transaction reducing Debt-Equity?", a: "Issue of Equity Shares for cash." }
+          ],
+          speedSummary: "Long-term buffer and interest safety."
+        }
+      },
+      {
+        id: "activity-ratios",
+        title: "4. Activity Ratios (Efficiency)",
+        content: {
+          coreConcept: "Measures efficiency in utilizing resources to generate sales.",
+          formulaBank: "- Inventory Turnover: COGS / Avg Inventory.\n- TR Turnover: Net Credit Sales / Average Trade Receivables.",
+          logic: "1. High Turnover = Efficiency/Fast conversion.\n2. Average Collection Period = 365 / TR Turnover.",
+          traps: "Calculation Trap: Use CREDIT Sales for TR Turnover and CREDIT Purchases for TP Turnover.",
+          examples: [
+            { q: "Higher inventory turnover significance?", a: "Fast-moving stock, less capital tied up." }
+          ],
+          speedSummary: "Resource utilization speed in Times."
+        }
+      },
+      {
+        id: "profitability-ratios",
+        title: "5. Profitability Ratios (Yield)",
+        content: {
+          coreConcept: "Measuring the overall success and earning capacity.",
+          formulaBank: "- Gross Profit Ratio: (GP / Net Sales) * 100.\n- ROI: (PBIT / Capital Employed) * 100.",
+          logic: "1. Operating Ratio: Cost + Op Exp / Sales. (Lower is better).\n2. Operating Profit Ratio: 100 - Operating Ratio.",
+          traps: "Formula Trap: Operating Ratio + Operating Profit Ratio ALWAYS equals 100%.",
+          examples: [
+            { q: "Is Net Profit always lower than Gross Profit?", a: "Generally yes, as indirect expenses are deducted." }
+          ],
+          speedSummary: "Margins and yield on capital."
+        }
+      }
+    ]
+  },
 
   flashcards: [
     { id: "ra-fc-001", term: "Current Ratio", definition: "Measures ability to meet short-term obligations using Current Assets.", formula: "Current Assets / Current Liabilities", example: "Ideal: 2:1" },

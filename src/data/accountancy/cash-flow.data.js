@@ -4,7 +4,67 @@
 export const cashFlowData = {
   subject: "Accountancy",
   chapter: "Cash Flow Statement",
-  examTags: ["CUET"],
+  examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "cfs-basics",
+        title: "1. CFS Basics (AS-3)",
+        content: {
+          coreConcept: "A statement showing inflows and outflows of Cash and Cash Equivalents during a period.",
+          formulaBank: "- Cash: Cash on hand & demand deposits.\n- Cash Equivalents: Highly liquid investments (< 3 months maturity).",
+          logic: "Classification:\n1. Operating: Principal revenue activities.\n2. Investing: Purchase/Sale of long-term assets.\n3. Financing: Changes in capital & borrowings.",
+          traps: "Trap: Treating Bank Overdraft as a Current Liability. In CFS, it is a Financing Activity (short-term borrowing).",
+          examples: [
+            { q: "Is 'Sale of Marketable Securities' a cash flow?", a: "No, it's a movement between cash equivalents." }
+          ],
+          speedSummary: "AS-3 classification: Ops, Invest, Finance."
+        }
+      },
+      {
+        id: "operating-indirect",
+        title: "2. Operating (Indirect Method)",
+        content: {
+          coreConcept: "Reconciling Net Profit (Accrual) to Net Cash from Operations.",
+          formulaBank: "Net Profit + Non-Cash Exp + Non-Operating Exp - Non-Operating Inc ± WC Changes - Tax Paid.",
+          logic: "1. Add Back: Depreciation, Goodwill Amortized, Interest Paid.\n2. Deduct: Interest/Dividend Received, Profit on Sale.",
+          traps: "Calculation Trap: Adding 'Proposed Dividend of Current Year'. ALWAYS use the Previous Year amount.",
+          examples: [
+            { q: "Why add back depreciation?", a: "It's a non-cash expense that reduced profit but never moved cash." }
+          ],
+          speedSummary: "NPBT -> Adjustments -> WC -> Tax."
+        }
+      },
+      {
+        id: "investing-financing",
+        title: "3. Investing & Financing",
+        content: {
+          coreConcept: "Flows relating to project assets and capital structure.",
+          formulaBank: "- Investing: Sale of Asset (+), Purchase of Asset (-), Int/Div Received (+).\n- Financing: Issue of Shares (+), Loans (+), Dividend/Interest Paid (-).",
+          logic: "1. Investing: Look at Non-Current Assets side of B/S.\n2. Financing: Look at Equity and Non-Current Liabilities side.",
+          traps: "Activity Trap: Interest Paid is Financing; Interest Received is Investing (for non-finance firms).",
+          examples: [
+            { q: "Purchase of Goodwill is which activity?", a: "Investing activity." }
+          ],
+          speedSummary: "Assets (Invest) & Capital (Finance)."
+        }
+      },
+      {
+        id: "working-capital-logic",
+        title: "4. Working Capital Changes",
+        content: {
+          coreConcept: "Adjusting profit for changes in current assets and liabilities.",
+          formulaBank: "Add: Dec in CA, Inc in CL | Less: Inc in CA, Dec in CL.",
+          logic: "1. Assets: If Debtors increase, cash is tied up (Outflow).\n2. Liabilities: If Creditors increase, we saved cash by not paying yet (Inflow).",
+          traps: "Omission Trap: Do NOT include 'Cash/Bank' or 'Short-term Investments' in WC adjustments. They are C&CE.",
+          examples: [
+            { q: "Effect of decrease in inventory?", a: "Add to operating profit (Inflow)." }
+          ],
+          speedSummary: "CA Inverse, CL Direct relation."
+        }
+      }
+    ]
+  },
 
   flashcards: [
     { id: "cfs-fc-001", term: "Cash Equivalents", definition: "Short-term, highly liquid investments (maturity < 3 months) with insignificant value risk.", formula: null, example: "T-Bills, Commercial Paper, Marketable Securities" },

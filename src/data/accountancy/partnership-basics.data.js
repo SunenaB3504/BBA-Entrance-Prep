@@ -5,6 +5,108 @@ export const partnershipBasicsData = {
   subject: "Accountancy",
   chapter: "Partnership: Basic Concepts",
   examTags: ["CUET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "nature-partnership",
+        title: "1. Nature of Partnership",
+        content: {
+          coreConcept: "Partnership is the relation between persons who have agreed to share the profits of a business carried on by all or any of them acting for all (Sec 4 of Indian Partnership Act, 1932).",
+          formulaBank: "- Min Partners: 2\n- Max Partners: 50",
+          logic: "1. Agreement: Oral or Written.\n2. Lawful Business: Must be legal.\n3. Profit Sharing: Essential (Loss sharing is not).\n4. Mutual Agency: Each partner is both principal & agent.",
+          traps: "Examiner Trap: Stating max partners is 100 as per Companies Act. While the Act allows up to 100, the Rules currently cap it at 50.",
+          examples: [
+            { q: "Can a partnership exist without mutual agency?", a: "No, mutual agency is the 'cardinal principle' of partnership." }
+          ],
+          speedSummary: "Min 2, Max 50, Mutual Agency is key."
+        }
+      },
+      {
+        id: "partnership-deed",
+        title: "2. Partnership Deed & Absence Rules",
+        content: {
+          coreConcept: "A written agreement between partners. If silent, the Indian Partnership Act 1932 provisions apply.",
+          formulaBank: "Rules in Absence:\n- Profits: Equal\n- Int. on Loan: 6% p.a.\n- IOC/IOD/Salary: NIL",
+          logic: "1. Check the Deed first.\n2. If Deed is silent on a point, apply the 'Absence Rules'.\n3. Note: Interest on Partner's Loan is a charge (paid even in loss).",
+          traps: "Trap: Calculating IOC @ 6% when deed is silent. 6% is ONLY for Loans, not Capital.",
+          examples: [
+            { q: "Firm has loss of ₹10k. Partner Z has given ₹1L loan. Interest payable?", a: "₹6,000 (6% of 1L). It must be paid even in loss." }
+          ],
+          speedSummary: "No Deed = Equal Profits + 6% Loan Int."
+        }
+      },
+      {
+        id: "special-aspects",
+        title: "3. P&L Appropriation Account",
+        content: {
+          coreConcept: "An extension of P&L A/c used to show how net profit is distributed among partners.",
+          formulaBank: "Net Profit + IOD = IOC + Salary + Commission + Reserves + Divisible Profit",
+          logic: "1. Start with Net Profit on Credit side.\n2. Add IOD on Credit side.\n3. Subtract Appropriations (IOC, Salary) on Debit side.\n4. Distribute balance in PSR.",
+          traps: "Charge vs Appropriation: Rent to Partner and Interest on Loan are CHARGES (go to P&L), not items of P&L Appropriation.",
+          examples: [
+            { q: "Is Partner's Salary a charge?", a: "No, it's an appropriation. Paid only if there's profit." }
+          ],
+          speedSummary: "P&L Approp = Distribution of Net Profit."
+        }
+      },
+      {
+        id: "capital-accounts",
+        title: "4. Maintenance of Capital Accounts",
+        content: {
+          coreConcept: "Two methods: Fixed Capital Method and Fluctuating Capital Method.",
+          formulaBank: "Fixed: Capital A/c + Current A/c\nFluctuating: Capital A/c ONLY",
+          logic: "1. Fixed: Adjustments (IOC, Salary) go to Current A/c.\n2. Fluctuating: All items go to Capital A/c.\n3. Silent: Assume Fluctuating.",
+          traps: "Where is IOC credited in Fixed method? Answer: Current Account.",
+          examples: [
+            { q: "Can Fixed Capital A/c show a debit balance?", a: "Normally no. It always shows a credit balance." }
+          ],
+          speedSummary: "Fixed = 2 Accts; Fluctuating = 1 Acct."
+        }
+      },
+      {
+        id: "interest-drawings",
+        title: "5. Interest on Drawings (IOD)",
+        content: {
+          coreConcept: "Interest charged on drawings made by partners. Calculation depends on timing.",
+          formulaBank: "Average Period (Monthly):\n- Beginning: 6.5\n- Middle: 6\n- End: 5.5\nQuarterly:\n- Beginning: 7.5\n- Middle: 6\n- End: 4.5",
+          logic: "1. Calculate Total Drawings.\n2. Identify Average Period based on timing.\n3. Apply Formula: Total Dr. x Rate/100 x AvgP/12.",
+          traps: "If date of drawing is not given, always use 6 months as average period.",
+          examples: [
+            { q: "A withdraws ₹2,000 pm at end of each month. IOD @ 10%?", a: "24,000 x 10/100 x 5.5/12 = ₹1,100" }
+          ],
+          speedSummary: "6.5 / 6 / 5.5 is the monthly magic number."
+        }
+      },
+      {
+        id: "past-adjustments",
+        title: "6. Past Adjustments",
+        content: {
+          coreConcept: "Rectifying errors/omissions from previous years by passing a single adjustment entry.",
+          formulaBank: "Adjustment Table: (What should be) vs (What was) = Net Effect.",
+          logic: "1. Credit what partner should receive (IOC, Salary).\n2. Debit profit wrongly distributed.\n3. Net Effect Dr = Paying Partner, Net Effect Cr = Receiving Partner.",
+          traps: "Entry is always: Gaining Partner's Cap Dr. to Sacrificing Partner's Cap.",
+          examples: [
+            { q: "IOC omitted. How to fix?", a: "Pass a single adjustment entry through Capital/Current A/cs." }
+          ],
+          speedSummary: "One entry to fix all past mistakes."
+        }
+      },
+      {
+        id: "guarantee",
+        title: "7. Guarantee of Profit",
+        content: {
+          coreConcept: "Assurance of minimum profit to a partner. Shortfall is borne by the guarantor.",
+          formulaBank: "Deficiency = Guaranteed Amount - Actual Share",
+          logic: "1. Distribute profit normally.\n2. Check if guaranteed partner has a deficiency.\n3. Recover deficiency from guarantor's share.",
+          traps: "If firm has a loss, guarantee must still be honured by the guarantor partner(s) personally.",
+          examples: [
+            { q: "Z guaranteed ₹10k. Actual profit share ₹8k. Who pays ₹2k?", a: "The partner(s) who gave the guarantee." }
+          ],
+          speedSummary: "Guarantor pays the gap."
+        }
+      }
+    ]
+  },
 
   flashcards: [
     { id: "pb-fc-001", term: "Partnership", definition: "Relation between persons who have agreed to share profits of a business carried on by all or any of them acting for all.", formula: null, example: null },

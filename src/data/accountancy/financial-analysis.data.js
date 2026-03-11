@@ -4,7 +4,81 @@
 export const financialAnalysisData = {
   subject: "Accountancy",
   chapter: "Analysis of Financial Statements",
-  examTags: ["CUET"],
+  examTags: ["CUET", "MH-CET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "analysis-meaning-steps",
+        title: "1. Meaning & Process",
+        content: {
+          coreConcept: "A systematic process of identifying strengths and weaknesses by establishing relationships between items.",
+          formulaBank: "Steps: Rearrangement -> Comparison -> Analysis -> Interpretation.",
+          logic: "1. Rearrangement: Simplify data into standard formats.\n2. Comparison: Spotting deviations over time or between firms.\n3. Interpretation: Explaining what the results actually mean for stakeholders.",
+          traps: "Trap: Confusing Analysis with Interpretation. Analysis is the method of calculation; Interpretation is the explanation of significance.",
+          examples: [
+            { q: "Is analysis an end in itself?", a: "No, it is a means to achieve the end of decision-making." }
+          ],
+          speedSummary: "Rearrange, Compare, Analyze, Interpret."
+        }
+      },
+      {
+        id: "horizontal-vertical",
+        title: "2. Types of Analysis",
+        content: {
+          coreConcept: "Classification based on methodology (Horizontal vs Vertical).",
+          formulaBank: "- Horizontal: Comparative Statements (Multiple years).\n- Vertical: Common Size Statements (Single year).\n- Inter-firm: Comparing different firms.\n- Intra-firm: Comparing same firm over time.",
+          logic: "1. Horizontal (Dynamic): Time-series comparison. Analyzes trends over periods.\n2. Vertical (Static): Cross-sectional. Expresses components as a percentage of a common base.\n3. Inter-firm: Benchmarking against competitors.\n4. Intra-firm: Assessing internal performance changes.",
+          traps: "Naming Trap: Horizontal is also called Dynamic; Vertical is also called Static. Don't confuse Inter-firm with Intra-firm.",
+          examples: [
+            { q: "Which tool is for Vertical Analysis?", a: "Common Size Statements and Ratios." }
+          ],
+          speedSummary: "Horizontal = Dynamic; Vertical = Static."
+        }
+      },
+      {
+        id: "comparative-stmt",
+        title: "3. Comparative Statements",
+        content: {
+          coreConcept: "Showing absolute and percentage changes between two periods.",
+          formulaBank: "1. Abs Change = CY - PY.\n2. % Change = (Abs Change / PY) * 100.",
+          logic: "Horizontal analysis tool. It highlights trends and growth rates in income and assets.",
+          traps: "Calculation Trap: Using CY in the denominator of the percentage formula. ALWAYS divide by the Previous Year (Base Year).",
+          examples: [
+            { q: "Revenue 5L (PY), 6L (CY). % Change?", a: "(1 / 5) * 100 = 20%." }
+          ],
+          speedSummary: "Abs Change & % Change over time."
+        }
+      },
+      {
+        id: "common-size-stmt",
+        title: "4. Common Size Statements",
+        content: {
+          coreConcept: "Expressing items as a percentage of a common base (Relative analysis).",
+          formulaBank: "- Balance Sheet Base: Total Assets = 100%.\n- P&L Base: Revenue from Operations = 100%.",
+          logic: "Vertical analysis tool. It allows for comparison of firms of different sizes by normalizing the data to 100%.",
+          traps: "Base Trap: Using 'Total Revenue' (including other income) instead of 'Revenue from Operations' for P&L Common Size.",
+          examples: [
+            { q: "Individual item / Common Base * 100 = ?", a: "Common Size Percentage." }
+          ],
+          speedSummary: "Total Assets/Revenue = 100%."
+        }
+      },
+      {
+        id: "analysis-stakeholders",
+        title: "5. Stakeholders & Interest",
+        content: {
+          coreConcept: "Different users analyze financial statements for different goals.",
+          formulaBank: "- Trade Payables: Liquidity.\n- Lenders: Solvency.\n- Investors: Profitability.",
+          logic: "1. Shareholders: Dividend safety and growth.\n2. Management: Operational efficiency and decision making.\n3. Labour Unions: Ability to pay wages.",
+          traps: "Confusion Trap: Lenders care about principal safety (Solvency), while Trade Payables care about immediate cash flow (Liquidity).",
+          examples: [
+            { q: "Who is interested in short-term liquidity?", a: "Trade Payables (Creditors)." }
+          ],
+          speedSummary: "User needs define analysis focus."
+        }
+      }
+    ]
+  },
 
   flashcards: [
     { id: "fa-fc-001", term: "Horizontal Analysis", definition: "Analysis of financial data over a series of years to identify trends/changes.", formula: null, example: "Comparative Statements" },

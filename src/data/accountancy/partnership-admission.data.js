@@ -5,6 +5,94 @@ export const partnershipAdmissionData = {
   subject: "Accountancy",
   chapter: "Admission of a Partner",
   examTags: ["CUET"],
+  studyGuide: {
+    topics: [
+      {
+        id: "reconstitution-modes",
+        title: "1. Modes of Reconstitution",
+        content: {
+          coreConcept: "Reconstitution occurs when the existing partnership agreement changes, but the firm continues. Modes include: Admission, Retirement, Death, Change in PSR, and Amalgamation.",
+          formulaBank: "- Section 31: Admission of a Partner\n- Section 32: Retirement of a Partner\n- Section 35: Death of a Partner",
+          logic: "1. Old agreement ends.\n2. New agreement begins.\n3. Business operations continue without closure (unlike dissolution).",
+          traps: "Trap: Confusing 'Dissolution of Partnership' (reconstitution) with 'Dissolution of Firm' (closing business).",
+          examples: [
+            { q: "Is change in profit sharing ratio a reconstitution?", a: "Yes, it is one of the modes of reconstitution." }
+          ],
+          speedSummary: "Change in agreement = Reconstitution."
+        }
+      },
+      {
+        id: "admission-rights-sr",
+        title: "2. Rights of New Partner & Sacrificing Ratio",
+        content: {
+          coreConcept: "A new partner gets: 1. Right to share Assets (brings Capital) and 2. Right to share Profits (brings Premium for Goodwill).",
+          formulaBank: "Sacrificing Ratio = Old Ratio - New Ratio",
+          logic: "1. Incoming partner gets a share from old partners.\n2. Old partners lose/sacrifice their share.\n3. Sacrifice is used to distribute the Premium for Goodwill (PFG).",
+          traps: "Trap: Distributing PFG in Old Ratio. It MUST be distributed in Sacrificing Ratio.",
+          examples: [
+            { q: "A and B (3:2) admit C for 1/5 share. SR if not given?", a: "Sacrificing Ratio = Old Ratio = 3:2." }
+          ],
+          speedSummary: "SR = Old - New. Used for Goodwill."
+        }
+      },
+      {
+        id: "goodwill-valuation",
+        title: "3. Valuation of Goodwill",
+        content: {
+          coreConcept: "Methods to value firm's reputation: Average Profit, Super Profit, and Capitalisation.",
+          formulaBank: "- Avg Profit: Avg Profit x Years' Purchase\n- Super Profit: (Actual Profit - Normal Profit) x Years' Purchase\n- Normal Profit: Capital Employed x NRR / 100",
+          logic: "1. Find Average Profit.\n2. Find Normal Profit (what a normal firm would earn).\n3. Super Profit is the 'extra' profit earned due to reputation.",
+          traps: "Super Profit Calculation Trap: Forgetting to deduct partner salary from average profit if mentioned as an expense.",
+          examples: [
+            { q: "Super Profit if Actual is ₹50k and Normal is ₹40k?", a: "₹10,000" }
+          ],
+          speedSummary: "Super Profit = Actual - Normal."
+        }
+      },
+      {
+        id: "goodwill-treatment",
+        title: "4. Treatment of Goodwill (AS-26)",
+        content: {
+          coreConcept: "Accounting for Premium for Goodwill (PFG) brought by the new partner.",
+          formulaBank: "Entry: Cash A/c Dr. To PFG. Then PFG A/c Dr. To Sacrificing Partners' Cap A/c.",
+          logic: "1. New partner pays for the profit share he 'buys' from old partners.\n2. PFG is NOT firm's income; it's compensation for partners.\n3. If NOT brought in cash, debit New Partner's Current A/c.",
+          traps: "AS-26 Rule: Self-generated goodwill cannot be recorded in books. Only Purchased Goodwill appears in the Balance Sheet.",
+          examples: [
+            { q: "New partner pays PFG privately. Entry?", a: "No Entry (Outside business)." }
+          ],
+          speedSummary: "PFG -> Sacrificing Partners (SR)."
+        }
+      },
+      {
+        id: "revaluation-account",
+        title: "5. Revaluation Account",
+        content: {
+          coreConcept: "Records changes in values of assets and liabilities at the time of admission. It's a Nominal Account.",
+          formulaBank: "Debit: Asset ↓, Liab ↑ (Loss)\nCredit: Asset ↑, Liab ↓ (Gain)",
+          logic: "1. Revalue to ensure new partner doesn't benefit from old gains/losses.\n2. Profit/Loss transferred to Old Partners in Old Ratio.",
+          traps: "Trap: Including new partner in revaluation profit distribution. Only OLD partners get it.",
+          examples: [
+            { q: "Unrecorded asset found. Where to record?", a: "Credit side of Revaluation Account." }
+          ],
+          speedSummary: "Asset Up = Credit; Asset Down = Debit."
+        }
+      },
+      {
+        id: "reserves-profits",
+        title: "6. Reserves & Accumulated Profits",
+        content: {
+          coreConcept: "Undistributed profits and reserves (General Reserve, P&L) belong to old partners.",
+          formulaBank: "Reserve A/c Dr. To Old Partners' Cap A/c (Old Ratio)",
+          logic: "1. Clean the balance sheet of old reserves before new partner joins.\n2. Specific reserves (WCR, IFR) are distributed after meeting claims/losses.",
+          traps: "Employees Provident Fund (EPF): It's a liability, NOT a reserve. Do NOT distribute it.",
+          examples: [
+            { q: "Why are reserves distributed in Old Ratio?", a: "Because they were earned by old partners before admission." }
+          ],
+          speedSummary: "Old Reserves -> Old Partners (Old Ratio)."
+        }
+      }
+    ]
+  },
 
   flashcards: [
     { id: "pa-fc-001", term: "Reconstitution", definition: "Any change in the existing agreement of partnership, where the old agreement ends and a new one starts.", formula: null, example: null },
