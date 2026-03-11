@@ -17,7 +17,13 @@ export const writingSkillsData = {
                     formulaBank: "- Salutation: Sir/Madam or Dear Sir.\n- Subscription: Yours faithfully (if Dear Sir) or Yours sincerely (if name used).",
                     logic: "Always keep the tone polite, objective, and straight to the point. No slang.",
                     traps: "Using 'Yours affectionately' in a formal letter.",
-                    examples: [],
+                    examples: [
+                        { q: "Where does the sender's address go?", a: "At the top of the letter." },
+                        { q: "Subscription for 'Dear Sir'?", a: "Yours faithfully." },
+                        { q: "Subscription for 'Dear Mr. Verma'?", a: "Yours sincerely." },
+                        { q: "Is 'Hey' a valid salutation for a formal letter?", a: "No, use 'Sir/Madam' or 'Dear [Name]'." },
+                        { q: "Should a formal letter have a 'Subject' line?", a: "Yes, it must be concise and clear." }
+                    ],
                     speedSummary: "Formal = Objective, concise, structured."
                 }
             },
@@ -29,7 +35,13 @@ export const writingSkillsData = {
                     formulaBank: "- Must be enclosed in a BOX.\n- Word limit: usually 50 words.\n- Structure: Name of issuing agency, Word 'NOTICE', Date, Heading, Body, Signatory.",
                     logic: "Answer the 5 Ws: What is happening, Where, When, Who is invited, Who to contact.",
                     traps: "Writing a long paragraph. Notices must be extremely direct.",
-                    examples: [],
+                    examples: [
+                        { q: "Word limit for a school notice?", a: "Usually 50 words." },
+                        { q: "Is a box mandatory for a notice?", a: "Yes, it is a standard presentation rule." },
+                        { q: "Where is the word 'NOTICE' placed?", a: "Centrally, below the issuing agency's name." },
+                        { q: "Should you sign at the bottom of a notice?", a: "Yes, followed by your name and designation." },
+                        { q: "True or False: A notice should be in the first person ('I').", a: "False (Use third person: 'Students are informed that...')." }
+                    ],
                     speedSummary: "Box it. 50 words. Fact-heavy."
                 }
             }

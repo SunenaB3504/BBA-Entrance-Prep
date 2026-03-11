@@ -29,7 +29,14 @@ Comparing three neighbors who began their journeys in the same decade.
 - Initially grew faster than India in the 1960s.
 - Heavy reliance on **Remittances** and **Foreign Aid**.
 - Shifted to **Denationalisation** in the late 1970s.
-          `
+          `,
+          examples: [
+            { q: "What were 'Backyard Furnaces' in GLF?", a: "Small industrial units set up in every household to produce steel." },
+            { q: "In China, what is the 'Commune System'?", a: "Collective farming where groups of people collectively cultivated land." },
+            { q: "Reform year for Pakistan?", a: "1988." },
+            { q: "Why did Pakistan's growth slow down in the late 80s?", a: "Reliance on erratic foreign aid and political instability." },
+            { q: "Common feature of initial development in all three?", a: "Heavy reliance on the Public Sector." }
+          ]
         }
       },
       {
@@ -46,7 +53,12 @@ Comparing three neighbors who began their journeys in the same decade.
 - **China's Path**: Agri -> Industry (World's Workshop) -> Services.
 - **India/Pak Path**: Bypassed Industry -> Services.
 - **GVA Share**: Services contribute >50% in all three, but China's Industry is much stronger (~41%).
-          `
+          `,
+          examples: [
+            { q: "Effect of 'One Child Policy' on China?", a: "Led to a rapid decline in population growth and a rising aging population." },
+            { q: "Which country has the highest population density among the three?", a: "India." },
+            { q: "Which country has the highest urbanization percentage?", a: "China." }
+          ]
         }
       },
       {
@@ -62,7 +74,11 @@ Comparing three neighbors who began their journeys in the same decade.
 ### Liberty Indicators
 - Measures of **Democratic freedom**.
 - India ranks better here despite lower GDP/HDI, reflecting its democratic stability compared to China's one-party system.
-          `
+          `,
+          examples: [
+            { q: "Liberty indicator example?", a: "Freedom of speech and association (India ranks higher here than China)." },
+            { q: "Country with highest literacy rate among the three?", a: "China." }
+          ]
         }
       }
     ]

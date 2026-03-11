@@ -7,6 +7,46 @@ export const sciencePhysicsData = {
     subject: "General Knowledge",
     chapter: "Science: Physics",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "famous-inventions",
+                title: "1. Landmark Inventions & Inventors",
+                content: {
+                    coreConcept: "Landmark inventions have shaped modern civilization and are key points in Static GK audits.",
+                    formulaBank: "- Telephone: Alexander Graham Bell.\n- Light Bulb: Thomas Edison.\n- Penicillin: Alexander Fleming.\n- Steam Engine: James Watt.",
+                    logic: "Associate the inventor with the specific device or discovery that changed the world.",
+                    traps: "Confusing who discovered Gravity (Newton) with who discovered Laws of Motion (also Newton, but distinct).",
+                    examples: [
+                        { q: "Who invented the telephone?", a: "Alexander Graham Bell." },
+                        { q: "Who is credited with the discovery of Penicillin?", a: "Alexander Fleming." },
+                        { q: "Inventor of the World Wide Web (WWW)?", a: "Tim Berners-Lee." },
+                        { q: "Who developed the theory of Relativity?", a: "Albert Einstein." },
+                        { q: "Who invented the Radio?", a: "Guglielmo Marconi." }
+                    ],
+                    speedSummary: "Great inventors used scientific principles to create world-changing technologies."
+                }
+            },
+            {
+                id: "physics-laws",
+                title: "2. Fundamental Physics Laws",
+                content: {
+                    coreConcept: "Fundamental laws govern how the universe works, from gravity to thermodynamics.",
+                    formulaBank: "- Newton's 1st Law: Inertia.\n- Archimedes: Buoyancy.\n- Einstein: E=mc².\n- Pascal: Pressure.",
+                    logic: "Link the physical phenomenon to the law or principle that explains it.",
+                    traps: "Assuming 'Mass' and 'Weight' are the same in physics.",
+                    examples: [
+                        { q: "What is Newton's First Law also known as?", a: "Law of Inertia." },
+                        { q: "Which principle explains why ships float?", a: "Archimedes' Principle (Buoyancy)." },
+                        { q: "SI unit of Power?", a: "Watt." },
+                        { q: "What is the speed of light approx?", a: "3 x 10^8 m/s." },
+                        { q: "Law that states energy can neither be created nor destroyed?", a: "Law of Conservation of Energy." }
+                    ],
+                    speedSummary: "Physics laws provide the mathematical and conceptual framework for understanding the physical world."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "sp-bf-001",

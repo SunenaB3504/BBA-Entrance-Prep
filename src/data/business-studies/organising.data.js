@@ -19,7 +19,11 @@ export const organisingData = {
 2. **Departmentalisation**: Grouping similar jobs (Functional or Divisional).
 3. **Assignment of Duties**: Based on skills and competence.
 4. **Establishing Reporting Relationships**: Defining who reports to whom.`,
-          speedSummary: "Organising = Structure + Division of Work + Coordination."
+          speedSummary: "Organising = Structure + Division of Work + Coordination.",
+          examples: [
+            { q: "A large retail store groups all cosmetics into one section and electronics into another. Name the step.", a: "Departmentalisation (grouping similar jobs)." },
+            { q: "The manager assigns the task of billing to Rahul and inventory checking to Priya based on their skills. Name the step.", a: "Assignment of Duties." }
+          ]
         }
       },
       {
@@ -36,7 +40,11 @@ export const organisingData = {
 | Managerial Dev. | Less opportunities | High (as manager heads a full division) |
 | Cost | Economical (no duplication) | Expensive (duplication of functions) |
 | Suitability | Mid-sized, single product firms | Large, multi-product firms |`,
-          speedSummary: "Functional (by Dept) vs Divisional (by Product)."
+          speedSummary: "Functional (by Dept) vs Divisional (by Product).",
+          examples: [
+            { q: "A huge conglomerate like Reliance has separate heads for Petrochemicals and Telecommunications. Which structure is this?", a: "Divisional Structure (based on product lines)." },
+            { q: "A medium-sized manufacturing firm has separate departments for HR, Finance, and Marketing. Name the structure.", a: "Functional Structure (based on functions)." }
+          ]
         }
       },
       {
@@ -52,7 +60,12 @@ export const organisingData = {
 - **Authority**: Right to command (Flows Downward).
 - **Responsibility**: Obligation to perform (Flows Upward).
 - **Accountability**: Answerability for output (Flows Upward - cannot be delegated).`,
-          speedSummary: "Formal (Planned) vs Informal (Spontaneous). Delegation = Authority + Responsibility + Accountability."
+          speedSummary: "Formal (Planned) vs Informal (Spontaneous). Delegation = Authority + Responsibility + Accountability.",
+          examples: [
+            { q: "Employees discuss the possibility of a bonus during their lunch break. To which organization does this belong?", a: "Informal Organisation." },
+            { q: "A manager gives his subordinate the power to sign checks up to ₹50,000. What is this process?", a: "Delegation (transfer of authority)." },
+            { q: "Can a manager transfer his final answerability for a task to his assistant?", a: "No, while authority and responsibility can be shared, **Accountability** is absolute and cannot be delegated." }
+          ]
         }
       },
       {
@@ -65,7 +78,12 @@ export const organisingData = {
 - **Delegation** is a necessity (one person can't do all).
 - **Decentralisation** is a policy decision (optional).
 - Delegation is for 2 people; Decentralization is for the whole organization.`,
-          speedSummary: "Decentralisation = Spread of authority to all levels."
+          speedSummary: "Decentralisation = Spread of authority to all levels.",
+          examples: [
+            { q: "In a company, the branch managers are allowed to decide their own local marketing budgets. Is this delegation or decentralisation?", a: "Decentralisation (authority is spread to lower levels of management as a policy)." },
+            { q: "Why would a fast-growing company choose to decentralise?", a: "To facilitate quick decision-making and reduce the burden on top management." },
+            { q: "True or False: Decentralisation is a necessity for every manager.", a: "False. Delegation is a necessity, but Decentralisation is an optional policy decision by top management." }
+          ]
         }
       }
     ]

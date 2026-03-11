@@ -7,6 +7,46 @@ export const geographyStatesData = {
     subject: "General Knowledge",
     chapter: "Geography: States & Capitals",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "state-capitals",
+                title: "1. States & Their Administrative Capitals",
+                content: {
+                    coreConcept: "Knowing the capitals of all 28 states and 8 Union Territories is a foundational Static GK requirement.",
+                    formulaBank: "- Assam: Dispur.\n- Nagaland: Kohima.\n- Kerala: Thiruvananthapuram.\n- Chhattisgarh: Raipur.",
+                    logic: "Focus on the North-Eastern 'Seven Sisters' capitals as they are high-yield for exams.",
+                    traps: "Confusing largest city (e.g., Guwahati) with the capital (Dispur).",
+                    examples: [
+                        { q: "Capital of Nagaland?", a: "Kohima." },
+                        { q: "Which city is the joint capital of Punjab and Haryana?", a: "Chandigarh." },
+                        { q: "Identify the capital of Arunachal Pradesh.", a: "Itanagar." },
+                        { q: "True or False: Dehradun is the winter capital of Uttarakhand.", a: "True (Gairsain is the summer capital)." },
+                        { q: "Capital of the newest state, Telangana?", a: "Hyderabad." }
+                    ],
+                    speedSummary: "State capitals are the seats of regional government and administration."
+                }
+            },
+            {
+                id: "ut-capitals",
+                title: "2. Union Territories & Special Capitals",
+                content: {
+                    coreConcept: "Union Territories are governed directly by the Central Government, some having their own legislatures.",
+                    formulaBank: "- Ladakh: Leh.\n- Puducherry: Puducherry.\n- Lakshadweep: Kavaratti.\n- Andaman & Nicobar: Port Blair.",
+                    logic: "UTs are often strategic or culturally distinct regions requiring central oversight.",
+                    traps: "Forgetting the merger of Dadra & Nagar Haveli and Daman & Diu (Capital: Daman).",
+                    examples: [
+                        { q: "Capital of Lakshadweep?", a: "Kavaratti." },
+                        { q: "Identify the capital of the UT formed in 2019 along with J&K.", a: "Leh (for Ladakh)." },
+                        { q: "Which UT has Port Blair as its capital?", a: "Andaman and Nicobar Islands." },
+                        { q: "Capital of Dadra and Nagar Haveli and Daman and Diu?", a: "Daman." },
+                        { q: "Which UT serves as the capital of two neighboring states?", a: "Chandigarh." }
+                    ],
+                    speedSummary: "UT capitals bridge the gap between regional identity and central administration."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "gs-bf-001",

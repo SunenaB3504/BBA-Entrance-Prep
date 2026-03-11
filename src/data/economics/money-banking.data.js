@@ -29,7 +29,11 @@ Money is anything that is **generally accepted** as a medium of exchange, a meas
 - **Full-Bodied Money**: Commodity value = Face value (e.g., gold coins).
 - **Credit Money**: Face value > Commodity value (e.g., modern ₹500 note).
 - **Legal Tender**: Money that cannot be legally refused for settlement of debt.
-          `
+          `,
+          examples: [
+            { q: "Is a ₹500 note Fiat Money?", a: "Yes, because it is issued by government decree and has legal tender status." },
+            { q: "Example of Fiduciary Money?", a: "Cheques (accepted on trust between parties)." }
+          ]
         }
       },
       {
@@ -50,7 +54,11 @@ Money Supply is the total stock of money held by the **public** at a point in ti
 ### High Powered Money (H)
 The **Monetary Base** created by the RBI.
 **Formula**: H = Currency with Public + Cash Reserves of Banks.
-          `
+          `,
+          examples: [
+            { q: "Which measure of money supply includes FDs (Time Deposits)?", a: "M3 (Broad Money)." },
+            { q: "Is money held by the Government included in money supply?", a: "No, only money held by the 'public' is included." }
+          ]
         }
       },
       {
@@ -67,7 +75,12 @@ Commercial banks create credit money through lending, keeping only a mandatory *
 4. **Total Money Created** = Initial Deposit × (1 / LRR).
 
 **Money Multiplier** = 1 / LRR.
-          `
+          `,
+          examples: [
+            { q: "If LRR is 20%, what is the money multiplier?", a: "5 (1/0.2)." },
+            { q: "Initial deposit is ₹1000 and LRR is 10%. Total credit created?", a: "₹10,000 (1000 * 10)." },
+            { q: "Total Deposits = Primary Deposits + ?", a: "Secondary (Derivative) Deposits." }
+          ]
         }
       },
       {
@@ -94,7 +107,12 @@ The RBI is the apex bank that regulates the monetary system and controls credit.
 | :--- | :--- | :--- |
 | **INFLATION** | Increase Rates (Repo, CRR), SELL Securities | Falls (Dear Money Policy) |
 | **DEFLATION** | Decrease Rates, BUY Securities | Rises (Cheap Money Policy) |
-          `
+          `,
+          examples: [
+            { q: "To control inflation, what should RBI do with CRR?", a: "Increase CRR (to reduce lending capacity of banks)." },
+            { q: "What is 'Moral Suasion'?", a: "Advice/pressure by RBI on banks to follow certain guidelines without formal penalties." },
+            { q: "If RBI buys securities in the open market, what happens to liquidity?", a: "Liquidity increases (Money supply rises)." }
+          ]
         }
       }
     ]

@@ -7,6 +7,46 @@ export const geographyNationalParksData = {
     subject: "General Knowledge",
     chapter: "Geography: National Parks & Wildlife",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "notable-parks",
+                title: "1. Notable National Parks & Sanctuaries",
+                content: {
+                    coreConcept: "National Parks are protected areas reserved for the conservation of wildlife and their natural habitats.",
+                    formulaBank: "- Jim Corbett: Uttarakhand (India's 1st).\n- Kaziranga: Assam.\n- Gir: Gujarat.\n- Kanha: Madhya Pradesh.",
+                    logic: "Associate specific endangered species (e.g., Asiatic Lion) with their primary sanctuary.",
+                    traps: "Confusing state borders (e.g., Bandipur is in Karnataka, not Tamil Nadu).",
+                    examples: [
+                        { q: "Which is the oldest national park in India?", a: "Jim Corbett National Park (est. 1936)." },
+                        { q: "Kaziranga is famous for which animal?", a: "One-horned Rhinoceros." },
+                        { q: "Where is the Gir National Park located?", a: "Sasan Gir, Gujarat." },
+                        { q: "Which park is known for being a floating forest?", a: "Keibul Lamjao National Park (Manipur)." },
+                        { q: "In which state is the Ranthambore National Park situated?", a: "Rajasthan." }
+                    ],
+                    speedSummary: "National Parks protect biodiversity hubs across various Indian states."
+                }
+            },
+            {
+                id: "biosphere-reserves",
+                title: "2. Biosphere Reserves & Ramsar Sites",
+                content: {
+                    coreConcept: "Biosphere Reserves protect entire ecosystems, while Ramsar Sites focus on wetlands of international importance.",
+                    formulaBank: "- Nilgiri: 1st Biosphere Reserve.\n- Sundarbans: Largest Mangrove ecosystem.\n- Chilika: 1st Ramsar Site in India.",
+                    logic: "Biospheres are large-scale zones; Ramsar sites are specifically water-dependent habitats.",
+                    traps: "Assuming all National Parks are Biosphere Reserves (only a few have dual status).",
+                    examples: [
+                        { q: "Which was India's first Biosphere Reserve?", a: "Nilgiri Biosphere Reserve (1986)." },
+                        { q: "Identify the largest mangrove forest in the world and a major Ramsar site.", a: "Sundarbans (West Bengal)." },
+                        { q: "Where is the Gulf of Mannar Marine Biosphere Reserve located?", a: "Coast of Tamil Nadu." },
+                        { q: "Which lake in J&K is a designated Ramsar wetland site?", a: "Wular Lake." },
+                        { q: "Name the wetland in Rajasthan famous for bird migrations and a Ramsar site.", a: "Keoladeo Ghana National Park (Bharatpur)." }
+                    ],
+                    speedSummary: "Biospheres and Ramsar sites provide specialized protection for complex ecosystems and wetlands."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "gn-bf-001",

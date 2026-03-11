@@ -16,7 +16,8 @@ export const partnershipBasicsData = {
           logic: "1. Agreement: Oral or Written.\n2. Lawful Business: Must be legal.\n3. Profit Sharing: Essential (Loss sharing is not).\n4. Mutual Agency: Each partner is both principal & agent.",
           traps: "Examiner Trap: Stating max partners is 100 as per Companies Act. While the Act allows up to 100, the Rules currently cap it at 50.",
           examples: [
-            { q: "Can a partnership exist without mutual agency?", a: "No, mutual agency is the 'cardinal principle' of partnership." }
+            { q: "Can a partnership exist without mutual agency?", a: "No, mutual agency is the 'cardinal principle' of partnership." },
+            { q: "Can a partnership have 100 partners today as per the Companies Rules?", a: "No, while the Companies Act allows up to 100, the current Government Rules (Rule 10 of Companies Miscellaneous Rules 2014) cap it at 50." }
           ],
           speedSummary: "Min 2, Max 50, Mutual Agency is key."
         }
@@ -44,7 +45,8 @@ export const partnershipBasicsData = {
           logic: "1. Start with Net Profit on Credit side.\n2. Add IOD on Credit side.\n3. Subtract Appropriations (IOC, Salary) on Debit side.\n4. Distribute balance in PSR.",
           traps: "Charge vs Appropriation: Rent to Partner and Interest on Loan are CHARGES (go to P&L), not items of P&L Appropriation.",
           examples: [
-            { q: "Is Partner's Salary a charge?", a: "No, it's an appropriation. Paid only if there's profit." }
+            { q: "Is Partner's Salary a charge?", a: "No, it's an appropriation. Paid only if there's profit." },
+            { q: "A firm pays ₹10,000 monthly rent to a partner for use of his building. In which account is this recorded?", a: "Profit & Loss Account (as it is a Charge against profit, not an appropriation)." }
           ],
           speedSummary: "P&L Approp = Distribution of Net Profit."
         }
@@ -58,7 +60,8 @@ export const partnershipBasicsData = {
           logic: "1. Fixed: Adjustments (IOC, Salary) go to Current A/c.\n2. Fluctuating: All items go to Capital A/c.\n3. Silent: Assume Fluctuating.",
           traps: "Where is IOC credited in Fixed method? Answer: Current Account.",
           examples: [
-            { q: "Can Fixed Capital A/c show a debit balance?", a: "Normally no. It always shows a credit balance." }
+            { q: "Can Fixed Capital A/c show a debit balance?", a: "Normally no. It always shows a credit balance." },
+            { q: "Under the Fixed Capital method, in which account are drawings from profits recorded?", a: "Partner's Current Account." }
           ],
           speedSummary: "Fixed = 2 Accts; Fluctuating = 1 Acct."
         }

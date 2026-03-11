@@ -23,7 +23,12 @@ export const staffingData = {
 6. **Performance Appraisal**: Evaluating work performance.
 7. **Promotion and Career Planning**.
 8. **Compensation**.`,
-          speedSummary: "Staffing = Finding, selecting, training, and retaining the right people."
+          speedSummary: "Staffing = Finding, selecting, training, and retaining the right people.",
+          examples: [
+            { q: "An HR manager checks if the current 50 employees are enough for a new project. Name the step.", a: "Manpower Planning (Estimating manpower requirements)." },
+            { q: "A new hire is introduced to the company's culture, rules, and colleagues on Day 1. Name the step.", a: "Placement and Orientation." },
+            { q: "A company reviews an employee's performance at the end of the year to decide on a raise. Name the step.", a: "Performance Appraisal." }
+          ]
         }
       },
       {
@@ -44,7 +49,12 @@ export const staffingData = {
 6. Medical Examination.
 7. Job Offer.
 8. Contract of Employment.`,
-          speedSummary: "Recruitment (Attract) vs Selection (Choose/Eliminate)."
+          speedSummary: "Recruitment (Attract) vs Selection (Choose/Eliminate).",
+          examples: [
+            { q: "A company organizes a walk-in interview at a top university campus. What source of recruitment is this?", a: "External Source (Campus Recruitment)." },
+            { q: "Why is selection called a 'negative process'?", a: "Because it involves eliminating unsuitable candidates to pick the best one, reducing the number of applicants." },
+            { q: "An existing supervisor is moved to a higher position as a Manager. Name the source.", a: "Internal Source (Promotion)." }
+          ]
         }
       },
       {
@@ -57,7 +67,13 @@ export const staffingData = {
 **Training Methods:**
 - **On-the-Job**: Learning while doing (Apprenticeship, Coaching, Internship).
 - **Off-the-Job**: Learning before doing (Vestibule school, Lectures, Case Study).`,
-          speedSummary: "Training (Specific skill) vs Development (General growth)."
+          speedSummary: "Training (Specific skill) vs Development (General growth).",
+          examples: [
+            { q: "A new worker spends 2 weeks working directly under a master craftsman to learn the trade. Name the method.", a: "Apprenticeship Training (On-the-job)." },
+            { q: "A pilot uses a massive computer screen and controls to simulate a flight crisis before real flying. Name the method.", a: "Vestibule Training (Off-the-job simulating real equipment)." },
+            { q: "A middle-level manager attends a 3-day workshop on 'Strategic Leadership'. Is this training or development?", a: "Development (aimed at overall growth and future roles)." },
+            { q: "A college student works in a firm for 6 months to gain practical experience while studying. Name the method.", a: "Internship Training." }
+          ]
         }
       }
     ]

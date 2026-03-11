@@ -27,7 +27,11 @@ export const natureManagementData = {
 - Staffing
 - Directing
 - Controlling`,
-          speedSummary: "Management = POSDC functions to achieve goals."
+          speedSummary: "Management = POSDC functions to achieve goals.",
+          examples: [
+            { q: "A manager sets a target to increase sales by 20% and assigns tasks to the team. Which function is this?", a: "This involves Planning (setting targets) and Organising (assigning tasks)." },
+            { q: "A supervisor motivates workers to work harder for a bonus. Identify the function.", a: "Directing (Leading, influencing, and motivating employees)." }
+          ]
         }
       },
       {
@@ -47,7 +51,11 @@ export const natureManagementData = {
 **Example**:
 - Achieving target by operating double shifts = **Effective** but **Inefficient** (high cost).
 - Producing at standard cost but missing deadline = **Efficient** but **Ineffective** (late).`,
-          speedSummary: "Effectiveness = End Result (Time). Efficiency = Cost-Benefit (Resources)."
+          speedSummary: "Effectiveness = End Result (Time). Efficiency = Cost-Benefit (Resources).",
+          examples: [
+            { q: "A company produces 10,000 units on time but at double the expected cost. Is it efficient?", a: "No, it is effective (achieved goal on time) but inefficient (excessive cost)." },
+            { q: "An employee uses a cheaper method to produce quality goods but misses the deadline. Is he effective?", a: "No, he is efficient (low cost) but ineffective (missed deadline)." }
+          ]
         }
       },
       {
@@ -64,7 +72,11 @@ export const natureManagementData = {
 5. **Group Activity**: Requires teamwork and coordination.
 6. **Dynamic Function**: Adapts to the changing environment.
 7. **Intangible Force**: Presence is felt through orderliness and discipline.`,
-          speedSummary: "Pervasive, Continuous, Multidimensional, Dynamic, and Intangible."
+          speedSummary: "Pervasive, Continuous, Multidimensional, Dynamic, and Intangible.",
+          examples: [
+            { q: "Does a small non-profit club require management?", a: "Yes, management is Pervasive; it is required in all types of organizations (profit or non-profit)." },
+            { q: "A company changes its marketing strategy due to a new competitor entering the market. Which feature is shown?", a: "Dynamic Function (Adapting to the changing environment)." }
+          ]
         }
       },
       {
@@ -79,7 +91,11 @@ export const natureManagementData = {
 **2. Social Objectives**: Creating benefit for society (eco-friendly methods, employment).
 
 **3. Personal Objectives**: Meeting needs of employees (fair wages, recognition).`,
-          speedSummary: "Org (Survival/Profit/Growth), Social, and Personal."
+          speedSummary: "Org (Survival/Profit/Growth), Social, and Personal.",
+          examples: [
+            { q: "A company opens five new branches in different cities. Identify the objective.", a: "Organizational Objective (specifically Growth)." },
+            { q: "A firm provides free education to the children of its employees. Identify the objective.", a: "Social Objective (benefit for society/employees' families)." }
+          ]
         }
       },
       {
@@ -97,7 +113,10 @@ export const natureManagementData = {
 **Operational/Supervisory Management** (Technical):
 - Foremen, Supervisors. 
 - Oversee workforce, ensure quality, and minimize wastage.`,
-          speedSummary: "Top (Strategic), Middle (Tactical), Operational (Technical)."
+          speedSummary: "Top (Strategic), Middle (Tactical), Operational (Technical).",
+          examples: [
+            { q: "A Production Manager is responsible for departmental output. At which level is he?", a: "Middle Level Management (Departmental/Divisional heads)." }
+          ]
         }
       },
       {
@@ -116,7 +135,10 @@ export const natureManagementData = {
 | Meaning | Orderly arrangement of group efforts | Voluntary effort of individuals |
 | Nature | Deliberate and conscious effort | Voluntary and spontaneous |
 | Requirement | Required by managers at all levels | Depends on individual willingness |`,
-          speedSummary: "Coordination is the deliberate force that binds management functions."
+          speedSummary: "Coordination is the deliberate force that binds management functions.",
+          examples: [
+            { q: "Why is coordination called the 'essence of management'?", a: "Because it is not a separate function but a force that binds all other functions like Planning, Organising, etc." }
+          ]
         }
       }
     ]

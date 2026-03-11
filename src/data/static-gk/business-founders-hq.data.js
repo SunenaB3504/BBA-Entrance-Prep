@@ -8,6 +8,46 @@ export const businessFoundersData = {
     subject: "General Knowledge",
     chapter: "Business Awareness: Founders & HQ",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "founders-visionaries",
+                title: "1. Famous Founders & Visionaries",
+                content: {
+                    coreConcept: "Founders are individuals who establish a company, often driven by a unique vision or innovation.",
+                    formulaBank: "- Microsoft: Bill Gates & Paul Allen.\n- Facebook: Mark Zuckerberg.\n- Reliance: Dhirubhai Ambani.\n- Infosys: N.R. Narayana Murthy and others.",
+                    logic: "Link the core product or service to the individual who pioneered it.",
+                    traps: "Confusing current CEOs with original founders (e.g., Satya Nadella vs Bill Gates).",
+                    examples: [
+                        { q: "Who founded the Tata Group?", a: "Jamsetji Tata." },
+                        { q: "Founders of Google?", a: "Larry Page and Sergey Brin." },
+                        { q: "Who is the founder of Amazon?", a: "Jeff Bezos." },
+                        { q: "Founder of Wipro?", a: "M.H. Hasham Premji (Azim Premji expanded it)." },
+                        { q: "Who founded Apple Inc. with Steve Wozniak?", a: "Steve Jobs." }
+                    ],
+                    speedSummary: "Founders are the architects of a company's inception."
+                }
+            },
+            {
+                id: "corporate-hqs",
+                title: "2. Major Corporate Headquarters",
+                content: {
+                    coreConcept: "Headquarters (HQs) are the central hubs where a company's top management and core operations are located.",
+                    formulaBank: "- HDFC Bank: Mumbai.\n- Tesla: Austin, Texas.\n- Samsung: Suwon, South Korea.\n- Nestle: Vevey, Switzerland.",
+                    logic: "HQs are often located in financial capitals (Mumbai, NYC) or tech hubs (Silicon Valley, Bengaluru).",
+                    traps: "Confusing manufacturing plants with headquarters.",
+                    examples: [
+                        { q: "Where is the HQ of the Reserve Bank of India (RBI)?", a: "Mumbai." },
+                        { q: "Headquarters of Microsoft?", a: "Redmond, Washington, USA." },
+                        { q: "Which Indian IT giant is headquartered in Electronic City, Bengaluru?", a: "Infosys." },
+                        { q: "HQ of World Bank?", a: "Washington, D.C." },
+                        { q: "Where is the headquarters of ISRO?", a: "Bengaluru." }
+                    ],
+                    speedSummary: "HQs are the strategic command centers of global corporations."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "bf-hf-001",

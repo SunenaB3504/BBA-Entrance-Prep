@@ -23,7 +23,12 @@ export const consumerProtectionData = {
 - **Long-term Interest**: Repeat business.
 - **Social Responsibility**: Accountability.
 - **Govt. Intervention avoidance**: Self-regulation.`,
-          speedSummary: "CP protects consumers from exploitation and helps business long-term."
+          speedSummary: "CP protects consumers from exploitation and helps business long-term.",
+          examples: [
+            { q: "A consumer group educates villagers about how to detect adulteration in milk. Why is this important?", a: "Overcoming consumer ignorance." },
+            { q: "A business chooses to use safe ingredients even if they are expensive to ensure repeat customers. Why?", a: "Long-term interest of business." },
+            { q: "Why should a business proactively solve consumer complaints without waiting for a court order?", a: "To avoid government intervention." }
+          ]
         }
       },
       {
@@ -42,7 +47,12 @@ export const consumerProtectionData = {
 - Buy standardized goods (ISI, Agmark).
 - **Ask for Cash Memo** (proof for court).
 - File genuine complaints.`,
-          speedSummary: "Rights (Safety, Info, Choose, Heard, Redressal, Education) + Responsibilities (Bills, Marks)."
+          speedSummary: "Rights (Safety, Info, Choose, Heard, Redressal, Education) + Responsibilities (Bills, Marks).",
+          examples: [
+            { q: "A customer checks for the 'Agmark' on a packet of honey before buying. Which right/responsibility is this?", a: "Right to Safety (looking for standardized marks)." },
+            { q: "A customer insists on getting a 'Cash Memo' for a smartphone purchase. Why?", a: "It is a consumer responsibility and serves as proof of purchase for legal redressal." },
+            { q: "A consumer files a case against a company for a faulty air conditioner. Which right is exercised?", a: "Right to Seek Redressal." }
+          ]
         }
       },
       {
@@ -58,7 +68,13 @@ export const consumerProtectionData = {
 - District -> State (45 days)
 - State -> National (30 days)
 - National -> Supreme Court (30 days)`,
-          speedSummary: "District (<1cr), State (1-10cr), National (>10cr)."
+          speedSummary: "District (<1cr), State (1-10cr), National (>10cr).",
+          examples: [
+            { q: "A consumer wants to file a claim for ₹60 lakh against a defective car. Where should he go?", a: "District Commission (Handles up to ₹1 Crore)." },
+            { q: "A group of residents files a claim for ₹5 crore against a builder for poor construction. Name the commission.", a: "State Commission (₹1 Crore to ₹10 Crores)." },
+            { q: "A hospital is sued for ₹15 crore for medical negligence. Name the commission.", a: "National Commission (Above ₹10 Crores)." },
+            { q: "A consumer is unhappy with the District Commission's order. Where can he appeal?", a: "State Commission (within 45 days)." }
+          ]
         }
       }
     ]

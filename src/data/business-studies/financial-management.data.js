@@ -20,7 +20,12 @@ export const financialManagementData = {
 1. **Investment Decision**: Where to invest funds (Capital Budgeting).
 2. **Financing Decision**: How much to raise and from where (Debt vs Equity).
 3. **Dividend Decision**: How much profit to distribute vs retain.`,
-          speedSummary: "Primary Goal = Maximize Shareholder Wealth. Core decisions = Investment, Financing, Dividend."
+          speedSummary: "Primary Goal = Maximize Shareholder Wealth. Core decisions = Investment, Financing, Dividend.",
+          examples: [
+            { q: "A company decides to replace its old machinery with a new ₹50 lakh automated plant. What type of decision is this?", a: "Investment Decision (Capital Budgeting)." },
+            { q: "The board of directors decides to raise ₹10 crore through debentures instead of equity. Name the decision.", a: "Financing Decision." },
+            { q: "The firm decides to keep 40% of its profit for expansion and distribute the rest to shareholders. Name the decision.", a: "Dividend Decision." }
+          ]
         }
       },
       {
@@ -38,7 +43,12 @@ export const financialManagementData = {
 | **Cost of Debt** | Low cost favors debt |
 | **Tax Rate** | High tax rate favors debt (Interest is tax-deductible) |
 | **Stock Market Condition** | Bearish market favors debt; Bullish favors equity |`,
-          speedSummary: "Capital Structure = Debt vs Equity. ROI > Cost of Debt = Advantageous for Trading on Equity."
+          speedSummary: "Capital Structure = Debt vs Equity. ROI > Cost of Debt = Advantageous for Trading on Equity.",
+          examples: [
+            { q: "A company has a high tax rate of 30%. Why would it prefer more debt?", a: "Because interest on debt is a tax-deductible expense, making debt cheaper for the firm." },
+            { q: "What is 'Trading on Equity'?", a: "Using fixed-cost debt to increase the return per share for equity holders. It works only if ROI is higher than the interest rate." },
+            { q: "A firm's EBIT is ₹5 lakh and interest expense is ₹1 lakh. Find the Interest Coverage Ratio (ICR).", a: "ICR = EBIT / Interest = 5,00,000 / 1,00,000 = 5 times." }
+          ]
         }
       },
       {
@@ -55,7 +65,13 @@ export const financialManagementData = {
 - **Business Cycle**: Boom needs more.
 - **Seasonal Factors**: Peak season needs more.
 - **Credit Allowed/Availed**: Affects cash flow.`,
-          speedSummary: "Fixed (Long-term) vs Working (Short-term) capital."
+          speedSummary: "Fixed (Long-term) vs Working (Short-term) capital.",
+          examples: [
+            { q: "Does a software company need more fixed capital than a car manufacturing factory?", a: "No, a car factory needs significantly more fixed capital for land, buildings, and heavy machinery." },
+            { q: "During a peak festival season, a retail store needs extra cash to stock up on inventory. What is this need called?", a: "Working Capital requirement (specifically seasonal fluctuation)." },
+            { q: "A company allows its customers 60 days to pay their bills. How does this affect its working capital?", a: "It increases the working capital requirement because cash is tied up in 'Debtors' for longer." },
+            { q: "Investing in a new office building is an example of which capital?", a: "Fixed Capital (long-term investment)." }
+          ]
         }
       }
     ]

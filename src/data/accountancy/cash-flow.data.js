@@ -16,7 +16,8 @@ export const cashFlowData = {
           logic: "Classification:\n1. Operating: Principal revenue activities.\n2. Investing: Purchase/Sale of long-term assets.\n3. Financing: Changes in capital & borrowings.",
           traps: "Trap: Treating Bank Overdraft as a Current Liability. In CFS, it is a Financing Activity (short-term borrowing).",
           examples: [
-            { q: "Is 'Sale of Marketable Securities' a cash flow?", a: "No, it's a movement between cash equivalents." }
+            { q: "Is 'Sale of Marketable Securities' a cash flow?", a: "No, it's a movement between cash equivalents." },
+            { q: "Under which activity is 'Bank Overdraft' classified?", a: "Financing Activity (as it is a short-term borrowing)." }
           ],
           speedSummary: "AS-3 classification: Ops, Invest, Finance."
         }
@@ -30,7 +31,8 @@ export const cashFlowData = {
           logic: "1. Add Back: Depreciation, Goodwill Amortized, Interest Paid.\n2. Deduct: Interest/Dividend Received, Profit on Sale.",
           traps: "Calculation Trap: Adding 'Proposed Dividend of Current Year'. ALWAYS use the Previous Year amount.",
           examples: [
-            { q: "Why add back depreciation?", a: "It's a non-cash expense that reduced profit but never moved cash." }
+            { q: "Why add back depreciation?", a: "It's a non-cash expense that reduced profit but never moved cash." },
+            { q: "How is 'Gain on Sale of Fixed Asset' treated in operating activities?", a: "It is deducted from Net Profit as it is a non-operating income." }
           ],
           speedSummary: "NPBT -> Adjustments -> WC -> Tax."
         }
@@ -44,7 +46,9 @@ export const cashFlowData = {
           logic: "1. Investing: Look at Non-Current Assets side of B/S.\n2. Financing: Look at Equity and Non-Current Liabilities side.",
           traps: "Activity Trap: Interest Paid is Financing; Interest Received is Investing (for non-finance firms).",
           examples: [
-            { q: "Purchase of Goodwill is which activity?", a: "Investing activity." }
+            { q: "Purchase of Goodwill is which activity?", a: "Investing activity." },
+            { q: "Interest Paid on Debentures is which type of activity?", a: "Financing activity." },
+            { q: "Dividend Received on Investment is which type of activity?", a: "Investing activity." }
           ],
           speedSummary: "Assets (Invest) & Capital (Finance)."
         }
@@ -58,7 +62,8 @@ export const cashFlowData = {
           logic: "1. Assets: If Debtors increase, cash is tied up (Outflow).\n2. Liabilities: If Creditors increase, we saved cash by not paying yet (Inflow).",
           traps: "Omission Trap: Do NOT include 'Cash/Bank' or 'Short-term Investments' in WC adjustments. They are C&CE.",
           examples: [
-            { q: "Effect of decrease in inventory?", a: "Add to operating profit (Inflow)." }
+            { q: "Effect of decrease in inventory?", a: "Add to operating profit (Inflow)." },
+            { q: "How is an 'Increase in Trade Receivables' treated in the CFS?", a: "It is deducted from operating profit as an outflow (cash tied up in debtors)." }
           ],
           speedSummary: "CA Inverse, CL Direct relation."
         }

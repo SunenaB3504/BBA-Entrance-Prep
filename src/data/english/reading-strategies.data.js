@@ -17,7 +17,13 @@ export const readingStrategiesData = {
                     formulaBank: "- Skim: Read first and last lines of paragraphs.\n- Scan: Use keywords, ignore unrelated text.",
                     logic: "If a question asks 'What is the main idea?', skim. If it asks 'In what year did X happen?', scan.",
                     traps: "Reading every single word during scanning — this wastes time.",
-                    examples: [],
+                    examples: [
+                        { q: "Look for the word 'Revenue' in a table — Skim or Scan?", a: "Scan." },
+                        { q: "Read the first sentence of each paragraph to find the topic — Skim or Scan?", a: "Skim." },
+                        { q: "Checking a flight schedule for your flight number?", a: "Scan." },
+                        { q: "Deciding if a book is worth buying by looking at the back cover?", a: "Skim." },
+                        { q: "Which is faster for finding a phone number?", a: "Scanning." }
+                    ],
                     speedSummary: "Skim for the forest, scan for the trees."
                 }
             },
@@ -29,7 +35,13 @@ export const readingStrategiesData = {
                     formulaBank: "- Tone words: Objective, Subjective, Nostalgic, Cynical, Didactic.",
                     logic: "Look at the adjectives the author uses. Positive adjectives = optimistic/approving tone.",
                     traps: "Confusing your own opinion with the author's implied tone.",
-                    examples: [],
+                    examples: [
+                        { q: "Author says: 'The sunset was painted in shades of gold and fire.' Mood?", a: "Inspiring / Beautiful." },
+                        { q: "Author says: 'The politician's promises were as hollow as a drum.' Tone?", a: "Critical / Cynical." },
+                        { q: "Inference: 'John took his umbrella'. What is the weather?", a: "Likely rainy or starting to rain." },
+                        { q: "If a passage uses 'statistically proven' and 'research shows', tone is?", a: "Objective / Informative." },
+                        { q: "Meaning of 'Didactic' tone?", a: "Intended to teach or moralize." }
+                    ],
                     speedSummary: "Tone = Author's Feeling. Inference = Reading between the lines."
                 }
             }

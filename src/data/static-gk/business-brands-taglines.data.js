@@ -7,6 +7,46 @@ export const businessBrandsData = {
     subject: "General Knowledge",
     chapter: "Business Awareness: Brands & CEOs",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "brand-taglines",
+                title: "1. Famous Brand Taglines",
+                content: {
+                    coreConcept: "Taglines are catchy phrases used by brands to reinforce their identity and value proposition.",
+                    formulaBank: "- Nike: Just Do It.\n- Apple: Think Different.\n- McDonald's: I'm Lovin' It.\n- Amul: The Taste of India.",
+                    logic: "Connect the emotional or functional benefit of the product to the phrase.",
+                    traps: "Confusing old taglines with current ones (e.g., Nokia's 'Connecting People').",
+                    examples: [
+                        { q: "Identify the brand: 'Utterly Butterly Delicious'.", a: "Amul." },
+                        { q: "What is the tagline of LIC?", a: "Zindagi Ke Saath Bhi, Zindagi Ke Baad Bhi." },
+                        { q: "Which bank uses 'The Banker to Every Indian'?", a: "State Bank of India (SBI)." },
+                        { q: "Tagline of Pepsi?", a: "Yeh Dil Maange More / For the Love of It." },
+                        { q: "Identify: 'Real People. Real Possibilities.'", a: "Infosys." }
+                    ],
+                    speedSummary: "Taglines link brand values to a memorable phrase."
+                }
+            },
+            {
+                id: "corporate-jingles",
+                title: "2. Corporate Jingles & Symbols",
+                content: {
+                    coreConcept: "Audio and visual elements like jingles and logos are key parts of brand recognition.",
+                    formulaBank: "- Intel: Bong sound.\n- Washing Powder Nirma: Iconic jingle.\n- Titan: AR Rahman's chime.",
+                    logic: "Association of sound/visual with product function.",
+                    traps: "Generic symbols (e.g., a tick) vs proprietary logos (Nike's Swoosh).",
+                    examples: [
+                        { q: "Which detergent brand is famous for the 'Hema, Rekha, Jaya aur Sushma' jingle?", a: "Nirma." },
+                        { q: "What is the characteristic 'sound' of Intel called?", a: "Audio Mnemonic (Intel Bong)." },
+                        { q: "Which phone brand had the famous hand-shaking logo?", a: "Nokia." },
+                        { q: "Identify the symbolic animal in the WWF logo.", a: "Giant Panda." },
+                        { q: "Which automobile brand uses a 'three-pointed star' in its logo?", a: "Mercedes-Benz." }
+                    ],
+                    speedSummary: "Jingles and logos create instant brand recall through sound and sight."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "bb-bf-001",

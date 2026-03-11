@@ -25,7 +25,13 @@ Every economy faces these three basic questions:
 1. **What to produce**: Choice of goods and quantities.
 2. **How to produce**: Choice of technique (Labor Intensive vs. Capital Intensive).
 3. **For whom to produce**: Distribution of income/output.
-          `
+          `,
+          examples: [
+            { q: "If a farmer chooses to grow rice instead of wheat, it's a choice of?", a: "What to produce." },
+            { q: "Is 'Scarcity' only for poor countries?", a: "No, scarcity is universal for all economies." },
+            { q: "Choosing between robots and manual labor for production is?", a: "How to produce." },
+            { q: "Decision about wealth distribution relates to?", a: "For whom to produce." }
+          ]
         }
       },
       {
@@ -47,7 +53,12 @@ A curve showing the maximum combinations of two goods an economy can produce giv
 ### MOC & MRT
 - **MOC**: The units sacrificed of Good Y to produce an additional unit of Good X.
 - **MRT (Marginal Rate of Transformation)**: The ratio $\\frac{\\Delta\\text{Sacrifice}}{\\Delta\\text{Gain}}$.
-          `
+          `,
+          examples: [
+            { q: "Why does PPC slope downwards?", a: "Due to scarcity; to produce more of one good, we must sacrifice some of the other." },
+            { q: "What causes PPC to shift right?", a: "Growth of resources or improvement in technology." },
+            { q: "Initial output: 10 units of Rice & 5 of Wheat. New output: 8 units of Rice & 6 of Wheat. MOC?", a: "2 units of Rice." }
+          ]
         }
       },
       {
@@ -64,7 +75,12 @@ A curve showing the maximum combinations of two goods an economy can produce giv
 - Deals with **"What ought to be"** or **"What should be"**.
 - Based on opinions and value judgments.
 - Example: "The government should provide free healthcare." (Subjective).
-          `
+          `,
+          examples: [
+            { q: "Is 'Price level in India is rising' positive or normative?", a: "Positive (Fact-based)." },
+            { q: "Is 'India should focus more on agriculture' positive or normative?", a: "Normative (Opinion-based)." },
+            { q: "Which type of statement can be tested or verified?", a: "Positive statements." }
+          ]
         }
       }
     ]

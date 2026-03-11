@@ -1,25 +1,35 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { SUBJECTS } from '../config/subjects.config';
 import { useAppContext } from '../store/AppContext';
+import { EXAM_DATES, getDaysRemaining } from '../config/exam-dates.config';
 
 const Home = () => {
     const navigate = useNavigate();
     const { progress, getSubjectProgress, streak } = useAppContext();
 
+    const cuetDays = useMemo(() => getDaysRemaining(EXAM_DATES.CUET_UG_2026), []);
+    const mhCetDays = useMemo(() => getDaysRemaining(EXAM_DATES.MH_CET_2026), []);
+
+    const urgencyColor = cuetDays < 30
+        ? 'from-red-500 to-rose-600'
+        : cuetDays < 60
+            ? 'from-amber-500 to-orange-500'
+            : 'from-blue-600 to-indigo-600';
+
     return (
         <div className="container mx-auto px-4 py-8 lg:py-12">
             {/* Hero Section */}
-            <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-slate-50 rounded-3xl p-8 lg:p-12 mb-12 shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 items-center justify-between">
+            <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-slate-50 rounded-3xl p-8 lg:p-12 mb-8 shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 items-center justify-between">
                 <header className="max-w-2xl">
                     <h1 className="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
                         Ready for Success? 🚀
                     </h1>
                     <p className="text-lg text-slate-600 leading-relaxed mb-8">
-                        Master the CUET & MH CET BBA entrance exams with focused chapter-wise study,
+                        Master the CUET &amp; MH CET BBA entrance exams with focused chapter-wise study,
                         real-time analytics, and high-yield question banks.
                     </p>
-                    
+
                     {/* Stats Bar */}
                     <div className="flex flex-wrap gap-4">
                         <div className="bg-white/80 backdrop-blur border border-slate-200 px-5 py-3 rounded-2xl flex items-center gap-3 shadow-sm">
@@ -49,12 +59,39 @@ const Home = () => {
                 </header>
             </div>
 
+            {/* Exam Countdown Banner */}
+            <div className={`bg-gradient-to-r ${urgencyColor} rounded-2xl p-6 mb-10 text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg`}>
+                <div className="flex items-center gap-4">
+                    <div className="text-5xl">🎯</div>
+                    <div>
+                        <div className="text-xs font-bold uppercase tracking-widest opacity-80 mb-1">Exam Countdown</div>
+                        <div className="text-2xl font-extrabold">CUET UG 2026</div>
+                        <div className="text-sm opacity-80">Expected: May 2026</div>
+                    </div>
+                </div>
+                <div className="flex gap-4 text-center">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-5 py-3">
+                        <div className="text-3xl font-black">{cuetDays}</div>
+                        <div className="text-xs font-bold uppercase tracking-widest opacity-80">Days Left (CUET)</div>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3">
+                        <div className="text-3xl font-black">{mhCetDays}</div>
+                        <div className="text-xs font-bold uppercase tracking-widest opacity-80">Days Left (MH-CET)</div>
+                    </div>
+                </div>
+            </div>
 
             <section>
                 <div className="flex items-center justify-between mb-8">
                     <h2 className="text-2xl font-bold text-slate-800 flex items-center gap-3">
                         <span>📚</span> Core Subjects
                     </h2>
+                    <button
+                        onClick={() => navigate('/analytics')}
+                        className="flex items-center gap-2 px-4 py-2 bg-indigo-50 text-indigo-600 rounded-xl font-bold text-sm hover:bg-indigo-100 transition-colors border border-indigo-100"
+                    >
+                        📊 My Analytics
+                    </button>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

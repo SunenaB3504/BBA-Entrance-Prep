@@ -20,7 +20,12 @@ The government budget is an annual financial statement of estimated receipts and
 - **Redistribution of Income**: Reducing inequalities via progressive taxation.
 - **Economic Stabilisation**: Managing AD during inflation/recession.
 - **Public Goods**: Providing non-rivalrous and non-excludable goods (Streetlights, Defense).
-          `
+          `,
+          examples: [
+            { q: "Taxing tobacco to discourage consumption fits which objective?", a: "Reallocation of Resources." },
+            { q: "Progressive Income Tax helps in?", a: "Redistribution of Income (Reducing inequalities)." },
+            { q: "Is a lighthouse a public good?", a: "Yes, it is non-rivalrous and non-excludable." }
+          ]
         }
       },
       {
@@ -36,7 +41,13 @@ The budget is divided into **Revenue Account** (Recurring) and **Capital Account
 | **Capital Receipts** | Creates liability OR reduces assets | Borrowings, Disinvestment, Loan Recovery |
 | **Revenue Expenditure** | No asset creation; no liability reduction | Salaries, Pensions, Interest, Subsidies |
 | **Capital Expenditure** | Creates assets OR reduces liability | Building Highways, Loan Repayment |
-          `
+          `,
+          examples: [
+            { q: "Sale of shares in LIC (Disinvestment) is which receipt?", a: "Capital Receipt (Reduction in asset)." },
+            { q: "Interest paid on past loans is?", a: "Revenue Expenditure (Recurring, no asset creation)." },
+            { q: "Recovery of loans given to state govts?", a: "Capital Receipt (Reduction in asset/claim)." },
+            { q: "Grants given to foreign countries?", a: "Revenue Expenditure." }
+          ]
         }
       },
       {
@@ -50,7 +61,12 @@ Deficits measure the gap between expenditure and receipts.
 1. **Revenue Deficit (RD) = RE - RR**: Shows government dissaving.
 2. **Fiscal Deficit (FD) = Total Exp - (RR + Non-Debt CR)**: Equals **Total Borrowing** required.
 3. **Primary Deficit (PD) = FD - Interest Payments**: Shows borrowing for non-interest needs.
-          `
+          `,
+          examples: [
+            { q: "Fiscal Deficit measures the government's need for?", a: "Total Borrowings." },
+            { q: "If PD is zero, it means?", a: "Borrowing is only for paying past interest." },
+            { q: "High Revenue Deficit indicates?", a: "High consumption expenditure relative to earnings." }
+          ]
         }
       }
     ]

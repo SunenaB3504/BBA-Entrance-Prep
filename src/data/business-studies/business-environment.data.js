@@ -20,7 +20,14 @@ export const businessEnvironmentData = {
 3. **Technological**: Innovation and R&D (Digital payments, AI).
 4. **Legal**: Legislations and court judgments (Consumer Protection Act).
 5. **Political**: System of government and stability (General election results).`,
-          speedSummary: "Environment = Forces (Economic, Social, Tech, Legal, Political) affecting business."
+          speedSummary: "Environment = Forces (Economic, Social, Tech, Legal, Political) affecting business.",
+          examples: [
+            { q: "The RBI increases the Repo Rate, making business loans more expensive. Which dimension is this?", a: "Economic Environment." },
+            { q: "A surge in health awareness leads to increased demand for diet soda and organic snacks. Identify the dimension.", a: "Social Environment." },
+            { q: "A new government policy allows 100% FDI in retail. To which environment does this belong?", a: "Political/Legal Environment." },
+            { q: "A fashion retailer launches a mobile app to allow virtual try-ons using AR. Which dimension is this?", a: "Technological Environment." },
+            { q: "The court passes an order banning plastic bags in the city. Identify the dimension.", a: "Legal Environment." }
+          ]
         }
       },
       {
@@ -38,7 +45,14 @@ export const businessEnvironmentData = {
 - Rapidly changing technological environment.
 - Necessity for change.
 - Market orientation.`,
-          speedSummary: "LPG = Liberalization, Privatization, Globalization (1991 Reforms)."
+          speedSummary: "LPG = Liberalization, Privatization, Globalization (1991 Reforms).",
+          examples: [
+            { q: "The government removes the requirement for a license to start a new garment factory. Name the reform.", a: "Liberalization." },
+            { q: "The government decides to sell its majority stake in a public sector airline to a private conglomerate. Name the process.", a: "Privatization (Disinvestment)." },
+            { q: "An Indian IT firm sets up offices in Europe and hires local talent while serving global clients. Which concept is this?", a: "Globalization." },
+            { q: "Since 1991, customers have become more demanding and competition has increased. Why?", a: "This is the impact of LPG (New Economic Policy) which opened up the market." },
+            { q: "A company shifts from a 'production-oriented' approach to a 'market-oriented' approach after reforms. What does this mean?", a: "Earlier firms sold what they produced; now they produce what the market/consumer wants (Market Orientation)." }
+          ]
         }
       }
     ]

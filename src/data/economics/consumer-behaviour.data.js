@@ -23,7 +23,13 @@ Utility is the "want-satisfying power" of a commodity.
 As a consumer consumes more units of a commodity, the utility derived from each successive unit decreases.
 - **Law's Peak**: When MU = 0, TU is maximum (Point of Satiety).
 - **Condition**: Consumer equilibrium in single-commodity case is reached when **$MU_x = P_x$** (in terms of money).
-          `
+          `,
+          examples: [
+            { q: "If MU is negative, what happens to TU?", a: "TU starts decreasing." },
+            { q: "What is the relation between P and MU in equilibrium?", a: "MU in terms of money = Price." },
+            { q: "MU of 1st apple is 10, 2nd is 8. Total Utility?", a: "18 utils (10 + 8)." },
+            { q: "Point where MU is zero is called?", a: "Point of Satiety." }
+          ]
         }
       },
       {
@@ -42,7 +48,12 @@ An IC represents combinations of two goods that give the same level of satisfact
 ### Consumer Equilibrium (IC Approach)
 Equilibrium occurs where the **Budget Line is tangent to the Indifference Curve**.
 - **Condition**: $MRS_{xy} = \\frac{P_x}{P_y}$.
-          `
+          `,
+          examples: [
+            { q: "Why is IC convex?", a: "Because the consumer is willing to sacrifice less and less of Y for more of X (Diminishing MRS)." },
+            { q: "Can two ICs cross each other?", a: "No, because it would violate the logic of transitivity and different levels of satisfaction." },
+            { q: "Slope of Budget Line?", a: "Price Ratio ($P_x/P_y$)." }
+          ]
         }
       },
       {
@@ -66,7 +77,12 @@ Inverse relationship between Price and Quantity Demanded ($P \\uparrow, Q \\down
 Degree of responsiveness of demand to price change.
 - **Perfectly Inelastic** ($E_d = 0$): Vertical line (Essential medicine).
 - **Unitary Elastic** ($E_d = 1$): Rectangular Hyperbola.
-          `
+          `,
+          examples: [
+            { q: "If price of Bread rises and demand for Jam falls, they are?", a: "Complementary Goods." },
+            { q: "Income of consumer rises, demand for Bajra falls. Nature of Bajra?", a: "Inferior Good." },
+            { q: "Demand for salt is likely to be?", a: "Inelastic (Essential good)." }
+          ]
         }
       }
     ]

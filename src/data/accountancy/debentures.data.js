@@ -16,7 +16,8 @@ export const debenturesData = {
           logic: "1. A debt instrument under the company's common seal.\n2. Interest is a charge against profit (compulsory).\n3. It does not carry voting rights.",
           traps: "Trap: Confusing debentures with shares. Debentures represent debt; shares represent ownership.",
           examples: [
-            { q: "Do debenture holders have voting rights?", a: "No, they are creditors and have no voting rights." }
+            { q: "Do debenture holders have voting rights?", a: "No, they are creditors and have no voting rights." },
+            { q: "Is debenture interest payable even if the company incurs a loss?", a: "Yes, it is a charge against profit." }
           ],
           speedSummary: "Debt instrument, Fixed Interest, No Voting rights."
         }
@@ -44,7 +45,8 @@ export const debenturesData = {
           logic: "1. It is a contingent liability. No interest is paid on these until invoked.\n2. Method 1: No entry, just a note in Balance Sheet.\n3. Method 2: Record using Debenture Suspense.",
           traps: "Trap: Paying interest on collateral debentures. Interest is only paid on the bank loan, NOT on collateral debentures.",
           examples: [
-            { q: "Account debited when collateral is recorded?", a: "Debenture Suspense Account." }
+            { q: "Account debited when collateral is recorded?", a: "Debenture Suspense Account." },
+            { q: "Is interest paid on debentures issued as collateral security?", a: "No, interest is paid only on the bank loan, not on the collateral debentures." }
           ],
           speedSummary: "Secondary security, Interest on Loan only."
         }
@@ -58,7 +60,8 @@ export const debenturesData = {
           logic: "1. If redemption is at premium, create 'Premium on Redemption A/c' (Liability).\n2. Debit the same amount to 'Loss on Issue of Debentures A/c'.\n3. This ensures the future loss is recognized today.",
           traps: "Trap: Forgetting to include the redemption premium in the 'Loss on Issue' account when debentures are issued at par but redeemed at premium.",
           examples: [
-            { q: "Redeemable at 5% premium. How to record this at issue?", a: "Debit Loss on Issue, Credit Premium on Redemption." }
+            { q: "Redeemable at 5% premium. How to record this at issue?", a: "Debit Loss on Issue, Credit Premium on Redemption." },
+            { q: "Which principle requires recording the future premium on redemption at the time of issue?", a: "Prudence (Conservatism) Principle." }
           ],
           speedSummary: "Future Prem on Red = Loss at Issue."
         }
@@ -86,7 +89,8 @@ export const debenturesData = {
           logic: "1. DRR ensures profits are retained for repayment.\n2. DRI ensures cash is available for repayment.\n3. Exemptions: Listed companies and banks don't need DRR.",
           traps: "Limit Trap: Calculating 15% DRI on 'Outstanding' instead of 'Maturing' amount.",
           examples: [
-            { q: "Minimum DRI percentage?", a: "15% of the amount maturing during the year." }
+            { q: "Minimum DRI percentage?", a: "15% of the amount maturing during the year." },
+            { q: "What is the deadline for making the mandatory Debenture Redemption Investment (DRI)?", a: "April 30 of the current financial year." }
           ],
           speedSummary: "DRR (10%), DRI (15%)."
         }

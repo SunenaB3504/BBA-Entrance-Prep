@@ -20,7 +20,12 @@ export const controllingData = {
 - **Efficient Use of Resources**: Reduces wastage.
 - **Improving Motivation**: Known standards help employees perform.
 - **Order & Discipline**: Monitoring discourages dishonest behavior.`,
-          speedSummary: "Controlling = Standard vs Actual; Feedback loop for Planning."
+          speedSummary: "Controlling = Standard vs Actual; Feedback loop for Planning.",
+          examples: [
+            { q: "Can a manager perform controlling if NO plan exists?", a: "No, controlling is impossible without standards, and standards are provided by Planning." },
+            { q: "A manager notices that workers are wasting raw material and takes corrective action. Which importance of controlling is this?", a: "Ensuring efficient use of resources." },
+            { q: "By telling employees exactly how their performance will be measured, a manager improves their morale. How?", a: "This is 'Improving Employee Motivation'—knowing the criteria for success helps performance." }
+          ]
         }
       },
       {
@@ -31,7 +36,12 @@ export const controllingData = {
 - **Standards from Planning**: Controlling is meaningless without plans.
 - **Feedback from Controlling**: Planning is blind without control.
 - **Forward & Backward looking**: Planning looks forward; Controlling looks backward (to evaluate) and forward (to correct).`,
-          speedSummary: "Planning (Standards) <-> Controlling (Evaluation/Feedback)."
+          speedSummary: "Planning (Standards) <-> Controlling (Evaluation/Feedback).",
+          examples: [
+            { q: "Why is controlling called 'forward-looking'?", a: "Because the feedback from controlling helps in making better plans for the future." },
+            { q: "Why is controlling called 'backward-looking'?", a: "Because it evaluates performance that has already happened in the past against set standards." },
+            { q: "Planning is 'blind' without controlling. Explain.", a: "Without a control mechanism, a manager will never know if the plans are being executed or if they even work." }
+          ]
         }
       },
       {
@@ -46,7 +56,13 @@ export const controllingData = {
    - **Critical Point Control (CPC)**: Focus on Key Result Areas (KRAs).
    - **Management by Exception (MBE)**: Report only significant deviations.
 5. **Corrective Action**: Bringing performance back to plan.`,
-          speedSummary: "Set Std -> Measure -> Compare -> Analyse (CPC/MBE) -> Correct."
+          speedSummary: "Set Std -> Measure -> Compare -> Analyse (CPC/MBE) -> Correct.",
+          examples: [
+            { q: "A company sets a standard to produce 100 units per day. At the end of the day, it checks how many were actually made. What step is this?", a: "Measurement of Actual Performance." },
+            { q: "A manager only reports to the CEO if expenses exceed the budget by more than 10%. Name this technique.", a: "Management by Exception (MBE)." },
+            { q: "A factory owner focuses heavily on a 2% increase in labor cost rather than a 50% increase in postage cost. Name this technique.", a: "Critical Point Control (Focusing on Key Result Areas)." },
+            { q: "The actual production was 80 units vs the standard of 100. The manager investigates the cause. Name the step.", a: "Analysing Deviations." }
+          ]
         }
       }
     ]

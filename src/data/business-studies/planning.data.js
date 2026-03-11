@@ -21,7 +21,12 @@ export const planningData = {
 - Promotes innovative ideas.
 - Facilitates decision making.
 - Establishes standards for **Controlling**.`,
-          speedSummary: "Planning = Deciding in advance; Bridges the gap between present and future."
+          speedSummary: "Planning = Deciding in advance; Bridges the gap between present and future.",
+          examples: [
+            { q: "A company wants to increase its market share from 10% to 15% next year. What is this?", a: "This is Planning (bridging the gap between the current 10% and the desired 15%)." },
+            { q: "By setting clear goals, a team knows exactly what to work towards. Which benefit of planning is this?", a: "Planning Provides Direction." },
+            { q: "A manager uses the plan to check if the actual sales match the targets. How does planning help here?", a: "Planning Establishes standards for Controlling." }
+          ]
         }
       },
       {
@@ -36,7 +41,12 @@ export const planningData = {
 5. **Selecting an Alternative**: Choosing the best path.
 6. **Implementing the Plan**: Putting plan into action.
 7. **Follow-up Action**: Monitoring if plan is working.`,
-          speedSummary: "Set Obj -> Premises -> Alternatives -> Evaluate -> Select -> Implement -> Follow-up."
+          speedSummary: "Set Obj -> Premises -> Alternatives -> Evaluate -> Select -> Implement -> Follow-up.",
+          examples: [
+            { q: "A manager assumes that a new tax law will be passed next year while making a 5-year plan. Name this step.", a: "Developing Premises (assumptions about the future)." },
+            { q: "A business compares 3 different delivery partners based on cost and speed. Name this step.", a: "Evaluating Alternatives." },
+            { q: "After launching a new product, the manager checks weekly reports to see if the plan is working. Name this step.", a: "Follow-up Action." }
+          ]
         }
       },
       {
@@ -52,7 +62,13 @@ export const planningData = {
 - **Strategy**: Comprehensive long-term plan.
 - **Rules**: Specific statements (Do/Don't).
 - **Procedures**: Chronological steps (How to do).`,
-          speedSummary: "Standing (Repeated) vs Single-use (One-time) plans."
+          speedSummary: "Standing (Repeated) vs Single-use (One-time) plans.",
+          examples: [
+            { q: "A sign in the office says 'No Smoking'. What type of plan is this?", a: "A Rule (Standing Plan)." },
+            { q: "A detailed manual explains the 10 steps to process a customer refund. Name the plan.", a: "A Procedure (Standing Plan)." },
+            { q: "A company creates a detailed financial plan specifically for the 'Summer Sale 2025' event. Name it.", a: "A Budget or Programme (Single-use Plan)." },
+            { q: "A firm decides its long-term move to enter the South Asian market by 2030. Name the plan type.", a: "A Strategy." }
+          ]
         }
       }
     ]

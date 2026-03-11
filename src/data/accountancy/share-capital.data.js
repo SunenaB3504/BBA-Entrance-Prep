@@ -16,7 +16,8 @@ export const shareCapitalData = {
           logic: "1. Separate Entity: Company and owners are different.\n2. Limited Liability: Liability limited to unpaid share value.\n3. Common Seal: Official signature (now optional).",
           traps: "Trap: Stating that a company's existence ends with the death of all members. False - it has perpetual succession.",
           examples: [
-            { q: "Is a company a natural person?", a: "No, it is an artificial legal person." }
+            { q: "Is a company a natural person?", a: "No, it is an artificial legal person." },
+            { q: "Does the death of all directors end a company's life?", a: "No, many companies survive even such events due to the feature of Perpetual Succession." }
           ],
           speedSummary: "Separate Entity, Limited Liability, Perpetual Succession."
         }
@@ -44,7 +45,8 @@ export const shareCapitalData = {
           logic: "1. Authorised: Maximum capital a company can issue.\n2. Subscribed: Part of issued capital taken by public.\n3. Reserve Capital: Part of uncalled capital kept for winding up.",
           traps: "Reserve Capital vs Capital Reserve: Reserve Capital is uncalled capital; Capital Reserve is profit from capital transactions (like reissue).",
           examples: [
-            { q: "Can Paid-up capital exceed Authorised capital?", a: "No, Authorised is the maximum limit." }
+            { q: "Can Paid-up capital exceed Authorised capital?", a: "No, Authorised is the maximum limit." },
+            { q: "What is Reserve Capital?", a: "It is a portion of uncalled capital that is resolved to be called only during the winding up of the company." }
           ],
           speedSummary: "Auth > Issued > Sub > Paid-up."
         }
@@ -58,7 +60,8 @@ export const shareCapitalData = {
           logic: "1. Securities Premium is a capital gain.\n2. Usage (Section 52): Bonus shares, writing off preliminary expenses, buyback.",
           traps: "Usage Trap: Using Securities Premium to pay dividends. This is ILLEGAL under Section 52.",
           examples: [
-            { q: "Can a company issue shares at discount?", a: "No, prohibited under Section 53 (except Sweat Equity)." }
+            { q: "Can a company issue shares at discount?", a: "No, prohibited under Section 53 (except Sweat Equity)." },
+            { q: "Can Securities Premium be used to pay cash dividends?", a: "No, it is prohibited under Section 52 of the Companies Act." }
           ],
           speedSummary: "Premium = Price > Face Value. Use per Sec 52."
         }
@@ -86,7 +89,8 @@ export const shareCapitalData = {
           logic: "1. Forfeiture: Share Capital Dr. (Called-up) To Forfeited Shares (Paid-up) To Calls-in-Arrear.\n2. Reissue: Bank Dr. Forfeited Shares Dr. (Discount) To Share Cap.\n3. Balance of Forfeited Shares A/c (on reissued shares) -> Capital Reserve.",
           traps: "Capital Reserve Trap: Calculating reserve on all forfeited shares even if only some are reissued. Only reissued ones count!",
           examples: [
-            { q: "Maximum discount on reissue?", a: "Equal to the amount already forfeited on those shares." }
+            { q: "Maximum discount on reissue?", a: "Equal to the amount already forfeited on those shares." },
+            { q: "To which account is the balance of 'Forfeited Shares Account' (on reissued shares) transferred?", a: "Capital Reserve." }
           ],
           speedSummary: "Cancel -> Keep Money -> Reissue -> Capital Reserve."
         }

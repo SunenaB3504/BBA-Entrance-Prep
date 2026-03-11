@@ -17,7 +17,13 @@ export const literaturePoetryData = {
                     formulaBank: "- Simile: Comparison using 'like' or 'as'.\n- Metaphor: Direct comparison without 'like/as'.\n- Personification: Giving human traits to non-human things.\n- Alliteration: Repetition of initial consonant sounds.",
                     logic: "Read the literal meaning vs the figurative meaning. If the phrase says 'Time is a thief', it's a metaphor.",
                     traps: "Confusing Simile and Metaphor.",
-                    examples: [],
+                    examples: [
+                        { q: "Identify the figure of speech: 'The moon was a silver coin in the sky'.", a: "Metaphor." },
+                        { q: "Identify the figure of speech: 'The leaves danced in the wind'.", a: "Personification." },
+                        { q: "Example of a Simile for 'bravery'?", a: "Brave as a lion." },
+                        { q: "Identify: 'Sally sells seashells by the seashore'.", a: "Alliteration." },
+                        { q: "What is an Oxymoron?", a: "A combination of contradictory terms like 'deafening silence'." }
+                    ],
                     speedSummary: "Simile has 'like'. Personification makes things human."
                 }
             },
@@ -29,7 +35,13 @@ export const literaturePoetryData = {
                     formulaBank: "- Couplet: AA\n- Alternating: ABAB\n- Enclosed: ABBA",
                     logic: "Assign a letter to the last sound of a line. If the next line rhymes, give it the same letter.",
                     traps: "Eye rhymes — words that look like they rhyme but don't (e.g., 'move' and 'love').",
-                    examples: [],
+                    examples: [
+                        { q: "Pattern for alternate rhyme?", a: "ABAB." },
+                        { q: "What is a 14-line poem called?", a: "Sonnet." },
+                        { q: "What is a 'quatrain'?", a: "A stanza of four lines." },
+                        { q: "Example of a 'couplet'?", a: "Two consecutive lines that rhyme together (AA)." },
+                        { q: "True or False: All poems must rhyme.", a: "False (Free verse poems do not follow a rhyme scheme)." }
+                    ],
                     speedSummary: "Map sounds to letters (A, B, C) to find the scheme."
                 }
             }

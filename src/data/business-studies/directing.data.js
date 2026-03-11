@@ -19,7 +19,11 @@ export const directingData = {
 2. **Motivation**: Stimulating people to action.
 3. **Leadership**: Influencing behavior.
 4. **Communication**: Exchange of ideas and info.`,
-          speedSummary: "Directing = Supervision + Motivation + Leadership + Communication."
+          speedSummary: "Directing = Supervision + Motivation + Leadership + Communication.",
+          examples: [
+            { q: "A manager explains the specific steps for a new assembly line process to workers. Which element is this?", a: "Supervision/Directing (guiding and instructing people)." },
+            { q: "Directing is often called the 'eye' or 'heart' of management. Why?", a: "Because it is the function that actually initiates action in the organization." }
+          ]
         }
       },
       {
@@ -38,7 +42,12 @@ export const directingData = {
 **Incentives:**
 - **Financial**: Pay, Bonus, Profit sharing, Co-partnership.
 - **Non-Financial**: Status, Climate, Career growth, Job enrichment.`,
-          speedSummary: "Motivation = Stimulus for action. Maslow = Needs hierarchy (Physio to Self-Actualisation)."
+          speedSummary: "Motivation = Stimulus for action. Maslow = Needs hierarchy (Physio to Self-Actualisation).",
+          examples: [
+            { q: "An employee works hard primarily to afford food and housing. Which level of Maslow's hierarchy is this?", a: "Basic Physiological Needs." },
+            { q: "A company offers 'Job Security' and 'Pension plans'. Which need is being addressed?", a: "Safety/Security Needs." },
+            { q: "A manager gives an employee a special 'Employee of the Month' trophy. Name the incentive type.", a: "Non-financial incentive (specifically Status/Recognition)." }
+          ]
         }
       },
       {
@@ -52,7 +61,11 @@ export const directingData = {
 | **Autocratic** | Leader gives orders, no consultation | Crisis, unskilled labor |
 | **Democratic** | Leader consults subordinates | Skilled team, complex tasks |
 | **Laissez Faire** | Full freedom to subordinates | Highly expert professionals |`,
-          speedSummary: "Autocratic (Boss), Democratic (Team), Laissez Faire (Freedom)."
+          speedSummary: "Autocratic (Boss), Democratic (Team), Laissez Faire (Freedom).",
+          examples: [
+            { q: "In a factory where most workers are unskilled, the manager gives strict orders without asking for opinions. Name the style.", a: "Autocratic Leadership." },
+            { q: "A tech lead lets his team of senior developers decide their own work hours and methods. Name the style.", a: "Laissez Faire (Free-rein) Leadership." }
+          ]
         }
       },
       {
@@ -67,7 +80,12 @@ export const directingData = {
 - **Psychological**: Premature evaluation, lack of attention, distrust.
 - **Organisational**: Complex structure, rules and regs.
 - **Personal**: Fear of authority, lack of incentives.`,
-          speedSummary: "Formal (Official) vs Informal (Grapevine). Barriers = Semantic, Psychological, Org, Personal."
+          speedSummary: "Formal (Official) vs Informal (Grapevine). Barriers = Semantic, Psychological, Org, Personal.",
+          examples: [
+            { q: "A worker is afraid to tell his boss about a machine failure because the boss is very strict. Name the communication barrier.", a: "Personal Barrier (Fear of authority)." },
+            { q: "A report uses complex legal terms that a normal employee cannot understand. Which barrier is this?", a: "Semantic Barrier (Technical jargon/Symbols with different meanings)." },
+            { q: "Information about a company's secret product launch spreads through office rumors. Name the network.", a: "Grapevine (Informal Communication)." }
+          ]
         }
       }
     ]

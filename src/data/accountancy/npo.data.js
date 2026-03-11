@@ -16,7 +16,8 @@ export const npoData = {
           logic: "NPOs do not have 'Owner's Equity'; they have a 'Capital Fund' (accumulated surplus).",
           traps: "Naming Trap: They don't make 'Profit' or 'Loss'; they have 'Surplus' or 'Deficit'.",
           examples: [
-            { q: "Is a government hospital an NPO?", a: "Yes, its primary motive is service, not profit." }
+            { q: "Is a government hospital an NPO?", a: "Yes, its primary motive is service, not profit." },
+            { q: "What is the excess of assets over liabilities in an NPO called?", a: "Capital Fund (or General Fund)." }
           ],
           speedSummary: "Service-driven entities with Capital Funds."
         }
@@ -30,7 +31,8 @@ export const npoData = {
           logic: "1. R&P: Summary of Cash Book. Includes all receipts/payments (Capital/Revenue) of any year.\n2. I&E: Summary of revenue items for the CURRENT year only.",
           traps: "Basis Trap: R&P includes capital items (like buying a bus); I&E strictly excludes capital items.",
           examples: [
-            { q: "Where does 'Depreciation' appear?", a: "Only in I&E Account (Non-cash item)." }
+            { q: "Where does 'Depreciation' appear?", a: "Only in I&E Account (Non-cash item)." },
+            { q: "A sports club buys a bus for ₹10 Lakh. Where is this recorded?", a: "Receipts & Payments Account (as a payment) and Balance Sheet (as an asset). It does NOT go to Income & Expenditure." }
           ],
           speedSummary: "R&P = Cash basis; I&E = Accrual basis."
         }
@@ -44,7 +46,8 @@ export const npoData = {
           logic: "1. Specific Donation: Capitalized (added to specific fund).\n2. General Donation: Revenue income (I&E).",
           traps: "Donation Trap: If a donation is for a 'Building', it CANNOT be used for office expenses. It's a liability/fund item.",
           examples: [
-            { q: "Life Membership Fee treatment?", a: "Capitalized and added to Capital Fund." }
+            { q: "Life Membership Fee treatment?", a: "Capitalized and added to Capital Fund." },
+            { q: "How is 'Honorarium' paid to a guest lecturer treated?", a: "It is a Revenue Expense and debited to the Income & Expenditure Account." }
           ],
           speedSummary: "Capital receipts vs Revenue income."
         }
@@ -58,7 +61,8 @@ export const npoData = {
           logic: "If Expenses exceed the Fund balance, the excess is debited to I&E Account (Expenditure side).",
           traps: "Interest Trap: Interest earned on 'Match Fund Investment' must be added to 'Match Fund', NOT shown as general income.",
           examples: [
-            { q: "Fund 10k, Exp 12k. Result?", a: "2k is shown as expense in I&E." }
+            { q: "Fund 10k, Exp 12k. Result?", a: "2k is shown as expense in I&E." },
+            { q: "A club has a 'Trophy Fund'. It earns interest on Trophy Fund Investments. Where is this interest recorded?", a: "It is added to the Trophy Fund on the liability side of the Balance Sheet." }
           ],
           speedSummary: "Specific funds handle their own costs."
         }
@@ -72,7 +76,8 @@ export const npoData = {
           logic: "Includes all revenue earned for the current year, whether received or not, and excludes cash belonging to other years.",
           traps: "Calculation Trap: Be careful if the question says 'Cl O/S for the year' vs 'Cl O/S on that date'.",
           examples: [
-            { q: "Received 50k, Cl O/S 5k, Op O/S 2k. I&E?", a: "50 + 5 - 2 = 53k." }
+            { q: "Received 50k, Cl O/S 5k, Op O/S 2k. I&E?", a: "50 + 5 - 2 = 53k." },
+            { q: "Subscription received in advance for the next year is shown where?", a: "On the Liability side of the Balance Sheet." }
           ],
           speedSummary: "Current year income only (Accrual)."
         }

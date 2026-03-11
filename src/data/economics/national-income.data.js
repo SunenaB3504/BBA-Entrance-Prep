@@ -35,7 +35,11 @@ The Great Depression (1929) shattered the belief in self-correcting markets.
 - **Classical View**: "Supply creates its own demand" (Say's Law).
 - **Keynesian Revolution**: J.M. Keynes published "The General Theory" (1936), advocating for government intervention to manage demand.
           `,
-          speedSummary: "Macroeconomics focuses on aggregates like GDP and inflation, influenced by institutions like RBI/SEBI, and rose following the failure of classical theories during the Great Depression."
+          speedSummary: "Macroeconomics focuses on aggregates like GDP and inflation, influenced by institutions like RBI/SEBI, and rose following the failure of classical theories during the Great Depression.",
+          examples: [
+            { q: "Is 'Study of demand for cars' Micro or Macro?", a: "Micro (Individual market)." },
+            { q: "Is 'Study of India's GDP growth' Micro or Macro?", a: "Macro (Entire economy)." }
+          ]
         }
       },
       {
@@ -67,7 +71,12 @@ Fundamental building blocks of macroeconomics include goods classification, inco
 - **Self-consumed services**: Excluded (cannot be reliably valued).
 - **Second-hand goods**: Excluded (already counted in year of production).
 - **Interest on National Debt**: Excluded (treated as transfer payment).
-          `
+          `,
+          examples: [
+            { q: "Is 'Scholarship given to a student' included in NI?", a: "No, it's a transfer income (unilateral)." },
+            { q: "Is 'Salary of a teacher' a factor income?", a: "Yes, included in NI." },
+            { q: "Inventory on 31st March is a?", a: "Stock variable." }
+          ]
         }
       },
       {
@@ -93,7 +102,11 @@ The continuous flow of production, income, and expenditure in an economy.
 | **INJECTION** | Investment (I), Govt Spending (G), Exports (X) | Firms/Govt | Adds money; increases flow |
 
 **Equilibrium**: S + T + M = I + G + X
-          `
+          `,
+          examples: [
+            { q: "Is 'Saving' a leakage or injection?", a: "Leakage (withdraws money from flow)." },
+            { q: "Is 'Investment' an injection?", a: "Yes (adds money to flow)." }
+          ]
         }
       },
       {
@@ -116,7 +129,12 @@ Aggregates like GDP and NNP are connected via three golden conversion rules.
 | **Indicator** | Money value of output | True economic growth (welfare) |
 
 **GDP Deflator** = (Nominal GDP ÷ Real GDP) × 100
-          `
+          `,
+          examples: [
+            { q: "How to get National Income from Domestic Income?", a: "Add NFIA (Net Factor Income from Abroad)." },
+            { q: "Market Price - Net Indirect Taxes = ?", a: "Factor Cost (FC)." },
+            { q: "True indicator of economic growth?", a: "Real GDP (it reflects output change alone)." }
+          ]
         }
       }
     ]

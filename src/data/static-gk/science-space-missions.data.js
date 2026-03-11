@@ -7,6 +7,46 @@ export const scienceSpaceData = {
     subject: "General Knowledge",
     chapter: "Science: Space Missions",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "milestones-space",
+                title: "1. Global Space Milestones",
+                content: {
+                    coreConcept: "Space exploration milestones mark humanity's journey beyond Earth.",
+                    formulaBank: "- Sputnik 1 (1957): 1st Satellite (USSR).\n- Apollo 11 (1969): 1st Moon landing (USA).\n- Yuri Gagarin: 1st Human in space.",
+                    logic: "Associate the mission name with its specific 'first' and the country that launched it.",
+                    traps: "Assuming NASA was responsible for the first satellite (it was the Soviet Union).",
+                    examples: [
+                        { q: "Who was the first human to travel into space?", a: "Yuri Gagarin (1961)." },
+                        { q: "Name of the first artificial satellite launched into space?", a: "Sputnik 1." },
+                        { q: "Who was the first person to step on the Moon?", a: "Neil Armstrong." },
+                        { q: "Which mission first landed humans on the Moon?", a: "Apollo 11." },
+                        { q: "Identify the first woman in space.", a: "Valentina Tereshkova." }
+                    ],
+                    speedSummary: "Early space missions established the foundations of cosmic exploration."
+                }
+            },
+            {
+                id: "isro-missions",
+                title: "2. ISRO & Indian Space Achievements",
+                content: {
+                    coreConcept: "ISRO has made India a global space power through cost-effective and ambitious missions.",
+                    formulaBank: "- Aryabhata (1975): 1st India satellite.\n- Chandrayaan-1: Found water on Moon.\n- Mangalyaan: 1st attempt Mars success.",
+                    logic: "Trace India's space journey from Aryabhata to modern Lunar and Mars missions.",
+                    traps: "Confusing Chandrayaan-2 with Chandrayaan-3 (which successfully landed on the south pole).",
+                    examples: [
+                        { q: "India's first satellite name?", a: "Aryabhata (1975)." },
+                        { q: "Which ISRO mission successfully reached Mars in its first attempt?", a: "Mangalyaan (MOM)." },
+                        { q: "What is the mission name of India's first lunar probe?", a: "Chandrayaan-1." },
+                        { q: "Where is the Satish Dhawan Space Centre located?", a: "Sriharikota, Andhra Pradesh." },
+                        { q: "Who is known as the 'Father of the Indian Space Program'?", a: "Dr. Vikram Sarabhai." }
+                    ],
+                    speedSummary: "ISRO's achievements showcase India's technical prowess and strategic vision in space."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "ss-bf-001",

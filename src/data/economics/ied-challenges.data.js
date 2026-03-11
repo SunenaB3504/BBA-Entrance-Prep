@@ -26,7 +26,12 @@ Human capital is the stock of skills and knowledge embodied in people.
 - **NCERT/UGC/AICTE**: Regulate school and higher education.
 - **Kothari Commission**: Recommended **6% of GDP** for education.
 - **Tapas Majumdar Com.**: Estimated ₹1.37 lakh cr needed for universal schooling.
-          `
+          `,
+          examples: [
+            { q: "Why is education a social investment?", a: "It produces better citizens and spreads knowledge throughout society." },
+            { q: "Which body regulates technical education in India?", a: "AICTE." },
+            { q: "Preventive medicine example?", a: "Vaccination programs." }
+          ]
         }
       },
       {
@@ -46,7 +51,12 @@ Focuses on credit, marketing, and diversification.
 
 ### Organic Farming
 - Sustainable, labor-intensive, but has low initial yields. **Sikkim** is the first 100% organic state.
-          `
+          `,
+          examples: [
+            { q: "Founder of the Golden Revolution?", a: "Nirpakh Tutej (Horticulture/Honey)." },
+            { q: "Benefit of SHGs?", a: "Reduces dependence on local moneylenders for credit." },
+            { q: "First 100% organic state?", a: "Sikkim." }
+          ]
         }
       },
       {
@@ -66,7 +76,11 @@ Focuses on credit, marketing, and diversification.
 
 ### MGNREGA (2005)
 - Guarantees **100 days** of unskilled work to rural households.
-          `
+          `,
+          examples: [
+            { q: "GDP is growing but employment is not. This is?", a: "Jobless Growth." },
+            { q: "Shift from secure jobs to daily wages is?", a: "Casualisation." }
+          ]
         }
       },
       {
@@ -88,7 +102,11 @@ Focuses on credit, marketing, and diversification.
 
 ### Sustainable Strategies
 - Solar/Wind energy, LPG/Gobar Gas in villages, CNG in cities.
-          `
+          `,
+          examples: [
+            { q: "Environment's ability to handle waste is called?", a: "Absorptive Capacity." },
+            { q: "What causes Ozone depletion?", a: "Chlorofluorocarbons (CFCs)." }
+          ]
         }
       }
     ]

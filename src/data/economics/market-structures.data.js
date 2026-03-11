@@ -21,7 +21,12 @@ A market where there are huge numbers of buyers and sellers selling homogeneous 
 3. **Free Entry/Exit**: Firms can enter or leave easily.
 4. **Perfect Knowledge**: Buyers and sellers know everything about the market.
 5. **Price Taker**: The firm accepts the price determined by the market (Industry).
-          `
+          `,
+          examples: [
+            { q: "Is a wheat farmer in a large market a price taker?", a: "Yes, as wheat is homogeneous and there are many farmers." },
+            { q: "What happens if a firm in perfect competition raises its price?", a: "Its demand will become zero as buyers will switch to identical products from other sellers." },
+            { q: "Condition for long-run equilibrium?", a: "Firms earn only Normal Profits." }
+          ]
         }
       },
       {
@@ -39,7 +44,13 @@ The price at which demand and supply are equal.
 ### Government Intervention
 1. **Price Ceiling**: Maximum legal price (set below equilibrium) to protect consumers (e.g., essential drugs).
 2. **Price Floor (MSP)**: Minimum legal price (set above equilibrium) to protect producers (e.g., crops).
-          `
+          `,
+          examples: [
+            { q: "If the govt sets a 'Price Ceiling' on wheat, what happens?", a: "It may lead to a shortage (Excess Demand)." },
+            { q: "Minimum Support Price (MSP) is an example of?", a: "Price Floor." },
+            { q: "Equilibrium condition?", a: "Quantity Demanded = Quantity Supplied." },
+            { q: "Effect of increase in demand on equilibrium price?", a: "Price rises." }
+          ]
         }
       },
       {
@@ -58,7 +69,12 @@ The price at which demand and supply are equal.
 ### Oligopoly
 - A few large firms dominate the market.
 - Interdependence in decision making (e.g., Telecom industry).
-          `
+          `,
+          examples: [
+            { q: "Market for toothpaste with different brands?", a: "Monopolistic Competition." },
+            { q: "A market with only two sellers is called?", a: "Duopoly (a type of Oligopoly)." },
+            { q: "Indian Railways is an example of?", a: "Monopoly (Government-controlled)." }
+          ]
         }
       }
     ]

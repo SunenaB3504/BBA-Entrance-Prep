@@ -21,7 +21,13 @@ In the short run, if we increase one variable factor (Labor) while keeping other
 - **Stage I**: TP increases at increasing rate, MP increases.
 - **Stage II**: TP increases at decreasing rate, MP falls but is positive. (Best for production).
 - **Stage III**: TP falls, MP becomes negative.
-          `
+          `,
+          examples: [
+            { q: "At what stage should a rational producer stop?", a: "Stage II (where TP is maximum and MP is zero)." },
+            { q: "What happens to MP when TP falls?", a: "MP becomes negative (Stage III)." },
+            { q: "Is LVP a short-run or long-run law?", a: "Short-run (as one factor is fixed)." },
+            { q: "What is the shape of MP curve under LVP?", a: "Inverted U-Shape." }
+          ]
         }
       },
       {
@@ -38,7 +44,12 @@ In the short run, if we increase one variable factor (Labor) while keeping other
 - **Total Revenue (TR)**: Price × Quantity.
 - **Marginal Revenue (MR)**: Change in TR / Change in Quantity.
 - **In Perfect Competition**: Price = AR = MR (Horizontal line).
-          `
+          `,
+          examples: [
+            { q: "Cost that never becomes zero even if output is zero?", a: "Total Fixed Cost (TFC)." },
+            { q: "MC cuts AC at which point?", a: "At AC's minimum point." },
+            { q: "Relation between AR and MR in perfect competition?", a: "AR = MR = Price." }
+          ]
         }
       },
       {
@@ -55,7 +66,12 @@ A producer is in equilibrium when they maximize profits.
 ### Theory of Supply
 - **Law of Supply**: Direct relationship between Price and Quantity Supplied ($P \\uparrow, S \\uparrow$).
 - **Determinants**: Price, Input prices, Technology, Taxes, Firm's Goal.
-          `
+          `,
+          examples: [
+            { q: "Producer equilibrium condition?", a: "MR = MC and MC is rising." },
+            { q: "Effect of increase in input prices (wages) on supply?", a: "Supply decreases (shifts left)." },
+            { q: "Is Law of Supply universal?", a: "No, exceptions include perishable goods or agricultural produce in short run." }
+          ]
         }
       }
     ]

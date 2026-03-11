@@ -16,7 +16,8 @@ export const dissolutionData = {
           logic: "1. Firm dissolution includes partnership dissolution.\n2. In firm dissolution, assets are sold and liabilities paid off.\n3. Business does not continue after firm dissolution.",
           traps: "Trap: Common MCQ asking if books are closed in 'Dissolution of Partnership'. They are NOT; they are only closed in 'Dissolution of Firm'.",
           examples: [
-            { q: "Does admission of a partner dissolve the firm?", a: "No, it only dissolves the old partnership agreement (reconstitution)." }
+            { q: "Does admission of a partner dissolve the firm?", a: "No, it only dissolves the old partnership agreement (reconstitution)." },
+            { q: "When a firm is dissolved, is the business also closed?", a: "Yes, dissolution of firm leads to complete discontinuation of the business." }
           ],
           speedSummary: "Firm Dissolution = Business CLOSED."
         }
@@ -30,7 +31,8 @@ export const dissolutionData = {
           logic: "1. Outside creditors (bank, vendors) have first right.\n2. Then partners who gave loans (not capital) are paid.\n3. Then partners get their invested capital back.\n4. Any leftover is profit distributed in PSR.",
           traps: "Trap: Paying partner's loan before outside creditors. Outside debts MUST be cleared first.",
           examples: [
-            { q: "In what order is cash distributed on dissolution?", a: "Outside Debts -> Partner Loans -> Partner Capitals." }
+            { q: "In what order is cash distributed on dissolution?", a: "Outside Debts -> Partner Loans -> Partner Capitals." },
+            { q: "Is a partner's loan paid before outside creditors?", a: "No, according to Section 48, outside creditors have priority over partner's loans." }
           ],
           speedSummary: "Outside -> Partner Loan -> Capital."
         }
@@ -44,7 +46,8 @@ export const dissolutionData = {
           logic: "1. Transfer Assets (Dr) and Outside Liabs (Cr) at Book Value.\n2. Asset Realised (Cr) and Liabs Paid (Dr).\n3. Resulting Profit/Loss shared by ALL partners in PSR.",
           traps: "Trap: Transferring Cash or Bank balance to Realisation. They are NOT transferred; a separate Bank A/c is prepared.",
           examples: [
-            { q: "What is the nature of Realisation Account?", a: "Nominal Account (records gains/losses)." }
+            { q: "What is the nature of Realisation Account?", a: "Nominal Account (records gains/losses)." },
+            { q: "Where is the profit on realization transferred?", a: "To the Capital Accounts of all partners in their Profit Sharing Ratio." }
           ],
           speedSummary: "Close Assets/Liabs -> Compute Profit/Loss."
         }
@@ -58,7 +61,8 @@ export const dissolutionData = {
           logic: "1. Assets are realized as per given info. If silent, tangible assets = Book Value, Intangible = Nil.\n2. Expenses: 'Dr who bears, Cr who pays'.\n3. Asset taken by partner: Partner's Cap Dr. To Realisation.",
           traps: "Trap: Passing an entry when a creditor takes an asset. If it's a 'full settlement' or part-settlement, NO ENTRY is passed for the exchange.",
           examples: [
-            { q: "Unrecorded asset realized ₹500. Entry?", a: "Bank A/c Dr. To Realisation A/c." }
+            { q: "Unrecorded asset realized ₹500. Entry?", a: "Bank A/c Dr. To Realisation A/c." },
+            { q: "A creditor of ₹10,000 takes over furniture of ₹8,000 in full settlement. Entry?", a: "No Entry is required when an asset is taken over by a creditor in settlement of debt." }
           ],
           speedSummary: "Dr Bears, Cr Pays."
         }
@@ -72,7 +76,8 @@ export const dissolutionData = {
           logic: "1. Partner's loan is paid AFTER outside debts but BEFORE capital.\n2. If a partner has a debit balance (deficiency), they must bring in cash.\n3. Bank account must tally (Total Dr = Total Cr) at the end.",
           traps: "Trap: Transferring Partner's Loan to Realisation Account. It is NOT transferred; it's a separate account.",
           examples: [
-            { q: "Is partner's loan transferred to Realisation?", a: "No, it is paid separately via the Bank Account." }
+            { q: "Is partner's loan transferred to Realisation?", a: "No, it is paid separately via the Bank Account." },
+            { q: "A loan from a partner's sister is appearing in the books. Is it a partner's loan?", a: "No, it is treated as a Third-Party Debt and transferred to the Realisation Account." }
           ],
           speedSummary: "Bank A/c must tally to prove accuracy."
         }

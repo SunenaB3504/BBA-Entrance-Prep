@@ -7,6 +7,46 @@ export const scienceBiologyData = {
     subject: "General Knowledge",
     chapter: "Science: Biology",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "vitamin-deficiencies",
+                title: "1. Vitamins & Deficiency Diseases",
+                content: {
+                    coreConcept: "Vitamins are organic compounds required in small quantities; their absence leads to specific diseases.",
+                    formulaBank: "- Vit A: Night Blindness.\n- Vit B1: Beriberi.\n- Vit C: Scurvy.\n- Vit D: Rickets.",
+                    logic: "Link the chemical name of the vitamin to its primary deficiency symptom.",
+                    traps: "Confusing water-soluble (B, C) with fat-soluble (A, D, E, K).",
+                    examples: [
+                        { q: "Which vitamin is essential for blood clotting?", a: "Vitamin K." },
+                        { q: "Scurvy is caused by the deficiency of?", a: "Vitamin C (Ascorbic Acid)." },
+                        { q: "Rickets primarily affects which body part?", a: "Bones (due to Vit D deficiency)." },
+                        { q: "Which vitamin contains the metal Cobalt?", a: "Vitamin B12 (Cyanocobalamin)." },
+                        { q: "Night blindness is related to which vitamin?", a: "Vitamin A (Retinol)." }
+                    ],
+                    speedSummary: "Vitamins are vital micronutrients that prevent metabolic and structural diseases."
+                }
+            },
+            {
+                id: "body-systems",
+                title: "2. Key Human Body Systems",
+                content: {
+                    coreConcept: "The human body is composed of specialized systems (Circulatory, Digestive, Skeletal) working in harmony.",
+                    formulaBank: "- Heart: 4 chambers.\n- Largest Gland: Liver.\n- Smallest Bone: Stapes.\n- Universal Donor: O-.",
+                    logic: "Understand the primary function and key 'record' facts (largest/smallest) of each organ system.",
+                    traps: "Confusing the Universal Donor (O-) with the Universal Recipient (AB+).",
+                    examples: [
+                        { q: "Which organ produces Bile?", a: "Liver." },
+                        { q: "What is the longest bone in the human body?", a: "Femur (thigh bone)." },
+                        { q: "Which blood group is the 'Universal Recipient'?", a: "AB Positive." },
+                        { q: "Powerhouse of the cell?", a: "Mitochondria." },
+                        { q: "Identify the smallest bone in the human body.", a: "Stapes (in the ear)." }
+                    ],
+                    speedSummary: "Organ systems provide the biological machinery for all life processes."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "sb-bf-001",

@@ -16,7 +16,8 @@ export const partnershipAdmissionData = {
           logic: "1. Old agreement ends.\n2. New agreement begins.\n3. Business operations continue without closure (unlike dissolution).",
           traps: "Trap: Confusing 'Dissolution of Partnership' (reconstitution) with 'Dissolution of Firm' (closing business).",
           examples: [
-            { q: "Is change in profit sharing ratio a reconstitution?", a: "Yes, it is one of the modes of reconstitution." }
+            { q: "Is change in profit sharing ratio a reconstitution?", a: "Yes, it is one of the modes of reconstitution." },
+            { q: "Does business close down during reconstitution?", a: "No, in reconstitution (like admission), the old agreement ends but the business continues under a new agreement." }
           ],
           speedSummary: "Change in agreement = Reconstitution."
         }
@@ -30,7 +31,8 @@ export const partnershipAdmissionData = {
           logic: "1. Incoming partner gets a share from old partners.\n2. Old partners lose/sacrifice their share.\n3. Sacrifice is used to distribute the Premium for Goodwill (PFG).",
           traps: "Trap: Distributing PFG in Old Ratio. It MUST be distributed in Sacrificing Ratio.",
           examples: [
-            { q: "A and B (3:2) admit C for 1/5 share. SR if not given?", a: "Sacrificing Ratio = Old Ratio = 3:2." }
+            { q: "A and B (3:2) admit C for 1/5 share. SR if not given?", a: "Sacrificing Ratio = Old Ratio = 3:2." },
+            { q: "What is the primary right of a partner who brings capital?", a: "The right to share in the assets of the firm." }
           ],
           speedSummary: "SR = Old - New. Used for Goodwill."
         }
@@ -58,7 +60,8 @@ export const partnershipAdmissionData = {
           logic: "1. New partner pays for the profit share he 'buys' from old partners.\n2. PFG is NOT firm's income; it's compensation for partners.\n3. If NOT brought in cash, debit New Partner's Current A/c.",
           traps: "AS-26 Rule: Self-generated goodwill cannot be recorded in books. Only Purchased Goodwill appears in the Balance Sheet.",
           examples: [
-            { q: "New partner pays PFG privately. Entry?", a: "No Entry (Outside business)." }
+            { q: "New partner pays PFG privately. Entry?", a: "No Entry (Outside business)." },
+            { q: "If a new partner is unable to bring his share of goodwill in cash, which account is debited?", a: "New Partner's Current Account (as per modern accounting practice to keep capital intact)." }
           ],
           speedSummary: "PFG -> Sacrificing Partners (SR)."
         }
@@ -72,7 +75,8 @@ export const partnershipAdmissionData = {
           logic: "1. Revalue to ensure new partner doesn't benefit from old gains/losses.\n2. Profit/Loss transferred to Old Partners in Old Ratio.",
           traps: "Trap: Including new partner in revaluation profit distribution. Only OLD partners get it.",
           examples: [
-            { q: "Unrecorded asset found. Where to record?", a: "Credit side of Revaluation Account." }
+            { q: "Unrecorded asset found. Where to record?", a: "Credit side of Revaluation Account." },
+            { q: "Stock is overvalued by ₹5,000. Impact on revaluation?", a: "Debited to Revaluation Account (to decrease the asset value)." }
           ],
           speedSummary: "Asset Up = Credit; Asset Down = Debit."
         }

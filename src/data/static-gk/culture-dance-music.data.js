@@ -7,6 +7,46 @@ export const cultureDanceData = {
     subject: "General Knowledge",
     chapter: "Indian Culture: Dance & Music",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "classical-dances",
+                title: "1. Classical Dances of India",
+                content: {
+                    coreConcept: "Classical dances are structured art forms rooted in the Natya Shastra, each representing a specific region's aesthetic.",
+                    formulaBank: "- Bharatanatyam: Tamil Nadu.\n- Kathak: North India.\n- Kathakali: Kerala.\n- Sattriya: Assam.",
+                    logic: "Associate the dance style with its region of origin and primary source text.",
+                    traps: "Confusing Kathak (North) with Kathakali (Kerala).",
+                    examples: [
+                        { q: "Which dance is known as the 'Dance of the Enchantress'?", a: "Mohiniyattam (Kerala)." },
+                        { q: "What is the primary source of Indian classical dances?", a: "Natya Shastra by Bharata Muni." },
+                        { q: "Identify the classical dance of Andhra Pradesh.", a: "Kuchipudi." },
+                        { q: "Which dance form uses elaborate facial makeup and headgear?", a: "Kathakali." },
+                        { q: "In which classical dance is 'Gungroo' and 'Chakkar' (spins) most prominent?", a: "Kathak." }
+                    ],
+                    speedSummary: "Classical dances are regional, technical, and derived from ancient texts."
+                }
+            },
+            {
+                id: "folk-dances",
+                title: "2. Popular Folk Dances",
+                content: {
+                    coreConcept: "Folk dances are community-based celebrations, less technical than classical but highly energetic.",
+                    formulaBank: "- Bihu: Assam.\n- Garba: Gujarat.\n- Ghoomar: Rajasthan.\n- Lavani: Maharashtra.",
+                    logic: "Folk dances often celebrate harvests, weddings, or seasonal changes.",
+                    traps: "Matching a classical dance to a state that only has a famous folk dance (or vice versa).",
+                    examples: [
+                        { q: "Name the bamboo dance of Mizoram.", a: "Cheraw." },
+                        { q: "Which harvest dance is synonymous with Punjab?", a: "Bhangra." },
+                        { q: "Identify the snake charmer dance of Rajasthan.", a: "Kalbelia." },
+                        { q: "What is the traditional fisherfolk dance of Maharashtra called?", a: "Koli." },
+                        { q: "The 'Rauf' dance belongs to which region?", a: "Jammu & Kashmir." }
+                    ],
+                    speedSummary: "Folk dances represent the raw energy and cultural spirit of rural India."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "cd-bf-001",

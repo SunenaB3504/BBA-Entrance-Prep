@@ -28,7 +28,12 @@ export const marketingData = {
 | Selling | Factory | Existing Product | Profit through Sales Volume |
 | Marketing | Market | Customer Needs | Profit through Satisfaction |
 | Societal | Market/Society | Needs + Welfare | Profit through Social Well-being |`,
-          speedSummary: "Production (Availability), Product (Quality), Selling (Push), Marketing (Satisfaction)."
+          speedSummary: "Production (Availability), Product (Quality), Selling (Push), Marketing (Satisfaction).",
+          examples: [
+            { q: "A sugar manufacturer focuses only on making sugar available in every small shop at the lowest price. Which philosophy is this?", a: "Production Concept." },
+            { q: "A smartphone brand continuously updates its camera and processor every 6 months to stay ahead in quality. Name the philosophy.", a: "Product Concept." },
+            { q: "A company uses aggressive TV ads and door-to-door salesmen to 'push' their vacuum cleaners. Name the philosophy.", a: "Selling Concept." }
+          ]
         }
       },
       {
@@ -47,7 +52,12 @@ export const marketingData = {
   - Primary: Immediate container.
   - Secondary: Additional protection.
   - Transportation: Shipping/Storage.`,
-          speedSummary: "4Ps = Product, Price, Place, Promotion."
+          speedSummary: "4Ps = Product, Price, Place, Promotion.",
+          examples: [
+            { q: "A chocolate brand uses a shiny, air-tight foil to keep the chocolate fresh. What type of packaging is this?", a: "Primary Packaging." },
+            { q: "A company decides to sell its premium watches only through exclusive high-end malls. Which 'P' of marketing is this?", a: "Place (Physical Distribution)." },
+            { q: "A detergent brand offers a '20% extra' pack at the same price. Which 'P' is being adjusted?", a: "Price." }
+          ]
         }
       },
       {
@@ -58,7 +68,13 @@ export const marketingData = {
 2. **Personal Selling**: Oral presentation, personal relationship.
 3. **Sales Promotion**: Short-term incentives (Rebates, Discounts, Lucky draws).
 4. **Public Relations**: Building a positive corporate image.`,
-          speedSummary: "Advertising (Impersonal), Personal Selling (Interactive), Sales Promotion (Short-term incentives)."
+          speedSummary: "Advertising (Impersonal), Personal Selling (Interactive), Sales Promotion (Short-term incentives).",
+          examples: [
+            { q: "A firm sponsors a local cricket tournament to build a positive image. Name the promotion element.", a: "Public Relations (PR)." },
+            { q: "A car showroom representative gives a personal test drive and explains features to a customer. Name the element.", a: "Personal Selling." },
+            { q: "A brand offers a 'Buy 1 Get 1 Free' deal during Diwali. Name the element.", a: "Sales Promotion." },
+            { q: "A company runs a 30-second video ad on YouTube. Name the element.", a: "Advertising." }
+          ]
         }
       }
     ]

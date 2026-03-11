@@ -7,6 +7,46 @@ export const geographyRiversData = {
     subject: "General Knowledge",
     chapter: "Geography: Rivers & Dams",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "river-origins",
+                title: "1. River Origins & Tributaries",
+                content: {
+                    coreConcept: "Rivers are the lifeblood of geography, and knowing their origin (glacier/plateau) and main tributaries is crucial.",
+                    formulaBank: "- Ganga: Gangotri Glacier (Bhagirathi).\n- Brahmaputra: Mansarovar region.\n- Godavari: Trimbakeshwar (Nashik).\n- Narmada: Amarkantak.",
+                    logic: "Trace the flow from source to mouth (delta/lagoon) and identify the largest tributaries.",
+                    traps: "Confusing the origin of Godavari with Krishna (both in Maharashtra).",
+                    examples: [
+                        { q: "Which river is formed by the confluence of Bhagirathi and Alaknanda?", a: "The Ganga (at Devprayag)." },
+                        { q: "Identify the largest tributary of the Ganga.", a: "Yamuna." },
+                        { q: "What is the name of the Brahmaputra in Tibet?", a: "Yarlung Tsangpo." },
+                        { q: "Mnemonic for West-flowing rivers?", a: "Narmada, Tapti, Mahi (No Taxes Monthly)." },
+                        { q: "Which river flows through a rift valley between Vindhya and Satpura?", a: "Narmada." }
+                    ],
+                    speedSummary: "River systems are defined by their source, path, and the tributaries that join them."
+                }
+            },
+            {
+                id: "notable-dams",
+                title: "2. Record-Breaking Dams & Projects",
+                content: {
+                    coreConcept: "Dams are multipurpose projects used for irrigation, power, and flood control.",
+                    formulaBank: "- Tehri: Tallest (Bhagirathi).\n- Hirakud: Longest (Mahanadi).\n- Bhakra Nangal: Gravity Dam (Sutlej).\n- Nagarjuna Sagar: Masonry Dam (Krishna).",
+                    logic: "Associate the record (tallest/longest) with the specific river and state.",
+                    traps: "Mixing up the river for Hirakud (Mahanadi) vs Bhakra (Sutlej).",
+                    examples: [
+                        { q: "Which is the tallest dam in India?", a: "Tehri Dam (Uttarakhand)." },
+                        { q: "On which river is the world's longest dam, Hirakud, built?", a: "Mahanadi (Odisha)." },
+                        { q: "What did Nehru call the Bhakra Nangal Dam?", a: "The 'New Temple of Resurgent India'." },
+                        { q: "Identify the dam built on the Krishna River in Telangana/AP.", a: "Nagarjuna Sagar Dam." },
+                        { q: "Which dam is associated with the Narmada Bachao Andolan?", a: "Sardar Sarovar Dam." }
+                    ],
+                    speedSummary: "Dams are engineering marvels that harness river power for national development."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "gr-bf-001",

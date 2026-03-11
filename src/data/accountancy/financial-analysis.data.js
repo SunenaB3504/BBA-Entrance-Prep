@@ -16,7 +16,8 @@ export const financialAnalysisData = {
           logic: "1. Rearrangement: Simplify data into standard formats.\n2. Comparison: Spotting deviations over time or between firms.\n3. Interpretation: Explaining what the results actually mean for stakeholders.",
           traps: "Trap: Confusing Analysis with Interpretation. Analysis is the method of calculation; Interpretation is the explanation of significance.",
           examples: [
-            { q: "Is analysis an end in itself?", a: "No, it is a means to achieve the end of decision-making." }
+            { q: "Is analysis an end in itself?", a: "No, it is a means to achieve the end of decision-making." },
+            { q: "Which step involves simplifying the complex data in financial statements?", a: "Rearrangement (or Data Preparation)." }
           ],
           speedSummary: "Rearrange, Compare, Analyze, Interpret."
         }
@@ -30,7 +31,8 @@ export const financialAnalysisData = {
           logic: "1. Horizontal (Dynamic): Time-series comparison. Analyzes trends over periods.\n2. Vertical (Static): Cross-sectional. Expresses components as a percentage of a common base.\n3. Inter-firm: Benchmarking against competitors.\n4. Intra-firm: Assessing internal performance changes.",
           traps: "Naming Trap: Horizontal is also called Dynamic; Vertical is also called Static. Don't confuse Inter-firm with Intra-firm.",
           examples: [
-            { q: "Which tool is for Vertical Analysis?", a: "Common Size Statements and Ratios." }
+            { q: "Which tool is for Vertical Analysis?", a: "Common Size Statements and Ratios." },
+            { q: "What is comparison between two or more firms in the same industry called?", a: "Inter-firm Comparison." }
           ],
           speedSummary: "Horizontal = Dynamic; Vertical = Static."
         }
@@ -44,7 +46,8 @@ export const financialAnalysisData = {
           logic: "Horizontal analysis tool. It highlights trends and growth rates in income and assets.",
           traps: "Calculation Trap: Using CY in the denominator of the percentage formula. ALWAYS divide by the Previous Year (Base Year).",
           examples: [
-            { q: "Revenue 5L (PY), 6L (CY). % Change?", a: "(1 / 5) * 100 = 20%." }
+            { q: "Revenue 5L (PY), 6L (CY). % Change?", a: "(1 / 5) * 100 = 20%." },
+            { q: "Which year is taken as the base year in Comparative Statements?", a: "The Previous Year (PY)." }
           ],
           speedSummary: "Abs Change & % Change over time."
         }
@@ -58,7 +61,8 @@ export const financialAnalysisData = {
           logic: "Vertical analysis tool. It allows for comparison of firms of different sizes by normalizing the data to 100%.",
           traps: "Base Trap: Using 'Total Revenue' (including other income) instead of 'Revenue from Operations' for P&L Common Size.",
           examples: [
-            { q: "Individual item / Common Base * 100 = ?", a: "Common Size Percentage." }
+            { q: "Individual item / Common Base * 100 = ?", a: "Common Size Percentage." },
+            { q: "In a Common Size Income Statement, what value is taken as 100%?", a: "Revenue from Operations (Net Sales)." }
           ],
           speedSummary: "Total Assets/Revenue = 100%."
         }
@@ -72,7 +76,8 @@ export const financialAnalysisData = {
           logic: "1. Shareholders: Dividend safety and growth.\n2. Management: Operational efficiency and decision making.\n3. Labour Unions: Ability to pay wages.",
           traps: "Confusion Trap: Lenders care about principal safety (Solvency), while Trade Payables care about immediate cash flow (Liquidity).",
           examples: [
-            { q: "Who is interested in short-term liquidity?", a: "Trade Payables (Creditors)." }
+            { q: "Who is interested in short-term liquidity?", a: "Trade Payables (Creditors)." },
+            { q: "Why are Tax Authorities interested in financial analysis?", a: "To ensure that the firm is paying the correct amount of tax as per the law." }
           ],
           speedSummary: "User needs define analysis focus."
         }

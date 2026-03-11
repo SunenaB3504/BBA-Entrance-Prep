@@ -28,7 +28,12 @@ Colonial rule transformed India into a supplier of raw materials and a market fo
 - **1869**: Suez Canal opening (Direct route to Britain).
 - **1907**: TISCO incorporated.
 - **1921**: Year of Great Divide (Demographic transition).
-          `
+          `,
+          examples: [
+            { q: "What was the 'Drain of Wealth'?", a: "Transfer of India's resources and money to Britain without any proportional economic return." },
+            { q: "Why was 1921 called the 'Year of Great Divide'?", a: "India transitioned from fluctuating/stagnant population to steady population growth." },
+            { q: "British land revenue system in Bengal?", a: "Zamindari System." }
+          ]
         }
       },
       {
@@ -48,7 +53,13 @@ Focused on a "Socialist Pattern of Society" with state-led growth.
 - **Green Revolution**: HYV seeds, irrigation, and fertilisers leading to self-sufficiency.
 - **IPR 1956**: Classified industries into 3 schedules; State held "commanding heights".
 - **Karve Committee (1955)**: Focused on Small Scale Industries (SSI) for rural employment.
-          `
+          `,
+          examples: [
+            { q: "Why was SSI promoted by the Karve Committee?", a: "Because SSI is labor-intensive and helps in decentralizing industry to rural areas." },
+            { q: "Main benefit of the Green Revolution?", a: "Attaining self-sufficiency in food grains and creation of market surplus." },
+            { q: "What is 'Import Substitution'?", a: "A policy of protecting domestic industry by substituting imports with domestic production." },
+            { q: "Land Ceiling objective?", a: "To reduce concentration of land ownership in few hands (Equity)." }
+          ]
         }
       },
       {
@@ -56,7 +67,7 @@ Focused on a "Socialist Pattern of Society" with state-led growth.
         title: "Economic Reforms (LPG) - 1991",
         content: {
           coreConcept: `
-Triggered by a Balance of Payments crisis, high inflation, and fiscal deficit.
+ Triggered by a Balance of Payments crisis, high inflation, and fiscal deficit.
 
 ### LPG Framework
 - **Liberalisation**: Removing License-Permit Raj; RBI as facilitator; Rupee devaluation.
@@ -66,7 +77,12 @@ Triggered by a Balance of Payments crisis, high inflation, and fiscal deficit.
 ### Critical Appraisal
 - **Pros**: High GDP growth, record forex reserves, consumer choice.
 - **Cons**: Jobless growth, neglect of agriculture, growing inequality.
-          `
+          `,
+          examples: [
+            { q: "What is 'Disinvestment'?", a: "Selling a part of government equity in Public Sector Undertakings (PSUs) to the private sector." },
+            { q: "Role of RBI changed from 'Regulator' to?", a: "'Facilitator' of the financial sector." },
+            { q: "Why did India outsource services in the 1990s?", a: "Because of cheap labor and high skill levels in IT/English (e.g., Calling centers)." }
+          ]
         }
       }
     ]

@@ -7,6 +7,46 @@ export const historyFreedomData = {
     subject: "General Knowledge",
     chapter: "Indian Freedom Struggle (1857-1947)",
     examTags: ["CUET", "MH-CET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "freedom-revolts",
+                title: "1. Early Revolts & The 1857 Uprising",
+                content: {
+                    coreConcept: "The struggle for independence began with regional revolts leading up to the great rebellion of 1857.",
+                    formulaBank: "- 1857: First War of Independence.\n- Mangal Pandey: Barrackpore revolt.\n- Rani Lakshmibai: Jhansi.\n- Bahadur Shah Zafar: Last Mughal emperor.",
+                    logic: "Connect the leaders of the 1857 revolt to their specific regions (Jhansi, Kanpur, Lucknow).",
+                    traps: "Assuming 1857 was a unified national struggle (it was mostly limited to North and Central India).",
+                    examples: [
+                        { q: "Who was the first martyr of the 1857 revolt?", a: "Mangal Pandey." },
+                        { q: "Identify the leader of the 1857 revolt in Kanpur.", a: "Nana Saheb." },
+                        { q: "Where did the 1857 revolt actually start?", a: "Meerut." },
+                        { q: "The symbolic head of the 1857 rebellion?", a: "Bahadur Shah Zafar." },
+                        { q: "Term used by British for the 1857 revolt?", a: "The Sepoy Mutiny." }
+                    ],
+                    speedSummary: "The 1857 revolt was the first large-scale challenge to British authority in India."
+                }
+            },
+            {
+                id: "freedom-movements",
+                title: "2. Gandhian Era & Mass Movements",
+                content: {
+                    coreConcept: "The entry of Mahatma Gandhi transformed the freedom struggle into a mass movement for 'Swaraj'.",
+                    formulaBank: "- Non-Cooperation (1920).\n- Civil Disobedience (1930) - Dandi March.\n- Quit India (1942).",
+                    logic: "Associate the year and the specific form of protest (Boycott, Salt Law, Do or Die) with each movement.",
+                    traps: "Confusing the order of movements (NCM came before CDM).",
+                    examples: [
+                        { q: "Which movement started after the Jallianwala Bagh massacre?", a: "Non-Cooperation Movement (1920)." },
+                        { q: "Event that marked the start of the Civil Disobedience Movement?", a: "The Dandi Salt March (1930)." },
+                        { q: "Gandhi's slogan during the Quit India Movement?", a: "Do or Die." },
+                        { q: "Event that led to the withdrawal of Non-Cooperation Movement?", a: "Chauri Chaura incident (1922)." },
+                        { q: "Identify the founder of the 'Azad Hind Fauj'.", a: "Netaji Subhash Chandra Bose (Rash Behari Bose initiated it)." }
+                    ],
+                    speedSummary: "Gandhian movements mobilized millions to demand total independence from British rule."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "hf-bf-001",

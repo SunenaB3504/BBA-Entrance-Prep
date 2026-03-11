@@ -16,7 +16,8 @@ export const financialStatementsData = {
           logic: "1. Recorded Facts: Based on historical data.\n2. Conventions: Follows Prudence and Materiality.\n3. Postulates: Assumes Going Concern and Money Measurement.",
           traps: "Trap: Assuming financial statements show current market values. They don't; they show historical costs.",
           examples: [
-            { q: "Are qualitative factors like management quality recorded?", a: "No, only monetary transactions are recorded." }
+            { q: "Are qualitative factors like management quality recorded?", a: "No, only monetary transactions are recorded." },
+            { q: "Which postulate assumes that the business will continue for an indefinite period?", a: "Going Concern Postulate." }
           ],
           speedSummary: "Formal reports, Historical facts, Accounting rules."
         }
@@ -30,7 +31,8 @@ export const financialStatementsData = {
           logic: "1. Operating Cycle: Time from buying raw materials to receiving cash from sales.\n2. Trading: Held primarily for selling/trading.\n3. 12 Months: Settlement expected within one year.",
           traps: "Trap: If the operating cycle is 15 months and a debtor is due in 14 months, is it current? YES, because it fits the cycle.",
           examples: [
-            { q: "Operating Cycle is 10 months. Debtor due in 11 months. Current?", a: "Yes, because it is within 12 months (standard rule)." }
+            { q: "Operating Cycle is 10 months. Debtor due in 11 months. Current?", a: "Yes, because it is within 12 months (standard rule)." },
+            { q: "Operating Cycle is 18 months. Creditor due in 16 months. Current?", a: "Yes, because it is within the Operating Cycle." }
           ],
           speedSummary: "12m or Operating Cycle = Current."
         }
@@ -44,7 +46,8 @@ export const financialStatementsData = {
           logic: "1. Share Capital: Auth, Issued, Subscribed.\n2. Reserves: Securities Premium, General Reserve, P&L Surplus.\n3. Borrowings: Long-term (Debentures) vs Short-term (Bank Overdraft).",
           traps: "Trap: Showing 'Proposed Dividend' as a current liability. Per AS-4, it is a CONTINGENT LIABILITY shown in Notes.",
           examples: [
-            { q: "Where is 'Loose Tools' shown?", a: "Under Current Assets -> Inventories." }
+            { q: "Where is 'Loose Tools' shown?", a: "Under Current Assets -> Inventories." },
+            { q: "Under which major head is 'Unclaimed Dividend' shown?", a: "Current Liabilities (specifically under Other Current Liabilities)." }
           ],
           speedSummary: "Heads: Funds, App Money, Non-Current, Current."
         }
@@ -52,7 +55,17 @@ export const financialStatementsData = {
       {
         id: "assets-heads",
         title: "4. Assets (Sch III)",
-        content: { coreConcept: "The classification of resources into Non-Current and Current Assets.", formulaBank: "1. Non-Current Assets (PP&E, Intangible) -> 2. Current Assets (Inventory, Receivables, Cash)", logic: "1. PP&E: Tangible assets like Land/Machinery.\n2. Intangible: Goodwill, Patents, Software.\n3. Inventories: Raw materials, WIP, Finished goods, Loose tools.", traps: "Classification Trap: Treating 'Computer Software' as tangible. It is an Intangible Asset.", examples: [{ q: "Head for Work-in-Progress?", a: "Non-Current Assets -> Property, Plant & Equipment -> Capital WIP." }], speedSummary: "Non-Current (Fixed) & Current (Liquid)." }
+        content: {
+          coreConcept: "The classification of resources into Non-Current and Current Assets.",
+          formulaBank: "1. Non-Current Assets (PP&E, Intangible) -> 2. Current Assets (Inventory, Receivables, Cash)",
+          logic: "1. PP&E: Tangible assets like Land/Machinery.\n2. Intangible: Goodwill, Patents, Software.\n3. Inventories: Raw materials, WIP, Finished goods, Loose tools.",
+          traps: "Classification Trap: Treating 'Computer Software' as tangible. It is an Intangible Asset.",
+          examples: [
+            { q: "Head for Work-in-Progress?", a: "Non-Current Assets -> Property, Plant & Equipment -> Capital WIP." },
+            { q: "Where are 'Patents' classified in the Balance Sheet?", a: "Non-Current Assets -> Property, Plant and Equipment and Intangible Assets -> Intangible Assets." }
+          ],
+          speedSummary: "Non-Current (Fixed) & Current (Liquid)."
+        }
       },
       {
         id: "pnl-structure",
@@ -63,7 +76,8 @@ export const financialStatementsData = {
           logic: "1. Revenue from Operations: Main business sales.\n2. Finance Cost: Interest on loans.\n3. Employee Benefit: Salaries, Wages, Staff welfare.",
           traps: "Trap: Including 'Interest Income' under Revenue from Operations. It should be under 'Other Income'.",
           examples: [
-            { q: "Is 'Depreciation' a cash expense?", a: "No, it is a non-cash operating expense." }
+            { q: "Is 'Depreciation' a cash expense?", a: "No, it is a non-cash operating expense." },
+            { q: "Under which head is 'Interest on Bank Overdraft' shown in the P&L?", a: "Finance Costs." }
           ],
           speedSummary: "Income - Expenses = Profit."
         }

@@ -128,25 +128,31 @@ const SubjectDashboard = () => {
                                     </div>
                                 </div>
 
-                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                                     <button
                                         onClick={() => navigate(`/study/${subject.id}/${chapter.id}`)}
-                                        className="flex items-center justify-center gap-2 py-3 px-4 bg-slate-50 text-slate-600 rounded-xl font-bold text-xs hover:bg-slate-100 transition-colors border border-slate-100"
+                                        className="flex items-center justify-center gap-1.5 py-3 px-3 bg-slate-50 text-slate-600 rounded-xl font-bold text-xs hover:bg-slate-100 transition-colors border border-slate-100"
                                     >
                                         📖 STUDY
                                     </button>
                                     <button
                                         onClick={() => navigate(`/flashcards/${subject.id}/${chapter.id}`)}
-                                        className="flex items-center justify-center gap-2 py-3 px-4 bg-blue-50 text-blue-600 rounded-xl font-bold text-xs hover:bg-blue-100 transition-colors border border-blue-100"
+                                        className="flex items-center justify-center gap-1.5 py-3 px-3 bg-blue-50 text-blue-600 rounded-xl font-bold text-xs hover:bg-blue-100 transition-colors border border-blue-100"
                                     >
                                         🎴 CARDS
                                     </button>
                                     <button
                                         onClick={() => navigate(`/quiz/${subject.id}/${chapter.id}`)}
-                                        className="flex items-center justify-center gap-2 py-3 px-4 bg-blue-600 text-white rounded-xl font-bold text-xs hover:bg-blue-700 transition-all shadow-sm shadow-blue-100"
+                                        className="flex items-center justify-center gap-1.5 py-3 px-3 text-white rounded-xl font-bold text-xs hover:opacity-90 transition-all shadow-sm"
                                         style={{ backgroundColor: subject.color }}
                                     >
                                         🎯 QUIZ
+                                    </button>
+                                    <button
+                                        onClick={() => navigate(`/timed-practice/${subject.id}/${chapter.id}`)}
+                                        className="flex items-center justify-center gap-1.5 py-3 px-3 bg-amber-500 text-white rounded-xl font-bold text-xs hover:bg-amber-600 transition-all shadow-sm shadow-amber-100"
+                                    >
+                                        ⏱️ TIMED
                                     </button>
                                 </div>
                             </div>

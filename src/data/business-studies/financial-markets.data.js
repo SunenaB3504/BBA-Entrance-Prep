@@ -19,7 +19,12 @@ export const financialMarketsData = {
 - Price discovery.
 - Providing liquidity to financial assets.
 - Reducing the cost of transactions.`,
-          speedSummary: "Financial Market = Link between Savers and Investors."
+          speedSummary: "Financial Market = Link between Savers and Investors.",
+          examples: [
+            { q: "A family puts their savings into a mutual fund which then invests in a new startup. Which function is this?", a: "Mobilisation of savings and channeling them into productive uses." },
+            { q: "Shares of a company rise from ₹200 to ₹250 because of high demand. Which function is performed?", a: "Price Discovery." },
+            { q: "An investor needs cash urgently and sells his shares on the stock exchange in 5 minutes. Name the function.", a: "Providing Liquidity to financial assets." }
+          ]
         }
       },
       {
@@ -42,7 +47,12 @@ export const financialMarketsData = {
 | Instruments | T-Bills, CP, Call Money | Shares, Debentures |
 | Risk | Low | High |
 | Liquidity | High | Low |`,
-          speedSummary: "Money (Short-term) vs Capital (Long-term) markets."
+          speedSummary: "Money (Short-term) vs Capital (Long-term) markets.",
+          examples: [
+            { q: "The RBI issues a security to help the government raise funds for 91 days. Name the instrument.", a: "Treasury Bill (T-Bill)." },
+            { q: "A blue-chip company needs funds for 3 months to pay for a raw material shipment. Which instrument should it use?", a: "Commercial Paper (CP)." },
+            { q: "A bank borrows funds from another bank for just one day to meet its reserve requirements. Name it.", a: "Call Money." }
+          ]
         }
       },
       {
@@ -56,7 +66,13 @@ export const financialMarketsData = {
 - **Protective Functions**: Prohibiting insider trading, price rigging, and promoting fair practices.
 - **Developmental Functions**: Training intermediaries, conducting research.
 - **Regulatory Functions**: Registration of brokers, conducting audits, and framing rules.`,
-          speedSummary: "SEBI = Regulator (Protective, Developmental, Regulatory roles)."
+          speedSummary: "SEBI = Regulator (Protective, Developmental, Regulatory roles).",
+          examples: [
+            { q: "A company issues shares to the public for the first time. In which market does this happen?", a: "Primary Market (IPO)." },
+            { q: "An investor buys existing shares of Infosys on the National Stock Exchange (NSE). Name the market.", a: "Secondary Market." },
+            { q: "SEBI cancels the license of a broker who was found guilty of cheating clients. Which function is this?", a: "Protective function." },
+            { q: "SEBI conducts a seminar to train stock brokers on new digital rules. Name the function.", a: "Developmental function." }
+          ]
         }
       }
     ]

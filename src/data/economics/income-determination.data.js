@@ -30,7 +30,13 @@ The total value of output produced. AS is identical to **National Income (Y)**. 
 ### Key Identities
 - **APC + APS = 1** (Portion of total income).
 - **MPC + MPS = 1** (Portion of additional income).
-          `
+          `,
+          examples: [
+            { q: "If Income is 1000 and Consumption is 800, what is APC?", a: "0.8 (800/1000)." },
+            { q: "Can APC be greater than 1?", a: "Yes, at low income levels when people consume out of past savings (Dissaving)." },
+            { q: "At break-even point, what is the value of APS?", a: "Zero (as S=0)." },
+            { q: "If MPC is 0.9, what is the value of MPS?", a: "0.1." }
+          ]
         }
       },
       {
@@ -52,13 +58,19 @@ When New Investment (ΔI) is made → Income rises → Consumption rises → New
 ### Range of Multiplier
 - **Minimum k = 1** (when MPC = 0).
 - **Maximum k = ∞** (when MPC = 1).
-          `
+          `,
+          examples: [
+            { q: "If MPS is 0.25, what is the multiplier?", a: "4 (1/0.25)." },
+            { q: "Initial Investment is 100 Crore and MPC is 0.5. Total Income generated?", a: "Multiplier k = 1/(1-0.5) = 2. Total Y = 2 * 100 = 200 Crore." },
+            { q: "Minimum value of the multiplier is?", a: "1 (when the entire additional income is saved)." }
+          ]
         }
       },
       {
         id: "eco-u3-t3",
         title: "Equilibrium and Demand Gaps",
-        content: { coreConcept: `
+        content: {
+          coreConcept: `
 Equilibrium occurs where **AD = AS** or **S = I**.
 
 ### Demand Gaps
@@ -70,7 +82,13 @@ Equilibrium occurs where **AD = AS** or **S = I**.
 ### Full vs Involuntary Unemployment
 - **Full Employment**: Everyone willing and able at current wage finds work (allows frictional/structural).
 - **Involuntary**: Willing to work but can't find jobs due to low demand.
-          ` }
+          `,
+          examples: [
+            { q: "Which gap indicates the presence of involuntary unemployment?", a: "Deflationary Gap." },
+            { q: "Government increases spending (G) to fix which gap?", a: "Deflationary Gap (Deficient Demand)." },
+            { q: "Effect of 'Excess Demand' on price level?", a: "Prices rise (Inflation)." }
+          ]
+        }
       }
     ]
   },

@@ -16,7 +16,9 @@ export const computerizedAccountingData = {
           logic: "1. Speed & Accuracy: Calculations are instant and error-free.\n2. One-time Entry: Recording a journal entry automatically updates ledgers and Balance Sheet.",
           traps: "Trap: CAS does not eliminate the need for accounting knowledge; it only automates the processing.",
           examples: [
-            { q: "What is the primary advantage of CAS?", a: "Real-time reporting and high speed." }
+            { q: "What is the primary advantage of CAS?", a: "Real-time reporting and high speed." },
+            { q: "Which component of CAS refers to the individuals who operate the system?", a: "People (or Humanware)." },
+            { q: "Does CAS provide 'one-time entry' benefits?", a: "Yes, entering a transaction once updates all relevant ledgers and reports automatically." }
           ],
           speedSummary: "Automated processing of financial data."
         }
@@ -30,7 +32,8 @@ export const computerizedAccountingData = {
           logic: "1. Classification: Manual requires manual sorting; CAS uses pre-defined codes.\n2. Storage: Manual needs physical space; CAS uses digital storage/cloud.",
           traps: "Risk Trap: Manual risks physical damage; CAS risks hacking, viruses, and system crashes.",
           examples: [
-            { q: "Which system is more prone to arithmetic errors?", a: "Manual Accounting." }
+            { q: "Which system is more prone to arithmetic errors?", a: "Manual Accounting." },
+            { q: "In which system is the 'trial balance' generated instantly upon data entry?", a: "Computerized Accounting System." }
           ],
           speedSummary: "Electronic speed vs Manual labor."
         }
@@ -44,7 +47,8 @@ export const computerizedAccountingData = {
           logic: "1. Ready-to-use: Cheap, low flexibility (Small shops).\n2. Customized: Mid-cost, moderate flexibility (Mid-sized firms).\n3. Tailor-made: High cost, highly specific (Large corporations).",
           traps: "Selection Trap: Tailor-made software is the most expensive and requires the highest level of training.",
           examples: [
-            { q: "Which software is best for a unique multinational?", a: "Tailor-made software." }
+            { q: "Which software is best for a unique multinational?", a: "Tailor-made software." },
+            { q: "Is 'Ready-to-use' software highly flexible?", a: "No, it has low flexibility as it is designed for general use." }
           ],
           speedSummary: "Off-the-shelf vs Bespoke solutions."
         }
@@ -58,7 +62,9 @@ export const computerizedAccountingData = {
           logic: "1. RDBMS: Organizes data into related tables to avoid redundancy.\n2. SQL: Structured Query Language used to retrieve specific data (e.g., list of debtors > 50k).",
           traps: "Naming Trap: A 'Field' is a column (Attribute), and a 'Record' is a row (Tuple).",
           examples: [
-            { q: "What stores the data in a database?", a: "Tables." }
+            { q: "What stores the data in a database?", a: "Tables." },
+            { q: "In DBMS, what is a 'Field'?", a: "A column in a table that represents a specific attribute of the data." },
+            { q: "What is SQL used for?", a: "Structured Query Language is used to retrieve and manipulate data stored in a database." }
           ],
           speedSummary: "Structured data storage and retrieval."
         }

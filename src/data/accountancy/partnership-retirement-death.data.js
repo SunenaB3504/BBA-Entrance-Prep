@@ -16,7 +16,8 @@ export const partnershipRetirementDeathData = {
           logic: "1. Credit anything that increases their value.\n2. Debit anything that decreases their value (Drawings, Losses).\n3. The final balance is either paid off or transferred to a Loan Account.",
           traps: "Trap: Forgetting to debit 'Existing Goodwill' appearing in the Balance Sheet. It must be written off among ALL partners in Old Ratio.",
           examples: [
-            { q: "Is retiring partner entitled to General Reserve?", a: "Yes, in their old profit sharing ratio." }
+            { q: "Is retiring partner entitled to General Reserve?", a: "Yes, in their old profit sharing ratio." },
+            { q: "Existing Goodwill of ₹10,000 appears in the Balance Sheet on retirement. How is it treated?", a: "It is written off by debiting all partners (including retiring) in their Old Ratio." }
           ],
           speedSummary: "Credit Gains, Debit Losses = Final Dues."
         }
@@ -30,7 +31,8 @@ export const partnershipRetirementDeathData = {
           logic: "1. If new ratio isn't given, assume remaining partners keep their original relative ratio.\n2. Gaining ratio is used to compensate the retiring partner for goodwill.",
           traps: "Trap: If a continuing partner's new share is LESS than their old share, they have SACRIFICED (not gained) and must be credited for goodwill.",
           examples: [
-            { q: "A, B, C (3:2:1). B retires. New ratio of A:C?", a: "3:1 (assume old relative ratio continues)." }
+            { q: "A, B, C (3:2:1). B retires. New ratio of A:C?", a: "3:1 (assume old relative ratio continues)." },
+            { q: "If A and B are partners and A's new share is less than his old share after C's retirement, what does it mean?", a: "It means A has sacrificed, and he should also be compensated for goodwill by the gaining partner." }
           ],
           speedSummary: "Gain = New - Old. Used for Goodwill."
         }
@@ -58,7 +60,8 @@ export const partnershipRetirementDeathData = {
           logic: "1. Transfer capital balance to Loan A/c.\n2. If paid in installments, calculate interest on the UNPAID balance each period.\n3. Section 37: Partner gets 6% interest OR share of profits earned using their capital.",
           traps: "Calculation Trap: Calculating interest for the full year even if an installment was paid mid-way. Interest is only on the outstanding amount.",
           examples: [
-            { q: "Interest rate if deed is silent on loan?", a: "6% per annum." }
+            { q: "Interest rate if deed is silent on loan?", a: "6% per annum." },
+            { q: "A retiring partner's dues are ₹1 Lakh. She opts for Section 37 because the firm is very profitable. What can she claim?", a: "She can claim 6% interest p.a. OR a share of subsequent profits earned using her ₹1 Lakh, whichever is higher." }
           ],
           speedSummary: "No Cash = Loan A/c (6% Int)."
         }
@@ -72,7 +75,8 @@ export const partnershipRetirementDeathData = {
           logic: "1. Used when death occurs mid-year.\n2. Entry: P&L Suspense A/c Dr. To Deceased Partner's Cap A/c.\n3. If PSR of gainers changes, adjust through Gaining Partners' Cap A/cs.",
           traps: "Trap: Applying 'months/12' to the sales-based calculation. Sales till death already accounts for the time period.",
           examples: [
-            { q: "Profit till June 30 (3 months) if annual profit is ₹1.2L and share 1/4?", a: "1,20,000 x 3/12 x 1/4 = ₹7,500." }
+            { q: "Profit till June 30 (3 months) if annual profit is ₹1.2L and share 1/4?", a: "1,20,000 x 3/12 x 1/4 = ₹7,500." },
+            { q: "How is profit till death calculated if last year's sales were ₹10L, profit ₹1L, and sales till death were ₹2L?", a: "10% of ₹2L = ₹20,000 (Firm's profit till death). Deceased partner gets his share of this." }
           ],
           speedSummary: "Profit Share = Time or Turnover basis."
         }

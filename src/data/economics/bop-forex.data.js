@@ -24,7 +24,14 @@ The exchange rate is the price of one currency in terms of another.
 - **Appreciation**: Rise in value of domestic currency (Market forces).
 - **Depreciation**: Fall in value of domestic currency (Market forces).
 - **Devaluation**: Deliberate reduction in value (Government policy - Fixed system).
-          `
+          `,
+          examples: [
+            { q: "If $1 was ₹80 and now is ₹82, what happened to the Rupee?", a: "The Rupee has depreciated (assuming market forces)." },
+            { q: "In which system does the government keep a large forex reserve?", a: "Fixed Exchange Rate System." },
+            { q: "What is 'Dirty Floating'?", a: "Managed floating where the central bank intervenes to influence the exchange rate." },
+            { q: "Decrease in value of domestic currency by govt in fixed system is?", a: "Devaluation." },
+            { q: "Effect of appreciation on exports?", a: "Exports become more expensive and may decrease." }
+          ]
         }
       },
       {
@@ -41,7 +48,14 @@ BoP is a systematic record of all economic transactions with the rest of the wor
 ### Key Concepts
 - **Autonomous Items**: Above-the-line; for profit; independent of BoP.
 - **Accommodating Items**: Below-the-line; to bridge the BoP gap (Reserve changes).
-          `
+          `,
+          examples: [
+            { q: "Is purchase of a building in USA by an Indian a current account item?", a: "No, it is a Capital Account item (Asset creation abroad)." },
+            { q: "Export of software is which type of trade?", a: "Invisible trade (Service)." },
+            { q: "Gift from a relative in London is recorded where?", a: "Current Account -> Unilateral Transfers (Receipt)." },
+            { q: "Which items are called 'Above-the-line'?", a: "Autonomous Items." },
+            { q: "Total Exp - Total Receipts (excluding reserves) gives what?", a: "BoP Deficit/Surplus (Accommodated via reserves)." }
+          ]
         }
       }
     ]

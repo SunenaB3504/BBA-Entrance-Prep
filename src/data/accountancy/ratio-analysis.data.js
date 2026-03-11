@@ -16,7 +16,8 @@ export const ratioAnalysisData = {
           logic: "1. Objectives: Simplify complexity, spot weak spots, and enable comparison.\n2. Comparisons: Inter-firm (Competitors) and Intra-firm (Internal trends).",
           traps: "Trap: Ignoring qualitative factors. Ratios only look at monetary numbers, not staff skills or brand value.",
           examples: [
-            { q: "Is a high ratio always 'good'?", a: "Not necessarily. For example, a very high current ratio might mean idle funds." }
+            { q: "Is a high ratio always 'good'?", a: "Not necessarily. For example, a very high current ratio might mean idle funds." },
+            { q: "What is a ratio expressed as '5 times' known as?", a: "A Turnover Ratio (or Activity Ratio)." }
           ],
           speedSummary: "Math relations for performance evaluation."
         }
@@ -30,7 +31,8 @@ export const ratioAnalysisData = {
           logic: "1. Quick Assets: Current Assets - (Inventory + Prepaid Exp + Advance Tax).\n2. Inventory is excluded as it takes time to sell.",
           traps: "Rule: Loose tools/Stores are excluded from Current Assets for ratio calculation purposes.",
           examples: [
-            { q: "Effect of paying creditors on CR (if 2:1)?", a: "Increase (Num & Den decrease equally)." }
+            { q: "Effect of paying creditors on CR (if 2:1)?", a: "Increase (Num & Den decrease equally)." },
+            { q: "Which current asset is excluded while calculating the Quick Ratio?", a: "Inventory and Prepaid Expenses." }
           ],
           speedSummary: "Current (2:1) & Quick (1:1) capacity."
         }
@@ -44,7 +46,8 @@ export const ratioAnalysisData = {
           logic: "1. Long-term Debt: Borrowings + Provisions.\n2. Capital Employed: Debt + Equity.",
           traps: "PBIT Trap: ROI and Interest Coverage use Profit BEFORE Interest & Tax. Add back tax/interest if PAT is given.",
           examples: [
-            { q: "Transaction reducing Debt-Equity?", a: "Issue of Equity Shares for cash." }
+            { q: "Transaction reducing Debt-Equity?", a: "Issue of Equity Shares for cash." },
+            { q: "What does a high Interest Coverage Ratio indicate?", a: "A high safety margin for the company to pay its interest obligations." }
           ],
           speedSummary: "Long-term buffer and interest safety."
         }
@@ -58,7 +61,8 @@ export const ratioAnalysisData = {
           logic: "1. High Turnover = Efficiency/Fast conversion.\n2. Average Collection Period = 365 / TR Turnover.",
           traps: "Calculation Trap: Use CREDIT Sales for TR Turnover and CREDIT Purchases for TP Turnover.",
           examples: [
-            { q: "Higher inventory turnover significance?", a: "Fast-moving stock, less capital tied up." }
+            { q: "Higher inventory turnover significance?", a: "Fast-moving stock, less capital tied up." },
+            { q: "Which type of sales are used to calculate the Trade Receivables Turnover Ratio?", a: "Net Credit Sales." }
           ],
           speedSummary: "Resource utilization speed in Times."
         }
@@ -72,7 +76,8 @@ export const ratioAnalysisData = {
           logic: "1. Operating Ratio: Cost + Op Exp / Sales. (Lower is better).\n2. Operating Profit Ratio: 100 - Operating Ratio.",
           traps: "Formula Trap: Operating Ratio + Operating Profit Ratio ALWAYS equals 100%.",
           examples: [
-            { q: "Is Net Profit always lower than Gross Profit?", a: "Generally yes, as indirect expenses are deducted." }
+            { q: "Is Net Profit always lower than Gross Profit?", a: "Generally yes, as indirect expenses are deducted." },
+            { q: "If the Operating Ratio is 75%, what is the Operating Profit Ratio?", a: "25% (as their sum is always 100%)." }
           ],
           speedSummary: "Margins and yield on capital."
         }

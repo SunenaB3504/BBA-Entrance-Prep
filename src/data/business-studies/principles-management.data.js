@@ -22,7 +22,12 @@ export const principlesManagementData = {
 5. **Mainly Behavioural**: Aim to influence human behavior.
 6. **Cause & Effect Relationship**: Help predict outcomes.
 7. **Contingent**: Applicability depends on the situation.`,
-          speedSummary: "General, Universal, Flexible, and formed by Practice."
+          speedSummary: "General, Universal, Flexible, and formed by Practice.",
+          examples: [
+            { q: "Can management principles be applied to a government department as well as a private tech firm?", a: "Yes, due to Universal Applicability." },
+            { q: "Why are management principles not called 'rigid' rules like those in Physics?", a: "Because they are General Guidelines that deal with human behavior and must be adapted to situations (Flexible)." },
+            { q: "A manager knows that if he motivates workers, production will increase. Which feature is this?", a: "Cause & Effect Relationship." }
+          ]
         }
       },
       {
@@ -42,7 +47,12 @@ export const principlesManagementData = {
 - **Standardization**: Setting benchmarks.
 - **Work Study**: Time, Motion, Fatigue, and Method studies.
 - **Differential Piece Wage System**: Rewarding efficiency.`,
-          speedSummary: "Taylor = Science, Mental Revolution, and Work Studies."
+          speedSummary: "Taylor = Science, Mental Revolution, and Work Studies.",
+          examples: [
+            { q: "A factory manager calculates the exact time needed for a worker to finish one unit. Which technique is this?", a: "Time Study (part of Scientific Management)." },
+            { q: "Taylor suggests that workers and management should change their thinking and move from competition to cooperation. Name it.", a: "Mental Revolution." },
+            { q: "A worker is paid ₹10 per unit for 100 units, but ₹12 per unit if he produces 120. Name the system.", a: "Differential Piece Wage System." }
+          ]
         }
       },
       {
@@ -65,7 +75,13 @@ export const principlesManagementData = {
 | Meaning | One boss per employee | One head, one plan per unit |
 | Aim | Prevents dual subordination | Prevents overlapping |
 | Impact | Affects individual | Affects entire unit |`,
-          speedSummary: "Fayol = Administrative rules like Scalar Chain and Unity of Command."
+          speedSummary: "Fayol = Administrative rules like Scalar Chain and Unity of Command.",
+          examples: [
+            { q: "An employee receives conflicting orders from two different supervisors. Which principle is violated?", a: "Unity of Command." },
+            { q: "A worker wants to communicate an urgent matter to a peer in another department without going through all managers. He uses a shortcut.", a: "Gang Plank (exception to the Scalar Chain)." },
+            { q: "A manager ensures there is no discrimination based on gender or religion in the office. Name the principle.", a: "Equity." },
+            { q: "In a company, all personal 'I''s are replaced by 'We' in meetings. Which principle is this?", a: "Esprit de Corps (team spirit)." }
+          ]
         }
       }
     ]
