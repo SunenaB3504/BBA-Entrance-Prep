@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { getSubjectById } from '../config/subjects.config';
 import { useAppContext } from '../store/AppContext';
@@ -7,8 +7,22 @@ const SubjectDashboard = () => {
     const { subjectId } = useParams();
     const navigate = useNavigate();
     const { getChapterProgress, getSubjectProgress } = useAppContext();
+    const [animatedProgress, setAnimatedProgress] = useState(0);
 
     const subject = getSubjectById(subjectId);
+
+    // Trigger ring fill animation on mount
+    useEffect(() => {
+        if (subject) {
+            const rawProgress = getSubjectProgress(subject.id, subject.chapters);
+            // reset to 0 if subject changes, then animate up
+            setAnimatedProgress(0);
+            const timer = setTimeout(() => {
+                setAnimatedProgress(rawProgress);
+            }, 50);
+            return () => clearTimeout(timer);
+        }
+    }, [subject, getSubjectProgress]);
 
     if (!subject) {
         return (
@@ -62,14 +76,14 @@ const SubjectDashboard = () => {
                                     <path
                                         className="stroke-blue-600 fill-none transition-all duration-1000 ease-out"
                                         strokeWidth="3"
-                                        strokeDasharray={`${overallProgress}, 100`}
+                                        strokeDasharray={`${animatedProgress}, 100`}
                                         strokeLinecap="round"
                                         d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                                         style={{ stroke: subject.color }}
                                     />
                                 </svg>
                                 <div className="absolute inset-0 flex items-center justify-center text-xs font-bold text-slate-700">
-                                    {overallProgress}%
+                                    {animatedProgress}%
                                 </div>
                             </div>
                             <div>
