@@ -114,19 +114,25 @@ const SubjectDashboard = () => {
                                     </div>
                                 </div>
 
-                                <div className="grid grid-cols-2 gap-3">
+                                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                                     <button
                                         onClick={() => navigate(`/study/${subject.id}/${chapter.id}`)}
                                         className="flex items-center justify-center gap-2 py-3 px-4 bg-slate-50 text-slate-600 rounded-xl font-bold text-xs hover:bg-slate-100 transition-colors border border-slate-100"
                                     >
-                                        📖 STUDY GUIDE
+                                        📖 STUDY
+                                    </button>
+                                    <button
+                                        onClick={() => navigate(`/flashcards/${subject.id}/${chapter.id}`)}
+                                        className="flex items-center justify-center gap-2 py-3 px-4 bg-blue-50 text-blue-600 rounded-xl font-bold text-xs hover:bg-blue-100 transition-colors border border-blue-100"
+                                    >
+                                        🎴 CARDS
                                     </button>
                                     <button
                                         onClick={() => navigate(`/quiz/${subject.id}/${chapter.id}`)}
                                         className="flex items-center justify-center gap-2 py-3 px-4 bg-blue-600 text-white rounded-xl font-bold text-xs hover:bg-blue-700 transition-all shadow-sm shadow-blue-100"
                                         style={{ backgroundColor: subject.color }}
                                     >
-                                        🎯 START QUIZ
+                                        🎯 QUIZ
                                     </button>
                                 </div>
                             </div>

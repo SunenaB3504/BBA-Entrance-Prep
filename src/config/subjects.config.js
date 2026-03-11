@@ -50,16 +50,18 @@ export const SUBJECTS = [
     color: "#9333ea",
     examTags: ["CUET", "MH-CET"],
     chapters: [
-      { id: "consumer-behaviour", name: "Consumer Behaviour & Demand", dataFile: "consumer-behaviour.data" },
-      { id: "production", name: "Production & Costs", dataFile: "production.data" },
-      { id: "revenue-market", name: "Revenue & Market Equilibrium", dataFile: "revenue-market.data" },
-      { id: "market-structures", name: "Market Structures", dataFile: "market-structures.data" },
-      { id: "national-income", name: "National Income & Related Aggregates", dataFile: "national-income.data" },
-      { id: "money-banking", name: "Money & Banking", dataFile: "money-banking.data" },
-      { id: "income-employment", name: "Income & Employment Determination", dataFile: "income-employment.data" },
-      { id: "government-budget", name: "Government Budget & Economy", dataFile: "government-budget.data" },
-      { id: "balance-of-payments", name: "Balance of Payments", dataFile: "balance-of-payments.data" },
-      { id: "index-numbers", name: "Index Numbers", dataFile: "index-numbers.data" }
+      { id: "micro-intro", name: "Unit 9: Introduction to Microeconomics", dataFile: "micro-intro.data", questionCount: 2 },
+      { id: "consumer-behaviour", name: "Unit 10: Consumer Behaviour", dataFile: "consumer-behaviour.data", questionCount: 2 },
+      { id: "producer-supply", name: "Unit 11: Producer Behaviour", dataFile: "producer-supply.data", questionCount: 2 },
+      { id: "market-structures", name: "Unit 12: Market Structures", dataFile: "market-structures.data", questionCount: 2 },
+      { id: "national-income", name: "National Income & Related Aggregates", dataFile: "national-income.data", questionCount: 2 },
+      { id: "money-banking", name: "Money & Banking", dataFile: "money-banking.data", questionCount: 2 },
+      { id: "income-determination", name: "Income & Employment Determination", dataFile: "income-determination.data", questionCount: 2 },
+      { id: "govt-budget", name: "Government Budget & Economy", dataFile: "govt-budget.data", questionCount: 2 },
+      { id: "bop-forex", name: "Balance of Payments & Forex", dataFile: "bop-forex.data", questionCount: 2 },
+      { id: "ied-development", name: "IED: Development Experience (1947-90)", dataFile: "ied-development.data", questionCount: 2 },
+      { id: "ied-challenges", name: "IED: Current Challenges", dataFile: "ied-challenges.data", questionCount: 2 },
+      { id: "ied-comparison", name: "IED: Comparison with Neighbors", dataFile: "ied-comparison.data", questionCount: 2 }
     ]
   },
   {

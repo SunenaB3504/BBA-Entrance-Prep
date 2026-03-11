@@ -34,6 +34,12 @@ const QuizPage = () => {
         selectAnswer, next, submit, progress
     } = engine;
 
+    useEffect(() => {
+        if (window.MathJax) {
+            window.MathJax.typesetPromise();
+        }
+    }, [currentIndex, showExplanation]);
+
     // Handle auto-record and navigation when finished
     useEffect(() => {
         if (isSubmitted && results) {

@@ -6,6 +6,7 @@ import QuizPage from './pages/QuizPage.jsx';
 import MockDashboard from './pages/MockDashboard.jsx';
 import MockExamSimulator from './pages/MockExamSimulator.jsx';
 import StudyGuide from './pages/StudyGuide.jsx';
+import Flashcards from './pages/Flashcards.jsx';
 import { useAppContext } from './store/AppContext.jsx';
 
 const App = () => {
@@ -45,6 +46,7 @@ const App = () => {
                     <Route path="/mocks" element={<MockDashboard />} />
                     <Route path="/mock-exam/:type" element={<MockExamSimulator />} />
                     <Route path="/study/:subjectId/:chapterId" element={<StudyGuide />} />
+                    <Route path="/flashcards/:subjectId/:chapterId" element={<Flashcards />} />
                 </Routes>
             </main>
 

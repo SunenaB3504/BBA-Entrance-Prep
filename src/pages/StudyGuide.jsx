@@ -25,6 +25,10 @@ const StudyGuide = () => {
                 if (data.studyGuide.topics.length > 0) {
                     setActiveTopicId(data.studyGuide.topics[0].id);
                 }
+                // Trigger MathJax typesetting
+                if (window.MathJax) {
+                    setTimeout(() => window.MathJax.typesetPromise(), 500);
+                }
             }
             setIsLoading(false);
         };
