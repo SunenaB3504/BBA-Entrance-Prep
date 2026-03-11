@@ -8,33 +8,45 @@ const MockDashboard = () => {
     const { mockResults } = useAppContext();
 
     const mockTypes = [
-        // ... (rest of the file)
         {
-            id: 'cuet-full',
-            name: 'CUET Full Mock',
-            description: 'Section III: General Test simulator. 60 questions, 60 minutes.',
-            icon: '📜',
-            duration: 60,
-            questionCount: 60,
+            id: 'cuet-bstudies',
+            name: 'Business Studies Mock',
+            description: 'CUET Domain Subject. 50 questions, attempt any 40.',
+            icon: '🏢',
+            duration: 45,
+            questionCount: 50,
+            limit: 40,
             color: 'from-blue-500 to-indigo-600'
         },
         {
-            id: 'mhcet-full',
-            name: 'MH-CET Full Mock',
-            description: 'Comprehensive speed-drill simulator. 200 questions, 150 minutes.',
-            icon: '⚡',
-            duration: 150,
-            questionCount: 200,
-            color: 'from-orange-500 to-red-600'
+            id: 'cuet-english',
+            name: 'English Language Mock',
+            description: 'CUET Section IA. 50 questions, attempt any 40.',
+            icon: '📝',
+            duration: 45,
+            questionCount: 50,
+            limit: 40,
+            color: 'from-violet-500 to-purple-600'
         },
         {
-            id: 'rapid-fire',
-            name: 'Rapid Fire Drill',
-            description: 'High-speed practice on mixed GAT topics. 30 questions, 15 minutes.',
-            icon: '🔥',
-            duration: 15,
-            questionCount: 30,
-            color: 'from-purple-500 to-pink-600'
+            id: 'cuet-general',
+            name: 'CUET General Test',
+            description: 'Section III simulator. 60 questions, attempt any 50.',
+            icon: '📜',
+            duration: 60,
+            questionCount: 60,
+            limit: 50,
+            color: 'from-teal-500 to-emerald-600'
+        },
+        {
+            id: 'mhcet-full',
+            name: 'MH-CET BBA Full Mock',
+            description: 'Comprehensive speed-drill simulator. 100 questions, no negative marking.',
+            icon: '⚡',
+            duration: 90,
+            questionCount: 100,
+            limit: 100,
+            color: 'from-orange-500 to-red-600'
         }
     ];
 

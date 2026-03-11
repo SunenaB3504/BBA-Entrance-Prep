@@ -15,11 +15,46 @@ const MockExamSimulator = () => {
     const [showResults, setShowResults] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
 
-    const config = {
-        'cuet-full': { name: 'CUET General Test Mock', duration: 60 * 60, total: 60, limit: 40 },
-        'mhcet-full': { name: 'MH-CET Full Mock', duration: 150 * 60, total: 200 },
-        'rapid-fire': { name: 'Rapid Fire Drill', duration: 15 * 60, total: 30 }
-    }[type] || { name: 'Mock Test', duration: 30 * 60, total: 30 };
+    const examConfigs = {
+        'cuet-bstudies': { 
+            name: 'Business Studies Mock', 
+            duration: 45 * 60, total: 50, limit: 40,
+            correctMark: 5, penaltyMark: -1,
+            sources: [
+                { folder: 'business-studies', files: ['nature-management', 'principles-management', 'business-environment', 'planning', 'organising', 'staffing', 'directing', 'controlling', 'financial-management', 'financial-markets', 'marketing', 'consumer-protection']}
+            ]
+        },
+        'cuet-english': { 
+            name: 'English Language Mock', 
+            duration: 45 * 60, total: 50, limit: 40,
+            correctMark: 5, penaltyMark: -1,
+            sources: [
+                { folder: 'english', files: ['comprehension', 'grammar', 'vocabulary', 'literature-poetry', 'writing-skills', 'reading-strategies'] }
+            ]
+        },
+        'cuet-general': { 
+            name: 'CUET General Test Mock', 
+            duration: 60 * 60, total: 60, limit: 50,
+            correctMark: 5, penaltyMark: -1,
+            sources: [
+                { folder: 'general-aptitude', files: ['quantitative', 'logical-reasoning'] },
+                { folder: 'gk-current-affairs', files: ['general-knowledge', 'general-science', 'current-affairs'] }
+            ]
+        },
+        'mhcet-full': { 
+            name: 'MH-CET BBA Full Mock', 
+            duration: 90 * 60, total: 100, limit: 100,
+            correctMark: 1, penaltyMark: 0,
+            sources: [
+                 { folder: 'english', files: ['grammar', 'vocabulary', 'writing-skills', 'comprehension'] },
+                 { folder: 'reasoning', files: ['logic-statement', 'series-number', 'relations-direction', 'coding-letter-shift'] },
+                 { folder: 'gk-current-affairs', files: ['general-knowledge', 'current-affairs'] },
+                 { folder: 'computer-awareness', files: ['hardware', 'software-and-os', 'internet-and-networking', 'cybersecurity', 'number-systems'] }
+            ]
+        }
+    };
+
+    const config = examConfigs[type] || examConfigs['cuet-general'];
 
     useEffect(() => {
         loadMockQuestions();
@@ -38,15 +73,19 @@ const MockExamSimulator = () => {
     const loadMockQuestions = async () => {
         setIsLoading(true);
         try {
-            const subjects = ['quantitative', 'logical-reasoning', 'general-knowledge', 'general-science'];
             const allData = [];
 
-            for (const sub of subjects) {
-                const module = await import(`../data/general-aptitude/${sub}.data.js`);
-                const exportName = sub.replace(/-([a-z])/g, g => g[1].toUpperCase()) + "Data";
-                const data = module[exportName];
-                if (data && data.questions) {
-                    allData.push(...data.questions);
+            for (const source of config.sources) {
+                for (const file of source.files) {
+                    try {
+                        const module = await import(`../data/${source.folder}/${file}.data.js`);
+                        const data = Object.values(module)[0];
+                        if (data && data.questions) {
+                            allData.push(...data.questions);
+                        }
+                    } catch(err) {
+                        console.warn(`Could not load ${source.folder}/${file}`, err);
+                    }
                 }
             }
 
@@ -92,23 +131,24 @@ const MockExamSimulator = () => {
 
         const score = questions.reduce((acc, q, idx) => {
             if (answers[idx] === undefined) return acc;
-            return acc + (answers[idx] === q.correct ? 5 : -1);
+            return acc + (answers[idx] === q.correct ? config.correctMark : config.penaltyMark);
         }, 0);
 
         const totalAnswered = Object.keys(answers).length;
         const accuracy = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+        const totalPossible = (config.limit ? config.limit : config.total) * config.correctMark;
 
         const result = {
             type: config.name,
             date: new Date().toISOString(),
             score: score,
-            totalPossible: questions.length * 5,
+            totalPossible: totalPossible,
             accuracy: accuracy,
             duration: config.duration - timeLeft
         };
 
         recordMockResult(result);
-        setShowResults(true);
+        setShowResults(result);
     };
 
     if (isLoading) return <div className="h-screen flex items-center justify-center text-slate-400">Loading Exam Engine...</div>;
@@ -124,11 +164,11 @@ const MockExamSimulator = () => {
                     <div className="grid grid-cols-2 gap-4 mb-8">
                         <div className="bg-slate-50 p-4 rounded-2xl">
                             <div className="text-xs font-bold text-slate-400 uppercase mb-1">Score</div>
-                            <div className="text-2xl font-bold text-blue-600">{Object.keys(answers).length > 0 ? questions.reduce((acc, q, idx) => (answers[idx] === q.correct ? acc + 5 : (answers[idx] === undefined ? acc : acc - 1)), 0) : 0}</div>
+                            <div className="text-2xl font-bold text-blue-600">{showResults.score} <span className="text-sm font-medium text-slate-400">/ {showResults.totalPossible}</span></div>
                         </div>
                         <div className="bg-slate-50 p-4 rounded-2xl">
                             <div className="text-xs font-bold text-slate-400 uppercase mb-1">Accuracy</div>
-                            <div className="text-2xl font-bold text-green-600">{Math.round((questions.reduce((acc, q, idx) => acc + (answers[idx] === q.correct ? 1 : 0), 0) / (Object.keys(answers).length || 1)) * 100)}%</div>
+                            <div className="text-2xl font-bold text-green-600">{showResults.accuracy}%</div>
                         </div>
                     </div>
 
@@ -237,10 +277,10 @@ const MockExamSimulator = () => {
                     <div className="mt-12 p-6 bg-white rounded-2xl border border-slate-200">
                         <h4 className="font-bold text-slate-900 mb-2">Instructions</h4>
                         <ul className="text-xs text-slate-500 space-y-2">
-                            <li>• Correct: +5 Points</li>
-                            <li>• Wrong: -1 Point</li>
+                            <li>• Correct: +{config.correctMark} Points</li>
+                            <li>• Wrong: {config.penaltyMark} Point(s)</li>
                             <li>• Unattempted: 0 Points</li>
-                            {config.limit && <li>• Limit: Only {config.limit} attempts allowed</li>}
+                            {config.limit && config.limit < config.total && <li>• Limit: Only {config.limit} attempts allowed</li>}
                         </ul>
                     </div>
                 </div>
