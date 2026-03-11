@@ -13,7 +13,16 @@ export const arrangementsFloorData = {
           logic: "1. Create a table with Floor numbers 1 to n.\n2. Fill in 'definite' clues (e.g., 'X lives on the 3rd floor').\n3. Use 'connecting' clues to link floors with attributes.",
           traps: "Odd/Even Trap: 'A lives on an even-numbered floor' - check how many even floors exist first.\nTop/Bottom confusion: Always read if 1 is top or bottom.",
           examples: [
-            { q: "7 people live on 7 floors. A lives on 4. B lives 2 floors above A. Which floor is B on?", a: "Floor 6." }
+            { q: "7 people live on 7 floors. A lives on 4. B lives 2 floors above A. Which floor is B on?", a: "Floor 6." },
+            { q: "8 floors. P is on 1, Q is on 8. How many floors between them?", a: "6 floors (8 - 1 - 1)." },
+            { q: "A lives on an even floor. B lives immediately above A. Is B on an odd or even floor?", a: "Odd floor (Even + 1 = Odd)." },
+            { q: "5 floors. M is below N. O is below M. Who is on the top floor if N is not at the extremes?", a: "N or someone else? If N is not extreme, N is 2, 3, or 4. If N=4, M=3, O=2 or 1. Top is 5." },
+            { q: "X lives on the floor exactly between 2 and 6. Floor?", a: "Floor 4." },
+            { q: "A building has 10 floors. Ground is 0, top is 9. If someone is on '3rd floor', usually which index is it?", a: "3 (but check if 1st is Ground or Level 1)." },
+            { q: "Gap of 3 floors between 1 and X. X is?", a: "Floor 5 (1 + 3 + 1)." },
+            { q: "P lives 3 floors below the top (8). Floor?", a: "Floor 5." },
+            { q: "Anil, Sunil, Binil. Sunil is between. Binil is on 1. Anil?", a: "Floor 3." },
+            { q: "Floor 4 is empty. A is above, B is below. Are they neighbors?", a: "No, neighbor means immediately adjacent without gaps." }
           ],
           speedSummary: "Always build the skeleton (Floor 1-7) before reading descriptive clues."
         }

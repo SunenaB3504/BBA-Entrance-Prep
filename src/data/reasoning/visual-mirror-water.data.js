@@ -13,7 +13,16 @@ export const visualMirrorWaterData = {
           logic: "1. Focus on one small part of the image (e.g., a dot or a line).\n2. Reflect that part alone and eliminate wrong options.\n3. The part 'closest' to the mirror line remains 'closest' in the reflection.",
           traps: "Symmetric characters: Letters like O, H, I look same in mirror. Non-vocalic characters like J, L are the keys to elimination.",
           examples: [
-            { q: "Mirror image of 'RED'?", a: "D (reversed) E (reversed) R (reversed) - read from right to left." }
+            { q: "Mirror image of 'RED'?", a: "D (reversed) E (reversed) R (reversed) - read from right to left." },
+            { q: "Mirror image of 'AMBULANCE'?", a: "ECNALUBMA (with each letter mirrored)." },
+            { q: "Water image of 'MOM'?", a: "WOW (inverted M is W)." },
+            { q: "Clock shows 9:00. Mirror image?", a: "3:00." },
+            { q: "A dot is in the top-right corner. Mirror image?", a: "Top-left corner." },
+            { q: "A triangle points Up. Water image?", a: "Points Down." },
+            { q: "Mirror image of '#'?", a: "# (Symmetric)." },
+            { q: "Which letter looks same in mirror and water?", a: "H, I, O, X." },
+            { q: "Water image of '8'?", a: "8 (Symmetric along horizontal axes... check font, usually same)." },
+            { q: "Mirror line is below the object. Same as?", a: "Water image." }
           ],
           speedSummary: "Mirror = Side flip. Water = Upside down."
         }

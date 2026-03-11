@@ -14,7 +14,15 @@ export const seriesAlphabetData = {
           traps: "Circular Alphabet: Thinking the series ends at Z. It restarts (X, Y, Z, A, B...).\nBackward Jumps: -2, -3 shifts can be tricky near 'A'.",
           examples: [
             { q: "A, C, E, G, ?", a: "I (Positions 1, 3, 5, 7 -> 9)." },
-            { q: "Z, X, V, T, ?", a: "R (Positions 26, 24, 22, 20 -> 18)." }
+            { q: "Z, X, V, T, ?", a: "R (Positions 26, 24, 22, 20 -> 18)." },
+            { q: "A, D, G, J, ?", a: "M (+3 shift: 1, 4, 7, 10, 13)." },
+            { q: "B, E, I, N, ?", a: "T (Gap increases: +3, +4, +5, +6)." },
+            { q: "AZ, BY, CX, ?", a: "DW (Reverse pairs)." },
+            { q: "ABC, PQR, DEF, ?", a: "STU (Alternating groups)." },
+            { q: "Z, W, S, N, ?", a: "H (Gap increases: -3, -4, -5, -6)." },
+            { q: "M, N, O, L, P, K, ?", a: "Q (Alternating: M-N-O skip L... wait. M(+1)O(+1)Q and N(-2)L(-1)K. Logic: M,O,Q and N,L,K)." },
+            { q: "Y, V, S, P, ?", a: "M (-3 shift)." },
+            { q: "D, H, L, P, ?", a: "T (+4 shift)." }
           ],
           speedSummary: "Always write A-Z with numbers 1-26 on your rough sheet immediately."
         }

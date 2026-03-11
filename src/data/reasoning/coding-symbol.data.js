@@ -13,7 +13,16 @@ export const codingSymbolData = {
           logic: "1. Find the common letters in multiple given words to identify their symbols.\n2. Ensure the mapping is consistent across all examples given.",
           traps: "Complex rules: Sometimes the symbol represents the 'number of vowels' rather than the letter itself.\nPositional symbols: The symbol for 'A' might change if it's at the start or end of a word.",
           examples: [
-            { q: "If STAR = $*#@ and RATE = #@%$ , what is TEARS?", a: "%#@*$ (By direct substitution)." }
+            { q: "If STAR = $*#@ and RATE = #@%$ , what is TEARS?", a: "%#@*$ (By direct substitution)." },
+            { q: "If L = 1, I = 2, V = 3, E = 4, what is LIVE?", a: "1234." },
+            { q: "If RED = &#$, BLUE = %?*!, what is RULE?", a: "&?*! (R=&, U=?, L=*, E=!)." },
+            { q: "If A=1, B=2, C=3, what is CAB?", a: "312." },
+            { q: "If HELLO = 12334, what is OLEH?", a: "4321." },
+            { q: "If DOG = @#$, CAT = %&* , what is DOT?", a: "@#*." },
+            { q: "If + means x, what is 2 + 3?", a: "6." },
+            { q: "If P = 16, Q = 17, what is R?", a: "18." },
+            { q: "If SUN = 543, MOON = 1227, what is SON?", a: "527." },
+            { q: "If PINK = 9, what is BLUE?", a: "4 (Number of letters)." }
           ],
           speedSummary: "Common letters are your best clues for unlocking symbol codes."
         }

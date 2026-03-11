@@ -13,7 +13,16 @@ export const relationsBloodData = {
           logic: "1. Start drawing the tree from the oldest generation mentioned.\n2. Use unique symbols for gender to avoid confusion.\n3. Read 'Only Son' carefully - it means no other brothers, but sisters could exist.",
           traps: "Gender assumption: Names like 'Shanti' or 'Kiran' do not guarantee gender. Only use clues like 'He', 'She', 'Mother', 'Father'.",
           examples: [
-            { q: "Pointing to a man, Neha said, 'His mother is the only daughter of my father'. How is Neha related to the man?", a: "Mother. (Only daughter of Neha's father = Neha herself)." }
+            { q: "Pointing to a man, Neha said, 'His mother is the only daughter of my father'. How is Neha related to the man?", a: "Mother. (Only daughter of Neha's father = Neha herself)." },
+            { q: "A is the brother of B. B is the son of C. How is C related to A?", a: "Father or Mother." },
+            { q: "Looking at a portrait, X said, 'He is my father's only son's son'. Who is in the portrait?", a: "X's son (Only son of X's father is X himself)." },
+            { q: "M is the sister of N. N is the daughter of O. P is the husband of O. How is P related to M?", a: "Father." },
+            { q: "R is the son of S. S is the brother of T. U is the wife of T. How is S related to U?", a: "Brother-in-law." },
+            { q: "A man has 3 sons and each son has 1 sister. How many children in total?", a: "4 children (3 boys + 1 common girl)." },
+            { q: "D's father is the husband of E's mother. How are D and E related?", a: "Siblings." },
+            { q: "John is the father of Sam, but Sam is not John's son. Relation?", a: "Sam is the daughter." },
+            { q: "F is the grandmother of G. H is the son of F. How is G related to H?", a: "Son or Daughter (or Niece/Nephew depending on H's siblings... usually Son/Daughter)." },
+            { q: "A is B's wife. C is A's brother. How is C related to B?", a: "Brother-in-law." }
           ],
           speedSummary: "Always assume yourself as the speaker if the question starts with 'Pointing to...'"
         }

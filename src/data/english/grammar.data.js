@@ -17,6 +17,52 @@ export const grammarData = {
     subject: "English",
     chapter: "Grammar & Usage",
     examTags: ["MH-CET", "CUET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "verb-tenses",
+                title: "1. Tenses & Time Frames",
+                content: {
+                    coreConcept: "Tenses indicate the time of action. Three main categories: Present, Past, and Future, each divided into Simple, Continuous, Perfect, and Perfect Continuous.",
+                    formulaBank: "- Present Perfect Continuous: Subject + has/have + been + Verb(-ing).\n- Future Perfect: Subject + will have + Past Participle.",
+                    logic: "1. Identify 'Key Time Markers' (Since, For, by the time, yet, already).\n2. If 'Since' is used for a started action, use Perfect Continuous.",
+                    traps: "The 'Since' vs 'For' trap: Since is for a point in time, For is for a duration.",
+                    examples: [
+                        { q: "By the time we arrive, they ______ (leave).", a: "will have left." }
+                    ],
+                    speedSummary: "Look for 'By the time' -> hint for Perfect Tense."
+                }
+            },
+            {
+                id: "sv-agreement",
+                title: "2. Subject-Verb Agreement",
+                content: {
+                    coreConcept: "The verb must match the subject in number (Singular vs Plural).",
+                    formulaBank: "- Neither/Nor & Either/Or: Verb agrees with the NEAREST subject.\n- One of the + Plural Noun + Singular Verb.",
+                    logic: "Identify the REAL subject. Often buried in phrases like 'The quality of the chairs... (Quality is subject).'",
+                    traps: "Subject separation: Phrases like 'as well as', 'along with', 'in addition to' DO NOT change the subject number.",
+                    examples: [
+                        { q: "The group of students _____ (is/are) coming.", a: "is ('group' is singular)." }
+                    ],
+                    speedSummary: "Ignore 'of...' phrases when picking the verb."
+                }
+            },
+            {
+                id: "articles-preps",
+                title: "3. Articles & Prepositions",
+                content: {
+                    coreConcept: "Articles (A, An, The) define nouns. Prepositions show relationships.",
+                    formulaBank: "- An: Before vowel SOUNDS (An honest man).\n- Committed to: Fixed preposition.",
+                    logic: "For articles, focus on the sound, not the spelling. For prepositions, memorize fixed pairings (Accused of, Prohibited from).",
+                    traps: "Silent letters in articles (An HR manager, An MVP).",
+                    examples: [
+                        { q: "He is _____ European.", a: "a (starts with 'Y' sound)." }
+                    ],
+                    speedSummary: "Sound check for A/An; Logic check for The."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "gram-fc-001",

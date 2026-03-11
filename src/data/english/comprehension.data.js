@@ -10,7 +10,39 @@
 export const comprehensionData = {
     subject: "English",
     chapter: "Reading Comprehension",
-    examTags: ["MH-CET"],
+    examTags: ["MH-CET", "CUET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "reading-strategies",
+                title: "1. Strategic Reading Techniques",
+                content: {
+                    coreConcept: "Reading Comprehension tests your ability to extract meaning, identify main ideas, and infer logical conclusions from a text.",
+                    formulaBank: "- Skimming: Fast reading to get the gist (main idea).\n- Scanning: Looking for specific keywords or data points.\n- Critical Reading: Understanding the author's tone and perspective.",
+                    logic: "1. Read questions FIRST: This gives you 'mental hooks' to look for while reading.\n2. Map the passage: Mark where different ideas (History, Science, Opinion) are discussed.",
+                    traps: "The 'Outside Knowledge' trap: Choosing an answer that is true in real life but NOT mentioned in the passage.",
+                    examples: [
+                        { q: "What should you do if a word is unfamiliar?", a: "Guess meaning from the surrounding context (Sentential clues)." }
+                    ],
+                    speedSummary: "Questions -> Skim -> Scan -> Solve."
+                }
+            },
+            {
+                id: "question-types",
+                title: "2. Decoding Question Types",
+                content: {
+                    coreConcept: "Different questions require different approaches. Facts are found directly; Inferences require 'reading between the lines'.",
+                    formulaBank: "- Main Idea: What is the passage primarily about?\n- Inference: What can be logically concluded (but not stated)?\n- Vocabulary-in-context: What does word X mean in line Y?",
+                    logic: "For 'Main Idea' questions, focus on the first and last paragraphs. For 'Inference' questions, eliminate options that are too extreme (Always, Never).",
+                    traps: "Extreme Options: Choosing answers with absolute words like 'solely' or 'entirely'.",
+                    examples: [
+                        { q: "Author's Tone: 'The policy is a disaster for the poor'.", a: "Critical / Cynical." }
+                    ],
+                    speedSummary: "Facts are stated; Inferences are implied."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "comp-fc-001",

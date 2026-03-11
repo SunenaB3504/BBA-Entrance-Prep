@@ -13,7 +13,16 @@ export const codingLetterShiftData = {
           logic: "1. Write the original word and the coded word one below the other.\n2. Calculate the numerical gap for each letter pair.\n3. Verify the pattern on at least 3 letters before applying to the answer.",
           traps: "Opposite Letters: Sometimes 'coding' is just replacing A with Z, B with Y.\nMid-word Reversal: The first half of the word might shift +1, while the second half shifts -1.",
           examples: [
-            { q: "If CAT is coded as DBU, what is DOG?", a: "EPH (+1 shift to each letter)." }
+            { q: "If CAT is coded as DBU, what is DOG?", a: "EPH (+1 shift to each letter)." },
+            { q: "In a code, APPLE is BQQMF. What is ORANGE?", a: "PSBOHF (+1 shift)." },
+            { q: "If COLD is DPME, what is HOT?", a: "IPU (+1)." },
+            { q: "If NO is PQ, what is YES?", a: "AGU (+2 shift)." },
+            { q: "If KING is JKMF, what is QUEEN?", a: "PTDDM (-1 shift)." },
+            { q: "If BOX is CPZ, what is ΤΟΥ?", a: "UPZ (+1 shift)." },
+            { q: "If FAST is GBTU, what is SLOW?", a: "TMPX (+1)." },
+            { q: "If A = 2, B = 3, C = 4, what is DOG?", a: "5+16+8 = 29 (Rank + 1)." },
+            { q: "If RED is 27, what is BLUE?", a: "2+12+21+5 = 40 (Sum of positional values)." },
+            { q: "If PEN is NEP, what is PAPER?", a: "REPAP (Reversed word)." }
           ],
           speedSummary: "Always check the first and last letters first to quickly identify simple shifts."
         }

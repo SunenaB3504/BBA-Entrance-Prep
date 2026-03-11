@@ -13,7 +13,16 @@ export const seriesAlphanumericData = {
           logic: "1. Identify if the letter sequence is independent of the number sequence.\n2. Check for relationships between the letter and the adjacent number (e.g., A1, B2).",
           traps: "Mixing the rules: Applying a letter shift rule to a number sequence.\nIgnoring symbols: Symbols often mark the start of a repeating pattern block.",
           examples: [
-            { q: "A1, C3, E5, ?", a: "G7 (Letter shift +2, Number +2 matching letter position)." }
+            { q: "A1, C3, E5, ?", a: "G7 (Letter shift +2, Number +2 matching letter position)." },
+            { q: "2Z, 4X, 6V, ?", a: "8T (Number +2, Letter -2)." },
+            { q: "B2, D4, F6, ?", a: "H8 (Even series)." },
+            { q: "P15, R17, T19, ?", a: "V21 (Letter +2, Number +2)." },
+            { q: "1A2, 3C4, 5E6, ?", a: "7G8 (Odd Letter Odd)." },
+            { q: "M13, K11, I9, ?", a: "G7 (Backward shift matching alphabet rank)." },
+            { q: "Z26, Y25, X24, ?", a: "W23 (Descending rank)." },
+            { q: "A-1, B-4, C-9, ?", a: "D-16 (Letter +1, Number = Squares)." },
+            { q: "1BC, 2DE, 3FG, ?", a: "4HI (Number +1, Letter pairs)." },
+            { q: "QA, RB, SC, ?", a: "TD (First letter +1, Second letter +1)." }
           ],
           speedSummary: "Watch for repeating blocks (e.g., A1B, A2B, A3B)."
         }

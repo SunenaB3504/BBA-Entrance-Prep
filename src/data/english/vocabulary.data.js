@@ -25,6 +25,38 @@ export const vocabularyData = {
     subject: "English",
     chapter: "Vocabulary",
     examTags: ["MH-CET", "CUET"],
+    studyGuide: {
+        topics: [
+            {
+                id: "word-relationships",
+                title: "1. Synonyms & Antonyms",
+                content: {
+                    coreConcept: "Vocabulary testing focuses on your understanding of words in isolation and in context. Synonyms are words with similar meanings; Antonyms are opposites.",
+                    formulaBank: "- Root Words: 'Bene' (Good), 'Mal' (Bad), 'Chron' (Time).\n- Prefixes/Suffixes: 'Pre' (Before), 'Post' (After).",
+                    logic: "1. Elimination: If three options are synonyms, the fourth is likely the answer (if looking for an antonym).\n2. Tone Check: Is the word positive, negative, or neutral?",
+                    traps: "High-frequency trap: Choosing a word that sounds similar but has a different meaning (e.g., Affect vs Effect).",
+                    examples: [
+                        { q: "Synonym of 'Ephemeral'?", a: "Short-lived / Transient." }
+                    ],
+                    speedSummary: "Root word analysis is the fastest way to decode unfamiliar words."
+                }
+            },
+            {
+                id: "idioms-phrases",
+                title: "2. Idioms & Verbal Phrases",
+                content: {
+                    coreConcept: "Idioms are expressions where the meaning is not deducible from the individual words (e.g., 'Bite the bullet').",
+                    formulaBank: "- Piece of cake: Very easy.\n- Break the ice: To initiate a conversation.\n- Burn the midnight oil: Work late into the night.",
+                    logic: "Context is king. If you don't know the idiom, read the whole sentence to guess the 'flavor' of the expression.",
+                    traps: "Literal translation: Interpreting 'Kick the bucket' as literally kicking a bucket.",
+                    examples: [
+                        { q: "Meaning of 'Cold shoulder'?", a: "To ignore someone intentionally." }
+                    ],
+                    speedSummary: "Idioms usually have a colorful, non-literal meaning."
+                }
+            }
+        ]
+    },
     flashcards: [
         {
             id: "vocab-fc-001",

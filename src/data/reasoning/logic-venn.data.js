@@ -13,7 +13,16 @@ export const logicVennData = {
           logic: "1. Identify the relationship: Is one group a proper subset of another?\n2. Use the 'Universal' group as the largest circle if applicable.",
           traps: "Common sense vs Statement: Sometimes the groups overlap in reality but the question implies they are disjoint (or vice versa).",
           examples: [
-            { q: "Represent: India, Delhi, Asia.", a: "Three concentric circles (Delhi inside India, India inside Asia)." }
+            { q: "Represent: India, Delhi, Asia.", a: "Three concentric circles (Delhi inside India, India inside Asia)." },
+            { q: "Represent: Animals, Dogs, Cats.", a: "Two separate circles (Dogs, Cats) inside one large circle (Animals)." },
+            { q: "Represent: Doctors, Teachers, Men.", a: "Three overlapping circles (A man can be both or neither)." },
+            { q: "Represent: Seconds, Minutes, Hours.", a: "Concentric circles." },
+            { q: "Represent: Fruit, Apple, Vegetable.", a: "Apple inside Fruit. Vegetable separate." },
+            { q: "Represent: Musicians, Singers, Violinsts.", a: "Concentric? Violinists are musicians, singers are musicians. But Violinists can be Singers." },
+            { q: "Represent: Earth, Planets, Solar System.", a: "Concentric circles." },
+            { q: "Represent: Gold, Silver, Metals.", a: "Gold and Silver separate inside Metals." },
+            { q: "Represent: Furniture, Table, Chair.", a: "Table and Chair separate inside Furniture." },
+            { q: "Represent: Birds, Ostrich, Bat.", a: "Ostrich inside Birds. Bat separate (Mammal)." }
           ],
           speedSummary: "Concentric = Subset. Overlap = Some commonality. Separated = No relation."
         }

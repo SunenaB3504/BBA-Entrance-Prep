@@ -13,7 +13,16 @@ export const relationsDirectionData = {
           logic: "1. Draw a small compass on your rough sheet.\n2. Always start from a fixed 'Point A'.\n3. Remember: Turning RIGHT while facing South takes you WEST.",
           traps: "The Final Direction vs Direction from Start: 'Which way is he facing now?' vs 'In which direction is he from the starting point?' - READ CAREFULLY.\nRotation: 90 degrees vs 45 degrees turns.",
           examples: [
-            { q: "A man walks 4km North, then 3km East. How far is he from the start?", a: "5km (√(4² + 3²) = 5)." }
+            { q: "A man walks 4km North, then 3km East. How far is he from the start?", a: "5km (√(4² + 3²) = 5)." },
+            { q: "You face North, turn 180 degrees. Which way do you face?", a: "South." },
+            { q: "Facing East, you turn left 90 deg. Direction?", a: "North." },
+            { q: "Go 10m North, 10m West, 10m South. Where are you relative to start?", a: "10m West." },
+            { q: "Clock shows 3:00. Minute hand points North. Hour hand point?", a: "East." },
+            { q: "Sun rises in the East. You stand facing it. Your shadow is in?", a: "West." },
+            { q: "North-West is between which two directions?", a: "North and West." },
+            { q: "A man goes 5km West, then turns right (90 deg). Which way is he going?", a: "North." },
+            { q: "Two points A and B. B is North of A. C is East of B. Direction of A from C?", a: "South-West." },
+            { q: "Walk 12m South, 5m East. Shortest distance?", a: "13m (Pythagoras: 5-12-13 triplet)." }
           ],
           speedSummary: "Facing North? Right is East. Facing South? Right is West. Facing West? Right is North. Facing East? Right is South."
         }

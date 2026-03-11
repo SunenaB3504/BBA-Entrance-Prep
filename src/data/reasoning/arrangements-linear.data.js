@@ -14,7 +14,15 @@ export const arrangementsLinearData = {
           traps: "The 'Only' Trap: 'A is the only neighbor of B' means B is at an extreme end.\nThe Direction Trap: Forgetting that Left/Right flips when facing South.",
           examples: [
             { q: "6 people A-F in a row facing North. A is at the left end. B is immediate right of A. Who is at position 2?", a: "B is at position 2." },
-            { q: "In a row of 5 facing South, who is to the left of the person at the right extreme?", a: "The person at the 2nd position from the right (moving East)." }
+            { q: "In a row of 5 facing South, who is to the left of the person at the right extreme?", a: "The person at the 2nd position from the right (moving East)." },
+            { q: "8 students are in a row. A is 4th from left. B is 2nd to the right of A. What is B's position from left?", a: "6th (4 + 2)." },
+            { q: "Five books G, H, I, J, K are on a shelf. I is between G and H. J is at right extreme. K is left of G. Order?", a: "K-G-I-H-J." },
+            { q: "Seven cars are parked. A is 3rd from right. How many cars are to the left of A?", a: "4 cars (7 - 3 = 4)." },
+            { q: "Ten friends face North. P is 5th from left, Q is 5th from right. How many between them?", a: "0 (They are adjacent)." },
+            { q: "Six people face South. M is at left end. N is 3rd to right of M. Position of N?", a: "4th from left (or 3rd from right end)." },
+            { q: "A, B, C, D, E sit in a row. B is between A and C. D is immediate right of C. E is at left end. Sequence?", a: "E-A-B-C-D." },
+            { q: "Five boys are in a row. Anil is 2nd left of Sunil. Sunil is at right end. Anil's position?", a: "3rd from left (Position 3 in 1-2-3-4-5)." },
+            { q: "A row has 15 people. X is 8th from both ends. Total people?", a: "15 (8 + 8 - 1)." }
           ],
           speedSummary: "Facing North? Just use your own hands. Facing South? Use your left hand for Right and right hand for Left."
         }

@@ -13,7 +13,16 @@ export const visualPaperPatternData = {
           logic: "1. Count the number of layers. 2 folds = 4 layers. One punch = 4 holes.\n2. Visualize the reflection across each fold line.",
           traps: "Off-center cuts: A cut on a corner might recreate different patterns than a cut in the middle.",
           examples: [
-            { q: "Paper folded twice (square), corner cut. How many holes?", a: "4 holes (one on each corner or 4 around the center depending on which corner)." }
+            { q: "Paper folded twice (square), corner cut. How many holes?", a: "4 holes (one on each corner or 4 around the center depending on which corner)." },
+            { q: "Single fold, punch in middle. Reopened?", a: "2 holes." },
+            { q: "Folded diagonally, corner cut. Shape?", a: "Rhombus/Diamond holes." },
+            { q: "Folded 3 times. Total layers?", a: "8 layers (2^3)." },
+            { q: "Edge cut on a 2nd fold. Reopened?", a: "2 slits on opposite edges." },
+            { q: "Circular paper folded in half, pie-cut. Reopened?", a: "Heart or Diamond shape depending on cut angle." },
+            { q: "Punch through 4 layers. How many identical holes?", a: "4." },
+            { q: "Paper folded into 4 parts. Cut in center of one. Reopened?", a: "4 centered holes." },
+            { q: "Transparent sheet with a dot, folded over. Dot position?", a: "Overlaps with its mirror image position." },
+            { q: "X-cut on a quarter-folded paper. Result?", a: "One large X or 4 small Xs depending on cut center." }
           ],
           speedSummary: "Trace the 'Mirror Line' of each fold to see where the cut replicates."
         }

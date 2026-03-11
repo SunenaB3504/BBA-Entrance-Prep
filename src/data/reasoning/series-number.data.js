@@ -14,7 +14,15 @@ export const seriesNumberData = {
           traps: "The 'Missing' vs 'Wrong' Term: READ the question carefully to see if it wants the next term or the one that doesn't fit.\nMultiple Rules: Sometimes a series uses +1, x2, +3, x4...",
           examples: [
             { q: "2, 4, 8, 16, ? ", a: "32 (x2 pattern)." },
-            { q: "1, 4, 9, 16, ? ", a: "25 (Squares: 1², 2², 3², 4², 5²)." }
+            { q: "1, 4, 9, 16, ? ", a: "25 (Squares: 1², 2², 3², 4², 5²)." },
+            { q: "5, 10, 15, 20, ?", a: "25 (+5 pattern)." },
+            { q: "100, 90, 81, 73, ?", a: "66 (Differences: -10, -9, -8, -7)." },
+            { q: "1, 1, 2, 3, 5, ?", a: "8 (Fibonacci: 3+5=8)." },
+            { q: "3, 6, 12, 24, ?", a: "48 (Double previous term)." },
+            { q: "0, 7, 26, 63, ?", a: "124 (Cubes minus 1: 1³-1, 2³-1, 3³-1...)." },
+            { q: "2, 3, 5, 7, 11, ?", a: "13 (Prime numbers)." },
+            { q: "1, 2, 6, 24, ?", a: "120 (Factorials: 1!, 2!, 3!, 4!, 5!)." },
+            { q: "10, 12, 16, 22, ?", a: "30 (Difference of +2, +4, +6, +8)." }
           ],
           speedSummary: "If you can't find a rule, try the 'Difference of Differences'."
         }

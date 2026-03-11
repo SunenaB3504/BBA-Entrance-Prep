@@ -13,7 +13,16 @@ export const logicStatementData = {
           logic: "1. Don't use external knowledge; stick strictly to the statement.\n2. Assumption check: If the assumption is removed, does the statement crumble? If yes, it's a valid assumption.",
           traps: "Restatement Trap: A conclusion that is just the statement rephrased is sometimes considered 'weak' or invalid in some exam formats.\nExtreme words: Words like 'Only', 'Always', 'Every' often make an assumption or conclusion invalid unless stated.",
           examples: [
-            { q: "Stmt: 'Join our course to get 100% results'. Assumption: People want high results.", a: "Valid assumption." }
+            { q: "Stmt: 'Join our course to get 100% results'. Assumption: People want high results.", a: "Valid assumption." },
+            { q: "Stmt: 'Smoking is injurious' - Assumption: People read the warning.", a: "Valid." },
+            { q: "Stmt: 'A says to B, use my car'. Assumption: A has a car.", a: "Valid." },
+            { q: "Stmt: 'It will rain today'. Conclusion: People should carry umbrellas.", a: "Valid (Course of action logic)." },
+            { q: "Stmt: 'Buy X brand soap'. Assumption: No other brand exists.", a: "Invalid (Implicit competition)." },
+            { q: "Stmt: 'Ram is a boy'. Conclusion: Ram is human.", a: "Valid." },
+            { q: "Stmt: 'Only adults can vote'. B voted. Conclusion: B is an adult.", a: "Valid." },
+            { q: "Stmt: 'Switch off lights when not in use'. Assumption: People often leave lights on.", a: "Valid." },
+            { q: "Stmt: 'If you are lucky, you win'. A won. Conclusion: A is lucky.", a: "False (Logic: Lucky -> Win, but Win doesn't only mean Lucky)." },
+            { q: "Stmt: 'Price hike in fuel'. Conclusion: Transport costs will rise.", a: "Valid." }
           ],
           speedSummary: "Conclusion = 'What follows?' | Assumption = 'What was already true?'"
         }

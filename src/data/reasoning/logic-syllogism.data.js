@@ -13,7 +13,16 @@ export const logicSyllogismData = {
           logic: "1. Draw the minimum possible Venn diagram representing the statements.\n2. Check if the conclusion is DEFINITELY true in ALL possible diagrams.\n3. If it fails in even one valid diagram, the definite conclusion is false.",
           traps: "Possibility vs Definite: 'Some A can be B' (Possibility) vs 'Some A are B' (Definite).\nConclusion outside scope: Conclusions mentioning elements not in the statements.",
           examples: [
-            { q: "Stmt: All Dogs are Cats. All Cats are Lions. Concl: All Dogs are Lions.", a: "True (Transitive property)." }
+            { q: "Stmt: All Dogs are Cats. All Cats are Lions. Concl: All Dogs are Lions.", a: "True (Transitive property)." },
+            { q: "Stmt: Some A are B. All B are C. Concl: Some A are C.", a: "True." },
+            { q: "Stmt: No Pen is Pencil. Some Pencils are Erasers. Concl: No Pen is Eraser.", a: "False (Possibility exists)." },
+            { q: "Stmt: All Fruits are Flowers. No Flower is Red. Concl: No Fruit is Red.", a: "True." },
+            { q: "Stmt: Some Men are Brave. Some Brave are Tall. Concl: Some Men are Tall.", a: "False (No direct link)." },
+            { q: "Stmt: All Stars are Planets. All Planets are Moons. Concl: All Moons are Stars.", a: "False (Inverse is not always true)." },
+            { q: "Stmt: No Blue is Green. No Green is Yellow. Concl: No Blue is Yellow.", a: "False (They could be same)." },
+            { q: "Stmt: All Cars are Buses. Some Buses are Trucks. Concl: Some Cars are Trucks.", a: "False." },
+            { q: "Stmt: Only A are B. Concl: All B are A.", a: "True." },
+            { q: "Stmt: Some Cats are not Dogs. Concl: Some Dogs are not Cats.", a: "False." }
           ],
           speedSummary: "Definite conclusiones must be 100% true across all valid diagrams. Possibilities only need to be true in one."
         }

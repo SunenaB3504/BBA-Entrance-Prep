@@ -13,7 +13,16 @@ export const arrangementsCircularData = {
           logic: "1. Start by placing the first person anywhere (usually at the bottom/pos 6 o'clock).\n2. Relative to that person, fill in other 'fixed' clues.\n3. Case Analysis: For people facing outward, visualize yourself sitting at the table to avoid direction errors.",
           traps: "The 'Opposite' Trap: Assuming people are opposite in an odd-numbered group.\nThe Direction Swap: Forgetting that Left/Right flips when the facing direction changes.",
           examples: [
-            { q: "8 people P-W around a table facing center. P is opposite T. Q is immediate left of P. What is Q's position relative to T?", a: "Q is 4th to the right of T (or 4th to the left)." }
+            { q: "8 people P-W around a table facing center. P is opposite T. Q is immediate left of P. What is Q's position relative to T?", a: "Q is 4th to the right of T (or 4th to the left)." },
+            { q: "6 people sit around a circular table facing center. A is between B and C. D is opposite A. Position of D?", a: "D is between the neighbors of B and C." },
+            { q: "In a group of 5 facing center, who is at the immediate left of the person at 12 o'clock?", a: "The person at roughly 2 o'clock (Clockwise rotation)." },
+            { q: "4 friends A, B, C, D sit in a circle facing center. A is opposite C. B is right of A. Where is D?", a: "D is left of A (opposite B)." },
+            { q: "8 people. X is 3rd to the left of Y. Y is opposite Z. What is Z with respect to X?", a: "Z is second to the left of X (or 6th to the right)." },
+            { q: "6 students. M is immediate right of N. O is opposite M. Who is immediate left of O?", a: "N (Since N is left of M, its opposite O has its left towards where M's right was... wait, draw: N-M-X-O-Y-Z. Left of O is X)." },
+            { q: "5 people. Is it possible for two people to be 'exactly opposite'?", a: "No, opposite pairs require an even number (n) where spacing is n/2." },
+            { q: "7 people. A is between B and C. D is 3rd to right of A. How many between A and D from right?", a: "2 people." },
+            { q: "Facing Outward: 8 people. A is immediate left of B. Is A clockwise or anti-clockwise of B?", a: "Anti-clockwise (Inward left = CW, Outward left = ACW)." },
+            { q: "Round table. 10 people. If A is opposite F, how many people are between them on either side?", a: "4 people (10/2 - 1)." }
           ],
           speedSummary: "Facing Center? Think of a clock. Left = Clockwise. Right = Anti-Clockwise."
         }
