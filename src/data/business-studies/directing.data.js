@@ -108,6 +108,123 @@ export const directingData = {
       correct: 2,
       explanation: "Leadership is the art of influencing people so that they strive willingly and enthusiastically toward the achievement of group goals.",
       examTags: ["CUET"]
+    },
+    {
+      id: "di-q-002", type: "mcq", difficulty: "easy",
+      question: "Which level of Maslow's Hierarchy is satisfied by 'Job Security' and 'Pension Plans'?",
+      options: ["Physiological Needs", "Safety/Security Needs", "Social/Affiliation Needs", "Esteem Needs"],
+      correct: 1,
+      explanation: "Safety/Security Needs include physical and economic safety — job security and pension plans directly address these.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-003", type: "mcq", difficulty: "medium",
+      question: "A manager gives strict orders without consulting his team. This is which leadership style?",
+      options: ["Laissez Faire", "Democratic", "Autocratic", "Transformational"],
+      correct: 2,
+      explanation: "Autocratic leadership involves centralized decision-making by the leader without consulting subordinates.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-004", type: "mcq", difficulty: "medium",
+      question: "An employee doesn't report a machine error because the boss is very strict. Name the communication barrier.",
+      options: ["Semantic Barrier", "Organisational Barrier", "Personal Barrier", "Physical Barrier"],
+      correct: 2,
+      explanation: "Fear of authority is a Personal Barrier to communication, preventing free flow of information.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-005", type: "mcq", difficulty: "medium",
+      question: "Rumours about a company merger spreading through office gossip is an example of:",
+      options: ["Formal Communication", "Official Memo", "Grapevine (Informal Communication)", "Scalar Chain"],
+      correct: 2,
+      explanation: "The Grapevine is the informal communication network that spreads rapidly but may be inaccurate.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-006", type: "mcq", difficulty: "easy",
+      question: "An 'Employee of the Month' trophy given to recognize hard work is an example of:",
+      options: ["Financial Incentive", "Non-Financial Incentive", "Monetary Reward", "Increment"],
+      correct: 1,
+      explanation: "Non-financial incentives provide psychological satisfaction — titles, awards, and recognition fall under this category.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-007", type: "mcq", difficulty: "medium",
+      question: "A senior developer's team is given full freedom to choose their tools and work hours. Name the leadership style.",
+      options: ["Autocratic", "Democratic", "Laissez Faire (Free-rein)", "Transformational"],
+      correct: 2,
+      explanation: "Laissez Faire leadership grants complete freedom to subordinates, suitable for highly skilled expert professionals.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-008", type: "mcq", difficulty: "hard",
+      question: "A legal document uses Latin terms that a new employee cannot understand. This is which communication barrier?",
+      options: ["Personal Barrier", "Psychological Barrier", "Semantic Barrier", "Organisational Barrier"],
+      correct: 2,
+      explanation: "Semantic barriers arise from language/symbol differences, including technical jargon the receiver doesn't understand.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-009", type: "mcq", difficulty: "medium",
+      question: "Profit sharing and bonuses are examples of which type of incentive?",
+      options: ["Non-financial", "Psychological", "Financial", "Social"],
+      correct: 2,
+      explanation: "Financial incentives are monetary rewards like pay, bonuses, profit sharing, and co-partnership that motivate employees.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-010", type: "mcq", difficulty: "medium",
+      question: "An employee joins a company's social club to make friends. Which level of Maslow's hierarchy is satisfied?",
+      options: ["Physiological", "Safety", "Social/Affiliation", "Esteem"],
+      correct: 2,
+      explanation: "Social/Affiliation needs include the need for love, friendship, and belonging — joining social groups addresses this.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-011", type: "mcq", difficulty: "easy",
+      question: "Directing is called the 'heart of management' because:",
+      options: [
+        "It is the easiest function",
+        "It actually initiates action in the organization",
+        "It is performed only at the top level",
+        "It completes the management cycle"
+      ],
+      correct: 1,
+      explanation: "Directing initiates action — without directing, all plans and organizational structures remain theoretical.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-012", type: "mcq", difficulty: "medium",
+      question: "Supervision as an element of directing is primarily performed by:",
+      options: ["Top management", "Middle management", "Lower/Operational management", "Shareholders"],
+      correct: 2,
+      explanation: "Supervision (overseeing day-to-day work) is mainly performed by lower-level/operational managers like supervisors and foremen.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-013", type: "mcq", difficulty: "hard",
+      question: "A manager assumes an employee is wrong even before hearing their full explanation. Name the communication barrier.",
+      options: ["Semantic", "Premature Evaluation (Psychological)", "Organisational", "Personal"],
+      correct: 1,
+      explanation: "Premature Evaluation is a psychological barrier — making a judgment before receiving the complete message.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-014", type: "mcq", difficulty: "medium",
+      question: "Which incentive addresses the esteem need in Maslow's hierarchy?",
+      options: ["Salary", "Job Security", "Job Title / Recognition", "Food and Shelter"],
+      correct: 2,
+      explanation: "Esteem Needs (status, recognition, respect) are addressed by non-financial incentives like job titles and awards.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "di-q-015", type: "mcq", difficulty: "medium",
+      question: "Which leadership style is best suited for a highly skilled team of medical researchers?",
+      options: ["Autocratic", "Democratic", "Laissez Faire", "Bureaucratic"],
+      correct: 2,
+      explanation: "Laissez Faire is best for expert professionals (like researchers) who need freedom to innovate without micromanagement.",
+      examTags: ["CUET"]
     }
   ]
 };

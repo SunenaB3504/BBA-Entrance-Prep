@@ -106,6 +106,133 @@ export const organisingData = {
       correct: 1,
       explanation: "Divisional structure groups activities based on product lines, making it ideal for diverse product portfolios.",
       examTags: ["CUET"]
+    },
+    {
+      id: "or-q-002", type: "mcq", difficulty: "easy",
+      question: "Which step in the organising process involves grouping similar tasks into departments?",
+      options: ["Identification of work", "Departmentalisation", "Assignment of duties", "Establishing relationships"],
+      correct: 1,
+      explanation: "Departmentalisation is the grouping of related jobs and activities into distinct departments.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-003", type: "mcq", difficulty: "medium",
+      question: "Accountability is an element of delegation. It can be:",
+      options: ["Delegated to a subordinate", "Shared between manager and subordinate", "Transferred fully", "Never delegated — it remains with the superior"],
+      correct: 3,
+      explanation: "Accountability (answerability for outcomes) is absolute and stays with the person who originally held it — it cannot be delegated.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-004", type: "mcq", difficulty: "medium",
+      question: "Employees chatting about company gossip during lunch break belongs to:",
+      options: ["Formal Organisation", "Official Communication", "Informal Organisation", "Scalar Chain"],
+      correct: 2,
+      explanation: "Informal organisation arises spontaneously from social interaction among employees, not from official structures.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-005", type: "mcq", difficulty: "medium",
+      question: "Decentralisation differs from delegation because:",
+      options: [
+        "They are identical concepts",
+        "Delegation is a necessity while decentralisation is an optional policy",
+        "Delegation involves the whole organisation while decentralisation involves two individuals",
+        "Decentralisation is mandatory by law"
+      ],
+      correct: 1,
+      explanation: "Delegation is a necessity (managers must delegate to get work done). Decentralisation is a deliberate policy decision by top management.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-006", type: "mcq", difficulty: "easy",
+      question: "In a functional structure, departments are created based on:",
+      options: ["Products", "Geography", "Business functions (Finance, HR, Marketing)", "Customers"],
+      correct: 2,
+      explanation: "Functional structure groups all activities of the same function (e.g., all marketing under one Marketing Dept).",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-007", type: "mcq", difficulty: "medium",
+      question: "Which element of delegation flows downward from superior to subordinate?",
+      options: ["Responsibility", "Accountability", "Authority", "All of the above"],
+      correct: 2,
+      explanation: "Authority (the right to command) flows downward. Responsibility and Accountability flow upward.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-008", type: "mcq", difficulty: "hard",
+      question: "A medium-sized company with a single product line would best use which organisational structure?",
+      options: ["Divisional", "Functional", "Matrix", "Network"],
+      correct: 1,
+      explanation: "Functional structure is most suited to mid-sized firms with a single product, offering economies of specialisation at low cost.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-009", type: "mcq", difficulty: "medium",
+      question: "Which of the following is an advantage of a divisional structure?",
+      options: [
+        "Low cost due to no duplication",
+        "Functional specialization",
+        "Easy to fix accountability for product performance",
+        "Best for single-product firms"
+      ],
+      correct: 2,
+      explanation: "In divisional structure, each division is responsible for a product, making it easy to hold that division accountable.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-010", type: "mcq", difficulty: "easy",
+      question: "The formal line of authority and the span of authority of each position in an organisation is called:",
+      options: ["Departmentalisation", "Organisation structure", "Delegation", "Decentralisation"],
+      correct: 1,
+      explanation: "Organisation structure is the network of job positions, responsibilities, and authority at different levels.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-011", type: "mcq", difficulty: "medium",
+      question: "A manager assigns budget-approval powers to a department head. This is an example of:",
+      options: ["Decentralisation", "Delegation", "Departmentalisation", "Directing"],
+      correct: 1,
+      explanation: "Delegation is the downward transfer of authority from a superior (manager) to a subordinate (department head).",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-012", type: "mcq", difficulty: "medium",
+      question: "Organising as a function of management helps in:",
+      options: [
+        "Setting organizational objectives only",
+        "Avoiding duplication and overlap of work",
+        "Setting standards for performance",
+        "Motivating employees to work"
+      ],
+      correct: 1,
+      explanation: "Organising divides work and clarifies roles, thereby avoiding duplication and reducing wasted effort.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-013", type: "mcq", difficulty: "hard",
+      question: "In an informal organisation, communication travels through which network?",
+      options: ["Scalar Chain", "Formal channels", "Grapevine", "Official memos"],
+      correct: 2,
+      explanation: "Informal organisations use the Grapevine — fast, unofficial communication that spreads through social relationships.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-014", type: "mcq", difficulty: "medium",
+      question: "ITC having separate divisions for Tobacco, Hotels, and Foods is an example of:",
+      options: ["Functional Structure", "Divisional Structure", "Committee Structure", "Flat Structure"],
+      correct: 1,
+      explanation: "ITC's structure with distinct product-based divisions (Tobacco, Hotels, Foods) is the classic Divisional Structure.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "or-q-015", type: "mcq", difficulty: "easy",
+      question: "The number of subordinates effectively managed by a superior is called:",
+      options: ["Span of Attention", "Span of Management", "Span of Delegation", "Span of Control"],
+      correct: 1,
+      explanation: "Span of Management refers to the number of subordinates that can be directly supervised effectively by one manager.",
+      examTags: ["CUET"]
     }
   ]
 };

@@ -138,6 +138,101 @@ export const principlesManagementData = {
       correct: 1,
       explanation: "Gang Plank is a shorter, direct route in the Scalar Chain for emergency communication between peers.",
       examTags: ["CUET"]
+    },
+    {
+      id: "pm-q-006", type: "mcq", difficulty: "easy",
+      question: "Fayol's principle of 'Esprit de Corps' means:",
+      options: ["Unity of Command", "Union is strength / Team Spirit", "Scalar Chain", "Order"],
+      correct: 1,
+      explanation: "Esprit de Corps translates to 'Union is strength' and emphasizes team spirit and harmony within an organization.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pm-q-007", type: "mcq", difficulty: "medium",
+      question: "Which principle of management states that there should be no discrimination based on sex, religion, caste, or nationality?",
+      options: ["Discipline", "Order", "Equity", "Unity of Direction"],
+      correct: 2,
+      explanation: "Equity means kindness and justice — no discrimination against anyone based on sex, religion, caste, or nationality.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pm-q-008", type: "mcq", difficulty: "medium",
+      question: "The standard time taken to perform a well-defined job is determined by which study?",
+      options: ["Motion Study", "Fatigue Study", "Time Study", "Method Study"],
+      correct: 2,
+      explanation: "Time Study determines the standard time taken by a worker of average ability to perform a well-defined job.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pm-q-009", type: "mcq", difficulty: "medium",
+      question: "An employee receives conflicting orders from two different supervisors. Which Fayol principle is violated?",
+      options: ["Unity of Direction", "Unity of Command", "Discipline", "Order"],
+      correct: 1,
+      explanation: "Unity of Command states that every subordinate should receive orders from and be accountable to only one superior.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pm-q-010", type: "mcq", difficulty: "hard",
+      question: "Which characteristic of management principles is reflected by: 'Fayol's principles evolved from practical experience of managers'?",
+      options: ["Universal Applicability", "Flexible", "Mainly Behavioural", "Formed by Practice and Experimentation"],
+      correct: 3,
+      explanation: "Management principles are formed by practice and experimentation — developed through observation and real-world testing by practitioners.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pm-q-011", type: "mcq", difficulty: "medium",
+      question: "A worker is paid ₹10 per unit for the first 100 units and ₹15 per unit if he produces 120 units. Name this system:",
+      options: ["Time Wage System", "Piece Rate System", "Differential Piece Wage System", "Bonus System"],
+      correct: 2,
+      explanation: "Differential Piece Wage System rewards efficient workers with a higher rate and penalizes inefficient ones with a lower rate.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pm-q-012", type: "mcq", difficulty: "easy",
+      question: "The distinguishing difference between Unity of Command and Unity of Direction is:",
+      options: [
+        "Unity of Command deals with plans; Unity of Direction deals with authority",
+        "Unity of Command affects individual employees; Unity of Direction affects entire units/departments",
+        "Both are identical principles",
+        "Unity of Direction prevents dual subordination"
+      ],
+      correct: 1,
+      explanation: "Unity of Command (one boss per employee) affects the individual. Unity of Direction (one head, one plan per unit) affects the entire department.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pm-q-013", type: "mcq", difficulty: "medium",
+      question: "Which Taylor technique determines the number of workers required for a particular task?",
+      options: ["Time Study", "Motion Study", "Fatigue Study", "Work Study"],
+      correct: 0,
+      explanation: "Time Study helps in setting standard time for tasks, which in turn helps determine the number of workers needed.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pm-q-014", type: "mcq", difficulty: "hard",
+      question: "Management principles are 'contingent' because:",
+      options: [
+        "They are rigid rules like physical laws",
+        "Their application depends on the prevailing situation",
+        "They apply only to profit-making firms",
+        "They are the same in all cultures"
+      ],
+      correct: 1,
+      explanation: "Contingent means the application of management principles depends on the prevailing situation — there are no one-size-fits-all solutions.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pm-q-015", type: "mcq", difficulty: "medium",
+      question: "Fayol's principle of 'Initiative' means:",
+      options: [
+        "Workers should follow instructions blindly",
+        "Managers should do all planning themselves",
+        "Employees should be encouraged to develop and execute plans",
+        "Only top managers should take decisions"
+      ],
+      correct: 2,
+      explanation: "Initiative means employees should be given freedom and encouraged to develop plans and take actions at their own discretion.",
+      examTags: ["CUET"]
     }
   ]
 };

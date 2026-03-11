@@ -94,6 +94,123 @@ export const consumerProtectionData = {
       correct: 2,
       explanation: "Under the 2019 Act, the District Commission handles cases up to ₹1 Crore.",
       examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-002", type: "mcq", difficulty: "easy",
+      question: "Which consumer right guarantees protection against goods that are hazardous to life and health?",
+      options: ["Right to be Informed", "Right to Choose", "Right to Safety", "Right to be Heard"],
+      correct: 2,
+      explanation: "Right to Safety protects consumers against the marketing of goods and services that are hazardous to life and property.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-003", type: "mcq", difficulty: "medium",
+      question: "A consumer buys a laptop for ₹60,000 for personal use. A shopkeeper buys 10 laptops to sell in his store. Who is a 'Consumer' under the CPA 2019?",
+      options: ["Only the first person", "Only the shopkeeper", "Both are consumers", "Neither are consumers"],
+      correct: 0,
+      explanation: "The Consumer Protection Act excludes anyone who obtains goods for resale or for any commercial purpose (except self-employment).",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-004", type: "mcq", difficulty: "easy",
+      question: "Checking for the ISI mark on an electric iron is a:",
+      options: ["Consumer Right", "Consumer Responsibility", "Consumer Burden", "Government Duty"],
+      correct: 1,
+      explanation: "It is a consumer responsibility to buy standardized goods that guarantee quality and safety (like ISI for electrical goods).",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-005", type: "mcq", difficulty: "medium",
+      question: "Which right gives the consumer access to a variety of goods and services at competitive prices?",
+      options: ["Right to Safety", "Right to be Informed", "Right to Choose", "Right to Seek Redressal"],
+      correct: 2,
+      explanation: "Right to Choose means the consumer has the freedom to choose from a variety of products at fair prices.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-006", type: "mcq", difficulty: "medium",
+      question: "If a complaint involves goods worth ₹5 Crores, where must the consumer file the case under CPA 2019?",
+      options: ["District Commission", "State Commission", "National Commission", "Supreme Court"],
+      correct: 1,
+      explanation: "State Commission handles cases where the value of goods/services paid as consideration exceeds ₹1 Crore but does not exceed ₹10 Crores.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-007", type: "mcq", difficulty: "easy",
+      question: "A business proactively resolves consumer complaints to avoid government action. Which importance of CP is this?",
+      options: ["Social Responsibility", "Moral Justification", "Government Intervention Avoidance", "Survival and Growth"],
+      correct: 2,
+      explanation: "Businesses voluntarily address consumer complaints so the government doesn't step in to regulate or penalize them.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-008", type: "mcq", difficulty: "medium",
+      question: "What document is essential for a consumer to prove a purchase in the consumer court?",
+      options: ["Warranty Card", "Guarantee Card", "Cash Memo / Bill", "Advertisement cut-out"],
+      correct: 2,
+      explanation: "Asking for a Cash Memo is a key consumer responsibility, as it serves as legal proof of purchase in court.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-009", type: "mcq", difficulty: "medium",
+      question: "Filing a case against a company for selling an expired medicine exercises which right?",
+      options: ["Right to be Heard", "Right to Seek Redressal", "Right to Consumer Education", "Right to Choose"],
+      correct: 1,
+      explanation: "Right to Seek Redressal gives the consumer the right to seek relief (refund, replacement, compensation) against unfair trade practices or exploitation.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-010", type: "mcq", difficulty: "hard",
+      question: "Within how many days must an appeal against a District Commission's order be filed in the State Commission?",
+      options: ["15 days", "30 days", "45 days", "60 days"],
+      correct: 2,
+      explanation: "Under the CPA 2019, an appeal against a District Commission order must be filed within 45 days in the State Commission.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-011", type: "mcq", difficulty: "medium",
+      question: "A group teaches villagers about standardization marks (Agmark, FPO). Which right is being promoted?",
+      options: ["Right to Safety", "Right to Consumer Education", "Right to be Informed", "Right to be Heard"],
+      correct: 1,
+      explanation: "Right to Consumer Education means the consumer should acquire knowledge and skill to be an informed consumer.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-012", type: "mcq", difficulty: "hard",
+      question: "The National Commission has pecuniary jurisdiction over complaints exceeding:",
+      options: ["₹1 Crore", "₹5 Crores", "₹10 Crores", "₹100 Crores"],
+      correct: 2,
+      explanation: "Under the CPA 2019, the National Commission handles complaints where the value of goods/services paid exceeds ₹10 Crores.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-013", type: "mcq", difficulty: "medium",
+      question: "A company prints the MRP, date of manufacture, and weight on a packet of chips to fulfill which consumer right?",
+      options: ["Right to Safety", "Right to be Heard", "Right to be Informed", "Right to Education"],
+      correct: 2,
+      explanation: "Right to be Informed ensures the consumer has information about quality, quantity, potency, purity, standard, and price of goods.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-014", type: "mcq", difficulty: "medium",
+      question: "From a business perspective, why is consumer protection important for 'Long-term Interest'?",
+      options: [
+        "It generates immediate high profits",
+        "It satisfies government officials",
+        "Satisfied customers provide repeat business and good word-of-mouth",
+        "It eliminates all competition"
+      ],
+      correct: 2,
+      explanation: "A business that protects consumers' interests builds reputation and loyalty, ensuring long-term survival and growth.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "cp-q-015", type: "mcq", difficulty: "easy",
+      question: "Setting up consumer grievance cells within a company is done to respect which right?",
+      options: ["Right to Choose", "Right to be Heard", "Right to Safety", "Right to Education"],
+      correct: 1,
+      explanation: "Right to be Heard means the consumer's interests will receive due consideration, often facilitated by company grievance cells.",
+      examTags: ["CUET"]
     }
   ]
 };

@@ -89,6 +89,138 @@ export const planningData = {
       correct: 1,
       explanation: "Developing Premises refers to making assumptions about future conditions and events.",
       examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-002", type: "mcq", difficulty: "easy",
+      question: "Planning is described as 'bridging the gap' between:",
+      options: [
+        "Income and expenses",
+        "Where we are and where we want to go",
+        "Production and distribution",
+        "Managers and workers"
+      ],
+      correct: 1,
+      explanation: "Planning bridges the gap between the present state and the desired future state of an organization.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-003", type: "mcq", difficulty: "medium",
+      question: "Saurabh set a target of earning 10% profit in the first year of his chocolate business. Which function of management is involved?",
+      options: ["Organising", "Directing", "Planning", "Controlling"],
+      correct: 2,
+      explanation: "Setting objectives and deciding how to achieve them is the function of Planning.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-004", type: "mcq", difficulty: "medium",
+      question: "A company creates a detailed financial plan for its upcoming 'Summer Sale 2025'. This is an example of which type of plan?",
+      options: ["Standing Plan", "Policy", "Single-use Plan (Budget)", "Procedure"],
+      correct: 2,
+      explanation: "A Budget for a specific, non-recurring event is a Single-use Plan.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-005", type: "mcq", difficulty: "easy",
+      question: "A 'No Smoking' sign in an office is an example of which type of plan?",
+      options: ["Strategy", "Budget", "Programme", "Rule"],
+      correct: 3,
+      explanation: "A Rule is a specific, mandatory statement that dictates what must or must not be done (e.g., No Smoking).",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-006", type: "mcq", difficulty: "medium",
+      question: "The first and most fundamental step in the planning process is:",
+      options: ["Identifying Alternatives", "Developing Premises", "Setting Objectives", "Implementing the Plan"],
+      correct: 2,
+      explanation: "Setting Objectives is the first step in the planning process — you must know where you want to go before deciding how to get there.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-007", type: "mcq", difficulty: "medium",
+      question: "Planning is said to be 'pervasive' because:",
+      options: [
+        "Only top managers plan",
+        "It is required at all levels of management",
+        "It reduces costs only",
+        "Plans never need revision"
+      ],
+      correct: 1,
+      explanation: "Planning is pervasive — it is required at all levels (top, middle, and operational) of management.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-008", type: "mcq", difficulty: "hard",
+      question: "Which limitation of planning is highlighted when a manager avoids innovative ideas to stay within a rigid plan?",
+      options: ["Planning is time-consuming", "Planning leads to rigidity", "Planning reduces efficiency", "Planning ignores external factors"],
+      correct: 1,
+      explanation: "Planning can lead to rigidity — once plans are set, managers may be reluctant to deviate even when circumstances change.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-009", type: "mcq", difficulty: "medium",
+      question: "A step-by-step manual for processing customer refunds is an example of which type of plan?",
+      options: ["Rule", "Policy", "Procedure", "Strategy"],
+      correct: 2,
+      explanation: "A Procedure is a chronological set of steps detailing how an activity is to be performed.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-010", type: "mcq", difficulty: "easy",
+      question: "Planning establishes standards for which other function of management?",
+      options: ["Organising", "Staffing", "Controlling", "Directing"],
+      correct: 2,
+      explanation: "Plans set targets (standards) which are then used by Controlling to measure actual performance.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-011", type: "mcq", difficulty: "medium",
+      question: "A firm's long-term plan to enter South Asia by 2030 is an example of:",
+      options: ["Rule", "Policy", "Procedure", "Strategy"],
+      correct: 3,
+      explanation: "Strategy is a comprehensive, long-term plan to achieve organizational objectives in a competitive environment.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-012", type: "mcq", difficulty: "hard",
+      question: "Planning does NOT guarantee success because:",
+      options: [
+        "It is too expensive",
+        "Managers refuse to plan",
+        "Future is uncertain and premises may prove wrong",
+        "Planning ignores employee needs"
+      ],
+      correct: 2,
+      explanation: "Planning is based on premises (assumptions about the future). If those assumptions prove wrong, the plan may fail.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-013", type: "mcq", difficulty: "medium",
+      question: "Which of the following is a Standing Plan?",
+      options: ["Annual Budget", "Project Plan", "Policy on Employee Leave", "Summer Sale Programme"],
+      correct: 2,
+      explanation: "A Policy on Employee Leave is a Standing Plan — it is used repeatedly for recurring situations.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-014", type: "mcq", difficulty: "easy",
+      question: "Planning reduces overlapping and wasteful activities because:",
+      options: [
+        "It removes all employees",
+        "It coordinates activities and allocates resources in advance",
+        "It increases competition",
+        "It delegates all decisions"
+      ],
+      correct: 1,
+      explanation: "By planning in advance, resources are allocated and activities coordinated, eliminating duplication and wasted effort.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "pl-q-015", type: "mcq", difficulty: "medium",
+      question: "The step where a manager checks if the final plan is working correctly after implementation is called:",
+      options: ["Setting Objectives", "Evaluating Alternatives", "Implementing the Plan", "Follow-up Action"],
+      correct: 3,
+      explanation: "Follow-up Action involves monitoring plan implementation and taking corrective measures if actual results deviate.",
+      examTags: ["CUET"]
     }
   ]
 };

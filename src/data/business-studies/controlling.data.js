@@ -83,6 +83,138 @@ export const controllingData = {
       correct: 3,
       explanation: "Controlling provides feedback which forms the basis for future planning, thus completing the loop.",
       examTags: ["CUET"]
+    },
+    {
+      id: "co-q-002", type: "mcq", difficulty: "easy",
+      question: "The first step of the controlling process is:",
+      options: ["Measuring actual performance", "Comparing actual vs standard", "Setting standards", "Taking corrective action"],
+      correct: 2,
+      explanation: "Setting Performance Standards is the first step — you must define what 'good' looks like before you can judge performance.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-003", type: "mcq", difficulty: "medium",
+      question: "A manager only reports to the CEO when expenses exceed the budget by more than 10%. This technique is called:",
+      options: ["Critical Point Control", "Management by Exception", "PERT Analysis", "Budgetary Control"],
+      correct: 1,
+      explanation: "Management by Exception (MBE) means only significant deviations are reported to higher management.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-004", type: "mcq", difficulty: "medium",
+      question: "Controlling is described as both 'forward-looking' and 'backward-looking' because:",
+      options: [
+        "It plans the future and forgets the past",
+        "It evaluates past performance and uses it to improve future actions",
+        "It only looks at current activities",
+        "It ignores past deviations"
+      ],
+      correct: 1,
+      explanation: "Controlling is backward-looking (evaluates past performance) and forward-looking (feedback improves future plans).",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-005", type: "mcq", difficulty: "easy",
+      question: "A company sets a target to produce 100 units per day. At day-end, actual production is measured. Which step is this?",
+      options: ["Setting Standards", "Measuring Actual Performance", "Analysing Deviations", "Corrective Action"],
+      correct: 1,
+      explanation: "Measuring Actual Performance involves gathering data about what was actually achieved (e.g., units produced).",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-006", type: "mcq", difficulty: "medium",
+      question: "Planning is 'blind' without controlling. This means:",
+      options: [
+        "Plans can work without any monitoring",
+        "Without a control mechanism, management cannot know if plans are being executed",
+        "Planning always succeeds automatically",
+        "Controlling is an extension of planning"
+      ],
+      correct: 1,
+      explanation: "Without controlling, there is no feedback on whether plans are being followed — making planning ineffective.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-007", type: "mcq", difficulty: "medium",
+      question: "A manager focuses heavily on a 2% labor cost increase rather than a 50% stationery cost rise. Name this technique:",
+      options: ["MBE", "Critical Point Control", "PERT", "Budgetary Control"],
+      correct: 1,
+      explanation: "Critical Point Control (CPC) means focusing attention on Key Result Areas (KRAs) critical to organizational success.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-008", type: "mcq", difficulty: "hard",
+      question: "Controlling is impossible without:",
+      options: ["Staffing", "Organising", "Planning", "Directing"],
+      correct: 2,
+      explanation: "Controlling requires standards and benchmarks, which are provided by Planning — no plan = no standard = no control.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-009", type: "mcq", difficulty: "medium",
+      question: "Installing CCTV cameras in a store to monitor employee behavior is an importance of controlling related to:",
+      options: ["Achieving goals", "Judging standards", "Order and Discipline", "Efficient use of resources"],
+      correct: 2,
+      explanation: "Controlling deters and detects dishonest behavior, maintaining Order and Discipline in the organization.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-010", type: "mcq", difficulty: "easy",
+      question: "Which step in controlling involves finding the difference between actual output and planned targets?",
+      options: ["Setting Standards", "Measuring Performance", "Comparison of Actual vs Standard", "Taking Corrective Action"],
+      correct: 2,
+      explanation: "Comparison involves finding deviations — the gap between what was planned and what was actually achieved.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-011", type: "mcq", difficulty: "medium",
+      question: "Which type of standard in controlling cannot be measured in numbers?",
+      options: ["Quantitative Standard", "Qualitative Standard", "Monetary Standard", "Physical Standard"],
+      correct: 1,
+      explanation: "Qualitative standards (e.g., good employee morale, customer satisfaction) cannot be expressed numerically.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-012", type: "mcq", difficulty: "hard",
+      question: "Controlling helps in efficient use of resources by:",
+      options: [
+        "Hiring more employees",
+        "Detecting wastage and taking corrective action to reduce it",
+        "Increasing production targets",
+        "Setting lower standards"
+      ],
+      correct: 1,
+      explanation: "By monitoring performance and detecting inefficiencies, controlling prevents wastage of materials, time, and money.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-013", type: "mcq", difficulty: "medium",
+      question: "The relationship between planning and controlling is best described as:",
+      options: [
+        "Independent functions",
+        "Inseparable twins — each depends on the other",
+        "Planning is more important than controlling",
+        "Controlling can work without planning"
+      ],
+      correct: 1,
+      explanation: "Planning and Controlling are 'inseparable twins' — planning sets standards and controlling uses those standards.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-014", type: "mcq", difficulty: "medium",
+      question: "An employee knows she will be reviewed on 5 specific KPIs. This knowledge motivates her to meet them. Which importance of controlling is shown?",
+      options: ["Goal Achievement", "Efficient Resources", "Improving Employee Motivation", "Order and Discipline"],
+      correct: 2,
+      explanation: "Known performance benchmarks help employees understand what is expected, improving their motivation to perform.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "co-q-015", type: "mcq", difficulty: "easy",
+      question: "Which of the following is a quantitative standard used in controlling?",
+      options: ["Employee morale", "Customer satisfaction level", "Customer service quality", "Units of output per hour"],
+      correct: 3,
+      explanation: "A quantitative standard is expressed in numbers — 'units of output per hour' is measurable and quantifiable.",
+      examTags: ["CUET"]
     }
   ]
 };

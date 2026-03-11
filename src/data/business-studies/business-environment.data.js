@@ -83,6 +83,130 @@ export const businessEnvironmentData = {
       correct: 2,
       explanation: "Globalization is the process of integrating the local economy with the global market.",
       examTags: ["CUET"]
+    },
+    {
+      id: "be-q-003", type: "mcq", difficulty: "easy",
+      question: "A rise in demand for organic food due to increased health awareness is an example of which environment?",
+      options: ["Economic", "Social", "Technological", "Political"],
+      correct: 1,
+      explanation: "Social environment includes customs, traditions, and social trends. Health awareness is a social trend.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-004", type: "mcq", difficulty: "easy",
+      question: "Removal of unnecessary government controls and licensing requirements from businesses is called:",
+      options: ["Privatization", "Globalization", "Liberalization", "Nationalization"],
+      correct: 2,
+      explanation: "Liberalization involves reducing government regulations and restrictions to make the economy more market-friendly.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-005", type: "mcq", difficulty: "medium",
+      question: "Demonetization of ₹500 and ₹1000 notes in November 2016 is an example of which environment?",
+      options: ["Social", "Technological", "Economic", "Legal"],
+      correct: 2,
+      explanation: "Demonetization directly affected purchasing power and liquidity — it is part of the Economic Environment.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-006", type: "mcq", difficulty: "medium",
+      question: "The government sells its majority stake in a public-sector bank to a private company. This is called:",
+      options: ["Liberalization", "Globalization", "Privatization", "Nationalization"],
+      correct: 2,
+      explanation: "Privatization (Disinvestment) refers to the transfer of ownership or management from the public sector to private hands.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-007", type: "mcq", difficulty: "medium",
+      question: "A new consumer protection law passed by parliament falls under which business environment dimension?",
+      options: ["Economic", "Political", "Legal", "Social"],
+      correct: 2,
+      explanation: "Legal environment includes laws, court decisions, and government regulations like the Consumer Protection Act.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-008", type: "mcq", difficulty: "easy",
+      question: "The shift from traditional banking to internet banking (Net Banking) is an example of:",
+      options: ["Economic environment", "Social environment", "Technological environment", "Legal environment"],
+      correct: 2,
+      explanation: "Technological environment includes scientific innovations and improvements. Net banking is a technological change.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-009", type: "mcq", difficulty: "hard",
+      question: "Which of the following is NOT a direct impact of the 1991 New Economic Policy (LPG reforms)?",
+      options: [
+        "Increasing competition",
+        "More demanding customers",
+        "Decreasing importance of technology",
+        "Market orientation by firms"
+      ],
+      correct: 2,
+      explanation: "LPG reforms actually increased the importance of technology. They resulted in more competition, demanding customers, and market-oriented firms.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-010", type: "mcq", difficulty: "medium",
+      question: "Result of an election that brings a stable majority government would primarily affect which environment?",
+      options: ["Legal", "Economic", "Political", "Social"],
+      correct: 2,
+      explanation: "Political environment includes the political system, the type of government, and its stability — election results directly impact it.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-011", type: "mcq", difficulty: "medium",
+      question: "Business Environment is described as 'Specific' because:",
+      options: [
+        "It affects all businesses equally",
+        "Each dimension has a different impact on different businesses",
+        "It is the same globally",
+        "Only legal forces matter"
+      ],
+      correct: 1,
+      explanation: "Business environment is specific in its impact — for example, a rise in fuel prices impacts a transport company more than a software firm.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-012", type: "mcq", difficulty: "easy",
+      question: "The full form of LPG in the context of India's 1991 economic reforms is:",
+      options: [
+        "Liberal, Productive, Growing",
+        "Liberalization, Privatization, Globalization",
+        "Licensing, Pricing, Governance",
+        "Labor, Production, Growth"
+      ],
+      correct: 1,
+      explanation: "LPG stands for Liberalization, Privatization, and Globalization — the three pillars of India's 1991 New Economic Policy.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-013", type: "mcq", difficulty: "medium",
+      question: "Business environment is 'Dynamic' because:",
+      options: [
+        "It never changes",
+        "It is always certain",
+        "It keeps changing constantly",
+        "Businesses fully control it"
+      ],
+      correct: 2,
+      explanation: "Business environment is dynamic — it keeps changing due to technological, economic, social, political, and legal shifts.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-014", type: "mcq", difficulty: "hard",
+      question: "A fashion brand adopts sustainable packaging after customers demand eco-friendly options. Which environment triggered this change?",
+      options: ["Economic", "Social", "Technological", "Legal"],
+      correct: 1,
+      explanation: "Changing customer values and social trends towards sustainability fall under the Social Environment.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "be-q-015", type: "mcq", difficulty: "medium",
+      question: "Opening up of economy means allowing private sector companies to set up businesses in sectors previously reserved for the state. This relates to:",
+      options: ["Globalization", "Liberalization", "Privatization", "Both Liberalization and Privatization"],
+      correct: 3,
+      explanation: "Opening up reserved sectors involves both Liberalization (removing restrictions) and Privatization (allowing private players).",
+      examTags: ["CUET"]
     }
   ]
 };

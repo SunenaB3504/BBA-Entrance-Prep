@@ -177,7 +177,7 @@ export const natureManagementData = {
         "Systematized body of knowledge"
       ],
       correct: 1,
-      explanation: "Unlike medicine or law, there is no 'Restricted Entry' (specific degree required by law) or mandatory membership in a professional association for managers.",
+      explanation: "Unlike medicine or law, there is no 'Restricted Entry' (specific degree required by law) or mandatory membership for managers.",
       examTags: ["CUET"]
     },
     {
@@ -207,6 +207,111 @@ export const natureManagementData = {
       ],
       correct: 1,
       explanation: "Middle Level Management acts as a link between top and lower levels and is responsible for interpreting policies set by the top management.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "nsm-q-006", type: "mcq", difficulty: "easy",
+      question: "The process of synchronisation of efforts for unity of action is called:",
+      options: ["Management", "Administration", "Coordination", "Cooperation"],
+      correct: 2,
+      explanation: "'Synchronisation of efforts' and 'unity of action' are the primary definitional phrases for Coordination.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "nsm-q-007", type: "mcq", difficulty: "easy",
+      question: "Foremen and Supervisors belong to which level of management?",
+      options: ["Top Level", "Middle Level", "Supervisory/Operational Level", "None"],
+      correct: 2,
+      explanation: "Foremen and Supervisors directly oversee the actual workforce, placing them at Supervisory or Operational Management.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "nsm-q-008", type: "mcq", difficulty: "medium",
+      question: "A company produces 10,000 units on time but at double the expected cost. It is best described as:",
+      options: ["Efficient and Effective", "Efficient but Ineffective", "Effective but Inefficient", "Neither Efficient nor Effective"],
+      correct: 2,
+      explanation: "Effective because it achieved the goal on time, but Inefficient because it used excessive resources/cost.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "nsm-q-009", type: "mcq", difficulty: "medium",
+      question: "Management is an intangible force. This means:",
+      options: [
+        "It is not important",
+        "It cannot be seen but its presence is felt through orderliness",
+        "It can be touched and measured",
+        "It applies only to large organizations"
+      ],
+      correct: 1,
+      explanation: "Management is intangible — it cannot be seen or touched, but its presence is felt through orderliness, discipline, and goal achievement.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "nsm-q-010", type: "mcq", difficulty: "hard",
+      question: "Which characteristic of management is highlighted when McDonalds changed its menu to McAloo Tikki for the Indian market?",
+      options: ["Pervasive", "Goal-Oriented", "Dynamic Function", "Intangible Force"],
+      correct: 2,
+      explanation: "Dynamic Function — management adapts to the changing environment (cultural, social, economic) to help organizations survive and grow.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "nsm-q-011", type: "mcq", difficulty: "easy",
+      question: "The primary objective of 'Survival' in management is:",
+      options: [
+        "Maximising profits at any cost",
+        "Earning enough revenue to cover all costs",
+        "Expanding into new markets",
+        "Providing employee benefits"
+      ],
+      correct: 1,
+      explanation: "The survival objective means the organization must earn enough to cover its costs and sustain operations.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "nsm-q-012", type: "mcq", difficulty: "medium",
+      question: "Which feature of Art is highlighted when a manager applies principles in his own unique way?",
+      options: [
+        "Existence of theoretical knowledge",
+        "Personalised Application",
+        "Based on practice and creativity",
+        "Universal Validity"
+      ],
+      correct: 1,
+      explanation: "Applying principles in an own unique or customized manner refers to 'Personalised Application' as a feature of Art.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "nsm-q-013", type: "mcq", difficulty: "medium",
+      question: "Co-ordination is different from co-operation because:",
+      options: [
+        "Cooperation is deliberate while coordination is voluntary",
+        "Coordination is deliberate while cooperation is voluntary",
+        "Both are voluntary",
+        "Both are forced activities"
+      ],
+      correct: 1,
+      explanation: "Coordination is a deliberate and conscious effort by managers, while Cooperation is voluntary and spontaneous effort by individuals.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "nsm-q-014", type: "mcq", difficulty: "hard",
+      question: "Management is considered a 'Soft Science' because:",
+      options: [
+        "Its principles have absolute universal validity like Physics",
+        "It lacks any systematic body of knowledge",
+        "Its principles deal with human behavior and cannot be exact",
+        "It is not a science at all"
+      ],
+      correct: 2,
+      explanation: "Management principles deal with human behavior which is complex and variable, making outcomes less predictable than pure sciences.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "nsm-q-015", type: "mcq", difficulty: "medium",
+      question: "TATA Steel running schools and hospitals in Jamshedpur for the community is an example of which management objective?",
+      options: ["Organisational — Growth", "Organisational — Profit", "Social Objective", "Personal Objective"],
+      correct: 2,
+      explanation: "Providing community amenities like schools and hospitals is a Social Objective of management, creating benefit for society.",
       examTags: ["CUET"]
     }
   ]

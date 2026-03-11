@@ -93,6 +93,148 @@ export const financialManagementData = {
       correct: 1,
       explanation: "Wealth maximization (maximizing share price) is the ultimate goal as it considers risk and time value of money.",
       examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-002", type: "mcq", difficulty: "easy",
+      question: "A company decides to buy new machinery worth ₹50 lakh. This is which type of financial decision?",
+      options: ["Financing Decision", "Dividend Decision", "Investment Decision", "Liquidity Decision"],
+      correct: 2,
+      explanation: "Investment Decision (Capital Budgeting) relates to investment in long-term assets like machinery.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-003", type: "mcq", difficulty: "medium",
+      question: "A firm raises ₹10 crore through debentures instead of equity. Which financial decision is this?",
+      options: ["Investment Decision", "Financing Decision", "Dividend Decision", "Budgeting Decision"],
+      correct: 1,
+      explanation: "Financing Decision involves choosing the right mix and sources of finance (debt vs equity).",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-004", type: "mcq", difficulty: "medium",
+      question: "The board decides to distribute 60% of profits and retain 40% for expansion. This is:",
+      options: ["Investment Decision", "Financing Decision", "Dividend Decision", "Capital Budgeting"],
+      correct: 2,
+      explanation: "Dividend Decision determines what portion of earnings to distribute to shareholders versus what to retain.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-005", type: "mcq", difficulty: "medium",
+      question: "'Trading on Equity' is favorable only when:",
+      options: [
+        "Cost of debt > ROI",
+        "ROI > Cost of Debt",
+        "Profit is low",
+        "Company has no debt"
+      ],
+      correct: 1,
+      explanation: "Trading on equity (using debt to boost equity returns) works only when the Return on Investment (ROI) is higher than the cost of debt.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-006", type: "mcq", difficulty: "medium",
+      question: "A firm's EBIT is ₹5 lakh and interest expense is ₹1 lakh. The ICR is:",
+      options: ["1", "3", "5", "4"],
+      correct: 2,
+      explanation: "ICR = EBIT / Interest = 5,00,000 / 1,00,000 = 5. A higher ICR means more ability to take on debt.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-007", type: "mcq", difficulty: "easy",
+      question: "Which capital involves investment in long-term assets like land and buildings?",
+      options: ["Working Capital", "Fixed Capital", "Liquid Capital", "Debt Capital"],
+      correct: 1,
+      explanation: "Fixed Capital refers to investments in long-term assets that are not easily converted to cash.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-008", type: "mcq", difficulty: "medium",
+      question: "A company has a high tax rate of 35%. Why would it prefer debt financing?",
+      options: [
+        "Dividends are tax deductible",
+        "Interest on debt is tax-deductible, reducing the effective cost",
+        "Debt is always cheaper than equity",
+        "SEBI requires debt financing"
+      ],
+      correct: 1,
+      explanation: "Interest payments are tax-deductible, so with high tax rates, debt becomes relatively cheaper — tax shield benefit.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-009", type: "mcq", difficulty: "medium",
+      question: "A retail store needs extra cash during the Diwali season to stock up on inventory. This refers to:",
+      options: ["Fixed Capital need", "Seasonal Working Capital", "Investment Decision", "Long-term finance"],
+      correct: 1,
+      explanation: "Seasonal factors creating temporary increases in stocks/inventory is a key factor affecting working capital.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-010", type: "mcq", difficulty: "hard",
+      question: "Which type of business requires MORE working capital?",
+      options: ["Trading firm (wholesale shop)", "Software IT company", "Manufacturing firm", "Consultancy firm"],
+      correct: 2,
+      explanation: "Manufacturing firms require more working capital because they hold raw materials, WIP, and finished goods — each stage tying up funds.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-011", type: "mcq", difficulty: "medium",
+      question: "Financial leverage refers to:",
+      options: [
+        "The proportion of fixed assets",
+        "The proportion of debt in capital structure",
+        "The interest income of a firm",
+        "The dividend payout ratio"
+      ],
+      correct: 1,
+      explanation: "Financial leverage = the use of debt (fixed-cost capital) in the capital structure. Higher leverage means more risk and more potential return.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-012", type: "mcq", difficulty: "easy",
+      question: "Capital budgeting decisions are also called:",
+      options: ["Dividend Decisions", "Financing Decisions", "Investment Decisions", "Working Capital Decisions"],
+      correct: 2,
+      explanation: "Capital Budgeting is the process of planning and managing a firm's long-term investments — an investment decision.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-013", type: "mcq", difficulty: "medium",
+      question: "A company allows customers 90-day credit periods. This will:",
+      options: [
+        "Reduce working capital needs",
+        "Increase working capital needs",
+        "Not affect working capital",
+        "Increase fixed capital needs"
+      ],
+      correct: 1,
+      explanation: "Longer credit periods mean cash is tied up in debtors for longer — increasing the working capital requirement.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-014", type: "mcq", difficulty: "hard",
+      question: "Under which condition would a firm REDUCE its dividend payout?",
+      options: [
+        "When profitable growth opportunities exist and funds are needed for reinvestment",
+        "When shareholders demand higher dividends",
+        "When the company has excess cash",
+        "When share prices are rising"
+      ],
+      correct: 0,
+      explanation: "If a firm has profitable investment opportunities, it retains more earnings and pays lower dividends to fund growth.",
+      examTags: ["CUET"]
+    },
+    {
+      id: "fm-q-015", type: "mcq", difficulty: "medium",
+      question: "What is the primary reflection of Wealth Maximization as an objective?",
+      options: [
+        "Higher profits reported in P&L",
+        "Market price of the company's equity shares",
+        "Total assets of the company",
+        "Number of employees"
+      ],
+      correct: 1,
+      explanation: "Wealth maximization is reflected in the market price of shares — it captures profitability, risk, and future growth expectations.",
+      examTags: ["CUET"]
     }
   ]
 };
