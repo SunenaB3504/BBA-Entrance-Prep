@@ -9,114 +9,73 @@ export const financialManagementData = {
   studyGuide: {
     topics: [
       {
-        title: "Financial Management: Concept & Objectives",
-        content: `Financial Management is concerned with the optimal procurement and usage of finance.
+        id: "bs-u9-t1",
+        title: "Concept & Objectives of Financial Management",
+        content: {
+          coreConcept: `**Financial Management** is concerned with the efficient acquisition and deployment of funds.
 
-**Primary Objective:**
-- **Wealth Maximisation**: Maximizing the market price of the company's equity shares. This is superior to profit maximization as it considers risk and time value of money.
+**Primary Objective**: To **Maximize Shareholders' Wealth** (Wealth Maximisation). This is reflected in the market price of the company's shares.
 
-**Role:**
-- Determines size and composition of fixed assets.
-- Determines quantum of current assets.
-- Manages debt-equity mix.
-- Affects Profit & Loss items (Interest, Depreciation).`,
-        visualizations: []
+**Core Financial Decisions:**
+1. **Investment Decision**: Where to invest funds (Capital Budgeting).
+2. **Financing Decision**: How much to raise and from where (Debt vs Equity).
+3. **Dividend Decision**: How much profit to distribute vs retain.`,
+          speedSummary: "Primary Goal = Maximize Shareholder Wealth. Core decisions = Investment, Financing, Dividend."
+        }
       },
       {
-        title: "Key Financial Decisions",
-        content: `1. **Investment Decision**:
-   - **Capital Budgeting**: Long-term investment in fixed assets. Irreversible except at huge cost.
-   - **Working Capital**: Day-to-day liquidity management.
-2. **Financing Decision**:
-   - Choosing the mix of Debt and Equity. Debt is cheaper (tax shield) but riskier (fixed obligation).
-3. **Dividend Decision**:
-   - Deciding how much profit to distribute as dividends vs how much to retain for growth.`,
-        visualizations: []
+        id: "bs-u9-t2",
+        title: "Capital Structure",
+        content: {
+          coreConcept: `**Capital Structure** refers to the mix between owners' funds (Equity) and borrowed funds (Debt).
+
+**Trading on Equity**: Using fixed interest-bearing securities (Debt) to increase the return on equity shares. This works only when **ROI > Cost of Debt**.
+
+| Factor | Influence on Debt |
+| :--- | :--- |
+| **Cash Flow Position** | Strong cash flow allows more debt |
+| **ICR (Interest Coverage Ratio)** | High ICR allows more debt |
+| **Cost of Debt** | Low cost favors debt |
+| **Tax Rate** | High tax rate favors debt (Interest is tax-deductible) |
+| **Stock Market Condition** | Bearish market favors debt; Bullish favors equity |`,
+          speedSummary: "Capital Structure = Debt vs Equity. ROI > Cost of Debt = Advantageous for Trading on Equity."
+        }
       },
       {
-        title: "Capital Structure & Trading on Equity",
-        content: `**Capital Structure**: The mix of long-term sources of funds (Debt vs Equity).
+        id: "bs-u9-t3",
+        title: "Fixed & Working Capital",
+        content: {
+          coreConcept: `**Fixed Capital**: Investment in long-term assets (Land, Mach). Influenced by Scale of operation, Nature of business, and Technology.
 
-**Trading on Equity (Financial Leverage)**:
-- Practice of using fixed-cost debt to increase Earnings Per Share (EPS).
-- **Favourable**: ROI > Cost of Debt. (EPS increases).
-- **Unfavourable**: ROI < Cost of Debt. (EPS decreases).`,
-        visualizations: [
-          {
-            id: 'trading-on-equity-logic',
-            title: 'Financial Leverage Logic',
-            type: 'table',
-            data: {
-              headers: ['Condition', 'Leverage Type', 'Effect on EPS'],
-              rows: [
-                ['ROI > Cost of Debt', 'Favourable', 'Increases (Wealth creation)'],
-                ['ROI < Cost of Debt', 'Unfavourable', 'Decreases (Wealth erosion)']
-              ]
-            }
-          }
-        ]
-      },
-      {
-        title: "Fixed and Working Capital",
-        content: `**Fixed Capital**: Investment in long-term assets (Plant, Building).
-- **Factors**: Nature of business, scale, growth prospects, technology, collaboration.
+**Working Capital**: Funds for day-to-day operations (Current Assets - Current Liabilities).
 
-**Working Capital**: Investment in current assets (Inventory, Debtors) for operations.
-- **Factors**: Operating cycle (time from RM to cash), seasonal factors, credit terms, growth.`,
-        visualizations: []
+**Factors affecting Working Capital:**
+- **Nature of Business**: Trading needs less; Manufacturing needs more.
+- **Scale of Operation**: Large needs more.
+- **Business Cycle**: Boom needs more.
+- **Seasonal Factors**: Peak season needs more.
+- **Credit Allowed/Availed**: Affects cash flow.`,
+          speedSummary: "Fixed (Long-term) vs Working (Short-term) capital."
+        }
       }
     ]
   },
 
   flashcards: [
-    { id: "fm-fc-001", term: "Financial Management", definition: "Management of flow of funds; optimal procurement and usage of finance", formula: null, example: "Deciding whether to take a bank loan or issue shares" },
-    { id: "fm-fc-002", term: "Wealth Maximisation", definition: "Maximizing the market price of company's equity shares", formula: null, example: "Focusing on actions that drive stock price from $100 to $150" },
-    { id: "fm-fc-003", term: "Capital Budgeting", definition: "Long-term investment decisions involving huge funds; irreversible", formula: null, example: "Investing $500M in a new semiconductor plant" },
-    { id: "fm-fc-004", term: "Financing Decision", definition: "Decision about the proportion of debt and equity in capital structure", formula: null, example: "Choosing to raise 60% debt and 40% equity" },
-    { id: "fm-fc-005", term: "Trading on Equity", definition: "Using debt to increase the EPS of equity shareholders", formula: "EPS = (EBIT - I)(1-T) / No. of Shares", example: "Using debt at 10% when ROI is 15% to boost shareholder returns" },
-    { id: "fm-fc-006", term: "Operating Cycle", definition: "Time gap between purchasing raw materials and receiving cash from sales", formula: null, example: "A 90-day cycle for a garment manufacturer" },
-    { id: "fm-fc-007", term: "Contractual Constraint", definition: "Restriction in loan agreements limiting dividend payments", formula: null, example: "Bank terms stating dividends cannot exceed 20% of profits" }
+    { id: "fm-fc-001", term: "Financial Management", definition: "Efficient acquisition and deployment of funds.", formula: null, example: "Deciding whether to take a bank loan or issue shares." },
+    { id: "fm-fc-002", term: "Wealth Maximization", definition: "The primary objective of maximizing the market price of equity shares.", formula: null, example: "Ensuring company decisions lead to rising share prices." },
+    { id: "fm-fc-003", term: "Capital Budgeting", definition: "Decision relating to investment in long-term assets.", formula: null, example: "Deciding to buy a new automated machinery." },
+    { id: "fm-fc-004", term: "Financial Leverage", definition: "The proportion of debt in the overall capital.", formula: "Debt / Equity", example: "A firm having 60% debt and 40% equity." },
+    { id: "fm-fc-005", term: "ICR", definition: "Interest Coverage Ratio - measures a firm's ability to meet interest obligations.", formula: "EBIT / Interest", example: "An ICR of 5 means profit is 5x the interest expense." }
   ],
 
   questions: [
     {
       id: "fm-q-001", type: "mcq", difficulty: "easy",
       question: "The primary objective of financial management is:",
-      options: ["Profit Maximisation", "Wealth Maximisation", "Cost Minimisation", "Sales Maximisation"],
+      options: ["Profit Maximization", "Wealth Maximization", "Cost Minimization", "Sales Maximization"],
       correct: 1,
-      explanation: "Wealth maximisation (maximizing share price) is the ultimate goal as it considers risk and time.",
-      examTags: ["CUET"]
-    },
-    {
-      id: "fm-q-002", type: "mcq", difficulty: "easy",
-      question: "Which of the following describes 'Capital Budgeting' decisions?",
-      options: ["Short term", "Irreversible", "Low risk", "Low cost"],
-      correct: 1,
-      explanation: "Capital budgeting decisions are long-term, involve huge funds, and are generally irreversible without huge loss.",
-      examTags: ["CUET"]
-    },
-    {
-      id: "fm-q-003", type: "mcq", difficulty: "medium",
-      question: "Financial leverage is favourable when:",
-      options: ["ROI < Cost of Debt", "ROI > Cost of Debt", "ROI = Cost of Debt", "Debt = Equity"],
-      correct: 1,
-      explanation: "It is favourable when the return earned on investment is higher than the interest paid on debt.",
-      examTags: ["CUET"]
-    },
-    {
-      id: "fm-q-004", type: "mcq", difficulty: "medium",
-      question: "Higher fixed operating costs (like rent) mean the firm should use ______ debt.",
-      options: ["More", "Less", "Zero", "Equal"],
-      correct: 1,
-      explanation: "Firms with high fixed operating costs already have high risk, so they should avoid adding fixed financial risk (debt).",
-      examTags: ["CUET"]
-    },
-    {
-      id: "fm-q-005", type: "mcq", difficulty: "hard",
-      question: "Which factor affects both Fixed Capital and Working Capital requirements?",
-      options: ["Production Cycle", "Business Cycle", "Growth Prospects", "Operating Efficiency"],
-      correct: 2,
-      explanation: "Growth prospects increase the need for both long-term assets (Fixed) and day-to-day operations (Working).",
+      explanation: "Wealth maximization (maximizing share price) is the ultimate goal as it considers risk and time value of money.",
       examTags: ["CUET"]
     }
   ]

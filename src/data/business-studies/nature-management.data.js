@@ -9,130 +9,115 @@ export const natureManagementData = {
   studyGuide: {
     topics: [
       {
+        id: "bs-u1-t1",
         title: "Introduction to Management",
-        content: `Management is a process of designing and maintaining an environment in which individuals, working together in groups, efficiently accomplish selected aims. It is essential for all organisations big or small, profit or non-profit, services or manufacturing.
+        content: {
+          coreConcept: `Management is a process of designing and maintaining an environment in which individuals, working together in groups, efficiently accomplish selected aims. It is essential for all organisations big or small, profit or non-profit, services or manufacturing.
 
 **Core Functions (POSDC):**
 1. **Planning**: Setting objectives and deciding how to achieve them.
 2. **Organising**: Assigning duties and grouping tasks.
 3. **Staffing**: Finding the right people for the right jobs.
 4. **Directing**: Leading, influencing, and motivating employees.
-5. **Controlling**: Monitoring performance against objectives.`,
-        visualizations: [
-          {
-            id: 'mgmt-process-cycle',
-            title: 'The Management Process Cycle',
-            type: 'steps',
-            data: ['Planning', 'Organising', 'Staffing', 'Directing', 'Controlling']
-          }
-        ]
+5. **Controlling**: Monitoring performance against objectives.
+
+**The Management Process cycle follows these steps in order:**
+- Planning
+- Organising
+- Staffing
+- Directing
+- Controlling`,
+          speedSummary: "Management = POSDC functions to achieve goals."
+        }
       },
       {
+        id: "bs-u1-t2",
         title: "Effectiveness vs Efficiency",
-        content: `Management involves two critical dimensions that must be balanced:
+        content: {
+          coreConcept: `**Effectiveness**: Doing the right task, completing activities and achieving goals. Main focus is on the **end result** (Time).
 
-**Effectiveness**: Doing the right task, completing activities and achieving goals. Its main focus is on the **end result** (Time).
+**Efficiency**: Doing the task correctly and with minimum cost. Main focus is on the **cost-benefit analysis** (Resources).
 
-**Efficiency**: Doing the task correctly and with minimum cost. Its main focus is on the **cost-benefit analysis** (Resources).
+| Basis | Effectiveness | Efficiency |
+| :--- | :--- | :--- |
+| Meaning | Completing the job on time | Completing job with minimum cost |
+| Objective | To achieve end result | To conduct cost-benefit analysis |
+| Main Focus | Time | Cost |
 
-**Example**: Suppose a company's target is to produce 5,000 units in a month. 
-- If a manager achieves the target by operating double shifts, they are **Effective** but **Inefficient** (due to high overtime costs).
-- If they produce at standard cost but miss the deadline, they are **Efficient** but **Ineffective**.`,
-        visualizations: [
-          {
-            id: 'eff-matrix',
-            title: 'Effectiveness vs Efficiency Matrix',
-            type: 'table',
-            data: {
-              headers: ['Basis', 'Effectiveness', 'Efficiency'],
-              rows: [
-                ['Meaning', 'Completing the job on time', 'Completing job with minimum cost'],
-                ['Objective', 'To achieve end result', 'To conduct cost-benefit analysis'],
-                ['Main Focus', 'Time', 'Cost']
-              ]
-            }
-          }
-        ]
+**Example**:
+- Achieving target by operating double shifts = **Effective** but **Inefficient** (high cost).
+- Producing at standard cost but missing deadline = **Efficient** but **Ineffective** (late).`,
+          speedSummary: "Effectiveness = End Result (Time). Efficiency = Cost-Benefit (Resources)."
+        }
       },
       {
+        id: "bs-u1-t3",
         title: "Characteristics of Management",
-        content: `1. **Goal Oriented Process**: Unites efforts of individuals towards common goals.
+        content: {
+          coreConcept: `1. **Goal Oriented Process**: Unites efforts towards common goals.
 2. **Pervasive**: Required in all types of organizations and at all levels.
-3. **Multidimensional**: Involves Management of Work, People, and Operations.
-4. **Continuous Process**: Ongoing series of functions performed by all managers.
+3. **Multidimensional**:
+   - Management of Work
+   - Management of People
+   - Management of Operations
+4. **Continuous Process**: Ongoing series of functions.
 5. **Group Activity**: Requires teamwork and coordination.
-6. **Dynamic Function**: Adapts to the changing environment (e.g., McDonald's changing its menu for the Indian market).
-7. **Intangible Force**: Cannot be seen but its presence is felt (orderliness, discipline).`,
-        visualizations: [
-          {
-            id: 'mgmt-dimensions',
-            title: 'Dimensions of Management',
-            type: 'list',
-            data: ['Management of Work', 'Management of People', 'Management of Operations']
-          }
-        ]
+6. **Dynamic Function**: Adapts to the changing environment.
+7. **Intangible Force**: Presence is felt through orderliness and discipline.`,
+          speedSummary: "Pervasive, Continuous, Multidimensional, Dynamic, and Intangible."
+        }
       },
       {
+        id: "bs-u1-t4",
         title: "Objectives of Management",
-        content: `**1. Organizational Objectives**:
-- **Survival**: Earning enough revenue to cover costs.
-- **Profit**: Covering risks and providing an incentive.
+        content: {
+          coreConcept: `**1. Organizational Objectives**:
+- **Survival**: Earning revenue to cover costs.
+- **Profit**: Covering risks and providing incentive.
 - **Growth**: Expanding sales, products, or employees.
 
-**2. Social Objectives**: Creating benefit for society (e.g., using eco-friendly methods, creating employment).
+**2. Social Objectives**: Creating benefit for society (eco-friendly methods, employment).
 
-**3. Personal Objectives**: Meeting individual needs of employees (e.g., fair wages, recognition, training).`,
-        visualizations: []
+**3. Personal Objectives**: Meeting needs of employees (fair wages, recognition).`,
+          speedSummary: "Org (Survival/Profit/Growth), Social, and Personal."
+        }
       },
       {
+        id: "bs-u1-t5",
         title: "Levels of Management",
-        content: `**Top Management**: 
+        content: {
+          coreConcept: `**Top Management** (Strategic):
 - CEO, COO, Chairman. 
-- Responsible for welfare, survival, and long-term goals.
+- Welfare, survival, and long-term goals.
 
-**Middle Management**: 
+**Middle Management** (Tactical):
 - Division Heads, Department Managers. 
-- Link between top and lower levels. Implement plans and interpret policies.
+- Link between top and lower levels.
 
-**Operational/Supervisory Management**: 
+**Operational/Supervisory Management** (Technical):
 - Foremen, Supervisors. 
-- Directly oversee the workforce, ensure quality, and minimize wastage.`,
-        visualizations: [
-          {
-            id: 'levels-pyramid',
-            title: 'Management Hierarchy',
-            type: 'steps',
-            data: ['Top Management (Strategic)', 'Middle Management (Tactical)', 'Operational Management (Technical)']
-          }
-        ]
+- Oversee workforce, ensure quality, and minimize wastage.`,
+          speedSummary: "Top (Strategic), Middle (Tactical), Operational (Technical)."
+        }
       },
       {
+        id: "bs-u1-t6",
         title: "Coordination: The Essence of Management",
-        content: `Coordination is the process of synchronising the activities of different departments. It is the force that binds all other functions of management.
+        content: {
+          coreConcept: `Coordination is the process of synchronising the activities of different departments. It binds all other functions.
 
 **Characteristics**:
 - Integrates group efforts.
 - Ensures unity of action.
-- Continuous process.
-- All pervasive.
-- Deliberate function.
+- Continuous and Pervasive.
 
-**Importance**: Needed due to Growth in size, Functional differentiation, and Specialisation.`,
-        visualizations: [
-          {
-            id: 'coord-vs-coop',
-            title: 'Coordination vs Cooperation',
-            type: 'table',
-            data: {
-              headers: ['Basis', 'Coordination', 'Cooperation'],
-              rows: [
-                ['Meaning', 'Orderly arrangement of group efforts', 'Voluntary effort of individuals'],
-                ['Nature', 'Deliberate and conscious effort', 'Voluntary and spontaneous'],
-                ['Requirement', 'Required by managers at all levels', 'Depends on individual willingness']
-              ]
-            }
-          }
-        ]
+| Basis | Coordination | Cooperation |
+| :--- | :--- | :--- |
+| Meaning | Orderly arrangement of group efforts | Voluntary effort of individuals |
+| Nature | Deliberate and conscious effort | Voluntary and spontaneous |
+| Requirement | Required by managers at all levels | Depends on individual willingness |`,
+          speedSummary: "Coordination is the deliberate force that binds management functions."
+        }
       }
     ]
   },

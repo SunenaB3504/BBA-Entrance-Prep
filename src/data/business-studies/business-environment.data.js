@@ -9,120 +9,65 @@ export const businessEnvironmentData = {
   studyGuide: {
     topics: [
       {
-        title: "Introduction & Features",
-        content: `Business environment is the sum total of all individuals, institutions and other forces that are outside the control of a business but may affect its performance.
+        id: "bs-u3-t1",
+        title: "Concept & Dimensions of Business Environment",
+        content: {
+          coreConcept: `Business Environment is the sum total of all individuals, institutions, and forces that are outside the control of a business enterprise but that may affect its performance.
 
-**Key Features:**
-1. **Totality of External Forces**: Aggregates all external factors.
-2. **Specific & General Forces**: 
-   - *Specific*: Customers, investors (affect firms directly).
-   - *General*: Social, Political, Legal, Tech (affect all firms indirectly).
-3. **Inter-relatedness**: Changes in one factor affect others (e.g., health awareness → organic food demand).
-4. **Dynamic**: Environment keeps changing (tech, trends).
-5. **Uncertainty**: Difficult to predict future happenings.
-6. **Complexity**: Difficult to understand and analyze in parts.
-7. **Relativity**: Differs from country to country (e.g., demand for sarees is higher in India than France).`,
-        visualizations: []
+**Dimensions (PESTLE-S):**
+1. **Economic**: Interest rates, inflation, GDP (GST, Demonetization).
+2. **Social**: Customs, values, lifestyle (Health awareness).
+3. **Technological**: Innovation and R&D (Digital payments, AI).
+4. **Legal**: Legislations and court judgments (Consumer Protection Act).
+5. **Political**: System of government and stability (General election results).`,
+          speedSummary: "Environment = Forces (Economic, Social, Tech, Legal, Political) affecting business."
+        }
       },
       {
-        title: "Importance of Business Environment",
-        content: `Understanding the environment allows a firm to:
-- **Identify Opportunities**: Gain **First Mover Advantage** (e.g., Maruti in small cars).
-- **Identify Threats**: Serve as **Early Warning Signals** (e.g., MNCs entering market).
-- **Tap Useful Resources**: Extracting inputs like finance, labor, and raw materials.
-- **Cope with Rapid Changes**: Adapting to turbulence and disruption.
-- **Assistance in Planning**: Providing the basis for future policy formulation.
-- **Improve Performance**: Continuous monitoring leads to better results.`,
-        visualizations: []
-      },
-      {
-        title: "Dimensions of Business Environment (PESTLE)",
-        content: `1. **Economic Environment**: Interest rates, inflation, disposable income, value of rupee.
-2. **Social Environment**: Customs, traditions, lifestyles, values (e.g., festive seasons, health-consciousness).
-3. **Technological Environment**: Scientific improvements and innovations (e.g., online booking, AI).
-4. **Political Environment**: Stability of government, attitude of government towards business.
-5. **Legal Environment**: Acts passed by government, court judgements, administrative orders (e.g., statutory warnings).`,
-        visualizations: [
-          {
-            id: 'pestle-dimensions',
-            title: 'DIMENSIONS OF BUSINESS ENVIRONMENT',
-            type: 'list',
-            data: ['Economic', 'Social', 'Technological', 'Political', 'Legal']
-          }
-        ]
-      },
-      {
-        title: "Economic Reforms (LPG 1991)",
-        content: `In 1991, India introduced New Economic Policy to handle fiscal crisis.
+        id: "bs-u3-t2",
+        title: "LPG Policy (New Economic Policy 1991)",
+        content: {
+          coreConcept: `India introduced major reforms in 1991 to boost the economy:
+- **Liberalization**: Removing unnecessary controls and restrictions (Unlocking economy).
+- **Privatization**: Reducing the role of Public Sector; Sale of shares (Disinvestment).
+- **Globalization**: Integrating the national economy with the world economy (MNCs, Foreign Trade).
 
-**1. Liberalisation**: Removing unnecessary controls and restrictions (licensing, quotas).
-**2. Privatisation**: Reducing role of public sector through **Disinvestment** (selling government equity).
-**3. Globalisation**: Integrating domestic economy with world economy through free flow of trade and capital.`,
-        visualizations: []
-      },
-      {
-        title: "Demonetization",
-        content: `Announced on **Nov 8, 2016** (₹500 and ₹1000 notes removed).
-
-**Features:**
-- **Tax Administration Measure**: Black money holders penalized.
-- **Shift to Savings**: Directed cash into formal banking.
-- **Digitization**: Pushed "less-cash" economy through digital payments (UPI).`,
-        visualizations: []
+**Impact of LPG:**
+- Increasing competition.
+- More demanding customers.
+- Rapidly changing technological environment.
+- Necessity for change.
+- Market orientation.`,
+          speedSummary: "LPG = Liberalization, Privatization, Globalization (1991 Reforms)."
+        }
       }
     ]
   },
 
   flashcards: [
-    { id: "be-fc-001", term: "Business Environment", definition: "External forces outside firm's control that affect its performance", formula: null, example: "Changes in tax laws or consumer tastes" },
-    { id: "be-fc-002", term: "First Mover Advantage", definition: "Exploiting opportunities early before competitors", formula: null, example: "WhatsApp in free instant messaging" },
-    { id: "be-fc-003", term: "Economic Dimension", definition: "Factors like interest rates, inflation, and income affecting demand", formula: null, example: "Rise in bank rates reducing demand for car loans" },
-    { id: "be-fc-004", term: "Legal Dimension", definition: "Legislation, court judgments and government orders", formula: null, example: "Ban on single-use plastics" },
-    { id: "be-fc-005", term: "Liberalisation", definition: "Removal of government restrictions and licensing on business", formula: null, example: "Abolishing license requirements for most industries" },
-    { id: "be-fc-006", term: "Disinvestment", definition: "Selling out a part or whole of government shares in public sector units", formula: null, example: "Selling shares of LIC or Air India" },
-    { id: "be-fc-007", term: "Specific Forces", definition: "Factors affecting individual firms directly (customers, suppliers, competitors)", formula: null, example: "A competitor launching a similar product at lower price" },
-    { id: "be-fc-008", term: "General Forces", definition: "Factors affecting all firms in an industry (Social, Political, Legal)", formula: null, example: "A change in GST rates by the government" }
+    { id: "be-fc-001", term: "Liberalization", definition: "Unlocking the economy from government controls and restrictions.", formula: null, example: "Removing license requirements for industries." },
+    { id: "be-fc-002", term: "Privatization", definition: "Transfer of ownership/control from the public sector to the private sector.", formula: null, example: "Sale of government shares in Air India." },
+    { id: "be-fc-003", term: "Globalization", definition: "Integrating the domestic economy with the world economy.", formula: null, example: "Apple selling iPhones in India." },
+    { id: "be-fc-004", term: "Social Environment", definition: "Forces like customs, traditions, and social trends that affect business.", formula: null, example: "Rise in demand for organic food." },
+    { id: "be-fc-005", term: "Technological Environment", definition: "Forces relating to scientific improvements and innovations.", formula: null, example: "Shift from traditional banking to Net Banking." },
+    { id: "be-fc-006", term: "Demonetization", definition: "The withdrawal of a currency unit's status as legal tender.", formula: null, example: "Nov 8, 2016 ban on ₹500 and ₹1000 notes." }
   ],
 
   questions: [
     {
       id: "be-q-001", type: "mcq", difficulty: "easy",
-      question: "Increase in life expectancy of people belongs to which dimension?",
-      options: ["Economic", "Social", "Technological", "Legal"],
+      question: "Which dimension of business environment relates to 'Interest Rates and Inflation'?",
+      options: ["Social", "Economic", "Political", "Legal"],
       correct: 1,
-      explanation: "Demographic changes like life expectancy or population shifts are part of the Social Environment.",
+      explanation: "Economic environment includes factors like interest rates, inflation, and disposable income.",
       examTags: ["CUET"]
     },
     {
-      id: "be-q-002", type: "mcq", difficulty: "easy",
-      question: "Which feature of business environment emphasizes difficulty in predicting future happenings?",
-      options: ["Complexity", "Dynamic", "Uncertainty", "Relativity"],
+      id: "be-q-002", type: "mcq", difficulty: "medium",
+      question: "The 1991 policy aimed at 'integrating the national economy with the world' is:",
+      options: ["Liberalization", "Privatization", "Globalization", "Modernization"],
       correct: 2,
-      explanation: "Uncertainty refers to the difficulty in predicting future events or environmental changes accurately.",
-      examTags: ["CUET"]
-    },
-    {
-      id: "be-q-003", type: "mcq", difficulty: "medium",
-      question: "The government sell-off of equity in public sector enterprises is called:",
-      options: ["Liberlisation", "Globalisation", "Disinvestment", "Nationalisation"],
-      correct: 2,
-      explanation: "Disinvestment involves the government selling its stake in public sector enterprises to private investors.",
-      examTags: ["CUET"]
-    },
-    {
-      id: "be-q-004", type: "mcq", difficulty: "medium",
-      question: "Which dimension of business environment involves scientific improvements and innovations?",
-      options: ["Economic", "Social", "Technological", "Legal"],
-      correct: 2,
-      explanation: "Technological environment includes forces related to scientific improvements and new ways of producing goods.",
-      examTags: ["CUET"]
-    },
-    {
-      id: "be-q-005", type: "mcq", difficulty: "hard",
-      question: "A statutory warning on tobacco packets is an example of which dimension?",
-      options: ["Social", "Political", "Legal", "Economic"],
-      correct: 2,
-      explanation: "Any legislation or mandatory requirement by government law (statute) falls under the Legal Environment.",
+      explanation: "Globalization is the process of integrating the local economy with the global market.",
       examTags: ["CUET"]
     }
   ]

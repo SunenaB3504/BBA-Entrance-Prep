@@ -9,147 +9,84 @@ export const organisingData = {
   studyGuide: {
     topics: [
       {
+        id: "bs-u5-t1",
         title: "Concept & Process of Organising",
-        content: `Organising is the process of defining and grouping activities and establishing authority relationships among them. It translates plans into action.
+        content: {
+          coreConcept: `**Organising** is the process of identifying and grouping the work to be performed, defining responsibility, and establishing relationships for the purpose of enabling people to work most effectively.
 
-**Steps in the Organising Process:**
-1. **Identification and Division of Work**: Dividing work into manageable activities to avoid duplication.
-2. **Departmentalisation**: Grouping similar activities (by function, product, or territory).
-3. **Assignment of Duties**: Allocating work based on skills and competencies.
-4. **Establishing Reporting Relationships**: Clarifying hierarchy (who reports to whom).`,
-        visualizations: [
-          {
-            id: 'organising-process-flow',
-            title: 'Steps in Organising',
-            type: 'flow',
-            data: {
-              nodes: [
-                { id: '1', label: '1. Identification & Division' },
-                { id: '2', label: '2. Departmentalisation' },
-                { id: '3', label: '3. Assignment of Duties' },
-                { id: '4', label: '4. Reporting Relationships' }
-              ],
-              edges: [
-                { from: '1', to: '2' }, { from: '2', to: '3' }, { from: '3', to: '4' }
-              ]
-            }
-          }
-        ]
+**Organising Process:**
+1. **Identification & Division of Work**: Avoiding duplication and reducing burden.
+2. **Departmentalisation**: Grouping similar jobs (Functional or Divisional).
+3. **Assignment of Duties**: Based on skills and competence.
+4. **Establishing Reporting Relationships**: Defining who reports to whom.`,
+          speedSummary: "Organising = Structure + Division of Work + Coordination."
+        }
       },
       {
-        title: "Importance of Organising",
-        content: `- **Benefits of Specialisation**: Systematic allocation leads to expertise.
-- **Clarity in Working Relationships**: Removes ambiguity and fixes responsibility.
-- **Optimum Utilisation of Resources**: Avoids overlapping/duplication.
-- **Adaptation to Change**: Flexible structure allows for environmental shifts.
-- **Effective Administration**: Clear job descriptions prevent confusion.
-- **Development of Personnel**: Delegation allows subordinates to learn and grow.
-- **Expansion and Growth**: Facilitates addition of new departments/product lines.`,
-        visualizations: []
-      },
-      {
-        title: "Organisation Structures",
-        content: `**1. Functional Structure**:
-- Grouping jobs by major functions (Production, Marketing, etc.).
-- Best for single-product firms needing specialization.
-- *Pros*: Occupational specialization, efficiency.
-- *Cons*: Functional empires, coordination problems.
+        id: "bs-u5-t2",
+        title: "Organisational Structure",
+        content: {
+          coreConcept: `Organisational structure is the network of job positions, responsibilities and authority at different levels.
 
-**2. Divisional Structure**:
-- Separate business units based on product lines.
-- Each division is self-contained and multifunctional.
-- *Pros*: Product specialization, profit accountability.
-- *Cons*: Increased cost due to duplication, inter-divisional conflicts.`,
-        visualizations: [
-          {
-            id: 'func-vs-div',
-            title: 'Functional vs Divisional Structure',
-            type: 'table',
-            data: {
-              headers: ['Basis', 'Functional', 'Divisional'],
-              rows: [
-                ['Basis', 'Functions', 'Product Lines'],
-                ['Responsibility', 'Difficult to fix', 'Easy to fix (Profit centers)'],
-                ['Cost', 'Economical', 'Costly (Duplication)']
-              ]
-            }
-          }
-        ]
+| Basis | Functional Structure | Divisional Structure |
+| :--- | :--- | :--- |
+| Formation | Based on functions (Production, Sales) | Based on products (Clothing, Footwear) |
+| Specialisation | Functional specialisation | Product specialisation |
+| Responsibility | Difficult to fix on one department | Easy to fix for product performance |
+| Managerial Dev. | Less opportunities | High (as manager heads a full division) |
+| Cost | Economical (no duplication) | Expensive (duplication of functions) |
+| Suitability | Mid-sized, single product firms | Large, multi-product firms |`,
+          speedSummary: "Functional (by Dept) vs Divisional (by Product)."
+        }
       },
       {
+        id: "bs-u5-t3",
         title: "Formal vs Informal Organisation",
-        content: `**Formal**: 
-- Deliberately created by management.
-- Follows official scalar chain.
-- Objective: Accomplish specific tasks.
+        content: {
+          coreConcept: `**Formal Organisation**: Deliberately created by management to achieve goals. Standardized and follows a scalar chain.
 
-**Informal**: 
-- Spontaneous social networks.
-- Follows "Grapevine" communication.
-- Objective: Fulfill social/personal needs.`,
-        visualizations: []
+**Informal Organisation**: Spontaneously created from social interaction. Meets personal/social needs of employees.
+
+**Delegation**: Transfer of authority from superior to subordinate.
+**Elements of Delegation:**
+- **Authority**: Right to command (Flows Downward).
+- **Responsibility**: Obligation to perform (Flows Upward).
+- **Accountability**: Answerability for output (Flows Upward - cannot be delegated).`,
+          speedSummary: "Formal (Planned) vs Informal (Spontaneous). Delegation = Authority + Responsibility + Accountability."
+        }
       },
       {
-        title: "Delegation & Decentralisation",
-        content: `**Delegation**: Downward transfer of authority from superior to subordinate.
-- **Elements**: Authority (can be delegated), Responsibility (assigned), Accountability (absolute; cannot be delegated).
+        id: "bs-u5-t4",
+        title: "Decentralisation",
+        content: {
+          coreConcept: `**Decentralisation** is the deliberate and even distribution of authority to the lowest levels. It is a philosophy of management.
 
-**Decentralisation**: Systematic delegation of authority to the lowest levels.
-- **Importance**: Develops initiative, managerial talent, and ensures quick decision-making.`,
-        visualizations: []
+**Difference from Delegation:**
+- **Delegation** is a necessity (one person can't do all).
+- **Decentralisation** is a policy decision (optional).
+- Delegation is for 2 people; Decentralization is for the whole organization.`,
+          speedSummary: "Decentralisation = Spread of authority to all levels."
+        }
       }
     ]
   },
 
   flashcards: [
-    { id: "og-fc-001", term: "Span of Management", definition: "Number of subordinates that can be effectively managed by a superior", formula: null, example: "A manager overseeing 5 team leads" },
-    { id: "og-fc-002", term: "Accountability", definition: "Answerability for final outcome; cannot be delegated (flows upward)", formula: null, example: "Head remains answerable for project failure" },
-    { id: "og-fc-003", term: "Principle of Absoluteness", definition: "Manager remains responsible for task even after delegating authority", formula: null, example: "Delegating work but staying liable for results" },
-    { id: "og-fc-004", term: "Functional Structure", definition: "Grouping jobs of similar nature under major functions like HR or Finance", formula: null, example: "All accounting tasks under Finance department" },
-    { id: "og-fc-005", term: "Divisional Structure", definition: "Organisation divided into separate units based on products (Cosmetics, Garments)", formula: null, example: "Samsung having separate mobile and appliance divisions" },
-    { id: "og-fc-006", term: "Grapevine", definition: "The informal communication network within an organisation", formula: null, example: "Water-cooler gossip about office changes" },
-    { id: "og-fc-007", term: "Decentralisation", definition: "Policy of pushing decision-making authority to the lowest possible levels", formula: null, example: "Branch managers deciding local staff bonuses" }
+    { id: "or-fc-001", term: "Organising", definition: "Process of grouping tasks and establishing authority relationships.", formula: null, example: "Grouping marketing tasks under the Marketing Manager." },
+    { id: "or-fc-002", term: "Span of Management", definition: "Number of subordinates that can be effectively managed by a superior.", formula: null, example: "A manager overseeing 5 team leaders." },
+    { id: "or-fc-003", term: "Functional Structure", definition: "Structure based on various functions like production, marketing, and finance.", formula: null, example: "A company having separate heads for Finance and HR." },
+    { id: "or-fc-004", term: "Divisional Structure", definition: "Structure based on separate product lines.", formula: null, example: "ITC having divisions for Tobacco, Hotels, and Foods." },
+    { id: "or-fc-005", term: "Delegation", definition: "Downward transfer of authority from a superior to a subordinate.", formula: null, example: "Assigning a project report to a junior." },
+    { id: "or-fc-006", term: "Accountability", definition: "Answerability for the final outcome of the assigned task.", formula: null, example: "The supervisor explaining a missed deadline to the CEO." }
   ],
 
   questions: [
     {
-      id: "og-q-001", type: "mcq", difficulty: "easy",
-      question: "Which element of delegation cannot be delegated at all?",
-      options: ["Authority", "Responsibility", "Accountability", "Power"],
-      correct: 2,
-      explanation: "Accountability is absolute and cannot be delegated; the superior remains answerable to their boss.",
-      examTags: ["CUET"]
-    },
-    {
-      id: "og-q-002", type: "mcq", difficulty: "easy",
-      question: "The number of subordinates managed by a superior is called:",
-      options: ["Scalar Chain", "Span of Management", "Hierarchy", "Delegation"],
-      correct: 1,
-      explanation: "Span of Management refers to the number of subordinates that can be effectively managed by a superior.",
-      examTags: ["CUET"]
-    },
-    {
-      id: "og-q-003", type: "mcq", difficulty: "medium",
-      question: "Which structure is best for a firm producing multiple products like Cosmetics and Footwear?",
+      id: "or-q-001", type: "mcq", difficulty: "easy",
+      question: "Which structure is suitable for a multi-product firm?",
       options: ["Functional", "Divisional", "Formal", "Informal"],
       correct: 1,
-      explanation: "Divisional structure is suitable for multi-product companies where each product can be an independent profit center.",
-      examTags: ["CUET"]
-    },
-    {
-      id: "og-q-004", type: "mcq", difficulty: "medium",
-      question: "Which concept involves the systematic dispersal of authority to all levels of management?",
-      options: ["Delegation", "Decentralisation", "Centralisation", "Departmentalisation"],
-      correct: 1,
-      explanation: "Decentralisation is the systematic delegation of authority throughout all levels of the organisation.",
-      examTags: ["CUET"]
-    },
-    {
-      id: "og-q-005", type: "mcq", difficulty: "hard",
-      question: "The 'Principle of Absoluteness' in delegation relates to:",
-      options: ["Authority", "Responsibility", "Accountability", "Division of Work"],
-      correct: 2,
-      explanation: "The Principle of Absoluteness of Accountability states that accountability cannot be delegated; the delegator remains responsible.",
+      explanation: "Divisional structure groups activities based on product lines, making it ideal for diverse product portfolios.",
       examTags: ["CUET"]
     }
   ]

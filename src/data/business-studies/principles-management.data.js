@@ -9,81 +9,64 @@ export const principlesManagementData = {
   studyGuide: {
     topics: [
       {
+        id: "bs-u2-t1",
         title: "Nature of Management Principles",
-        content: `Principles of management are broad and general guidelines for decision-making and behaviour. Unlike pure science, they are not rigid.
+        content: {
+          coreConcept: `Principles of management are broad and general guidelines for decision-making and behaviour. Unlike pure science, they are not rigid.
 
 **Key Characteristics:**
 1. **Universal Applicability**: Applied to all types of organizations and levels.
 2. **General Guidelines**: Not ready-made solutions; they must be adapted.
-3. **Formed by Practice**: Developed through observation and repeated testing.
+3. **Formed by Practice**: Developed through observation and testing.
 4. **Flexible**: Can be modified depending on the situation.
 5. **Mainly Behavioural**: Aim to influence human behavior.
-6. **Cause & Effect Relationship**: Help predict outcomes of specific actions.
-7. **Contingent**: Applicability depends on the prevailing situation.`,
-        visualizations: []
+6. **Cause & Effect Relationship**: Help predict outcomes.
+7. **Contingent**: Applicability depends on the situation.`,
+          speedSummary: "General, Universal, Flexible, and formed by Practice."
+        }
       },
       {
+        id: "bs-u2-t2",
         title: "Scientific Management (F.W. Taylor)",
-        content: `F.W. Taylor, the "Father of Scientific Management," introduced scientific methods to the shop floor to increase productivity.
+        content: {
+          coreConcept: `F.W. Taylor, the "Father of Scientific Management," introduced scientific methods to the shop floor.
 
 **Core Principles:**
-- **Science, not Rule of Thumb**: Finding the "one best way" through analysis.
-- **Harmony, Not Discord**: **Mental Revolution** - a complete change in attitude between management and workers.
-- **Cooperation, Not Individualism**: Management should welcome worker suggestions.
-- **Development of Each Person**: Scientific selection and training for maximum efficiency.
+- **Science, not Rule of Thumb**: Finding the "one best way".
+- **Harmony, Not Discord**: **Mental Revolution** - a complete change in attitude.
+- **Cooperation, Not Individualism**: Management-Worker teamwork.
+- **Each Person's Development**: Training for maximum efficiency.
 
 **Key Techniques:**
-- **Functional Foremanship**: Separating planning (4 bosses) from execution (4 bosses).
-- **Standardization**: Setting benchmarks for every activity.
-- **Time Study**: Determining standard time for a task.
-- **Motion Study**: Eliminating unnecessary movements.
-- **Differential Piece Wage System**: Rewarding efficient workers with higher rates.`,
-        visualizations: [
-          {
-            id: 'functional-foremanship',
-            title: 'Functional Foremanship (8 Bosses)',
-            type: 'flow',
-            data: {
-              nodes: [
-                { id: 'plan', label: 'Planning (Route, Instruction, Time, Discipline)' },
-                { id: 'prod', label: 'Production (Speed, Gang, Repair, Inspector)' },
-                { id: 'w', label: 'Worker' }
-              ],
-              edges: [
-                { from: 'plan', to: 'w' },
-                { from: 'prod', to: 'w' }
-              ]
-            }
-          }
-        ]
+- **Functional Foremanship**: 8 specialist bosses (4 Planning, 4 Execution).
+- **Standardization**: Setting benchmarks.
+- **Work Study**: Time, Motion, Fatigue, and Method studies.
+- **Differential Piece Wage System**: Rewarding efficiency.`,
+          speedSummary: "Taylor = Science, Mental Revolution, and Work Studies."
+        }
       },
       {
+        id: "bs-u2-t3",
         title: "Fayol's 14 Principles of Management",
-        content: `Henri Fayol focus was on overall administration (Top Level).
+        content: {
+          coreConcept: `Henri Fayol focus was on overall administration (Top Level).
 
 **Top Principles:**
 1. **Division of Work**: Specialization for efficiency.
 2. **Unity of Command**: One subordinate, one boss.
 3. **Unity of Direction**: One unit, one plan.
-4. **Scalar Chain**: Formal line of authority. **Gang Plank** is the emergency shortcut.
+4. **Scalar Chain**: Formal line of authority. **Gang Plank** is the shortcut.
 5. **Equity**: Kindness and justice (no discrimination).
 6. **Order**: "A place for everything and everyone in its place."
-7. **Esprit de Corps**: Team spirit; replacing "I" with "We".`,
-        visualizations: [
-          {
-            id: 'unity-command-vs-direction',
-            title: 'Unity of Command vs Direction',
-            type: 'table',
-            data: {
-              headers: ['Basis', 'Unity of Command', 'Unity of Direction'],
-              rows: [
-                ['Meaning', 'One boss per employee', 'One head, one plan per unit'],
-                ['Aim', 'Prevents dual subordination', 'Prevents overlapping'],
-                ['Impact', 'Affects individual', 'Affects entire unit']
-              ]
-            }
-          }
-        ]
+7. **Esprit de Corps**: Team spirit; "I" replaced with "We".
+
+| Basis | Unity of Command | Unity of Direction |
+| :--- | :--- | :--- |
+| Meaning | One boss per employee | One head, one plan per unit |
+| Aim | Prevents dual subordination | Prevents overlapping |
+| Impact | Affects individual | Affects entire unit |`,
+          speedSummary: "Fayol = Administrative rules like Scalar Chain and Unity of Command."
+        }
       }
     ]
   },
