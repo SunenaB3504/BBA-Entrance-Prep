@@ -873,5 +873,56 @@ export const caStudyNotes = [
         examAngle: "Most likely asked as: Who will visit the ISS in 2025? OR What is the name of the robot?",
         displayMode: "study-note",
         showBeforeTopicId: "ca-sd-101"
+    },
+    {
+        id: "sn-051", topicNumber: 51,
+        title: "India AI Mission 2024",
+        caTag: "science-defence", topicYear: 2024,
+        examTags: ["MH-CET", "CUET"],
+        summary: "The India AI Mission is a ₹10,372 crore government program to make India a global leader in Artificial Intelligence. It aims to build supercomputers and AI models like 'ChatGPT' but specifically for Indian languages.",
+        keyPoints: [
+            "Compute Infrastructure → [WHAT] Building 10,000 GPUs (Graphics Processing Units) in India [WHY] because these super-chips are the 'brain' needed to run advanced AI software securely.",
+            "Bhashini Project → [WHAT] A tool to translate all 22 official Indian languages instantly using AI [WHY] so that farmers and villagers can use the internet using their voice.",
+            "Start-up Funding → [WHAT] Giving money to young companies to create AI apps for hospitals and schools [WHY] to solve local problems instead of depending on American software.",
+            "MeitY Approval → [WHAT] The Ministry of Electronics and IT leads this mission [WHY] to ensure AI is used safely and does not take away basic jobs.",
+            "Data Depository → [WHAT] Creating a secure vault of Indian data [WHY] so that AI models can learn how Indians speak and behave, making tools smarter."
+        ],
+        examAngle: "Most likely asked as: What is the budget of the India AI Mission? OR What does the Bhashini project do?",
+        displayMode: "study-note",
+        showBeforeTopicId: "ca-sd-121"
+    },
+    {
+        id: "sn-052", topicNumber: 52,
+        title: "CPI Inflation & The Economy",
+        caTag: "business-economy", topicYear: 2024,
+        examTags: ["MH-CET", "CUET"],
+        summary: "CPI (Consumer Price Index) Inflation measures how fast the prices of daily items like milk, vegetables, and petrol are rising for common people. The RBI tries to keep this number between 2% and 6%.",
+        keyPoints: [
+            "Retail Inflation Measure → [WHAT] CPI checks the price of a 'basket' of goods bought by normal citizens [WHY] unlike WPI which checks wholesale factory prices.",
+            "Food Price Spikes → [WHAT] In 2024, tomato and onion prices pushed CPI up [WHY] showing how much agriculture and rain affect the Indian economy.",
+            "RBI Target 4 Percent → [WHAT] The ideal inflation rate the Reserve Bank of India wants [WHY] it is low enough to make things affordable but high enough to keep businesses growing.",
+            "Monetary Policy Tool → [WHAT] If CPI goes too high, RBI increases interest rates [WHY] making loans expensive so people spend less, which brings prices down.",
+            "Base Year 2012 → [WHAT] The prices today are compared to the prices of the year 2012 [WHY] to mathematically calculate the genuine percentage increase over time."
+        ],
+        examAngle: "Most likely asked as: What does CPI stand for? OR What is the RBI's inflation target range?",
+        displayMode: "study-note",
+        showBeforeTopicId: "ca-be-141"
+    },
+    {
+        id: "sn-053", topicNumber: 53,
+        title: "Fiscal Deficit (Budget 2024-25)",
+        caTag: "business-economy", topicYear: 2024,
+        examTags: ["CUET", "MH-CET"],
+        summary: "A 'Fiscal Deficit' occurs when a government spends more money than it earns through taxes. The Indian government has been reducing this gap every year to ensure the country does not take on too much debt.",
+        keyPoints: [
+            "4.9 Percent Target → [WHAT] In 2024, the government set a target to keep the deficit at 4.9% of GDP [WHY] down from over 9% during the COVID years, showing financial discipline.",
+            "Borrowing Money → [WHAT] The deficit amount is the exact amount the government needs to borrow from banks [WHY] to pay salaries and build new highways.",
+            "Capital vs Revenue Spending → [WHAT] Borrowing is considered 'good' if spent on Capital (roads, bridges) [WHY] because roads will help earn money in the future, unlike Revenue spending (subsidies).",
+            "FRBM Act → [WHAT] Fiscal Responsibility and Budget Management Act [WHY] a law that legally forces the government to control its spending and not print too much money.",
+            "Credit Ratings → [WHAT] If the deficit is low, global agencies give India a 'Good Rating' [WHY] making it cheaper for Indian companies to get foreign loans."
+        ],
+        examAngle: "Most likely asked as: What is the fiscal deficit target for 2024-25? OR What does the FRBM Act control?",
+        displayMode: "study-note",
+        showBeforeTopicId: "ca-be-161"
     }
 ];

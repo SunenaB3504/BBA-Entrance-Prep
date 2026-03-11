@@ -1,6 +1,6 @@
 export const logicPlazaStudyNotes = [
   // Arrangement Arena
-  { id: "sn-lp-001", topic: "Linear Arrangements", content: "Always check if people are facing North or South. North: Left is your Left. South: Left is your Right." },
+  { id: "sn-lp-001", topic: "Linear Arrangements", content: "Always check if people are facing North or South. North: Left is your Left. South: Left is your Right.", diagram: "North Facing:\\n[L] P1 -- P2 -- P3 -- P4 [R]\\n\\nSouth Facing:\\n[R] P1 -- P2 -- P3 -- P4 [L]" },
   { id: "sn-lp-002", topic: "Linear Arrangements", content: "Relative terms: 'To the immediate left' means no one in between. 'Second to the left' means one person in between." },
   { id: "sn-lp-003", topic: "Circular Arrangements", content: "Facing Center: Clockwise is Left, Anti-clockwise is Right." },
   { id: "sn-lp-004", topic: "Circular Arrangements", content: "Facing Outward: Clockwise is Right, Anti-clockwise is Left." },
@@ -29,7 +29,7 @@ export const logicPlazaStudyNotes = [
   { id: "sn-lp-021", topic: "Blood Relations", content: "Use '+' for Male, '-' for Female. Use horizontal lines for same generation, vertical for parents/children." },
   { id: "sn-lp-022", topic: "Blood Relations", content: "Maternal side = Mother's family; Paternal side = Father's family." },
   { id: "sn-lp-023", topic: "Blood Relations", content: "Important relations: Father's brother is Paternal Uncle, Mother's brother is Maternal Uncle." },
-  { id: "sn-lp-024", topic: "Direction Sense", content: "Main directions: North, South, East, West. Cardinals: NE, NW, SE, SW." },
+  { id: "sn-lp-024", topic: "Direction Sense", content: "Main directions: North, South, East, West. Cardinals: NE, NW, SE, SW.", diagram: "      N\\n  NW  |  NE\\n    \\ | /\\nW --- + --- E\\n    / | \\\\n  SW  |  SE\\n      S" },
   { id: "sn-lp-025", topic: "Direction Sense", content: "Pythagoras Theorem: H² = P² + B² is frequently used to find shortest distance." },
   { id: "sn-lp-026", topic: "Direction Sense", content: "Shadow logic: Morning (Sun in East) -> Shadow in West. Evening (Sun in West) -> Shadow in East." },
   { id: "sn-lp-027", topic: "Direction Sense", content: "Facing North, a right turn takes you East. Facing South, a right turn takes you West." },

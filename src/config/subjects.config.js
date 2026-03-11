@@ -98,7 +98,10 @@ export const SUBJECTS = [
     chapters: [
       { id: "comprehension", name: "Reading Comprehension", dataFile: "comprehension.data", questionCount: 20 },
       { id: "grammar", name: "Grammar & Usage", dataFile: "grammar.data", questionCount: 20 },
-      { id: "vocabulary", name: "Vocabulary & Word Families", dataFile: "vocabulary.data", questionCount: 50 }
+      { id: "vocabulary", name: "Vocabulary & Word Families", dataFile: "vocabulary.data", questionCount: 50 },
+      { id: "reading-strategies", name: "Reading Strategies", dataFile: "reading-strategies.data", questionCount: 15 },
+      { id: "writing-skills", name: "Writing Skills", dataFile: "writing-skills.data", questionCount: 15 },
+      { id: "literature-poetry", name: "Literature & Poetry", dataFile: "literature-poetry.data", questionCount: 15 }
     ]
   },
   {

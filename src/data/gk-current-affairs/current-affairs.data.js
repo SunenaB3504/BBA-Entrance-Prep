@@ -1198,6 +1198,36 @@ export const currentAffairsData = {
             examTags: ["CUET", "MH-CET"],
             caTag: "awards-sports", caYear: 2024, verifiedAsOf: "2024-12", refreshPriority: "medium",
             cognitiveType: "recall", timePresure: "speed", speedTarget: 30
+        },
+        {
+            id: "ca-sd-051", type: "mcq", difficulty: "medium",
+            question: "What is the primary objective of the 'Bhashini' project under the India AI Mission?",
+            options: ["To translate official Indian languages instantly using AI", "To launch indigenous satellites", "To provide free internet to rural schools", "To develop military drones"],
+            correct: 0,
+            explanation: "Bhashini is an AI-driven language translation platform aiming to break language barriers in India.",
+            examTags: ["CUET", "MH-CET"],
+            caTag: "science-defence", caYear: 2024, verifiedAsOf: "2024-12", refreshPriority: "low",
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 45
+        },
+        {
+            id: "ca-be-052", type: "mcq", difficulty: "medium",
+            question: "What is the Reserve Bank of India's (RBI) ideal target for the Consumer Price Index (CPI) inflation rate?",
+            options: ["2%", "4%", "6%", "8%"],
+            correct: 1,
+            explanation: "The RBI aims to keep inflation at 4% with a tolerance band of 2% to 6%.",
+            examTags: ["CUET", "MH-CET"],
+            caTag: "business-economy", caYear: "static", verifiedAsOf: "2024-12", refreshPriority: "low",
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 30
+        },
+        {
+            id: "ca-be-053", type: "mcq", difficulty: "medium",
+            question: "A 'Fiscal Deficit' occurs when a government:",
+            options: ["Exports more than it imports", "Imports more than it exports", "Collects more taxes than its expenditure", "Spends more money than it earns through taxes"],
+            correct: 3,
+            explanation: "A fiscal deficit is the gap created when government expenditure exceeds its total revenue.",
+            examTags: ["CUET", "MH-CET"],
+            caTag: "business-economy", caYear: "static", verifiedAsOf: "2024-12", refreshPriority: "low",
+            cognitiveType: "recall", timePresure: "speed", speedTarget: 30
         }
     ]
 };

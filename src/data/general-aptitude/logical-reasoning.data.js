@@ -265,13 +265,13 @@ export const logicalReasoningData = {
         // --- TOPIC 2: Coding-Decoding (5 questions) ---
         {
             id: "lr-q-006", type: "mcq", difficulty: "hard",
-            question: "In a certain code, 'MYSTIC' is written as 'NXTVJH'. How is 'DANGER' written in that language?",
-            options: ["EBQHJX", "ECQHJV", "EBSHKY", "EDRILZ"],
+            question: "In a certain code, 'MYSTIC' is written as 'NAVXNI'. How is 'DANGER' written in that language?",
+            options: ["ECQKJX", "EBQHJX", "FDPKKY", "ECPJIX"],
             correct: 0,
             cognitiveType: "synthesis",
             timePresure: "standard",
             speedTarget: 90,
-            explanation: "Incremental Shift: M(+1)N, Y(+2)A, S(+3)V, T(+4)X... No, let's check: M(13)+1=N(14). Y(25)+2=A(27/1). S(19)+1=T(20). T(20)+2=V(22). I(9)+1=J(10). C(3)+5=H(8)? Sequence is +1, +2, +1, +4, +1, +5? No. Let's use simpler logic: Interlaced +1 and +2. M+1=N, Y+2=A? No, it's NXTVJH. M+1=N, Y-5? No. Let's use: Reverse position shift. M(13) -> N(14), Y(25) -> X(24). Logic: +1, -1, +1, -1. M+1=N, Y-1=X, S+1=T, T-1=S? Word is NXTVJH. Logic: M(13)+1=N(14), Y(25)-1=X(24), S(19)+1=T(20), T(20)+2=V(22)? No. Let's provide a clear CUET logic: 'First letter +1, Second letter +2, Third +3...' M(13)+1=N, Y(25)+2=A, S(19)+3=V, T(20)+4=X, I(9)+5=N, C(3)+6=I. Code: NAVXNI. Let's use: D(4)+1=E, A(1)+2=C, N(14)+3=Q, G(7)+4=K, E(5)+5=J, R(18)+6=X. ECQKJX.",
+            explanation: "The pattern is an increasing letter shift: +1, +2, +3, +4, +5, +6. Thus, D(+1)=E, A(+2)=C, N(+3)=Q, G(+4)=K, E(+5)=J, R(+6)=X, resulting in ECQKJX.",
             examTags: ["CUET"]
         },
         {
@@ -287,13 +287,13 @@ export const logicalReasoningData = {
         },
         {
             id: "lr-q-008", type: "mcq", difficulty: "hard",
-            question: "If 'STRIKE' is coded as 'TVVMLS', how is 'GARDEN' coded?",
-            options: ["HBUIJT", "HCUJJV", "HCVKJS", "IBVKJT"],
-            correct: 1,
+            question: "If 'STRIKE' is coded as 'TVSKLG', how is 'GARDEN' coded in that language?",
+            options: ["HCSFFP", "HCUJJV", "HDSGGP", "HBVFFO"],
+            correct: 0,
             cognitiveType: "synthesis",
             timePresure: "standard",
-            speedTarget: 120,
-            explanation: "Incremental Logic: S(+1)T, T(+2)V, R(+4)V, I(+4)M? No. Let's use: S+1=T, T+2=V, R+3=U? No, U is not V. Let's use: Reverse letter shift. S(19) -> H(8). Logic: +1, +2, +3... shift on reverse alphabet? No, too complex. Let's use: Shift +2 on even positions, +1 on odd. S(+1)T, T(+2)V, R(+1)S, I(+2)K, K(+1)L, E(+2)G. Result: TVSKLG. For GARDEN: G+1=H, A+2=C, R+1=S, D+2=F, E+1=F, N+2=P. HCSFFP.",
+            speedTarget: 90,
+            explanation: "The pattern alternates between +1 and +2 shifts: +1, +2, +1, +2, +1, +2. For GARDEN: G(+1)=H, A(+2)=C, R(+1)=S, D(+2)=F, E(+1)=F, N(+2)=P, resulting in HCSFFP.",
             examTags: ["CUET"]
         },
         {
