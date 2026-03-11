@@ -28,7 +28,16 @@ export const grammarData = {
                     logic: "1. Identify 'Key Time Markers' (Since, For, by the time, yet, already).\n2. If 'Since' is used for a started action, use Perfect Continuous.",
                     traps: "The 'Since' vs 'For' trap: Since is for a point in time, For is for a duration.",
                     examples: [
-                        { q: "By the time we arrive, they ______ (leave).", a: "will have left." }
+                        { q: "By the time we arrive, they ______ (leave).", a: "will have left." },
+                        { q: "She ______ (work) here since 2015.", a: "has been working." },
+                        { q: "The quality of the products ______ (was/were) checked.", a: "was." },
+                        { q: "Neither he nor I ______ (am/is) responsible.", a: "am (Proximity rule)." },
+                        { q: "He is _____ (a/an) honest man.", a: "an." },
+                        { q: "He is _____ (a/an) European.", a: "a (Starts with 'Y' sound)." },
+                        { q: "One of the boys _____ (has/have) won.", a: "has." },
+                        { q: "I have been waiting for you _____ (since/for) two hours.", a: "for." },
+                        { q: "If it ______ (rain), we will cancel the match.", a: "rains (First conditional)." },
+                        { q: "The news ______ (is/are) surprising.", a: "is (News is uncountable/singular)." }
                     ],
                     speedSummary: "Look for 'By the time' -> hint for Perfect Tense."
                 }

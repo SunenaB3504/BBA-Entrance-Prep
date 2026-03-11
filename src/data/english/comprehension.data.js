@@ -22,7 +22,16 @@ export const comprehensionData = {
                     logic: "1. Read questions FIRST: This gives you 'mental hooks' to look for while reading.\n2. Map the passage: Mark where different ideas (History, Science, Opinion) are discussed.",
                     traps: "The 'Outside Knowledge' trap: Choosing an answer that is true in real life but NOT mentioned in the passage.",
                     examples: [
-                        { q: "What should you do if a word is unfamiliar?", a: "Guess meaning from the surrounding context (Sentential clues)." }
+                        { q: "What is the primary goal of skimming?", a: "To understand the gist or main idea quickly." },
+                        { q: "When should you use scanning?", a: "When looking for specific dates, names, or numbers." },
+                        { q: "If the author says 'The policy is a disaster', what is the tone?", a: "Critical / Disapproving." },
+                        { q: "Inference: 'He came home with a wet umbrella'. What happened?", a: "It was raining outside." },
+                        { q: "What should you do if you encounter a difficult word?", a: "Use context clues from surrounding sentences." },
+                        { q: "Fact vs Inference: 'The house is blue'.", a: "Fact." },
+                        { q: "Author's purpose: 'Visit Paris for a magical summer'.", a: "To persuade." },
+                        { q: "Main idea: Found in which part of a paragraph?", a: "Usually the Topic Sentence (often the first or last)." },
+                        { q: "Strategy: Reading questions first helps because?", a: "It creates mental hooks to capture information while reading." },
+                        { q: "Elimination: Avoid options with words like ______.", a: "Entirely, Solely, Never (Extreme labels)." }
                     ],
                     speedSummary: "Questions -> Skim -> Scan -> Solve."
                 }

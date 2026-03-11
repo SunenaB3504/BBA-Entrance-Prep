@@ -36,7 +36,16 @@ export const vocabularyData = {
                     logic: "1. Elimination: If three options are synonyms, the fourth is likely the answer (if looking for an antonym).\n2. Tone Check: Is the word positive, negative, or neutral?",
                     traps: "High-frequency trap: Choosing a word that sounds similar but has a different meaning (e.g., Affect vs Effect).",
                     examples: [
-                        { q: "Synonym of 'Ephemeral'?", a: "Short-lived / Transient." }
+                        { q: "Synonym of 'Ephemeral'?", a: "Short-lived / Transient." },
+                        { q: "Antonym of 'Gigantic'?", a: "Tiny / Miniature." },
+                        { q: "Synonym of 'Abundant'?", a: "Plentiful / Copious." },
+                        { q: "Antonym of 'Optimist'?", a: "Pessimist." },
+                        { q: "What does the root 'Bene' mean?", a: "Good / Well (e.g., Benefit, Benevolent)." },
+                        { q: "If 'Pre' means before, what is 'Precede'?", a: "To go before." },
+                        { q: "Meaning of 'Bite the bullet'?", a: "To accept something difficult or unpleasant." },
+                        { q: "Meaning of 'Piece of cake'?", a: "Very easy task." },
+                        { q: "Synonym of 'Candid'?", a: "Honest / Frank." },
+                        { q: "Antonym of 'Vague'?", a: "Clear / Specific." }
                     ],
                     speedSummary: "Root word analysis is the fastest way to decode unfamiliar words."
                 }
