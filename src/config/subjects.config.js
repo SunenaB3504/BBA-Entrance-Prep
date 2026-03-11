@@ -8,15 +8,18 @@ export const SUBJECTS = [
     color: "#2563eb",
     examTags: ["CUET", "MH-CET"],
     chapters: [
-      { id: "partnership", name: "Partnership Basics", dataFile: "partnership.data" },
-      { id: "admission-partner", name: "Admission of Partner", dataFile: "admission-partner.data" },
-      { id: "retirement-death", name: "Retirement & Death of Partner", dataFile: "retirement-death.data" },
+      { id: "partnership-basics", name: "Partnership Basics", dataFile: "partnership-basics.data" },
+      { id: "admission-partner", name: "Admission of Partner", dataFile: "partnership-admission.data" },
+      { id: "retirement-death", name: "Retirement & Death of Partner", dataFile: "partnership-retirement-death.data" },
       { id: "dissolution", name: "Dissolution of Firm", dataFile: "dissolution.data" },
       { id: "share-capital", name: "Share Capital", dataFile: "share-capital.data" },
       { id: "debentures", name: "Debentures", dataFile: "debentures.data" },
       { id: "financial-statements", name: "Financial Statements", dataFile: "financial-statements.data" },
+      { id: "financial-analysis", name: "Financial Analysis", dataFile: "financial-analysis.data" },
+      { id: "ratio-analysis", name: "Ratio Analysis", dataFile: "ratio-analysis.data" },
       { id: "cash-flow", name: "Cash Flow Statement", dataFile: "cash-flow.data" },
-      { id: "ratio-analysis", name: "Ratio Analysis", dataFile: "ratio-analysis.data" }
+      { id: "npo", name: "NPO (Not-for-Profit)", dataFile: "npo.data" },
+      { id: "computerized-accounting", name: "Computerized Accounting", dataFile: "computerized-accounting.data" }
     ]
   },
   {
