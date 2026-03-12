@@ -261,6 +261,121 @@ export const quantitativeData = {
                     ],
                     speedSummary: "- Use π = 22/7 for clean cancellations.\n- Square side to diagonal ratio is 1 : √2."
                 }
+            },
+            {
+                id: "logarithms-logic",
+                title: "12. Logarithms",
+                content: {
+                    coreConcept: "1. The Inverse Rule: If exponents are like 'growing' (e.g., how much is 2³?), logarithms are like 'detective work' (e.g., if I have 8, what power was used on 2?). \n2. The Question: When you see log₂(8), just ask: 'To what power must I raise 2 to get 8?'. The answer is 3.\n3. Common Base: If no small number (base) is written, assume it is 10 (e.g., log 100 = 2).",
+                    formulaBank: "1. The Multiplication Rule: log(A × B) = log A + log B.\n2. The Division Rule: log(A / B) = log A - log B.\n3. The Power Rule: log(Aⁿ) = n × log A. (The power just jumps to the front!)\n4. Base Change: log_b(a) = log(a) / log(b).",
+                    logic: "Step 1: Convert to Exponents.\nIf log_b(x) = y, then bʸ = x. This is the simplest way to solve basic log puzzles.\nStep 2: Use the 'Jump' Rule.\nWhenever you see a power inside a log, like log(x²), imagine the 2 jumping over the log to become 2 * log(x). This simplifies big numbers instantly.",
+                    traps: "TRAP 1: Log of Zero or Negatives\nLogs only 'exist' for numbers greater than zero. You cannot have log(0) or log(-5).\n\nTRAP 2: log(A+B) is NOT log A + log B\nThis is the most common mistake! The rule only works for multiplication (A*B). You cannot split a sum inside a log.\n\nTRAP 3: Forgetting the Base\nlog₂(16) is 4, but log₄(16) is 2. Always check the small number at the bottom!",
+                    examples: [
+                        { q: "What is log₂(32)?", a: "5. (Because 2⁵ = 32.)" },
+                        { q: "Evaluate log(1000).", a: "3. (Base is 10, and 10³ = 1000.)" },
+                        { q: "Simplify log 5 + log 2.", a: "1. (log 5*2 = log 10 = 1.)" },
+                        { q: "If log 2 = 0.301, what is log 4?", a: "0.602. (log 4 = log 2² = 2 * log 2 = 2 * 0.301.)" },
+                        { q: "Solve log₃(x) = 4.", a: "81. (3⁴ = 81.)" },
+                        { q: "Evaluate log(1/10).", a: "-1. (10⁻¹ = 1/10.)" },
+                        { q: "Solve for x: log₂x + log₂4 = 5.", a: "8. (log₂(4x) = 5 -> 2⁵ = 4x -> 32 = 4x -> x=8.)" },
+                        { q: "Evaluate log₅(√5).", a: "0.5. (5 raised to the power 1/2 gives √5.)" },
+                        { q: "Find x if logₓ(49) = 2.", a: "7. (x² = 49 -> x=7.)" },
+                        { q: "Evaluate log₇(1).", a: "0. (Any base raised to 0 is 1.)" }
+                    ],
+                    speedSummary: "- log(1) is always 0. log(base) is always 1.\n- 2¹⁰ ≈ 1000 is a useful shortcut for estimation."
+                }
+            },
+            {
+                id: "probability-logic",
+                title: "13. Probability & Combinations",
+                content: {
+                    coreConcept: "1. The Ratio: Probability is just a fraction = (What you want) / (Total things that can happen).\n2. Range: It is always between 0 (Impossible) and 1 (Certain). \n3. Odds: If the probability of rain is 0.3, the probability of 'No Rain' is 1 - 0.3 = 0.7.",
+                    formulaBank: "1. Basic: P(A) = n(E) / n(S).\n2. Coin Tossing: Total outcomes for 'n' coins = 2ⁿ.\n3. Dice Throwing: Total outcomes for 'n' dice = 6ⁿ.\n4. Combinations (Choosing): nCr = n! / [r! * (n-r)!]. Use this to pick 2 balls from 5.",
+                    logic: "The 'AND' vs 'OR' Rule:\n- If event A AND event B must happen together, MULTIPLY their probabilities.\n- If event A OR event B can happen, ADD their probabilities.\nExample: Chance of picking a Red ball (1/2) AND drawing an Ace (1/13) = 1/26.",
+                    traps: "TRAP 1: The 'Deselection' Error\nWhen choosing 2 items out of 10, the total is not 10 + 10. It is 10C2 = (10*9)/2 = 45.\n\nTRAP 2: Independent Events\nIf you toss a coin 5 times and get Heads every time, the 6th toss is STILL 50% Heads. The coin doesn't have a memory!\n\nTRAP 3: At Least One\nWhen asked for 'At least one event happening', it is often easier to calculate: 1 - (Probability of NO event happening).",
+                    examples: [
+                        { q: "A coin is tossed twice. Probability of getting 2 heads?", a: "1/4. (Outcomes: HH, HT, TH, TT. HH is 1 out of 4.)" },
+                        { q: "A dice is thrown. Probability of getting a prime number?", a: "1/2. (Primes are 2, 3, 5. Total 3 out of 6.)" },
+                        { q: "A bag has 3 red and 2 blue balls. Probability of picking a red?", a: "3/5." },
+                        { q: "Probability of picking a King from a deck of 52 cards?", a: "1/13. (4 Kings out of 52.)" },
+                        { q: "Two coins tossed. Probability of 'at least one head'?", a: "3/4. (HH, HT, TH. Or 1 - TT = 1 - 1/4.)" },
+                        { q: "Chance A completes work (4/5). Chance B fails (5/8). Both complete?", a: "0.3. (A=4/5, B_pass = 1 - 5/8 = 3/8. Both = 4/5 * 3/8 = 12/40 = 0.3.)" },
+                        { q: "In how many ways can 3 girls be picked from 5?", a: "10. (5C3 = 5C2 = (5*4)/2 = 10.)" },
+                        { q: "Minimum tosses for at least one Head prob > 0.95?", a: "5. (1 - (1/2)ⁿ > 0.95 -> (1/2)ⁿ < 0.05. 2⁵=32, 1/32 ≈ 0.03.)" },
+                        { q: "Probability of picking a green ball from 4 red, 5 black balls?", a: "0. (Impossible event.)" },
+                        { q: "Sum of 2 dice is 12. Probability?", a: "1/36. (Only one way: 6+6.)" }
+                    ],
+                    speedSummary: "- Complementary Rule: P(Success) = 1 - P(Failure).\n- Factorials to learn: 1 to 6 (1, 2, 6, 24, 120, 720)."
+                }
+            },
+            {
+                id: "set-theory-logic",
+                title: "14. Set Theory",
+                content: {
+                    coreConcept: "1. Definition: A Set is just a collection of distinct things (numbers, names, objects) put into a group. \n2. Representation: We use curly brackets like {1, 2, 3}. \n3. Membership: If 3 is in set A, we say '3 belongs to A'.",
+                    formulaBank: "1. Union (A ∪ B): Everything in A OR B (The whole area). \n2. Intersection (A ∩ B): Only things in BOTH A and B (The overlap). \n3. Number of elements: n(A ∪ B) = n(A) + n(B) - n(A ∩ B). \n4. Subsets: If a set has 'n' elements, it can have 2ⁿ subsets.",
+                    logic: "The Group Mapping (Venn Method):\nThink of sets as 'hula hoops' on the floor. \n- Intersection is where the hoops overlap. \n- Union is everything inside any hoop. \n- Complement is everything outside the hoops. \nAlways fill the overlap (intersection) FIRST when solving Word Problems.",
+                    traps: "TRAP 1: Double Counting\nWhen adding students in Math and Science, students taking BOTH are added twice. You MUST subtract them once using the n(A ∪ B) formula.\n\nTRAP 2: Proper Subset vs Subset\nA set is always a subset of itself, but NOT a proper subset. {1, 2} is a subset of {1, 2}, but {1} is a proper subset.\n\nTRAP 3: The Empty Set\nRemember that the Empty Set { } is a subset of EVERY set.",
+                    examples: [
+                        { q: "If A = {1, 2, 3} and B = {3, 4, 5}, find A ∩ B.", a: "{3}. (The only common element.)" },
+                        { q: "How many subsets does set {A, B, C} have?", a: "8. (2³ = 8.)" },
+                        { q: "In a class, 20 like Tea, 15 like Coffee, 5 like both. How many like at least one?", a: "30. (20 + 15 - 5 = 30.)" },
+                        { q: "If n(A)=10, n(B)=20, and A is a subset of B, find n(A ∪ B).", a: "20. (Since A is inside B, the union is just B.)" },
+                        { q: "Find A ∪ B for A={1,2}, B={2,3}.", a: "{1,2,3}." },
+                        { q: "What is n(P(A)) if A has 4 elements?", a: "16. (Power set contains all subsets, 2⁴.)" },
+                        { q: "Set of even primes?", a: "{2}." },
+                        { q: "If A ∩ B = ø, what are they called?", a: "Disjoint Sets. (No overlap.)" },
+                        { q: "Total subsets of {1, 2, 3, 4, 5} containing exactly 3 elements?", a: "10. (5C3 = 10.)" },
+                        { q: "n(A)=50, n(B)=30, n(A∩B)=10. Find n(A-B).", a: "40. (Only A = Total A - Both = 50 - 10.)" }
+                    ],
+                    speedSummary: "- Union = All. Intersection = Common. \n- Formula: Total = A + B - Both + Neither."
+                }
+            },
+            {
+                id: "coordinate-geometry-logic",
+                title: "15. Coordinate Geometry",
+                content: {
+                    coreConcept: "1. The Grid: Imagine a map where every spot has an Address (x, y). X is how far Right/Left, and Y is how far Up/Down.\n2. The Origin: (0, 0) is the starting gate.\n3. The Quadrants: The grid is split into 4 'Rooms' (I: +,+, II: -,+, III: -,-, IV: +,-).",
+                    formulaBank: "1. Distance between (x1,y1) and (x2,y2): √[(x2-x1)² + (y2-y1)²]. (Basically Pythagoras!).\n2. Midpoint: [(x1+x2)/2 , (y1+y2)/2]. (The average address).\n3. Slope (m): (y2-y1) / (x2-x1). (Rise over Run).\n4. Area of Triangle: 1/2 |x1(y2-y3) + x2(y3-y1) + x3(y1-y2)|.",
+                    logic: "The Visual Shortcut:\nInstead of long formulas, imagine the points on a graph. \n- To find distance from (1,2) to (4,6): The 'East' jump is 3, the 'North' jump is 4. In a 3-4-5 triangle, the distance is 5!\n- To find if a point (x,y) lies on a curve $y=x^2$, just plug in the numbers. If $y$ equals $x^2$, it's on the line.",
+                    traps: "TRAP 1: Sign Swap\nWhen calculating (x2 - x1), if x1 is negative, it becomes (x2 - (-x1)) = x2 + x1. Watch those double negatives!\n\nTRAP 2: X-Axis vs Y-Axis\nAny point ON the x-axis has Y=0. Any point ON the y-axis has X=0. Don't swap them.\n\nTRAP 3: Area Sign\nThe area is always positive. If the formula gives a negative, take the absolute value.",
+                    examples: [
+                        { q: "Distance between (0,0) and (3,4)?", a: "5. (√(3² + 4²) = 5.)" },
+                        { q: "Midpoint of (2,4) and (8,10)?", a: "(5, 7). (Avg of 2,8 is 5; Avg of 4,10 is 7.)" },
+                        { q: "Does (2,4) lie on the curve $y = x^2$?", a: "Yes. (Because 2² = 4.)" },
+                        { q: "Area of triangle with corners (0,0), (4,0), (0,3)?", a: "6. (1/2 * Base 4 * Height 3 = 6.)" },
+                        { q: "Slope of line through (1,2) and (3,6)?", a: "2. ((6-2)/(3-1) = 4/2 = 2.)" },
+                        { q: "Distance from (5, -2) to x-axis?", a: "2 units. (The y-coordinate tells you vertical distance.)" },
+                        { q: "Point equidistant from (0,0) and (4,0)?", a: "(2, y). (Must lie on the perpendicular bisector x=2.)" },
+                        { q: "Area of rectangle with corners (-1,2), (-1,4), (7,2), (7,4)?", a: "16. (Width = 7 - (-1) = 8. Height = 4 - 2 = 2. Area = 8 * 2 = 16.)" },
+                        { q: "Distance between (1,1) and (1,10)?", a: "9. (Pure vertical distance.)" },
+                        { q: "Origin coordinates?", a: "(0,0)." }
+                    ],
+                    speedSummary: "- Distance = √ (Δx² + Δy²). \n- Remember Pythagorean Triplets (3,4,5), (5,12,13), (8,15,17) for fast distance math."
+                }
+            },
+            {
+                id: "advanced-algebra-logic",
+                title: "16. Advanced Algebra",
+                content: {
+                    coreConcept: "1. Polynomials: High-level algebra deals with expressions like $x^4 + 2x^3 - 5$. Think of them as 'formulas with levels'.\n2. The Remainder Rule: Instead of doing a 10-minute long division, you can find the remainder of a division in 10 seconds by just plugging in a number!\n3. Roots: A root is a number that makes the whole formula equal to Zero.",
+                    formulaBank: "1. Remainder Theorem: When $f(x)$ is divided by $(x-a)$, the remainder is $f(a)$. \n2. Quadratic Roots: For $ax^2+bx+c=0$, sum of roots = $-b/a$, product = $c/a$. \n3. Cubic Identity: $a^3+b^3+c^3 - 3abc = (a+b+c)(a^2+b^2+c^2 - ab-bc-ca)$.",
+                    logic: "The Shortcut Method:\n- If you need to find a 'missing root', use the Sum or Product formulas rather than solving the whole equation.\n- If you need a remainder when dividing by $(x-1)$, just replace all $x$'s in the formula with 1. It's that simple!",
+                    traps: "TRAP 1: The Sign Error in Sum of Roots\nStudents often forget the minus sign. For $x^2 + 5x + 6$, the sum of roots is -5, not 5.\n\nTRAP 2: Zero Coefficients\nIn $x^4 + 2x - 1$, the $x^3$ and $x^2$ parts are ZERO. Don't forget them if you are doing long division.\n\nTRAP 3: Division by $(x+a)$\nIf you divide by $(x+2)$, you must plug in $x = -2$ (not +2) to find the remainder.",
+                    examples: [
+                        { q: "Remainder when $x^2 + 5x + 6$ is divided by $(x-1)$?", a: "12. (Plug in 1: 1 + 5 + 6 = 12.)" },
+                        { q: "Product of roots for $3x^2 - 9x + 6 = 0$?", a: "2. (c/a = 6/3 = 2.)" },
+                        { q: "If one root of $x^2 + ax + 3a = 0$ is 1, find the other root.", a: "-0.75. (Plug in 1: 1 + a + 3a = 0 -> 4a = -1 -> a = -0.25. Equation: $x^2 - 0.25x - 0.75$. Product = -0.75. Since one root is 1, other is -0.75.)" },
+                        { q: "Sum of roots for $x^2 - 10x + 21 = 0$?", a: "10. (-(-10)/1 = 10.)" },
+                        { q: "Factor $x^2 - 9$.", a: "(x-3)(x+3)." },
+                        { q: "Find value of $a^2+b^2+c^2$ if $a+b+c=10$ and $ab+bc+ca=30$.", a: "40. ($(a+b+c)^2 = a^2+b^2+c^2 + 2(ab+bc+ca)$. 100 = X + 60 -> X=40.)" },
+                        { q: "Simplest root of $x^3 - 1 = 0$?", a: "1." },
+                        { q: "What must be added to $x^2 - 5x$ to make it a perfect square?", a: "6.25. ((5/2)² = 2.5² = 6.25.)" },
+                        { q: "If $x + 1/x = 5$, find $x^2 + 1/x^2$.", a: "23. (Square both sides: $x^2 + 2 + 1/x^2 = 25 -> 23$.)" },
+                        { q: "Degree of the polynomial $x^4 + 3x^2 + x$?", a: "4. (The highest power.)" }
+                    ],
+                    speedSummary: "- Plug and Play: Substitution is your fastest friend in Algebra.\n- Memorize: $(x+y)^2$, $(x-y)^2$, and $(x+y)(x-y)$."
+                }
             }
         ]
     },
@@ -1910,6 +2025,220 @@ export const quantitativeData = {
             speedTarget: 90,
             explanation: "Avg Speed = 2*60*40/100 = 48 km/h. Total Dist = 48 * 5 = 240 km.",
             examTags: ["CUET", "TSD"]
+        },
+        // --- TOPIC 12: LOGARITHMS (IIMK BMS Depth - 5 questions) ---
+        {
+            id: "quant-q-143", type: "numerical", difficulty: "medium",
+            question: "Find the value of log₂(128) + log₃(27).",
+            options: ["10", "9", "11", "12"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 45,
+            explanation: "log₂(128) = 7 (as 2⁷ = 128) and log₃(27) = 3 (as 3³ = 27). Sum = 7 + 3 = 10.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-144", type: "numerical", difficulty: "hard",
+            question: "If log 2 = 0.3010 and log 3 = 0.4771, find the value of log 12.",
+            options: ["1.0791", "1.1761", "0.9542", "1.2552"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 90,
+            explanation: "log 12 = log(2² * 3) = 2 log 2 + log 3 = 2(0.3010) + 0.4771 = 0.6020 + 0.4771 = 1.0791.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-145", type: "numerical", difficulty: "hard",
+            question: "Solve for x: log x + log(x - 3) = log 10.",
+            options: ["5", "2", "10", "3"],
+            correct: 0,
+            cognitiveType: "synthesis",
+            timePresure: "standard",
+            speedTarget: 120,
+            explanation: "log(x(x-3)) = log 10 -> x² - 3x = 10 -> x² - 3x - 10 = 0. (x-5)(x+2) = 0. Since log of negative is impossible, x = 5.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-146", type: "numerical", difficulty: "hard",
+            question: "What is the value of log₈(128)?",
+            options: ["7/3", "4/3", "2", "2.5"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 60,
+            explanation: "Using base change: log(128)/log(8) = log(2⁷)/log(2³) = 7 log 2 / 3 log 2 = 7/3.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-147", type: "numerical", difficulty: "medium",
+            question: "Simplify: log(a²) - log(a).",
+            options: ["log(a)", "log(2)", "a", "1"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "speed",
+            speedTarget: 30,
+            explanation: "log(a²) - log(a) = 2 log(a) - log(a) = log(a).",
+            examTags: ["CUET", "IIMK"]
+        },
+        // --- TOPIC 13: PROBABILITY (IIMK BMS Depth - 5 questions) ---
+        {
+            id: "quant-q-148", type: "numerical", difficulty: "medium",
+            question: "Two fair dice are thrown. What is the probability that the sum of the numbers appearing on them is 9?",
+            options: ["1/9", "1/6", "1/12", "1/4"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 60,
+            explanation: "Total outcomes = 36. Favorable outcomes for sum 9: (3,6), (4,5), (5,4), (6,3). Total 4. Prob = 4/36 = 1/9.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-149", type: "numerical", difficulty: "hard",
+            question: "A bag contains 5 red and 3 green balls. If two balls are drawn at random, what is the probability that both are red?",
+            options: ["5/14", "25/64", "5/8", "15/56"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 90,
+            explanation: "Total ways to pick 2 balls = 8C2 = (8*7)/2 = 28. Ways to pick 2 red balls = 5C2 = (5*4)/2 = 10. Prob = 10/28 = 5/14.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-150", type: "numerical", difficulty: "medium",
+            question: "A card is drawn from a pack of 52 cards. What is the probability that it is either a spade or a king?",
+            options: ["4/13", "1/4", "1/13", "17/52"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 60,
+            explanation: "Spades = 13. Kings = 4. Overlap (King of Spades) = 1. Total = 13 + 4 - 1 = 16. Prob = 16/52 = 4/13.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-151", type: "numerical", difficulty: "hard",
+            question: "Probability of A solving a problem is 1/2 and B solving it is 1/3. What is the probability that the problem is solved?",
+            options: ["2/3", "1/6", "5/6", "1/2"],
+            correct: 0,
+            cognitiveType: "synthesis",
+            timePresure: "standard",
+            speedTarget: 90,
+            explanation: "Problem solved = 1 - (Neither A nor B solves it). P(not A) = 1/2, P(not B) = 2/3. P(none) = 1/2 * 2/3 = 1/3. Prob solved = 1 - 1/3 = 2/3.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-152", type: "numerical", difficulty: "medium",
+            question: "If three coins are tossed simultaneously, what is the probability of getting exactly two heads?",
+            options: ["3/8", "1/2", "1/4", "1/8"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 60,
+            explanation: "Total outcomes = 2³ = 8. Favorable (HHT, HTH, THH): 3. Prob = 3/8.",
+            examTags: ["CUET", "IIMK"]
+        },
+        // --- TOPIC 14: SET THEORY (IIMK BMS Depth - 5 questions) ---
+        {
+            id: "quant-q-153", type: "numerical", difficulty: "medium",
+            question: "If n(A) = 20, n(B) = 30 and n(A ∪ B) = 45, find n(A ∩ B).",
+            options: ["5", "10", "15", "0"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 45,
+            explanation: "n(A ∩ B) = n(A) + n(B) - n(A ∪ B) = 20 + 30 - 45 = 5.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-154", type: "numerical", difficulty: "hard",
+            question: "A group of 70 people has 37 like coffee, 52 like tea and each person likes at least one. How many like both?",
+            options: ["19", "15", "23", "27"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 60,
+            explanation: "n(C ∪ T) = n(C) + n(T) - n(C ∩ T) -> 70 = 37 + 52 - X -> X = 89 - 70 = 19.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-155", type: "mcq", difficulty: "medium",
+            question: "Which of the following is an empty set?",
+            options: ["{x : x is a real number and x² = -1}", "{0}", "{ø}", "{x : x is an even prime > 2}"],
+            correct: 0,
+            cognitiveType: "analysis",
+            timePresure: "standard",
+            speedTarget: 45,
+            explanation: "x² = -1 has no real solutions. Note: {0} is not empty, and {ø} is a set containing the empty set. Even prime > 2 doesn't exist either, but option A is the most standard definition in exams.",
+            examTags: ["CUET", "IIMK"]
+        },
+        // --- TOPIC 15: COORDINATE GEOMETRY (IIMK BMS Depth - 5 questions) ---
+        {
+            id: "quant-q-156", type: "numerical", difficulty: "medium",
+            question: "Find the distance between points P(1, -3) and Q(4, 1).",
+            options: ["5", "7", "√10", "√17"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 60,
+            explanation: "Dist = √[(4-1)² + (1 - (-3))²] = √[3² + 4²] = √[9 + 16] = 5.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-157", type: "numerical", difficulty: "hard",
+            question: "Find the coordinates of the midpoint of the line segment joining (2, 3) and (4, 7).",
+            options: ["(3, 5)", "(1, 2)", "(5, 3)", "(3, 4)"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 45,
+            explanation: "x = (2+4)/2 = 3. y = (3+7)/2 = 5. Midpoint = (3, 5).",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-158", type: "numerical", difficulty: "hard",
+            question: "If point (a, 9) lies on the line segment joining (3, 6) and (7, 12), find the value of a.",
+            options: ["5", "4", "4.5", "6"],
+            correct: 0,
+            cognitiveType: "synthesis",
+            timePresure: "standard",
+            speedTarget: 120,
+            explanation: "Slope m = (12-6)/(7-3) = 6/4 = 1.5. Using (3,6) and (a,9): (9-6)/(a-3) = 1.5 -> 3/(a-3) = 1.5 -> a-3 = 2 -> a = 5.",
+            examTags: ["CUET", "IIMK"]
+        },
+        // --- TOPIC 16: ADVANCED ALGEBRA (IIMK BMS Depth - 5 questions) ---
+        {
+            id: "quant-q-159", type: "numerical", difficulty: "hard",
+            question: "Find the remainder when x³ - 2x² + x - 5 is divided by (x - 2).",
+            options: ["-3", "-5", "3", "5"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "standard",
+            speedTarget: 60,
+            explanation: "Plug in x=2: 2³ - 2(2²) + 2 - 5 = 8 - 8 + 2 - 5 = -3.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-160", type: "numerical", difficulty: "hard",
+            question: "If a + b + c = 0, then the value of a³ + b³ + c³ is:",
+            options: ["3abc", "abc", "0", "-3abc"],
+            correct: 0,
+            cognitiveType: "recall",
+            timePresure: "standard",
+            speedTarget: 30,
+            explanation: "Identity result: If a+b+c=0, then a³+b³+c³ = 3abc.",
+            examTags: ["CUET", "IIMK"]
+        },
+        {
+            id: "quant-q-161", type: "numerical", difficulty: "hard",
+            question: "Sum of the roots of the equation x² - 7x + 12 = 0 is:",
+            options: ["7", "-7", "12", "-12"],
+            correct: 0,
+            cognitiveType: "application",
+            timePresure: "speed",
+            speedTarget: 30,
+            explanation: "Sum of roots = -b/a = -(-7)/1 = 7.",
+            examTags: ["CUET", "IIMK"]
         }
     ]
 };
