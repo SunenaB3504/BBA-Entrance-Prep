@@ -18,7 +18,30 @@ export const generalScienceData = {
                     traps: "Inertia of rest vs motion. If the bus starts: Rest. If it stops: Motion. Don't confuse the two!",
                     examples: [
                         { q: "Why does a sky look blue?", a: "Rayleigh scattering of blue light." },
-                        { q: "What is the speed of light?", a: "3x10^8 m/s." }
+                        { q: "What is the speed of light?", a: "3x10^8 m/s." },
+                        { q: "Unit of electrical resistance?", a: "Ohm (Ω)." },
+                        { q: "Instrument to measure atmospheric pressure?", a: "Barometer." },
+                        { q: "Process where liquid turns to gas below its boiling point?", a: "Evaporation." },
+                        { q: "Which law explains why we fall forward when a bus stops?", a: "Newton's 1st Law (Inertia of Motion)." },
+                        { q: "Primary colors of light?", a: "Red, Green, Blue (RGB)." },
+                        { q: "Device that converts mechanical energy into electrical?", a: "Generator." },
+                        { q: "Mirror used in car side-view?", a: "Convex mirror (wider field of view)." },
+                        { q: "Sound travels fastest in which medium?", a: "Solids (e.g., Steel)." },
+                        { q: "Unit of Power?", a: "Watt (W)." },
+                        { q: "Force that keeps planets in orbit?", a: "Gravity." },
+                        { q: "Escape velocity of Earth?", a: "11.2 km/s." },
+                        { q: "Lens used to correct Short-Sightedness (Myopia)?", a: "Concave lens." },
+                        { q: "Phenomenon responsible for mirages?", a: "Total Internal Reflection." },
+                        { q: "Which metal is liquid at room temperature?", a: "Mercury (Hg)." },
+                        { q: "Color of light with the longest wavelength?", a: "Red." },
+                        { q: "Unit of Force?", a: "Newton (N)." },
+                        { q: "Weight of 1kg mass on Earth?", a: "9.8 Newtons." },
+                        { q: "Frequency range of human hearing?", a: "20 Hz to 20,000 Hz." },
+                        { q: "Which radiation has the most energy?", a: "Gamma rays." },
+                        { q: "Principle behind hydraulic brakes?", a: "Pascal's Law." },
+                        { q: "Device to measure electric current?", a: "Ammeter." },
+                        { q: "What is 1 Horsepower (HP) in Watts?", a: "746 W." },
+                        { q: "Boiling point of water in Fahrenheit?", a: "212°F." }
                     ],
                     speedSummary: "Light is faster than sound. Pressure lowers boiling points. Ozone blocks UV."
                 }
@@ -33,9 +56,70 @@ export const generalScienceData = {
                     traps: "Photosynthesis vs Respiration. Plants do both, but only photosynthesis creates oxygen. Stomata close at night to save water!",
                     examples: [
                         { q: "What organ produces insulin?", a: "The Pancreas." },
-                        { q: "What is the unit of energy in cells?", a: "ATP." }
+                        { q: "What is the unit of energy in cells?", a: "ATP." },
+                        { q: "Which vitamin is synthesized by sunlight?", a: "Vitamin D." },
+                        { q: "Largest organ in the human body?", a: "Skin." },
+                        { q: "Blood group known as 'Universal Donor'?", a: "O negative." },
+                        { q: "Part of the brain that controls balance?", a: "Cerebellum." },
+                        { q: "Process by which plants lose water?", a: "Transpiration." },
+                        { q: "Which acid is present in the stomach?", a: "Hydrochloric acid (HCl)." },
+                        { q: "Gas taken in during photosynthesis?", a: "Carbon Dioxide (CO2)." },
+                        { q: "What carries oxygen in the blood?", a: "Hemoglobin." },
+                        { q: "Scientific name for human beings?", a: "Homo sapiens." },
+                        { q: "Vitamin C is also known as?", a: "Ascorbic acid." },
+                        { q: "Total bones in an adult human?", a: "206." },
+                        { q: "Process of cell division?", a: "Mitosis." },
+                        { q: "Gland known as the 'Master Gland'?", a: "Pituitary gland." },
+                        { q: "Deficiency of Iron causes?", a: "Anemia." },
+                        { q: "Study of fungi is called?", a: "Mycology." },
+                        { q: "Bile is produced by which organ?", a: "Liver (stored in gall bladder)." },
+                        { q: "Normal human body temperature in Celsius?", a: "37°C." },
+                        { q: "Smallest unit of life?", a: "Cell." },
+                        { q: "Father of Genetics?", a: "Gregor Mendel." },
+                        { q: "Blood pressure is measured by?", a: "Sphygmomanometer." },
+                        { q: "Which gas is released during respiration?", a: "Carbon Dioxide." },
+                        { q: "Proteins are made of?", a: "Amino acids." },
+                        { q: "Which part of the flower attracts insects?", a: "Petals." }
                     ],
                     speedSummary: "Mitochondria = Powerhouse. 10% Energy Rule. Vitamin D = Rickets."
+                }
+            },
+            {
+                id: "sci-chem",
+                title: "3. Chemistry in Daily Life",
+                content: {
+                    coreConcept: "Focuses on Matter, Atoms, and Chemical reactions in daily life.\n\n1. Matter: States of matter (Solid, Liquid, Gas, Plasma).\n2. Acids & Bases: pH scale, common acids (Citric, Acetic, HCl).\n3. Chemical Changes: Rusting, Burning, Fermentation.",
+                    formulaBank: "• pH Scale: 0 (Acid) - 7 (Neutral) - 14 (Base).\n• Common Formulas: H2O (Water), NaCl (Salt), CO2 (Carbon Dioxide).",
+                    logic: "Distinguish between Physical and Chemical Changes. Physical (Ice melting) is reversible. Chemical (Burning wood) is permanent and creates new substances.",
+                    traps: "Atom vs Molecule. Atom is the smallest unit of an element. Molecule is a group of atoms bonded together.",
+                    examples: [
+                        { q: "What is the pH of pure water?", a: "7 (Neutral)." },
+                        { q: "Which acid is found in lemons?", a: "Citric acid." },
+                        { q: "Chemical name for common table salt?", a: "Sodium Chloride (NaCl)." },
+                        { q: "What gas is used in fire extinguishers?", a: "Carbon Dioxide (CO2)." },
+                        { q: "Process of iron turning red due to moisture?", a: "Rusting (Oxidation)." },
+                        { q: "Which gas is known as 'Laughing Gas'?", a: "Nitrous Oxide (N2O)." },
+                        { q: "Hardest naturally occurring substance?", a: "Diamond." },
+                        { q: "Which gas is used in electric bulbs?", a: "Argon or Nitrogen." },
+                        { q: "What is the 'universal solvent'?", a: "Water." },
+                        { q: "Acid found in vinegar?", a: "Acetic acid." },
+                        { q: "Symbol for the element Gold?", a: "Au." },
+                        { q: "Which gas is produced when an acid reacts with a metal?", a: "Hydrogen gas." },
+                        { q: "What is the atomic number of Hydrogen?", a: "1." },
+                        { q: "Which gas is used for ripening fruits?", a: "Ethylene / Acetylene." },
+                        { q: "The ozone layer is made of which element?", a: "Oxygen (O3)." },
+                        { q: "What is 'Dry Ice'?", a: "Solid Carbon Dioxide." },
+                        { q: "Common name for Sodium Bicarbonate?", a: "Baking Soda." },
+                        { q: "Which metal is stored in kerosene due to high reactivity?", a: "Sodium (Na)." },
+                        { q: "Main component of LPG (Liquefied Petroleum Gas)?", a: "Butane and Propane." },
+                        { q: "Element found in all organic compounds?", a: "Carbon." },
+                        { q: "What is the color of Chlorine gas?", a: "Greenish-yellow." },
+                        { q: "Which acid is present in ant stings?", a: "Formic acid / Methanoic acid." },
+                        { q: "What is the fourth state of matter?", a: "Plasma." },
+                        { q: "Noble gas used in advertising signs?", a: "Neon." },
+                        { q: "Chemical used to purify water?", a: "Chlorine." }
+                    ],
+                    speedSummary: "pH 7 = Neutral. Rusting = Oxidation. Diamond = Carbon."
                 }
             }
         ]

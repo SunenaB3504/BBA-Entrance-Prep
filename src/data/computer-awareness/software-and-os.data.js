@@ -26,7 +26,22 @@ export const softwareAndOsData = {
                         { q: "What does GUI stand for?", a: "Graphical User Interface" },
                         { q: "Mention one task of the OS.", a: "Memory Management / File Management" },
                         { q: "OS from Microsoft launching in 1985?", a: "Windows" },
-                        { q: "Which OS uses a Command Line Interface (CLI)?", a: "MS-DOS" }
+                        { q: "Which OS uses a Command Line Interface (CLI)?", a: "MS-DOS" },
+                        { q: "Which OS component schedules processes for the CPU?", a: "Kernel / Scheduler" },
+                        { q: "What is a 'Cold Boot'?", a: "Starting a computer from a powered-off state." },
+                        { q: "What is a 'Warm Boot'?", a: "Restarting a computer without turning off the power." },
+                        { q: "Which OS is famous for the 'Spinning Pinwheel' (beach ball)?", a: "macOS" },
+                        { q: "What does 'Plug and Play' mean in an OS?", a: "Automatic recognition of new hardware devices." },
+                        { q: "Which OS utility is used to remove unnecessary files?", a: "Disk Cleanup" },
+                        { q: "What is the 'Kernel' of an OS?", a: "The core part that manages hardware-level communications." },
+                        { q: "Which OS introduced the 'Start' button?", a: "Windows 95" },
+                        { q: "What is a multi-user OS?", a: "An OS that allows multiple users to access the computer at once." },
+                        { q: "What is 'Virtual Memory'?", a: "Space on the hard drive used by the OS to simulate extra RAM." },
+                        { q: "Which OS is primarily used on IBM mainframes?", a: "z/OS" },
+                        { q: "What is the primary function of a Device Driver?", a: "Allows the OS to communicate with specific hardware (like a printer)." },
+                        { q: "Which OS uses the 'bash' shell by default?", a: "Linux / macOS" },
+                        { q: "What is a 'Distro' in the context of Linux?", a: "A specific distribution like Ubuntu, Fedora, or Mint." },
+                        { q: "Which OS was the predecessor to Windows?", a: "MS-DOS" }
                     ],
                     speedSummary: "- OS = System Software | Managed hardware & apps.\n- Windows/macOS/Linux = Desktop | Android/iOS = Mobile.\n- BIOS starts the Booting process."
                 }
@@ -49,7 +64,22 @@ export const softwareAndOsData = {
                         { q: "Formula to add A1 and B1?", a: "=A1+B1" },
                         { q: "Which key edits a cell in Excel?", a: "F2" },
                         { q: "Difference between .ppt and .pptx?", a: ".pptx is the newer XML-based format." },
-                        { q: "What defines a range in Excel?", a: "The colon symbol (:), e.g., A1:A10." }
+                        { q: "What defines a range in Excel?", a: "The colon symbol (:), e.g., A1:A10." },
+                        { q: "Which Excel tool summarizes large datasets quickly?", a: "Pivot Table" },
+                        { q: "What is 'Word Wrap'?", a: "Automatically moving text to the next line when it reaches the margin." },
+                        { q: "Shortcut to save a document?", a: "Ctrl + S" },
+                        { q: "In Excel, what does #VALUE! mean?", a: "The formula contains an invalid data type (e.g., adding text to a number)." },
+                        { q: "What is 'Portrait' and 'Landscape' in Word?", a: "Page Orientations." },
+                        { q: "Which PowerPoint view is best for rehearsing timings?", a: "Presenter View / Slide Show" },
+                        { q: "Shortcut for 'Select All'?", a: "Ctrl + A" },
+                        { q: "What is a 'Footer'?", a: "Text that appears at the bottom of every page." },
+                        { q: "Which Excel function checks if a condition is met?", a: "=IF()" },
+                        { q: "Can you password protect an Office file?", a: "Yes, via File > Info > Protect Document." },
+                        { q: "What is 'AutoFill' in Excel?", a: "Dragging the fill handle to automatically continue a series (1, 2, 3...)." },
+                        { q: "What is 'Track Changes' in Word?", a: "A feature that records all edits made to a document." },
+                        { q: "Which tab allows you to change the theme of your slides?", a: "Design Tab" },
+                        { q: "How do you insert a Page Break in Word?", a: "Ctrl + Enter" },
+                        { q: "What is the 'Format Painter'?", a: "A tool to copy formatting from one object and apply it to another." }
                     ],
                     speedSummary: "- Word = Documents | Excel = Math/Cells | PowerPoint = Slides.\n- Transitions = Between slides | Animations = Inside slides.\n- Formulas start with '='."
                 }
@@ -72,7 +102,22 @@ export const softwareAndOsData = {
                         { q: "Is an Antivirus system or application software?", a: "System Software (Utility)" },
                         { q: "Extension for a Windows executable file?", a: ".exe" },
                         { q: "Can you modify the code of Proprietary software?", a: "No, the source code is hidden." },
-                        { q: "Primary difference between Freeware and Open Source?", a: "Open Source allows code modification; Freeware does not." }
+                        { q: "Primary difference between Freeware and Open Source?", a: "Open Source allows code modification; Freeware does not." },
+                        { q: "Which software helps you 'browse' the internet?", a: "Web Browser (Application Software)" },
+                        { q: "What is 'Firmware'?", a: "Software permanently programmed into a hardware device." },
+                        { q: "Is Adobe Photoshop a horizontal or vertical market software?", a: "Horizontal (used across many different industries)." },
+                        { q: "What is 'Customized' software?", a: "Software built specifically for one client's needs." },
+                        { q: "Which language is known as 'Mother of all languages'?", a: "C (High-level but close to hardware)" },
+                        { q: "What are 'Device Drivers'?", a: "System software that allows the OS to talk to hardware like printers." },
+                        { q: "Which translator is used by Java?", a: "Both (Compiler to Bytecode, then Interpreter/JIT to Machine Code)" },
+                        { q: "What is 'Bloatware'?", a: "Unwanted software pre-installed on a new computer." },
+                        { q: "Is Tally a financial application or system software?", a: "Application Software (Vertical market for accounts)." },
+                        { q: "What does 'SaaS' stand for?", a: "Software as a Service (Cloud-based apps)." },
+                        { q: "Which utility reorganizes files on a hard drive for speed?", a: "Disk Defragmenter" },
+                        { q: "Is a Compiler faster than an Interpreter during execution?", a: "Yes, because the code is already translated into machine language." },
+                        { q: "What is 'Spyware'?", a: "Malicious software that secretly monitors user activity." },
+                        { q: "Which software category does the BIOS belong to?", a: "System Software (Firmware)." },
+                        { q: "What is an 'IDE' used for?", a: "Integrated Development Environment, used by developers to write and test code." }
                     ],
                     speedSummary: "- System S/W (OS) vs Application S/W (User apps).\n- Compiler = Whole code | Interpreter = Line by line.\n- Open Source = Free + Change code | Proprietary = Paid + Secret code."
                 }

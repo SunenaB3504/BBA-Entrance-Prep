@@ -9,6 +9,7 @@ import { polityArticlesData } from './polity-articles.data';
 import { scienceBiologyData } from './science-biology.data';
 import { sciencePhysicsData } from './science-physics-inventions.data';
 import { scienceSpaceData } from './science-space-missions.data';
+import { scienceChemistryData } from './science-chemistry.data';
 import { businessBrandsData } from './business-brands-taglines.data';
 import { businessFoundersData } from './business-founders-hq.data';
 import { allStaticGKStudyNotes } from './static-gk-study-notes.data';
@@ -34,6 +35,7 @@ export {
     scienceBiologyData,
     sciencePhysicsData,
     scienceSpaceData,
+    scienceChemistryData,
     businessBrandsData,
     businessFoundersData,
     allStaticGKStudyNotes,

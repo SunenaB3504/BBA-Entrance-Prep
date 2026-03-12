@@ -17,6 +17,40 @@ const StudyGuide = () => {
     const [isSpeaking, setIsSpeaking] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
     const [speakingTopicId, setSpeakingTopicId] = useState(null);
+    const [heardTopicIds, setHeardTopicIds] = useState([]);
+
+    const PROGRESS_KEY = `heard-${subjectId}-${chapterId}`;
+
+    useEffect(() => {
+        const saved = localStorage.getItem(PROGRESS_KEY);
+        if (saved) {
+            try {
+                setHeardTopicIds(JSON.parse(saved));
+            } catch (e) {
+                console.error("Error parsing progress:", e);
+            }
+        }
+    }, [PROGRESS_KEY]);
+
+    const markAsHeard = (topicId) => {
+        setHeardTopicIds(prev => {
+            if (prev.includes(topicId)) return prev;
+            const updated = [...prev, topicId];
+            localStorage.setItem(PROGRESS_KEY, JSON.stringify(updated));
+            return updated;
+        });
+    };
+
+    const toggleReadStatus = (topicId) => {
+        setHeardTopicIds(prev => {
+            const isRead = prev.includes(topicId);
+            const updated = isRead 
+                ? prev.filter(id => id !== topicId)
+                : [...prev, topicId];
+            localStorage.setItem(PROGRESS_KEY, JSON.stringify(updated));
+            return updated;
+        });
+    };
 
     const NARRATIVE_SUBJECTS = ['business-studies', 'economics', 'english', 'gk-current-affairs', 'computer-awareness', 'static-gk'];
     const isNarrative = NARRATIVE_SUBJECTS.includes(subjectId);
@@ -194,6 +228,7 @@ const StudyGuide = () => {
             setIsSpeaking(false);
             setIsPaused(false);
             setSpeakingTopicId(null);
+            markAsHeard(topic.id);
         };
 
         utterance.onerror = () => {
@@ -320,7 +355,12 @@ const StudyGuide = () => {
                                 <div className={`text-[9px] font-bold mb-1 uppercase tracking-widest ${activeTopicId === topic.id ? 'text-blue-200' : 'text-slate-400 group-hover:text-blue-500'}`}>
                                     Topic {String(index + 1).padStart(2, '0')}
                                 </div>
-                                <div className="font-bold text-sm leading-snug">{topic.title.replace(/^[0-9.]+\s/, '')}</div>
+                                <div className="flex items-center justify-between gap-2 leading-snug">
+                                    <span className="font-bold text-sm">{topic.title.replace(/^[0-9.]+\s/, '')}</span>
+                                    {heardTopicIds.includes(topic.id) && (
+                                        <span className={`text-xs ${activeTopicId === topic.id ? 'text-blue-200' : 'text-green-500'}`}>✓</span>
+                                    )}
+                                </div>
                             </button>
                         ))}
                     </div>
@@ -337,16 +377,24 @@ const StudyGuide = () => {
                                     <h2 className="text-4xl font-black text-slate-900 tracking-tight">
                                         {topic.title}
                                     </h2>
-                                    <div className="flex items-center gap-4 mt-1">
+                                    <div className="flex items-center gap-2 mt-1">
                                         <div className="text-blue-600 font-bold text-xs uppercase tracking-widest">Study Module {tIdx + 1}/{guideData.topics.length}</div>
-                                        {isNarrative && (
+                                        <div className="flex items-center gap-2">
+                                            {isNarrative && (
+                                                <button 
+                                                    onClick={() => handleSpeech(topic)}
+                                                    className={`flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-black tracking-widest transition-all ${speakingTopicId === topic.id ? 'bg-blue-600 text-white shadow-md' : 'bg-blue-50 text-blue-600 hover:bg-blue-100'}`}
+                                                >
+                                                    {speakingTopicId === topic.id ? (isPaused ? '▶ RESUME' : '⏸ PAUSE') : '🔊 LISTEN'}
+                                                </button>
+                                            )}
                                             <button 
-                                                onClick={() => handleSpeech(topic)}
-                                                className={`flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-black tracking-widest transition-all ${speakingTopicId === topic.id ? 'bg-blue-600 text-white shadow-md' : 'bg-blue-50 text-blue-600 hover:bg-blue-100'}`}
+                                                onClick={() => toggleReadStatus(topic.id)}
+                                                className={`flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-black tracking-widest transition-all ${heardTopicIds.includes(topic.id) ? 'bg-green-600 text-white shadow-md' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}
                                             >
-                                                {speakingTopicId === topic.id ? (isPaused ? '▶ RESUME' : '⏸ PAUSE') : '🔊 LISTEN'}
+                                                {heardTopicIds.includes(topic.id) ? '✓ COMPLETED' : '○ MARK AS READ'}
                                             </button>
-                                        )}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

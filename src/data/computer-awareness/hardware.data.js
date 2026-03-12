@@ -26,7 +26,22 @@ export const hardwareData = {
                         { q: "What measures printer quality?", a: "DPI (Dots Per Inch)" },
                         { q: "Input device used for checking MCQ sheets?", a: "OMR (Optical Mark Recognition)" },
                         { q: "Device used to point and click on a GUI?", a: "Mouse (Input)" },
-                        { q: "Is a Braille Reader input or output?", a: "Output (provides tactile feedback for the blind)" }
+                        { q: "Is a Braille Reader input or output?", a: "Output (provides tactile feedback for the blind)" },
+                        { q: "What is 'OCR' used for?", a: "Optical Character Recognition (turning images of text into editable text)." },
+                        { q: "Which input device is used to enter sound into a computer?", a: "Microphone" },
+                        { q: "Specify one 'Dual' (I/O) device.", a: "Touchscreen / Modem / Sound Card." },
+                        { q: "What does 'Laser' printer use for printing?", a: "Dry ink powder called Toner." },
+                        { q: "What is an 'Inkjet' printer?", a: "A printer that sprays tiny drops of liquid ink onto paper." },
+                        { q: "Which device is used in stores to scan item prices?", a: "Barcode Reader (Input)." },
+                        { q: "What is a 'Webcam'?", a: "An input device that captures video/photos." },
+                        { q: "Which output device displays the computer screen to a wall?", a: "Projector." },
+                        { q: "What is 'Refresh Rate'?", a: "How many times per second a monitor updates its image (measured in Hz)." },
+                        { q: "Which device is used to draw directly on a screen or tablet?", a: "Light Pen / Stylus (Input)." },
+                        { q: "Difference between Impact and Non-impact printers?", a: "Impact (Dot Matrix) hits the paper; Non-impact (Laser/Inkjet) does not." },
+                        { q: "What is 'Force Feedback' in a joystick?", a: "A feature that provides physical resistance/vibration to the user." },
+                        { q: "Which device is used specifically in CAD/CAM for high precision drafting?", a: "Digitizer / Graphics Tablet (Input)." },
+                        { q: "What is a 'Trackball'?", a: "An input device similar to a mouse, but with a ball on top moved by fingers." },
+                        { q: "Is a Speaker an input or output device?", a: "Output." }
                     ],
                     speedSummary: "- Input = Data IN (Keyboard, Mouse, Scanner)\n- Output = Data OUT (Monitor, Printer, Speaker)\n- MICR = Cheques | OMR = Exams | Plotter = Blueprints"
                 }
@@ -49,7 +64,22 @@ export const hardwareData = {
                         { q: "What does 1024 MB equal?", a: "1 GB" },
                         { q: "Does an SSD have moving parts?", a: "No. It uses flash memory." },
                         { q: "Primary function of RAM?", a: "Stores currently running apps and data for quick access." },
-                        { q: "Unit equal to 4 bits?", a: "Nibble" }
+                        { q: "Unit equal to 4 bits?", a: "Nibble" },
+                        { q: "What is 'SRAM'?", a: "Static RAM (Faster, used for Cache)." },
+                        { q: "What is 'DRAM'?", a: "Dynamic RAM (Commonly used for system memory, needs refreshing)." },
+                        { q: "What does 'EPROM' stand for?", a: "Erasable Programmable Read-Only Memory." },
+                        { q: "Which storage device is used for long-term archiving on magnetic tapes?", a: "Tape Drive (Sequential access)." },
+                        { q: "What is 'Flash Memory'?", a: "A type of non-volatile storage used in Pen Drives and SSDs." },
+                        { q: "Which unit comes after Terabyte (TB)?", a: "Petabyte (PB)." },
+                        { q: "What is 'Seek Time' in an HDD?", a: "The time taken for the read-write head to reach the correct track." },
+                        { q: "Is a CD-ROM an optical or magnetic storage?", a: "Optical Storage." },
+                        { q: "What is the capacity of a standard single-layer DVD?", a: "4.7 GB." },
+                        { q: "What is 'Blue-ray'?", a: "High-capacity optical disc (up to 25-50GB)." },
+                        { q: "What does 'Sequential Access' mean?", a: "Reading data one by one from start to end (like a tape recorder)." },
+                        { q: "What is 'Direct Access'?", a: "Jumping directly to the data you want (like a hard disk)." },
+                        { q: "Which memory level is L1 and L2?", a: "Cache Levels (L1 is closest to the CPU core)." },
+                        { q: "What happens during a 'Page Fault'?", a: "The OS tries to access data that isn't currently in RAM and must fetch it from Disk." },
+                        { q: "What is 'Buffer' memory?", a: "A temporary storage area that holds data while it is being transferred." }
                     ],
                     speedSummary: "- Registers > Cache > RAM > SSD > HDD\n- Volatile = Temporary (RAM) | Non-Volatile = Permanent (ROM, Disk)\n- 8 bits = 1 Byte | 1024 is the magic multiplier."
                 }
@@ -72,7 +102,22 @@ export const hardwareData = {
                         { q: "Who designed the modern computer model?", a: "John von Neumann" },
                         { q: "Pathway for data transfer inside computer?", a: "Bus" },
                         { q: "Main circuit board of a computer?", a: "Motherboard" },
-                        { q: "What is a 'Core' in a CPU?", a: "An independent processing unit within the CPU chip." }
+                        { q: "What is a 'Core' in a CPU?", a: "An independent processing unit within the CPU chip." },
+                        { q: "What is 'Overclocking'?", a: "Running a CPU at a higher speed than its manufacturer's rating." },
+                        { q: "What does 'Multi-core' mean?", a: "A CPU with more than one independent processing unit (e.g., Dual-core, Quad-core)." },
+                        { q: "What is a '32-bit' vs '64-bit' processor?", a: "The width of the data path (how much data it can process at once)." },
+                        { q: "What is 'Instructions Per Second' (IPS)?", a: "A measure of a computer's processor speed." },
+                        { q: "What is 'RISC' architecture?", a: "Reduced Instruction Set Computing (simpler, faster instructions)." },
+                        { q: "What is 'CISC' architecture?", a: "Complex Instruction Set Computing (larger set of elaborate instructions)." },
+                        { q: "Which component keeps the physical CPU cool?", a: "Heat Sink / Fan." },
+                        { q: "What is the 'System Clock'?", a: "An internal clock that generates electronic pulses at a fixed rate to synchronize operations." },
+                        { q: "What is a 'Register'?", a: "A small high-speed storage location directly inside the CPU." },
+                        { q: "What is the 'Instruction Set'?", a: "The collection of all basic operations a CPU can perform." },
+                        { q: "Which bus carries the memory address the CPU wants to access?", a: "Address Bus." },
+                        { q: "Which bus carries the actual data?", a: "Data Bus." },
+                        { q: "What is 'Pipelining'?", a: "A technique where the CPU starts executing a second instruction before the first is finished." },
+                        { q: "What is a 'Microprocessor'?", a: "An entire CPU contained on a single silicon chip." },
+                        { q: "Which company is the largest manufacturer of PC microprocessors?", a: "Intel." }
                     ],
                     speedSummary: "- CPU = ALU (Math) + CU (Directing) + Registers (Storage)\n- Cycle = Fetch -> Decode -> Execute\n- High GHz = More cycles per second."
                 }

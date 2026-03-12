@@ -26,7 +26,22 @@ export const internetAndNetworkingData = {
                         { q: "Which protocol ensures data packets reach safely?", a: "TCP" },
                         { q: "Maximum number in an IP octet (e.g., 192)?", a: "255" },
                         { q: "Is the WWW the same as the Internet?", a: "No, WWW is just one service running on the Internet." },
-                        { q: "In an email, what does BCC stand for?", a: "Blind Carbon Copy" }
+                        { q: "In an email, what does BCC stand for?", a: "Blind Carbon Copy" },
+                        { q: "Which protocol is used by the World Wide Web for data transfer?", a: "HTTP" },
+                        { q: "What is an IPv4 address composed of?", a: "Four decimal numbers separated by dots (e.g., 192.168.1.1)." },
+                        { q: "What is the primary difference between IPv4 and IPv6?", a: "IPv6 provides a much larger address space (128-bit) compared to IPv4 (32-bit)." },
+                        { q: "Which service allows users to remote login into another computer?", a: "Telnet / SSH" },
+                        { q: "Specify one protocol used for VOIP (Voice over IP)?", a: "SIP / RTP" },
+                        { q: "What is the full form of MAC Address?", a: "Media Access Control Address" },
+                        { q: "Is a MAC address permanent or temporary?", a: "Permanent (it is burnt into the NIC)." },
+                        { q: "Which protocol is used to fetch emails from a server to a device?", a: "POP3 / IMAP" },
+                        { q: "What does 'latency' mean in a network?", a: "The delay in the transfer of data across a network." },
+                        { q: "What is 'Bandwidth'?", a: "The maximum amount of data that can be transmitted over a path in a given time." },
+                        { q: "What is a 'Packet' in networking?", a: "A small segment of a larger message sent over a network." },
+                        { q: "Which protocol is used for synchronizing clocks over a network?", a: "NTP (Network Time Protocol)" },
+                        { q: "What is a 'Gateway'?", a: "A node that connects two networks using different protocols." },
+                        { q: "What is the purpose of the 'Ping' command?", a: "To test the reachability of a host on an IP network." },
+                        { q: "Which organization manages domain names globally?", a: "ICANN" }
                     ],
                     speedSummary: "- HTTP = Web | SMTP = Postman | DNS = Phonebook.\n- IP Address = Computer's house address.\n- HTTPS = Encrypted & Safe."
                 }
@@ -49,7 +64,22 @@ export const internetAndNetworkingData = {
                         { q: "Which device is 'dumb' and broadcasts to all?", a: "Hub" },
                         { q: "Network type spanning an entire city?", a: "MAN (Metropolitan Area Network)" },
                         { q: "Device used to boost a weak network signal?", a: "Repeater" },
-                        { q: "What does Bluetooth create?", a: "PAN (Personal Area Network)" }
+                        { q: "What does Bluetooth create?", a: "PAN (Personal Area Network)" },
+                        { q: "Which cable type is fastest for networking?", a: "Fiber Optic" },
+                        { q: "What is an 'RJ-45' connector used for?", a: "Ethernet networking cables." },
+                        { q: "What does a 'Bridge' do in a network?", a: "Connects two LAN segments together as a single network." },
+                        { q: "What is the primary advantage of Star topology?", a: "Easy to add or remove devices without affecting the whole network." },
+                        { q: "Which topology uses a 'Terminator' at both ends?", a: "Bus Topology" },
+                        { q: "What is 'PoE'?", a: "Power over Ethernet (delivering power and data via the same cable)." },
+                        { q: "Which device divides a network into logical segments?", a: "Switch" },
+                        { q: "What is a 'VLAN'?", a: "Virtual Local Area Network." },
+                        { q: "What is the range of a typical Bluetooth Class 2 device?", a: "About 10 meters." },
+                        { q: "Which networking tool is used to test if a cable is working?", a: "Multimeter / Cable Tester" },
+                        { q: "What is 'Attenuation'?", a: "The loss of signal strength as it travels through a medium." },
+                        { q: "Which fiber optic type is used for longer distances?", a: "Single-mode Fiber" },
+                        { q: "What is a 'SSID'?", a: "Service Set Identifier (the name of a Wi-Fi network)." },
+                        { q: "Which wireless standard is used for Wi-Fi 6?", a: "802.11ax" },
+                        { q: "What does a 'Firewall' do?", a: "Monitors and controls incoming/outgoing network traffic based on security rules." }
                     ],
                     speedSummary: "- Hub = Broadcasts | Switch = Selective | Router = Connects Networks.\n- Star = Centralized | Mesh = Highly Reliable.\n- LAN = Building | WAN = Global."
                 }
@@ -72,7 +102,22 @@ export const internetAndNetworkingData = {
                         { q: "A clickable link on a webpage?", a: "Hyperlink" },
                         { q: "What does HTML stand for?", a: "HyperText Markup Language" },
                         { q: "Copies of sites stored locally for speed?", a: "Cache" },
-                        { q: "What is a 'Spam' email?", a: "Unsolicited or junk bulk email." }
+                        { q: "What is a 'Spam' email?", a: "Unsolicited or junk bulk email." },
+                        { q: "What is 'Phishing'?", a: "A cyber attack that uses email/websites to steal user data." },
+                        { q: "Which cloud service model is used by developers for app hosting?", a: "PaaS (Platform as a Service)" },
+                        { q: "What is an 'URL'?", a: "Uniform Resource Locator (a web address)." },
+                        { q: "What is the purpose of 'Incognito Mode'?", a: "To browse without saving history or cookies." },
+                        { q: "What is 'E-commerce'?", a: "Buying and selling of goods/services over the internet." },
+                        { q: "Specify one major cloud provider.", a: "AWS (Amazon) / Azure (Microsoft) / Google Cloud." },
+                        { q: "What is a 'Search Engine Crawler'?", a: "A bot that indexed web pages for search results." },
+                        { q: "What does 'WWW' stand for?", a: "World Wide Web." },
+                        { q: "What is 'Streaming'?", a: "Viewing media online without downloading the whole file first." },
+                        { q: "What is 'FTP' primarily used for?", a: "Transferring files over the internet." },
+                        { q: "What is a 'Blog'?", a: "A personal website containing logs of thoughts or articles." },
+                        { q: "What is 'Social Media'?", a: "Websites that allow users to create and share content and participate in social networking." },
+                        { q: "What is 'VPN'?", a: "Virtual Private Network (creates a secure connection over a public network)." },
+                        { q: "What is 'Dark Web'?", a: "Part of the internet that is not indexed by search engines and requires special software to access." },
+                        { q: "What is 'Web 3.0'?", a: "The next generation of the web, emphasizing decentralization and blockchain." }
                     ],
                     speedSummary: "- Browser = The Window | Search Engine = The Librarian.\n- SaaS = Just use it | IaaS = Rent the machine.\n- Cookies remember you | Caches speed things up."
                 }

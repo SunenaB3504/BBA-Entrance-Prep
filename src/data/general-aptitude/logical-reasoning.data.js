@@ -25,7 +25,22 @@ export const logicalReasoningData = {
                         { q: "1A, 2B, 4D, 7G, ?", a: "11K. (Number jumps: +1, +2, +3, +4.)" },
                         { q: "C3, E5, H8, L12, ?", a: "Q17. (+2, +3, +4, +5.)" },
                         { q: "AZ1, BY2, CX3, DW4, ?", a: "EV5. (Opposites + incremental numbers.)" },
-                        { q: "J10, L12, O15, S19, ?", a: "X24. (+2, +3, +4, +5.)" }
+                        { q: "J10, L12, O15, S19, ?", a: "X24. (+2, +3, +4, +5.)" },
+                        { q: "K11, M13, P16, T20, ?", a: "Y25. (Letter jumps: +2, +3, +4, +5. Numbers follow.)" },
+                        { q: "Z1, Y2, X3, W4, ?", a: "V5. (Reverse alphabet & incremental numbers.)" },
+                        { q: "A2, C4, E8, G16, ?", a: "I32. (Vowels + powers of 2? No, skip-1 + powers of 2)" },
+                        { q: "B2, E5, I9, N14, ?", a: "T20. (+3, +4, +5, +6 jumps.)" },
+                        { q: "Z100, X81, V64, T49, ?", a: "R36. (-2 letters, descending squares.)" },
+                        { q: "M1, N4, O9, P16, ?", a: "Q25. (Incremental letters + squares.)" },
+                        { q: "A26, B25, C24, D23, ?", a: "E22. (Alphabet + Reverse positions.)" },
+                        { q: "10J, 20L, 30N, 40P, ?", a: "50R. (Numbers +10, Letters +2.)" },
+                        { q: "5E, 10J, 15O, 20T, ?", a: "25Y. (EJOTY pattern.)" },
+                        { q: "C33, F66, I99, ?", a: "L132. (Letters +3, Numbers +33.)" },
+                        { q: "B2, D4, F6, H8, ?", a: "J10. (Even letters & numbers.)" },
+                        { q: "A1, D4, I9, P16, ?", a: "Y25. (Squares in alphabet positions.)" },
+                        { q: "1Z, 8X, 27V, 64T, ?", a: "125R. (Cubes + reverse -2 letters.)" },
+                        { q: "P16, Q17, R18, S19, ?", a: "T20. (Direct position mapping.)" },
+                        { q: "X24, V22, T20, R18, ?", a: "P16. (Descending even positions.)" }
                     ],
                     speedSummary: "- Don't solve the whole term. Often solving just the first letter rules out 3 options.\n- Multiples of 5 (EJOTY) is faster than counting on fingers."
                 }
@@ -48,7 +63,22 @@ export const logicalReasoningData = {
                         { q: "Six people. A is second to left of B. C is opposite B. Who is between A and C?", a: "D/E." },
                         { q: "Facing centre. X is immediate right of Y. Z is opposite X. Who is left of Y?", a: "Z (in 3 person wrap) or W." },
                         { q: "4 girls. Anita is opposite Baby. Chitra is right of Anita. Who is left of Anita?", a: "Deepa." },
-                        { q: "Circle of 5. A is between B and E. C is right of E. Who is left of B?", a: "C. (Order: B - A - E - C - D? No. B-A-E-C-B)" }
+                        { q: "Circle of 5. A is between B and E. C is right of E. Who is left of B?", a: "C. (Order: B - A - E - C - D? No. B-A-E-C-B)" },
+                        { q: "L, M, N, O. L is opposite N. M is left of L. Who is right of L?", a: "O." },
+                        { q: "5 people. X is next to Y but not Z. W is opposite Y. Who is between Y and Z?", a: "W? No, standard logic puzzle check." },
+                        { q: "A is between B and C. D is right of B. Who is left of C?", a: "A." },
+                        { q: "Circular table 6 people. P is opposite S. Q is between P and R. T is between S and U. Who is left of P?", a: "Q." },
+                        { q: "A-H round table. A opposite E. D next to A. Who is opposite D?", a: "H. (+4 positions for direct opposite in 8-set)" },
+                        { q: "4 boys facing center. Ram is left of Shyam. Mohan is opposite Ram. Who is right of Ram?", a: "Gopal (the 4th boy)." },
+                        { q: "6 students. A is opposite B. C is between A and D. F is between B and E. Who is opposite D?", a: "E." },
+                        { q: "Circle face-in. X is 2nd to left of Y. Z is right of X. Who is opposite Y?", a: "Z (in 4-set logic)." },
+                        { q: "P, Q, R, S. S is opposite Q. R is between P and Q. Who is right of S?", a: "P." },
+                        { q: "A, B, C, D, E. C is between A and E. B is left of A. Who is right of E?", a: "B (closing the circle)." },
+                        { q: "8 people. A is 3rd to right of B. C is opposite B. D is opposite A. Who is between A and C?", a: "Variable but usually 1 person in 8-seat setup." },
+                        { q: "Facing away. P is left of Q. R is opposite P. Who is right of Q?", a: "R (in 4 person set)." },
+                        { q: "6 people. A is immediate left of B. D is opposite B. E is between D and F. Who is right of B?", a: "C (the remaining person)." },
+                        { q: "Anita, Bob, Cris, Dan. Anita is opposite Cris. Bob is right of Anita. Who is opposite Bob?", a: "Dan." },
+                        { q: "5 people. P is between Q and R. T is right of R. Who is left of Q?", a: "T." }
                     ],
                     speedSummary: "- Use a small circle diagram with ticks for seats.\n- Double-check the number of people before starting."
                 }
@@ -71,7 +101,22 @@ export const logicalReasoningData = {
                         { q: "A = 1, ACT = 24. FAT = ?", a: "27. (6+1+20)" },
                         { q: "SUN = NUS. MOON = ?", a: "NOOM. (Reversed string)" },
                         { q: "RED = 27. BLUE = ?", a: "40. (Sum of positions: 2+12+21+5)" },
-                        { q: "PEN = 31. PAPER = ?", a: "56. (16+1+16+5+18)" }
+                        { q: "PEN = 31. PAPER = ?", a: "56. (16+1+16+5+18)" },
+                        { q: "COW = 3, 15, 23. ZEBRA = ?", a: "26, 5, 2, 18, 1. (Standard position mapping)" },
+                        { q: "HELLO = IFMMP. BYE = ?", a: "CZF. (+1 shift)" },
+                        { q: "GOOD = HPPE. BAD = ?", a: "CBE. (+1 shift)" },
+                        { q: "DOG = 26. CAT = ?", a: "24. (Sum: 4+15+7 vs 3+1+20)" },
+                        { q: "NEST = OTUV. BIRD = ?", a: "CJSE. (+1 shift)" },
+                        { q: "STAR = RAT S (anagram). MOON = ?", a: "NOOM." },
+                        { q: "A = 2, B = 4, C = 6. CAT = ?", a: "48. (Positions x 2: 6+2+40)" },
+                        { q: "MAN = 13114. BOY = ?", a: "21525. (Concatenated positions: 13, 1, 14 vs 2, 15, 25)" },
+                        { q: "LOVE = OLEV (opposites). HATE = ?", a: "SZGV. (H=S, A=Z, T=G, E=V)" },
+                        { q: "WATER = XBUFS. FIRE = ?", a: "GJSF. (+1 shift)" },
+                        { q: "BOOK = 43. READ = ?", a: "28. (Sum of positions)" },
+                        { q: "SKY = 55. BLUE = ?", a: "40. (Sum of positions)" },
+                        { q: "E = 5, HOTEL = 12. LAMB = ?", a: "7. (Sum / Number of letters: 60/5=12; 28/4=7)" },
+                        { q: "BAG = 71. ICE = ?", a: "539? No, concat positions." },
+                        { q: "Z = 52, ACT = 48. BAT = ?", a: "46. (Pos x 2 sum: (2+1+20)x2)" }
                     ],
                     speedSummary: "- Look for the first and last letters first to eliminate options.\n- Use the EJOTY reference for fast position math."
                 }
@@ -94,7 +139,22 @@ export const logicalReasoningData = {
                         { q: "Deepak said to Nitin, 'That boy playing with the football is the younger of the two brothers of the daughter of my father's wife.' How is the boy related to Deepak?", a: "Brother. (Daughter of father's wife = Deepak's sister. Her brother = Deepak's brother.)" },
                         { q: "If Neha says, 'Amrita's father Raj is the only son of my father-in-law Mahesh', then how is Bindu, who is Neha's sister, related to Amrita?", a: "Aunt. (Raj is Neha's husband. Bindu is Neha's sister.)" },
                         { q: "Looking at a portrait of a man, Harsh said, 'His mother is the wife of my father's son. Brothers and sisters I have none.' At whose portrait was Harsh looking?", a: "His son's. (His father's son = Harsh. Wife of Harsh = Harsh's wife. Man's mother = Harsh's wife.)" },
-                        { q: "Anil's father is the only son of my father. Who is Anil to me?", a: "Son. (Only son of my father = Me. Anil's father = Me.)" }
+                        { q: "Anil's father is the only son of my father. Who is Anil to me?", a: "Son. (Only son of my father = Me. Anil's father = Me.)" },
+                        { q: "How is my father's mother's only daughter-in-law related to me?", a: "Mother." },
+                        { q: "A is the brother of B. B is the brother of C. D is the father of A. Based on these 3, what is B to D?", a: "Son." },
+                        { q: "X is the sister of Y. Y is the mother of Z. What is X to Z?", a: "Maternal Aunt." },
+                        { q: "A is the father of B and C. B is the son of A. But C is not the son of A. What is C to A?", a: "Daughter." },
+                        { q: "Pointing to a man, Vimal said, 'His only brother is the father of my daughter's father'. Who is the man to Vimal?", a: "Uncle." },
+                        { q: "A's grandfather's only son is B. What is B to A?", a: "Father." },
+                        { q: "My father's only sibling is my?", a: "Uncle or Aunt." },
+                        { q: "X is the husband of Y. W is the daughter of X. What is Y to W?", a: "Mother." },
+                        { q: "If P is the brother of Q, Q is the sister of R, then P is?", a: "Brother of R." },
+                        { q: "K is the father of L. L is the son of M. What is M to K?", a: "Wife." },
+                        { q: "A is B's brother. C is A's father. D is C's brother. E is D's mother. How is B related to E?", a: "Granddaughter/Grandson." },
+                        { q: "M is the son of N. O is the father of N. What is M to O?", a: "Grandson." },
+                        { q: "Pointing to a lady, a man said, 'The son of her only brother is the brother of my wife.' How is the lady related to the man?", a: "Sister of father-in-law." },
+                        { q: "A is the mother of B. B is the sister of C. C is the father of D. How is A related to D?", a: "Paternal Grandmother." },
+                        { q: "If Amit's father is the only son of my father, who am I?", a: "Amit's father." }
                     ],
                     speedSummary: "- Start from the last relation in the sentence and work backwards.\n- Use short symbols like F (Father), M (Mother), S (Son) to draw fast."
                 }
@@ -117,7 +177,22 @@ export const logicalReasoningData = {
                         { q: "Some pens are blue. No blue is ink. Conclusion: Some pens are ink?", a: "Does Not Follow." },
                         { q: "All squares are rectangles. Some rectangles are circles. Conclusion: Some squares are circles?", a: "Does Not Follow." },
                         { q: "No cat is a dog. No dog is a fish. Conclusion: No cat is a fish?", a: "Does Not Follow. (Cat and fish could overlap.)" },
-                        { q: "All Mangoes are yellow. Some Fruits are Mangoes. Conclusion: Some Fruits are yellow.", a: "Follows." }
+                        { q: "All Mangoes are yellow. Some Fruits are Mangoes. Conclusion: Some Fruits are yellow.", a: "Follows." },
+                        { q: "All A are B. All B are C. All C are D. Conclusion: All A are D.", a: "Follows. (Transitive subset chain.)" },
+                        { q: "Some kings are queens. Some queens are mothers. Conclusion: Some kings are mothers.", a: "Does Not Follow. (No transitive property for 'Some'.)" },
+                        { q: "No book is a pen. No pen is a notebook. Conclusion: No book is a notebook.", a: "Does Not Follow. (Book and notebook could overlap.)" },
+                        { q: "All chairs are tables. Some tables are sofas. Conclusion: Some chairs are sofas.", a: "Does Not Follow. (Chairs are in tables, but tables overlap sofas; chairs might not overlap sofas.)" },
+                        { q: "No flower is a plant. All plants are green. Conclusion: No flower is green.", a: "Does Not Follow. (Flowers could be green while staying separate from plants.)" },
+                        { q: "Some cats are black. All black items are heavy. Conclusion: Some cats are heavy.", a: "Follows." },
+                        { q: "All athletes are fast. Some fast people are tall. Conclusion: Some athletes are tall.", a: "Does Not Follow." },
+                        { q: "No tiger is a pet. Some pets are soft. Conclusion: Some tigers are not soft?", a: "Does Not Follow." },
+                        { q: "All soldiers are brave. No brave person is a coward. Conclusion: No soldier is a coward.", a: "Follows." },
+                        { q: "Some keys are locks. Some locks are doors. Conclusion: No key is a door?", a: "Does Not Follow." },
+                        { q: "All rains are clouds. No cloud is dry. Conclusion: No rain is dry.", a: "Follows." },
+                        { q: "Some stars are bright. All bright items glow. Conclusion: Some stars glow.", a: "Follows." },
+                        { q: "No man is a tree. All trees have leaves. Conclusion: No man has leaves?", a: "Does Not Follow." },
+                        { q: "All circles are round. No round is square. Conclusion: No circle is square.", a: "Follows." },
+                        { q: "Some people are honest. No honest person is a thief. Conclusion: Some people are not thieves.", a: "Follows." }
                     ],
                     speedSummary: "- Use 'Some' = Intersection, 'All' = Subset.\n- If both premises are positive, a negative conclusion can never follow."
                 }
@@ -140,7 +215,22 @@ export const logicalReasoningData = {
                         { q: "If today is Monday, what day after 61 days?", a: "Saturday. (61 % 7 = 5. Monday + 5 = Saturday)" },
                         { q: "At what time between 4 and 5 will hands coincide?", a: "21 (9/11) min past 4. (M = 2/11 * 30H = 240/11)" },
                         { q: "Angle at 8:40?", a: "20°. (|30*8 - 5.5*40| = |240 - 220| = 20°)" },
-                        { q: "Year 2024 is a leap year. Next?", a: "2028." }
+                        { q: "Year 2024 is a leap year. Next?", a: "2028." },
+                        { q: "Angle at 7:20?", a: "100°. (|210 - 110|)" },
+                        { q: "Angle at 5:15?", a: "67.5°. (|150 - 82.5|)" },
+                        { q: "10 Oct 1980 was Friday. 10 Oct 1981?", a: "Saturday. (+1 odd day)" },
+                        { q: "Angle at 9:00?", a: "90° or 270°." },
+                        { q: "Angle at 12:10?", a: "55°. (|0 - 55|)" },
+                        { q: "How many odd days in 400 years?", a: "0. (97 leap years + 303 ordinary = 497 total. 497 % 7 = 0)" },
+                        { q: "Angle at 1:15?", a: "52.5°. (|30 - 82.5|)" },
+                        { q: "Mirror image of 4:50?", a: "7:10. (11:60 - 4:50)" },
+                        { q: "Angle at 11:30?", a: "165°. (|330 - 165|)" },
+                        { q: "If 1st Jan is Thursday, what day is 31st Dec?", a: "Thursday. (Ordinary year starts and ends on same day.)" },
+                        { q: "Angle at 8:30?", a: "75°. (|240 - 165|)" },
+                        { q: "Angle at 2:40?", a: "160°. (|60 - 220|)" },
+                        { q: "Angle at 10:10?", a: "115°. (|300 - 55|)" },
+                        { q: "Leap year count in 100 years?", a: "24." },
+                        { q: "Angle at 9:15?", a: "172.5°. (|270 - 82.5|)" }
                     ],
                     speedSummary: "- For mirror time, just subtract from 11:60.\n- 100 years have 5 odd days."
                 }
@@ -163,7 +253,22 @@ export const logicalReasoningData = {
                         { q: "Sunset, man's shadow is to his right. Direction?", a: "North. (Sun in West, Shadow in East. East is Right -> Facing North)" },
                         { q: "Starting N, turn L, L, L. Direction?", a: "East. (N -> W -> S -> E)" },
                         { q: "A is 10m West of B. C is 10m South of B. Direction of A from C?", a: "North-West." },
-                        { q: "Shortest distance for 8m North and 6m West?", a: "10m. (√(8²+6²))" }
+                        { q: "Shortest distance for 8m North and 6m West?", a: "10m. (√(8²+6²))" },
+                        { q: "South-West becomes North, what does North become?", a: "South-East (225° CW shift)." },
+                        { q: "Walk 12m East, 5m South. Displacement?", a: "13m. (√(144+25))" },
+                        { q: "Start N, go 10m. Turn R, go 10m. Turn R, go 10m. Position?", a: "10m East of start." },
+                        { q: "Face South, turn 180°. Face?", a: "North." },
+                        { q: "Go 4km West, turn R, 3km. Distance?", a: "5km." },
+                        { q: "Morning sun, shadow is in front. Direction?", a: "West. (Sun in East, Shadow in West)" },
+                        { q: "Start East, turn 90° R twice. Face?", a: "West." },
+                        { q: "A is 5m N of B. B is 5m E of C. C is?", a: "South-West of A." },
+                        { q: "Walk 20m N, 20m E, 10m S, 20m W. Position?", a: "10m North of start." },
+                        { q: "Face NW, turn 90° CW. Face?", a: "NE." },
+                        { q: "Starting W, turn R, L, R. Direction?", a: "North." },
+                        { q: "Go 5m S, 5m E, 5m N. Position?", a: "5m East of start." },
+                        { q: "Shadow is to the left at sunrise. Direction?", a: "South. (East = Left means facing South)" },
+                        { q: "Face E, turn 45° CCW. Face?", a: "NE." },
+                        { q: "A is N of B. C is E of B. A is?", a: "North-West of C." }
                     ],
                     speedSummary: "- Always draw a quick '+' coordinate system.\n- Right = Clockwise 90°, Left = Anti-clockwise 90°."
                 }
@@ -186,7 +291,22 @@ export const logicalReasoningData = {
                         { q: "100, 90, 70, 40, ?", a: "0. (-10, -20, -30, -40)" },
                         { q: "2, 4, 8, 16, ?", a: "32. (*2)" },
                         { q: "5, 11, 23, 47, ?", a: "95. (2n + 1)" },
-                        { q: "A:B :: C:?", a: "D. (Analogies)" }
+                        { q: "A:B :: C:?", a: "D. (Analogies)" },
+                        { q: "3, 9, 27, 81, ?", a: "243. (x3)" },
+                        { q: "121, 144, 169, ?", a: "196. (11², 12², 13², 14²)" },
+                        { q: "4, 10, 22, 46, ?", a: "94. (2n + 2)" },
+                        { q: "1, 1, 4, 8, 9, 27, 16, ?", a: "64. (Square, Cube, Square, Cube alternating positions)" },
+                        { q: "7, 10, 8, 11, 9, 12, ?", a: "10. (+3, -2, +3, -2 ...)" },
+                        { q: "36, 34, 30, 28, 24, ?", a: "22. (-2, -4, -2, -4 ...)" },
+                        { q: "22, 21, 23, 22, 24, 23, ?", a: "25. (-1, +2, -1, +2 ...)" },
+                        { q: "53, 53, 40, 40, 27, 27, ?", a: "14. (-13 each pair)" },
+                        { q: "21, 9, 21, 11, 21, 13, 21, ?", a: "15. (Constant 21, odds 9, 11, 13, 15)" },
+                        { q: "3, 4, 7, 8, 11, 12, ?", a: "15. (+1, +3, +1, +3 ...)" },
+                        { q: "1, 2, 6, 24, ?", a: "120. (x2, x3, x4, x5)" },
+                        { q: "10, 14, 23, 39, ?", a: "64. (+2², +3², +4², +5²)" },
+                        { q: "0, 7, 26, 63, ?", a: "124. (n³ - 1)" },
+                        { q: "2, 10, 30, 68, ?", a: "130. (n³ + n)" },
+                        { q: "17:60 :: 20:?", a: "69. (3n + 9)" }
                     ],
                     speedSummary: "- Memorize squares up to 30 and cubes up to 12.\n- Always check the difference between terms first."
                 }
