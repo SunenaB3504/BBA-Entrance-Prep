@@ -18,7 +18,30 @@ export const generalKnowledgeData = {
                     traps: "CEC status vs Supreme Court Judge. While similar, they are appointed differently. Don't confuse the Real Head (PM) with the Nominal Head (President).",
                     examples: [
                         { q: "Which article deals with Money Bills?", a: "Article 110." },
-                        { q: "Who is the Nominal Head of India?", a: "The President." }
+                        { q: "Who is the Nominal Head of India?", a: "The President." },
+                        { q: "Which Article deals with the Election Commission?", a: "Article 324." },
+                        { q: "Which Article deals with the CAG?", a: "Article 148." },
+                        { q: "Which Article deals with the Finance Commission?", a: "Article 280." },
+                        { q: "Which Article deals with the Amendment Power?", a: "Article 368." },
+                        { q: "What is the 42nd Amendment known as?", a: "Mini Constitution." },
+                        { q: "Minimum age for Lok Sabha?", a: "25 Years." },
+                        { q: "Minimum age for Rajya Sabha?", a: "30 Years." },
+                        { q: "Who is the Real Head of the Union?", a: "The Prime Minister." },
+                        { q: "Which Article is the 'Heart and Soul'?", a: "Article 32." },
+                        { q: "Niti Aayog replaced what?", a: "Planning Commission." },
+                        { q: "Fundamental Duties added by which Amendment?", a: "42nd Amendment (1976)." },
+                        { q: "Single Citizenship borrowed from?", a: "Britain (UK)." },
+                        { q: "Who appoints the CJI?", a: "The President." },
+                        { q: "Who has power to decide on Money Bill?", a: "Speaker of Lok Sabha." },
+                        { q: "Which Schedule deals with RS seats?", a: "4th Schedule." },
+                        { q: "Niti Aayog established in?", a: "2015." },
+                        { q: "How many Fundamental Rights initially?", a: "7 (Right to Property was removed later)." },
+                        { q: "Right to Property is now a?", a: "Legal Right (Art 300A)." },
+                        { q: "Joint session called by?", a: "The President." },
+                        { q: "Joint session presided by?", a: "The Speaker." },
+                        { q: "Total Fundamental Duties?", a: "11." },
+                        { q: "President's term?", a: "5 Years." },
+                        { q: "Impeachment of President Article?", a: "Article 61." }
                     ],
                     speedSummary: "Articles 324, 148, 280 are the big ones for CUET. Remember: 42nd Amendment (1976) is the 'Mini Constitution'."
                 }
@@ -33,9 +56,70 @@ export const generalKnowledgeData = {
                     traps: "Founder of INC vs first President. A.O. Hume founded it, but W.C. Bonnerjee was the 1st President.",
                     examples: [
                         { q: "Who gave the slogan 'Do or Die'?", a: "Mahatma Gandhi in 1942." },
-                        { q: "Where was the 1885 session of INC held?", a: "Mumbai." }
+                        { q: "Where was the 1885 session of INC held?", a: "Mumbai." },
+                        { q: "Who was the first President of INC?", a: "W.C. Bonnerjee." },
+                        { q: "Who founded the INC?", a: "A.O. Hume." },
+                        { q: "Partition of Bengal year?", a: "1905." },
+                        { q: "NCM started in?", a: "1920." },
+                        { q: "Dandi March year?", a: "1930." },
+                        { q: "Quit India Movement year?", a: "1942." },
+                        { q: "Gandhi's political Guru?", a: "G.K. Gokhale." },
+                        { q: "Jallianwala Bagh year?", a: "1919." },
+                        { q: "Who founded the Forward Bloc?", a: "Subhash Chandra Bose." },
+                        { q: "Author of 'Discovery of India'?", a: "Jawaharlal Nehru." },
+                        { q: "Slogan 'Swaraj is my birthright'?", a: "Bal Gangadhar Tilak." },
+                        { q: "Simon Commission year?", a: "1928." },
+                        { q: "Poona Pact year?", a: "1932." },
+                        { q: "Gandhi-Irwin Pact year?", a: "1931." },
+                        { q: "1st Round Table Conference year?", a: "1930." },
+                        { q: "Chauri Chaura year?", a: "1922." },
+                        { q: "Home Rule League year?", a: "1916." },
+                        { q: "Swadeshi Movement year?", a: "1905." },
+                        { q: "Who was Frontier Gandhi?", a: "Khan Abdul Ghaffar Khan." },
+                        { q: "Bardoli Satyagraha leader?", a: "Sardar Patel." },
+                        { q: "August Offer year?", a: "1940." },
+                        { q: "Indian National Army (INA) founder?", a: "Rash Behari Bose / Subhash Chandra Bose." },
+                        { q: "Who gave titles to Gandhi & Tagore?", a: "Gandhi called Tagore 'Gurudev'. Tagore called Gandhi 'Mahatma'." }
                     ],
                     speedSummary: "1885 INC, 1920 Non-Cooperation, 1942 Quit India. Gandhi's Guru: G.K. Gokhale."
+                }
+            },
+            {
+                id: "gk-geography",
+                title: "3. Indian & World Geography",
+                content: {
+                    coreConcept: "Geography covers the physical features, resources, and map-work of India and the world.\n\n1. Rivers & Dams: Lifeblood of the nation.\n2. Mountains & Glaciers: The Himalayan range.\n3. Political Geography: States, Capitals, and Boundaries.",
+                    formulaBank: "• Silicon Valley: Bengaluru\n• Manchester of India: Ahmedabad\n• City of Joy: Kolkata\n• Pink City: Jaipur",
+                    logic: "To remember river systems, classify them into East-flowing (Ganga, Godavari) and West-flowing (Narmada, Tapti).",
+                    traps: "Highest Dam vs Longest Dam. Tehri is highest; Hirakud is longest.",
+                    examples: [
+                        { q: "Highest Dam in India?", a: "Tehri Dam (Uttarakhand)." },
+                        { q: "Longest coastline state?", a: "Gujarat." },
+                        { q: "Silicon Valley of India?", a: "Bengaluru." },
+                        { q: "Manchester of India?", a: "Ahmedabad." },
+                        { q: "City of Joy?", a: "Kolkata." },
+                        { q: "River known as Dakshin Ganga?", a: "Godavari." },
+                        { q: "Smallest state by area?", a: "Goa." },
+                        { q: "Standard Meridian of India?", a: "82.5° E (Mirzapur)." },
+                        { q: "Tropic of Cancer latitude?", a: "23.5° N." },
+                        { q: "Sardar Sarovar Dam river?", a: "Narmada." },
+                        { q: "Siachen Glacier location?", a: "Ladakh." },
+                        { q: "Nathu La Pass state?", a: "Sikkim." },
+                        { q: "Zemu Glacier state?", a: "Sikkim." },
+                        { q: "Smallest state by population?", a: "Sikkim." },
+                        { q: "Largest state by area?", a: "Rajasthan." },
+                        { q: "Largest state by population?", a: "Uttar Pradesh." },
+                        { q: "Tropic of Cancer passes through how many states?", a: "8." },
+                        { q: "Capital of Sikkim?", a: "Gangtok." },
+                        { q: "Tehri Dam river?", a: "Bhagirathi." },
+                        { q: "Hirakud Dam river?", a: "Mahanadi." },
+                        { q: "Nathu La Pass connects India to?", a: "China." },
+                        { q: "Highest peak in India?", a: "Kanchenjunga (K2 is disputed/in POK)." },
+                        { q: "Oldest mountain range in India?", a: "Aravalli." },
+                        { q: "River that creates the Dhuan Dhar falls?", a: "Narmada." },
+                        { q: "Which state is known as the 'Spices Garden of India'?", a: "Kerala." }
+                    ],
+                    speedSummary: "Tehri = Highest, Hirakud = Longest. Gujarat = Longest coast. 82.5° E = IST."
                 }
             }
         ]

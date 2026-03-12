@@ -45,7 +45,22 @@ export const vocabularyData = {
                         { q: "Meaning of 'Bite the bullet'?", a: "To accept something difficult or unpleasant." },
                         { q: "Meaning of 'Piece of cake'?", a: "Very easy task." },
                         { q: "Synonym of 'Candid'?", a: "Honest / Frank." },
-                        { q: "Antonym of 'Vague'?", a: "Clear / Specific." }
+                        { q: "Antonym of 'Vague'?", a: "Clear / Specific." },
+                        { q: "Synonym of 'Diligent'?", a: "Hardworking / Industrious." },
+                        { q: "Antonym of 'Fragile'?", a: "Strong / Durable." },
+                        { q: "Synonym of 'Benevolent'?", a: "Kind / Generous." },
+                        { q: "Antonym of 'Hostile'?", a: "Friendly / Amiable." },
+                        { q: "Synonym of 'Lucid'?", a: "Clear / Intelligible." },
+                        { q: "Antonym of 'Ambiguous'?", a: "Precise / Definite." },
+                        { q: "Synonym of 'Sincere'?", a: "Honest / Genuine." },
+                        { q: "Antonym of 'Obscure'?", a: "Well-known / Famous." },
+                        { q: "Synonym of 'Resilient'?", a: "Tough / Flexible." },
+                        { q: "Antonym of 'Vulnerable'?", a: "Protected / Secure." },
+                        { q: "Synonym of 'Aesthetic'?", a: "Artistic / Visual." },
+                        { q: "Antonym of 'Mundane'?", a: "Extraordinary / Unique." },
+                        { q: "Synonym of 'Plausible'?", a: "Believable / Reasoned." },
+                        { q: "Antonym of 'Cynical'?", a: "Trusting / Optimistic." },
+                        { q: "Synonym of 'Integrity'?", a: "Honesty / Virtue." }
                     ],
                     speedSummary: "Root word analysis is the fastest way to decode unfamiliar words."
                 }
@@ -59,9 +74,71 @@ export const vocabularyData = {
                     logic: "Context is king. If you don't know the idiom, read the whole sentence to guess the 'flavor' of the expression.",
                     traps: "Literal translation: Interpreting 'Kick the bucket' as literally kicking a bucket.",
                     examples: [
-                        { q: "Meaning of 'Cold shoulder'?", a: "To ignore someone intentionally." }
+                        { q: "Meaning of 'Cold shoulder'?", a: "To ignore someone intentionally." },
+                        { q: "Meaning of 'Under the weather'?", a: "Feeling sick or unwell." },
+                        { q: "Meaning of 'Cost an arm and a leg'?", a: "Very expensive." },
+                        { q: "Meaning of 'Let the cat out of the bag'?", a: "To reveal a secret accidentally." },
+                        { q: "Meaning of 'Once in a blue moon'?", a: "Something that happens very rarely." },
+                        { q: "Meaning of 'Break a leg'?", a: "A way to wish someone good luck, especially before a performance." },
+                        { q: "Meaning of 'Hit the nail on the head'?", a: "To describe exactly what is causing a situation or problem." },
+                        { q: "Meaning of 'Cut corners'?", a: "To do something poorly in order to save time or money." },
+                        { q: "Meaning of 'Call it a day'?", a: "To stop working on something." },
+                        { q: "Meaning of 'A blessing in disguise'?", a: "A good thing that seemed bad at first." },
+                        { q: "Meaning of 'Better late than never'?", a: "It is better to arrive or do something late than not at all." },
+                        { q: "Meaning of 'Bite off more than you can chew'?", a: "To take on a task that is way too big." },
+                        { q: "Meaning of 'Break the ice'?", a: "To say or do something to make people feel more relaxed in a social setting." },
+                        { q: "Meaning of 'Burn the midnight oil'?", a: "To work late into the night." },
+                        { q: "Meaning of 'Cut to the chase'?", a: "To leave out the unimportant parts and get to the point." },
+                        { q: "Meaning of 'Every cloud has a silver lining'?", a: "Every bad situation has some good aspect to it." },
+                        { q: "Meaning of 'Get out of hand'?", a: "To get out of control." },
+                        { q: "Meaning of 'Hang in there'?", a: "Wait and be patient; don't give up." },
+                        { q: "Meaning of 'Hit the sack'?", a: "To go to sleep." },
+                        { q: "Meaning of 'It's not rocket science'?", a: "It's not complicated to understand." },
+                        { q: "Meaning of 'Let sleeping dogs lie'?", a: "To leave a situation as it is in order to avoid more trouble." },
+                        { q: "Meaning of 'No pain, no gain'?", a: "You have to work hard for what you want." },
+                        { q: "Meaning of 'On the ball'?", a: "When someone understands a situation well and is quick to react." },
+                        { q: "Meaning of 'Pull someone's leg'?", a: "To joke with someone by trying to make them believe something that isn't true." },
+                        { q: "Meaning of 'The elephant in the room'?", a: "A major problem or controversial issue which is present but everyone ignores." }
                     ],
                     speedSummary: "Idioms usually have a colorful, non-literal meaning."
+                }
+            },
+            {
+                id: "word-families",
+                title: "3. Word Families & Morphology",
+                content: {
+                    coreConcept: "Word families are groups of words that share a common root. Understanding how a word changes its part of speech (Noun, Verb, Adj, Adv) is key to sentence mastery.",
+                    formulaBank: "- Noun suffixes: -tion, -ness, -ity, -ment.\n- Verb suffixes: -ize, -ify, -en.\n- Adjective suffixes: -ful, -able, -ive, -al.\n- Adverb suffix: -ly.",
+                    logic: "Identify the root and look for standard suffixes to determine the word's function in a sentence.",
+                    traps: "High-frequency trap: Confusing words with the same root but different meanings (e.g., 'Economic' vs 'Economical').",
+                    examples: [
+                        { q: "Family of 'Success'?", a: "Success (N), Succeed (V), Successful (Adj), Successfully (Adv)." },
+                        { q: "Family of 'Beauty'?", a: "Beauty (N), Beautify (V), Beautiful (Adj), Beautifully (Adv)." },
+                        { q: "Family of 'Create'?", a: "Creator/Creation (N), Create (V), Creative (Adj), Creatively (Adv)." },
+                        { q: "Family of 'Decide'?", a: "Decision (N), Decide (V), Decisive (Adj), Decisively (Adv)." },
+                        { q: "Family of 'Economy'?", a: "Economy (N), Economize (V), Economic/Economical (Adj), Economically (Adv)." },
+                        { q: "Family of 'Friend'?", a: "Friend/Friendship (N), Befriend (V), Friendly (Adj)." },
+                        { q: "Family of 'Knowledge'?", a: "Knowledge (N), Know (V), Knowledgeable (Adj), Knowingly (Adv)." },
+                        { q: "Family of 'Memory'?", a: "Memory (N), Memorize (V), Memorable (Adj), Memorably (Adv)." },
+                        { q: "Family of 'Nation'?", a: "Nation/Nationality (N), Nationalize (V), National (Adj), Nationally (Adv)." },
+                        { q: "Family of 'Power'?", a: "Power (N), Empower (V), Powerful (Adj), Powerfully (Adv)." },
+                        { q: "Family of 'Real'?", a: "Reality (N), Realize (V), Real (Adj), Really (Adv)." },
+                        { q: "Family of 'Safe'?", a: "Safety (N), Save (V), Safe (Adj), Safely (Adv)." },
+                        { q: "Family of 'Thought'?", a: "Thought (N), Think (V), Thoughtful (Adj), Thoughtfully (Adv)." },
+                        { q: "Family of 'Use'?", a: "User/Use (N), Use (V), Usable/Useful (Adj), Usefully (Adv)." },
+                        { q: "Family of 'Value'?", a: "Value/Valuation (N), Valuate (V), Valuable (Adj)." },
+                        { q: "Family of 'Week'?", a: "Week (N), Weekly (Adj/Adv)." },
+                        { q: "Family of 'Year'?", a: "Year (N), Yearly (Adj/Adv)." },
+                        { q: "Family of 'Ability'?", a: "Ability (N), Enable (V), Able (Adj), Ably (Adv)." },
+                        { q: "Family of 'Choice'?", a: "Choice (N), Choose (V), Choosy (Adj)." },
+                        { q: "Family of 'Danger'?", a: "Danger (N), Endanger (V), Dangerous (Adj), Dangerously (Adv)." },
+                        { q: "Family of 'Education'?", a: "Education (N), Educate (V), Educational (Adj), Educationally (Adv)." },
+                        { q: "Family of 'Fame'?", a: "Fame (N), Famous (Adj), Famously (Adv)." },
+                        { q: "Family of 'Growth'?", a: "Growth (N), Grow (V), Growing (Adj)." },
+                        { q: "Family of 'Health'?", a: "Health (N), Healthy (Adj), Healthily (Adv)." },
+                        { q: "Family of 'Interest'?", a: "Interest (N), Interest (V), Interesting (Adj), Interestingly (Adv)." }
+                    ],
+                    speedSummary: "Suffixes act as 'tags' for parts of speech. Memorize the top 5 suffixes for each category."
                 }
             }
         ]
