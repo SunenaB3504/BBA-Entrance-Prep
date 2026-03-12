@@ -177,6 +177,7 @@ const StudyGuide = () => {
             Core Concept: ${cleanMarkdown(topic.content?.coreConcept || topic.summary)}.
             ${topic.content?.logic ? `Key Logic: ${cleanMarkdown(topic.content.logic)}.` : ''}
             ${topic.content?.traps ? `Important Note: ${cleanMarkdown(topic.content.traps)}.` : ''}
+            ${topic.content?.examples ? `Practical Examples: ${topic.content.examples.map((ex, i) => `Example ${i + 1}: Question: ${cleanMarkdown(ex.q)}. Answer: ${cleanMarkdown(ex.a)}`).join('. ')}.` : ''}
         `;
 
         const utterance = new SpeechSynthesisUtterance(textToRead);
