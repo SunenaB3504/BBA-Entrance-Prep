@@ -14,6 +14,12 @@ const StudyGuide = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [activeSection, setActiveSection] = useState('concept');
     const [activeTopicId, setActiveTopicId] = useState(null);
+    const [isSpeaking, setIsSpeaking] = useState(false);
+    const [isPaused, setIsPaused] = useState(false);
+    const [speakingTopicId, setSpeakingTopicId] = useState(null);
+
+    const NARRATIVE_SUBJECTS = ['business-studies', 'economics', 'english', 'gk-current-affairs', 'computer-awareness', 'static-gk'];
+    const isNarrative = NARRATIVE_SUBJECTS.includes(subjectId);
 
     const subject = getSubjectById(subjectId);
     const chapter = getChapterById(subjectId, chapterId);
@@ -35,6 +41,13 @@ const StudyGuide = () => {
             setIsLoading(false);
         };
         fetchContent();
+
+        // Cleanup speech on unmount
+        return () => {
+            if (window.speechSynthesis) {
+                window.speechSynthesis.cancel();
+            }
+        };
     }, [subjectId, chapterId, loadChapterData]);
 
     // SCROLL-SPY: Detect active topic
@@ -131,6 +144,74 @@ const StudyGuide = () => {
         );
     };
 
+    const handleSpeech = (topic) => {
+        if (!window.speechSynthesis) {
+            alert("Sorry, your browser doesn't support Text-to-Speech.");
+            return;
+        }
+
+        if (isSpeaking && speakingTopicId === topic.id) {
+            if (isPaused) {
+                window.speechSynthesis.resume();
+                setIsPaused(false);
+            } else {
+                window.speechSynthesis.pause();
+                setIsPaused(true);
+            }
+            return;
+        }
+
+        // Cancel existing speech
+        window.speechSynthesis.cancel();
+
+        const cleanMarkdown = (text) => {
+            if (!text) return "";
+            return text
+                .replace(/[#*`_~]/g, '') // Remove markdown symbols
+                .replace(/\[(.*?)\]\(.*?\)/g, '$1') // Keep link text, remove URL
+                .replace(/\\/g, ''); // Remove backslashes
+        };
+
+        const textToRead = `
+            Topic: ${topic.title}.
+            Core Concept: ${cleanMarkdown(topic.content?.coreConcept || topic.summary)}.
+            ${topic.content?.logic ? `Key Logic: ${cleanMarkdown(topic.content.logic)}.` : ''}
+            ${topic.content?.traps ? `Important Note: ${cleanMarkdown(topic.content.traps)}.` : ''}
+        `;
+
+        const utterance = new SpeechSynthesisUtterance(textToRead);
+        utterance.rate = 1;
+        utterance.pitch = 1;
+        
+        utterance.onstart = () => {
+            setIsSpeaking(true);
+            setIsPaused(false);
+            setSpeakingTopicId(topic.id);
+        };
+
+        utterance.onend = () => {
+            setIsSpeaking(false);
+            setIsPaused(false);
+            setSpeakingTopicId(null);
+        };
+
+        utterance.onerror = () => {
+            setIsSpeaking(false);
+            setSpeakingTopicId(null);
+        };
+
+        window.speechSynthesis.speak(utterance);
+    };
+
+    const stopSpeech = () => {
+        if (window.speechSynthesis) {
+            window.speechSynthesis.cancel();
+            setIsSpeaking(false);
+            setIsPaused(false);
+            setSpeakingTopicId(null);
+        }
+    };
+
     const topicHasSection = (topicId, sectionId) => {
         const topic = guideData.topics.find(t => t.id === topicId);
         if (!topic) return false;
@@ -165,6 +246,34 @@ const StudyGuide = () => {
                         {guideData.topics.length} LESSONS
                     </div>
                 </div>
+
+                {/* Speech Control Banner */}
+                {isSpeaking && (
+                    <div className="bg-blue-600 text-white py-2 px-4 shadow-lg animate-in slide-in-from-top duration-300">
+                        <div className="container mx-auto flex items-center justify-between">
+                            <div className="flex items-center gap-3 overflow-hidden">
+                                <span className="animate-pulse">🔊</span>
+                                <span className="text-[11px] font-bold uppercase tracking-widest truncate">
+                                    {isPaused ? 'Paused:' : 'Listening to:'} {guideData.topics.find(t => t.id === speakingTopicId)?.title}
+                                </span>
+                            </div>
+                            <div className="flex items-center gap-4">
+                                <button 
+                                    onClick={() => handleSpeech(guideData.topics.find(t => t.id === speakingTopicId))}
+                                    className="p-1 px-3 bg-white/20 hover:bg-white/30 rounded-lg text-[10px] font-bold tracking-widest"
+                                >
+                                    {isPaused ? 'RESUME' : 'PAUSE'}
+                                </button>
+                                <button 
+                                    onClick={stopSpeech}
+                                    className="p-1 px-3 bg-red-500/80 hover:bg-red-500 rounded-lg text-[10px] font-bold tracking-widest"
+                                >
+                                    STOP
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                )}
 
                 {/* Granular Section Nav - NOW CONTEXTUAL */}
                 <div className="bg-slate-50/50 border-t border-slate-100 overflow-x-auto scroller-hide">
@@ -227,7 +336,17 @@ const StudyGuide = () => {
                                     <h2 className="text-4xl font-black text-slate-900 tracking-tight">
                                         {topic.title}
                                     </h2>
-                                    <div className="text-blue-600 font-bold text-xs uppercase tracking-widest mt-1">Study Module {tIdx + 1}/{guideData.topics.length}</div>
+                                    <div className="flex items-center gap-4 mt-1">
+                                        <div className="text-blue-600 font-bold text-xs uppercase tracking-widest">Study Module {tIdx + 1}/{guideData.topics.length}</div>
+                                        {isNarrative && (
+                                            <button 
+                                                onClick={() => handleSpeech(topic)}
+                                                className={`flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-black tracking-widest transition-all ${speakingTopicId === topic.id ? 'bg-blue-600 text-white shadow-md' : 'bg-blue-50 text-blue-600 hover:bg-blue-100'}`}
+                                            >
+                                                {speakingTopicId === topic.id ? (isPaused ? '▶ RESUME' : '⏸ PAUSE') : '🔊 LISTEN'}
+                                            </button>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
 
