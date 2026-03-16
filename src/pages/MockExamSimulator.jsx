@@ -66,14 +66,16 @@ const MockExamSimulator = () => {
         let timer;
         if (isActive && timeLeft > 0) {
             timer = setInterval(() => {
-                setTimeLeft(prev => prev - 1);
+                setTimeLeft(prev => Math.max(0, prev - 1));
                 setSecondsOnQuestion(prev => prev + 1);
             }, 1000);
         } else if (timeLeft === 0 && isActive) {
             submitExam();
         }
-        return () => clearInterval(timer);
-    }, [isActive, timeLeft]);
+        return () => {
+            if (timer) clearInterval(timer);
+        };
+    }, [isActive, timeLeft, submitExam]);
 
     useEffect(() => {
         setSecondsOnQuestion(0);
@@ -210,6 +212,8 @@ const MockExamSimulator = () => {
 
     return (
         <div className="h-screen flex flex-col bg-white overflow-hidden">
+            <title>{config.name} | Entrance Prep Pro</title>
+            <meta name="description" content={`Simulate your ${config.name} under real exam conditions.`} />
             {/* Header */}
             <header className="h-16 border-b border-slate-100 flex items-center justify-between px-6 bg-white shrink-0">
                 <div className="flex items-center gap-4">

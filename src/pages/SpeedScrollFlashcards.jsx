@@ -83,45 +83,55 @@ const SpeedScrollFlashcards = () => {
                 className="flex-grow overflow-y-scroll snap-y snap-mandatory scrollbar-hide"
             >
                 {flashcards.map((card, idx) => (
-                    <div 
+                    <FlashcardSlide 
                         key={idx} 
-                        className="h-[calc(100vh-64px)] w-full flex flex-col items-center justify-center p-8 snap-start relative border-b border-white/5"
-                    >
-                        <div className="w-full max-w-2xl bg-white/5 rounded-[3rem] p-12 lg:p-16 border border-white/10 backdrop-blur-xl shadow-2xl relative group overflow-hidden transition-all hover:bg-white/[0.07]">
-                            {/* Accent Gradient */}
-                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500 opacity-50"></div>
-                            
-                            <div className="text-[11px] font-black text-orange-500 uppercase tracking-[0.3em] mb-10 bg-orange-500/10 inline-block px-3 py-1 rounded">Flash Fact</div>
-                            
-                            <h2 className="text-3xl lg:text-4xl font-black text-white mb-12 leading-tight tracking-tight">
-                                {card.term || card.question}
-                            </h2>
-
-                            <div className="bg-white/5 rounded-3xl p-8 border border-white/5 leading-relaxed text-slate-300 text-lg lg:text-xl shadow-inner italic">
-                                {card.definition || card.answer}
-                            </div>
-
-                            {card.example && (
-                                <div className="mt-8 text-sm text-slate-500 border-l-2 border-slate-700 pl-4 py-1 font-medium">
-                                    <span className="text-[10px] font-black text-slate-400 block mb-1 uppercase tracking-widest">Example</span>
-                                    {card.example}
-                                </div>
-                            )}
-
-                            {/* Nav Indicator */}
-                            <div className="absolute right-8 bottom-8 flex flex-col items-center gap-2 opacity-20 group-hover:opacity-100 transition-opacity">
-                                <span className="text-[10px] font-black text-white uppercase tracking-widest rotate-90 origin-right translate-x-4">SWIPE</span>
-                                <div className="w-px h-12 bg-white/20"></div>
-                            </div>
-                        </div>
-                    </div>
+                        card={card} 
+                        idx={idx} 
+                        total={flashcards.length}
+                    />
                 ))}
             </main>
-
             <style dangerouslySetInnerHTML={{ __html: `
                 .scrollbar-hide::-webkit-scrollbar { display: none; }
                 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
             `}} />
+        </div>
+    );
+};
+
+const FlashcardSlide = ({ card, idx, total, ref }) => {
+    return (
+        <div 
+            ref={ref}
+            className="h-[calc(100vh-64px)] w-full flex flex-col items-center justify-center p-8 snap-start relative border-b border-white/5"
+        >
+            <div className="w-full max-w-2xl bg-white/5 rounded-[3rem] p-12 lg:p-16 border border-white/10 backdrop-blur-xl shadow-2xl relative group overflow-hidden transition-all hover:bg-white/[0.07]">
+                {/* Accent Gradient */}
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-500 opacity-50"></div>
+                
+                <div className="text-[11px] font-black text-orange-500 uppercase tracking-[0.3em] mb-10 bg-orange-500/10 inline-block px-3 py-1 rounded">Flash Fact</div>
+                
+                <h2 className="text-3xl lg:text-4xl font-black text-white mb-12 leading-tight tracking-tight">
+                    {card.term || card.question}
+                </h2>
+
+                <div className="bg-white/5 rounded-3xl p-8 border border-white/5 leading-relaxed text-slate-300 text-lg lg:text-xl shadow-inner italic">
+                    {card.definition || card.answer}
+                </div>
+
+                {card.example && (
+                    <div className="mt-8 text-sm text-slate-500 border-l-2 border-slate-700 pl-4 py-1 font-medium">
+                        <span className="text-[10px] font-black text-slate-400 block mb-1 uppercase tracking-widest">Example</span>
+                        {card.example}
+                    </div>
+                )}
+
+                {/* Nav Indicator */}
+                <div className="absolute right-8 bottom-8 flex flex-col items-center gap-2 opacity-20 group-hover:opacity-100 transition-opacity">
+                    <span className="text-[10px] font-black text-white uppercase tracking-widest rotate-90 origin-right translate-x-4">SWIPE</span>
+                    <div className="w-px h-12 bg-white/20"></div>
+                </div>
+            </div>
         </div>
     );
 };
