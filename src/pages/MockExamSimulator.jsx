@@ -14,6 +14,8 @@ const MockExamSimulator = () => {
     const [isActive, setIsActive] = useState(false);
     const [showResults, setShowResults] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
+    const [markedForReview, setMarkedForReview] = useState([]);
+    const [secondsOnQuestion, setSecondsOnQuestion] = useState(0);
 
     const examConfigs = {
         'cuet-bstudies': { 
@@ -63,12 +65,19 @@ const MockExamSimulator = () => {
     useEffect(() => {
         let timer;
         if (isActive && timeLeft > 0) {
-            timer = setInterval(() => setTimeLeft(prev => prev - 1), 1000);
+            timer = setInterval(() => {
+                setTimeLeft(prev => prev - 1);
+                setSecondsOnQuestion(prev => prev + 1);
+            }, 1000);
         } else if (timeLeft === 0 && isActive) {
             submitExam();
         }
         return () => clearInterval(timer);
     }, [isActive, timeLeft]);
+
+    useEffect(() => {
+        setSecondsOnQuestion(0);
+    }, [currentIndex]);
 
     const loadMockQuestions = async () => {
         setIsLoading(true);
@@ -121,6 +130,14 @@ const MockExamSimulator = () => {
             }
             return next;
         });
+    };
+
+    const toggleMarkForReview = () => {
+        setMarkedForReview(prev => 
+            prev.includes(currentIndex) 
+                ? prev.filter(id => id !== currentIndex) 
+                : [...prev, currentIndex]
+        );
     };
 
     const submitExam = () => {
@@ -217,15 +234,32 @@ const MockExamSimulator = () => {
                 {/* Main Content */}
                 <div className="flex-grow overflow-y-auto p-12 lg:p-24 flex flex-col items-center">
                     <div className="max-w-2xl w-full">
-                        <div className="flex items-center gap-3 mb-8">
-                            <span className="px-3 py-1 bg-slate-100 text-slate-500 rounded-md text-xs font-bold uppercase tracking-wider">
-                                Question {currentIndex + 1} of {questions.length}
-                            </span>
-                            {config.limit && (
-                                <span className="px-3 py-1 bg-blue-50 text-blue-600 rounded-md text-xs font-bold uppercase tracking-wider">
-                                    Attempted: {Object.keys(answers).length}/{config.limit}
+                        <div className="flex items-center justify-between mb-8">
+                            <div className="flex items-center gap-3">
+                                <span className="px-3 py-1 bg-slate-100 text-slate-500 rounded-md text-xs font-bold uppercase tracking-wider">
+                                    Question {currentIndex + 1} of {questions.length}
                                 </span>
-                            )}
+                                {config.limit && (
+                                    <span className="px-3 py-1 bg-blue-50 text-blue-600 rounded-md text-xs font-bold uppercase tracking-wider">
+                                        Attempted: {Object.keys(answers).length}/{config.limit}
+                                    </span>
+                                )}
+                            </div>
+                            
+                            <div className="flex items-center gap-2">
+                                <button 
+                                    onClick={toggleMarkForReview}
+                                    className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-[10px] font-black tracking-widest transition-all border ${markedForReview.includes(currentIndex) ? 'bg-orange-500 text-white border-orange-500 shadow-md' : 'bg-white text-slate-400 border-slate-200 hover:border-orange-300 hover:text-orange-500'}`}
+                                >
+                                    🚩 {markedForReview.includes(currentIndex) ? 'MARKED' : 'MARK FOR REVIEW'}
+                                </button>
+                                
+                                {secondsOnQuestion > 45 && (
+                                    <div className="bg-red-50 text-red-600 px-3 py-1.5 rounded-full text-[10px] font-black tracking-widest animate-pulse border border-red-100 flex items-center gap-1.5">
+                                        ⚠️ TIME SUCKER
+                                    </div>
+                                )}
+                            </div>
                         </div>
 
                         <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-12 leading-tight">
@@ -264,9 +298,11 @@ const MockExamSimulator = () => {
                                 onClick={() => setCurrentIndex(idx)}
                                 className={`h-10 rounded-lg text-xs font-bold transition-all border ${currentIndex === idx
                                         ? 'bg-blue-600 text-white border-blue-600 shadow-md ring-2 ring-blue-100'
-                                        : answers[idx] !== undefined
-                                            ? 'bg-green-100 text-green-700 border-green-200'
-                                            : 'bg-white text-slate-400 border-slate-200 hover:border-slate-400'
+                                        : markedForReview.includes(idx)
+                                            ? 'bg-orange-500 text-white border-orange-500'
+                                            : answers[idx] !== undefined
+                                                ? 'bg-green-100 text-green-700 border-green-200'
+                                                : 'bg-white text-slate-400 border-slate-200 hover:border-slate-400'
                                     }`}
                             >
                                 {idx + 1}

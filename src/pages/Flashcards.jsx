@@ -78,6 +78,12 @@ const Flashcards = () => {
                     <div className="flex items-center gap-3">
                         <span className="p-1.5 rounded-lg bg-blue-50 text-blue-600 text-lg">🎴</span>
                         <h1 className="font-extrabold text-slate-900 tracking-tight">{chapter.name} Flashcards</h1>
+                        <button 
+                            onClick={() => navigate(`/flashcards-speed/${subjectId}/${chapterId}`)}
+                            className="ml-4 px-3 py-1 bg-orange-500 text-white text-[9px] font-black rounded-full shadow-lg shadow-orange-500/20 hover:scale-105 transition-transform uppercase tracking-widest"
+                        >
+                            ⚡ Try Speed Scroll
+                        </button>
                     </div>
                     <div className="hidden sm:block px-4 py-1.5 rounded-full bg-blue-50 text-[10px] font-black text-blue-600 text-center uppercase tracking-widest">
                         {currentIndex + 1} / {flashcards.length}

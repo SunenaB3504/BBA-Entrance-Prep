@@ -2,6 +2,56 @@
 
 export const SUBJECTS = [
   {
+    id: "reasoning",
+    name: "Reasoning & Aptitude",
+    icon: "🧠",
+    color: "#ea580c",
+    examTags: ["CUET", "MH-CET"],
+    chapters: [
+      { id: "arr-linear", name: "Linear Arrangements", dataFile: "arrangements-linear.data", questionCount: 60 },
+      { id: "arr-circular", name: "Circular Arrangements", dataFile: "arrangements-circular.data", questionCount: 60 },
+      { id: "arr-floor", name: "Floor & Matrix Puzzles", dataFile: "arrangements-floor.data", questionCount: 45 },
+      { id: "ser-number", name: "Number Series", dataFile: "series-number.data", questionCount: 75 },
+      { id: "ser-alphabet", name: "Alphabet Series", dataFile: "series-alphabet.data", questionCount: 60 },
+      { id: "ser-alphanumeric", name: "Alphanumeric Series", dataFile: "series-alphanumeric.data", questionCount: 45 },
+      { id: "cod-letter", name: "Letter Shift Coding", dataFile: "coding-letter-shift.data", questionCount: 60 },
+      { id: "cod-symbol", name: "Symbol Coding", dataFile: "coding-symbol.data", questionCount: 45 },
+      { id: "rel-blood", name: "Blood Relations", dataFile: "relations-blood.data", questionCount: 60 },
+      { id: "rel-direction", name: "Direction Sense", dataFile: "relations-direction.data", questionCount: 60 },
+      { id: "log-syllogism", name: "Syllogisms", dataFile: "logic-syllogism.data", questionCount: 75 },
+      { id: "log-venn", name: "Venn Diagrams", dataFile: "logic-venn.data", questionCount: 45 },
+      { id: "log-statement", name: "Statement & Conclusion", dataFile: "logic-statement.data", questionCount: 60 },
+      { id: "vis-mirror", name: "Mirror & Water Images", dataFile: "visual-mirror-water.data", questionCount: 60 },
+      { id: "vis-paper", name: "Paper Cutting & Folding", dataFile: "visual-paper-pattern.data", questionCount: 45 }
+    ]
+  },
+  {
+    id: "general-aptitude",
+    name: "General Aptitude (GAT)",
+    icon: "🎯",
+    color: "#f59e0b",
+    examTags: ["CUET", "MH-CET"],
+    chapters: [
+      { id: "quantitative", name: "Quantitative Ability", dataFile: "quantitative.data", questionCount: 62 },
+      { id: "logical-reasoning", name: "Logical Reasoning", dataFile: "logical-reasoning.data", questionCount: 75 }
+    ]
+  },
+  {
+    id: "english",
+    name: "English Language",
+    icon: "📝",
+    color: "#0891b2",
+    examTags: ["CUET", "MH-CET"],
+    chapters: [
+      { id: "comprehension", name: "Reading Comprehension", dataFile: "comprehension.data", questionCount: 20 },
+      { id: "grammar", name: "Grammar & Usage", dataFile: "grammar.data", questionCount: 20 },
+      { id: "vocabulary", name: "Vocabulary & Word Families", dataFile: "vocabulary.data", questionCount: 50 },
+      { id: "reading-strategies", name: "Reading Strategies", dataFile: "reading-strategies.data", questionCount: 15 },
+      { id: "writing-skills", name: "Writing Skills", dataFile: "writing-skills.data", questionCount: 15 },
+      { id: "literature-poetry", name: "Literature & Poetry", dataFile: "literature-poetry.data", questionCount: 15 }
+    ]
+  },
+  {
     id: "accountancy",
     name: "Accountancy",
     icon: "📊",
@@ -22,7 +72,6 @@ export const SUBJECTS = [
       { id: "computerized-accounting", name: "Computerized Accounting", dataFile: "computerized-accounting.data", questionCount: 15 }
     ]
   },
-
   {
     id: "business-studies",
     name: "Business Studies",
@@ -63,56 +112,6 @@ export const SUBJECTS = [
       { id: "ied-development", name: "IED: Development Experience (1947-90)", dataFile: "ied-development.data", questionCount: 2 },
       { id: "ied-challenges", name: "IED: Current Challenges", dataFile: "ied-challenges.data", questionCount: 2 },
       { id: "ied-comparison", name: "IED: Comparison with Neighbors", dataFile: "ied-comparison.data", questionCount: 2 }
-    ]
-  },
-  {
-    id: "reasoning",
-    name: "Reasoning & Aptitude",
-    icon: "🧠",
-    color: "#ea580c",
-    examTags: ["CUET", "MH-CET"],
-    chapters: [
-      { id: "arr-linear", name: "Linear Arrangements", dataFile: "arrangements-linear.data", questionCount: 60 },
-      { id: "arr-circular", name: "Circular Arrangements", dataFile: "arrangements-circular.data", questionCount: 60 },
-      { id: "arr-floor", name: "Floor & Matrix Puzzles", dataFile: "arrangements-floor.data", questionCount: 45 },
-      { id: "ser-number", name: "Number Series", dataFile: "series-number.data", questionCount: 75 },
-      { id: "ser-alphabet", name: "Alphabet Series", dataFile: "series-alphabet.data", questionCount: 60 },
-      { id: "ser-alphanumeric", name: "Alphanumeric Series", dataFile: "series-alphanumeric.data", questionCount: 45 },
-      { id: "cod-letter", name: "Letter Shift Coding", dataFile: "coding-letter-shift.data", questionCount: 60 },
-      { id: "cod-symbol", name: "Symbol Coding", dataFile: "coding-symbol.data", questionCount: 45 },
-      { id: "rel-blood", name: "Blood Relations", dataFile: "relations-blood.data", questionCount: 60 },
-      { id: "rel-direction", name: "Direction Sense", dataFile: "relations-direction.data", questionCount: 60 },
-      { id: "log-syllogism", name: "Syllogisms", dataFile: "logic-syllogism.data", questionCount: 75 },
-      { id: "log-venn", name: "Venn Diagrams", dataFile: "logic-venn.data", questionCount: 45 },
-      { id: "log-statement", name: "Statement & Conclusion", dataFile: "logic-statement.data", questionCount: 60 },
-      { id: "vis-mirror", name: "Mirror & Water Images", dataFile: "visual-mirror-water.data", questionCount: 60 },
-      { id: "vis-paper", name: "Paper Cutting & Folding", dataFile: "visual-paper-pattern.data", questionCount: 45 }
-    ]
-  },
-  {
-    id: "english",
-    name: "English Language",
-    icon: "📝",
-    color: "#0891b2",
-    examTags: ["CUET", "MH-CET"],
-    chapters: [
-      { id: "comprehension", name: "Reading Comprehension", dataFile: "comprehension.data", questionCount: 20 },
-      { id: "grammar", name: "Grammar & Usage", dataFile: "grammar.data", questionCount: 20 },
-      { id: "vocabulary", name: "Vocabulary & Word Families", dataFile: "vocabulary.data", questionCount: 50 },
-      { id: "reading-strategies", name: "Reading Strategies", dataFile: "reading-strategies.data", questionCount: 15 },
-      { id: "writing-skills", name: "Writing Skills", dataFile: "writing-skills.data", questionCount: 15 },
-      { id: "literature-poetry", name: "Literature & Poetry", dataFile: "literature-poetry.data", questionCount: 15 }
-    ]
-  },
-  {
-    id: "general-aptitude",
-    name: "General Aptitude (GAT)",
-    icon: "🎯",
-    color: "#f59e0b",
-    examTags: ["CUET", "MH-CET"],
-    chapters: [
-      { id: "quantitative", name: "Quantitative Ability", dataFile: "quantitative.data", questionCount: 62 },
-      { id: "logical-reasoning", name: "Logical Reasoning", dataFile: "logical-reasoning.data", questionCount: 75 }
     ]
   },
   {

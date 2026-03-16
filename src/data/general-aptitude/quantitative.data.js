@@ -14,7 +14,7 @@ export const quantitativeData = {
                 content: {
                     coreConcept: "1. Definition: Percentage literally means 'per hundred'. It is a way of expressing a number as a fraction of 100.\n2. Exam Application: In competitive exams (CUET & MAH-CET), percentages form the foundation for Profit & Loss, Data Interpretation, and Simple/Compound Interest.\n3. Master Mindset: Percentage is just a comparison tool where the base is always normalized to 100.",
                     formulaBank: "1. Common Fraction-Percentage Equivalents:\n1/2 = 50% | 1/3 = 33.33% | 1/4 = 25% | 1/5 = 20% | 1/6 = 16.66% | 1/8 = 12.5% | 1/9 = 11.11% | 1/11 = 9.09%\n\n2. Basic Formulas:\n- % Change = (Difference / Original Value) × 100\n- A is x% of B: (A / B) × 100\n- Net Successive Change = [a + b + (ab/100)]%\n\n3. Finding Original Value (Reversed %):\n- If a number is increased by R% to become V: Original = [V / (100 + R)] × 100\n- If a number is decreased by R% to become V: Original = [V / (100 - R)] × 100\n\n4. The Overlap (Venn) Formula:\n- % failed in at least one = (% Fail A + % Fail B) - % Fail Both\n- % passed in both = 100% - % failed in at least one.",
-                    logic: "1. Multiplying Factors (The Pro Method):\n- 10% increase → Multiply by 1.1\n- 10% decrease → Multiply by 0.9\n\n2. Reverse Multiplying Factor (Finding Original):\n- To 'undo' a 20% increase: Divide by 1.2 (or multiply by 5/6).\n- To 'undo' a 25% decrease: Divide by 0.75 (or multiply by 4/3).\n\n3. Gap Analysis (Pass/Fail Thresholds):\n- If Student A fails by X marks and Student B passes by Y marks: \n- Mark Difference = X + Y\n- % Difference = |% Score A - % Score B|\n- Max Marks = (Mark Difference / % Difference) × 100\n\n4. Unit Ratio Logic (Quantity vs Price):\n- In questions like 'CP of X articles = SP of Y articles':\n- Base for percentage is ALWAYS the SP Quantity (Y).\n- Profit % = [(CP Count - SP Count) / SP Count] × 100",
+                    logic: "1. Multiplying Factors (The Pro Method):\n- 10% increase → Multiply by 1.1\n- 10% decrease → Multiply by 0.9\n\n2. Unit Digit & Digit Sum (The Hacker Hack):\n- If the question involves large multiplications or additions, check the unit digit of the options FIRST. \n- Example: $452 \times 12$ must end in 4. If only one option ends in 4, select it and MOVE ON.\n\n3. Substitution Hack (Option Trailing):\n- Instead of solving $x$, plug the options into the equation. For Age or Ratio problems, this is often 50% faster than setting up variables.\n\n4. GAP Analysis (Pass/Fail Thresholds):\n- If Student A fails by X marks and Student B passes by Y marks: \n- Mark Difference = X + Y\n- % Difference = |% Score A - % Score B|\n- Max Marks = (Mark Difference / % Difference) × 100",
                     traps: "TRAP 1: The Asymmetry Trap\nIf A is 25% more than B, students often assume B is 25% less than A. THIS IS FALSE.\n- If B = 100, A = 125. B is 25 less than A. % less = (25/125) × 100 = 20%.\n\nTRAP 2: Successive Addition\n10% discount followed by 10% discount is NOT 20% discount. It is 19% (100 -> 90 -> 81).\n\nTRAP 3: The Base Error\nFinding 'original value' by applying the percentage to the final value. \nExample: Weight drops 10% to 90kg. Original is NOT 90 + 10% of 90 (99). It is 90 / 0.9 = 100kg.\n\nTRAP 4: The 'Both' Double Count\nWhen summing students failing in two different subjects, you MUST subtract those who failed in both, otherwise you count them twice.",
                     examples: [
                         { q: "What is 15% of 80?", a: "12. (10% is 8, 5% is 4. Total = 12)" },
@@ -43,7 +43,7 @@ export const quantitativeData = {
                         { q: "Population of a town is 10000. It increases by 10% annual. Population after 2 years?", a: "12100. ( 10000 * 1.21 )" },
                         { q: "80% of (A + B) = 50% of (A - B)? No, math swap. Correct: 10% of A = 20% of B. A is what % of B?", a: "200%. ( A = 2B )" }
                     ],
-                    speedSummary: "- 1/X table is your best friend for MAH-CET.\n- Use Reverse Multiplying Factors for 'Original Value' questions.\n- For same % increase and decrease, it's always an x²/100 % loss."
+                    speedSummary: "- 1/X table is your best friend for MAH-CET.\n- Hacker Tip: Check Unit Digits of options before solving. If they are unique, don't calculate fully.\n- Square logic: For same % increase and decrease, it's always an x²/100 % loss."
                 }
             },
             {
@@ -644,7 +644,7 @@ export const quantitativeData = {
             cognitiveType: "application",
             timePresure: "standard",
             speedTarget: 90,
-            explanation: "BODMAS: 48/12=4. {16-10}=6. 4*6=24. 24+14=38. Distractor 24 is the intermediate product; 42 is using 16-4+6=18 then 18+14+10? No, 24 is the most common echo.",
+            explanation: "HACKER METHOD: Check unit digit of {16 - (4 + 6)} = 6. Result is some product of 4 and 6 + 14. 24 + 14 ends in 8. Only option 38 ends in 8. (Normal BODMAS: 48/12=4. 16-10=6. 4*6=24. 24+14=38.)",
             examTags: ["CUET", "MH-CET"]
         },
         {
@@ -655,7 +655,7 @@ export const quantitativeData = {
             cognitiveType: "application",
             timePresure: "standard",
             speedTarget: 90,
-            explanation: "200 + 96 - 37.5 = 258.5. Distractors: 296 (Forgot subtraction), 333.5 (Swapped - for +), 248.5 (Miscalculated 25% of 150 as 47.5).",
+            explanation: "HACKER METHOD: 125% of 160 is 200. 40% of 240 ends in 6 (4x4). 25% of 150 ends in .5. Total must end in .5. (Exact: 200 + 96 - 37.5 = 258.5.)",
             examTags: ["CUET"]
         },
         {
@@ -690,7 +690,7 @@ export const quantitativeData = {
             cognitiveType: "synthesis",
             timePresure: "standard",
             speedTarget: 90,
-            explanation: "X/2 - X/3 = 15 → X/6 = 15 → X=90. Distractors: 45 (Assumed diff is 1/3), 30 (Assumed diff is 1/2).",
+            explanation: "HACKER METHOD: Unit Digit/Substitution. If cap is 90, 1/3 is 30, 1/2 is 45. Diff is 15. Marks matched! (Equation: X/2 - X/3 = 15 → X/6 = 15 → X=90.)",
             examTags: ["CUET", "MH-CET"]
         },
         {

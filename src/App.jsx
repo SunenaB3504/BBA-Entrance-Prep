@@ -7,6 +7,7 @@ import MockDashboard from './pages/MockDashboard.jsx';
 import MockExamSimulator from './pages/MockExamSimulator.jsx';
 import StudyGuide from './pages/StudyGuide.jsx';
 import Flashcards from './pages/Flashcards.jsx';
+import SpeedScrollFlashcards from './pages/SpeedScrollFlashcards.jsx';
 import Analytics from './pages/Analytics.jsx';
 import TimedPractice from './pages/TimedPractice.jsx';
 import { useAppContext } from './store/AppContext.jsx';
@@ -98,6 +99,7 @@ const App = () => {
                     <Route path="/mock-exam/:type" element={<MockExamSimulator />} />
                     <Route path="/study/:subjectId/:chapterId" element={<StudyGuide />} />
                     <Route path="/flashcards/:subjectId/:chapterId" element={<Flashcards />} />
+                    <Route path="/flashcards-speed/:subjectId/:chapterId" element={<SpeedScrollFlashcards />} />
                     <Route path="/analytics" element={<Analytics />} />
                 </Routes>
             </main>
