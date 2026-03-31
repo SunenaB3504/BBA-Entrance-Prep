@@ -12,9 +12,8 @@ export const logicalReasoningData = {
                 title: "1. Alphanumeric Series",
                 content: {
                     coreConcept: "These series combine letters and numbers. CUET specifically uses triple-layer rules where the letter, number, and position all follow independent sequences.",
-                    formulaBank: "1. A-Z Positions (EJOTY): E=5, J=10, O=15, T=20, Y=25\n2. Reverse Positions: Sum = 27 (A=1, Z=26; 1+26=27)\n3. Prime Number Sequences: 2, 3, 5, 7, 11, 13...",
-                    logic: "The Triple-Layer Audit:\nWhen you see a term like 'A4X', break it down:\n1. First element (A): Check for +1, +2, +3... shift.\n2. Middle element (4): Check for square, cube, or prime sequence.\n3. Last element (X): Check for reverse alphabetical shift.",
-                    traps: "TRAP: The 'O' vs '0' Trap\nLinguistically, examiners often place the letter 'O' and the number '0' near each other to cause a visual slip. Always verify the context – is it a letter sequence or a number sequence?",
+                    logic: "1. The Triple-Layer Audit:\n- Break terms like 'A4X' into: First letter (shift), Middle number (square/prime), Last letter (reverse shift).\n\n2. Series Identification Table:\n| If change is... | Check for... |\n|----------------|--------------|\n| Slow increase | Addition (+n) |\n| Fast increase | Multiplication (*n) |\n| Jump/Drop | Alternating Series (Series 1 & 2 merged) |\n| Perfect values | Squares, Cubes, Primes |",
+                    traps: "TRAP 1: The 'O' vs '0' Trap\nExaminers often place 'O' (letter) and '0' (zero) near each other. Always check the context of the sequence.",
                     examples: [
                         { q: "A1X, B4P, E25J, J100F, ?", a: "O400A. (Letters: A(+1)B(+3)E(+5)J(+7)Q? No, using Q441? Sample has logic jump. Correct: A, B, E, J, R (+1, +3, +5, +7, +9). Squares: 1, 4, 25, 100, 441.)" },
                         { q: "Find missing: D4, F6, H8, J10, ?", a: "L12. (Letters move +2, Numbers move +2.)" },
@@ -88,7 +87,7 @@ export const logicalReasoningData = {
                 title: "3. Coding & Decoding",
                 content: {
                     coreConcept: "Translating words into codes based on a specific rule (shift, reverse, or substitution).",
-                    formulaBank: "1. Forward Shift (+n)\n2. Backward Shift (-n)\n3. Opposites (A=Z, B=Y...)",
+                    formulaBank: "1. Forward Shift (+n) | Backward Shift (-n).\n2. Opposite Shortcut: Sum of positions of opposite letters = 27.\n   - Memory Hack: A-Z (AtoZ), B-Y (BoY), C-X (CruX), D-W (DeW), E-V (EVen), F-U (FUll), G-T (GT road).",
                     logic: "Pattern Recognition:\n1. Write the word and code one below the other.\n2. Calculate the difference (shift) for each letter.\n3. If shifts are same, it's a 'Fixed Shift'. If they change (1, 2, 3), it's 'Incremental'.",
                     traps: "TRAP: Cross-Coding\nSometimes 'CAT' is coded not as 'DBU' (+1), but letters are swapped (e.g., TAC). Always check for anagrams first.",
                     examples: [
@@ -202,8 +201,8 @@ export const logicalReasoningData = {
                 title: "6. Clocks & Calendars",
                 content: {
                     coreConcept: "Calculating angles in clocks and identifying days in calendars using the 'Odd Days' method.",
-                    formulaBank: "1. Clock Angle: θ = |30H - 5.5M|\n2. Mirror Image: Subtract time from 11:60\n3. Leap Year: Divisible by 4 (Century years by 400)",
-                    logic: "Calendar Odd Days:\nOrdinary Year = 1 Odd Day. Leap Year = 2 Odd Days.\nMonths: Jan(3), Feb(0/1), Mar(3), Apr(2), May(3), Jun(2)... (Divide total days by 7, remainder is odd days).",
+                    formulaBank: "1. Clock Angle: θ = |30H - 5.5M| (Absolute value).\n2. Mirror Time: Subtract from 11:60 (or 23:60).\n3. Calendar Odd Days: Remainder after dividing by 7.",
+                    logic: "1. The Centennial Leap Rule:\n- Century years (1900, 2100) are LEAP only if divisible by 400. (2000 was leap, 1900 was not).\n\n2. Odd Days Table (Months):\n- 31-day months: 3 odd days.\n- 30-day months: 2 odd days.\n- Feb: 0 (Ordinary) / 1 (Leap).",
                     traps: "TRAP: The Century Leap Year\nYear 1900 was NOT a leap year because it's a century not divisible by 400. Year 2000 WAS a leap year. Students often miss this.",
                     examples: [
                         { q: "Angle at 3:30?", a: "75°. (|30*3 - 5.5*30| = |90 - 165| = 75°)" },
@@ -309,6 +308,23 @@ export const logicalReasoningData = {
                         { q: "17:60 :: 20:?", a: "69. (3n + 9)" }
                     ],
                     speedSummary: "- Memorize squares up to 30 and cubes up to 12.\n- Always check the difference between terms first."
+                }
+            },
+            {
+                id: "venn-diagrams-logic",
+                title: "9. Logical Venn Diagrams",
+                content: {
+                    coreConcept: "Representing relationships between different groups using circles. It tests your semantic understanding of categories.",
+                    formulaBank: "1. Intersection: Represents 'Common' group.\n2. Disjoint: Represents groups with 'Zero connection'.\n3. Subset: Represents 'All of A are part of B'.",
+                    logic: "1. Identity Recognition:\n- Are they related? (Dogs and Cats are distinct animals -> Disjoint).\n- Is one a subset? (Dogs and Mammals -> Subset).\n- Is there an overlap? (Doctors and Women -> Intersection).\n\n2. The Layered Circle Strategy:\n- For 'Fathers, Males, Humans', use three nested circles (All fathers are males, all males are humans).",
+                    traps: "TRAP 1: Over-generalized Logic\nDo all birds fly? No (Ostrich). In LR, usually we follow standard biological categories unless 'In many cases' is implied. Stick to strict definitions.\n\nTRAP 2: Confusing 'Some' with 'All'\nAre some singers actors? Yes. Are all singers actors? No. Use intersection, not subset.",
+                    examples: [
+                        { q: "Represent: Mothers, Sisters, Women", a: "Intersection within Subset. (Some mothers are sisters, but all are women.)" },
+                        { q: "Represent: Dogs, Cats, Animals", a: "Two disjoint circles inside a larger animal circle." },
+                        { q: "Represent: Doctors, Engineers, Lawyers", a: "Three separate circles (usually professional silos)." },
+                        { q: "Represent: Whale, Mammal, Fish", a: "Whale inside Mammal; Fish separate." }
+                    ],
+                    speedSummary: "- Look for the 'All' relationship first to establish subsets.\n- Identify objects with zero relation to quickly eliminate disjoint options."
                 }
             }
         ]
