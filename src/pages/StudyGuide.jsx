@@ -519,7 +519,7 @@ const StudyGuide = () => {
                                 {topic.content?.speedSummary && (
                                     <section id={`${topic.id}-speed`} className="scroll-mt-44">
                                         <h3 className="flex items-center gap-2 text-xl font-black text-slate-800 mb-6 font-mono tracking-tighter">
-                                            <span className="text-2xl p-2 bg-yellow-50 rounded-xl">⚡</span> MAH-CET Speed Summary
+                                            <span className="text-2xl p-2 bg-yellow-50 rounded-xl">⚡</span> MH-CET Speed Summary
                                         </h3>
                                         <div className="bg-slate-950 rounded-[3rem] p-10 text-slate-200 font-medium whitespace-pre-wrap border-b-[12px] border-orange-500 shadow-2xl">
                                             <div className="text-orange-500 text-[10px] font-black uppercase mb-4 tracking-widest bg-orange-500/10 inline-block px-2 py-1 rounded">Quick Recall</div>

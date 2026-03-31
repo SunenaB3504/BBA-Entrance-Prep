@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAppContext } from '../store/AppContext';
 import { getSubjectById, getChapterById } from '../config/subjects.config';
@@ -32,7 +32,7 @@ const Flashcards = () => {
         fetchContent();
     }, [subjectId, chapterId, loadChapterData]);
 
-    const handleNext = () => {
+    const handleNext = useCallback(() => {
         setIsFlipped(false);
         setTimeout(() => {
             setCurrentIndex((prev) => (prev + 1) % flashcards.length);
@@ -40,9 +40,9 @@ const Flashcards = () => {
                 setTimeout(() => window.MathJax.typesetPromise(), 100);
             }
         }, 150);
-    };
+    }, [flashcards.length]);
 
-    const handlePrev = () => {
+    const handlePrev = useCallback(() => {
         setIsFlipped(false);
         setTimeout(() => {
             setCurrentIndex((prev) => (prev - 1 + flashcards.length) % flashcards.length);
@@ -50,7 +50,18 @@ const Flashcards = () => {
                 setTimeout(() => window.MathJax.typesetPromise(), 100);
             }
         }, 150);
-    };
+    }, [flashcards.length]);
+
+    // ⌨️ Keyboard navigation
+    useEffect(() => {
+        const onKey = (e) => {
+            if (e.key === 'ArrowRight') handleNext();
+            else if (e.key === 'ArrowLeft') handlePrev();
+            else if (e.key === ' ' || e.key === 'Enter') setIsFlipped(f => !f);
+        };
+        window.addEventListener('keydown', onKey);
+        return () => window.removeEventListener('keydown', onKey);
+    }, [handleNext, handlePrev]);
 
     if (loading) return <div className="h-screen flex items-center justify-center text-slate-400 font-medium">Loading Flashcards...</div>;
 
@@ -85,7 +96,7 @@ const Flashcards = () => {
                             ⚡ Try Speed Scroll
                         </button>
                     </div>
-                    <div className="hidden sm:block px-4 py-1.5 rounded-full bg-blue-50 text-[10px] font-black text-blue-600 text-center uppercase tracking-widest">
+                    <div className="px-4 py-1.5 rounded-full bg-blue-50 text-[10px] font-black text-blue-600 text-center uppercase tracking-widest">
                         {currentIndex + 1} / {flashcards.length}
                     </div>
                 </div>
@@ -98,24 +109,37 @@ const Flashcards = () => {
                         className={`relative w-full aspect-[4/3] transition-all duration-500 preserve-3d cursor-pointer ${isFlipped ? 'rotate-y-180' : ''}`}
                     >
                         {/* Front of Card */}
-                        <div className="absolute inset-0 backface-hidden bg-white rounded-[2.5rem] shadow-xl shadow-slate-200 border border-slate-100 flex flex-col items-center justify-center p-12 text-center">
-                            <div className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-8">Question</div>
-                            <h2 className="text-2xl lg:text-3xl font-bold text-slate-800 leading-tight">
-                                {currentCard.question}
+                        <div className="absolute inset-0 backface-hidden bg-white rounded-[2.5rem] shadow-xl shadow-slate-200 border border-slate-100 flex flex-col items-center justify-center p-8 lg:p-12 text-center">
+                            <div className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-6">Term / Question</div>
+                            <h2 className="text-xl lg:text-2xl font-bold text-slate-800 leading-tight">
+                                {currentCard.term || currentCard.question}
                             </h2>
-                            <div className="mt-auto text-blue-600 font-bold text-xs uppercase tracking-widest animate-pulse">
-                                Click to reveal answer
+                            <div className="mt-auto flex flex-col items-center gap-1">
+                                <div className="text-blue-600 font-bold text-xs uppercase tracking-widest animate-pulse">
+                                    Click or press Space to reveal
+                                </div>
+                                <div className="text-slate-400 text-[10px]">← → arrow keys to navigate</div>
                             </div>
                         </div>
 
                         {/* Back of Card */}
-                        <div className="absolute inset-0 backface-hidden rotate-y-180 bg-blue-600 rounded-[2.5rem] shadow-xl shadow-blue-900/20 flex flex-col items-center justify-center p-12 text-center text-white">
-                            <div className="text-[10px] font-black text-blue-200 uppercase tracking-[0.2em] mb-8">Answer</div>
-                            <p className="text-xl lg:text-2xl font-medium leading-relaxed">
-                                {currentCard.answer}
+                        <div className="absolute inset-0 backface-hidden rotate-y-180 bg-blue-600 rounded-[2.5rem] shadow-xl shadow-blue-900/20 flex flex-col items-center justify-center p-8 lg:p-12 text-center text-white overflow-y-auto">
+                            <div className="text-[10px] font-black text-blue-200 uppercase tracking-[0.2em] mb-4">Answer / Definition</div>
+                            <p className="text-lg lg:text-xl font-medium leading-relaxed">
+                                {currentCard.definition || currentCard.answer}
                             </p>
+                            {currentCard.formula && (
+                                <div className="mt-4 px-4 py-2 bg-white/20 rounded-2xl text-sm font-mono font-bold text-white">
+                                    📐 {currentCard.formula}
+                                </div>
+                            )}
+                            {currentCard.example && (
+                                <div className="mt-3 text-blue-100 text-sm italic border-t border-white/20 pt-3">
+                                    💡 {currentCard.example}
+                                </div>
+                            )}
                             <div className="mt-auto text-blue-200 font-bold text-xs uppercase tracking-widest">
-                                Click to hide answer
+                                Click to flip back
                             </div>
                         </div>
                     </div>
