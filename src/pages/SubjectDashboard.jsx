@@ -129,19 +129,21 @@ const SubjectDashboard = () => {
                                 </div>
 
                                 {chapter.questionCount > 0 ? (
-                                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                                         <button
                                             onClick={() => navigate(`/study/${subject.id}/${chapter.id}`)}
                                             className="flex items-center justify-center gap-1.5 py-3 px-3 bg-slate-50 text-slate-600 rounded-xl font-bold text-xs hover:bg-slate-100 transition-colors border border-slate-100"
                                         >
                                             📖 STUDY
                                         </button>
+                                        {/* Flashcards Hidden per request
                                         <button
                                             onClick={() => navigate(`/flashcards/${subject.id}/${chapter.id}`)}
                                             className="flex items-center justify-center gap-1.5 py-3 px-3 bg-blue-50 text-blue-600 rounded-xl font-bold text-xs hover:bg-blue-100 transition-colors border border-blue-100"
                                         >
                                             🎴 CARDS
                                         </button>
+                                        */}
                                         <button
                                             onClick={() => navigate(`/quiz/${subject.id}/${chapter.id}`)}
                                             className="flex items-center justify-center gap-1.5 py-3 px-3 text-white rounded-xl font-bold text-xs hover:opacity-90 transition-all shadow-sm"
